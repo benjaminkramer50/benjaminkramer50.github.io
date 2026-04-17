@@ -1,0 +1,14 @@
+<div id='intro'>
+    <div class='quote'>
+        <p>"The real voyage of discovery consists not in seeking new landscapes, but in having new eyes."</p>
+        <p class="quote-author"><a href='https://en.wikipedia.org/wiki/Marcel_Proust' target='_blank'>Marcel Proust, In Search of Lost Time</a></p>
+    </div>
+</div>
+<div class="tags">
+    {% assign sortedTags = site.tags | sort %}
+    {% for tag in sortedTags%}
+      {% capture tag_name %}{{ tag[0] }}{% endcapture %}
+      <a href="/tag/{{ tag_name }}">{{ tag_name | replace: "-"," " }}&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+    {% endfor %}
+    <a href="/blog"> All </a>
+</div>

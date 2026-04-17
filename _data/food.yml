@@ -1,0 +1,27 @@
+
+- restaurant: "Noodles Fresh"
+  location: "El Cerrito, CA"
+  cuisine: "Chinese"
+  price: 1
+  rating: 2.5
+  last_visit: "2026-04-16"
+  notes: "Excellent prices for the amount of food received. Environment is okay, pretty standard, relatively clean interior."
+  dishes:
+    - name: "Sichuan Dan-Dan Noodle Plate"
+      rating: 1.5
+      notes: "This dish had assembly required. It came with everything typical, however the chili sauce and soy sauce (so the whole make-up of the sauce itself) were... on the side. You added them at your own leisure, which is understandable if one asks for the sauce on the side, but not for a dish itself. The noodles themselves had good texture, and everything else was pretty standard. However, it was difficult to differentiate this from other places which have similar dishes. The chili sauce on the side also just seemed like store bought chili oil. I'm not sure if it was, but the presentation should have a chef cooking the dish, not moving ingredient to a bowl and having you assemble it yourself."
+
+- restaurant: "Antojitos Guatemaltecos"
+  location: "El Cerrito, CA"
+  cuisine: "Guatemalan"
+  price: 2
+  rating: 6
+  last_visit: "2026-04-15"
+  notes: "Very bright and nice atmosphere inside, with colorful decorations on the walls. The food was very filling, and for the most part solid."
+  dishes:
+    - name: "Churrasco Chapin"
+      rating: 4
+      notes: "This dish was presented very well. It came with three corn tortillas, chopped onions and jalapeños, and a platter consisting of shrimp, sausage, beef, rice, and various sauces. The beef was seasoned excellently and extremely good, along with the sausage. The shrimp was not as flavorful as it could've been, however overall this dish was filling and the flavors of everything complemented each other nicely."
+    - name: "Guatemalan Tamale (Pork)"
+      rating: 2
+      notes: "I decided to order this due to the high ranking (I believe given by the SF Chronicle) of Antojitos' tamales. I was very underwhelmed, and this did not have significant flavorful to me, and fell apart at the touch. I do not have experience eating other tamales, so maybe this rating is off."

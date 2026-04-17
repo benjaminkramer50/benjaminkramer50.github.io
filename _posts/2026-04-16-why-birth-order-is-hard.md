@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Why Birth Order is Hard to Study"
+author: Benjamin Kramer
+subtitle: Notes from a phenome-wide scan of 10 million siblings.
+tags: research
+---
+
+When I started the birth-order project last year, I assumed the hardest part would be finding enough siblings in the claims data. I was wrong. Once we had the family linkage built out, I had 5.1 million two-child families and 10.3 million individuals to work with, which is more than any published sibling study I am aware of. The hardest part turned out to be confounding, and specifically the fact that almost every plausible confounder for birth order is itself a function of birth order.
+
+Consider maternal age. Second-borns are, by construction, born to older mothers. Maternal age is associated with a long list of offspring outcomes, including autism, schizophrenia, and several metabolic conditions. If I fit a between-family model comparing first-borns to second-borns and adjust for maternal age, I have in some sense adjusted away part of the birth-order effect itself, because the age difference is part of what being a second-born means. If I do not adjust for it, I am conflating birth-order effects with maternal-age effects. There is no clean choice here. The same problem appears with birth spacing, family size, paternal age, and parity-dependent pregnancy complications.
+
+The within-family sibling comparison is the methodological answer to this, and it is the part of the project I believe matters most. Within a family, comparing the firstborn to the secondborn, everything that is shared between siblings (parental genetics, socioeconomic status, neighborhood, maternal health at reproductive age, shared environment) drops out. What remains is the stuff that differs between the two kids in the same family: age of the mother at the two births, the experience of being the older versus the younger child, parity-dependent pregnancy effects, and, by definition, their sex and age at any given calendar date. This is a much tighter comparison.
+
+However, within-family designs are underpowered for rare outcomes, because you only get one informative pair per family, and you only count if the two siblings differ in the outcome. For most of the 569 diseases I tested, this is fine. For the rarer conditions, the within-family estimate is noisy, and I have to present both estimates and hope the reviewer reads them together rather than reporting whichever is more significant.
+
+The other thing I find consistently underappreciated in this literature is how much the effect direction depends on age of ascertainment. For a disease that onsets in childhood, birth-order effects on the outcome reflect something about early-life exposure ordering. For a disease that onsets in adulthood, the same birth-order effect could reflect a completely different pathway, or could be an artifact of differential diagnosis rates at different ages. Claims data has a finite observation window, which means the conditions I can study best are the ones that present in young-to-middle adulthood. I have tried to be explicit about this in the draft, however I expect a reviewer will still ask about it.
+
+The result that surprised me the most was not any single disease. It was the sheer breadth of the signal. After Bonferroni correction across 569 diseases, 150 show significant birth-order associations, across psychiatric, metabolic, immunological, and several less-obvious organ systems. The direction is not uniform, however later-born status is associated with elevated risk for more diseases than earlier-born status. I do not have a unifying mechanistic story for this, and I have been resisting the temptation to invent one. The honest thing to say is that there is a phenome-wide signal, it is real, and the mechanisms are probably heterogeneous.

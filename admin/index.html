@@ -1,0 +1,2221 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Admin</title>
+    <script>
+    (function(){var t=localStorage.getItem('theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+      /* ── Design System ── */
+      :root {
+        --color-bg:          #fafaf9;
+        --color-surface:     #ffffff;
+        --color-text:        #1a1a1a;
+        --color-text-secondary: #555555;
+        --color-muted:       #888888;
+        --color-accent:      #2b6cb0;
+        --color-accent-hover:#1e4e8c;
+        --color-border:      #e2e2e0;
+
+        --font-body:    'Inter', -apple-system, system-ui, sans-serif;
+        --font-heading: 'Source Serif 4', Georgia, serif;
+        --font-mono:    'SF Mono', 'Fira Code', 'Consolas', monospace;
+      }
+
+      [data-theme="dark"] {
+        --color-bg:          #161618;
+        --color-surface:     #1e1e20;
+        --color-text:        #e4e4e3;
+        --color-text-secondary: #a8a8a6;
+        --color-muted:       #717170;
+        --color-accent:      #63a1e8;
+        --color-accent-hover:#8cb8ef;
+        --color-border:      #2e2e30;
+      }
+
+      /* ── Reset ── */
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        -webkit-font-smoothing: antialiased;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        animation: fadeInUp 0.4s ease-out both;
+      }
+
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      ::selection {
+        background-color: var(--color-accent);
+        color: #ffffff;
+      }
+
+      /* ── Dark mode toggle ── */
+      .theme-toggle {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: 1px solid var(--color-border);
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: var(--color-muted);
+        transition: color 0.2s ease, border-color 0.2s ease, background-color 0.3s ease;
+        z-index: 100;
+        line-height: 1;
+      }
+
+      .theme-toggle:hover {
+        color: var(--color-text);
+        border-color: var(--color-text-secondary);
+      }
+
+      /* ── Layout ── */
+      .admin-container {
+        max-width: 820px;
+        margin: 0 auto;
+        padding: 2.5rem 2rem 4rem;
+      }
+
+      .admin-header {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .admin-title {
+        font-family: var(--font-heading);
+        font-size: 1.75rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        margin: 0 0 0.25rem 0;
+        color: var(--color-text);
+      }
+
+      .admin-subtitle {
+        font-size: 0.9rem;
+        color: var(--color-muted);
+        margin: 0;
+      }
+
+      .admin-tabs {
+        display: flex;
+        gap: 0.45rem;
+        margin-bottom: 1.75rem;
+        padding: 0.45rem;
+        position: sticky;
+        top: 0.75rem;
+        z-index: 50;
+        overflow-x: auto;
+        border: 1px solid var(--color-border);
+        border-radius: 14px;
+        background: rgba(250, 250, 249, 0.9);
+        backdrop-filter: blur(14px);
+      }
+
+      [data-theme="dark"] .admin-tabs {
+        background: rgba(22, 22, 24, 0.88);
+      }
+
+      .admin-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .admin-tab {
+        flex: 0 0 auto;
+        padding: 0.65rem 0.95rem;
+        font-family: var(--font-body);
+        font-size: 0.84rem;
+        font-weight: 600;
+        line-height: 1;
+        color: var(--color-text-secondary);
+        background: transparent;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+      }
+
+      .admin-tab:hover {
+        color: var(--color-text);
+        background: var(--color-surface);
+        border-color: var(--color-border);
+      }
+
+      .admin-tab.active {
+        color: #ffffff;
+        background: var(--color-accent);
+        border-color: var(--color-accent);
+      }
+
+      .admin-panel {
+        display: none;
+      }
+
+      .admin-panel.active {
+        display: block;
+      }
+
+      .admin-panel[hidden] {
+        display: none !important;
+      }
+
+      .back-link {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: var(--color-muted);
+        text-decoration: none;
+        margin-bottom: 1rem;
+        transition: color 0.15s ease;
+      }
+
+      .back-link:hover {
+        color: var(--color-text);
+      }
+
+      /* ── Form ── */
+      .form-group {
+        margin-bottom: 1.25rem;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--color-muted);
+        margin-bottom: 0.4rem;
+      }
+
+      .form-label .optional {
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: normal;
+        color: var(--color-muted);
+        opacity: 0.7;
+      }
+
+      .form-input,
+      .form-textarea {
+        width: 100%;
+        padding: 0.6rem 0.85rem;
+        font-family: var(--font-body);
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: var(--color-text);
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        transition: border-color 0.2s ease;
+        outline: none;
+      }
+
+      .form-input:focus,
+      .form-textarea:focus {
+        border-color: var(--color-accent);
+      }
+
+      .form-textarea {
+        min-height: 280px;
+        resize: vertical;
+        font-family: var(--font-mono);
+        font-size: 0.88rem;
+        line-height: 1.65;
+      }
+
+      .form-hint {
+        font-size: 0.78rem;
+        color: var(--color-muted);
+        margin-top: 0.3rem;
+      }
+
+      .form-row {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .form-row .form-group {
+        flex: 1;
+      }
+
+      /* ── Slug preview ── */
+      .slug-preview {
+        font-family: var(--font-mono);
+        font-size: 0.82rem;
+        color: var(--color-muted);
+        margin-top: 0.3rem;
+        word-break: break-all;
+      }
+
+      /* ── Buttons ── */
+      .form-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+      }
+
+      .form-checkbox input[type="checkbox"] {
+        width: 1rem;
+        height: 1rem;
+        accent-color: var(--color-accent);
+        cursor: pointer;
+      }
+
+      .form-checkbox label {
+        font-size: 0.82rem;
+        color: var(--color-text-secondary);
+        cursor: pointer;
+      }
+
+      .past-tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        margin-top: 0.5rem;
+      }
+
+      .past-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 4px;
+        color: var(--color-text);
+      }
+
+      .past-tag-remove {
+        background: none;
+        border: none;
+        color: var(--color-muted);
+        cursor: pointer;
+        font-size: 0.9rem;
+        line-height: 1;
+        padding: 0;
+        transition: color 0.15s ease;
+      }
+
+      .past-tag-remove:hover {
+        color: var(--color-text);
+      }
+
+      .btn-row {
+        display: flex;
+        gap: 0.75rem;
+        margin-top: 1.75rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.6rem 1.25rem;
+        font-family: var(--font-body);
+        font-size: 0.85rem;
+        font-weight: 600;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: opacity 0.15s ease, background-color 0.15s ease;
+        border: none;
+        text-decoration: none;
+      }
+
+      .btn-primary {
+        background: var(--color-accent);
+        color: #ffffff;
+      }
+
+      .btn-primary:hover {
+        background: var(--color-accent-hover);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--color-text-secondary);
+        border: 1px solid var(--color-border);
+      }
+
+      .btn-secondary:hover {
+        border-color: var(--color-muted);
+        color: var(--color-text);
+      }
+
+      .btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      /* ── Preview section ── */
+      .preview-section {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--color-border);
+        display: none;
+      }
+
+      .preview-section.visible {
+        display: block;
+      }
+
+      .preview-label {
+        font-family: var(--font-heading);
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-muted);
+        margin-bottom: 0.75rem;
+      }
+
+      .preview-block {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        padding: 1rem 1.25rem;
+        overflow-x: auto;
+      }
+
+      .preview-block pre {
+        margin: 0;
+        font-family: var(--font-mono);
+        font-size: 0.82rem;
+        line-height: 1.7;
+        color: var(--color-text);
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      .preview-frontmatter {
+        color: var(--color-muted);
+      }
+
+      .preview-content {
+        color: var(--color-text);
+      }
+
+      /* ── Success message ── */
+      .success-msg {
+        display: none;
+        margin-top: 1rem;
+        padding: 0.75rem 1rem;
+        background: var(--color-surface);
+        border: 1px solid var(--color-accent);
+        border-radius: 6px;
+        font-size: 0.88rem;
+        color: var(--color-accent);
+      }
+
+      .success-msg.visible {
+        display: block;
+      }
+
+      /* ── Existing posts ── */
+      .existing-posts {
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--color-border);
+      }
+
+      .existing-posts-header {
+        font-family: var(--font-heading);
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-muted);
+        margin-bottom: 1rem;
+      }
+
+      .existing-posts-note {
+        font-size: 0.82rem;
+        color: var(--color-muted);
+        margin: -0.4rem 0 1rem 0;
+      }
+
+      .existing-post-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .existing-post-row:last-child {
+        border-bottom: none;
+      }
+
+      .existing-post-title {
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: var(--color-text);
+        text-decoration: none;
+        transition: color 0.15s ease;
+      }
+
+      .existing-post-title:hover {
+        color: var(--color-accent);
+      }
+
+      .existing-entry-title {
+        display: inline-block;
+      }
+
+      .existing-post-date {
+        font-size: 0.78rem;
+        color: var(--color-muted);
+        margin-left: 0.75rem;
+      }
+
+      .existing-entry-meta {
+        margin-top: 0.2rem;
+        font-size: 0.82rem;
+        color: var(--color-muted);
+      }
+
+      .existing-entry-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .btn-edit {
+        background: transparent;
+        font-family: var(--font-body);
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        padding: 0.25rem 0.7rem;
+        border-radius: 4px;
+        text-decoration: none;
+        color: var(--color-accent);
+        border: 1px solid var(--color-accent);
+        transition: background 0.15s ease, color 0.15s ease;
+        white-space: nowrap;
+        cursor: pointer;
+      }
+
+      .btn-edit:hover {
+        background: var(--color-accent);
+        color: #ffffff;
+      }
+
+      /* ── Focus states ── */
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--color-accent);
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 640px) {
+        .admin-container {
+          padding: 1.5rem 1.25rem 3rem;
+        }
+
+        .admin-tabs {
+          top: 0.5rem;
+          margin-bottom: 1.25rem;
+        }
+
+        .admin-tab {
+          padding: 0.6rem 0.8rem;
+          font-size: 0.8rem;
+        }
+
+        .form-row {
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .btn-row {
+          flex-direction: column;
+        }
+
+        .btn {
+          justify-content: center;
+        }
+
+        .existing-post-row {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .admin-title {
+          font-size: 1.4rem;
+        }
+      }
+
+      /* ── Section dividers ── */
+      .section-divider {
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--color-border);
+      }
+
+      .admin-panel > .section-divider {
+        margin-top: 0;
+        padding-top: 0;
+        border-top: none;
+      }
+
+      .section-header {
+        font-family: var(--font-heading);
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: var(--color-text);
+        margin: 0 0 0.25rem 0;
+      }
+
+      .section-subtitle {
+        font-size: 0.85rem;
+        color: var(--color-muted);
+        margin: 0 0 1.25rem 0;
+      }
+
+      /* ── Log form select ── */
+      .form-select {
+        width: 100%;
+        padding: 0.6rem 0.85rem;
+        font-family: var(--font-body);
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: var(--color-text);
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        transition: border-color 0.2s ease;
+        outline: none;
+        appearance: auto;
+      }
+
+      .form-select:focus {
+        border-color: var(--color-accent);
+      }
+
+      /* ── Log form textarea (shorter than blog content) ── */
+      .form-textarea-short {
+        min-height: 80px;
+      }
+
+      /* ── YAML output ── */
+      .yaml-output {
+        margin-top: 1.25rem;
+        display: none;
+      }
+
+      .yaml-output.visible {
+        display: block;
+      }
+
+      .yaml-output-label {
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--color-muted);
+        margin-bottom: 0.4rem;
+      }
+
+      .yaml-block {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        padding: 1rem 1.25rem;
+        overflow-x: auto;
+      }
+
+      .yaml-block pre {
+        margin: 0;
+        font-family: var(--font-mono);
+        font-size: 0.82rem;
+        line-height: 1.7;
+        color: var(--color-text);
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+
+      .yaml-actions {
+        display: flex;
+        gap: 0.75rem;
+        margin-top: 0.75rem;
+        align-items: center;
+      }
+
+      .copy-feedback {
+        font-size: 0.82rem;
+        color: var(--color-accent);
+        opacity: 0;
+        transition: opacity 0.2s ease;
+      }
+
+      .copy-feedback.visible {
+        opacity: 1;
+      }
+
+      /* ── Reduced motion ── */
+      @media (prefers-reduced-motion: reduce) {
+        body {
+          animation: none;
+        }
+
+        *, *::before, *::after {
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-icon"></span>
+    </button>
+
+    <div class="admin-container">
+      <a href="/" class="back-link">&larr; Back to site</a>
+
+      <div class="admin-header">
+        <h1 class="admin-title">Site Admin</h1>
+        <p class="admin-subtitle">Switch between content tools without scrolling through the whole page.</p>
+      </div>
+
+      <div class="admin-tabs" role="tablist" aria-label="Admin tools">
+        <button class="admin-tab active" type="button" id="tab-post" data-tab-button="post" role="tab" aria-selected="true" aria-controls="panel-post">Posts</button>
+        <button class="admin-tab" type="button" id="tab-food" data-tab-button="food" role="tab" aria-selected="false" aria-controls="panel-food" tabindex="-1">Food</button>
+        <button class="admin-tab" type="button" id="tab-movie" data-tab-button="movie" role="tab" aria-selected="false" aria-controls="panel-movie" tabindex="-1">Movies</button>
+        <button class="admin-tab" type="button" id="tab-book" data-tab-button="book" role="tab" aria-selected="false" aria-controls="panel-book" tabindex="-1">Books</button>
+        <button class="admin-tab" type="button" id="tab-paper" data-tab-button="paper" role="tab" aria-selected="false" aria-controls="panel-paper" tabindex="-1">Papers</button>
+        <button class="admin-tab" type="button" id="tab-tv" data-tab-button="tv" role="tab" aria-selected="false" aria-controls="panel-tv" tabindex="-1">TV</button>
+        <button class="admin-tab" type="button" id="tab-travel" data-tab-button="travel" role="tab" aria-selected="false" aria-controls="panel-travel" tabindex="-1">Travel</button>
+      </div>
+
+      <section class="admin-panel active" id="panel-post" data-tab-panel="post" role="tabpanel" aria-labelledby="tab-post">
+      <form id="post-form" onsubmit="return false;">
+        <div class="form-group">
+          <label class="form-label" for="post-title">Title</label>
+          <input class="form-input" type="text" id="post-title" placeholder="My New Post" required autocomplete="off">
+          <div class="slug-preview" id="slug-preview"></div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="post-date">Date</label>
+            <input class="form-input" type="date" id="post-date">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="post-tags">Tags <span class="optional">(comma-separated)</span></label>
+            <input class="form-input" type="text" id="post-tags" placeholder="research, python" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="post-subtitle">Subtitle <span class="optional">(optional)</span></label>
+          <input class="form-input" type="text" id="post-subtitle" placeholder="A brief description" autocomplete="off">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="post-content">Content <span class="optional">(Markdown)</span></label>
+          <textarea class="form-textarea" id="post-content" placeholder="Write your post here..."></textarea>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-secondary" type="button" id="preview-btn">Preview</button>
+          <button class="btn btn-primary" type="button" id="submit-btn" disabled>Open on GitHub</button>
+        </div>
+      </form>
+
+      <div class="preview-section" id="preview-section">
+        <div class="preview-label">Preview</div>
+        <div class="preview-block">
+          <pre id="preview-output"></pre>
+        </div>
+      </div>
+
+      <div class="success-msg" id="success-msg">
+        GitHub tab opened. Commit the file there to publish your post.
+      </div>
+
+      {% if site.posts.size > 0 %}
+      <div class="existing-posts">
+        <div class="existing-posts-header">Existing Posts</div>
+        {% for post in site.posts %}
+        <div class="existing-post-row">
+          <div>
+            <a href="{{ post.url }}" class="existing-post-title">{{ post.title }}</a>
+            <span class="existing-post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+          </div>
+          <a href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/{{ post.path }}" target="_blank" class="btn-edit">Edit</a>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      </section>
+
+      <section class="admin-panel" id="panel-food" data-tab-panel="food" role="tabpanel" aria-labelledby="tab-food" hidden>
+      <!-- ═══════════════ Food Log ═══════════════ -->
+      <div class="section-divider">
+        <h2 class="section-header">Add Food Entry</h2>
+        <p class="section-subtitle">Generate a YAML entry for your food log, then paste it into the data file on GitHub.</p>
+
+        <form id="food-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="food-restaurant">Restaurant</label>
+            <input class="form-input" type="text" id="food-restaurant" placeholder="Restaurant name" required autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="food-location">Location</label>
+              <input class="form-input" type="text" id="food-location" placeholder="Chicago, IL" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="food-neighborhood">Neighborhood</label>
+              <input class="form-input" type="text" id="food-neighborhood" placeholder="West Loop, Lincoln Park, etc." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="food-cuisine">Cuisine</label>
+              <input class="form-input" type="text" id="food-cuisine" placeholder="Italian, Japanese, etc." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="food-price">Price</label>
+              <select class="form-select" id="food-price">
+                <option value="">--</option>
+                <option value="1">$ (under $15)</option>
+                <option value="2">$$ ($15-30)</option>
+                <option value="3">$$$ ($30-60)</option>
+                <option value="4">$$$$ ($60-100)</option>
+                <option value="5">$$$$$ ($100+)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="food-rating">Overall Rating (/10)</label>
+              <select class="form-select" id="food-rating">
+                <option value="">--</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+                <option value="3.5">3.5</option>
+                <option value="4">4</option>
+                <option value="4.5">4.5</option>
+                <option value="5">5</option>
+                <option value="5.5">5.5</option>
+                <option value="6">6</option>
+                <option value="6.5">6.5</option>
+                <option value="7">7</option>
+                <option value="7.5">7.5</option>
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+                <option value="9.5">9.5</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="food-date">Last Visit</label>
+              <input class="form-input" type="date" id="food-date">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="food-notes">Notes <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="food-notes" placeholder="General notes about the restaurant..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Dishes <span class="optional">(optional)</span></label>
+            <div id="food-dishes-list"></div>
+            <button class="btn btn-secondary" type="button" id="food-add-dish-btn" style="margin-top: 0.4rem;">+ Add Dish</button>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="food-favorite">
+            <label for="food-favorite">Favorite</label>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" type="button" id="food-generate-btn">Generate YAML</button>
+          </div>
+        </form>
+
+        <div class="yaml-output" id="food-yaml-output">
+          <div class="yaml-output-label">Generated YAML</div>
+          <div class="yaml-block">
+            <pre id="food-yaml-pre"></pre>
+          </div>
+          <div class="yaml-actions">
+            <button class="btn btn-secondary" type="button" id="food-copy-btn">Copy</button>
+            <a class="btn btn-primary" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_data/food.yml" target="_blank">Edit food.yml on GitHub</a>
+            <span class="copy-feedback" id="food-copy-feedback">Copied!</span>
+          </div>
+        </div>
+
+        {% assign admin_food_entries = site.data.food | sort: "last_visit" | reverse %}
+        {% if admin_food_entries.size > 0 %}
+        <div class="existing-posts">
+          <div class="existing-posts-header">Existing Food Entries</div>
+          <p class="existing-posts-note">Load an entry into the form, revise it, then regenerate YAML to replace it in <code>food.yml</code>.</p>
+          {% for item in admin_food_entries %}
+          <div class="existing-post-row">
+            <div>
+              <span class="existing-post-title existing-entry-title">{{ item.restaurant }}</span>
+              {% if item.last_visit %}<span class="existing-post-date">{{ item.last_visit | date: "%B %-d, %Y" }}</span>{% endif %}
+              {% if item.cuisine or item.neighborhood %}
+              <div class="existing-entry-meta">
+                {% if item.cuisine %}{{ item.cuisine }}{% endif %}{% if item.neighborhood %}{% if item.cuisine %} · {% endif %}{{ item.neighborhood }}{% endif %}
+              </div>
+              {% endif %}
+            </div>
+            <div class="existing-entry-actions">
+              <button class="btn-edit" type="button" data-load-entry="food" data-entry='{{ item | jsonify | escape }}'>Load</button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      </section>
+
+      <section class="admin-panel" id="panel-movie" data-tab-panel="movie" role="tabpanel" aria-labelledby="tab-movie" hidden>
+      <!-- ═══════════════ Movie Log ═══════════════ -->
+      <div class="section-divider">
+        <h2 class="section-header">Add Movie Entry</h2>
+        <p class="section-subtitle">Generate a YAML entry for your movie log, then paste it into the data file on GitHub.</p>
+
+        <form id="movie-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="movie-title">Title</label>
+            <input class="form-input" type="text" id="movie-title" placeholder="Movie title" required autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="movie-year">Year</label>
+              <input class="form-input" type="number" id="movie-year" placeholder="2026" min="1888" max="2099" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="movie-director">Director</label>
+              <input class="form-input" type="text" id="movie-director" placeholder="Director name" autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="movie-genre">Genre</label>
+            <input class="form-input" type="text" id="movie-genre" placeholder="Drama, Sci-Fi, etc." autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="movie-rating">Rating</label>
+              <select class="form-select" id="movie-rating">
+                <option value="">--</option>
+                <option value="0.5">0.5</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+                <option value="3.5">3.5</option>
+                <option value="4">4</option>
+                <option value="4.5">4.5</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="movie-date">Date Watched</label>
+              <input class="form-input" type="date" id="movie-date">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="movie-review">Review <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="movie-review" placeholder="Brief review..."></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="movie-favorite">
+            <label for="movie-favorite">Favorite</label>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" type="button" id="movie-generate-btn">Generate YAML</button>
+          </div>
+        </form>
+
+        <div class="yaml-output" id="movie-yaml-output">
+          <div class="yaml-output-label">Generated YAML</div>
+          <div class="yaml-block">
+            <pre id="movie-yaml-pre"></pre>
+          </div>
+          <div class="yaml-actions">
+            <button class="btn btn-secondary" type="button" id="movie-copy-btn">Copy</button>
+            <a class="btn btn-primary" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_data/movies.yml" target="_blank">Edit movies.yml on GitHub</a>
+            <span class="copy-feedback" id="movie-copy-feedback">Copied!</span>
+          </div>
+        </div>
+
+        {% assign admin_movie_entries = site.data.movies | sort: "date_watched" | reverse %}
+        {% if admin_movie_entries.size > 0 %}
+        <div class="existing-posts">
+          <div class="existing-posts-header">Existing Movie Entries</div>
+          <p class="existing-posts-note">Load an entry into the form, revise it, then regenerate YAML to replace it in <code>movies.yml</code>.</p>
+          {% for item in admin_movie_entries %}
+          <div class="existing-post-row">
+            <div>
+              <span class="existing-post-title existing-entry-title">{{ item.title }}</span>
+              {% if item.date_watched %}<span class="existing-post-date">{{ item.date_watched | date: "%B %-d, %Y" }}</span>{% endif %}
+              {% if item.year or item.director %}
+              <div class="existing-entry-meta">
+                {% if item.year %}{{ item.year }}{% endif %}{% if item.director %}{% if item.year %} · {% endif %}{{ item.director }}{% endif %}
+              </div>
+              {% endif %}
+            </div>
+            <div class="existing-entry-actions">
+              <button class="btn-edit" type="button" data-load-entry="movie" data-entry='{{ item | jsonify | escape }}'>Load</button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      </section>
+
+      <section class="admin-panel" id="panel-book" data-tab-panel="book" role="tabpanel" aria-labelledby="tab-book" hidden>
+      <!-- ═══════════════ Book Log ═══════════════ -->
+      <div class="section-divider">
+        <h2 class="section-header">Add Book Entry</h2>
+        <p class="section-subtitle">Generate a YAML entry for your book log, then paste it into the data file on GitHub.</p>
+
+        <form id="book-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="book-title">Title</label>
+            <input class="form-input" type="text" id="book-title" placeholder="Book title" required autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="book-author">Author</label>
+              <input class="form-input" type="text" id="book-author" placeholder="Author name" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="book-genre">Genre</label>
+              <input class="form-input" type="text" id="book-genre" placeholder="Philosophy, Fiction, etc." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="book-rating">Rating</label>
+              <select class="form-select" id="book-rating">
+                <option value="">--</option>
+                <option value="0.5">0.5</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+                <option value="3.5">3.5</option>
+                <option value="4">4</option>
+                <option value="4.5">4.5</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="book-date">Date Read</label>
+              <input class="form-input" type="date" id="book-date">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="book-review">Review <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="book-review" placeholder="Brief review..."></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="book-favorite">
+            <label for="book-favorite">Favorite</label>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" type="button" id="book-generate-btn">Generate YAML</button>
+          </div>
+        </form>
+
+        <div class="yaml-output" id="book-yaml-output">
+          <div class="yaml-output-label">Generated YAML</div>
+          <div class="yaml-block">
+            <pre id="book-yaml-pre"></pre>
+          </div>
+          <div class="yaml-actions">
+            <button class="btn btn-secondary" type="button" id="book-copy-btn">Copy</button>
+            <a class="btn btn-primary" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_data/books.yml" target="_blank">Edit books.yml on GitHub</a>
+            <span class="copy-feedback" id="book-copy-feedback">Copied!</span>
+          </div>
+        </div>
+
+        {% assign admin_book_entries = site.data.books | sort: "date_read" | reverse %}
+        {% if admin_book_entries.size > 0 %}
+        <div class="existing-posts">
+          <div class="existing-posts-header">Existing Book Entries</div>
+          <p class="existing-posts-note">Load an entry into the form, revise it, then regenerate YAML to replace it in <code>books.yml</code>.</p>
+          {% for item in admin_book_entries %}
+          <div class="existing-post-row">
+            <div>
+              <span class="existing-post-title existing-entry-title">{{ item.title }}</span>
+              {% if item.date_read %}<span class="existing-post-date">{{ item.date_read | date: "%B %-d, %Y" }}</span>{% endif %}
+              {% if item.author or item.genre %}
+              <div class="existing-entry-meta">
+                {% if item.author %}{{ item.author }}{% endif %}{% if item.genre %}{% if item.author %} · {% endif %}{{ item.genre }}{% endif %}
+              </div>
+              {% endif %}
+            </div>
+            <div class="existing-entry-actions">
+              <button class="btn-edit" type="button" data-load-entry="book" data-entry='{{ item | jsonify | escape }}'>Load</button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      </section>
+
+      <section class="admin-panel" id="panel-paper" data-tab-panel="paper" role="tabpanel" aria-labelledby="tab-paper" hidden>
+      <!-- ═══════════════ Paper Log ═══════════════ -->
+      <div class="section-divider">
+        <h2 class="section-header">Add Paper Entry</h2>
+        <p class="section-subtitle">Generate a YAML entry for your paper log, then paste it into the data file on GitHub.</p>
+
+        <form id="paper-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="paper-title">Title</label>
+            <input class="form-input" type="text" id="paper-title" placeholder="Paper title" required autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="paper-authors">Authors</label>
+              <input class="form-input" type="text" id="paper-authors" placeholder="Smith et al." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="paper-journal">Journal</label>
+              <input class="form-input" type="text" id="paper-journal" placeholder="Nature, Science, etc." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="paper-year">Year Published</label>
+              <input class="form-input" type="number" id="paper-year" placeholder="2026" min="1900" max="2099" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="paper-field">Field</label>
+              <input class="form-input" type="text" id="paper-field" placeholder="Computational Biology, Genetics, etc." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="paper-date">Date Read</label>
+            <input class="form-input" type="date" id="paper-date">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="paper-notes">Notes <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="paper-notes" placeholder="Why it was interesting, key takeaways..."></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="paper-favorite">
+            <label for="paper-favorite">Favorite</label>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" type="button" id="paper-generate-btn">Generate YAML</button>
+          </div>
+        </form>
+
+        <div class="yaml-output" id="paper-yaml-output">
+          <div class="yaml-output-label">Generated YAML</div>
+          <div class="yaml-block">
+            <pre id="paper-yaml-pre"></pre>
+          </div>
+          <div class="yaml-actions">
+            <button class="btn btn-secondary" type="button" id="paper-copy-btn">Copy</button>
+            <a class="btn btn-primary" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_data/papers.yml" target="_blank">Edit papers.yml on GitHub</a>
+            <span class="copy-feedback" id="paper-copy-feedback">Copied!</span>
+          </div>
+        </div>
+
+        {% assign admin_paper_entries = site.data.papers | sort: "date_read" | reverse %}
+        {% if admin_paper_entries.size > 0 %}
+        <div class="existing-posts">
+          <div class="existing-posts-header">Existing Paper Entries</div>
+          <p class="existing-posts-note">Load an entry into the form, revise it, then regenerate YAML to replace it in <code>papers.yml</code>.</p>
+          {% for item in admin_paper_entries %}
+          <div class="existing-post-row">
+            <div>
+              <span class="existing-post-title existing-entry-title">{{ item.title }}</span>
+              {% if item.date_read %}<span class="existing-post-date">{{ item.date_read | date: "%B %-d, %Y" }}</span>{% endif %}
+              {% if item.journal or item.year %}
+              <div class="existing-entry-meta">
+                {% if item.journal %}{{ item.journal }}{% endif %}{% if item.year %}{% if item.journal %} · {% endif %}{{ item.year }}{% endif %}
+              </div>
+              {% endif %}
+            </div>
+            <div class="existing-entry-actions">
+              <button class="btn-edit" type="button" data-load-entry="paper" data-entry='{{ item | jsonify | escape }}'>Load</button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      </section>
+
+      <section class="admin-panel" id="panel-tv" data-tab-panel="tv" role="tabpanel" aria-labelledby="tab-tv" hidden>
+      <!-- ═══════════════ TV Log ═══════════════ -->
+      <div class="section-divider">
+        <h2 class="section-header">Add TV Entry</h2>
+        <p class="section-subtitle">Generate a YAML entry for your TV log, then paste it into the data file on GitHub.</p>
+
+        <form id="tv-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="tv-title">Title</label>
+            <input class="form-input" type="text" id="tv-title" placeholder="Show title" required autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="tv-season">Season</label>
+              <input class="form-input" type="text" id="tv-season" placeholder="Season 1, Limited Series, etc." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="tv-genre">Genre</label>
+              <input class="form-input" type="text" id="tv-genre" placeholder="Drama, Comedy, etc." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="tv-status">Status</label>
+              <select class="form-select" id="tv-status">
+                <option value="">--</option>
+                <option value="Watching">Watching</option>
+                <option value="Completed">Completed</option>
+                <option value="Dropped">Dropped</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="tv-rating">Rating</label>
+              <select class="form-select" id="tv-rating">
+                <option value="">--</option>
+                <option value="0.5">0.5</option>
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+                <option value="3.5">3.5</option>
+                <option value="4">4</option>
+                <option value="4.5">4.5</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tv-date">Date Watched</label>
+            <input class="form-input" type="date" id="tv-date">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="tv-review">Review <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="tv-review" placeholder="Brief review..."></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="tv-favorite">
+            <label for="tv-favorite">Favorite</label>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" type="button" id="tv-generate-btn">Generate YAML</button>
+          </div>
+        </form>
+
+        <div class="yaml-output" id="tv-yaml-output">
+          <div class="yaml-output-label">Generated YAML</div>
+          <div class="yaml-block">
+            <pre id="tv-yaml-pre"></pre>
+          </div>
+          <div class="yaml-actions">
+            <button class="btn btn-secondary" type="button" id="tv-copy-btn">Copy</button>
+            <a class="btn btn-primary" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_data/tv.yml" target="_blank">Edit tv.yml on GitHub</a>
+            <span class="copy-feedback" id="tv-copy-feedback">Copied!</span>
+          </div>
+        </div>
+
+        {% assign admin_tv_entries = site.data.tv | sort: "date_watched" | reverse %}
+        {% if admin_tv_entries.size > 0 %}
+        <div class="existing-posts">
+          <div class="existing-posts-header">Existing TV Entries</div>
+          <p class="existing-posts-note">Load an entry into the form, revise it, then regenerate YAML to replace it in <code>tv.yml</code>.</p>
+          {% for item in admin_tv_entries %}
+          <div class="existing-post-row">
+            <div>
+              <span class="existing-post-title existing-entry-title">{{ item.title }}</span>
+              {% if item.date_watched %}<span class="existing-post-date">{{ item.date_watched | date: "%B %-d, %Y" }}</span>{% endif %}
+              {% if item.season or item.status %}
+              <div class="existing-entry-meta">
+                {% if item.season %}{{ item.season }}{% endif %}{% if item.status %}{% if item.season %} · {% endif %}{{ item.status }}{% endif %}
+              </div>
+              {% endif %}
+            </div>
+            <div class="existing-entry-actions">
+              <button class="btn-edit" type="button" data-load-entry="tv" data-entry='{{ item | jsonify | escape }}'>Load</button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      </section>
+
+      <section class="admin-panel" id="panel-travel" data-tab-panel="travel" role="tabpanel" aria-labelledby="tab-travel" hidden>
+      <!-- ═══════════════ Travel Log ═══════════════ -->
+      <div class="section-divider">
+        <h2 class="section-header">Add Travel Entry</h2>
+        <p class="section-subtitle">Generate a YAML entry for your travel log, then paste it into the data file on GitHub.</p>
+
+        <form id="travel-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="travel-destination">Destination</label>
+            <input class="form-input" type="text" id="travel-destination" placeholder="City or region" required autocomplete="off">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="travel-country">Country</label>
+              <input class="form-input" type="text" id="travel-country" placeholder="United States, UK, etc." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="travel-purpose">Purpose</label>
+              <select class="form-select" id="travel-purpose">
+                <option value="">--</option>
+                <option value="Conference">Conference</option>
+                <option value="Research">Research</option>
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="travel-country-code">Country Code</label>
+              <select class="form-select" id="travel-country-code">
+                <option value="">--</option>
+                <option value="US">US</option><option value="CA">CA</option><option value="MX">MX</option><option value="GT">GT</option><option value="BZ">BZ</option><option value="HN">HN</option><option value="SV">SV</option><option value="NI">NI</option><option value="CR">CR</option><option value="PA">PA</option><option value="CO">CO</option><option value="VE">VE</option><option value="EC">EC</option><option value="PE">PE</option><option value="BR">BR</option><option value="BO">BO</option><option value="PY">PY</option><option value="UY">UY</option><option value="AR">AR</option><option value="CL">CL</option>
+                <option value="GB">GB</option><option value="IE">IE</option><option value="IS">IS</option><option value="FR">FR</option><option value="ES">ES</option><option value="PT">PT</option><option value="DE">DE</option><option value="IT">IT</option><option value="CH">CH</option><option value="AT">AT</option><option value="NL">NL</option><option value="BE">BE</option><option value="LU">LU</option><option value="DK">DK</option><option value="NO">NO</option><option value="SE">SE</option><option value="FI">FI</option><option value="PL">PL</option><option value="CZ">CZ</option><option value="SK">SK</option><option value="HU">HU</option><option value="RO">RO</option><option value="BG">BG</option><option value="GR">GR</option><option value="HR">HR</option><option value="RS">RS</option><option value="UA">UA</option>
+                <option value="RU">RU</option><option value="TR">TR</option><option value="EG">EG</option><option value="MA">MA</option><option value="ZA">ZA</option><option value="KE">KE</option><option value="TZ">TZ</option><option value="NG">NG</option><option value="GH">GH</option><option value="ET">ET</option>
+                <option value="IL">IL</option><option value="AE">AE</option><option value="SA">SA</option><option value="QA">QA</option><option value="JO">JO</option>
+                <option value="IN">IN</option><option value="CN">CN</option><option value="JP">JP</option><option value="KR">KR</option><option value="TW">TW</option><option value="TH">TH</option><option value="VN">VN</option><option value="PH">PH</option><option value="MY">MY</option><option value="SG">SG</option><option value="ID">ID</option><option value="AU">AU</option><option value="NZ">NZ</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="travel-state-code">US State <span class="optional">(if US)</span></label>
+              <select class="form-select" id="travel-state-code" disabled>
+                <option value="">--</option>
+                <option value="AL">AL</option><option value="AK">AK</option><option value="AZ">AZ</option><option value="AR">AR</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="IA">IA</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="ME">ME</option><option value="MD">MD</option><option value="MA">MA</option><option value="MI">MI</option><option value="MN">MN</option><option value="MS">MS</option><option value="MO">MO</option><option value="MT">MT</option><option value="NE">NE</option><option value="NV">NV</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NY">NY</option><option value="NC">NC</option><option value="ND">ND</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VT">VT</option><option value="VA">VA</option><option value="WA">WA</option><option value="WV">WV</option><option value="WI">WI</option><option value="WY">WY</option><option value="DC">DC</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="travel-date">Trip Date</label>
+            <input class="form-input" type="date" id="travel-date">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="travel-highlights">Highlights <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="travel-highlights" placeholder="Best parts of the trip..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="travel-notes">Notes <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="travel-notes" placeholder="General notes..."></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="travel-favorite">
+            <label for="travel-favorite">Favorite</label>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" type="button" id="travel-generate-btn">Generate YAML</button>
+          </div>
+        </form>
+
+        <div class="yaml-output" id="travel-yaml-output">
+          <div class="yaml-output-label">Generated YAML</div>
+          <div class="yaml-block">
+            <pre id="travel-yaml-pre"></pre>
+          </div>
+          <div class="yaml-actions">
+            <button class="btn btn-secondary" type="button" id="travel-copy-btn">Copy</button>
+            <a class="btn btn-primary" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_data/travel.yml" target="_blank">Edit travel.yml on GitHub</a>
+            <span class="copy-feedback" id="travel-copy-feedback">Copied!</span>
+          </div>
+        </div>
+
+        {% assign admin_travel_entries = site.data.travel | sort: "trip_date" | reverse %}
+        {% if admin_travel_entries.size > 0 %}
+        <div class="existing-posts">
+          <div class="existing-posts-header">Existing Travel Entries</div>
+          <p class="existing-posts-note">Load an entry into the form, revise it, then regenerate YAML to replace it in <code>travel.yml</code>.</p>
+          {% for item in admin_travel_entries %}
+          <div class="existing-post-row">
+            <div>
+              <span class="existing-post-title existing-entry-title">{{ item.destination }}</span>
+              {% if item.trip_date %}<span class="existing-post-date">{{ item.trip_date | date: "%B %-d, %Y" }}</span>{% endif %}
+              {% if item.country or item.purpose %}
+              <div class="existing-entry-meta">
+                {% if item.country %}{{ item.country }}{% endif %}{% if item.purpose %}{% if item.country %} · {% endif %}{{ item.purpose }}{% endif %}
+              </div>
+              {% endif %}
+            </div>
+            <div class="existing-entry-actions">
+              <button class="btn-edit" type="button" data-load-entry="travel" data-entry='{{ item | jsonify | escape }}'>Load</button>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- ═══════════════ Past Travel (visited.yml) ═══════════════ -->
+      <div class="section-divider">
+        <h2 class="section-header">Past Travel</h2>
+        <p class="section-subtitle">Add countries and states visited before the website. These show on the map but not in the diary.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Add Countries</label>
+            <select class="form-select" id="visited-country-select">
+              <option value="">Select a country...</option>
+              <option value="US">US</option><option value="CA">CA</option><option value="MX">MX</option><option value="GT">GT</option><option value="BZ">BZ</option><option value="HN">HN</option><option value="SV">SV</option><option value="NI">NI</option><option value="CR">CR</option><option value="PA">PA</option><option value="CO">CO</option><option value="VE">VE</option><option value="EC">EC</option><option value="PE">PE</option><option value="BR">BR</option><option value="BO">BO</option><option value="PY">PY</option><option value="UY">UY</option><option value="AR">AR</option><option value="CL">CL</option>
+              <option value="GB">GB</option><option value="IE">IE</option><option value="IS">IS</option><option value="FR">FR</option><option value="ES">ES</option><option value="PT">PT</option><option value="DE">DE</option><option value="IT">IT</option><option value="CH">CH</option><option value="AT">AT</option><option value="NL">NL</option><option value="BE">BE</option><option value="LU">LU</option><option value="DK">DK</option><option value="NO">NO</option><option value="SE">SE</option><option value="FI">FI</option><option value="PL">PL</option><option value="CZ">CZ</option><option value="SK">SK</option><option value="HU">HU</option><option value="RO">RO</option><option value="BG">BG</option><option value="GR">GR</option><option value="HR">HR</option><option value="RS">RS</option><option value="UA">UA</option>
+              <option value="RU">RU</option><option value="TR">TR</option><option value="EG">EG</option><option value="MA">MA</option><option value="ZA">ZA</option><option value="KE">KE</option><option value="TZ">TZ</option><option value="NG">NG</option><option value="GH">GH</option><option value="ET">ET</option>
+              <option value="IL">IL</option><option value="AE">AE</option><option value="SA">SA</option><option value="QA">QA</option><option value="JO">JO</option>
+              <option value="IN">IN</option><option value="CN">CN</option><option value="JP">JP</option><option value="KR">KR</option><option value="TW">TW</option><option value="TH">TH</option><option value="VN">VN</option><option value="PH">PH</option><option value="MY">MY</option><option value="SG">SG</option><option value="ID">ID</option><option value="AU">AU</option><option value="NZ">NZ</option>
+            </select>
+            <div id="visited-countries-list" class="past-tag-list"></div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Add US States</label>
+            <select class="form-select" id="visited-state-select">
+              <option value="">Select a state...</option>
+              <option value="AL">AL</option><option value="AK">AK</option><option value="AZ">AZ</option><option value="AR">AR</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="IA">IA</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="ME">ME</option><option value="MD">MD</option><option value="MA">MA</option><option value="MI">MI</option><option value="MN">MN</option><option value="MS">MS</option><option value="MO">MO</option><option value="MT">MT</option><option value="NE">NE</option><option value="NV">NV</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NY">NY</option><option value="NC">NC</option><option value="ND">ND</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VT">VT</option><option value="VA">VA</option><option value="WA">WA</option><option value="WV">WV</option><option value="WI">WI</option><option value="WY">WY</option><option value="DC">DC</option>
+            </select>
+            <div id="visited-states-list" class="past-tag-list"></div>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-primary" type="button" id="visited-generate-btn">Generate YAML</button>
+        </div>
+
+        <div class="yaml-output" id="visited-yaml-output">
+          <div class="yaml-output-label">Generated YAML</div>
+          <div class="yaml-block">
+            <pre id="visited-yaml-pre"></pre>
+          </div>
+          <div class="yaml-actions">
+            <button class="btn btn-secondary" type="button" id="visited-copy-btn">Copy</button>
+            <a class="btn btn-primary" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_data/visited.yml" target="_blank">Edit visited.yml on GitHub</a>
+            <span class="copy-feedback" id="visited-copy-feedback">Copied!</span>
+          </div>
+        </div>
+      </div>
+
+      </section>
+
+    </div>
+
+    <script>
+    (function () {
+      // ── Theme toggle ──
+      var toggle = document.getElementById('theme-toggle');
+      var icon = toggle ? toggle.querySelector('.theme-toggle-icon') : null;
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        if (icon) icon.textContent = theme === 'dark' ? '\u2600' : '\u263D';
+        if (toggle) toggle.setAttribute('aria-label',
+          theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+
+      applyTheme(document.documentElement.getAttribute('data-theme') || 'light');
+
+      if (toggle) {
+        toggle.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme');
+          var next = current === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', next);
+          applyTheme(next);
+        });
+      }
+
+      // ── Tabbed admin panels ──
+      var tabButtons = Array.prototype.slice.call(document.querySelectorAll('[data-tab-button]'));
+      var tabPanels = Array.prototype.slice.call(document.querySelectorAll('[data-tab-panel]'));
+      var tabList = document.querySelector('.admin-tabs');
+
+      function hasTab(name) {
+        return tabPanels.some(function (panel) {
+          return panel.getAttribute('data-tab-panel') === name;
+        });
+      }
+
+      function setActiveTab(name, options) {
+        var opts = options || {};
+        var tabName = hasTab(name) ? name : 'post';
+
+        tabButtons.forEach(function (button) {
+          var isActive = button.getAttribute('data-tab-button') === tabName;
+          button.classList.toggle('active', isActive);
+          button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          button.setAttribute('tabindex', isActive ? '0' : '-1');
+          if (isActive && opts.focusButton) button.focus();
+        });
+
+        tabPanels.forEach(function (panel) {
+          var isActive = panel.getAttribute('data-tab-panel') === tabName;
+          panel.classList.toggle('active', isActive);
+          panel.hidden = !isActive;
+        });
+
+        localStorage.setItem('adminActiveTab', tabName);
+        if (opts.updateHash !== false && window.location.hash !== '#' + tabName) {
+          history.replaceState(null, '', '#' + tabName);
+        }
+      }
+
+      tabButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          setActiveTab(button.getAttribute('data-tab-button'));
+        });
+      });
+
+      if (tabList) {
+        tabList.addEventListener('keydown', function (event) {
+          var currentIndex = tabButtons.findIndex(function (button) {
+            return button.getAttribute('aria-selected') === 'true';
+          });
+          var nextIndex = currentIndex;
+
+          if (event.key === 'ArrowRight') nextIndex = (currentIndex + 1) % tabButtons.length;
+          if (event.key === 'ArrowLeft') nextIndex = (currentIndex - 1 + tabButtons.length) % tabButtons.length;
+          if (event.key === 'Home') nextIndex = 0;
+          if (event.key === 'End') nextIndex = tabButtons.length - 1;
+
+          if (nextIndex !== currentIndex) {
+            event.preventDefault();
+            setActiveTab(tabButtons[nextIndex].getAttribute('data-tab-button'), { focusButton: true });
+          }
+        });
+      }
+
+      window.addEventListener('hashchange', function () {
+        var hashTab = window.location.hash.replace(/^#/, '');
+        if (hashTab) setActiveTab(hashTab, { updateHash: false });
+      });
+
+      var initialTab = window.location.hash.replace(/^#/, '') || localStorage.getItem('adminActiveTab') || 'post';
+      setActiveTab(initialTab, { updateHash: !!window.location.hash });
+
+      // ── Form elements ──
+      var titleInput = document.getElementById('post-title');
+      var dateInput = document.getElementById('post-date');
+      var tagsInput = document.getElementById('post-tags');
+      var subtitleInput = document.getElementById('post-subtitle');
+      var contentInput = document.getElementById('post-content');
+      var slugPreview = document.getElementById('slug-preview');
+      var previewBtn = document.getElementById('preview-btn');
+      var submitBtn = document.getElementById('submit-btn');
+      var previewSection = document.getElementById('preview-section');
+      var previewOutput = document.getElementById('preview-output');
+      var successMsg = document.getElementById('success-msg');
+
+      // ── Set default date to today ──
+      var today = new Date();
+      var yyyy = today.getFullYear();
+      var mm = String(today.getMonth() + 1).padStart(2, '0');
+      var dd = String(today.getDate()).padStart(2, '0');
+      dateInput.value = yyyy + '-' + mm + '-' + dd;
+
+      // ── Slug generation ──
+      function toSlug(text) {
+        return text
+          .toLowerCase()
+          .trim()
+          .replace(/[^\w\s-]/g, '')
+          .replace(/[\s_]+/g, '-')
+          .replace(/-+/g, '-')
+          .replace(/^-+|-+$/g, '');
+      }
+
+      function getFilename() {
+        var slug = toSlug(titleInput.value);
+        if (!slug) return '';
+        return '_posts/' + dateInput.value + '-' + slug + '.md';
+      }
+
+      function updateSlugPreview() {
+        var fn = getFilename();
+        slugPreview.textContent = fn ? fn : '';
+        submitBtn.disabled = !titleInput.value.trim();
+      }
+
+      titleInput.addEventListener('input', updateSlugPreview);
+      dateInput.addEventListener('input', updateSlugPreview);
+
+      // ── Build file content ──
+      function buildContent() {
+        var title = titleInput.value.trim();
+        var subtitle = subtitleInput.value.trim();
+        var tagsRaw = tagsInput.value.trim();
+        var content = contentInput.value;
+
+        // Parse tags: comma-separated, trim each
+        var tags = tagsRaw
+          ? tagsRaw.split(',').map(function (t) { return t.trim(); }).filter(Boolean).join(' ')
+          : '';
+
+        var lines = ['---'];
+        lines.push('layout: post');
+        lines.push('title: "' + title.replace(/"/g, '\\"') + '"');
+        lines.push('author: Benjamin Kramer');
+        if (subtitle) {
+          lines.push('subtitle: "' + subtitle.replace(/"/g, '\\"') + '"');
+        }
+        if (tags) {
+          lines.push('tags: ' + tags);
+        }
+        lines.push('---');
+        lines.push('');
+        lines.push(content);
+
+        return lines.join('\n');
+      }
+
+      // ── Preview ──
+      previewBtn.addEventListener('click', function () {
+        var output = buildContent();
+        previewOutput.textContent = output;
+        previewSection.classList.add('visible');
+        previewSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      // ── Submit: open GitHub create-file URL ──
+      submitBtn.addEventListener('click', function () {
+        var title = titleInput.value.trim();
+        if (!title) return;
+
+        var filename = getFilename();
+        var fileContent = buildContent();
+
+        var url = 'https://github.com/benjaminkramer50/benjaminkramer50.github.io/new/main'
+          + '?filename=' + encodeURIComponent(filename)
+          + '&value=' + encodeURIComponent(fileContent);
+
+        window.open(url, '_blank');
+        successMsg.classList.add('visible');
+      });
+
+      // ── Helper: set default date for log forms ──
+      var todayStr = yyyy + '-' + mm + '-' + dd;
+
+      function setDefaultDate(id) {
+        var el = document.getElementById(id);
+        if (el) el.value = todayStr;
+      }
+
+      setDefaultDate('food-date');
+      setDefaultDate('movie-date');
+      setDefaultDate('book-date');
+      setDefaultDate('paper-date');
+      setDefaultDate('tv-date');
+      setDefaultDate('travel-date');
+
+      // ── Helper: escape YAML string ──
+      function yamlStr(val) {
+        if (!val) return '""';
+        // Quote if it contains special chars
+        if (/[:#\[\]{}&*!|>'"%@`,?]/.test(val) || val !== val.trim()) {
+          return '"' + val.replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '"';
+        }
+        return '"' + val + '"';
+      }
+
+      // ── Helper: copy to clipboard with feedback ──
+      function copyToClipboard(text, feedbackId) {
+        navigator.clipboard.writeText(text).then(function () {
+          var fb = document.getElementById(feedbackId);
+          if (fb) {
+            fb.classList.add('visible');
+            setTimeout(function () { fb.classList.remove('visible'); }, 1500);
+          }
+        });
+      }
+
+      function setFieldValue(id, value) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.value = value === undefined || value === null ? '' : String(value);
+      }
+
+      function setFieldChecked(id, value) {
+        var el = document.getElementById(id);
+        if (el) el.checked = !!value;
+      }
+
+      function hideYamlOutput(id) {
+        var output = document.getElementById(id);
+        if (output) output.classList.remove('visible');
+      }
+
+      function scrollToPanelStart(panelName) {
+        var panel = document.querySelector('[data-tab-panel="' + panelName + '"]');
+        if (panel) panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      // ═══════════════ Food Log ═══════════════
+      var foodDishCount = 0;
+
+      function addFoodDishRow(dish) {
+        foodDishCount++;
+        var idx = foodDishCount;
+        var row = document.createElement('div');
+        row.className = 'dish-form-row';
+        row.style.cssText = 'display:flex;gap:0.5rem;align-items:flex-start;margin-bottom:0.4rem;flex-wrap:wrap;';
+
+        var nameInput = document.createElement('input');
+        nameInput.className = 'form-input';
+        nameInput.type = 'text';
+        nameInput.placeholder = 'Dish name';
+        nameInput.style.cssText = 'flex:2;min-width:120px;';
+        nameInput.setAttribute('data-dish-name', idx);
+        nameInput.value = dish && dish.name ? dish.name : '';
+
+        var ratingSelect = document.createElement('select');
+        ratingSelect.className = 'form-select';
+        ratingSelect.style.cssText = 'flex:0 0 70px;';
+        ratingSelect.setAttribute('data-dish-rating', idx);
+        ['', '1', '1.5', '2', '2.5', '3', '3.5', '4', '4.5', '5'].forEach(function (rating) {
+          var option = document.createElement('option');
+          option.value = rating;
+          option.textContent = rating || '--';
+          ratingSelect.appendChild(option);
+        });
+        ratingSelect.value = dish && dish.rating !== undefined && dish.rating !== null ? String(dish.rating) : '';
+
+        var notesInput = document.createElement('input');
+        notesInput.className = 'form-input';
+        notesInput.type = 'text';
+        notesInput.placeholder = 'Notes (optional)';
+        notesInput.style.cssText = 'flex:3;min-width:140px;';
+        notesInput.setAttribute('data-dish-notes', idx);
+        notesInput.value = dish && dish.notes ? dish.notes : '';
+
+        var removeButton = document.createElement('button');
+        removeButton.type = 'button';
+        removeButton.style.cssText = 'flex:0 0 auto;background:none;border:none;color:var(--color-muted);cursor:pointer;font-size:1.1rem;padding:0.3rem;';
+        removeButton.textContent = '\u00d7';
+        removeButton.addEventListener('click', function () {
+          row.remove();
+        });
+
+        row.appendChild(nameInput);
+        row.appendChild(ratingSelect);
+        row.appendChild(notesInput);
+        row.appendChild(removeButton);
+        document.getElementById('food-dishes-list').appendChild(row);
+      }
+
+      function clearFoodDishRows() {
+        foodDishCount = 0;
+        document.getElementById('food-dishes-list').innerHTML = '';
+      }
+
+      document.getElementById('food-add-dish-btn').addEventListener('click', function () {
+        addFoodDishRow();
+      });
+
+      document.getElementById('food-generate-btn').addEventListener('click', function () {
+        var restaurant = document.getElementById('food-restaurant').value.trim();
+        if (!restaurant) { document.getElementById('food-restaurant').focus(); return; }
+
+        var location = document.getElementById('food-location').value.trim();
+        var neighborhood = document.getElementById('food-neighborhood').value.trim();
+        var cuisine = document.getElementById('food-cuisine').value.trim();
+        var price = document.getElementById('food-price').value;
+        var rating = document.getElementById('food-rating').value;
+        var date = document.getElementById('food-date').value;
+        var notes = document.getElementById('food-notes').value.trim();
+
+        var lines = [];
+        lines.push('- restaurant: ' + yamlStr(restaurant));
+        if (location) lines.push('  location: ' + yamlStr(location));
+        if (neighborhood) lines.push('  neighborhood: ' + yamlStr(neighborhood));
+        if (cuisine) lines.push('  cuisine: ' + yamlStr(cuisine));
+        if (price) lines.push('  price: ' + price);
+        if (rating) lines.push('  rating: ' + rating);
+        if (date) lines.push('  last_visit: "' + date + '"');
+        if (notes) lines.push('  notes: ' + yamlStr(notes));
+        if (document.getElementById('food-favorite').checked) lines.push('  favorite: true');
+
+        // Collect dishes
+        var dishRows = document.getElementById('food-dishes-list').children;
+        var hasDishes = false;
+        for (var d = 0; d < dishRows.length; d++) {
+          var nameEl = dishRows[d].querySelector('[data-dish-name]');
+          var ratingEl = dishRows[d].querySelector('[data-dish-rating]');
+          var notesEl = dishRows[d].querySelector('[data-dish-notes]');
+          var dName = nameEl ? nameEl.value.trim() : '';
+          if (!dName) continue;
+          if (!hasDishes) { lines.push('  dishes:'); hasDishes = true; }
+          lines.push('    - name: ' + yamlStr(dName));
+          var dRating = ratingEl ? ratingEl.value : '';
+          if (dRating) lines.push('      rating: ' + dRating);
+          var dNotes = notesEl ? notesEl.value.trim() : '';
+          if (dNotes) lines.push('      notes: ' + yamlStr(dNotes));
+        }
+
+        var yaml = lines.join('\n');
+        document.getElementById('food-yaml-pre').textContent = yaml;
+        var output = document.getElementById('food-yaml-output');
+        output.classList.add('visible');
+        output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      document.getElementById('food-copy-btn').addEventListener('click', function () {
+        var yaml = document.getElementById('food-yaml-pre').textContent;
+        copyToClipboard(yaml, 'food-copy-feedback');
+      });
+
+      // ═══════════════ Movie Log ═══════════════
+      document.getElementById('movie-generate-btn').addEventListener('click', function () {
+        var title = document.getElementById('movie-title').value.trim();
+        if (!title) { document.getElementById('movie-title').focus(); return; }
+
+        var year = document.getElementById('movie-year').value.trim();
+        var director = document.getElementById('movie-director').value.trim();
+        var genre = document.getElementById('movie-genre').value.trim();
+        var rating = document.getElementById('movie-rating').value;
+        var date = document.getElementById('movie-date').value;
+        var review = document.getElementById('movie-review').value.trim();
+
+        var lines = [];
+        lines.push('- title: ' + yamlStr(title));
+        if (year) lines.push('  year: ' + year);
+        if (director) lines.push('  director: ' + yamlStr(director));
+        if (rating) lines.push('  rating: ' + rating);
+        if (genre) lines.push('  genre: ' + yamlStr(genre));
+        if (date) lines.push('  date_watched: "' + date + '"');
+        if (review) lines.push('  review: ' + yamlStr(review));
+        if (document.getElementById('movie-favorite').checked) lines.push('  favorite: true');
+
+        var yaml = lines.join('\n');
+        document.getElementById('movie-yaml-pre').textContent = yaml;
+        var output = document.getElementById('movie-yaml-output');
+        output.classList.add('visible');
+        output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      document.getElementById('movie-copy-btn').addEventListener('click', function () {
+        var yaml = document.getElementById('movie-yaml-pre').textContent;
+        copyToClipboard(yaml, 'movie-copy-feedback');
+      });
+
+      // ═══════════════ Book Log ═══════════════
+      document.getElementById('book-generate-btn').addEventListener('click', function () {
+        var title = document.getElementById('book-title').value.trim();
+        if (!title) { document.getElementById('book-title').focus(); return; }
+
+        var author = document.getElementById('book-author').value.trim();
+        var genre = document.getElementById('book-genre').value.trim();
+        var rating = document.getElementById('book-rating').value;
+        var date = document.getElementById('book-date').value;
+        var review = document.getElementById('book-review').value.trim();
+
+        var lines = [];
+        lines.push('- title: ' + yamlStr(title));
+        if (author) lines.push('  author: ' + yamlStr(author));
+        if (genre) lines.push('  genre: ' + yamlStr(genre));
+        if (rating) lines.push('  rating: ' + rating);
+        if (date) lines.push('  date_read: "' + date + '"');
+        if (review) lines.push('  review: ' + yamlStr(review));
+        if (document.getElementById('book-favorite').checked) lines.push('  favorite: true');
+
+        var yaml = lines.join('\n');
+        document.getElementById('book-yaml-pre').textContent = yaml;
+        var output = document.getElementById('book-yaml-output');
+        output.classList.add('visible');
+        output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      document.getElementById('book-copy-btn').addEventListener('click', function () {
+        var yaml = document.getElementById('book-yaml-pre').textContent;
+        copyToClipboard(yaml, 'book-copy-feedback');
+      });
+
+      // ═══════════════ Paper Log ═══════════════
+      document.getElementById('paper-generate-btn').addEventListener('click', function () {
+        var title = document.getElementById('paper-title').value.trim();
+        if (!title) { document.getElementById('paper-title').focus(); return; }
+
+        var authors = document.getElementById('paper-authors').value.trim();
+        var journal = document.getElementById('paper-journal').value.trim();
+        var year = document.getElementById('paper-year').value.trim();
+        var field = document.getElementById('paper-field').value.trim();
+        var date = document.getElementById('paper-date').value;
+        var notes = document.getElementById('paper-notes').value.trim();
+
+        var lines = [];
+        lines.push('- title: ' + yamlStr(title));
+        if (authors) lines.push('  authors: ' + yamlStr(authors));
+        if (journal) lines.push('  journal: ' + yamlStr(journal));
+        if (year) lines.push('  year: ' + year);
+        if (field) lines.push('  field: ' + yamlStr(field));
+        if (date) lines.push('  date_read: "' + date + '"');
+        if (notes) lines.push('  notes: ' + yamlStr(notes));
+        if (document.getElementById('paper-favorite').checked) lines.push('  favorite: true');
+
+        var yaml = lines.join('\n');
+        document.getElementById('paper-yaml-pre').textContent = yaml;
+        var output = document.getElementById('paper-yaml-output');
+        output.classList.add('visible');
+        output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      document.getElementById('paper-copy-btn').addEventListener('click', function () {
+        var yaml = document.getElementById('paper-yaml-pre').textContent;
+        copyToClipboard(yaml, 'paper-copy-feedback');
+      });
+
+      // ═══════════════ TV Log ═══════════════
+      document.getElementById('tv-generate-btn').addEventListener('click', function () {
+        var title = document.getElementById('tv-title').value.trim();
+        if (!title) { document.getElementById('tv-title').focus(); return; }
+
+        var season = document.getElementById('tv-season').value.trim();
+        var genre = document.getElementById('tv-genre').value.trim();
+        var status = document.getElementById('tv-status').value;
+        var rating = document.getElementById('tv-rating').value;
+        var date = document.getElementById('tv-date').value;
+        var review = document.getElementById('tv-review').value.trim();
+
+        var lines = [];
+        lines.push('- title: ' + yamlStr(title));
+        if (season) lines.push('  season: ' + yamlStr(season));
+        if (genre) lines.push('  genre: ' + yamlStr(genre));
+        if (rating) lines.push('  rating: ' + rating);
+        if (status) lines.push('  status: ' + yamlStr(status));
+        if (date) lines.push('  date_watched: "' + date + '"');
+        if (review) lines.push('  review: ' + yamlStr(review));
+        if (document.getElementById('tv-favorite').checked) lines.push('  favorite: true');
+
+        var yaml = lines.join('\n');
+        document.getElementById('tv-yaml-pre').textContent = yaml;
+        var output = document.getElementById('tv-yaml-output');
+        output.classList.add('visible');
+        output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      document.getElementById('tv-copy-btn').addEventListener('click', function () {
+        var yaml = document.getElementById('tv-yaml-pre').textContent;
+        copyToClipboard(yaml, 'tv-copy-feedback');
+      });
+
+      // ═══════════════ Travel Log ═══════════════
+      // Enable/disable state dropdown based on country code
+      document.getElementById('travel-country-code').addEventListener('change', function () {
+        syncTravelStateSelect(this.value);
+      });
+
+      document.getElementById('travel-generate-btn').addEventListener('click', function () {
+        var destination = document.getElementById('travel-destination').value.trim();
+        if (!destination) { document.getElementById('travel-destination').focus(); return; }
+
+        var country = document.getElementById('travel-country').value.trim();
+        var countryCode = document.getElementById('travel-country-code').value;
+        var stateCode = document.getElementById('travel-state-code').value;
+        var purpose = document.getElementById('travel-purpose').value;
+        var date = document.getElementById('travel-date').value;
+        var highlights = document.getElementById('travel-highlights').value.trim();
+        var notes = document.getElementById('travel-notes').value.trim();
+
+        var lines = [];
+        lines.push('- destination: ' + yamlStr(destination));
+        if (country) lines.push('  country: ' + yamlStr(country));
+        if (countryCode) lines.push('  country_code: "' + countryCode + '"');
+        if (stateCode) lines.push('  state_code: "' + stateCode + '"');
+        if (date) lines.push('  trip_date: "' + date + '"');
+        if (purpose) lines.push('  purpose: ' + yamlStr(purpose));
+        if (highlights) lines.push('  highlights: ' + yamlStr(highlights));
+        if (notes) lines.push('  notes: ' + yamlStr(notes));
+        if (document.getElementById('travel-favorite').checked) lines.push('  favorite: true');
+
+        var yaml = lines.join('\n');
+        document.getElementById('travel-yaml-pre').textContent = yaml;
+        var output = document.getElementById('travel-yaml-output');
+        output.classList.add('visible');
+        output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      document.getElementById('travel-copy-btn').addEventListener('click', function () {
+        var yaml = document.getElementById('travel-yaml-pre').textContent;
+        copyToClipboard(yaml, 'travel-copy-feedback');
+      });
+
+      function loadFoodEntry(entry) {
+        setFieldValue('food-restaurant', entry.restaurant);
+        setFieldValue('food-location', entry.location);
+        setFieldValue('food-neighborhood', entry.neighborhood);
+        setFieldValue('food-cuisine', entry.cuisine);
+        setFieldValue('food-price', entry.price);
+        setFieldValue('food-rating', entry.rating);
+        setFieldValue('food-date', entry.last_visit || todayStr);
+        setFieldValue('food-notes', entry.notes);
+        setFieldChecked('food-favorite', entry.favorite);
+        clearFoodDishRows();
+        (entry.dishes || []).forEach(function (dish) { addFoodDishRow(dish); });
+        hideYamlOutput('food-yaml-output');
+        scrollToPanelStart('food');
+        document.getElementById('food-restaurant').focus();
+      }
+
+      function loadMovieEntry(entry) {
+        setFieldValue('movie-title', entry.title);
+        setFieldValue('movie-year', entry.year);
+        setFieldValue('movie-director', entry.director);
+        setFieldValue('movie-genre', entry.genre);
+        setFieldValue('movie-rating', entry.rating);
+        setFieldValue('movie-date', entry.date_watched || todayStr);
+        setFieldValue('movie-review', entry.review);
+        setFieldChecked('movie-favorite', entry.favorite);
+        hideYamlOutput('movie-yaml-output');
+        scrollToPanelStart('movie');
+        document.getElementById('movie-title').focus();
+      }
+
+      function loadBookEntry(entry) {
+        setFieldValue('book-title', entry.title);
+        setFieldValue('book-author', entry.author);
+        setFieldValue('book-genre', entry.genre);
+        setFieldValue('book-rating', entry.rating);
+        setFieldValue('book-date', entry.date_read || todayStr);
+        setFieldValue('book-review', entry.review);
+        setFieldChecked('book-favorite', entry.favorite);
+        hideYamlOutput('book-yaml-output');
+        scrollToPanelStart('book');
+        document.getElementById('book-title').focus();
+      }
+
+      function loadPaperEntry(entry) {
+        setFieldValue('paper-title', entry.title);
+        setFieldValue('paper-authors', entry.authors);
+        setFieldValue('paper-journal', entry.journal);
+        setFieldValue('paper-year', entry.year);
+        setFieldValue('paper-field', entry.field);
+        setFieldValue('paper-date', entry.date_read || todayStr);
+        setFieldValue('paper-notes', entry.notes);
+        setFieldChecked('paper-favorite', entry.favorite);
+        hideYamlOutput('paper-yaml-output');
+        scrollToPanelStart('paper');
+        document.getElementById('paper-title').focus();
+      }
+
+      function loadTvEntry(entry) {
+        setFieldValue('tv-title', entry.title);
+        setFieldValue('tv-season', entry.season);
+        setFieldValue('tv-genre', entry.genre);
+        setFieldValue('tv-status', entry.status);
+        setFieldValue('tv-rating', entry.rating);
+        setFieldValue('tv-date', entry.date_watched || todayStr);
+        setFieldValue('tv-review', entry.review);
+        setFieldChecked('tv-favorite', entry.favorite);
+        hideYamlOutput('tv-yaml-output');
+        scrollToPanelStart('tv');
+        document.getElementById('tv-title').focus();
+      }
+
+      function syncTravelStateSelect(countryCode) {
+        var stateSelect = document.getElementById('travel-state-code');
+        stateSelect.disabled = countryCode !== 'US';
+        if (countryCode !== 'US') stateSelect.value = '';
+      }
+
+      function loadTravelEntry(entry) {
+        setFieldValue('travel-destination', entry.destination);
+        setFieldValue('travel-country', entry.country);
+        setFieldValue('travel-purpose', entry.purpose);
+        setFieldValue('travel-country-code', entry.country_code);
+        syncTravelStateSelect(entry.country_code || '');
+        setFieldValue('travel-state-code', entry.state_code);
+        setFieldValue('travel-date', entry.trip_date || todayStr);
+        setFieldValue('travel-highlights', entry.highlights);
+        setFieldValue('travel-notes', entry.notes);
+        setFieldChecked('travel-favorite', entry.favorite);
+        hideYamlOutput('travel-yaml-output');
+        scrollToPanelStart('travel');
+        document.getElementById('travel-destination').focus();
+      }
+
+      var entryLoaders = {
+        food: loadFoodEntry,
+        movie: loadMovieEntry,
+        book: loadBookEntry,
+        paper: loadPaperEntry,
+        tv: loadTvEntry,
+        travel: loadTravelEntry
+      };
+
+      Array.prototype.slice.call(document.querySelectorAll('[data-load-entry]')).forEach(function (button) {
+        button.addEventListener('click', function () {
+          var type = button.getAttribute('data-load-entry');
+          var loadEntry = entryLoaders[type];
+          if (!loadEntry) return;
+          try {
+            loadEntry(JSON.parse(button.getAttribute('data-entry') || '{}'));
+          } catch (error) {
+            console.error('Failed to load existing entry', type, error);
+          }
+        });
+      });
+
+      // ═══════════════ Past Travel (visited.yml) ═══════════════
+      var pastCountries = [];
+      var pastStates = [];
+
+      document.getElementById('visited-country-select').addEventListener('change', function () {
+        var code = this.value;
+        if (!code || pastCountries.indexOf(code) !== -1) { this.value = ''; return; }
+        pastCountries.push(code);
+        this.value = '';
+        renderPastTags('visited-countries-list', pastCountries, function (c) {
+          pastCountries.splice(pastCountries.indexOf(c), 1);
+          renderPastTags('visited-countries-list', pastCountries, arguments.callee);
+        });
+      });
+
+      document.getElementById('visited-state-select').addEventListener('change', function () {
+        var code = this.value;
+        if (!code || pastStates.indexOf(code) !== -1) { this.value = ''; return; }
+        pastStates.push(code);
+        this.value = '';
+        renderPastTags('visited-states-list', pastStates, function (s) {
+          pastStates.splice(pastStates.indexOf(s), 1);
+          renderPastTags('visited-states-list', pastStates, arguments.callee);
+        });
+      });
+
+      function renderPastTags(containerId, items, onRemove) {
+        var el = document.getElementById(containerId);
+        el.innerHTML = '';
+        items.forEach(function (code) {
+          var tag = document.createElement('span');
+          tag.className = 'past-tag';
+          tag.textContent = code + ' ';
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.textContent = '\u00d7';
+          btn.className = 'past-tag-remove';
+          btn.addEventListener('click', function () { onRemove(code); });
+          tag.appendChild(btn);
+          el.appendChild(tag);
+        });
+      }
+
+      document.getElementById('visited-generate-btn').addEventListener('click', function () {
+        var lines = [];
+        lines.push('countries:');
+        if (pastCountries.length === 0) {
+          lines.push('  []');
+        } else {
+          pastCountries.forEach(function (c) {
+            lines.push('  - code: "' + c + '"');
+          });
+        }
+        lines.push('states:');
+        if (pastStates.length === 0) {
+          lines.push('  []');
+        } else {
+          pastStates.forEach(function (s) {
+            lines.push('  - code: "' + s + '"');
+          });
+        }
+        var yaml = lines.join('\n');
+        document.getElementById('visited-yaml-pre').textContent = yaml;
+        var output = document.getElementById('visited-yaml-output');
+        output.classList.add('visible');
+        output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      document.getElementById('visited-copy-btn').addEventListener('click', function () {
+        var yaml = document.getElementById('visited-yaml-pre').textContent;
+        copyToClipboard(yaml, 'visited-copy-feedback');
+      });
+    })();
+    </script>
+  </body>
+</html>

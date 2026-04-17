@@ -1,0 +1,357 @@
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+/* ── Design System ── */
+:root {
+  --color-bg:          #fafaf9;
+  --color-surface:     #ffffff;
+  --color-text:        #1a1a1a;
+  --color-text-secondary: #555555;
+  --color-muted:       #888888;
+  --color-accent:      #2b6cb0;
+  --color-accent-hover:#1e4e8c;
+  --color-border:      #e2e2e0;
+
+  --font-body:    'Inter', -apple-system, system-ui, sans-serif;
+  --font-heading: 'Source Serif 4', Georgia, serif;
+  --font-mono:    'SF Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+[data-theme="dark"] {
+  --color-bg:          #161618;
+  --color-surface:     #1e1e20;
+  --color-text:        #e4e4e3;
+  --color-text-secondary: #a8a8a6;
+  --color-muted:       #717170;
+  --color-accent:      #63a1e8;
+  --color-accent-hover:#8cb8ef;
+  --color-border:      #2e2e30;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* ── Full-viewport centering ── */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  padding: 2rem;
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Constellation canvas ── */
+#constellation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+[data-theme="dark"] #constellation {
+  opacity: 1;
+}
+
+/* ── Content layering (above canvas) ── */
+.home {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Card ── */
+.home-card {
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ── Photo ── */
+.home-photo {
+  margin-bottom: 1.75rem;
+}
+
+.home-photo img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  filter: grayscale(15%);
+  transition: filter 0.3s ease;
+}
+
+.home-photo img:hover {
+  filter: grayscale(0%);
+}
+
+/* ── Name ── */
+.home-name {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+/* ── Tagline ── */
+.home-tagline {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--color-muted);
+  line-height: 1.6;
+  margin-top: 0.75rem;
+  margin-bottom: 1.75rem;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Navigation ── */
+.home-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.home-nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.home-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--color-accent);
+  transition: width 0.25s ease;
+}
+
+.home-nav a:hover {
+  color: var(--color-accent);
+}
+
+.home-nav a:hover::after {
+  width: 100%;
+}
+
+/* ── Contact list ── */
+.home-contact {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.home-contact .icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  stroke: var(--color-muted);
+}
+
+.home-contact a {
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.home-contact a:hover {
+  color: var(--color-accent);
+}
+
+.home-contact span {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: -0.01em;
+}
+
+/* ── Philosophy quote ── */
+.home-quote {
+  margin-top: 1.75rem;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.home-quote-text {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+}
+
+.home-quote-attr {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--color-muted);
+  opacity: 0.75;
+}
+
+/* ── Dark mode toggle ── */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--color-muted);
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.3s ease;
+  z-index: 100;
+  line-height: 1;
+}
+
+.theme-toggle-icon {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.theme-icon {
+  position: absolute;
+  inset: 0;
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.theme-icon-sun {
+  opacity: 0;
+  transform: scale(0.85) rotate(-20deg);
+}
+
+.theme-icon-moon {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+[data-theme="dark"] .theme-icon-sun {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+[data-theme="dark"] .theme-icon-moon {
+  opacity: 0;
+  transform: scale(0.85) rotate(20deg);
+}
+
+.theme-toggle:hover {
+  color: var(--color-text);
+  border-color: var(--color-text-secondary);
+}
+
+/* ── Focus states ── */
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  body {
+    padding: 1.5rem 1.25rem;
+    align-items: flex-start;
+    padding-top: 15vh;
+  }
+
+  .home-name {
+    font-size: 1.5rem;
+  }
+
+  .home-nav {
+    gap: 0.2rem 1rem;
+  }
+
+  .home-photo img {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+/* ── Page transitions ── */
+body.page-exit {
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
+
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

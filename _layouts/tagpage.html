@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+{% assign sortedTags = site.tags | sort %}
+{% if sortedTags.size > 0 %}
+<div class="blog-tags">
+  <a href="/blog" class="blog-tag">All</a>
+  {% for tag in sortedTags %}
+    {% capture tag_name %}{{ tag[0] }}{% endcapture %}
+    <a href="/tag/{{ tag_name }}" class="blog-tag {% if tag_name == page.tag %}blog-tag-active{% endif %}">{{ tag_name | replace: "-"," " }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% for post in site.tags[page.tag] %}
+<div class="entry">
+  <p class="entry-title"><a href="{{ post.url }}" class="post-title-link">{{ post.title }}</a></p>
+  <p class="entry-venue">{{ post.date | date: "%B %-d, %Y" }}</p>
+  {% if post.subtitle %}
+  <p class="entry-authors">{{ post.subtitle }}</p>
+  {% endif %}
+</div>
+{% endfor %}

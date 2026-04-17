@@ -1,0 +1,16 @@
+- name: About
+  link: /about
+- name: Research
+  link: /research
+- name: Publications
+  link: /publications
+- name: Presentations
+  link: /presentations
+- name: Teaching
+  link: /teaching
+- name: Blog
+  link: /blog
+- name: Personal
+  link: /personal
+- name: CV
+  link: /resume.pdf

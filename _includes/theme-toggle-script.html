@@ -1,0 +1,26 @@
+<script>
+(function () {
+  var toggle = document.getElementById('theme-toggle');
+
+  function apply(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    if (toggle) {
+      toggle.setAttribute(
+        'aria-label',
+        theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+      );
+    }
+  }
+
+  apply(document.documentElement.getAttribute('data-theme') || 'light');
+
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var current = document.documentElement.getAttribute('data-theme');
+      var next = current === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      apply(next);
+    });
+  }
+})();
+</script>
