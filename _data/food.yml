@@ -1,3 +1,18 @@
+- restaurant: "Bowl'd Korean Rice Bar"
+  location: "Albany, CA"
+  cuisine: "Korean"
+  price: 2
+  rating: 4.5
+  last_visit: "2026-04-19"
+  notes: "I enjoyed the atmosphere, however the dishes were quite inconsistent in quality."
+  dishes:
+    - name: "Seafood Pancake"
+      rating: 3.5
+      notes: "The edges were crispy, however the center part was a little softer than I prefer. Overall, quite a good seafood pancake that had a great flavor profile with the sauce that came with it."
+    - name: "Bowl'd Wings"
+      rating: 3
+      notes: "These wings were alright, however quite ordinary."
+
 - restaurant: "Little Kathmandu"
   location: "El Cerrito, CA"
   cuisine: "Nepalese"
