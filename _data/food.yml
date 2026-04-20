@@ -1,3 +1,17 @@
+- restaurant: "Little Kathmandu"
+  location: "El Cerrito, CA"
+  cuisine: "Nepalese"
+  price: 2
+  rating: 6.5
+  last_visit: "2026-04-19"
+  notes: "Standard atmosphere with excellent food for the price."
+  dishes:
+    - name: "Paneer Makhani"
+      rating: 4
+      notes: "Extremely flavorful, solid amounts of paneer."
+    - name: "Kashmeeri Naan"
+      rating: 2
+      notes: "I was not a fan of this flavor profile."
 
 - restaurant: "Noodles Fresh"
   location: "El Cerrito, CA"
