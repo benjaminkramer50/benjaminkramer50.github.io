@@ -1,10 +1,18 @@
+- title: "Menace II Society"
+  year: 1993
+  director: "Hughes brothers"
+  rating: 4.5
+  genre: "Crime drama"
+  date_watched: "2026-04-21"
+  review: "Technically near-perfect: tightly directed, sharply acted, and paced so that nearly every scene carries weight in Caine's progression."
+
 - title: "Boyz n the Hood"
   year: 1991
   director: "John Singleton"
   rating: 4
   genre: "Drama"
   date_watched: "2026-04-19"
-  review: "An incredibly well-done film, with Tre's narrative serving as a foundation for our interpretation of the events."
+  review: "An incredibly well-made film. Tre's perspective gives the story a steady center, while the characters around him feel specific rather than symbolic."
   
 - title: "The Godfather"
   year: 1972
@@ -12,4 +20,4 @@
   rating: 5
   genre: "Crime drama"
   date_watched: "2026-04-17"
-  review: "Credit where credit is due. Absolutely amazing cinematography, soundtrack, and acting on all fronts. This is an unforgettable movie where nearly every scene holds a monumental weight towards development of the story."
+  review: "Credit where credit is due: the cinematography, soundtrack, and performances are remarkable across the board. Nearly every scene feels deliberate, building the story's weight without wasting motion."
