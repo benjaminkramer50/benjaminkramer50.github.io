@@ -1,3 +1,17 @@
+- restaurant: "Tacos El Tucan"
+  location: "Richmond, CA"
+  cuisine: "Mexican"
+  rating: 8
+  last_visit: "2026-04-21"
+  notes: "Very, very quality and filling food. Seating is outdoors (with some enclosed seating by a roof) and quite nice depending on the conditions, on quite a busy street. Food was in general excellent, and the avocado sauce and steak (in the context of a taco) was the best I have had."
+  dishes:
+    - name: "Carne Asada Tacos"
+      rating: 4
+      notes: "Very good. However the tortillas were quite drier than preferred and fell apart easily."
+    - name: "Carne Asada Fries"
+      rating: 4.5
+      notes: "Outstanding. The quality and seasoning of the fries was amazing. I was so full however could not stop eating these. The portion of carne asada was small, however blended well with the other ingredients."
+
 - restaurant: "Bowl'd Korean Rice Bar"
   location: "Albany, CA"
   cuisine: "Korean"
