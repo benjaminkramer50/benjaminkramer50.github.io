@@ -5,7 +5,7 @@ title: TV Log
 
 <p class="page-intro">Shows I have been watching and what I thought.</p>
 
-{% assign sorted_tv = site.data.tv | sort: "date_watched" | reverse %}
+{% assign sorted_tv = site.data.tv | reverse | sort: "date_watched" | reverse %}
 {% assign fav_tv = sorted_tv | where: "favorite", true | sort: "rating" | reverse %}
 
 {% if sorted_tv.size > 0 %}

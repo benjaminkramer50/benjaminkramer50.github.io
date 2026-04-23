@@ -2,6 +2,7 @@
 layout: post
 title: "What 200 Million Health Records Can Tell Us"
 author: Benjamin Kramer
+date: 2026-04-14 12:00:00 -0500
 subtitle: Some thoughts on working with large-scale claims data.
 tags: research
 ---

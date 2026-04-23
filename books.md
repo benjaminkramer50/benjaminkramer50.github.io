@@ -5,7 +5,7 @@ title: Books
 
 <p class="page-intro">What I have been reading lately.</p>
 
-{% assign sorted_books = site.data.books | sort: "date_read" | reverse %}
+{% assign sorted_books = site.data.books | reverse | sort: "date_read" | reverse %}
 {% assign fav_books = sorted_books | where: "favorite", true | sort: "rating" | reverse %}
 
 {% if sorted_books.size > 0 %}

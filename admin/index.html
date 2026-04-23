@@ -894,7 +894,7 @@ layout: null
           </div>
         </div>
 
-        {% assign admin_food_entries = site.data.food | sort: "last_visit" | reverse %}
+        {% assign admin_food_entries = site.data.food | reverse | sort: "last_visit" | reverse %}
         {% if admin_food_entries.size > 0 %}
         <div class="existing-posts">
           <div class="existing-posts-header">Existing Food Entries</div>
@@ -999,7 +999,7 @@ layout: null
           </div>
         </div>
 
-        {% assign admin_movie_entries = site.data.movies | sort: "date_watched" | reverse %}
+        {% assign admin_movie_entries = site.data.movies | reverse | sort: "date_watched" | reverse %}
         {% if admin_movie_entries.size > 0 %}
         <div class="existing-posts">
           <div class="existing-posts-header">Existing Movie Entries</div>
@@ -1099,7 +1099,7 @@ layout: null
           </div>
         </div>
 
-        {% assign admin_book_entries = site.data.books | sort: "date_read" | reverse %}
+        {% assign admin_book_entries = site.data.books | reverse | sort: "date_read" | reverse %}
         {% if admin_book_entries.size > 0 %}
         <div class="existing-posts">
           <div class="existing-posts-header">Existing Book Entries</div>
@@ -1192,7 +1192,7 @@ layout: null
           </div>
         </div>
 
-        {% assign admin_paper_entries = site.data.papers | sort: "date_read" | reverse %}
+        {% assign admin_paper_entries = site.data.papers | reverse | sort: "date_read" | reverse %}
         {% if admin_paper_entries.size > 0 %}
         <div class="existing-posts">
           <div class="existing-posts-header">Existing Paper Entries</div>
@@ -1302,7 +1302,7 @@ layout: null
           </div>
         </div>
 
-        {% assign admin_tv_entries = site.data.tv | sort: "date_watched" | reverse %}
+        {% assign admin_tv_entries = site.data.tv | reverse | sort: "date_watched" | reverse %}
         {% if admin_tv_entries.size > 0 %}
         <div class="existing-posts">
           <div class="existing-posts-header">Existing TV Entries</div>
@@ -1416,7 +1416,7 @@ layout: null
           </div>
         </div>
 
-        {% assign admin_travel_entries = site.data.travel | sort: "trip_date" | reverse %}
+        {% assign admin_travel_entries = site.data.travel | reverse | sort: "trip_date" | reverse %}
         {% if admin_travel_entries.size > 0 %}
         <div class="existing-posts">
           <div class="existing-posts-header">Existing Travel Entries</div>
@@ -1600,7 +1600,8 @@ layout: null
       var yyyy = today.getFullYear();
       var mm = String(today.getMonth() + 1).padStart(2, '0');
       var dd = String(today.getDate()).padStart(2, '0');
-      dateInput.value = yyyy + '-' + mm + '-' + dd;
+      var todayStr = yyyy + '-' + mm + '-' + dd;
+      dateInput.value = todayStr;
 
       // ── Slug generation ──
       function toSlug(text) {
@@ -1628,6 +1629,26 @@ layout: null
       titleInput.addEventListener('input', updateSlugPreview);
       dateInput.addEventListener('input', updateSlugPreview);
 
+      function formatTimezoneOffset(date) {
+        var offset = date.getTimezoneOffset();
+        var sign = offset > 0 ? '-' : '+';
+        var abs = Math.abs(offset);
+        var hours = String(Math.floor(abs / 60)).padStart(2, '0');
+        var minutes = String(abs % 60).padStart(2, '0');
+        return sign + hours + minutes;
+      }
+
+      function buildPostDateTime() {
+        var selectedDate = dateInput.value || todayStr;
+        var now = new Date();
+        var hh = String(now.getHours()).padStart(2, '0');
+        var min = String(now.getMinutes()).padStart(2, '0');
+        var ss = String(now.getSeconds()).padStart(2, '0');
+        var time = hh + ':' + min + ':' + ss;
+        var localDateTime = new Date(selectedDate + 'T' + time);
+        return selectedDate + ' ' + time + ' ' + formatTimezoneOffset(localDateTime);
+      }
+
       // ── Build file content ──
       function buildContent() {
         var title = titleInput.value.trim();
@@ -1644,6 +1665,7 @@ layout: null
         lines.push('layout: post');
         lines.push('title: "' + title.replace(/"/g, '\\"') + '"');
         lines.push('author: Benjamin Kramer');
+        lines.push('date: ' + buildPostDateTime());
         if (subtitle) {
           lines.push('subtitle: "' + subtitle.replace(/"/g, '\\"') + '"');
         }
@@ -1682,8 +1704,6 @@ layout: null
       });
 
       // ── Helper: set default date for log forms ──
-      var todayStr = yyyy + '-' + mm + '-' + dd;
-
       function setDefaultDate(id) {
         var el = document.getElementById(id);
         if (el) el.value = todayStr;

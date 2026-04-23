@@ -5,7 +5,7 @@ title: Paper Log
 
 <p class="page-intro">Scientific papers I have read and found worth noting.</p>
 
-{% assign sorted_papers = site.data.papers | sort: "date_read" | reverse %}
+{% assign sorted_papers = site.data.papers | reverse | sort: "date_read" | reverse %}
 {% assign fav_papers = sorted_papers | where: "favorite", true %}
 
 {% if sorted_papers.size > 0 %}

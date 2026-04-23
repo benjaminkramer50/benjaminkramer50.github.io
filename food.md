@@ -5,7 +5,7 @@ title: Food Log
 
 <p class="page-intro">Restaurants and dishes worth remembering.</p>
 
-{% assign sorted_food = site.data.food | sort: "last_visit" | reverse %}
+{% assign sorted_food = site.data.food | reverse | sort: "last_visit" | reverse %}
 {% assign fav_food = sorted_food | where: "favorite", true | sort: "rating" | reverse %}
 
 {% if sorted_food.size > 0 %}

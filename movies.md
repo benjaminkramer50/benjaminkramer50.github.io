@@ -5,7 +5,7 @@ title: Movie Log
 
 <p class="page-intro">Films I have watched and what I thought.</p>
 
-{% assign sorted_movies = site.data.movies | sort: "date_watched" | reverse %}
+{% assign sorted_movies = site.data.movies | reverse | sort: "date_watched" | reverse %}
 {% assign fav_movies = sorted_movies | where: "favorite", true | sort: "rating" | reverse %}
 
 {% if sorted_movies.size > 0 %}

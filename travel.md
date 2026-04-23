@@ -5,7 +5,7 @@ title: Travel Log
 
 <p class="page-intro">Places I have been for work, conferences, and the occasional trip that has nothing to do with either.</p>
 
-{% assign sorted_trips = site.data.travel | sort: "trip_date" | reverse %}
+{% assign sorted_trips = site.data.travel | reverse | sort: "trip_date" | reverse %}
 
 {% comment %}── Merge visited country codes from travel.yml + visited.yml ──{% endcomment %}
 {% assign all_country_codes = "" %}
