@@ -1,24 +1,33 @@
 ---
 layout: page
+title: Writing
+permalink: /writing/
 ---
 
 {% assign sortedTags = site.tags | sort %}
 {% if sortedTags.size > 0 %}
 <div class="blog-tags">
-  <a href="/writing/" class="blog-tag">All</a>
+  <a href="/writing/" class="blog-tag blog-tag-active">All</a>
   {% for tag in sortedTags %}
     {% capture tag_name %}{{ tag[0] }}{% endcapture %}
-    <a href="/tag/{{ tag_name }}" class="blog-tag {% if tag_name == page.tag %}blog-tag-active{% endif %}">{{ tag_name | replace: "-"," " }}</a>
+    <a href="/tag/{{ tag_name }}" class="blog-tag">{{ tag_name | replace: "-"," " }}</a>
   {% endfor %}
 </div>
 {% endif %}
 
-{% for post in site.tags[page.tag] %}
+{% for post in site.posts %}
 <div class="entry">
   <p class="entry-title"><a href="{{ post.url }}" class="post-title-link">{{ post.title }}</a></p>
   <p class="entry-venue">{{ post.date | date: "%B %-d, %Y" }}</p>
   {% if post.subtitle %}
   <p class="entry-authors">{{ post.subtitle }}</p>
+  {% endif %}
+  {% if post.tags.size > 0 %}
+  <div class="blog-post-tags">
+    {% for tag in post.tags %}
+    <span class="blog-tag-badge">{{ tag | replace: "-"," " }}</span>
+    {% endfor %}
+  </div>
   {% endif %}
 </div>
 {% endfor %}

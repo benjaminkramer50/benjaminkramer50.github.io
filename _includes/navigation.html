@@ -1,25 +1,63 @@
 <header class="site-header">
-  <nav class="site-nav">
+  <nav class="site-nav" aria-label="Main navigation">
     <a href="/" class="site-name">Benjamin Kramer</a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="site-nav-links">
       {% for item in site.data.navigation %}
+        {% assign html_link = item.link | append: ".html" %}
+        {% assign slash_link = item.link | append: "/" %}
         <li>
           <a href="{{ item.link }}"
-             {% if page.url == item.link %}class="active"{% endif %}
+             {% if page.url == item.link or page.url == html_link or page.url == slash_link %}class="active"{% endif %}
              {% if item.link == '/resume.pdf' %}target="_blank"{% endif %}>
             {{ item.name }}
           </a>
         </li>
       {% endfor %}
     </ul>
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav-links">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
     </button>
   </nav>
 </header>
 <script>
-  document.querySelector('.nav-toggle').addEventListener('click', function() {
-    document.querySelector('.nav-links').classList.toggle('open');
-  });
+  (function () {
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.getElementById('site-nav-links');
+    if (!toggle || !links) return;
+
+    function setOpen(isOpen) {
+      links.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      toggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+    }
+
+    toggle.addEventListener('click', function () {
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    links.addEventListener('click', function (event) {
+      if (event.target.closest('a')) setOpen(false);
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!links.classList.contains('open')) return;
+      if (toggle.contains(event.target) || links.contains(event.target)) return;
+      setOpen(false);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') setOpen(false);
+    });
+
+    var wideViewport = window.matchMedia('(min-width: 961px)');
+    function closeOnWideViewport(event) {
+      if (event.matches) setOpen(false);
+    }
+    if (wideViewport.addEventListener) {
+      wideViewport.addEventListener('change', closeOnWideViewport);
+    } else if (wideViewport.addListener) {
+      wideViewport.addListener(closeOnWideViewport);
+    }
+  })();
 </script>
