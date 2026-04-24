@@ -1,3 +1,18 @@
+- title: "Training Day"
+  year: 1990
+  director: "Antoine Fuqua"
+  rating: 5
+  genre: "Crime thriller"
+  date_watched: "2026-04-23"
+  favorite: true
+
+- title: "King of New York"
+  year: 1990
+  director: "Abel Ferrara"
+  rating: 2
+  genre: "Crime drama"
+  date_watched: "2026-04-23"
+
 - title: "Blood In Blood Out"
   year: 1991
   director: "Taylor Hackford"
