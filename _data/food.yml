@@ -1,3 +1,30 @@
+- restaurant: "Dave's Hot Chicken"
+  location: "El Cerrito, CA"
+  cuisine: "American"
+  price: 2
+  rating: 9
+  last_visit: "2026-04-24"
+  favorite: true
+  dishes:
+    - name: "2 Sliders"
+      rating: 5
+      notes: "..."
+    - name: "Fries"
+      rating: 4
+      notes: "..."
+
+- restaurant: "Brazuca Açaí"
+  location: "Richmond, CA"
+  cuisine: "Brazilian"
+  price: 2
+  rating: 5
+  last_visit: "2026-04-24"
+  notes: "..."
+  dishes:
+    - name: "Açaí Bowl"
+      rating: 3
+      notes: "..."
+
 - restaurant: "Tacos El Tucan"
   location: "Richmond, CA"
   cuisine: "Mexican"
