@@ -1,5 +1,5 @@
 ---
-generated_on: '2026-05-02T20:53:31Z'
+generated_on: '2026-05-02T20:59:57Z'
 items: 3000
 target_count: 3000
 duplicate_ids: 0
@@ -9,6 +9,7 @@ missing_required_rows: 0
 future_year_rows: 0
 placeholder_date_rows: 178
 duplicate_candidate_keys: 40
+chronology_inversion_rows: 9
 generic_title_rows: 272
 boundary_case_rows: 448
 source_debt_rows: 2939

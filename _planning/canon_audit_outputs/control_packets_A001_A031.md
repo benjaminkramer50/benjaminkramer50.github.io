@@ -1,6 +1,6 @@
-# Control Packets A001-A028
+# Control Packets A001-A031
 
-Generated: 2026-05-02T20:53:31Z
+Generated: 2026-05-02T20:59:57Z
 
 | Packet | Status | Check | Observed |
 |---|---:|---|---|
@@ -32,3 +32,6 @@ Generated: 2026-05-02T20:53:31Z
 | A026 | WARN | Region/language metadata missingness audit | Macro region inferred, not authoritative; language metadata not yet first-class |
 | A027 | PASS | Count cap and replacement-log audit | items=3000; target=3000 |
 | A028 | WARN | Reproducible build and generated-file hygiene | Harness ran; Jekyll build not run by this script |
+| A029 | WARN | Rank chronology inversion audit | 9 adjacent rank-sort inversions |
+| A030 | WARN | Date-label and sort-year consistency audit | 178 rows still have approximate/pending date labels |
+| A031 | WARN | Replacement-induced chronology drift audit | Review replacement slots in canon_chronology_inversions.tsv |

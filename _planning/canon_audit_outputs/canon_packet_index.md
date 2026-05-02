@@ -1,184 +1,10 @@
----
-title: Comprehensive End-to-End Literature Canon Audit Plan
-date: 2026-05-02
-status: in_progress_wave_001_integrated
-scope: literature_only_global_lifetime_path
-target: 3000 public works
----
+# Canon Packet Index
 
-# Comprehensive End-to-End Literature Canon Audit Plan
+Generated from `_planning/canon_comprehensive_end_to_end_plan_2026_05_02.md`.
 
-This document is the forward plan for making the 3,000-item literature canon defensible. It is also the packet registry that execution logs point back to. Wave 001 has now been run and integrated; detailed outputs live under `_planning/canon_audit_outputs/`.
+Total packets: 410
 
-## Core Correction
-
-The previous workflow was inadequate because it mixed useful structural checks with spot-checking. Spot-checking can catch visible omissions, but it cannot establish comprehensive coverage. The Washington Irving omission is evidence that the current list must be audited systematically against a defined evidence corpus, period by period, language by language, tradition by tradition, and form by form.
-
-The goal is not to make an impossible claim that no work anywhere in world literature is missing. The goal is to make a reproducible claim: every defined audit packet below was checked against the actual YAML list, omissions were triaged by explicit criteria, replacements were documented, and the final 3,000-item path passed structural, source, duplicate, chronology, and coverage validation.
-
-## Non-Negotiables
-
-- The user should not manually find gaps. User-observed gaps are bug reports, not the audit method.
-- Every audit packet must inspect the actual current `_data/canon_quick_path.yml`, not a remembered or assumed list.
-- Every proposed addition must name what it displaces unless the target count is intentionally changed.
-- Every deletion must state why the removed work is lower priority, duplicate, boundary-leaky, overrepresented, or weaker than the replacement.
-- No packet can simply say "looks good." It must output checked sources, checked sentinel authors/titles, omissions found, omissions rejected, and unresolved uncertainty.
-- The public site must stay honest: provisional status, source-review status, and broad categories must remain visible until the audit is complete.
-- The final standard is "source-backed and exhaustively audited against the registered packet list," not "AI-generated plausible canon."
-
-## Definition Of Done
-
-The canon can be described as locked only when all of the following are true:
-
-- All audit packets in this document are marked complete or explicitly waived with rationale.
-- The current path has exactly 3,000 items unless the user approves changing the count.
-- Duplicate IDs: 0.
-- Duplicate ranks: 0.
-- Missing titles: 0.
-- Missing creators except genuinely anonymous/traditional works: reviewed.
-- Missing or placeholder sort years: 0, except documented oral/traditional cases.
-- Future dates beyond current year: 0 unless the work is an ongoing series with a documented reason.
-- Every item has a first-pass classification: `macro_region`, `tradition`, `original_language_or_language_family`, `period_bucket`, `form_bucket`, `canon_level`, `selection_basis`, `source_status`, and `review_status`.
-- All `manual_only` items have either been source-backed or explicitly kept as provisional.
-- Every generic `Selected Poems`, `Selected Stories`, or "Selected..." record has a selection basis.
-- Every scripture, oral tradition, myth, religious text, philosophical dialogue, memoir, testimonio, children's/YA work, graphic narrative, and genre work has an explicit boundary rationale for inclusion as literature.
-- All high-priority omissions identified by packets have been resolved: added, rejected with rationale, or deferred with a documented source/evidence gap.
-- Jekyll build passes.
-- A local audit report can be regenerated from scripts rather than manually assembled.
-
-## Evidence Standard
-
-Each candidate title or author must be evaluated using multiple evidence classes, not just one list.
-
-Evidence classes:
-
-- Major world-literature anthologies and teaching canons.
-- Region-specific literary histories.
-- Language-specific literary histories.
-- University survey syllabi and reading lists, used as secondary evidence, not sole authority.
-- Major translation series and scholarly editions.
-- Prize/reception evidence for modern and contemporary works.
-- Existing accepted site records and prior curated entries.
-- Bloom and other Western canon lists only as one layer, never as sole authority.
-- Specialist sources for oral, Indigenous, manuscript, and performance traditions.
-
-Evidence tiers:
-
-- Tier A, essential: repeated strong evidence across source types or unavoidable status in a major tradition.
-- Tier B, major: strong source support or high importance to a tradition, form, movement, or historical moment.
-- Tier C, contextual: useful for coverage, genealogy, or representativeness but lower priority if slots are tight.
-- Tier D, probationary: recent or contested works that may be valuable but need reception review.
-- Tier X, cut: duplicate, boundary leak, low-source support, overrepresented relative to stronger omissions, or unsuitable for literature-only scope.
-
-## Data And Tooling To Build Before Auditing
-
-The first real execution step is to create a local audit harness. This should be committed before content replacement begins.
-
-Required generated artifacts:
-
-- `canon_inventory.tsv`: one row per item with normalized title, aliases, creators, year, rank, topic, group, unit type, tier, source status, review status.
-- `canon_inventory_by_period.tsv`: counts by period bucket.
-- `canon_inventory_by_region.tsv`: counts by macro region and subtradition.
-- `canon_inventory_by_language.tsv`: counts by original language or language family once inferred/added.
-- `canon_inventory_by_form.tsv`: counts by form bucket and unit type.
-- `canon_duplicate_candidates.tsv`: normalized title/creator duplicate candidates, including aliases.
-- `canon_generic_titles.tsv`: generic records needing selection basis.
-- `canon_boundary_cases.tsv`: scripture, myth, oral, philosophy-adjacent, memoir/testimonio, YA, graphic, and genre cases.
-- `canon_source_debt.tsv`: source-status and review-status debt.
-- `canon_omission_queue.yml`: candidate additions from audit packets, with evidence and proposed displacement.
-- `canon_replacement_log.yml`: every add/cut/change with rationale.
-- `canon_validation_report.md`: structural validation, coverage counts, unresolved flags, and build result.
-
-Required scripts or script modes:
-
-- Parse YAML and emit normalized inventory.
-- Normalize titles with punctuation, articles, transliteration variants, and common subtitles.
-- Normalize creators and traditional/anonymous creator labels.
-- Match aliases to titles and collection contents.
-- Detect likely duplicates by title, alias, creator, and year.
-- Produce coverage matrices.
-- Produce a packet-specific excerpt for an audit agent.
-- Validate proposed edits before they are merged.
-- Re-rank after additions/cuts if needed.
-
-## Agent Workflow
-
-Agents are useful, but not as six broad domain audits. The correct pattern is many narrow packets, run iteratively.
-
-Coordinator role:
-
-- Maintains the canonical current YAML.
-- Generates packet-specific inventories.
-- Assigns packets in waves of at most six agents.
-- Requires structured output from each agent.
-- Reviews packet output before applying changes.
-- Integrates additions/cuts locally.
-- Runs validation after each integration batch.
-- Updates the audit plan with packet status.
-
-Packet-agent contract:
-
-Each agent receives:
-
-- The packet name and scope.
-- The current inventory excerpt relevant to that packet.
-- The full normalized title/creator index or enough search summaries to avoid false omissions.
-- Required evidence classes for that packet.
-- Output schema.
-
-Each agent returns:
-
-- `packet_id`.
-- `scope_checked`.
-- `sources_or_reference_layers_consulted`.
-- `current_coverage_summary`.
-- `high_confidence_missing`.
-- `medium_confidence_missing`.
-- `false_positive_missing_because_already_present_as`.
-- `duplicates_or_overlaps`.
-- `weak_items_to_cut_or_demote`.
-- `boundary_cases`.
-- `required_alias_repairs`.
-- `recommended_edits`.
-- `uncertainties`.
-
-No agent is allowed to directly edit the source list unless assigned an integration packet. Most agents should report, not edit.
-
-Wave rhythm:
-
-1. Generate audit inventory.
-2. Assign up to six narrow packets.
-3. Wait for all six.
-4. Review and merge their findings into `canon_omission_queue.yml`.
-5. Apply only high-confidence edits or create a deferred queue.
-6. Validate.
-7. Commit.
-8. Repeat with the next six packets.
-
-## Replacement Rules
-
-When adding a title to a capped 3,000-item path:
-
-- First search for exact title, translated title, original title, common aliases, and collection-level inclusion.
-- If absent, classify omission severity: essential, major, contextual, probationary.
-- Identify replacement candidates from the same overrepresented neighborhood where possible.
-- Prefer cutting:
-  - Duplicate variants.
-  - Mechanical Bloom appendix leftovers with weak evidence.
-  - Generic "Selected..." records with no selection basis.
-  - Overrepresented single-author rows where a collected/selected entry already exists.
-  - Very recent probationary works without strong reception.
-  - Boundary-leaky works that are more history/theory/theology/philosophy than literature.
-- Avoid cutting:
-  - Underrepresented region/language/tradition anchors.
-  - Women, Indigenous, African, Asian, diasporic, and minority-language anchors unless genuinely duplicated or weaker than a replacement in the same underrepresented cell.
-  - Oral and manuscript traditions just because they are harder to source.
-
-## Packet Registry
-
-Every packet below should eventually be audited. Packets are intentionally small. Many can be run by agents; some are local validation packets.
-
-### A. Control And Infrastructure Packets
+## A. Control And Infrastructure Packets
 
 - A001: YAML schema and required fields.
 - A002: Rank uniqueness, rank continuity, and hidden/non-lifetime leakage.
@@ -212,7 +38,7 @@ Every packet below should eventually be audited. Packets are intentionally small
 - A030: Date-label and sort-year consistency audit.
 - A031: Replacement-induced chronology drift audit.
 
-### B. Period Coverage Packets
+## B. Period Coverage Packets
 
 - B001: Pre-2500 BCE ritual, myth, and early text traditions.
 - B002: 2500-1500 BCE ancient Near Eastern and Egyptian literature.
@@ -249,7 +75,7 @@ Every packet below should eventually be audited. Packets are intentionally small
 - B033: 2010-2019 contemporary global reception, translation boom, Indigenous resurgence, feminist/queer expansion.
 - B034: 2020-present probationary contemporary works and reception threshold.
 
-### C. Macro-Region And Tradition Packets
+## C. Macro-Region And Tradition Packets
 
 - C001: Ancient Egypt.
 - C002: Sumerian literature.
@@ -448,7 +274,7 @@ Every packet below should eventually be audited. Packets are intentionally small
 - C195: Chicano/a/x and borderlands literature.
 - C196: Diasporic, migration, and refugee literature cross-audit.
 
-### D. Form And Genre Packets
+## D. Form And Genre Packets
 
 - D001: Epic.
 - D002: Oral epic.
@@ -497,9 +323,7 @@ Every packet below should eventually be audited. Packets are intentionally small
 - D045: Series treatment policy.
 - D046: Anthology versus individual-work treatment.
 
-### E. Source-Crosswalk Packets
-
-These packets compare the current YAML against major reference layers. Each source-crosswalk packet must report present, absent, represented-by-selection, duplicate, and rejected/out-of-scope entries.
+## E. Source Crosswalk Packets
 
 - E001: Existing accepted `_canon` records crosswalk.
 - E002: Bloom curated seed layer.
@@ -532,9 +356,7 @@ These packets compare the current YAML against major reference layers. Each sour
 - E029: University syllabus sampled layer by region.
 - E030: Specialist minority-language source layer.
 
-### F. Sentinel Author And Title Packets
-
-These are not automatic inclusion lists. They are "must check" sentinels because an omission here would likely indicate a process failure.
+## F. Sentinel Author And Title Packets
 
 - F001: Early US: Washington Irving, James Fenimore Cooper, Catharine Maria Sedgwick, Charles Brockden Brown, Susanna Rowson.
 - F002: US transcendentalism: Emerson, Thoreau, Fuller, Margaret Fuller boundary decision.
@@ -571,7 +393,7 @@ These are not automatic inclusion lists. They are "must check" sentinels because
 - F033: Indigenous Americas: Popol Vuh, Rabinal Achi, Cantares Mexicanos, Huarochiri, Silko, Momaday, Erdrich, Vizenor, Alexie, Harjo, Ortiz, King, Orange, Long Soldier.
 - F034: Oceania/Arctic: Kumulipo, Wendt, Grace, Ihimaera, Hulme, Wright, Kim Scott, Alexis Wright, Tagaq, Avia, Nappaaluk.
 
-### G. Boundary And Policy Packets
+## G. Boundary And Policy Packets
 
 - G001: What counts as literature versus philosophy.
 - G002: What counts as literature versus theology.
@@ -599,7 +421,7 @@ These are not automatic inclusion lists. They are "must check" sentinels because
 - G024: Colonization, race, gender, and empire coverage policy.
 - G025: Source-backed exclusion policy.
 
-### H. Integration Packets
+## H. Integration Packets
 
 - H001: First integration wave from high-confidence omissions.
 - H002: Rank repair after first integration.
@@ -615,91 +437,3 @@ These are not automatic inclusion lists. They are "must check" sentinels because
 - H012: Final validation report.
 - H013: Chronology repair after replacement batches.
 - H014: Duplicate candidate closeout after replacement batches.
-
-## Execution Order
-
-The packet registry is large by design. The execution order should be staged so errors are caught early.
-
-Phase 0: Freeze and inventory.
-
-- Run A001-A028 locally.
-- Add missing metadata fields if feasible.
-- Generate baseline coverage reports.
-- Do not change canon content except to fix structural invalidity.
-
-Phase 1: High-risk obvious-omission sweep.
-
-- Run F001-F034 in waves of six.
-- Focus on omissions that would embarrass the list if absent.
-- Integrate only high-confidence misses and alias repairs.
-
-Phase 2: Source-crosswalk sweep.
-
-- Run E001-E030 in waves of six.
-- Convert source debt where possible.
-- Flag source conflicts and overrepresentation.
-
-Phase 3: Period and region sweep.
-
-- Run B001-B034 and C001-C196 in waves of six.
-- Each packet must produce a ranked omission list and a ranked cut list.
-- Integrate only after reviewing adjacent packets so one region does not consume all replacement slots.
-
-Phase 4: Form and boundary sweep.
-
-- Run D001-D046 and G001-G025.
-- Resolve scripture/oral/philosophy/memoir/YA/genre/graphic boundary cases.
-- Repair generic selected entries.
-
-Phase 5: Integration and stabilization.
-
-- Run H001-H012 repeatedly until no high-confidence omissions remain unresolved.
-- Rebuild the public site after each content batch.
-- Keep a running replacement log.
-
-Phase 6: Final adversarial review.
-
-- Assign agents to attack the finished list by trying to find missing essentials, duplicates, weak overrepresented clusters, and unjustified boundary decisions.
-- Any found omission opens a new packet rather than an ad hoc fix.
-
-## Output Required After Each Agent Wave
-
-After each wave of up to six packets, the coordinator should produce:
-
-- Packets completed.
-- High-confidence additions proposed.
-- High-confidence cuts proposed.
-- Alias repairs proposed.
-- Source-status repairs proposed.
-- Items deferred and why.
-- Validation status.
-- Next six packets.
-
-## Immediate Next Steps
-
-1. Commit this plan file.
-2. Build the local audit harness and baseline inventory reports.
-3. Run A001-A028 locally.
-4. Start the first agent wave with six sentinel packets, not broad domains:
-   - F001 Early US.
-   - F002 US transcendentalism.
-   - F003 US nineteenth-century fiction.
-   - F009 British medieval/Renaissance.
-   - F023 Greek/Roman.
-   - F024 Sanskrit/South Asian classical.
-5. Integrate only findings that survive local verification.
-6. Repeat through the packet registry.
-
-## Current Known Red Flags To Seed The Queue
-
-These are not the full audit. They are initial red flags discovered from the current list and prior user feedback:
-
-- Washington Irving was absent until manually added. This proves the prior process missed core early US coverage.
-- Emerson appears absent from quick search and needs a boundary decision: essays may belong in the literature path if Montaigne, Pascal, Johnson, Baldwin, and similar prose are included.
-- The first-pass harness still reports duplicate candidate keys. These are not all true duplicates, but they must be resolved or explicitly waived under A021-A024 and H014.
-- The first-pass harness still reports placeholder/approximate date rows, and replacement batches can create rank chronology inversions. These must be resolved or explicitly waived under A012, A029-A031, and H013.
-- The current list still has many `manual_only` and `needs_sources` records.
-- The path is heavily weighted toward 1900-present and especially 1946-present.
-- Many `Selected Poems` records need selection bases.
-- "Genre / Cross-Regional" is a UI bucket, not a scholarly tradition; underlying metadata needs real region/language fields.
-- Some automatic form categorization is presentation-only and must not substitute for scholarly classification.

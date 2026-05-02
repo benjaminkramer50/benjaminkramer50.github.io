@@ -231,6 +231,36 @@ source_debt_rows = inventory.select do |row|
 end
 write_tsv(File.join(OUTPUT_DIR, "canon_source_debt.tsv"), source_debt_rows, inventory_headers)
 
+chronology_rows = []
+inventory.sort_by { |row| row["rank"].to_i }.each_cons(2) do |previous_row, current_row|
+  previous_year = previous_row["sort_year"].to_i
+  current_year = current_row["sort_year"].to_i
+  next unless current_year < previous_year
+
+  chronology_rows << {
+    "previous_rank" => previous_row["rank"],
+    "previous_title" => previous_row["title"],
+    "previous_creators" => previous_row["creators"],
+    "previous_date_label" => previous_row["date_label"],
+    "previous_sort_year" => previous_year,
+    "current_rank" => current_row["rank"],
+    "current_title" => current_row["title"],
+    "current_creators" => current_row["creators"],
+    "current_date_label" => current_row["date_label"],
+    "current_sort_year" => current_year,
+    "backward_delta_years" => previous_year - current_year
+  }
+end
+write_tsv(
+  File.join(OUTPUT_DIR, "canon_chronology_inversions.tsv"),
+  chronology_rows,
+  %w[
+    previous_rank previous_title previous_creators previous_date_label previous_sort_year
+    current_rank current_title current_creators current_date_label current_sort_year
+    backward_delta_years
+  ]
+)
+
 ids = inventory.map { |row| row["id"] }
 ranks = inventory.map { |row| row["rank"].to_i }
 missing_required = inventory.select do |row|
@@ -253,6 +283,7 @@ summary = {
   "future_year_rows" => future_years.size,
   "placeholder_date_rows" => placeholder_dates.size,
   "duplicate_candidate_keys" => duplicate_rows.size,
+  "chronology_inversion_rows" => chronology_rows.size,
   "generic_title_rows" => generic_rows.size,
   "boundary_case_rows" => boundary_rows.size,
   "source_debt_rows" => source_debt_rows.size,
@@ -290,17 +321,22 @@ control_checks = [
   ["A025", "Boundary-note missingness audit", boundary_rows.empty? ? "PASS" : "WARN", "#{boundary_rows.size} boundary-sensitive rows need explicit notes"],
   ["A026", "Region/language metadata missingness audit", "WARN", "Macro region inferred, not authoritative; language metadata not yet first-class"],
   ["A027", "Count cap and replacement-log audit", inventory.size == data["target_count"].to_i ? "PASS" : "FAIL", "items=#{inventory.size}; target=#{data["target_count"]}"],
-  ["A028", "Reproducible build and generated-file hygiene", "WARN", "Harness ran; Jekyll build not run by this script"]
+  ["A028", "Reproducible build and generated-file hygiene", "WARN", "Harness ran; Jekyll build not run by this script"],
+  ["A029", "Rank chronology inversion audit", chronology_rows.empty? ? "PASS" : "WARN", "#{chronology_rows.size} adjacent rank-sort inversions"],
+  ["A030", "Date-label and sort-year consistency audit", placeholder_dates.empty? ? "PASS" : "WARN", "#{placeholder_dates.size} rows still have approximate/pending date labels"],
+  ["A031", "Replacement-induced chronology drift audit", chronology_rows.empty? ? "PASS" : "WARN", "Review replacement slots in canon_chronology_inversions.tsv"]
 ]
 
-control_md = +"# Control Packets A001-A028\n\n"
+FileUtils.rm_f(File.join(OUTPUT_DIR, "control_packets_A001_A028.md"))
+
+control_md = +"# Control Packets A001-A031\n\n"
 control_md << "Generated: #{summary["generated_on"]}\n\n"
 control_md << "| Packet | Status | Check | Observed |\n"
 control_md << "|---|---:|---|---|\n"
 control_checks.each do |packet, label, status, observed|
   control_md << "| #{packet} | #{status} | #{label} | #{observed.to_s.gsub("|", "\\|")} |\n"
 end
-File.write(File.join(OUTPUT_DIR, "control_packets_A001_A028.md"), control_md)
+File.write(File.join(OUTPUT_DIR, "control_packets_A001_A031.md"), control_md)
 
 report = +"# Canon Validation Report\n\n"
 report << "Generated: #{summary["generated_on"]}\n\n"

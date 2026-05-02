@@ -1,8 +1,8 @@
 # Canon Validation Report
 
-Generated: 2026-05-02T20:53:31Z
+Generated: 2026-05-02T20:59:57Z
 
-- generated_on: 2026-05-02T20:53:31Z
+- generated_on: 2026-05-02T20:59:57Z
 - items: 3000
 - target_count: 3000
 - duplicate_ids: 0
@@ -12,6 +12,7 @@ Generated: 2026-05-02T20:53:31Z
 - future_year_rows: 0
 - placeholder_date_rows: 178
 - duplicate_candidate_keys: 40
+- chronology_inversion_rows: 9
 - generic_title_rows: 272
 - boundary_case_rows: 448
 - source_debt_rows: 2939
@@ -22,6 +23,7 @@ Generated: 2026-05-02T20:53:31Z
 
 - `_planning/canon_audit_outputs/canon_audit_summary.yml`
 - `_planning/canon_audit_outputs/canon_boundary_cases.tsv`
+- `_planning/canon_audit_outputs/canon_chronology_inversions.tsv`
 - `_planning/canon_audit_outputs/canon_duplicate_candidates.tsv`
 - `_planning/canon_audit_outputs/canon_execution_tracker.md`
 - `_planning/canon_audit_outputs/canon_generic_titles.tsv`
@@ -35,8 +37,9 @@ Generated: 2026-05-02T20:53:31Z
 - `_planning/canon_audit_outputs/canon_inventory_by_topic.tsv`
 - `_planning/canon_audit_outputs/canon_inventory_by_unit_type.tsv`
 - `_planning/canon_audit_outputs/canon_omission_queue.yml`
+- `_planning/canon_audit_outputs/canon_packet_index.md`
 - `_planning/canon_audit_outputs/canon_replacement_log.yml`
 - `_planning/canon_audit_outputs/canon_source_debt.tsv`
 - `_planning/canon_audit_outputs/canon_validation_report.md`
-- `_planning/canon_audit_outputs/control_packets_A001_A028.md`
+- `_planning/canon_audit_outputs/control_packets_A001_A031.md`
 - `_planning/canon_audit_outputs/wave_001_f001_f003_f009_f023_f024.md`
