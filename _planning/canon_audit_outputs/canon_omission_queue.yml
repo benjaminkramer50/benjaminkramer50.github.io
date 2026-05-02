@@ -1,6 +1,6 @@
 ---
-generated_on: '2026-05-02T20:48:33Z'
-status: wave_001_high_confidence_integrated_deferred_queue_open
+generated_on: '2026-05-02T21:20:42Z'
+status: wave_002_integrated_deferred_queue_open
 items:
 - candidate: Letters from an American Farmer
   creator: J. Hector St. John de Crevecoeur
@@ -26,22 +26,22 @@ items:
   creator: Henry Wadsworth Longfellow
   packets: [F002, F003]
   priority: high
-  status: queued_for_F004_us_poetry
+  status: integrated_wave_002_as_Selected_Poems
 - candidate: Selected Poems
   creator: Paul Laurence Dunbar
   packets: [F003]
   priority: high
-  status: queued_for_F004_us_poetry
+  status: integrated_wave_002_as_Lyrics_of_Lowly_Life
 - candidate: The Conjure Woman
   creator: Charles W. Chesnutt
   packets: [F003]
   priority: high
-  status: queued_for_F005_us_realism_naturalism
+  status: already_present_as_alias_under_The_Short_Fiction
 - candidate: Maggie, A Girl of the Streets
   creator: Stephen Crane
   packets: [F003]
   priority: medium_high
-  status: queued_for_F005_us_realism_naturalism
+  status: integrated_wave_002
 - candidate: Main-Travelled Roads
   creator: Hamlin Garland
   packets: [F003]
@@ -92,3 +92,193 @@ items:
   packets: [F024]
   priority: high
   status: deferred_pending_bhakti_packet
+- candidate: Life in the Iron Mills
+  creator: Rebecca Harding Davis
+  packets: [F005]
+  priority: high
+  status: deferred_pending_us_realism_slot_review
+- candidate: The New Negro
+  creator: Alain Locke
+  packets: [F007]
+  priority: high
+  status: deferred_pending_harlem_renaissance_slot_review
+- candidate: Color
+  creator: Countee Cullen
+  packets: [F007]
+  priority: high
+  status: deferred_pending_harlem_renaissance_poetry_slot_review
+- candidate: Southern Road
+  creator: Sterling A. Brown
+  packets: [F007]
+  priority: high
+  status: deferred_pending_harlem_renaissance_poetry_slot_review
+- candidate: God's Trombones
+  creator: James Weldon Johnson
+  packets: [F007]
+  priority: medium_high
+  status: deferred_pending_harlem_renaissance_slot_review
+- candidate: Mules and Men
+  creator: Zora Neale Hurston
+  packets: [F007]
+  priority: medium_high
+  status: deferred_pending_harlem_renaissance_slot_review
+- candidate: American Pastoral
+  creator: Philip Roth
+  packets: [F008]
+  priority: high
+  status: deferred_pending_postwar_us_chronology_slot_review
+- candidate: Revolutionary Road
+  creator: Richard Yates
+  packets: [F008]
+  priority: high
+  status: deferred_pending_postwar_us_slot_review
+- candidate: Tell Me a Riddle
+  creator: Tillie Olsen
+  packets: [F008]
+  priority: high
+  status: deferred_pending_postwar_us_short_fiction_slot_review
+- candidate: The Little Disturbances of Man
+  creator: Grace Paley
+  packets: [F008]
+  priority: high
+  status: deferred_pending_postwar_us_short_fiction_slot_review
+- candidate: Desperate Characters
+  creator: Paula Fox
+  packets: [F008]
+  priority: medium_high
+  status: deferred_pending_postwar_us_slot_review
+- candidate: Areopagitica
+  creator: John Milton
+  packets: [F010]
+  priority: high
+  status: deferred_pending_literary_nonfiction_boundary_review
+- candidate: The Spectator
+  creator: Joseph Addison and Richard Steele
+  packets: [F010]
+  priority: high
+  status: deferred_pending_periodical_essay_boundary_review
+- candidate: Lives of the Poets
+  creator: Samuel Johnson
+  packets: [F010]
+  priority: medium_high
+  status: deferred_pending_literary_criticism_boundary_review
+- candidate: Love-Letters Between a Nobleman and His Sister
+  creator: Aphra Behn
+  packets: [F010]
+  priority: medium_high
+  status: deferred_pending_restoration_prose_slot_review
+- candidate: The Female Spectator
+  creator: Eliza Haywood
+  packets: [F010]
+  priority: medium_high
+  status: deferred_pending_eighteenth_century_women_writers_slot_review
+- candidate: Childe Harold's Pilgrimage
+  creator: Lord Byron
+  packets: [F011]
+  priority: high
+  status: queued_for_wave_003_romantic_integration
+- candidate: Prometheus Unbound
+  creator: Percy Bysshe Shelley
+  packets: [F011]
+  priority: high
+  status: queued_for_wave_003_romantic_integration
+- candidate: A Vindication of the Rights of Woman
+  creator: Mary Wollstonecraft
+  packets: [F011]
+  priority: high
+  status: queued_for_wave_003_romantic_boundary_review
+- candidate: Elegiac Sonnets
+  creator: Charlotte Smith
+  packets: [F011]
+  priority: medium_high
+  status: queued_for_wave_003_romantic_integration
+- candidate: Poems of Gerard Manley Hopkins
+  creator: Gerard Manley Hopkins
+  packets: [F012]
+  priority: high
+  status: queued_for_wave_003_victorian_integration
+- candidate: Dover Beach and Selected Poems
+  creator: Matthew Arnold
+  packets: [F012]
+  priority: high
+  status: queued_for_wave_003_victorian_integration
+- candidate: Poems and Ballads
+  creator: Algernon Charles Swinburne
+  packets: [F012]
+  priority: high
+  status: queued_for_wave_003_victorian_integration
+- candidate: The Garden Party and Other Stories
+  creator: Katherine Mansfield
+  packets: [F013]
+  priority: high
+  status: queued_for_wave_003_british_modernism_integration
+- candidate: Another Time
+  creator: W. H. Auden
+  packets: [F013]
+  priority: high
+  status: queued_for_wave_003_british_modernism_integration
+- candidate: The Death of the Heart
+  creator: Elizabeth Bowen
+  packets: [F013]
+  priority: high
+  status: queued_for_wave_003_british_modernism_integration
+- candidate: Le Livre du Voir Dit
+  creator: Guillaume de Machaut
+  packets: [F014]
+  priority: high
+  status: queued_for_wave_003_french_premodern_integration
+- candidate: Sonnets et elegies
+  creator: Louise Labe
+  packets: [F014]
+  priority: high
+  status: queued_for_wave_003_french_premodern_integration
+- candidate: Maximes
+  creator: La Rochefoucauld
+  packets: [F014]
+  priority: high
+  status: queued_for_wave_003_french_classicism_integration
+- candidate: Histoires ou contes du temps passe
+  creator: Charles Perrault
+  packets: [F014]
+  priority: high
+  status: queued_for_wave_003_french_classicism_integration
+- candidate: Persian Letters
+  creator: Montesquieu
+  packets: [F015]
+  priority: high
+  status: queued_for_wave_003_french_enlightenment_integration
+- candidate: Corinne, or Italy
+  creator: Germaine de Stael
+  packets: [F015]
+  priority: high
+  status: queued_for_wave_003_french_romantic_integration
+- candidate: Indiana
+  creator: George Sand
+  packets: [F015]
+  priority: high
+  status: queued_for_wave_003_french_nineteenth_integration
+- candidate: Alcools
+  creator: Guillaume Apollinaire
+  packets: [F016]
+  priority: high
+  status: queued_for_wave_003_french_modernism_integration
+- candidate: Charmes
+  creator: Paul Valery
+  packets: [F016]
+  priority: high
+  status: queued_for_wave_003_french_modernism_integration
+- candidate: Nadja
+  creator: Andre Breton
+  packets: [F016]
+  priority: high
+  status: queued_for_wave_003_french_surrealism_integration
+- candidate: Exercises in Style
+  creator: Raymond Queneau
+  packets: [F016]
+  priority: medium_high
+  status: queued_for_wave_003_french_modernism_integration
+- candidate: Duplicate and chronology repairs from F011-F016
+  creator: structural audit
+  packets: [A029, A030, A031, H013, H014, F011, F012, F013, F014, F015, F016]
+  priority: high
+  status: queued_for_wave_003_metadata_repair_batch

@@ -1,8 +1,8 @@
 # Canon Validation Report
 
-Generated: 2026-05-02T20:59:57Z
+Generated: 2026-05-02T21:23:16Z
 
-- generated_on: 2026-05-02T20:59:57Z
+- generated_on: 2026-05-02T21:23:16Z
 - items: 3000
 - target_count: 3000
 - duplicate_ids: 0
@@ -10,11 +10,11 @@ Generated: 2026-05-02T20:59:57Z
 - rank_gaps: 0
 - missing_required_rows: 0
 - future_year_rows: 0
-- placeholder_date_rows: 178
-- duplicate_candidate_keys: 40
-- chronology_inversion_rows: 9
+- placeholder_date_rows: 173
+- duplicate_candidate_keys: 41
+- chronology_inversion_rows: 25
 - generic_title_rows: 272
-- boundary_case_rows: 448
+- boundary_case_rows: 442
 - source_debt_rows: 2939
 - manual_only_rows: 2938
 - needs_sources_rows: 2939
@@ -43,3 +43,4 @@ Generated: 2026-05-02T20:59:57Z
 - `_planning/canon_audit_outputs/canon_validation_report.md`
 - `_planning/canon_audit_outputs/control_packets_A001_A031.md`
 - `_planning/canon_audit_outputs/wave_001_f001_f003_f009_f023_f024.md`
+- `_planning/canon_audit_outputs/wave_002_f004_f005_f006_f007_f008_f010.md`

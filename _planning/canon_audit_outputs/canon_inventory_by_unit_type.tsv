@@ -1,17 +1,17 @@
 bucket	count
-novel	1344
+novel	1340
 play	206
-poetry_selection	141
-literary_work	140
-poetry_collection	115
-novella	72
-short_story_collection	70
+poetry_selection	142
+literary_work	136
+poetry_collection	119
+novella	74
+short_story_collection	69
 book	33
 epic_poem	31
 novel_sequence	30
 literary_memoir	20
+poem	20
 story_collection	20
-poem	19
 tragedy	19
 memoir	18
 oral_epic	18
@@ -36,6 +36,7 @@ autobiography	6
 corpus	6
 epistolary_novel	6
 lyric_poetry_anthology	6
+poem_sequence	6
 saga	6
 scripture	6
 short_story_selection	6
@@ -44,7 +45,6 @@ detective_novel	5
 fable_collection	5
 gothic_novel	5
 lyric_poetry_selection	5
-poem_sequence	5
 prophetic_book	5
 prose_poetry_collection	5
 prose_tale	5
@@ -113,7 +113,6 @@ oral_history_literature	2
 oral_poetry_selection	2
 pastoral_poetry_collection	2
 philosophical_poem	2
-picture_book	2
 poetry_cycle	2
 prose_and_poetry_collection	2
 prose_cycle	2
@@ -213,6 +212,7 @@ jain_story_collection	1
 jataka_story	1
 learned_prose	1
 legendary_saga	1
+letter_collection	1
 literary_dialogues	1
 literary_documentary_prose	1
 literary_essay	1
@@ -271,6 +271,7 @@ oratory_and_letters_selection	1
 ornate_prose_biography	1
 philosophical_letters	1
 picaresque_novel	1
+picture_book	1
 play_and_novel	1
 play_collection	1
 play_cycle	1

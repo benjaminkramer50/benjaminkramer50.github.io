@@ -16890,14 +16890,14 @@ items:
   lifetime_path: true
   rank: 665
   phase: 3
-- id: candidate:bloom_gap_031_0264_the_adventures_of_roderick_random
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0264_the_adventures_of_roderick_random
-  title: The Adventures of Roderick Random
+- id: candidate:wave002_lennox_female_quixote
+  source: wave_002_canon_audit_integration
+  source_id: wave002_lennox_female_quixote
+  title: The Female Quixote
   creators:
-  - Tobias Smollett
-  date_label: 18th century
-  sort_year: 1750
+  - Charlotte Lennox
+  date_label: '1752'
+  sort_year: 1752
   section: textual_humanities
   group: literature
   topic: british_literature
@@ -16908,7 +16908,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Second-wave audit addition for eighteenth-century British fiction and women's writing; replaces one Smollett row while retaining Smollett through Humphrey Clinker.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -17269,14 +17269,14 @@ items:
   lifetime_path: true
   rank: 680
   phase: 3
-- id: candidate:bloom_gap_031_0244_the_plain_dealer
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0244_the_plain_dealer
-  title: The Plain Dealer
+- id: candidate:wave002_etherege_man_of_mode
+  source: wave_002_canon_audit_integration
+  source_id: wave002_etherege_man_of_mode
+  title: The Man of Mode
   creators:
-  - William Wycherley
-  date_label: 18th century
-  sort_year: 1760
+  - George Etherege
+  date_label: '1676'
+  sort_year: 1676
   section: textual_humanities
   group: literature
   topic: british_literature
@@ -17287,21 +17287,21 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the play or dramatic text.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Second-wave audit addition for Restoration comedy; replaces a second Wycherley row while retaining The Country Wife.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 681
   phase: 3
-- id: candidate:bloom_gap_031_0242_the_recruiting_officer
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0242_the_recruiting_officer
-  title: The Recruiting Officer
+- id: candidate:wave002_vanbrugh_provoked_wife
+  source: wave_002_canon_audit_integration
+  source_id: wave002_vanbrugh_provoked_wife
+  title: The Provoked Wife
   creators:
-  - George Farquhar
-  date_label: 18th century
-  sort_year: 1760
+  - John Vanbrugh
+  date_label: '1697'
+  sort_year: 1697
   section: textual_humanities
   group: literature
   topic: british_literature
@@ -17312,7 +17312,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the play or dramatic text.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Second-wave audit addition for Restoration and early eighteenth-century comedy; replaces a second Farquhar row while retaining The Beaux' Strategem.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -17369,100 +17369,105 @@ items:
   lifetime_path: true
   rank: 684
   phase: 3
-- id: candidate:bloom_gap_031_0254_poetical_works
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0254_poetical_works
-  title: '"Poetical Works"'
+- id: candidate:wave002_gray_elegy_country_churchyard
+  source: wave_002_canon_audit_integration
+  source_id: wave002_gray_elegy_country_churchyard
+  title: Elegy Written in a Country Churchyard
   creators:
-  - George Crabbe
-  date_label: 18th century
-  sort_year: 1760
+  - Thomas Gray
+  date_label: '1751'
+  sort_year: 1751
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: poetry_selection
-  tier: contextual
+  unit_type: poem
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Second-wave audit addition for a central eighteenth-century English poem; replaces a vague contextual Crabbe row better handled by a later British poetry packet.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 685
   phase: 3
-- id: candidate:bloom_gap_031_0246_a_song_to_david
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0246_a_song_to_david
-  title: A Song to David
+- id: candidate:wave002_rochester_selected_poems
+  source: wave_002_canon_audit_integration
+  source_id: wave002_rochester_selected_poems
+  title: Selected Poems
+  aliases:
+  - A Satyr Against Reason and Mankind
   creators:
-  - Christopher Smart
-  date_label: 18th century
-  sort_year: 1760
+  - John Wilmot, Earl of Rochester
+  date_label: 17th century
+  sort_year: 1675
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_selection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Second-wave audit addition for Restoration lyric, satire, and libertine verse; replaces one of two Christopher Smart rows.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 686
   phase: 3
-- id: candidate:bloom_gap_031_0245_jubilate_agno
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0245_jubilate_agno
-  title: Jubilate Agno
+- id: candidate:wave002_thomson_seasons
+  source: wave_002_canon_audit_integration
+  source_id: wave002_thomson_seasons
+  title: The Seasons
   creators:
-  - Christopher Smart
-  date_label: 18th century
-  sort_year: 1760
+  - James Thomson
+  date_label: 1730
+  sort_year: 1730
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poem_sequence
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Second-wave audit addition for eighteenth-century nature and descriptive poetry; replaces the second Christopher Smart row in an overrepresented minor cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 687
   phase: 3
-- id: candidate:bloom_gap_031_0250_the_deserted_village
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0250_the_deserted_village
-  title: The Deserted Village
+- id: candidate:wave002_montagu_turkish_embassy_letters
+  source: wave_002_canon_audit_integration
+  source_id: wave002_montagu_turkish_embassy_letters
+  title: Turkish Embassy Letters
+  aliases:
+  - The Turkish Embassy Letters
+  - Letters from Turkey
   creators:
-  - Oliver Goldsmith
-  date_label: 18th century
-  sort_year: 1760
+  - Lady Mary Wortley Montagu
+  date_label: '1763'
+  sort_year: 1763
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: letter_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Second-wave audit addition for eighteenth-century travel letters, women's writing, and cross-cultural prose; replaces a Goldsmith contextual poem while retaining stronger Goldsmith entries.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -22503,50 +22508,60 @@ items:
   lifetime_path: true
   rank: 887
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0577_a_tangled_tale
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0577_a_tangled_tale
-  title: A Tangled Tale
+- id: candidate:wave002_whittier_snow_bound_selected_poems
+  source: wave_002_canon_audit_integration
+  source_id: wave002_whittier_snow_bound_selected_poems
+  title: Snow-Bound and Selected Poems
+  aliases:
+  - Snow-Bound
+  - Snow-Bound: A Winter Idyl
+  - Barbara Frietchie
+  - Ichabod
   creators:
-  - Lewis Carroll
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1848
+  - John Greenleaf Whittier
+  date_label: 19th century; Snow-Bound published 1866
+  sort_year: 1866
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: american_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_selection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 002 F004 addition for nineteenth-century US poetry, abolitionist verse, regional memory, and schoolroom reception; replaces a contextual Lewis Carroll row with weaker relevance to the global literature path.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 888
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0574_phantasmagoria_and_other_poems
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0574_phantasmagoria_and_other_poems
-  title: Phantasmagoria and Other Poems
+- id: candidate:wave002_longfellow_selected_poems
+  source: wave_002_canon_audit_integration
+  source_id: wave002_longfellow_selected_poems
+  title: Selected Poems
+  aliases:
+  - The Song of Hiawatha
+  - Evangeline
+  - Paul Revere's Ride
+  - The Courtship of Miles Standish
   creators:
-  - Lewis Carroll
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1848
+  - Henry Wadsworth Longfellow
+  date_label: 19th century
+  sort_year: 1855
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: american_literature
   medium: text
   unit_type: poetry_selection
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 002 F004 addition for a missing central nineteenth-century US poet and transatlantic popular canon; replaces contextual Lewis Carroll poetry already less central than Alice and nonsense verse coverage.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -22580,50 +22595,58 @@ items:
   phase: 3
   aliases:
   - The Personal History, Adventures, Experience and Observation of David Copperfield the Younger
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0581_nonsense_songs_stories_botany_and_alphabets
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0581_nonsense_songs_stories_botany_and_alphabets
-  title: Nonsense Songs, Stories, Botany, and Alphabets
+- id: candidate:wave002_bryant_thanatopsis_selected_poems
+  source: wave_002_canon_audit_integration
+  source_id: wave002_bryant_thanatopsis_selected_poems
+  title: Thanatopsis and Selected Poems
+  aliases:
+  - Thanatopsis
+  - To a Waterfowl
+  - The Prairies
   creators:
-  - Edward Lear
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1849
+  - William Cullen Bryant
+  date_label: 19th century
+  sort_year: 1821
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: american_literature
   medium: text
   unit_type: poetry_selection
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 002 F004 addition for early US romantic poetry and one of the clearest named omissions in the packet; replaces a contextual Lear row overlapping with existing nonsense literature coverage.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 891
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0579_three_sunsets_and_other_poems
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0579_three_sunsets_and_other_poems
-  title: Three Sunsets and Other Poems
+- id: candidate:wave002_dunbar_lyrics_lowly_life
+  source: wave_002_canon_audit_integration
+  source_id: wave002_dunbar_lyrics_lowly_life
+  title: Lyrics of Lowly Life
+  aliases:
+  - Selected Poems
+  - We Wear the Mask
+  - Sympathy
   creators:
-  - Lewis Carroll
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1849
+  - Paul Laurence Dunbar
+  date_label: 1896
+  sort_year: 1896
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: african_american_literature
   medium: text
   unit_type: poetry_selection
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 002 F004 addition for a missing foundational African American poet and dialect/standard lyric tradition; replaces a contextual Lewis Carroll poetry row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -23764,25 +23787,30 @@ items:
   lifetime_path: true
   rank: 937
   phase: 4
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0598_the_collected_poems_of_g_k_chesteron
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0598_the_collected_poems_of_g_k_chesteron
-  title: The Collected Poems of G K Chesteron
+- id: candidate:wave002_poe_raven_selected_poems
+  source: wave_002_canon_audit_integration
+  source_id: wave002_poe_raven_selected_poems
+  title: The Raven and Selected Poems
+  aliases:
+  - The Raven
+  - The Bells
+  - Annabel Lee
+  - Ulalume
   creators:
-  - G K Chesterton
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1853
+  - Edgar Allan Poe
+  date_label: 1845 and later poems
+  sort_year: 1845
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: american_literature
   medium: text
   unit_type: poetry_selection
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 002 F004 addition for Poe's poetry, which was absent as a distinct form despite prose coverage; replaces a contextual row with a title typo and approximate chronology.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -28609,25 +28637,27 @@ items:
   phase: 4
   aliases:
   - Growing Up
-- id: candidate:genre_lit_king_yellow
-  source: wave_042_literature_genre_childrens_speculative_final_balance
-  source_id: genre_lit_king_yellow
-  title: The King in Yellow
+- id: candidate:wave002_crane_maggie
+  source: wave_002_canon_audit_integration
+  source_id: wave002_crane_maggie
+  title: 'Maggie: A Girl of the Streets'
+  aliases:
+  - Maggie
   creators:
-  - Robert W. Chambers
-  date_label: '1895'
-  sort_year: 1895
+  - Stephen Crane
+  date_label: '1893'
+  sort_year: 1893
   section: textual_humanities
   group: literature
-  topic: weird_literature
+  topic: american_literature
   medium: text
-  unit_type: short_story_collection
+  unit_type: novella
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the story, tale, story collection, or documented assigned selection.
-  rationale: Genre, children's, speculative, horror, crime, and graphic narrative balance candidate for the 3000-text literature-only path; staged to improve durable literary-study coverage without adding non-text media.
+  rationale: Second-wave audit addition for US naturalism and urban poverty fiction; replaces a weaker genre row while retaining nineteenth-century weird fiction coverage elsewhere.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -30253,17 +30283,19 @@ items:
   review_status: needs_sources
   url:
   lifetime_path: true
-  id: candidate:mandatory_wings_of_dove
-  source_id: mandatory_wings_of_dove
-  title: The Wings of the Dove
+  id: candidate:wave002_norris_mcteague
+  source_id: wave002_norris_mcteague
+  title: McTeague
+  aliases:
+  - 'McTeague: A Story of San Francisco'
   creators:
-  - Henry James
-  date_label: '1902'
-  sort_year: 1902
+  - Frank Norris
+  date_label: '1899'
+  sort_year: 1899
   topic: american_literature
   unit_type: novel
   tier: major
-  rationale: Major novel in american literature, included for durable literary influence, historical importance, and its role in a comprehensive global literature path centered on complete readable works.
+  rationale: Second-wave audit addition for US naturalism; replaces one late Henry James row in an overrepresented James cluster while retaining James through stronger entries.
   rank: 1194
   phase: 4
 - id: canon:souls-of-black-folk
@@ -31053,17 +31085,17 @@ items:
   review_status: needs_sources
   url:
   lifetime_path: true
-  id: candidate:mandatory_golden_bowl
-  source_id: mandatory_golden_bowl
-  title: The Golden Bowl
+  id: candidate:wave002_london_call_wild
+  source_id: wave002_london_call_wild
+  title: The Call of the Wild
   creators:
-  - Henry James
-  date_label: '1904'
-  sort_year: 1904
+  - Jack London
+  date_label: '1903'
+  sort_year: 1903
   topic: american_literature
-  unit_type: novel
+  unit_type: novella
   tier: major
-  rationale: Major novel in american literature, included for durable literary influence, historical importance, and its role in a comprehensive global literature path centered on complete readable works.
+  rationale: Second-wave audit addition for US naturalism, adventure fiction, animal narrative, and popular literary canon; replaces another late Henry James row in an overrepresented cluster.
   rank: 1226
   phase: 5
 - id: candidate:latcarib_lit_cantos_vida
@@ -35815,50 +35847,56 @@ items:
   lifetime_path: true
   rank: 1415
   phase: 5
-- id: candidate:genre_lit_velveteen_rabbit
-  source: wave_042_literature_genre_childrens_speculative_final_balance
-  source_id: genre_lit_velveteen_rabbit
-  title: The Velveteen Rabbit
+- id: candidate:wave002_stevens_harmonium
+  source: wave_002_canon_audit_integration
+  source_id: wave002_stevens_harmonium
+  title: Harmonium
+  aliases:
+  - Sunday Morning
+  - Thirteen Ways of Looking at a Blackbird
+  - The Snow Man
   creators:
-  - Margery Williams
-  date_label: '1922'
-  sort_year: 1922
+  - Wallace Stevens
+  date_label: '1923'
+  sort_year: 1923
   section: textual_humanities
   group: literature
-  topic: childrens_literature
+  topic: american_literature
   medium: text
-  unit_type: picture_book
+  unit_type: poetry_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Genre, children's, speculative, horror, crime, and graphic narrative balance candidate for the 3000-text literature-only path; staged to improve durable literary-study coverage without adding non-text media.
+  rationale: Second-wave audit addition for US modernist poetry; replaces a lower-priority children's row in a dense 1920s cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 1416
   phase: 5
-- id: candidate:scale5_lit_worm_ouroboros
-  source: wave_029_literature_genre_childrens_contemporary_scale
-  source_id: scale5_lit_worm_ouroboros
-  title: The Worm Ouroboros
+- id: candidate:wave002_cummings_tulips_chimneys
+  source: wave_002_canon_audit_integration
+  source_id: wave002_cummings_tulips_chimneys
+  title: Tulips and Chimneys
+  aliases:
+  - Selected Poems
   creators:
-  - E. R. Eddison
-  date_label: '1922'
-  sort_year: 1922
+  - E. E. Cummings
+  date_label: '1923'
+  sort_year: 1923
   section: textual_humanities
   group: literature
-  topic: fantasy_literature
+  topic: american_literature
   medium: text
-  unit_type: novel
+  unit_type: poetry_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Scale candidate for the 3000-text literature-only lifetime path; retained for source review, duplicate review, translation review, and coverage-balancing.
+  rationale: Second-wave audit addition for US modernist poetry, typography, lyric experiment, and small-press modernism; replaces a lower-priority fantasy row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -36273,25 +36311,27 @@ items:
   lifetime_path: true
   rank: 1433
   phase: 5
-- id: candidate:scale5_lit_king_elflands_daughter
-  source: wave_029_literature_genre_childrens_contemporary_scale
-  source_id: scale5_lit_king_elflands_daughter
-  title: The King of Elfland's Daughter
+- id: candidate:wave002_moore_observations
+  source: wave_002_canon_audit_integration
+  source_id: wave002_moore_observations
+  title: Observations
+  aliases:
+  - Poetry
   creators:
-  - Lord Dunsany
+  - Marianne Moore
   date_label: '1924'
   sort_year: 1924
   section: textual_humanities
   group: literature
-  topic: fantasy_literature
+  topic: american_literature
   medium: text
-  unit_type: novel
+  unit_type: poetry_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Scale candidate for the 3000-text literature-only lifetime path; retained for source review, duplicate review, translation review, and coverage-balancing.
+  rationale: Second-wave audit addition for US modernist poetry and major women modernists; replaces a lower-priority fantasy row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -38456,25 +38496,27 @@ items:
   lifetime_path: true
   rank: 1520
   phase: 6
-- id: candidate:latcarib_lit_banana_bottom
-  source: wave_039_literature_latin_america_caribbean_scale
-  source_id: latcarib_lit_banana_bottom
-  title: Banana Bottom
+- id: candidate:wave002_mckay_harlem_shadows
+  source: wave_002_canon_audit_integration
+  source_id: wave002_mckay_harlem_shadows
+  title: Harlem Shadows
+  aliases:
+  - If We Must Die
   creators:
   - Claude McKay
-  date_label: '1933'
-  sort_year: 1933
+  date_label: '1922'
+  sort_year: 1922
   section: textual_humanities
   group: literature
-  topic: caribbean_literature
+  topic: african_american_literature
   medium: text
-  unit_type: novel
+  unit_type: poetry_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Latin America and Caribbean literature scale candidate for the 3000-text literature-only path; staged to improve colonial, national, modernismo, avant-garde, Brazilian, Caribbean, Afro-Caribbean, testimonio, poetry, drama, Boom, post-Boom, and contemporary coverage pending source review.
+  rationale: Second-wave Harlem Renaissance audit addition; replaces a later McKay novel with his central Harlem-era poetry collection.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -44122,10 +44164,18 @@ items:
 - id: candidate:bloom_reviewed_hughes_poems
   source: wave_030_literature_bloom_reviewed_priority
   source_id: bloom_reviewed_hughes_poems
-  title: Selected Poems
+  title: The Weary Blues and Selected Poems
+  aliases:
+  - Selected Poems
+  - The Weary Blues
+  - Fine Clothes to the Jew
+  - Montage of a Dream Deferred
+  - Harlem
+  - The Negro Speaks of Rivers
+  - I, Too
   creators:
   - Langston Hughes
-  date_label: 20th century
+  date_label: 20th century; includes Harlem Renaissance collections from 1926 onward
   sort_year: 1950
   section: textual_humanities
   group: literature
@@ -44137,7 +44187,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  rationale: Reviewed Bloom-priority literature candidate, repaired in the second-wave Harlem Renaissance audit to expose the 1920s Hughes anchor and reduce generic-title ambiguity.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -45856,17 +45906,17 @@ items:
   lifetime_path: true
   rank: 1813
   phase: 7
-- id: candidate:genre_lit_more_than_human
-  source: wave_042_literature_genre_childrens_speculative_final_balance
-  source_id: genre_lit_more_than_human
-  title: More Than Human
+- id: candidate:wave002_mailer_naked_dead
+  source: wave_002_canon_audit_integration
+  source_id: wave002_mailer_naked_dead
+  title: The Naked and the Dead
   creators:
-  - Theodore Sturgeon
-  date_label: '1953'
-  sort_year: 1953
+  - Norman Mailer
+  date_label: '1948'
+  sort_year: 1948
   section: textual_humanities
   group: literature
-  topic: science_fiction_literature
+  topic: american_literature
   medium: text
   unit_type: novel
   tier: major
@@ -45874,7 +45924,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Genre, children's, speculative, horror, crime, and graphic narrative balance candidate for the 3000-text literature-only path; staged to improve durable literary-study coverage without adding non-text media.
+  rationale: Second-wave postwar US audit addition for World War II fiction and the postwar American novel; replaces a lower-priority science-fiction row in a dense genre cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -50440,17 +50490,17 @@ items:
   lifetime_path: true
   rank: 1995
   phase: 7
-- id: candidate:genre_lit_harriet_spy
-  source: wave_042_literature_genre_childrens_speculative_final_balance
-  source_id: genre_lit_harriet_spy
-  title: Harriet the Spy
+- id: candidate:wave002_bellow_herzog
+  source: wave_002_canon_audit_integration
+  source_id: wave002_bellow_herzog
+  title: Herzog
   creators:
-  - Louise Fitzhugh
+  - Saul Bellow
   date_label: '1964'
   sort_year: 1964
   section: textual_humanities
   group: literature
-  topic: childrens_literature
+  topic: american_literature
   medium: text
   unit_type: novel
   tier: major
@@ -50458,7 +50508,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Genre, children's, speculative, horror, crime, and graphic narrative balance candidate for the 3000-text literature-only path; staged to improve durable literary-study coverage without adding non-text media.
+  rationale: Second-wave postwar US audit addition for Bellow's central mid-century novel; replaces a lower-priority children's row while retaining children's literature elsewhere.
   source_status: manual_only
   review_status: needs_sources
   url:

@@ -1,6 +1,6 @@
 ---
-generated_on: '2026-05-02T20:55:00Z'
-status: wave_001_integrated
+generated_on: '2026-05-02T21:20:42Z'
+status: wave_002_integrated_pending_validation
 items:
 - wave: wave_001
   added: Selected Orations and Letters
@@ -65,8 +65,159 @@ items:
   replaced_creator: Henry James
   rank: 1084
   rationale: Bierce fills Civil War short-fiction coverage; Henry James remains represented by stronger entries.
+- wave: wave_002
+  added: The Female Quixote
+  added_creator: Charlotte Lennox
+  replaced: The Adventures of Roderick Random
+  replaced_creator: Tobias Smollett
+  rank: 666
+  rationale: Lennox fills a major eighteenth-century fiction and women writers gap; Smollett remains represented by Humphrey Clinker.
+- wave: wave_002
+  added: The Man of Mode
+  added_creator: George Etherege
+  replaced: The Plain Dealer
+  replaced_creator: William Wycherley
+  rank: 681
+  rationale: Etherege fills Restoration comedy coverage while Wycherley remains represented by The Country Wife.
+- wave: wave_002
+  added: The Provoked Wife
+  added_creator: John Vanbrugh
+  replaced: The Recruiting Officer
+  replaced_creator: George Farquhar
+  rank: 682
+  rationale: Vanbrugh improves Restoration comedy coverage while Farquhar remains represented by The Beaux' Strategem.
+- wave: wave_002
+  added: Elegy Written in a Country Churchyard
+  added_creator: Thomas Gray
+  replaced: '"Poetical Works"'
+  replaced_creator: George Crabbe
+  rank: 685
+  rationale: Gray is a clearer eighteenth-century poetry anchor than the vague contextual Crabbe row.
+- wave: wave_002
+  added: Selected Poems
+  added_creator: John Wilmot, Earl of Rochester
+  replaced: A Song to David
+  replaced_creator: Christopher Smart
+  rank: 686
+  rationale: Rochester fills Restoration lyric and satire; the two-row Smart cluster was overrepresented.
+- wave: wave_002
+  added: The Seasons
+  added_creator: James Thomson
+  replaced: Jubilate Agno
+  replaced_creator: Christopher Smart
+  rank: 687
+  rationale: Thomson fills a major eighteenth-century descriptive-poetry gap; Smart was already represented by the adjacent row before this reduction.
+- wave: wave_002
+  added: Turkish Embassy Letters
+  added_creator: Lady Mary Wortley Montagu
+  replaced: The Deserted Village
+  replaced_creator: Oliver Goldsmith
+  rank: 688
+  rationale: Montagu fills a major women's prose and travel-letter gap while Goldsmith remains represented by stronger entries.
+- wave: wave_002
+  added: Snow-Bound and Selected Poems
+  added_creator: John Greenleaf Whittier
+  replaced: A Tangled Tale
+  replaced_creator: Lewis Carroll
+  rank: 888
+  rationale: Whittier fills a major nineteenth-century US poetry gap; the displaced Carroll row was a weaker contextual import.
+- wave: wave_002
+  added: Selected Poems
+  added_creator: Henry Wadsworth Longfellow
+  replaced: Phantasmagoria and Other Poems
+  replaced_creator: Lewis Carroll
+  rank: 889
+  rationale: Longfellow was a high-confidence US poetry omission; the displaced row was a weaker Carroll poetry selection.
+- wave: wave_002
+  added: Thanatopsis and Selected Poems
+  added_creator: William Cullen Bryant
+  replaced: Nonsense Songs, Stories, Botany, and Alphabets
+  replaced_creator: Edward Lear
+  rank: 891
+  rationale: Bryant fills early US poetry coverage; Lear remains less central to this packet.
+- wave: wave_002
+  added: Lyrics of Lowly Life
+  added_creator: Paul Laurence Dunbar
+  replaced: Three Sunsets and Other Poems
+  replaced_creator: Lewis Carroll
+  rank: 892
+  rationale: Dunbar fills a high-confidence African American and US poetry omission; the displaced row was another weak Carroll poetry row.
+- wave: wave_002
+  added: The Raven and Selected Poems
+  added_creator: Edgar Allan Poe
+  replaced: The Collected Poems of G K Chesteron
+  replaced_creator: G. K. Chesterton
+  rank: 938
+  rationale: Poe's poetry needed explicit coverage; the displaced row was typo-bearing and lower priority.
+- wave: wave_002
+  added: 'Maggie: A Girl of the Streets'
+  added_creator: Stephen Crane
+  replaced: The King in Yellow
+  replaced_creator: Robert W. Chambers
+  rank: 1129
+  rationale: Maggie fills US naturalism; the displaced genre row was weaker in a 3000-work global canon.
+- wave: wave_002
+  added: McTeague
+  added_creator: Frank Norris
+  replaced: The Wings of the Dove
+  replaced_creator: Henry James
+  rank: 1194
+  rationale: Norris fills US naturalism; Henry James remains represented by stronger entries.
+- wave: wave_002
+  added: The Call of the Wild
+  added_creator: Jack London
+  replaced: The Golden Bowl
+  replaced_creator: Henry James
+  rank: 1226
+  rationale: London fills US naturalism and popular literary canon; Henry James remains represented after cluster reduction.
+- wave: wave_002
+  added: Harmonium
+  added_creator: Wallace Stevens
+  replaced: The Velveteen Rabbit
+  replaced_creator: Margery Williams
+  rank: 1416
+  rationale: Stevens was a high-confidence US modernist poetry omission; the displaced children's row was lower priority.
+- wave: wave_002
+  added: Tulips and Chimneys
+  added_creator: E. E. Cummings
+  replaced: The Worm Ouroboros
+  replaced_creator: E. R. Eddison
+  rank: 1417
+  rationale: Cummings fills US modernist poetry; the displaced fantasy row was lower priority.
+- wave: wave_002
+  added: Observations
+  added_creator: Marianne Moore
+  replaced: The King of Elfland's Daughter
+  replaced_creator: Lord Dunsany
+  rank: 1434
+  rationale: Moore fills a major women modernist gap; the displaced fantasy row was lower priority.
+- wave: wave_002
+  added: Harlem Shadows
+  added_creator: Claude McKay
+  replaced: Banana Bottom
+  replaced_creator: Claude McKay
+  rank: 1521
+  rationale: Harlem Shadows is the more central Harlem Renaissance McKay anchor.
+- wave: wave_002
+  added: The Naked and the Dead
+  added_creator: Norman Mailer
+  replaced: More Than Human
+  replaced_creator: Theodore Sturgeon
+  rank: 1814
+  rationale: Mailer fills a major postwar US fiction gap; the displaced science-fiction row was lower priority.
+- wave: wave_002
+  added: Herzog
+  added_creator: Saul Bellow
+  replaced: Harriet the Spy
+  replaced_creator: Louise Fitzhugh
+  rank: 1996
+  rationale: Herzog fills a central postwar Bellow gap; children's literature remains broadly represented elsewhere.
 alias_repairs:
 - wave: wave_001
   item: Tales
   creator: Edgar Allan Poe
   added_alias: The Murders in the Rue Morgue
+- wave: wave_002
+  item: The Weary Blues and Selected Poems
+  creator: Langston Hughes
+  added_alias: The Weary Blues; Fine Clothes to the Jew; Montage of a Dream Deferred; Harlem; The Negro Speaks of Rivers; I, Too
