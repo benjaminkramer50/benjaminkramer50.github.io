@@ -46,6 +46,14 @@ The audit used five independent review scopes plus local checks:
   - `The Winter's Tale`
   - `Animal Farm`
 - Kept the lifetime path at 3,000 by replacing lower-confidence contextual entries, mostly minor early-modern/Bloom-gap placeholders plus one contextual 1940s candidate.
+- Added a broader mandatory-title audit pass with alias-aware repairs:
+  - Added `Lyrical Ballads`, `The Prophet`, `For Whom the Bell Tolls`, `The Crucible`, `Cat on a Hot Tin Roof`, `On the Road`, and `The Bell Jar`.
+  - Made `The Rape of the Lock` explicit by retitling Pope's entry as `The Rape of the Lock and Selected Poems`.
+  - Added searchable aliases for collection/variant cases including `Diary of a Madman`, `Rashomon`, `Godan`, `The Aleph`, `Duino Elegies`, `Howl`, `Shakuntala`, and `The Lais of Marie de France`.
+  - Updated public/admin search to include aliases so collection-level inclusions are discoverable.
+- Added a third broader omissions repair pass:
+  - Added `The Trojan Women`, `The Second Shepherds' Play`, `Edward II`, `Jacques the Fatalist`, `Ivanhoe`, `The Last of the Mohicans`, `Walden`, `Uncle Tom's Cabin`, `Incidents in the Life of a Slave Girl`, `The Jungle`, `The Good Earth`, `Of Mice and Men`, `The Old Man and the Sea`, `Notes of a Native Son`, `The Fire Next Time`, and `The French Lieutenant's Woman`.
+  - Added aliases for title-form false negatives including `The Women of Trachis`, `The Satyricon`, `The School for Scandal`, `Bartleby, the Scrivener`, and `Benito Cereno`.
 - Removed high-confidence non-literary/prose spillover from the public literature path:
   - `Del Romanzo Storico`
   - `Genie du Christianisme`

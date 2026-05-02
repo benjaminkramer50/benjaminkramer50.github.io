@@ -66,7 +66,8 @@ wide: true
   {% assign primary_domain = item.group | default: "" %}
   {% assign display_title = item.title %}
   {% assign creator_names = item.creators | join: ", " %}
-  {% capture search_text %}{{ display_title }} {{ creator_names }} {{ section }} {{ item.group }} {{ item.topic }} {{ item.medium }} {{ item.unit_type }}{% endcapture %}
+  {% if item.aliases %}{% assign alias_names = item.aliases | join: " " %}{% else %}{% assign alias_names = "" %}{% endif %}
+  {% capture search_text %}{{ display_title }} {{ alias_names }} {{ creator_names }} {{ section }} {{ item.group }} {{ item.topic }} {{ item.medium }} {{ item.unit_type }}{% endcapture %}
   <article class="canon-item canon-progress-{{ progress_status | replace: '_', '-' }}"
            {% unless item.lifetime_path %}hidden{% endunless %}
            data-canon-id="{{ item.id | escape }}"

@@ -99,6 +99,7 @@ robots: noindex, nofollow
     {
       id: {{ item.id | jsonify }},
       title: {{ item.title | jsonify }},
+      aliases: {{ item.aliases | jsonify }},
       creators: {{ item.creators | jsonify }},
       date_label: {{ item.date_label | jsonify }},
       topic: {{ item.topic | jsonify }},
@@ -186,9 +187,10 @@ robots: noindex, nofollow
       var row = document.createElement('article');
       var status = getStatus(item.id);
       var creators = Array.isArray(item.creators) ? item.creators.join(', ') : '';
+      var aliases = Array.isArray(item.aliases) ? item.aliases.join(' ') : '';
       var topic = titleCase(item.topic || '');
       var tier = item.tier === 'core' ? 'Core Work' : item.tier === 'major' ? 'Major Work' : titleCase(item.tier || '');
-      var searchText = [item.title, creators, item.date_label, topic, tier].join(' ').toLowerCase();
+      var searchText = [item.title, aliases, creators, item.date_label, topic, tier].join(' ').toLowerCase();
 
       row.className = 'canon-item';
       row.setAttribute('data-canon-id', item.id);
