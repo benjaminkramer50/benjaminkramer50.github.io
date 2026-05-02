@@ -35,6 +35,17 @@ The audit used five independent review scopes plus local checks:
 
 ## Corrections Applied
 
+- Added a mandatory-omissions repair pass after user-facing audit caught absent core works:
+  - `The Taming of the Shrew`
+  - `Richard III`
+  - `Richard II`
+  - `Romeo and Juliet`
+  - `Much Ado About Nothing`
+  - `Henry V`
+  - `Julius Caesar`
+  - `The Winter's Tale`
+  - `Animal Farm`
+- Kept the lifetime path at 3,000 by replacing lower-confidence contextual entries, mostly minor early-modern/Bloom-gap placeholders plus one contextual 1940s candidate.
 - Removed high-confidence non-literary/prose spillover from the public literature path:
   - `Del Romanzo Storico`
   - `Genie du Christianisme`

@@ -11638,31 +11638,6 @@ items:
   lifetime_path: true
   rank: 465
   phase: 2
-- id: candidate:genre_lit_beware_cat
-  source: wave_042_literature_genre_childrens_speculative_final_balance
-  source_id: genre_lit_beware_cat
-  title: Beware of the Cat
-  creators:
-  - William Baldwin
-  date_label: '1553'
-  sort_year: 1553
-  section: textual_humanities
-  group: literature
-  topic: proto_speculative_literature
-  medium: text
-  unit_type: satirical_fantasy_prose
-  tier: contextual
-  pool: coverage
-  engagement_target: read
-  progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Genre, children's, speculative, horror, crime, and graphic narrative balance candidate for the 3000-text literature-only path; staged to improve durable literary-study coverage without adding non-text media.
-  source_status: manual_only
-  review_status: needs_sources
-  url: 
-  lifetime_path: true
-  rank: 466
-  phase: 2
 - id: canon:lazarillo-de-tormes
   source: accepted_record
   source_id: lazarillo-de-tormes
@@ -11686,7 +11661,7 @@ items:
   review_status: accepted_with_caveat
   url: "/canon/lazarillo-de-tormes/"
   lifetime_path: true
-  rank: 467
+  rank: 466
   phase: 2
 - id: canon:popol-vuh
   source: accepted_record
@@ -11711,7 +11686,7 @@ items:
   review_status: accepted_with_caveat
   url: "/canon/popol-vuh/"
   lifetime_path: true
-  rank: 468
+  rank: 467
   phase: 2
 - id: candidate:bloom_reviewed_les_regrets
   source: wave_030_literature_bloom_reviewed_priority
@@ -11736,7 +11711,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 469
+  rank: 468
   phase: 2
 - id: candidate:scale_lit_heptameron
   source: wave_024_literature_bloom_priority_completion
@@ -11761,7 +11736,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 470
+  rank: 469
   phase: 2
 - id: candidate:bloom_gap_031_0279_elegies
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -11786,7 +11761,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 471
+  rank: 470
   phase: 2
 - id: candidate:bloom_gap_031_0119_autobiography
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -11811,7 +11786,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 472
+  rank: 471
   phase: 2
 - id: candidate:bloom_gap_031_0277_delie_objet_de_plus_haulte_vertu
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -11836,7 +11811,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 473
+  rank: 472
   phase: 2
 - id: candidate:bloom_gap_031_0278_les_odes
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -11861,7 +11836,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 474
+  rank: 473
   phase: 2
 - id: candidate:bloom_gap_031_0128_the_muse_reborn_the_poetry_of_antonio_ferreira
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -11886,7 +11861,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 475
+  rank: 474
   phase: 2
 - id: candidate:global_lit_la_araucana
   source: wave_021_global_literature_americas_oceania_modern_spine
@@ -11911,7 +11886,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 476
+  rank: 475
   phase: 2
 - id: candidate:bloom_lusiads
   source: wave_019_bloom_western_literature_spine
@@ -11936,7 +11911,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 477
+  rank: 476
   phase: 2
 - id: candidate:essays_montaigne
   source: wave_005_readable_doable_units
@@ -11961,7 +11936,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 478
+  rank: 477
   phase: 2
 - id: candidate:completion_lit_jerusalem_delivered
   source: wave_022_literature_europe_completion_spine
@@ -11986,7 +11961,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 479
+  rank: 478
   phase: 2
 - id: candidate:scale_lit_tamburlaine
   source: wave_024_literature_bloom_priority_completion
@@ -12011,7 +11986,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 480
+  rank: 479
   phase: 2
 - id: candidate:scale_lit_spanish_tragedy
   source: wave_024_literature_bloom_priority_completion
@@ -12036,7 +12011,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 481
+  rank: 480
   phase: 2
 - id: candidate:bloom_faerie_queene
   source: wave_019_bloom_western_literature_spine
@@ -12061,7 +12036,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 482
+  rank: 481
   phase: 2
 - id: candidate:scale_lit_jew_of_malta
   source: wave_024_literature_bloom_priority_completion
@@ -12086,7 +12061,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 483
+  rank: 482
   phase: 2
 - id: candidate:bloom_asterophel_stella
   source: wave_019_bloom_western_literature_spine
@@ -12111,7 +12086,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 484
+  rank: 483
   phase: 2
 - id: candidate:bloom_marlowe_doctor_faustus
   source: wave_019_bloom_western_literature_spine
@@ -12136,7 +12111,57 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
+  rank: 484
+  phase: 2
+- id: candidate:mandatory_shakespeare_taming_shrew
+  source: wave_047_literature_mandatory_omissions
+  source_id: mandatory_shakespeare_taming_shrew
+  title: The Taming of the Shrew
+  creators:
+  - William Shakespeare
+  date_label: c. 1590-1592
+  sort_year: 1592
+  section: textual_humanities
+  group: literature
+  topic: british_literature
+  medium: text
+  unit_type: play
+  tier: major
+  pool: coverage
+  engagement_target: read
+  progress_status: planned
+  completion_unit: Read the play or dramatic text.
+  rationale: Mandatory omissions audit addition for Shakespearean comedy, gender politics, performance history, and the early modern stage.
+  source_status: manual_only
+  review_status: needs_sources
+  url: 
+  lifetime_path: true
   rank: 485
+  phase: 2
+- id: candidate:mandatory_shakespeare_richard_iii
+  source: wave_047_literature_mandatory_omissions
+  source_id: mandatory_shakespeare_richard_iii
+  title: Richard III
+  creators:
+  - William Shakespeare
+  date_label: c. 1592-1593
+  sort_year: 1592
+  section: textual_humanities
+  group: literature
+  topic: british_literature
+  medium: text
+  unit_type: history_play
+  tier: major
+  pool: coverage
+  engagement_target: read
+  progress_status: planned
+  completion_unit: Read the play or dramatic text.
+  rationale: Mandatory omissions audit addition for Shakespearean history, villain protagonist, Tudor memory, rhetoric, and stage afterlife.
+  source_status: manual_only
+  review_status: needs_sources
+  url: 
+  lifetime_path: true
+  rank: 486
   phase: 2
 - id: candidate:bloom_shakespeare_midsummer
   source: wave_019_bloom_western_literature_spine
@@ -12161,7 +12186,57 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 486
+  rank: 487
+  phase: 2
+- id: candidate:mandatory_shakespeare_richard_ii
+  source: wave_047_literature_mandatory_omissions
+  source_id: mandatory_shakespeare_richard_ii
+  title: Richard II
+  creators:
+  - William Shakespeare
+  date_label: c. 1595
+  sort_year: 1595
+  section: textual_humanities
+  group: literature
+  topic: british_literature
+  medium: text
+  unit_type: history_play
+  tier: major
+  pool: coverage
+  engagement_target: read
+  progress_status: planned
+  completion_unit: Read the play or dramatic text.
+  rationale: Mandatory omissions audit addition for Shakespearean history, kingship, deposition, poetic drama, and political theatricality.
+  source_status: manual_only
+  review_status: needs_sources
+  url: 
+  lifetime_path: true
+  rank: 488
+  phase: 2
+- id: candidate:mandatory_shakespeare_romeo_juliet
+  source: wave_047_literature_mandatory_omissions
+  source_id: mandatory_shakespeare_romeo_juliet
+  title: Romeo and Juliet
+  creators:
+  - William Shakespeare
+  date_label: c. 1595-1596
+  sort_year: 1595
+  section: textual_humanities
+  group: literature
+  topic: british_literature
+  medium: text
+  unit_type: play
+  tier: core
+  pool: spine
+  engagement_target: read
+  progress_status: planned
+  completion_unit: Read the play or dramatic text.
+  rationale: Mandatory omissions audit addition for Shakespearean tragedy, lyric drama, love, youth, feud, reception history, and global performance.
+  source_status: manual_only
+  review_status: needs_sources
+  url: 
+  lifetime_path: true
+  rank: 489
   phase: 2
 - id: candidate:bloom_shakespeare_henry_iv_part_1
   source: wave_019_bloom_western_literature_spine
@@ -12186,7 +12261,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 487
+  rank: 490
   phase: 2
 - id: candidate:bloom_shakespeare_merchant_venice
   source: wave_019_bloom_western_literature_spine
@@ -12211,7 +12286,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 488
+  rank: 491
   phase: 2
 - id: candidate:bloom_shakespeare_henry_iv_part_2
   source: wave_019_bloom_western_literature_spine
@@ -12236,7 +12311,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 489
+  rank: 492
   phase: 2
 - id: candidate:peony_pavilion
   source: wave_012_global_literatures_expansion
@@ -12261,7 +12336,32 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 490
+  rank: 493
+  phase: 2
+- id: candidate:mandatory_shakespeare_much_ado
+  source: wave_047_literature_mandatory_omissions
+  source_id: mandatory_shakespeare_much_ado
+  title: Much Ado About Nothing
+  creators:
+  - William Shakespeare
+  date_label: c. 1598-1599
+  sort_year: 1598
+  section: textual_humanities
+  group: literature
+  topic: british_literature
+  medium: text
+  unit_type: play
+  tier: major
+  pool: coverage
+  engagement_target: read
+  progress_status: planned
+  completion_unit: Read the play or dramatic text.
+  rationale: Mandatory omissions audit addition for Shakespearean comedy, wit, honor culture, gender, deception, and performance repertoire.
+  source_status: manual_only
+  review_status: needs_sources
+  url: 
+  lifetime_path: true
+  rank: 494
   phase: 2
 - id: candidate:bloom_shakespeare_as_you_like_it
   source: wave_019_bloom_western_literature_spine
@@ -12286,7 +12386,57 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 491
+  rank: 495
+  phase: 2
+- id: candidate:mandatory_shakespeare_henry_v
+  source: wave_047_literature_mandatory_omissions
+  source_id: mandatory_shakespeare_henry_v
+  title: Henry V
+  creators:
+  - William Shakespeare
+  date_label: c. 1599
+  sort_year: 1599
+  section: textual_humanities
+  group: literature
+  topic: british_literature
+  medium: text
+  unit_type: history_play
+  tier: major
+  pool: coverage
+  engagement_target: read
+  progress_status: planned
+  completion_unit: Read the play or dramatic text.
+  rationale: Mandatory omissions audit addition for Shakespearean history, national myth, war rhetoric, kingship, and political performance.
+  source_status: manual_only
+  review_status: needs_sources
+  url: 
+  lifetime_path: true
+  rank: 496
+  phase: 2
+- id: candidate:mandatory_shakespeare_julius_caesar
+  source: wave_047_literature_mandatory_omissions
+  source_id: mandatory_shakespeare_julius_caesar
+  title: Julius Caesar
+  creators:
+  - William Shakespeare
+  date_label: c. 1599
+  sort_year: 1599
+  section: textual_humanities
+  group: literature
+  topic: british_literature
+  medium: text
+  unit_type: play
+  tier: major
+  pool: coverage
+  engagement_target: read
+  progress_status: planned
+  completion_unit: Read the play or dramatic text.
+  rationale: Mandatory omissions audit addition for Shakespearean Roman tragedy, republican politics, rhetoric, assassination, and civic conflict.
+  source_status: manual_only
+  review_status: needs_sources
+  url: 
+  lifetime_path: true
+  rank: 497
   phase: 2
 - id: canon:hamlet
   source: accepted_record
@@ -12311,7 +12461,7 @@ items:
   review_status: accepted_with_caveat
   url: "/canon/hamlet/"
   lifetime_path: true
-  rank: 492
+  rank: 498
   phase: 2
 - id: candidate:chunhyangjeon
   source: wave_012_global_literatures_expansion
@@ -12336,7 +12486,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 493
+  rank: 499
   phase: 2
 - id: candidate:bloom_gap_031_0132_dreams
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -12361,7 +12511,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 494
+  rank: 500
   phase: 2
 - id: candidate:hikayat_hang_tuah
   source: wave_012_global_literatures_expansion
@@ -12386,7 +12536,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 495
+  rank: 501
   phase: 2
 - id: candidate:me_lit_koroghlu
   source: wave_036_literature_middle_east_persian_turkic_hebrew_scale
@@ -12411,7 +12561,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 496
+  rank: 502
   phase: 2
 - id: candidate:ramakien_selected
   source: wave_012_global_literatures_expansion
@@ -12436,7 +12586,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 497
+  rank: 503
   phase: 2
 - id: candidate:reamker_selected
   source: wave_012_global_literatures_expansion
@@ -12461,7 +12611,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 498
+  rank: 504
   phase: 2
 - id: candidate:sejarah_melayu
   source: wave_012_global_literatures_expansion
@@ -12486,7 +12636,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 499
+  rank: 505
   phase: 2
 - id: candidate:indig_lit_tragedy_atahualpa
   source: wave_038_literature_indigenous_oceania_oral_scale
@@ -12511,7 +12661,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 500
+  rank: 506
   phase: 2
 - id: candidate:bloom_gap_031_0170_the_unfortunate_traveller_or_the_life_of_jacke_wilto
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -12536,32 +12686,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 501
-  phase: 2
-- id: candidate:bloom_gap_031_0174_songs
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0174_songs
-  title: '"Songs"'
-  creators:
-  - Thomas Campion
-  date_label: late 16th-early 17th century
-  sort_year: 1600
-  section: textual_humanities
-  group: literature
-  topic: british_literature
-  medium: text
-  unit_type: literary_work
-  tier: contextual
-  pool: coverage
-  engagement_target: read
-  progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
-  source_status: manual_only
-  review_status: needs_sources
-  url: 
-  lifetime_path: true
-  rank: 502
+  rank: 507
   phase: 2
 - id: candidate:bloom_gap_031_0136_sonnets
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -12586,7 +12711,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 503
+  rank: 508
   phase: 2
 - id: candidate:janamsakhis_selected
   source: wave_011_mythology_religion_oral_traditions
@@ -12611,7 +12736,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 504
+  rank: 509
   phase: 2
 - id: candidate:bloom_gap_031_0135_the_poems_of_st_john_of_the_cross
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -12636,7 +12761,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 505
+  rank: 510
   phase: 2
 - id: candidate:bloom_gap_031_0134_the_unknown_light_the_poems_of_fray_luis_de_leon
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -12661,7 +12786,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 506
+  rank: 511
   phase: 2
 - id: candidate:indig_lit_uska_paukar
   source: wave_038_literature_indigenous_oceania_oral_scale
@@ -12686,7 +12811,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 507
+  rank: 512
   phase: 2
 - id: candidate:bloom_shakespeare_twelfth_night
   source: wave_019_bloom_western_literature_spine
@@ -12711,7 +12836,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 508
+  rank: 513
   phase: 2
 - id: candidate:bloom_shakespeare_othello
   source: wave_019_bloom_western_literature_spine
@@ -12736,7 +12861,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 509
+  rank: 514
   phase: 2
 - id: candidate:guru_granth_sahib
   source: wave_004_core_expansion
@@ -12761,7 +12886,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 510
+  rank: 515
   phase: 2
 - id: candidate:bloom_shakespeare_measure
   source: wave_019_bloom_western_literature_spine
@@ -12786,32 +12911,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 511
-  phase: 2
-- id: candidate:scale_lit_malcontent
-  source: wave_024_literature_bloom_priority_completion
-  source_id: scale_lit_malcontent
-  title: The Malcontent
-  creators:
-  - John Marston
-  date_label: '1604'
-  sort_year: 1604
-  section: textual_humanities
-  group: literature
-  topic: british_literature
-  medium: text
-  unit_type: play
-  tier: contextual
-  pool: coverage
-  engagement_target: read
-  progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Scale candidate for the 3000-text literature-only lifetime path; retained for source review, duplicate review, translation review, and coverage-balancing.
-  source_status: manual_only
-  review_status: needs_sources
-  url: 
-  lifetime_path: true
-  rank: 512
+  rank: 516
   phase: 2
 - id: canon:don-quixote
   source: accepted_record
@@ -12836,7 +12936,7 @@ items:
   review_status: accepted_with_caveat
   url: "/canon/don-quixote/"
   lifetime_path: true
-  rank: 513
+  rank: 517
   phase: 2
 - id: candidate:bloom_shakespeare_king_lear
   source: wave_019_bloom_western_literature_spine
@@ -12861,7 +12961,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 514
+  rank: 518
   phase: 2
 - id: candidate:bloom_shakespeare_macbeth
   source: wave_019_bloom_western_literature_spine
@@ -12886,7 +12986,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 515
+  rank: 519
   phase: 2
 - id: candidate:bloom_shakespeare_antony_cleopatra
   source: wave_019_bloom_western_literature_spine
@@ -12911,7 +13011,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 516
+  rank: 520
   phase: 2
 - id: candidate:bloom_jonson_volpone
   source: wave_019_bloom_western_literature_spine
@@ -12936,7 +13036,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 517
+  rank: 521
   phase: 2
 - id: candidate:bloom_shakespeare_sonnets
   source: wave_019_bloom_western_literature_spine
@@ -12961,7 +13061,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 518
+  rank: 522
   phase: 2
 - id: candidate:latcarib_lit_comentarios_reales
   source: wave_039_literature_latin_america_caribbean_scale
@@ -12986,7 +13086,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 519
+  rank: 523
   phase: 2
 - id: candidate:bloom_jonson_alchemist
   source: wave_019_bloom_western_literature_spine
@@ -13011,7 +13111,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 520
+  rank: 524
   phase: 2
 - id: candidate:global_lit_plum_golden_vase
   source: wave_020_global_literature_asia_africa_spine
@@ -13036,7 +13136,32 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 521
+  rank: 525
+  phase: 2
+- id: candidate:mandatory_shakespeare_winter_tale
+  source: wave_047_literature_mandatory_omissions
+  source_id: mandatory_shakespeare_winter_tale
+  title: The Winter's Tale
+  creators:
+  - William Shakespeare
+  date_label: c. 1610-1611
+  sort_year: 1610
+  section: textual_humanities
+  group: literature
+  topic: british_literature
+  medium: text
+  unit_type: romance_play
+  tier: major
+  pool: coverage
+  engagement_target: read
+  progress_status: planned
+  completion_unit: Read the play or dramatic text.
+  rationale: Mandatory omissions audit addition for Shakespearean romance, jealousy, repentance, time, pastoral comedy, and late style.
+  source_status: manual_only
+  review_status: needs_sources
+  url: 
+  lifetime_path: true
+  rank: 526
   phase: 2
 - id: candidate:bloom_holy_bible_kjv
   source: wave_019_bloom_western_literature_spine
@@ -13061,7 +13186,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 522
+  rank: 527
   phase: 2
 - id: candidate:bloom_apocrypha_kjv
   source: wave_019_bloom_western_literature_spine
@@ -13086,7 +13211,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 523
+  rank: 528
   phase: 2
 - id: candidate:tempest_shakespeare
   source: wave_006_textual_humanities_literature_philosophy
@@ -13111,7 +13236,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 524
+  rank: 529
   phase: 2
 - id: candidate:bloom_fuente_ovejuna
   source: wave_019_bloom_western_literature_spine
@@ -13136,7 +13261,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 525
+  rank: 530
   phase: 2
 - id: candidate:bloom_webster_duchess_malfi
   source: wave_019_bloom_western_literature_spine
@@ -13161,7 +13286,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 526
+  rank: 531
   phase: 2
 - id: candidate:bloom_cervantes_exemplary_stories
   source: wave_019_bloom_western_literature_spine
@@ -13186,7 +13311,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 527
+  rank: 532
   phase: 2
 - id: candidate:bloom_gongora_soledades
   source: wave_019_bloom_western_literature_spine
@@ -13211,7 +13336,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 528
+  rank: 533
   phase: 2
 - id: candidate:scale_lit_bartholomew_fair
   source: wave_024_literature_bloom_priority_completion
@@ -13236,7 +13361,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 529
+  rank: 534
   phase: 2
 - id: candidate:bloom_reviewed_les_tragiques
   source: wave_030_literature_bloom_reviewed_priority
@@ -13261,7 +13386,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 530
+  rank: 535
   phase: 2
 - id: candidate:bloom_trickster_seville
   source: wave_019_bloom_western_literature_spine
@@ -13286,7 +13411,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 531
+  rank: 536
   phase: 2
 - id: candidate:bloom_gap_031_0201_tis_pity_she_s_a_whore
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -13311,7 +13436,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 532
+  rank: 537
   phase: 2
 - id: candidate:bloom_gap_031_0206_the_revenger_s_tragedy
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -13336,7 +13461,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 533
+  rank: 538
   phase: 2
 - id: candidate:bloom_gap_031_0203_the_white_devil
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -13361,32 +13486,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 534
-  phase: 2
-- id: candidate:bloom_gap_031_0207_a_new_way_to_pay_old_debts
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0207_a_new_way_to_pay_old_debts
-  title: A New Way to Pay Old Debts
-  creators:
-  - Philip Massinger
-  date_label: 17th century
-  sort_year: 1620
-  section: textual_humanities
-  group: literature
-  topic: british_literature
-  medium: text
-  unit_type: literary_work
-  tier: contextual
-  pool: coverage
-  engagement_target: read
-  progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
-  source_status: manual_only
-  review_status: needs_sources
-  url: 
-  lifetime_path: true
-  rank: 535
+  rank: 539
   phase: 2
 - id: candidate:bloom_reviewed_anatomy_melancholy
   source: wave_030_literature_bloom_reviewed_priority
@@ -13411,7 +13511,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 536
+  rank: 540
   phase: 2
 - id: candidate:bloom_middleton_changeling
   source: wave_019_bloom_western_literature_spine
@@ -13436,7 +13536,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 537
+  rank: 541
   phase: 2
 - id: candidate:bloom_gap_031_0140_la_dorotea
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -13461,7 +13561,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 538
+  rank: 542
   phase: 2
 - id: candidate:bloom_herbert_temple
   source: wave_019_bloom_western_literature_spine
@@ -13486,7 +13586,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 539
+  rank: 543
   phase: 2
 - id: candidate:bloom_life_is_a_dream
   source: wave_019_bloom_western_literature_spine
@@ -13511,7 +13611,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 540
+  rank: 544
   phase: 2
 - id: candidate:scale_lit_le_cid
   source: wave_024_literature_bloom_priority_completion
@@ -13536,32 +13636,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 541
-  phase: 2
-- id: candidate:bloom_gap_031_0179_masques
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0179_masques
-  title: '"Masques"'
-  creators:
-  - Ben Jonson
-  date_label: 17th century
-  sort_year: 1640
-  section: textual_humanities
-  group: literature
-  topic: british_literature
-  medium: text
-  unit_type: literary_work
-  tier: contextual
-  pool: coverage
-  engagement_target: read
-  progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
-  source_status: manual_only
-  review_status: needs_sources
-  url: 
-  lifetime_path: true
-  rank: 542
+  rank: 545
   phase: 2
 - id: candidate:huarochiri_manuscript
   source: wave_011_mythology_religion_oral_traditions
@@ -13586,7 +13661,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 543
+  rank: 546
   phase: 2
 - id: candidate:global_lit_basho_haiku
   source: wave_020_global_literature_asia_africa_spine
@@ -13611,7 +13686,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 544
+  rank: 547
   phase: 2
 - id: candidate:me_lit_evliya_travels
   source: wave_036_literature_middle_east_persian_turkic_hebrew_scale
@@ -13636,7 +13711,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 545
+  rank: 548
   phase: 2
 - id: candidate:euro_under_lit_erotokritos
   source: wave_040_literature_europe_undercovered_language_scale
@@ -13661,7 +13736,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 546
+  rank: 549
   phase: 2
 - id: candidate:bloom_marvell_poems
   source: wave_019_bloom_western_literature_spine
@@ -13686,7 +13761,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 547
+  rank: 550
   phase: 2
 - id: candidate:southasia_lit_tukaram_abhangas
   source: wave_034_literature_south_asia_scale
@@ -13711,7 +13786,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 548
+  rank: 551
   phase: 2
 - id: candidate:selected_abhangs_tukaram
   source: wave_012_global_literatures_expansion
@@ -13736,7 +13811,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 549
+  rank: 552
   phase: 2
 - id: candidate:bloom_reviewed_donne_poems
   source: wave_030_literature_bloom_reviewed_priority
@@ -13761,7 +13836,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 550
+  rank: 553
   phase: 2
 - id: candidate:bloom_reviewed_sor_juana_poems
   source: wave_030_literature_bloom_reviewed_priority
@@ -13786,7 +13861,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 551
+  rank: 554
   phase: 2
 - id: candidate:cloud_dream_nine
   source: wave_006_textual_humanities_literature_philosophy
@@ -13811,7 +13886,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 552
+  rank: 555
   phase: 2
 - id: candidate:tale_of_hong_gildong
   source: wave_006_textual_humanities_literature_philosophy
@@ -13836,32 +13911,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 553
-  phase: 2
-- id: candidate:bloom_gap_031_0163_the_minor_poems
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0163_the_minor_poems
-  title: '"The minor poems"'
-  creators:
-  - Edmund Spenser
-  date_label: early modern; exact date pending review
-  sort_year: 1650
-  section: textual_humanities
-  group: literature
-  topic: western_literature
-  medium: text
-  unit_type: poetry_selection
-  tier: contextual
-  pool: coverage
-  engagement_target: read
-  progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
-  source_status: manual_only
-  review_status: needs_sources
-  url: 
-  lifetime_path: true
-  rank: 554
+  rank: 556
   phase: 2
 - id: candidate:bloom_gap_031_0289_cinna_ou_la_clemence_d_auguste
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -13886,7 +13936,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 555
+  rank: 557
   phase: 2
 - id: candidate:bloom_gap_031_0288_horace
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -13911,7 +13961,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 556
+  rank: 558
   phase: 2
 - id: candidate:bloom_gap_031_0284_les_juives
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -13936,7 +13986,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 557
+  rank: 559
   phase: 2
 - id: candidate:bloom_gap_031_0283_marc_antoine
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -13961,7 +14011,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 558
+  rank: 560
   phase: 2
 - id: candidate:bloom_gap_031_0287_nicomede
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -13986,7 +14036,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 559
+  rank: 561
   phase: 2
 - id: candidate:bloom_gap_031_0286_polyeucte
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -14011,7 +14061,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 560
+  rank: 562
   phase: 2
 - id: candidate:bloom_gap_031_0213_comus
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -14036,7 +14086,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 561
+  rank: 563
   phase: 2
 - id: candidate:bloom_gap_031_0212_lycidas
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -14061,7 +14111,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 562
+  rank: 564
   phase: 2
 - id: candidate:bloom_gap_031_0218_hudibras
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -14086,7 +14136,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 563
+  rank: 565
   phase: 2
 - id: candidate:scale_lit_school_for_wives
   source: wave_024_literature_bloom_priority_completion
@@ -14111,7 +14161,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 564
+  rank: 566
   phase: 2
 - id: candidate:tartuffe
   source: wave_006_textual_humanities_literature_philosophy
@@ -14136,7 +14186,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 565
+  rank: 567
   phase: 2
 - id: candidate:scale_lit_dom_juan_moliere
   source: wave_024_literature_bloom_priority_completion
@@ -14161,7 +14211,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 566
+  rank: 568
   phase: 2
 - id: candidate:genre_lit_blazing_world
   source: wave_042_literature_genre_childrens_speculative_final_balance
@@ -14186,7 +14236,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 567
+  rank: 569
   phase: 2
 - id: candidate:bloom_moliere_misanthrope
   source: wave_019_bloom_western_literature_spine
@@ -14211,7 +14261,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 568
+  rank: 570
   phase: 2
 - id: canon:paradise-lost
   source: accepted_record
@@ -14236,7 +14286,7 @@ items:
   review_status: accepted_with_caveat
   url: "/canon/paradise-lost/"
   lifetime_path: true
-  rank: 569
+  rank: 571
   phase: 2
 - id: candidate:scale_lit_andromaque
   source: wave_024_literature_bloom_priority_completion
@@ -14261,7 +14311,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 570
+  rank: 572
   phase: 2
 - id: candidate:bloom_la_fontaine_fables
   source: wave_019_bloom_western_literature_spine
@@ -14286,7 +14336,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 571
+  rank: 573
   phase: 2
 - id: candidate:completion_lit_simplicissimus
   source: wave_022_literature_europe_completion_spine
@@ -14311,7 +14361,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 572
+  rank: 574
   phase: 2
 - id: candidate:bloom_reviewed_britannicus
   source: wave_030_literature_bloom_reviewed_priority
@@ -14336,7 +14386,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 573
+  rank: 575
   phase: 2
 - id: candidate:scale_lit_berenice_racine
   source: wave_024_literature_bloom_priority_completion
@@ -14361,7 +14411,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 574
+  rank: 576
   phase: 2
 - id: canon:pascal-pensees-selected
   source: accepted_record
@@ -14386,7 +14436,7 @@ items:
   review_status: accepted_with_caveat
   url: "/canon/pascal-pensees-selected/"
   lifetime_path: true
-  rank: 575
+  rank: 577
   phase: 2
 - id: candidate:bloom_reviewed_paradise_regained
   source: wave_030_literature_bloom_reviewed_priority
@@ -14411,7 +14461,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 576
+  rank: 578
   phase: 2
 - id: candidate:bloom_reviewed_samson_agonistes
   source: wave_030_literature_bloom_reviewed_priority
@@ -14436,7 +14486,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 577
+  rank: 579
   phase: 2
 - id: candidate:bloom_racine_phedre
   source: wave_019_bloom_western_literature_spine
@@ -14461,7 +14511,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 578
+  rank: 580
   phase: 2
 - id: candidate:audit_replacement_the_rover
   source: wave_043_literature_audit_replacements
@@ -14486,7 +14536,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 579
+  rank: 581
   phase: 2
 - id: canon:pilgrims-progress
   source: accepted_record
@@ -14511,7 +14561,7 @@ items:
   review_status: accepted_with_caveat
   url: "/canon/pilgrims-progress/"
   lifetime_path: true
-  rank: 580
+  rank: 582
   phase: 2
 - id: candidate:bloom_princess_cleves
   source: wave_019_bloom_western_literature_spine
@@ -14536,7 +14586,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 581
+  rank: 583
   phase: 2
 - id: candidate:latcarib_lit_empenos_casa
   source: wave_039_literature_latin_america_caribbean_scale
@@ -14561,7 +14611,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 582
+  rank: 584
   phase: 2
 - id: candidate:eastasia_lit_five_women_loved_love
   source: wave_035_literature_east_asia_scale
@@ -14586,7 +14636,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 583
+  rank: 585
   phase: 2
 - id: candidate:global_lit_life_amorous_woman
   source: wave_020_global_literature_asia_africa_spine
@@ -14611,7 +14661,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 584
+  rank: 586
   phase: 2
 - id: candidate:global_lit_nine_cloud_dream
   source: wave_020_global_literature_asia_africa_spine
@@ -14636,7 +14686,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 585
+  rank: 587
   phase: 2
 - id: candidate:audit_replacement_oroonoko
   source: wave_043_literature_audit_replacements
@@ -14661,7 +14711,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 586
+  rank: 588
   phase: 2
 - id: candidate:narrow_road_deep_north
   source: wave_006_textual_humanities_literature_philosophy
@@ -14686,7 +14736,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 587
+  rank: 589
   phase: 2
 - id: candidate:latcarib_lit_infortunios_ramirez
   source: wave_039_literature_latin_america_caribbean_scale
@@ -14711,7 +14761,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 588
+  rank: 590
   phase: 2
 - id: candidate:bloom_reviewed_athalie
   source: wave_030_literature_bloom_reviewed_priority
@@ -14736,7 +14786,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 589
+  rank: 591
   phase: 2
 - id: candidate:latcarib_lit_respuesta_sor_filotea
   source: wave_039_literature_latin_america_caribbean_scale
@@ -14761,7 +14811,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 590
+  rank: 592
   phase: 2
 - id: candidate:first_dream_sor_juana
   source: wave_012_global_literatures_expansion
@@ -14786,7 +14836,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 591
+  rank: 593
   phase: 2
 - id: candidate:global_lit_mem_and_zin
   source: wave_020_global_literature_asia_africa_spine
@@ -14811,7 +14861,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 592
+  rank: 594
   phase: 2
 - id: candidate:scale_lit_mem_u_zin
   source: wave_025_literature_global_scale_completion
@@ -14836,7 +14886,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 593
+  rank: 595
   phase: 2
 - id: candidate:global_lit_peach_blossom_fan
   source: wave_020_global_literature_asia_africa_spine
@@ -14861,7 +14911,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 594
+  rank: 596
   phase: 2
 - id: candidate:sonezaki_shinju_bunraku
   source: wave_016_music_theater_dance_performance_global
@@ -14886,7 +14936,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 595
+  rank: 597
   phase: 2
 - id: candidate:bloom_reviewed_tale_tub
   source: wave_030_literature_bloom_reviewed_priority
@@ -14911,7 +14961,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 596
+  rank: 598
   phase: 2
 - id: candidate:bloom_gap_031_0231_the_beggar_s_opera
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -14936,7 +14986,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 597
+  rank: 599
   phase: 2
 - id: candidate:bloom_gap_031_0223_the_way_of_the_world
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -14961,7 +15011,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 598
+  rank: 600
   phase: 2
 - id: candidate:bloom_gap_031_0222_venice_preserv_d
   source: wave_031_literature_bloom_gap_classical_early_modern
@@ -14981,56 +15031,6 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the play or dramatic text.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
-  source_status: manual_only
-  review_status: needs_sources
-  url: 
-  lifetime_path: true
-  rank: 599
-  phase: 2
-- id: candidate:bloom_gap_031_0224_love_for_love
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0224_love_for_love
-  title: Love for Love
-  creators:
-  - William Congreve
-  date_label: late 17th-18th century
-  sort_year: 1710
-  section: textual_humanities
-  group: literature
-  topic: british_literature
-  medium: text
-  unit_type: literary_work
-  tier: contextual
-  pool: coverage
-  engagement_target: read
-  progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
-  source_status: manual_only
-  review_status: needs_sources
-  url: 
-  lifetime_path: true
-  rank: 600
-  phase: 2
-- id: candidate:bloom_gap_031_0229_the_man_of_mode_or_sr_fopling_flutter
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0229_the_man_of_mode_or_sr_fopling_flutter
-  title: The Man of Mode, or, Sr. Fopling Flutter
-  creators:
-  - George Etherege
-  date_label: late 17th-18th century
-  sort_year: 1710
-  section: textual_humanities
-  group: literature
-  topic: british_literature
-  medium: text
-  unit_type: literary_work
-  tier: contextual
-  pool: coverage
-  engagement_target: read
-  progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
   rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
   source_status: manual_only
   review_status: needs_sources
@@ -40942,31 +40942,6 @@ items:
   lifetime_path: true
   rank: 1637
   phase: 6
-- id: candidate:euro_under_lit_tiger_trappers
-  source: wave_040_literature_europe_undercovered_language_scale
-  source_id: euro_under_lit_tiger_trappers
-  title: Tiger Trappers
-  creators:
-  - Ivan Bahrianyi
-  date_label: '1944'
-  sort_year: 1944
-  section: textual_humanities
-  group: literature
-  topic: ukrainian_literature
-  medium: text
-  unit_type: novel
-  tier: contextual
-  pool: coverage
-  engagement_target: read
-  progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Undercovered European-language scale candidate for the 3000-text literature-only path; staged to improve Nordic, Baltic, Balkan, Dutch/Flemish, Czech, Polish, Hungarian, Romanian, Greek, Yiddish, Ukrainian, Irish/Welsh/Scottish, and related coverage pending source review.
-  source_status: manual_only
-  review_status: needs_sources
-  url: 
-  lifetime_path: true
-  rank: 1638
-  phase: 6
 - id: candidate:bloom_reviewed_black_boy
   source: wave_030_literature_bloom_reviewed_priority
   source_id: bloom_reviewed_black_boy
@@ -40990,7 +40965,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 1639
+  rank: 1638
   phase: 6
 - id: candidate:africa_lit_bwana_myombekere
   source: wave_037_literature_africa_scale
@@ -41015,7 +40990,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 1640
+  rank: 1639
   phase: 6
 - id: candidate:completion_lit_christ_stopped_eboli
   source: wave_022_literature_europe_completion_spine
@@ -41040,7 +41015,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 1641
+  rank: 1640
   phase: 6
 - id: candidate:completion_lit_nada
   source: wave_022_literature_europe_completion_spine
@@ -41065,7 +41040,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 1642
+  rank: 1641
   phase: 6
 - id: candidate:me_lit_only_yesterday
   source: wave_036_literature_middle_east_persian_turkic_hebrew_scale
@@ -41090,7 +41065,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 1643
+  rank: 1642
   phase: 6
 - id: candidate:pippi_longstocking
   source: wave_012_global_literatures_expansion
@@ -41115,7 +41090,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 1644
+  rank: 1643
   phase: 6
 - id: candidate:bridge_on_the_drina
   source: wave_012_global_literatures_expansion
@@ -41140,7 +41115,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 1645
+  rank: 1644
   phase: 6
 - id: candidate:bloom_reviewed_death_virgil
   source: wave_030_literature_bloom_reviewed_priority
@@ -41165,7 +41140,7 @@ items:
   review_status: needs_sources
   url: 
   lifetime_path: true
-  rank: 1646
+  rank: 1645
   phase: 6
 - id: candidate:southasia_lit_english_teacher
   source: wave_034_literature_south_asia_scale
@@ -41186,6 +41161,31 @@ items:
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
   rationale: South Asia scale candidate for the 3000-text literature-only path; staged to improve vernacular, period, genre, caste, gender, and diaspora coverage pending source review.
+  source_status: manual_only
+  review_status: needs_sources
+  url: 
+  lifetime_path: true
+  rank: 1646
+  phase: 6
+- id: candidate:mandatory_orwell_animal_farm
+  source: wave_047_literature_mandatory_omissions
+  source_id: mandatory_orwell_animal_farm
+  title: Animal Farm
+  creators:
+  - George Orwell
+  date_label: 1945
+  sort_year: 1945
+  section: textual_humanities
+  group: literature
+  topic: british_literature
+  medium: text
+  unit_type: satirical_novella
+  tier: major
+  pool: coverage
+  engagement_target: read
+  progress_status: planned
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Mandatory omissions audit addition for political fable, satire, allegory, totalitarianism, propaganda, and twentieth-century Anglophone literary reception.
   source_status: manual_only
   review_status: needs_sources
   url: 
