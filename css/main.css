@@ -1019,13 +1019,17 @@ body {
 
 .canon-admin-toolbar {
   display: grid;
-  grid-template-columns: minmax(14rem, 1fr) auto auto;
+  grid-template-columns: minmax(14rem, 1fr) auto;
   gap: 0.55rem;
   align-items: center;
 }
 
 .canon-admin-toolbar input,
-.canon-admin-toolbar button {
+.canon-admin-toolbar button,
+.canon-admin-bulk-grid input,
+.canon-admin-bulk-grid select,
+.canon-admin-bulk-grid button,
+.canon-admin-advanced button {
   min-height: 2.45rem;
   padding: 0.55rem 0.75rem;
   font-family: var(--font-body);
@@ -1036,7 +1040,9 @@ body {
   border-radius: 6px;
 }
 
-.canon-admin-toolbar button {
+.canon-admin-toolbar button,
+.canon-admin-bulk-grid button,
+.canon-admin-advanced button {
   font-weight: 700;
   cursor: pointer;
   background: var(--color-surface);
@@ -1044,7 +1050,13 @@ body {
 
 .canon-admin-toolbar button:hover,
 .canon-admin-toolbar button:focus,
-.canon-admin-toolbar input:focus {
+.canon-admin-toolbar input:focus,
+.canon-admin-bulk-grid input:focus,
+.canon-admin-bulk-grid select:focus,
+.canon-admin-bulk-grid button:hover,
+.canon-admin-bulk-grid button:focus,
+.canon-admin-advanced button:hover,
+.canon-admin-advanced button:focus {
   border-color: var(--color-accent);
   outline: none;
 }
@@ -1075,6 +1087,48 @@ body {
   color: #ff8787;
 }
 
+.canon-admin-bulk-grid {
+  display: grid;
+  grid-template-columns: minmax(11rem, auto) minmax(9rem, 0.8fr) minmax(11rem, auto);
+  gap: 0.55rem;
+  align-items: end;
+}
+
+.canon-admin-bulk-grid label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.canon-admin-bulk-grid input,
+.canon-admin-bulk-grid select {
+  width: 100%;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.canon-admin-advanced {
+  margin-top: 1rem;
+  color: var(--color-muted);
+  font-size: 0.82rem;
+}
+
+.canon-admin-advanced summary {
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.canon-admin-advanced button {
+  margin-top: 0.65rem;
+}
+
 .canon-admin-yaml {
   width: 100%;
   min-height: 12rem;
@@ -1086,6 +1140,11 @@ body {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 6px;
+}
+
+.canon-admin-highlight {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 .back-link {
@@ -1143,6 +1202,10 @@ body {
   }
 
   .canon-admin-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .canon-admin-bulk-grid {
     grid-template-columns: 1fr;
   }
 }

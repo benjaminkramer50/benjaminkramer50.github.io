@@ -12,16 +12,43 @@ robots: noindex, nofollow
 {% assign canon_items = quick_path.items | where_exp: "item", "item.lifetime_path == true" %}
 {% assign canon_progress_data = site.data.canon_progress.items %}
 
-<p class="page-intro">Private editor for my literature-canon progress. Saving requires a GitHub token with write access to this repository; visitors without that credential can view this page but cannot publish changes.</p>
+<p class="page-intro">Private editor for my literature-canon progress. Use the controls here, then save once to GitHub. The YAML file is just the stored data behind the scenes.</p>
 
 <div class="canon-admin-panel">
   <div class="canon-admin-toolbar">
     <input id="canon-admin-token" type="password" autocomplete="off" placeholder="GitHub token for saving">
     <button type="button" id="canon-admin-save">Save to GitHub</button>
-    <button type="button" id="canon-admin-export">Export YAML</button>
   </div>
   <div class="canon-admin-note">Use a fine-grained GitHub token scoped to this repository with Contents read/write access. The token stays in this browser session and is not written into the site.</div>
   <div class="canon-admin-status" id="canon-admin-status" role="status"></div>
+</div>
+
+<div class="canon-admin-panel canon-admin-bulk-panel">
+  <div class="canon-admin-bulk-grid">
+    <button type="button" id="canon-admin-jump-next">Jump to First Not Started</button>
+    <label for="canon-admin-through-rank">
+      Mark through #
+      <input id="canon-admin-through-rank" type="number" min="1" max="{{ canon_items.size }}" inputmode="numeric" placeholder="1000">
+    </label>
+    <button type="button" id="canon-admin-mark-through">Mark Through Completed</button>
+    <label for="canon-admin-range-start">
+      From #
+      <input id="canon-admin-range-start" type="number" min="1" max="{{ canon_items.size }}" inputmode="numeric" placeholder="1">
+    </label>
+    <label for="canon-admin-range-end">
+      To #
+      <input id="canon-admin-range-end" type="number" min="1" max="{{ canon_items.size }}" inputmode="numeric" placeholder="100">
+    </label>
+    <select id="canon-admin-range-status" aria-label="Range status">
+      <option value="completed">Completed</option>
+      <option value="in_progress">In Progress</option>
+      <option value="sampled">Sampled</option>
+      <option value="deferred">Deferred</option>
+      <option value="planned">Not Started</option>
+    </select>
+    <button type="button" id="canon-admin-apply-range">Apply Range</button>
+  </div>
+  <div class="canon-admin-note">Bulk changes are staged in this browser first. Press Save to GitHub when the counts look right.</div>
 </div>
 
 <div class="canon-summary" aria-label="Canon admin progress summary">
@@ -58,7 +85,12 @@ robots: noindex, nofollow
 <div class="canon-visible-count" id="canon-admin-visible-count"></div>
 <div class="canon-list" id="canon-admin-list"></div>
 
-<textarea class="canon-admin-yaml" id="canon-admin-yaml" readonly aria-label="Generated canon progress YAML"></textarea>
+<details class="canon-admin-advanced">
+  <summary>Advanced Backup YAML</summary>
+  <div class="canon-admin-note">You do not need this for normal tracking. It is here only as a manual backup/export view.</div>
+  <button type="button" id="canon-admin-export">Export YAML</button>
+  <textarea class="canon-admin-yaml" id="canon-admin-yaml" readonly aria-label="Generated canon progress YAML"></textarea>
+</details>
 
 <script>
 (function () {
@@ -87,6 +119,7 @@ robots: noindex, nofollow
     { value: 'deferred', label: 'Deferred' }
   ];
   var rows = [];
+  var rowsById = {};
   var changed = false;
 
   var list = document.getElementById('canon-admin-list');
@@ -101,6 +134,13 @@ robots: noindex, nofollow
   var completedStat = document.getElementById('canon-admin-completed-stat');
   var progressStat = document.getElementById('canon-admin-progress-stat');
   var plannedStat = document.getElementById('canon-admin-planned-stat');
+  var jumpNextButton = document.getElementById('canon-admin-jump-next');
+  var throughRankInput = document.getElementById('canon-admin-through-rank');
+  var markThroughButton = document.getElementById('canon-admin-mark-through');
+  var rangeStartInput = document.getElementById('canon-admin-range-start');
+  var rangeEndInput = document.getElementById('canon-admin-range-end');
+  var rangeStatusSelect = document.getElementById('canon-admin-range-status');
+  var applyRangeButton = document.getElementById('canon-admin-apply-range');
 
   function today() {
     return new Date().toISOString().slice(0, 10);
@@ -122,14 +162,14 @@ robots: noindex, nofollow
     });
   }
 
-  function setStatus(id, status) {
+  function setStatus(id, status, options) {
     if (status === 'planned') {
       delete progressState[id];
     } else {
       progressState[id] = { status: status, updated_on: today() };
     }
     changed = true;
-    updateGeneratedYaml();
+    if (!options || !options.deferYaml) updateGeneratedYaml();
   }
 
   function applyRowStatus(row, status) {
@@ -228,9 +268,78 @@ robots: noindex, nofollow
       row.appendChild(actions);
 
       rows.push(row);
+      rowsById[item.id] = row;
       fragment.appendChild(row);
     });
     list.appendChild(fragment);
+  }
+
+  function rankOf(item) {
+    var rank = parseInt(item.rank, 10);
+    return isNaN(rank) ? 999999 : rank;
+  }
+
+  function numberFromInput(input, label) {
+    var value = parseInt(input.value, 10);
+    if (isNaN(value) || value < 1 || value > canonItems.length) {
+      setMessage(label + ' must be between 1 and ' + canonItems.length + '.', true);
+      return null;
+    }
+    return value;
+  }
+
+  function applyItemStatus(item, status, options) {
+    setStatus(item.id, status, options);
+    var row = rowsById[item.id];
+    if (!row) return;
+    applyRowStatus(row, status);
+    var select = row.querySelector('.canon-progress-control');
+    if (select) select.value = status;
+  }
+
+  function applyBulkStatus(predicate, status, messagePrefix) {
+    var changedCount = 0;
+    canonItems.forEach(function (item) {
+      if (!predicate(item)) return;
+      if (getStatus(item.id) !== status) changedCount++;
+      applyItemStatus(item, status, { deferYaml: true });
+    });
+    updateGeneratedYaml();
+    updateSummary();
+    render();
+    if (changedCount === 0) {
+      setMessage('No works needed that update.');
+    } else {
+      setMessage(messagePrefix + ' Updated ' + changedCount + ' works. Press Save to GitHub when ready.');
+    }
+  }
+
+  function highlightRow(row) {
+    row.classList.add('canon-admin-highlight');
+    window.setTimeout(function () {
+      row.classList.remove('canon-admin-highlight');
+    }, 1800);
+  }
+
+  function jumpToFirstNotStarted() {
+    var item = canonItems.slice().sort(function (a, b) {
+      return rankOf(a) - rankOf(b);
+    }).find(function (candidate) {
+      return getStatus(candidate.id) === 'planned';
+    });
+    if (!item) {
+      setMessage('No not-started works left.');
+      return;
+    }
+    filter.value = '';
+    searchInput.value = '';
+    render();
+    var row = rowsById[item.id];
+    if (row) {
+      row.scrollIntoView({ block: 'center' });
+      highlightRow(row);
+    }
+    setMessage('First not-started work is #' + item.rank + ': ' + item.title + '.');
   }
 
   function updateSummary() {
@@ -368,6 +477,29 @@ robots: noindex, nofollow
   searchInput.addEventListener('input', render);
   saveButton.addEventListener('click', saveToGitHub);
   exportButton.addEventListener('click', exportYaml);
+  jumpNextButton.addEventListener('click', jumpToFirstNotStarted);
+  markThroughButton.addEventListener('click', function () {
+    var endRank = numberFromInput(throughRankInput, 'Mark-through rank');
+    if (endRank === null) return;
+    applyBulkStatus(function (item) {
+      return rankOf(item) <= endRank;
+    }, 'completed', 'Marked #1 through #' + endRank + ' completed.');
+  });
+  applyRangeButton.addEventListener('click', function () {
+    var startRank = numberFromInput(rangeStartInput, 'Range start');
+    var endRank = numberFromInput(rangeEndInput, 'Range end');
+    var status = rangeStatusSelect.value;
+    if (startRank === null || endRank === null) return;
+    if (startRank > endRank) {
+      var swap = startRank;
+      startRank = endRank;
+      endRank = swap;
+    }
+    applyBulkStatus(function (item) {
+      var rank = rankOf(item);
+      return rank >= startRank && rank <= endRank;
+    }, status, 'Set #' + startRank + ' through #' + endRank + ' to ' + statusLabel(status) + '.');
+  });
   window.addEventListener('beforeunload', function (event) {
     if (!changed) return;
     event.preventDefault();
