@@ -1,10 +1,10 @@
 bucket	count
-british_literature	219
-american_literature	142
+british_literature	228
+american_literature	141
 latin_american_literature	117
-western_literature	96
-francophone_literature	93
+francophone_literature	105
 italian_literature	77
+western_literature	77
 japanese_literature	73
 west_african_literature	72
 arabic_literature	69
@@ -209,7 +209,6 @@ fairy_tale_traditions	1
 filipino_american_literature	1
 finnish_and_baltic_mythology	1
 geez_literature	1
-gothic_literature	1
 greek_theater	1
 haudenosaunee_oral_traditions	1
 hindu_epic_and_purana	1

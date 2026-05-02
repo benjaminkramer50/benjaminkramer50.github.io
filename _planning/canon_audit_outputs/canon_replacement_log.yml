@@ -1,6 +1,6 @@
 ---
-generated_on: '2026-05-02T21:20:42Z'
-status: wave_002_integrated_pending_validation
+generated_on: '2026-05-02T21:48:29Z'
+status: wave_003_integrated_validated
 items:
 - wave: wave_001
   added: Selected Orations and Letters
@@ -212,6 +212,237 @@ items:
   replaced_creator: Louise Fitzhugh
   rank: 1996
   rationale: Herzog fills a central postwar Bellow gap; children's literature remains broadly represented elsewhere.
+- wave: wave_003
+  added: Sonnets et elegies
+  added_creator: Louise Labe
+  replaced: '"Elegies"'
+  replaced_creator: Pierre de Ronsard
+  rank: 486
+  rationale: Adds a high-confidence Renaissance French lyric omission; replaces a vague contextual Ronsard fragment row.
+- wave: wave_003
+  added: Le Livre du Voir Dit
+  added_creator: Guillaume de Machaut
+  replaced: Les Juives
+  replaced_creator: Robert Garnier
+  rank: 583
+  rationale: Adds a major medieval French lyric-narrative anchor; removes a weaker duplicated Garnier row with bad period metadata.
+- wave: wave_003
+  added: Maximes
+  added_creator: Francois de La Rochefoucauld
+  replaced: Marc Antoine
+  replaced_creator: Robert Garnier
+  rank: 584
+  rationale: Adds a central French classical prose work while reducing duplicated Garnier coverage.
+- wave: wave_003
+  added: Histoires ou contes du temps passe
+  added_creator: Charles Perrault
+  replaced: Nicomede
+  replaced_creator: Pierre Corneille
+  rank: 585
+  rationale: Adds foundational literary fairy-tale coverage; Corneille remains represented by stronger plays.
+- wave: wave_003
+  added: The Other World
+  added_creator: Cyrano de Bergerac
+  replaced: Berenice
+  replaced_creator: Jean Racine
+  rank: 607
+  rationale: Adds early French speculative-satirical prose; Racine remains strongly represented elsewhere.
+- wave: wave_003
+  added: Persian Letters
+  added_creator: Montesquieu
+  replaced: 'The Distance, the Shadows: Selected Poems'
+  replaced_creator: Victor Hugo
+  rank: 767
+  rationale: Adds a central Enlightenment prose work; replaces a vague Hugo selected-poems row.
+- wave: wave_003
+  added: Corinne, or Italy
+  added_creator: Germaine de Stael
+  replaced: Les Travailleurs de la Mer
+  replaced_creator: Victor Hugo
+  rank: 768
+  rationale: Adds a major French/European Romantic novel; removes a Hugo duplicate of Toilers of the Sea.
+- wave: wave_003
+  added: Atala and Rene
+  added_creator: Francois-Rene de Chateaubriand
+  replaced: The Girl With the Golden Eyes
+  replaced_creator: Honore de Balzac
+  rank: 777
+  rationale: Adds a central French Romantic prose anchor; reduces secondary Balzac overcoverage.
+- wave: wave_003
+  added: Indiana
+  added_creator: George Sand
+  replaced: The Wild Ass's Skin
+  replaced_creator: Honore de Balzac
+  rank: 782
+  rationale: Adds a high-confidence George Sand omission; reduces secondary Balzac overcoverage.
+- wave: wave_003
+  added: The Game of Love and Chance
+  added_creator: Pierre de Marivaux
+  replaced: The Splendors and Miseries of Courtesans
+  replaced_creator: Honore de Balzac
+  rank: 783
+  rationale: Adds major eighteenth-century French comedy; reduces secondary Balzac overcoverage.
+- wave: wave_003
+  added: Consuelo
+  added_creator: George Sand
+  replaced: Salammbo
+  replaced_creator: Gustave Flaubert
+  rank: 786
+  rationale: Adds another major Sand anchor; Flaubert remains represented by stronger rows.
+- wave: wave_003
+  added: A Vindication of the Rights of Woman
+  added_creator: Mary Wollstonecraft
+  replaced: Nightmare Abbey
+  replaced_creator: Thomas Love Peacock
+  rank: 806
+  rationale: Adds a major Romantic-era feminist prose omission; replaces a lower-priority Peacock satire.
+- wave: wave_003
+  added: Childe Harold's Pilgrimage
+  added_creator: Lord Byron
+  replaced: The Book of Los
+  replaced_creator: William Blake
+  rank: 818
+  rationale: Adds an obvious Byron omission; reduces overrepresented contextual Blake rows.
+- wave: wave_003
+  added: Prometheus Unbound
+  added_creator: Percy Bysshe Shelley
+  replaced: Redgauntlet
+  replaced_creator: Walter Scott
+  rank: 820
+  rationale: Adds a major Shelley omission; Scott remains represented by stronger anchors.
+- wave: wave_003
+  added: Elegiac Sonnets
+  added_creator: Charlotte Smith
+  replaced: The Everlasting Gospel
+  replaced_creator: William Blake
+  rank: 822
+  rationale: Adds an early Romantic woman poet; further reduces contextual Blake saturation.
+- wave: wave_003
+  added: Wives and Daughters
+  added_creator: Elizabeth Gaskell
+  replaced: The Chimes
+  replaced_creator: Charles Dickens
+  rank: 854
+  rationale: Adds a major Victorian novel; removes a weak Dickens Christmas-book duplicate.
+- wave: wave_003
+  added: Dover Beach and Selected Poems
+  added_creator: Matthew Arnold
+  replaced: The Haunted Men and the Ghost's Bargain
+  replaced_creator: Charles Dickens
+  rank: 858
+  rationale: Adds a major Victorian poetry anchor; removes a typo-bearing Dickens duplicate.
+- wave: wave_003
+  added: Poems and Ballads
+  added_creator: Algernon Charles Swinburne
+  replaced: The Cricket on the Hearth
+  replaced_creator: Charles Dickens
+  rank: 859
+  rationale: Adds a high-confidence Victorian poetry omission; reduces Dickens overcoverage.
+- wave: wave_003
+  added: The House of Life and Selected Poems
+  added_creator: Dante Gabriel Rossetti
+  replaced: The Mystery of Edwin Drood
+  replaced_creator: Charles Dickens
+  rank: 861
+  rationale: Adds Pre-Raphaelite poetry; removes an unfinished Dickens row.
+- wave: wave_003
+  added: Poems of Gerard Manley Hopkins
+  added_creator: Gerard Manley Hopkins
+  replaced: Framley Parsonage
+  replaced_creator: Anthony Trollope
+  rank: 875
+  rationale: Adds a central Victorian poetry omission; reduces secondary Trollope coverage.
+- wave: wave_003
+  added: Deerbrook
+  added_creator: Harriet Martineau
+  replaced: The Small House at Allington
+  replaced_creator: Anthony Trollope
+  rank: 877
+  rationale: Adds a major nineteenth-century woman novelist; reduces secondary Trollope coverage.
+- wave: wave_003
+  added: The English Mail-Coach and Selected Essays
+  added_creator: Thomas De Quincey
+  replaced: Selected Poems
+  replaced_creator: Samuel Taylor Coleridge
+  rank: 914
+  rationale: Replaces a redundant generic Coleridge selected-poems row; Coleridge remains represented by stronger Romantic poetry rows.
+- wave: wave_003
+  added: The Renaissance
+  added_creator: Walter Pater
+  replaced: The "Bab" BalladsMuch Sound and Little Sense
+  replaced_creator: W S Gilbert
+  rank: 956
+  rationale: Replaces a malformed Gilbert title with a significant Victorian aesthetic-prose anchor.
+- wave: wave_003
+  added: Alcools
+  added_creator: Guillaume Apollinaire
+  replaced: Fata Morgana
+  replaced_creator: Andre Breton
+  rank: 1268
+  rationale: Adds central French modernist poetry; reduces excess Breton coverage.
+- wave: wave_003
+  added: Charmes
+  added_creator: Paul Valery
+  replaced: L'Union Libre
+  replaced_creator: Andre Breton
+  rank: 1269
+  rationale: Adds a major French modernist poetry omission; reduces excess Breton coverage.
+- wave: wave_003
+  added: Nadja
+  added_creator: Andre Breton
+  replaced: Poems of Andre Breton
+  replaced_creator: Andre Breton
+  rank: 1270
+  rationale: Replaces a generic Breton anthology with the stronger named Surrealist prose anchor.
+- wave: wave_003
+  added: Exercises in Style
+  added_creator: Raymond Queneau
+  replaced: Pour un Nouveau Roman
+  replaced_creator: Alain Robbe-Grillet
+  rank: 1326
+  rationale: Adds a major experimental prose omission; removes a mis-typed Robbe-Grillet criticism row.
+- wave: wave_003
+  added: Le Parti pris des choses
+  added_creator: Francis Ponge
+  replaced: Dans le Labyrinthe
+  replaced_creator: Alain Robbe-Grillet
+  rank: 1331
+  rationale: Adds a major French prose-poetry omission; reduces Robbe-Grillet overcoverage.
+- wave: wave_003
+  added: Cheri
+  added_creator: Colette
+  replaced: Le Voyeur
+  replaced_creator: Alain Robbe-Grillet
+  rank: 1333
+  rationale: Gives Colette a cleaner named anchor; reduces Robbe-Grillet overcoverage.
+- wave: wave_003
+  added: Prose of the Trans-Siberian and of Little Jehanne of France
+  added_creator: Blaise Cendrars
+  replaced: L'Amant
+  replaced_creator: Marguerite Duras
+  rank: 1341
+  rationale: Removes a duplicate Duras Lover row while adding a major Francophone modernist long poem.
+- wave: wave_003
+  added: Another Time
+  added_creator: W. H. Auden
+  replaced: Michael Robartes and the Dancer
+  replaced_creator: William Butler Yeats
+  rank: 1371
+  rationale: Adds a major Auden omission; reduces secondary Yeats overcoverage.
+- wave: wave_003
+  added: The Garden Party and Other Stories
+  added_creator: Katherine Mansfield
+  replaced: The Shadowy Waters
+  replaced_creator: William Butler Yeats
+  rank: 1373
+  rationale: Adds a high-confidence modernist short-fiction omission; reduces secondary Yeats overcoverage.
+- wave: wave_003
+  added: The Death of the Heart
+  added_creator: Elizabeth Bowen
+  replaced: Murder in the Cathedral
+  replaced_creator: T. S. Eliot
+  rank: 1556
+  rationale: Adds a major interwar British fiction omission; Eliot remains represented by stronger poetry and criticism rows.
 alias_repairs:
 - wave: wave_001
   item: Tales

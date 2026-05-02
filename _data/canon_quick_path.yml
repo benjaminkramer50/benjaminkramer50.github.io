@@ -12325,25 +12325,25 @@ items:
   lifetime_path: true
   rank: 485
   phase: 2
-- id: candidate:bloom_gap_031_0279_elegies
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0279_elegies
-  title: '"Elegies"'
+- id: candidate:wave003_louise_labe_sonnets_elegies
+  source: wave_003_canon_audit_integration
+  source_id: wave003_louise_labe_sonnets_elegies
+  title: Sonnets et elegies
   creators:
-  - Pierre de Ronsard
-  date_label: 16th century
-  sort_year: 1560
+  - Louise Labe
+  date_label: '1555'
+  sort_year: 1555
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
   unit_type: poetry_selection
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F014 repair for a high-confidence Renaissance French lyric omission; replaces a vague contextual Ronsard fragment row while stronger Ronsard coverage remains available elsewhere.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -14781,75 +14781,75 @@ items:
   lifetime_path: true
   rank: 582
   phase: 2
-- id: candidate:bloom_gap_031_0284_les_juives
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0284_les_juives
-  title: Les Juives
+- id: candidate:wave003_machaut_voir_dit
+  source: wave_003_canon_audit_integration
+  source_id: wave003_machaut_voir_dit
+  title: Le Livre du Voir Dit
   creators:
-  - Robert Garnier
-  date_label: 17th century
-  sort_year: 1650
+  - Guillaume de Machaut
+  date_label: c. 1360s
+  sort_year: 1365
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: verse_prose_narrative
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F014 repair for a major medieval French lyric-narrative omission; displaces a weaker duplicated Robert Garnier contextual row with incorrect period metadata.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 583
   phase: 2
-- id: candidate:bloom_gap_031_0283_marc_antoine
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0283_marc_antoine
-  title: Marc Antoine
+- id: candidate:wave003_larochefoucauld_maximes
+  source: wave_003_canon_audit_integration
+  source_id: wave003_larochefoucauld_maximes
+  title: Maximes
   creators:
-  - Robert Garnier
-  date_label: 17th century
-  sort_year: 1650
+  - Francois de La Rochefoucauld
+  date_label: '1665'
+  sort_year: 1665
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: maxim_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F014 repair for a central French classical prose omission; replaces a second weak Garnier row while reducing duplicate early modern drama saturation.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 584
   phase: 2
-- id: candidate:bloom_gap_031_0287_nicomede
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0287_nicomede
-  title: Nicomede
+- id: candidate:wave003_perrault_tales
+  source: wave_003_canon_audit_integration
+  source_id: wave003_perrault_tales
+  title: Histoires ou contes du temps passe
   creators:
-  - Pierre Corneille
-  date_label: 17th century
-  sort_year: 1650
+  - Charles Perrault
+  date_label: '1697'
+  sort_year: 1697
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: fairy_tale_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the story, tale, story collection, or documented assigned selection.
+  rationale: Wave 003 F014 repair for a foundational literary fairy-tale collection; replaces a lower-priority Corneille duplicate while Corneille remains represented by stronger plays.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -15385,25 +15385,25 @@ items:
   lifetime_path: true
   rank: 606
   phase: 3
-- id: candidate:scale_lit_berenice_racine
-  source: wave_024_literature_bloom_priority_completion
-  source_id: scale_lit_berenice_racine
-  title: Berenice
+- id: candidate:wave003_cyrano_other_world
+  source: wave_003_canon_audit_integration
+  source_id: wave003_cyrano_other_world
+  title: The Other World
   creators:
-  - Jean Racine
-  date_label: '1670'
-  sort_year: 1670
+  - Cyrano de Bergerac
+  date_label: published 1657 and 1662
+  sort_year: 1657
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: play
+  unit_type: satirical_prose_fiction
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Scale candidate for the 3000-text literature-only lifetime path; retained for source review, duplicate review, translation review, and coverage-balancing.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Wave 003 F014 repair for a major early French speculative-satirical prose omission; Racine remains strongly represented by Andromaque, Phedre, and Athalie.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -19447,50 +19447,50 @@ items:
   lifetime_path: true
   rank: 766
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0390_the_distance_the_shadows_selected_poems
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0390_the_distance_the_shadows_selected_poems
-  title: 'The Distance, the Shadows: Selected Poems'
+- id: candidate:wave003_montesquieu_persian_letters
+  source: wave_003_canon_audit_integration
+  source_id: wave003_montesquieu_persian_letters
+  title: Persian Letters
   creators:
-  - Victor Hugo
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1806
+  - Montesquieu
+  date_label: '1721'
+  sort_year: 1721
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: poetry_selection
-  tier: contextual
+  unit_type: epistolary_satire
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Wave 003 F015 repair for a central French Enlightenment prose omission; replaces a vague Hugo selected-poems row while Hugo remains strongly represented elsewhere.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 767
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0394_les_travailleurs_de_la_mer
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0394_les_travailleurs_de_la_mer
-  title: Les Travailleurs de la Mer
+- id: candidate:wave003_stael_corinne
+  source: wave_003_canon_audit_integration
+  source_id: wave003_stael_corinne
+  title: Corinne, or Italy
   creators:
-  - Victor Hugo
-  date_label: The Democratic Age; approximate chronological placement pending review
+  - Germaine de Stael
+  date_label: '1807'
   sort_year: 1807
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F015 repair for a major French and European Romantic novel omission; replaces the Hugo duplicate of Toilers of the Sea already covered elsewhere.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -19697,25 +19697,25 @@ items:
   lifetime_path: true
   rank: 776
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0404_the_girl_with_the_golden_eyes
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0404_the_girl_with_the_golden_eyes
-  title: The Girl With the Golden Eyes
+- id: candidate:wave003_chateaubriand_atala_rene
+  source: wave_003_canon_audit_integration
+  source_id: wave003_chateaubriand_atala_rene
+  title: Atala and Rene
   creators:
-  - Honore de Balzac
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1809
+  - Francois-Rene de Chateaubriand
+  date_label: 1801 and 1802
+  sort_year: 1801
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novella_pair
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F015 repair for a central French Romantic prose omission; replaces a secondary Balzac novella while stronger Balzac anchors remain.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -19822,50 +19822,50 @@ items:
   lifetime_path: true
   rank: 781
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0406_the_wild_ass_s_skin
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0406_the_wild_ass_s_skin
-  title: The Wild Ass's Skin
+- id: candidate:wave003_sand_indiana
+  source: wave_003_canon_audit_integration
+  source_id: wave003_sand_indiana
+  title: Indiana
   creators:
-  - Honore de Balzac
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1810
+  - George Sand
+  date_label: '1832'
+  sort_year: 1832
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F015 repair for a high-confidence George Sand omission; replaces a secondary Balzac row in an overrepresented Balzac cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 782
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0409_the_splendors_and_miseries_of_courtesans
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0409_the_splendors_and_miseries_of_courtesans
-  title: The Splendors and Miseries of Courtesans
+- id: candidate:wave003_marivaux_game_love_chance
+  source: wave_003_canon_audit_integration
+  source_id: wave003_marivaux_game_love_chance
+  title: The Game of Love and Chance
   creators:
-  - Honore de Balzac
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1811
+  - Pierre de Marivaux
+  date_label: '1730'
+  sort_year: 1730
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: comedy
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the play or dramatic text.
+  rationale: Wave 003 F015 repair for a major French eighteenth-century theater omission; replaces another secondary Balzac row from the same overcovered cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -19922,25 +19922,25 @@ items:
   lifetime_path: true
   rank: 785
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0417_salammbo
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0417_salammbo
-  title: Salammbo
+- id: candidate:wave003_sand_consuelo
+  source: wave_003_canon_audit_integration
+  source_id: wave003_sand_consuelo
+  title: Consuelo
   creators:
-  - Gustave Flaubert
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1812
+  - George Sand
+  date_label: 1842-1843
+  sort_year: 1842
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F015 repair adding a second major Sand anchor only after removing a weaker Flaubert row; Flaubert remains represented by Madame Bovary and other stronger entries.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -20025,22 +20025,22 @@ items:
 - id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0423_selected_poems
   source: wave_032_literature_bloom_democratic_age_reviewed
   source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0423_selected_poems
-  title: Selected Poems
+  title: Fetes galantes and Romances sans paroles
   creators:
   - Paul Verlaine
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1814
+  date_label: 1869 and 1874
+  sort_year: 1869
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
   unit_type: poetry_selection
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F015 metadata repair replacing a generic Verlaine selected-poems display with named canonical collections while keeping the same row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -20426,25 +20426,25 @@ items:
   lifetime_path: true
   rank: 805
   phase: 3
-- id: candidate:genre_lit_nightmare_abbey
-  source: wave_042_literature_genre_childrens_speculative_final_balance
-  source_id: genre_lit_nightmare_abbey
-  title: Nightmare Abbey
+- id: candidate:wave003_wollstonecraft_rights_woman
+  source: wave_003_canon_audit_integration
+  source_id: wave003_wollstonecraft_rights_woman
+  title: A Vindication of the Rights of Woman
   creators:
-  - Thomas Love Peacock
-  date_label: '1818'
-  sort_year: 1818
+  - Mary Wollstonecraft
+  date_label: '1792'
+  sort_year: 1792
   section: textual_humanities
   group: literature
-  topic: gothic_literature
+  topic: british_literature
   medium: text
-  unit_type: satirical_novel
-  tier: contextual
+  unit_type: literary_nonfiction
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Genre, children's, speculative, horror, crime, and graphic narrative balance candidate for the 3000-text literature-only path; staged to improve durable literary-study coverage without adding non-text media.
+  rationale: Wave 003 F011 repair for a major feminist and Romantic-era prose omission; replaces a lower-priority Peacock satire while the Gothic/Romantic fiction packet remains broadly covered.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -20732,25 +20732,25 @@ items:
   lifetime_path: true
   rank: 817
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0463_the_book_of_los
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0463_the_book_of_los
-  title: The Book of Los
+- id: candidate:wave003_byron_childe_harold
+  source: wave_003_canon_audit_integration
+  source_id: wave003_byron_childe_harold
+  title: Childe Harold's Pilgrimage
   creators:
-  - William Blake
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1823
+  - Lord Byron
+  date_label: 1812-1818
+  sort_year: 1812
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: narrative_poem
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F011 repair for an obvious Byron omission; replaces a contextual Blake row from an overrepresented Blake cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -20782,25 +20782,25 @@ items:
   lifetime_path: true
   rank: 819
   phase: 3
-- id: candidate:bloom_reviewed_redgauntlet
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_redgauntlet
-  title: Redgauntlet
+- id: candidate:wave003_shelley_prometheus_unbound
+  source: wave_003_canon_audit_integration
+  source_id: wave003_shelley_prometheus_unbound
+  title: Prometheus Unbound
   creators:
-  - Walter Scott
-  date_label: '1824'
-  sort_year: 1824
+  - Percy Bysshe Shelley
+  date_label: '1820'
+  sort_year: 1820
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: historical_novel
+  unit_type: lyrical_drama
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the play or dramatic text.
+  rationale: Wave 003 F011 repair for a major Shelley omission; replaces a secondary Scott historical novel while Waverley and other Scott anchors remain.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -20832,25 +20832,25 @@ items:
   lifetime_path: true
   rank: 821
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0468_the_everlasting_gospel
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0468_the_everlasting_gospel
-  title: The Everlasting Gospel
+- id: candidate:wave003_charlotte_smith_elegiac_sonnets
+  source: wave_003_canon_audit_integration
+  source_id: wave003_charlotte_smith_elegiac_sonnets
+  title: Elegiac Sonnets
   creators:
-  - William Blake
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1824
+  - Charlotte Smith
+  date_label: '1784'
+  sort_year: 1784
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F011 repair for a significant early Romantic woman poet omission; replaces a second contextual Blake row from the same overcovered cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -21088,8 +21088,8 @@ items:
   title: 'Mary Barton: A Tale of Manchester Life'
   creators:
   - Elizabeth Gaskell
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1830
+  date_label: '1848'
+  sort_year: 1848
   section: textual_humanities
   group: literature
   topic: western_literature
@@ -21649,25 +21649,25 @@ items:
   lifetime_path: true
   rank: 853
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0524_the_chimes_a_goblin_story_of_some_bells_that_ran
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0524_the_chimes_a_goblin_story_of_some_bells_that_ran
-  title: 'The Chimes: A Goblin Story of Some Bells That Rang an Old Year Out and a New Year In'
+- id: candidate:wave003_gaskell_wives_daughters
+  source: wave_003_canon_audit_integration
+  source_id: wave003_gaskell_wives_daughters
+  title: Wives and Daughters
   creators:
-  - Charles Dickens
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1836
+  - Elizabeth Gaskell
+  date_label: 1864-1866
+  sort_year: 1864
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F012 repair for a major Victorian novel omission; replaces a weak contextual Dickens Christmas-book row from an overrepresented Dickens cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -21754,50 +21754,50 @@ items:
   lifetime_path: true
   rank: 857
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0527_the_haunted_men_and_the_ghost_s_bargain_a_fancy_
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0527_the_haunted_men_and_the_ghost_s_bargain_a_fancy_
-  title: The Haunted Men and the Ghost's Bargain, A Fancy for Christmas-Time
+- id: candidate:wave003_arnold_dover_beach
+  source: wave_003_canon_audit_integration
+  source_id: wave003_arnold_dover_beach
+  title: Dover Beach and Selected Poems
   creators:
-  - Charles Dickens
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1837
+  - Matthew Arnold
+  date_label: 1851-1867
+  sort_year: 1851
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: british_literature
   medium: text
-  unit_type: novel
+  unit_type: poetry_selection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F012 repair for a major Victorian poetry and criticism omission; replaces a typo-bearing Dickens duplicate row.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 858
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0525_the_cricket_on_the_hearth_a_fairy_tale_of_home
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0525_the_cricket_on_the_hearth_a_fairy_tale_of_home
-  title: 'The Cricket on the Hearth: A Fairy Tale of Home'
+- id: candidate:wave003_swinburne_poems_ballads
+  source: wave_003_canon_audit_integration
+  source_id: wave003_swinburne_poems_ballads
+  title: Poems and Ballads
   creators:
-  - Charles Dickens
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1837
+  - Algernon Charles Swinburne
+  date_label: '1866'
+  sort_year: 1866
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F012 repair for a high-confidence Victorian poetry omission; replaces another lower-priority Dickens Christmas-book row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -21829,25 +21829,25 @@ items:
   lifetime_path: true
   rank: 860
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0530_the_mystery_of_edwin_drood
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0530_the_mystery_of_edwin_drood
-  title: The Mystery of Edwin Drood
+- id: candidate:wave003_dg_rossetti_house_life
+  source: wave_003_canon_audit_integration
+  source_id: wave003_dg_rossetti_house_life
+  title: The House of Life and Selected Poems
   creators:
-  - Charles Dickens
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1838
+  - Dante Gabriel Rossetti
+  date_label: '1881'
+  sort_year: 1881
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F012 repair for a Pre-Raphaelite poetry gap; replaces an unfinished Dickens row from an already crowded Dickens cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -22181,25 +22181,25 @@ items:
   lifetime_path: true
   rank: 874
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0561_framley_parsonage
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0561_framley_parsonage
-  title: Framley Parsonage
+- id: candidate:wave003_hopkins_poems
+  source: wave_003_canon_audit_integration
+  source_id: wave003_hopkins_poems
+  title: Poems of Gerard Manley Hopkins
   creators:
-  - Anthony Trollope
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1845
+  - Gerard Manley Hopkins
+  date_label: written c. 1860s-1880s; published 1918
+  sort_year: 1918
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: british_literature
   medium: text
-  unit_type: novel
+  unit_type: poetry_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F012 repair for a central Victorian poetry omission; replaces a secondary Trollope row while Trollope remains represented by stronger Barsetshire/Palliser anchors.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -22231,17 +22231,17 @@ items:
   lifetime_path: true
   rank: 876
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0562_the_small_house_at_allington
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0562_the_small_house_at_allington
-  title: The Small House at Allington
+- id: candidate:wave003_harriet_martineau_deerbrook
+  source: wave_003_canon_audit_integration
+  source_id: wave003_harriet_martineau_deerbrook
+  title: Deerbrook
   creators:
-  - Anthony Trollope
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1845
+  - Harriet Martineau
+  date_label: '1839'
+  sort_year: 1839
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: british_literature
   medium: text
   unit_type: novel
   tier: major
@@ -22249,7 +22249,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F012 repair adding a major nineteenth-century woman novelist and social-problem fiction witness; replaces a second secondary Trollope row from the same overcovered cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -23161,10 +23161,10 @@ items:
 - id: candidate:bloom_tennyson_poems
   source: wave_019_bloom_western_literature_spine
   source_id: bloom_tennyson_poems
-  title: Selected Poems
+  title: In Memoriam A.H.H. and Selected Poems
   creators:
   - Alfred Tennyson
-  date_label: 19th century
+  date_label: '1850'
   sort_year: 1850
   section: textual_humanities
   group: literature
@@ -23176,32 +23176,32 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom appendix coverage candidate for the Western literary spine; retained as one reference layer inside a broader global literature canon.
+  rationale: Wave 003 F012 metadata repair making the Tennyson row point to the central named Victorian elegy rather than an underspecified selected-poems record.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 913
   phase: 4
-- id: candidate:bloom_coleridge_poems
-  source: wave_019_bloom_western_literature_spine
-  source_id: bloom_coleridge_poems
-  title: Selected Poems
+- id: candidate:wave003_de_quincey_english_mail_coach
+  source: wave_003_canon_audit_integration
+  source_id: wave003_de_quincey_english_mail_coach
+  title: The English Mail-Coach and Selected Essays
   creators:
-  - Samuel Taylor Coleridge
-  date_label: late 18th-early 19th century
-  sort_year: 1850
+  - Thomas De Quincey
+  date_label: 1849 and later selections
+  sort_year: 1849
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: poetry_selection
+  unit_type: essay_selection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom appendix coverage candidate for the Western literary spine; retained as one reference layer inside a broader global literature canon.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Wave 003 F011/F012 repair replacing a redundant generic Coleridge selected-poems row; Coleridge remains represented by Lyrical Ballads and named poems.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -23286,11 +23286,11 @@ items:
 - id: candidate:bloom_mallarme_poetry_prose
   source: wave_019_bloom_western_literature_spine
   source_id: bloom_mallarme_poetry_prose
-  title: Selected Poetry and Prose
+  title: A Throw of the Dice and Selected Poems
   creators:
   - Stephane Mallarme
-  date_label: 19th century
-  sort_year: 1850
+  date_label: late 19th century
+  sort_year: 1897
   section: textual_humanities
   group: literature
   topic: francophone_literature
@@ -23301,7 +23301,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom appendix coverage candidate for the Western literary spine; retained as one reference layer inside a broader global literature canon.
+  rationale: Wave 003 F015 metadata repair replacing a generic Mallarme label with a named late-symbolist anchor and selected-poems basis.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -23311,11 +23311,11 @@ items:
 - id: candidate:bloom_maupassant_selected_stories
   source: wave_019_bloom_western_literature_spine
   source_id: bloom_maupassant_selected_stories
-  title: Selected Short Stories
+  title: Boule de Suif and Selected Stories
   creators:
   - Guy de Maupassant
-  date_label: late 19th century
-  sort_year: 1850
+  date_label: 1880s
+  sort_year: 1880
   section: textual_humanities
   group: literature
   topic: francophone_literature
@@ -23326,7 +23326,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the story, tale, story collection, or documented assigned selection.
-  rationale: Bloom appendix coverage candidate for the Western literary spine; retained as one reference layer inside a broader global literature canon.
+  rationale: Wave 003 F015 metadata repair replacing a generic Maupassant selected-stories row with a named canonical story anchor.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -24261,25 +24261,25 @@ items:
   lifetime_path: true
   rank: 955
   phase: 4
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0616_the_bab_balladsmuch_sound_and_little_sense
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0616_the_bab_balladsmuch_sound_and_little_sense
-  title: The "Bab" BalladsMuch Sound and Little Sense
+- id: candidate:wave003_pater_renaissance
+  source: wave_003_canon_audit_integration
+  source_id: wave003_pater_renaissance
+  title: The Renaissance
   creators:
-  - W S Gilbert
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1857
+  - Walter Pater
+  date_label: '1873'
+  sort_year: 1873
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: british_literature
   medium: text
-  unit_type: literary_work
+  unit_type: essay_collection
   tier: contextual
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F012 repair replacing a malformed Gilbert title with a significant Victorian aesthetic-prose anchor.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -31501,22 +31501,22 @@ items:
 - id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0883_l_icirc_le_des_pingouins
   source: wave_033_literature_bloom_chaotic_age_reviewed
   source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0883_l_icirc_le_des_pingouins
-  title: L'&Icirc;le des Pingouins
+  title: Penguin Island
   creators:
   - Anatole France
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1906
+  date_label: '1908'
+  sort_year: 1908
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: literary_work
+  unit_type: satirical_novel
   tier: contextual
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 metadata repair replacing HTML-escaped imported title and placeholder chronology with the conventional English title and work date.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -31904,19 +31904,19 @@ items:
   title: Our Lady of the Flowers
   creators:
   - Jean Genet
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1907
+  date_label: '1943'
+  sort_year: 1943
   section: textual_humanities
   group: literature
   topic: francophone_literature
   medium: text
-  unit_type: poetry_selection
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Wave 003 metadata repair correcting Genet's work date and form; retained as a major French queer modernist prose anchor.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -31976,22 +31976,22 @@ items:
 - id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0915_le_manifeste_du_surrealisme
   source: wave_033_literature_bloom_chaotic_age_reviewed
   source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0915_le_manifeste_du_surrealisme
-  title: Le Manifeste du Surrealisme
+  title: Manifesto of Surrealism
   creators:
   - Andre Breton
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1908
+  date_label: '1924'
+  sort_year: 1924
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: novel
+  unit_type: literary_manifesto
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 metadata repair correcting Breton's manifesto title, form, topic, and work date while retaining it as the Surrealist manifesto anchor.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -32123,75 +32123,75 @@ items:
   lifetime_path: true
   rank: 1267
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0913_fata_morgana
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0913_fata_morgana
-  title: Fata Morgana
+- id: candidate:wave003_apollinaire_alcools
+  source: wave_003_canon_audit_integration
+  source_id: wave003_apollinaire_alcools
+  title: Alcools
   creators:
-  - Andre Breton
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1908
+  - Guillaume Apollinaire
+  date_label: '1913'
+  sort_year: 1913
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F016 repair for a central French modernist poetry omission; replaces a lower-priority Breton row while Breton remains represented by the manifesto and Nadja.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 1268
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0912_l_union_libre
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0912_l_union_libre
-  title: L'Union Libre
+- id: candidate:wave003_valery_charmes
+  source: wave_003_canon_audit_integration
+  source_id: wave003_valery_charmes
+  title: Charmes
   creators:
-  - Andre Breton
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1908
+  - Paul Valery
+  date_label: '1922'
+  sort_year: 1922
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F016 repair for a major French modernist poetry omission; replaces a second lower-priority Breton row from an overcovered Breton cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 1269
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0911_poems_of_andre_breton_a_bilingual_anthology
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0911_poems_of_andre_breton_a_bilingual_anthology
-  title: 'Poems of Andre Breton: A Bilingual Anthology'
+- id: candidate:wave003_breton_nadja
+  source: wave_003_canon_audit_integration
+  source_id: wave003_breton_nadja
+  title: Nadja
   creators:
   - Andre Breton
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1908
+  date_label: '1928'
+  sort_year: 1928
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: poetry_selection
-  tier: contextual
+  unit_type: surrealist_prose
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Wave 003 F016 repair replacing a generic Breton poetry anthology with the stronger named Surrealist prose anchor.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -32353,22 +32353,22 @@ items:
 - id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0921_l_acirc_ge_d_homme
   source: wave_033_literature_bloom_chaotic_age_reviewed
   source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0921_l_acirc_ge_d_homme
-  title: L'&Acirc;ge d'Homme
+  title: L'Age d'homme
   creators:
   - Michel Leiris
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1909
+  date_label: '1939'
+  sort_year: 1939
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: literary_work
+  unit_type: memoir
   tier: contextual
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 metadata repair replacing an HTML-escaped imported title and placeholder chronology with a normalized memoir entry.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -32406,19 +32406,19 @@ items:
   title: Les Mots
   creators:
   - Jean-Paul Sartre
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1909
+  date_label: '1964'
+  sort_year: 1964
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: literary_work
+  unit_type: memoir
   tier: contextual
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 metadata repair correcting Sartre's memoir date, form, and topic.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -32786,19 +32786,19 @@ items:
   title: The Rebel
   creators:
   - Albert Camus
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1910
+  date_label: '1951'
+  sort_year: 1951
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: literary_work
+  unit_type: essay
   tier: contextual
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 metadata repair correcting Camus's essay date, form, and topic; boundary status remains open for later literary-nonfiction policy review.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -33408,22 +33408,22 @@ items:
 - id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0963_le_lecon
   source: wave_033_literature_bloom_chaotic_age_reviewed
   source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0963_le_lecon
-  title: Le Lecon
+  title: The Lesson
   creators:
   - Eugene Ionesco
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1912
+  date_label: '1951'
+  sort_year: 1951
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: literary_work
+  unit_type: play
   tier: contextual
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the play or dramatic text.
+  rationale: Wave 003 metadata repair correcting Ionesco's title, date, form, and topic.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -33584,25 +33584,25 @@ items:
   lifetime_path: true
   rank: 1325
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0983_pour_un_nouveau_roman
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0983_pour_un_nouveau_roman
-  title: Pour un Nouveau Roman
+- id: candidate:wave003_queneau_exercises_style
+  source: wave_003_canon_audit_integration
+  source_id: wave003_queneau_exercises_style
+  title: Exercises in Style
   creators:
-  - Alain Robbe-Grillet
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1913
+  - Raymond Queneau
+  date_label: '1947'
+  sort_year: 1947
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: novel
+  unit_type: experimental_prose
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F016 repair for a major Oulipo-adjacent experimental prose omission; replaces a mis-typed Robbe-Grillet criticism row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -33709,25 +33709,25 @@ items:
   lifetime_path: true
   rank: 1330
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0981_dans_le_labyrinthe
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0981_dans_le_labyrinthe
-  title: Dans le Labyrinthe
+- id: candidate:wave003_ponge_things
+  source: wave_003_canon_audit_integration
+  source_id: wave003_ponge_things
+  title: Le Parti pris des choses
   creators:
-  - Alain Robbe-Grillet
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1913
+  - Francis Ponge
+  date_label: '1942'
+  sort_year: 1942
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: prose_poem_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F016 repair for a major French prose-poetry omission; replaces a secondary Robbe-Grillet row in an overrepresented cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -33759,25 +33759,25 @@ items:
   lifetime_path: true
   rank: 1332
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0979_le_voyeur
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0979_le_voyeur
-  title: Le Voyeur
+- id: candidate:wave003_colette_cheri
+  source: wave_003_canon_audit_integration
+  source_id: wave003_colette_cheri
+  title: Cheri
   creators:
-  - Alain Robbe-Grillet
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1913
+  - Colette
+  date_label: '1920'
+  sort_year: 1920
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Wave 003 F016 repair giving Colette a cleaner named anchor; replaces another secondary Robbe-Grillet row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -33963,25 +33963,25 @@ items:
   lifetime_path: true
   rank: 1340
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0990_l_amant
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0990_l_amant
-  title: L'Amant
+- id: candidate:wave003_cendrars_transsiberian
+  source: wave_003_canon_audit_integration
+  source_id: wave003_cendrars_transsiberian
+  title: Prose of the Trans-Siberian and of Little Jehanne of France
   creators:
-  - Marguerite Duras
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1914
+  - Blaise Cendrars
+  date_label: '1913'
+  sort_year: 1913
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: francophone_literature
   medium: text
-  unit_type: novel
+  unit_type: long_poem
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F016 repair removing the duplicate Duras Lover row; the canonical Duras title remains at its correct 1984 position.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -34715,25 +34715,25 @@ items:
   lifetime_path: true
   rank: 1370
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_1007_michael_robartes_and_the_dancer
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_1007_michael_robartes_and_the_dancer
-  title: Michael Robartes and the Dancer
+- id: candidate:wave003_auden_another_time
+  source: wave_003_canon_audit_integration
+  source_id: wave003_auden_another_time
+  title: Another Time
   creators:
-  - William Butler Yeats
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1915
+  - W. H. Auden
+  date_label: '1940'
+  sort_year: 1940
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Wave 003 F013 repair for a major British/Anglo-American modernist poetry omission; replaces a secondary Yeats row from an overcovered cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -34765,25 +34765,25 @@ items:
   lifetime_path: true
   rank: 1372
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_1006_the_shadowy_waters
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_1006_the_shadowy_waters
-  title: The Shadowy Waters
+- id: candidate:wave003_mansfield_garden_party
+  source: wave_003_canon_audit_integration
+  source_id: wave003_mansfield_garden_party
+  title: The Garden Party and Other Stories
   creators:
-  - William Butler Yeats
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1915
+  - Katherine Mansfield
+  date_label: '1922'
+  sort_year: 1922
   section: textual_humanities
   group: literature
   topic: british_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: short_story_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the story, tale, story collection, or documented assigned selection.
+  rationale: Wave 003 F013 repair for a high-confidence modernist short fiction omission; replaces another secondary Yeats row from the same overcovered cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -39377,25 +39377,25 @@ items:
   lifetime_path: true
   rank: 1555
   phase: 6
-- id: candidate:bloom_reviewed_murder_cathedral
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_murder_cathedral
-  title: Murder in the Cathedral
+- id: candidate:wave003_bowen_death_heart
+  source: wave_003_canon_audit_integration
+  source_id: wave003_bowen_death_heart
+  title: The Death of the Heart
   creators:
-  - T. S. Eliot
-  date_label: '1935'
-  sort_year: 1935
+  - Elizabeth Bowen
+  date_label: '1938'
+  sort_year: 1938
   section: textual_humanities
   group: literature
-  topic: american_literature
+  topic: british_literature
   medium: text
-  unit_type: play
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Wave 003 F013 repair for a major interwar British fiction omission; replaces a secondary Eliot play while Eliot remains represented by the central poetry and criticism rows.
   source_status: manual_only
   review_status: needs_sources
   url:
