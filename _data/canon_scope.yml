@@ -1,0 +1,67 @@
+official_title: "Academic Humanities Canon"
+short_title: "Humanities Path"
+edition_label: "2026 Freeze"
+edition_year: 2026
+evidence_freeze_date: "2026-04-30"
+scope_statement: "A source-reviewed academic humanities canon with a separately curated lifetime path for marking off completed works, media, art, objects, sites, performances, platforms, and traditions through the 2026 edition freeze."
+membership_rule: "The admin page tracks personal progress only. Canon membership is set by reviewed source files and cannot be created from the admin interface."
+post_freeze_rule: "Works or source evidence after the freeze date belong in future-edition notes unless they correct metadata, provenance, or safety-critical interpretation for an already accepted item."
+target_counts:
+  accepted_min: 30000
+  accepted_default: 40000
+  accepted_max: 60000
+  lifetime_path_min: 2000
+  lifetime_path_default: 3000
+  lifetime_path_max: 4500
+  core_path_min: 500
+  core_path_default: 750
+  core_path_max: 1000
+  core_canon_min: 5000
+  core_canon_default: 7500
+  core_canon_max: 10000
+  reference_canon_min: 20000
+  reference_canon_default: 20000
+  reference_canon_max: 100000
+  reference_layer_limit: 100000
+section_targets:
+  textual_humanities: "12000-20000"
+  papers_articles: "8000-12000"
+  audiovisual_digital: "2500-4000"
+  art_material_performance: "8000-16000"
+section_default_targets:
+  textual_humanities: 15000
+  papers_articles: 10000
+  audiovisual_digital: 3200
+  art_material_performance: 12000
+core_section_targets:
+  textual_humanities: "2400-3600"
+  papers_articles: "1500-2200"
+  audiovisual_digital: "450-700"
+  art_material_performance: "1500-2600"
+crash_path_section_targets:
+  textual_humanities: "275-425"
+  papers_articles: "150-220"
+  audiovisual_digital: "55-90"
+  art_material_performance: "140-250"
+lifetime_path_section_targets:
+  textual_humanities: "1100-1700"
+  papers_articles: "450-800"
+  audiovisual_digital: "250-450"
+  art_material_performance: "350-700"
+  note: "The lifetime path is the primary user-facing completion list. The full accepted canon is a reference layer and should not be treated as a personal to-do list."
+cross_cutting_targets:
+  standalone_units: "3750-7500"
+  flagged_full_canon_units: "12000-25000"
+  note: "Cross-cutting units are promoted into their best final section; cross-cutting is also an audit layer applied across records, not a fifth silo for double-counting."
+engagement_mix:
+  books_and_textual_works: "8000-14000"
+  papers_reports_articles: "8000-12000"
+  watch_listen_play: "3000-5500"
+  reference_context_objects_sites_platforms: "10000-20000"
+lifetime_path_engagement_mix:
+  full_books_and_long_texts: "900-1300"
+  selected_textual_corpora_and_reference_units: "200-400"
+  papers_articles_reports: "450-800"
+  films_episodes_and_series_selections: "180-320"
+  music_audio_games_and_performance_units: "100-220"
+  art_architecture_objects_sites: "250-500"

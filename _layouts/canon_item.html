@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include meta.html %}
+    <script>
+    (function(){var t=localStorage.getItem('theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    {% include theme-toggle.html %}
+    {% include navigation.html %}
+
+    <main class="page-content">
+      <a class="back-link" href="/canon/">Back to canon</a>
+      <h1 class="page-title">{{ page.display_title | default: page.canonical_title }}</h1>
+
+      <div class="canon-detail">
+        {% if page.original_title %}
+        <p class="canon-detail-subtitle">{{ page.original_title }}</p>
+        {% endif %}
+
+        <div class="canon-detail-badges">
+          {% if page.canon_section %}<span class="canon-priority">{{ page.canon_section | replace: "_", " " }}</span>{% endif %}
+          {% if page.medium %}<span class="canon-medium">{{ page.medium | replace: "_", " " }}</span>{% endif %}
+          {% if page.work_type %}<span class="canon-priority">{{ page.work_type | replace: "_", " " }}</span>{% endif %}
+          {% if page.canon_review.tier %}<span class="canon-priority">{{ page.canon_review.tier | replace: "_", " " }}</span>{% endif %}
+          {% if page.path_membership.lifetime_path %}<span class="canon-path-badge">Lifetime Path</span>{% endif %}
+          {% if page.user_progress.status %}<span class="canon-status-label">{{ page.user_progress.status | replace: "_", " " }}</span>{% endif %}
+        </div>
+
+        {% if page.creators %}
+        <section class="canon-detail-section">
+          <h2>Creators</h2>
+          <ul>
+            {% for creator in page.creators %}
+            <li>{{ creator.name }}{% if creator.role %}, {{ creator.role }}{% endif %}</li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+
+        {% if page.canon_review.rationale %}
+        <section class="canon-detail-section">
+          <h2>Canon Rationale</h2>
+          <p>{{ page.canon_review.rationale }}</p>
+        </section>
+        {% endif %}
+
+        {% if page.path_membership.lifetime_path %}
+        <section class="canon-detail-section">
+          <h2>Path</h2>
+          <p>Lifetime path{% if page.path_membership.lifetime_phase %}, phase {{ page.path_membership.lifetime_phase }}{% endif %}{% if page.path_membership.lifetime_rank %}, rank {{ page.path_membership.lifetime_rank }}{% endif %}.</p>
+        </section>
+        {% endif %}
+
+        {% if page.evidence %}
+        <section class="canon-detail-section">
+          <h2>Evidence</h2>
+          <ul>
+            {% for source in page.evidence %}
+            <li>
+              {{ source.type | replace: "_", " " }}{% if source.citation %}: {{ source.citation }}{% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+
+        {% if page.audit_flags and page.audit_flags.size > 0 %}
+        <section class="canon-detail-section">
+          <h2>Audit Flags</h2>
+          <p>{{ page.audit_flags | join: ", " | replace: "_", " " }}</p>
+        </section>
+        {% endif %}
+
+        {% if page.sensitivity_flags and page.sensitivity_flags.size > 0 %}
+        <section class="canon-detail-section">
+          <h2>Sensitivity Flags</h2>
+          <p>{{ page.sensitivity_flags | join: ", " | replace: "_", " " }}</p>
+        </section>
+        {% endif %}
+
+        {{ content }}
+      </div>
+    </main>
+
+    {% include canon-pocket-link.html %}
+    {% include theme-toggle-script.html %}
+  </body>
+</html>
