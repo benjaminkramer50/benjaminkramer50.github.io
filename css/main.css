@@ -572,20 +572,24 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(7.25rem, 1fr));
   gap: 0.55rem;
-  margin: 1rem 0 1.1rem;
+  margin: 1rem 0 0.9rem;
 }
 
 .canon-status-note {
-  margin: -0.4rem 0 1rem;
+  margin: -0.35rem 0 1rem;
+  max-width: 58rem;
+  padding: 0.7rem 0.85rem;
+  border-left: 3px solid rgba(43, 108, 176, 0.45);
+  background: var(--color-surface);
   color: var(--color-muted);
-  font-size: 0.86rem;
+  font-size: 0.88rem;
   line-height: 1.5;
 }
 
 .canon-stat {
-  padding: 0.72rem 0.82rem;
+  padding: 0.68rem 0.78rem;
   border: 1px solid var(--color-border);
-  border-radius: 6px;
+  border-radius: 4px;
   background: var(--color-surface);
 }
 
@@ -638,22 +642,45 @@ body {
 
 .canon-filters {
   display: grid;
-  grid-template-columns: minmax(10rem, 13rem) minmax(14rem, 1fr);
-  gap: 0.6rem;
+  grid-template-columns: repeat(4, minmax(10rem, 1fr));
+  gap: 0.55rem;
+  align-items: end;
   margin-bottom: 0.8rem;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-surface);
+}
+
+.canon-filter-field {
+  display: grid;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.canon-filter-field > span {
+  color: var(--color-muted);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.canon-search-field {
+  grid-column: span 2;
 }
 
 .canon-filters select,
 .canon-filters input {
   width: 100%;
-  min-height: 2.45rem;
-  padding: 0.55rem 0.7rem;
+  min-height: 2.35rem;
+  padding: 0.5rem 0.65rem;
   font-family: var(--font-body);
   font-size: 0.84rem;
   color: var(--color-text);
-  background: var(--color-surface);
+  background: var(--color-bg);
   border: 1px solid var(--color-border);
-  border-radius: 6px;
+  border-radius: 4px;
   outline: none;
 }
 
@@ -726,27 +753,30 @@ body {
 
 .canon-list {
   display: grid;
-  gap: 0.42rem;
+  gap: 0.38rem;
 }
 
 .canon-item {
+  position: relative;
   display: grid;
-  grid-template-columns: 0.72rem minmax(0, 1fr) minmax(7.6rem, auto);
+  grid-template-columns: minmax(0, 1fr) minmax(7.6rem, auto);
   align-items: flex-start;
-  gap: 0.65rem;
-  padding: 0.72rem 0.85rem;
+  gap: 0.75rem;
+  padding: 0.78rem 0.9rem 0.78rem 1.05rem;
   border: 1px solid var(--color-border);
-  border-radius: 6px;
+  border-radius: 4px;
   background: var(--color-surface);
 }
 
 .canon-status-mark {
-  width: 0.68rem;
-  height: 0.68rem;
-  margin-top: 0.45rem;
-  border-radius: 50%;
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  height: auto;
+  margin: 0;
+  border-radius: 4px 0 0 4px;
   background: var(--color-border);
-  box-shadow: 0 0 0 3px rgba(136, 136, 136, 0.1);
+  box-shadow: none;
 }
 
 .canon-status-completed {
@@ -755,7 +785,6 @@ body {
 
 .canon-status-completed .canon-status-mark {
   background: #2f9e44;
-  box-shadow: 0 0 0 3px rgba(47, 158, 68, 0.16);
 }
 
 .canon-status-in-progress {
@@ -764,12 +793,10 @@ body {
 
 .canon-status-in-progress .canon-status-mark {
   background: #e0a800;
-  box-shadow: 0 0 0 3px rgba(224, 168, 0, 0.18);
 }
 
 .canon-status-deferred .canon-status-mark {
   background: #868e96;
-  box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.16);
 }
 
 .canon-progress-completed {
@@ -778,7 +805,6 @@ body {
 
 .canon-progress-completed .canon-status-mark {
   background: #2f9e44;
-  box-shadow: 0 0 0 3px rgba(47, 158, 68, 0.16);
 }
 
 .canon-progress-in-progress {
@@ -787,42 +813,42 @@ body {
 
 .canon-progress-in-progress .canon-status-mark {
   background: #e0a800;
-  box-shadow: 0 0 0 3px rgba(224, 168, 0, 0.18);
 }
 
 .canon-progress-queued .canon-status-mark,
 .canon-progress-planned .canon-status-mark {
   background: #4c6ef5;
-  box-shadow: 0 0 0 3px rgba(76, 110, 245, 0.14);
 }
 
 .canon-progress-paused .canon-status-mark,
 .canon-progress-deferred .canon-status-mark {
   background: #868e96;
-  box-shadow: 0 0 0 3px rgba(134, 142, 150, 0.16);
 }
 
 .canon-progress-sampled .canon-status-mark {
   background: #12b886;
-  box-shadow: 0 0 0 3px rgba(18, 184, 134, 0.15);
 }
 
 .canon-progress-abandoned .canon-status-mark {
   background: #c92a2a;
-  box-shadow: 0 0 0 3px rgba(201, 42, 42, 0.14);
+}
+
+.canon-item-body {
+  min-width: 0;
 }
 
 .canon-item-topline {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.35rem;
-  margin-bottom: 0.15rem;
+  gap: 0.32rem;
+  margin-bottom: 0.2rem;
 }
 
 .canon-medium,
 .canon-priority,
 .canon-date,
+.canon-era-badge,
 .canon-path-badge,
 .canon-sequence-badge,
 .canon-status-label {
@@ -832,12 +858,12 @@ body {
   padding: 0.1rem 0.42rem;
   border: 1px solid var(--color-border);
   border-radius: 4px;
-  font-size: 0.68rem;
-  font-weight: 700;
+  font-size: 0.7rem;
+  font-weight: 650;
   line-height: 1;
   color: var(--color-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .canon-path-badge {
@@ -848,6 +874,14 @@ body {
 .canon-sequence-badge {
   color: #495057;
   border-color: rgba(73, 80, 87, 0.28);
+  background: var(--color-bg);
+  font-variant-numeric: tabular-nums;
+}
+
+.canon-era-badge {
+  color: #2b6cb0;
+  border-color: rgba(43, 108, 176, 0.32);
+  background: rgba(43, 108, 176, 0.06);
 }
 
 [data-theme="dark"] .canon-sequence-badge {
@@ -857,12 +891,14 @@ body {
 
 .canon-status-label {
   white-space: nowrap;
+  background: var(--color-bg);
 }
 
 .canon-item-actions {
   display: grid;
   justify-items: end;
   gap: 0.4rem;
+  padding-top: 0.15rem;
 }
 
 .canon-progress-control {
@@ -924,7 +960,7 @@ body {
 .canon-title {
   margin: 0;
   font-family: var(--font-heading);
-  font-size: 1.03rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.25;
   color: var(--color-text);
@@ -952,14 +988,32 @@ body {
 .canon-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
-  text-transform: capitalize;
+  gap: 0.34rem;
+  margin-top: 0.38rem;
+  text-transform: none;
 }
 
 .canon-meta span:not(:last-child)::after {
-  content: '/';
-  margin-left: 0.45rem;
-  color: var(--color-border);
+  content: none;
+}
+
+.canon-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.28rem;
+  padding: 0.12rem 0.44rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-muted);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.canon-level-chip {
+  color: var(--color-text-secondary);
+  font-weight: 700;
 }
 
 .canon-meta .canon-source-chip {
@@ -1192,13 +1246,17 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .canon-search-field {
+    grid-column: 1;
+  }
+
   .canon-item {
-    grid-template-columns: 0.8rem minmax(0, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .canon-item-actions {
-    grid-column: 2;
-    justify-items: stretch;
+    justify-items: flex-start;
+    padding-top: 0;
   }
 
   .canon-admin-toolbar {
@@ -1546,16 +1604,15 @@ textarea:focus-visible,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .canon-filters input {
+  .canon-search-field {
     grid-column: 1 / -1;
   }
 
   .canon-item {
-    grid-template-columns: 0.8rem minmax(0, 1fr);
+    grid-template-columns: 1fr;
   }
 
   .canon-status-label {
-    grid-column: 2;
     justify-self: flex-start;
   }
 

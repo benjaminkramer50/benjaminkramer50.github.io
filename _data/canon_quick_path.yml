@@ -20536,25 +20536,29 @@ items:
   lifetime_path: true
   rank: 810
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0449_poetical_sketches
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0449_poetical_sketches
-  title: Poetical Sketches
+- id: candidate:mandatory_irving_sketch_book
+  source: wave_054_literature_gap_review_manual_additions
+  source_id: mandatory_irving_sketch_book
+  title: The Sketch Book of Geoffrey Crayon, Gent.
+  aliases:
+  - The Sketch Book
+  - Rip Van Winkle
+  - The Legend of Sleepy Hollow
   creators:
-  - William Blake
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1820
+  - Washington Irving
+  date_label: 1819-1820
+  sort_year: 1819
   section: textual_humanities
   group: literature
-  topic: british_literature
+  topic: american_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: story_sketch_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Gap-review addition for early American literature, the international sketch tale, national literary canon formation, and Irving's canonical stories "Rip Van Winkle" and "The Legend of Sleepy Hollow"; replaces a duplicate/contextual Blake entry to keep the path at 3,000 works.
   source_status: manual_only
   review_status: needs_sources
   url:
