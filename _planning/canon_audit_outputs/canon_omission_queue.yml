@@ -1,0 +1,94 @@
+---
+generated_on: '2026-05-02T20:48:33Z'
+status: wave_001_high_confidence_integrated_deferred_queue_open
+items:
+- candidate: Letters from an American Farmer
+  creator: J. Hector St. John de Crevecoeur
+  packets: [F001]
+  priority: high
+  status: deferred_pending_early_us_replacement_review
+- candidate: Of Plymouth Plantation
+  creator: William Bradford
+  packets: [F001]
+  priority: high
+  status: deferred_pending_colonial_us_boundary_review
+- candidate: The Coquette
+  creator: Hannah Webster Foster
+  packets: [F001]
+  priority: medium_high
+  status: deferred_pending_early_us_fiction_slot_review
+- candidate: Charlotte Temple
+  creator: Susanna Rowson
+  packets: [F001]
+  priority: medium_high
+  status: deferred_pending_early_us_fiction_slot_review
+- candidate: Selected Poems
+  creator: Henry Wadsworth Longfellow
+  packets: [F002, F003]
+  priority: high
+  status: queued_for_F004_us_poetry
+- candidate: Selected Poems
+  creator: Paul Laurence Dunbar
+  packets: [F003]
+  priority: high
+  status: queued_for_F004_us_poetry
+- candidate: The Conjure Woman
+  creator: Charles W. Chesnutt
+  packets: [F003]
+  priority: high
+  status: queued_for_F005_us_realism_naturalism
+- candidate: Maggie, A Girl of the Streets
+  creator: Stephen Crane
+  packets: [F003]
+  priority: medium_high
+  status: queued_for_F005_us_realism_naturalism
+- candidate: Main-Travelled Roads
+  creator: Hamlin Garland
+  packets: [F003]
+  priority: medium_high
+  status: queued_for_F005_us_realism_naturalism
+- candidate: Essays
+  creator: Francis Bacon
+  packets: [F009]
+  priority: high
+  status: queued_for_F010_british_seventeenth_eighteenth
+- candidate: The Battle of Maldon
+  creator: Old English poetic tradition
+  packets: [F009]
+  priority: medium_high
+  status: queued_for_C043_old_english
+- candidate: Defence of Poesy
+  creator: Philip Sidney
+  packets: [F009]
+  priority: medium_high
+  status: queued_for_C056_english_renaissance_poetry_and_prose
+- candidate: The Republic
+  creator: Plato
+  packets: [F023]
+  priority: high
+  status: deferred_pending_philosophy_boundary_policy
+- candidate: Parallel Lives
+  creator: Plutarch
+  packets: [F023]
+  priority: high
+  status: deferred_pending_greek_prose_policy
+- candidate: Histories
+  creator: Tacitus
+  packets: [F023]
+  priority: high
+  status: deferred_pending_roman_historiography_policy
+- candidate: Atharva Veda
+  creator: Vedic tradition
+  packets: [F024]
+  priority: high
+  status: deferred_pending_sacred_text_selection_policy
+- candidate: Sutta Nipata
+  creator: Early Buddhist canonical tradition
+  packets: [F024]
+  priority: high
+  status: deferred_pending_pali_buddhist_packet
+- candidate: Bijak
+  creator: Kabir tradition
+  packets: [F024]
+  priority: high
+  status: deferred_pending_bhakti_packet

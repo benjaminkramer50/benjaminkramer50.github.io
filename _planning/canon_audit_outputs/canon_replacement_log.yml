@@ -1,0 +1,72 @@
+---
+generated_on: '2026-05-02T20:55:00Z'
+status: wave_001_integrated
+items:
+- wave: wave_001
+  added: Selected Orations and Letters
+  added_creator: Marcus Tullius Cicero
+  replaced: Attis
+  replaced_creator: Catallus
+  rank: 133
+  rationale: Cicero was a high-confidence Roman prose omission; Catullus remains represented by the broader poems entry.
+- wave: wave_001
+  added: Letters to Lucilius
+  added_creator: Lucius Annaeus Seneca
+  replaced: Hercules Furens
+  replaced_creator: Lucius Annaeus Seneca
+  rank: 153
+  rationale: Seneca's letters are a stronger Roman imperial prose anchor than a single tragedy row.
+- wave: wave_001
+  added: Tolkappiyam
+  added_creator: Classical Tamil grammatical and poetic tradition
+  replaced: Selected Poems
+  replaced_creator: Manikkavacakar
+  rank: 258
+  rationale: Tolkappiyam fills a classical Tamil poetics gap; Manikkavacakar remains represented by Tiruvacakam.
+- wave: wave_001
+  added: The Autobiography of Benjamin Franklin
+  added_creator: Benjamin Franklin
+  replaced: Songs of Innocence and Experience Showing the Two Contrary States of the Human Soul
+  replaced_creator: William Blake
+  rank: 812
+  rationale: Franklin fills a major early US prose gap; Blake's Songs already has a stronger existing row.
+- wave: wave_001
+  added: A Son of the Forest
+  added_creator: William Apess
+  replaced: Death's Jest-Book
+  replaced_creator: Thomas Lovell Beddoes
+  rank: 837
+  rationale: Apess fills Indigenous nineteenth-century US life-writing; the displaced row was a weaker imported leftover with incorrect form metadata.
+- wave: wave_001
+  added: Nature and Selected Essays
+  added_creator: Ralph Waldo Emerson
+  replaced: 'The Battle of Life: A Love Story'
+  replaced_creator: Charles Dickens
+  rank: 857
+  rationale: Emerson was an obvious transcendentalist omission; the displaced Dickens row was a weak duplicate/contextual Christmas-book entry.
+- wave: wave_001
+  added: Woman in the Nineteenth Century
+  added_creator: Margaret Fuller
+  replaced: The Murders in the Rue Morgue
+  replaced_creator: Edgar Allan Poe
+  rank: 867
+  rationale: Fuller fills a major transcendentalist and feminist prose gap; Poe's story is now discoverable as an alias under Poe's Tales.
+- wave: wave_001
+  added: The Rise of Silas Lapham
+  added_creator: William Dean Howells
+  replaced: Washington Square
+  replaced_creator: Henry James
+  rank: 1038
+  rationale: Howells fills a core US realism gap; Henry James remains represented by stronger entries.
+- wave: wave_001
+  added: In the Midst of Life
+  added_creator: Ambrose Bierce
+  replaced: The Aspern Papers
+  replaced_creator: Henry James
+  rank: 1084
+  rationale: Bierce fills Civil War short-fiction coverage; Henry James remains represented by stronger entries.
+alias_repairs:
+- wave: wave_001
+  item: Tales
+  creator: Edgar Allan Poe
+  added_alias: The Murders in the Rue Morgue

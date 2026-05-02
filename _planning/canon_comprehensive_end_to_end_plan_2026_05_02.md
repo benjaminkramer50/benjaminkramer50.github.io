@@ -1,14 +1,14 @@
 ---
 title: Comprehensive End-to-End Literature Canon Audit Plan
 date: 2026-05-02
-status: plan_only_not_executed
+status: in_progress_wave_001_integrated
 scope: literature_only_global_lifetime_path
 target: 3000 public works
 ---
 
 # Comprehensive End-to-End Literature Canon Audit Plan
 
-This document is the forward plan for making the 3,000-item literature canon defensible. It is not an execution log. No audit agents have been run from this plan yet.
+This document is the forward plan for making the 3,000-item literature canon defensible. It is also the packet registry that execution logs point back to. Wave 001 has now been run and integrated; detailed outputs live under `_planning/canon_audit_outputs/`.
 
 ## Core Correction
 
@@ -696,4 +696,3 @@ These are not the full audit. They are initial red flags discovered from the cur
 - Many `Selected Poems` records need selection bases.
 - "Genre / Cross-Regional" is a UI bucket, not a scholarly tradition; underlying metadata needs real region/language fields.
 - Some automatic form categorization is presentation-only and must not substitute for scholarly classification.
-

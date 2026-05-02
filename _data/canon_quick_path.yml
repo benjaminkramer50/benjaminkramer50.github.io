@@ -3335,25 +3335,30 @@ items:
   rationale: Major dramaturgical text in sanskrit literature, included for durable literary influence, historical importance, and its role in a comprehensive global literature path centered on complete readable works.
   rank: 132
   phase: 1
-- id: candidate:bloom_gap_031_0076_attis
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0076_attis
-  title: Attis
+- id: candidate:wave001_cicero_selected_orations_letters
+  source: wave_001_canon_audit_integration
+  source_id: wave001_cicero_selected_orations_letters
+  title: Selected Orations and Letters
+  aliases:
+  - Selected Speeches
+  - Selected Letters
+  - Pro Archia
+  - Pro Caelio
   creators:
-  - Catallus
+  - Marcus Tullius Cicero
   date_label: 1st century BCE
-  sort_year: -60
+  sort_year: -63
   section: textual_humanities
   group: literature
   topic: roman_literature
   medium: text
-  unit_type: poem
+  unit_type: oratory_and_letters_selection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: First-wave canon audit addition for Roman prose, rhetoric, republican letters, and the long literary afterlife of Ciceronian style; replaces Catullus's "Attis", which is already better represented inside the Catullus poems entry.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -3841,25 +3846,28 @@ items:
   lifetime_path: true
   rank: 152
   phase: 1
-- id: candidate:bloom_gap_031_0089_hercules_furens
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0089_hercules_furens
-  title: Hercules Furens
+- id: candidate:wave001_seneca_letters_to_lucilius
+  source: wave_001_canon_audit_integration
+  source_id: wave001_seneca_letters_to_lucilius
+  title: Letters to Lucilius
+  aliases:
+  - Moral Letters to Lucilius
+  - Epistulae Morales ad Lucilium
   creators:
   - Lucius Annaeus Seneca
-  date_label: 1st century CE
-  sort_year: 50
+  date_label: c. 63-65 CE
+  sort_year: 64
   section: textual_humanities
   group: literature
   topic: roman_literature
   medium: text
-  unit_type: tragedy
+  unit_type: philosophical_letters
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: First-wave canon audit addition for Roman imperial literary prose, epistolary philosophy, Stoic style, and long reception history; replaces a single Senecan tragedy while preserving Seneca through a more central prose corpus.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -6504,25 +6512,27 @@ items:
   lifetime_path: true
   rank: 257
   phase: 1
-- id: candidate:scale_lit_manikavacakar_poems
-  source: wave_025_literature_global_scale_completion
-  source_id: scale_lit_manikavacakar_poems
-  title: Selected Poems
+- id: candidate:wave001_tolkappiyam
+  source: wave_001_canon_audit_integration
+  source_id: wave001_tolkappiyam
+  title: Tolkappiyam
+  aliases:
+  - Tolkappiyam Porulatikaram
   creators:
-  - Manikkavacakar
-  date_label: 9th century
-  sort_year: 850
+  - Classical Tamil grammatical and poetic tradition
+  date_label: classical Tamil tradition; date debated
+  sort_year: 200
   section: textual_humanities
   group: literature
   topic: tamil_literature
   medium: text
-  unit_type: devotional_poetry_selection
+  unit_type: poetics_and_grammar_text
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Scale candidate for the 3000-text literature-only lifetime path; retained for source review, duplicate review, translation review, and coverage-balancing.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: First-wave South Asian classical audit addition for the foundational Tamil grammatical and poetics tradition; replaces a duplicate Manikkavacakar selected-poems row because Tiruvacakam already represents that author and devotional corpus.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -20565,25 +20575,27 @@ items:
   lifetime_path: true
   rank: 811
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0453_songs_of_innocence_and_experience_showing_the_tw
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0453_songs_of_innocence_and_experience_showing_the_tw
-  title: Songs of Innocence and Experience Showing the Two Contrary States of the Human Soul
+- id: candidate:wave001_franklin_autobiography
+  source: wave_001_canon_audit_integration
+  source_id: wave001_franklin_autobiography
+  title: The Autobiography of Benjamin Franklin
+  aliases:
+  - Autobiography
   creators:
-  - William Blake
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1820
+  - Benjamin Franklin
+  date_label: written 1771-1790; published 1791-1818
+  sort_year: 1791
   section: textual_humanities
   group: literature
-  topic: british_literature
+  topic: american_literature
   medium: text
-  unit_type: poetry_selection
-  tier: contextual
+  unit_type: autobiography
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: First-wave early US audit addition for eighteenth-century American prose, self-fashioning, Enlightenment life-writing, and civic literary culture; replaces a duplicate/contextual Blake row because Songs of Innocence and of Experience is already represented elsewhere.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -21120,6 +21132,7 @@ items:
   - The Tell-Tale Heart
   - The Cask of Amontillado
   - The Purloined Letter
+  - The Murders in the Rue Morgue
 - id: canon:red-and-the-black
   source: accepted_record
   source_id: red-and-the-black
@@ -21198,25 +21211,27 @@ items:
   lifetime_path: true
   rank: 836
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0505_death_s_jest_book
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0505_death_s_jest_book
-  title: Death's Jest-Book
+- id: candidate:wave001_apess_son_of_the_forest
+  source: wave_001_canon_audit_integration
+  source_id: wave001_apess_son_of_the_forest
+  title: A Son of the Forest
+  aliases:
+  - A Son of the Forest and Other Writings
   creators:
-  - Thomas Lovell Beddoes
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1832
+  - William Apess
+  date_label: 1829
+  sort_year: 1829
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: native_american_literature
   medium: text
-  unit_type: novel
+  unit_type: autobiography
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: First-wave early US and Native American audit addition for Indigenous nineteenth-century life-writing, conversion narrative, political critique, and US literary history; replaces a weaker Bloom appendix leftover with incorrect form metadata.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -21704,25 +21719,30 @@ items:
   lifetime_path: true
   rank: 856
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0526_the_battle_of_life_a_love_story
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0526_the_battle_of_life_a_love_story
-  title: 'The Battle of Life: A Love Story'
+- id: candidate:wave001_emerson_nature_selected_essays
+  source: wave_001_canon_audit_integration
+  source_id: wave001_emerson_nature_selected_essays
+  title: Nature and Selected Essays
+  aliases:
+  - Nature
+  - Self-Reliance
+  - The American Scholar
+  - 'Essays: First Series'
   creators:
-  - Charles Dickens
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1837
+  - Ralph Waldo Emerson
+  date_label: 1836 and 1841-1844
+  sort_year: 1836
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: american_literature
   medium: text
-  unit_type: novel
+  unit_type: essay_selection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: First-wave US transcendentalism audit addition for Emerson's central role in American literary prose, essay style, intellectual self-reliance, and nineteenth-century literary culture; replaces a weak Dickens Christmas-book duplicate from the Bloom appendix layer.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -21954,25 +21974,27 @@ items:
   lifetime_path: true
   rank: 866
   phase: 3
-- id: candidate:genre_lit_murders_rue_morgue
-  source: wave_042_literature_genre_childrens_speculative_final_balance
-  source_id: genre_lit_murders_rue_morgue
-  title: The Murders in the Rue Morgue
+- id: candidate:wave001_fuller_woman_nineteenth_century
+  source: wave_001_canon_audit_integration
+  source_id: wave001_fuller_woman_nineteenth_century
+  title: Woman in the Nineteenth Century
+  aliases:
+  - The Great Lawsuit
   creators:
-  - Edgar Allan Poe
-  date_label: '1841'
-  sort_year: 1841
+  - Margaret Fuller
+  date_label: 1845
+  sort_year: 1845
   section: textual_humanities
   group: literature
-  topic: crime_literature
+  topic: american_literature
   medium: text
-  unit_type: short_story
+  unit_type: essay_book
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the story, tale, story collection, or documented assigned selection.
-  rationale: Genre, children's, speculative, horror, crime, and graphic narrative balance candidate for the 3000-text literature-only path; staged to improve durable literary-study coverage without adding non-text media.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: First-wave US transcendentalism audit addition for Fuller's canonical feminist prose, periodical culture, reform argument, and nineteenth-century American letters; replaces a standalone Poe story now covered as an alias inside Poe's Tales entry.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -26288,29 +26310,29 @@ items:
   lifetime_path: true
   rank: 1037
   phase: 4
-- source: wave_052_literature_dedupe_rank_audit_repairs
+- id: candidate:wave001_howells_rise_silas_lapham
+  source: wave_001_canon_audit_integration
+  source_id: wave001_howells_rise_silas_lapham
+  title: The Rise of Silas Lapham
+  creators:
+  - William Dean Howells
+  date_label: 1885
+  sort_year: 1885
   section: textual_humanities
   group: literature
+  topic: american_literature
   medium: text
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: First-wave nineteenth-century US fiction audit addition for American realism, social mobility, business ethics, and Howells's central critical and fictional role; replaces one Henry James row in an overrepresented cluster while retaining James through stronger entries.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
-  id: candidate:mandatory_washington_square
-  source_id: mandatory_washington_square
-  title: Washington Square
-  creators:
-  - Henry James
-  date_label: '1880'
-  sort_year: 1880
-  topic: american_literature
-  unit_type: novel
-  tier: major
-  rationale: Major novel in american literature, included for durable literary influence, historical importance, and its role in a comprehensive global literature path centered on complete readable works.
   rank: 1038
   phase: 4
 - id: candidate:audit_backfill_bouvard_and_pecuchet
@@ -27451,29 +27473,33 @@ items:
   aliases:
   - Os Maias
   - 'Os Maias: Episodios da Vida Romantica'
-- source: wave_052_literature_dedupe_rank_audit_repairs
+- id: candidate:wave001_bierce_in_midst_of_life
+  source: wave_001_canon_audit_integration
+  source_id: wave001_bierce_in_midst_of_life
+  title: In the Midst of Life
+  aliases:
+  - Tales of Soldiers and Civilians
+  - An Occurrence at Owl Creek Bridge
+  - Chickamauga
+  creators:
+  - Ambrose Bierce
+  date_label: 1891; retitled 1892
+  sort_year: 1891
   section: textual_humanities
   group: literature
+  topic: american_literature
   medium: text
+  unit_type: short_story_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
+  completion_unit: Read the story, tale, story collection, or documented assigned selection.
+  rationale: First-wave nineteenth-century US fiction audit addition for Civil War short fiction, literary irony, and the American tale tradition; replaces one Henry James novella in an overrepresented cluster while retaining James through stronger entries.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
-  id: candidate:mandatory_aspern_papers
-  source_id: mandatory_aspern_papers
-  title: The Aspern Papers
-  creators:
-  - Henry James
-  date_label: '1888'
-  sort_year: 1888
-  topic: american_literature
-  unit_type: novella
-  tier: major
-  rationale: Major novella in american literature, included for durable literary influence, historical importance, and its role in a comprehensive global literature path centered on complete readable works.
   rank: 1084
   phase: 4
 - id: candidate:latcarib_lit_aves_sin_nido
