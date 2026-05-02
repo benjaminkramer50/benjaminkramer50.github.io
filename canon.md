@@ -7,7 +7,8 @@ wide: true
 ---
 
 {% assign quick_path = site.data.canon_quick_path %}
-<p class="page-intro">A chronological reading path through 3,000 major works of world literature, from ancient ritual texts and epics to modern novels, poetry, drama, oral traditions, and scripture read as literature. Use it as a long-term checklist and mark progress at your own pace.</p>
+{% assign canon_progress_data = site.data.canon_progress.items %}
+<p class="page-intro">My chronological reading path through 3,000 major works of world literature, from ancient ritual texts and epics to modern novels, poetry, drama, oral traditions, and scripture read as literature.</p>
 
 {% assign canon_lifetime = quick_path.items | where_exp: "item", "item.lifetime_path == true" %}
 {% assign canon_items = canon_lifetime %}
@@ -16,7 +17,7 @@ wide: true
 {% assign canon_planned = canon_lifetime | where_exp: "item", "item.progress_status == 'planned'" %}
 {% assign canon_not_started_count = canon_planned.size %}
 
-<p class="canon-status-note">Progress is saved in this browser. Export a backup if you want to move your checklist to another device.</p>
+<p class="canon-status-note">This page shows my saved progress through the list.</p>
 
 <div class="canon-summary" aria-label="Canon progress summary">
   <div class="canon-stat">
@@ -40,7 +41,7 @@ wide: true
 <div class="canon-filters" aria-label="Canon filters">
   <select id="canon-progress-filter" aria-label="Filter by personal progress">
     <option value="">All Works</option>
-    <option value="planned">Planned</option>
+    <option value="planned">Not Started</option>
     <option value="in_progress">In Progress</option>
     <option value="completed">Completed</option>
     <option value="sampled">Sampled</option>
@@ -48,16 +49,6 @@ wide: true
   </select>
   <input id="canon-search" type="search" placeholder="Search title, author, tradition..." aria-label="Search literature canon">
 </div>
-
-<details class="canon-progress-actions" aria-label="Progress data controls">
-  <summary>Backup Progress</summary>
-  <div class="canon-progress-action-row">
-    <button type="button" id="canon-export-progress">Export</button>
-    <label class="canon-import-label" for="canon-import-progress">Import</label>
-    <input id="canon-import-progress" type="file" accept="application/json">
-    <button type="button" id="canon-clear-progress">Reset</button>
-  </div>
-</details>
 
 <div class="canon-visible-count" id="canon-visible-count"></div>
 
@@ -109,13 +100,7 @@ wide: true
       </div>
     </div>
     <div class="canon-item-actions">
-      <select class="canon-progress-control" aria-label="Set progress for {{ display_title | escape }}">
-        <option value="planned"{% if progress_status == "planned" %} selected{% endif %}>Planned</option>
-        <option value="in_progress"{% if progress_status == "in_progress" %} selected{% endif %}>In Progress</option>
-        <option value="completed"{% if progress_status == "completed" %} selected{% endif %}>Completed</option>
-        <option value="sampled"{% if progress_status == "sampled" %} selected{% endif %}>Sampled</option>
-        <option value="deferred"{% if progress_status == "deferred" %} selected{% endif %}>Deferred</option>
-      </select>
+      <span class="canon-status-label">{% if progress_status == "planned" %}Not Started{% else %}{{ progress_status | replace: "_", " " }}{% endif %}</span>
     </div>
   </article>
   {% endfor %}
@@ -126,26 +111,16 @@ wide: true
 <script>
 (function () {
   var rows = Array.prototype.slice.call(document.querySelectorAll('.canon-item'));
-  var storageKey = 'humanitiesCanonProgress:v1';
   var progressStatuses = ['planned', 'queued', 'in_progress', 'completed', 'sampled', 'paused', 'deferred', 'abandoned'];
+  var progressData = {{ canon_progress_data | jsonify }} || {};
   var progressFilter = document.getElementById('canon-progress-filter');
   var searchInput = document.getElementById('canon-search');
   var visibleCount = document.getElementById('canon-visible-count');
   var noResults = document.getElementById('canon-no-results');
   var list = document.getElementById('canon-list');
-  var exportButton = document.getElementById('canon-export-progress');
-  var importInput = document.getElementById('canon-import-progress');
-  var clearButton = document.getElementById('canon-clear-progress');
   var completedStat = document.getElementById('canon-completed-stat');
   var progressStat = document.getElementById('canon-progress-stat');
   var plannedStat = document.getElementById('canon-planned-stat');
-  var savedProgress = {};
-
-  try {
-    savedProgress = JSON.parse(localStorage.getItem(storageKey) || '{}') || {};
-  } catch (error) {
-    savedProgress = {};
-  }
 
   function titleCase(value) {
     return value.replace(/[_-]/g, ' ').replace(/\b\w/g, function (letter) {
@@ -181,14 +156,11 @@ wide: true
   }
 
   function statusLabel(status) {
+    if (status === 'planned') return 'Not Started';
     return titleCase(status || 'planned');
   }
 
-  function saveProgress() {
-    localStorage.setItem(storageKey, JSON.stringify(savedProgress));
-  }
-
-  function setRowProgress(row, status, persist) {
+  function setRowProgress(row, status) {
     var previous = row.getAttribute('data-progress-status') || 'planned';
     row.classList.remove('canon-progress-' + previous.replace(/_/g, '-'));
     progressStatuses.forEach(function (value) {
@@ -198,14 +170,7 @@ wide: true
     row.setAttribute('data-progress-status', status);
     row.classList.add('canon-progress-' + status.replace(/_/g, '-'));
     var label = row.querySelector('.canon-status-label');
-    var control = row.querySelector('.canon-progress-control');
     if (label) label.textContent = statusLabel(status);
-    if (control && control.value !== status) control.value = status;
-    if (persist) {
-      var id = row.getAttribute('data-canon-id');
-      if (id) savedProgress[id] = status;
-      saveProgress();
-    }
   }
 
   function updateSummary() {
@@ -237,69 +202,16 @@ wide: true
 
   rows.forEach(function (row) {
     var id = row.getAttribute('data-canon-id');
-    if (id && savedProgress[id]) {
-      setRowProgress(row, savedProgress[id], false);
-    }
-    var control = row.querySelector('.canon-progress-control');
-    if (control) {
-      control.addEventListener('change', function () {
-        setRowProgress(row, control.value, true);
-        render();
-      });
+    var progressRecord = id && progressData ? progressData[id] : null;
+    if (progressRecord && progressRecord.status) {
+      setRowProgress(row, progressRecord.status);
+    } else {
+      setRowProgress(row, row.getAttribute('data-base-progress-status') || 'planned');
     }
   });
 
   if (progressFilter) progressFilter.addEventListener('change', render);
   if (searchInput) searchInput.addEventListener('input', render);
-
-  if (exportButton) {
-    exportButton.addEventListener('click', function () {
-      var payload = JSON.stringify(savedProgress, null, 2);
-      var blob = new Blob([payload], { type: 'application/json' });
-      var link = document.createElement('a');
-      link.href = URL.createObjectURL(blob);
-      link.download = 'canon-progress.json';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      URL.revokeObjectURL(link.href);
-    });
-  }
-
-  if (importInput) {
-    importInput.addEventListener('change', function () {
-      var file = importInput.files && importInput.files[0];
-      if (!file) return;
-      var reader = new FileReader();
-      reader.onload = function () {
-        try {
-          savedProgress = JSON.parse(reader.result || '{}') || {};
-          rows.forEach(function (row) {
-            var id = row.getAttribute('data-canon-id');
-            setRowProgress(row, savedProgress[id] || row.getAttribute('data-base-progress-status') || 'planned', false);
-          });
-          saveProgress();
-          render();
-        } catch (error) {
-          window.alert('Could not import progress JSON.');
-        }
-      };
-      reader.readAsText(file);
-      importInput.value = '';
-    });
-  }
-
-  if (clearButton) {
-    clearButton.addEventListener('click', function () {
-      if (!window.confirm('Clear local canon progress in this browser?')) return;
-      savedProgress = {};
-      localStorage.removeItem(storageKey);
-      rows.forEach(function (row) {
-        setRowProgress(row, row.getAttribute('data-base-progress-status') || 'planned', false);
-      });
-      render();
-    });
-  }
 
   render();
 })();
