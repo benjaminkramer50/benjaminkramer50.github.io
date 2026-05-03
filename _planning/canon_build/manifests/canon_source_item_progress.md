@@ -2,8 +2,8 @@
 
 - generated_on: 2026-05-03
 - registered_sources: 71
-- source_item_rows: 1422
-- evidence_rows: 212
+- source_item_rows: 2435
+- evidence_rows: 226
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -23,12 +23,12 @@
 | `broadview_british_lit_concise_a_b_2019_2024` | E010 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `broadview_medieval_drama_2012` | E009 | public_toc_ready | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
 | `cambridge_history_chinese_lit_2010` | E016 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `chinese_text_project_premodern` | E016 | public_index_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `chinese_text_project_premodern` | E016;X024 | metadata_ready | 108 | 13 | 13 | 0 | 0 | 95 | 0 | 0 |
 | `clay_sanskrit_library_56vol` | E015 | extracted | 56 | 0 | 0 | 0 | 0 | 56 | 0 | 0 |
 | `columbia_lithum_current_2026` | E007 | ready_for_extraction | 2 | 2 | 1 | 0 | 1 | 0 | 0 | 0 |
 | `columbia_lithum_historical_1937_present` | E007 | ready_for_extraction | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
-| `columbia_modern_chinese_lit_2e_2007` | E016 | in_progress | 14 | 3 | 0 | 0 | 3 | 11 | 0 | 0 |
-| `columbia_traditional_chinese_lit_1996` | E016 | in_progress | 22 | 21 | 2 | 0 | 19 | 1 | 0 | 0 |
+| `columbia_modern_chinese_lit_2e_2007` | E016;X024 | extracted | 168 | 2 | 0 | 0 | 2 | 166 | 0 | 0 |
+| `columbia_traditional_chinese_lit_1996` | E016;X024 | in_progress | 22 | 21 | 2 | 0 | 19 | 1 | 0 | 0 |
 | `dante_digital_anchor_layer` | E009 | metadata_ready | 2 | 2 | 2 | 0 | 0 | 0 | 0 | 0 |
 | `dumbarton_oaks_medieval_library` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `e001_local_accepted_canon_records` | E001 | extracted | 61 | 61 | 61 | 0 | 0 | 0 | 0 | 0 |
@@ -43,18 +43,18 @@
 | `e012_locke_new_negro_1925` | E012 | not_started | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `e012_norton_african_american_lit_4e_v1_2025` | E012 | in_progress | 3 | 3 | 1 | 0 | 2 | 0 | 0 | 0 |
 | `e012_norton_african_american_lit_4e_v2_2025` | E012 | in_progress | 3 | 3 | 0 | 2 | 1 | 0 | 0 | 0 |
-| `e013_cambridge_history_latin_american_lit_1996` | E013 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `e013_cambridge_history_latin_american_lit_1996` | E013;X024 | context_only | 52 | 0 | 0 | 0 | 0 | 52 | 0 | 0 |
 | `e013_fsg_20c_latin_american_poetry_2011` | E013 | extracted | 84 | 0 | 0 | 0 | 0 | 84 | 0 | 0 |
 | `e013_oxford_latin_american_poetry_2009` | E013 | extracted | 137 | 3 | 0 | 0 | 3 | 134 | 0 | 0 |
 | `e013_oxford_latin_american_short_stories_1997` | E013 | extracted | 53 | 1 | 0 | 0 | 1 | 52 | 0 | 0 |
 | `e014_african_writers_series_heinemann_penguin` | E014;X023 | metadata_ready | 48 | 16 | 16 | 0 | 0 | 32 | 0 | 0 |
-| `e014_cambridge_history_african_caribbean_lit_2000` | E014 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `e014_cambridge_history_african_caribbean_lit_2000` | E014;X024 | context_only | 40 | 0 | 0 | 0 | 0 | 40 | 0 | 0 |
 | `e014_penguin_modern_african_poetry_4e_2007` | E014;X023 | extracted | 239 | 0 | 0 | 0 | 0 | 239 | 0 | 0 |
 | `e014_rienner_anthology_african_lit_2007` | E014 | extracted | 146 | 4 | 0 | 0 | 4 | 142 | 0 | 0 |
-| `e017_columbia_early_modern_japanese_lit_2002` | E017;X023 | in_progress | 12 | 10 | 0 | 0 | 10 | 2 | 0 | 0 |
+| `e017_columbia_early_modern_japanese_lit_2002` | E017;X023;X024 | extracted | 282 | 12 | 0 | 0 | 12 | 270 | 0 | 0 |
 | `e017_columbia_modern_japanese_lit_v1_2005` | E017 | extracted | 119 | 1 | 1 | 0 | 0 | 118 | 0 | 0 |
 | `e017_columbia_modern_japanese_lit_v2_2007` | E017 | extracted | 96 | 0 | 0 | 0 | 0 | 96 | 0 | 0 |
-| `e017_columbia_traditional_japanese_lit_2007` | E017;X023 | in_progress | 20 | 20 | 0 | 0 | 20 | 0 | 0 | 0 |
+| `e017_columbia_traditional_japanese_lit_2007` | E017;X023;X024 | extracted | 409 | 20 | 0 | 0 | 20 | 389 | 0 | 0 |
 | `e018_columbia_modern_korean_fiction_2005` | E018 | extracted | 22 | 3 | 3 | 0 | 0 | 19 | 0 | 0 |
 | `e018_columbia_premodern_korean_prose_2018` | E018 | extracted | 43 | 3 | 0 | 0 | 3 | 40 | 0 | 0 |
 | `e018_columbia_traditional_korean_poetry_2003` | E018 | metadata_ready | 9 | 1 | 1 | 0 | 0 | 8 | 0 | 0 |
@@ -75,7 +75,7 @@
 | `norton_world_lit_5e_full_post1650` | E004 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `norton_world_lit_5e_full_pre1650` | E004 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `osta_2_old_spanish_textual_archive` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `oxford_modern_indian_poetry_1998` | E015 | in_progress | 124 | 0 | 0 | 0 | 0 | 124 | 0 | 0 |
+| `oxford_modern_indian_poetry_1998` | E015;X024 | in_progress | 124 | 0 | 0 | 0 | 0 | 124 | 0 | 0 |
 | `oxford_worlds_classics_online` | E007 | in_progress | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `philobiblon_iberian_romance` | E009 | metadata_ready | 2 | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
 | `princeton_damrosch_world_literature_2003` | E007 | context_only | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -93,15 +93,12 @@
 - `bloom_full_appendix_review_batches` (E003; in_progress)
 - `broadview_british_lit_concise_a_b_2019_2024` (E010; ready_public_toc)
 - `cambridge_history_chinese_lit_2010` (E016; ready_partial_public)
-- `chinese_text_project_premodern` (E016; public_index_ready)
 - `dumbarton_oaks_medieval_library` (E009; metadata_ready)
 - `e008_cambridge_greek_latin_classics` (E008; ready_public_metadata)
 - `e008_loeb_classical_library_digital` (E008; ready_with_access_limits)
 - `e008_oxford_classical_dictionary_online` (E008; ready_partial_public)
 - `e008_oxford_scholarly_editions_oct` (E008; partial_public_metadata)
 - `e012_locke_new_negro_1925` (E012; not_started)
-- `e013_cambridge_history_latin_american_lit_1996` (E013; ready_partial_public)
-- `e014_cambridge_history_african_caribbean_lit_2000` (E014; ready_partial_public)
 - `heath_american_lit_7e_2014` (E011; in_progress)
 - `lancelot_grail_lacy_5vol` (E009; metadata_ready)
 - `longman_british_lit_period_volumes_2009_2017` (E010; ready_public_toc)

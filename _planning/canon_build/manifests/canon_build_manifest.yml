@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: x017_evidence_refresh_after_x023_matching
+status: source_item_batch_x024_full_toc_context_cleanup_ingested
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -25,7 +25,7 @@ gates:
   metadata_access_rows_do_not_close_canon_support_debt: true
 artifacts:
   source_registry: e001_e018_registered_source_items_pending
-  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_x023_source_items
+  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_x023_x024_source_items
   work_candidates: bootstrapped_from_current_path_plus_x013_source_candidates
   aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases
   relations: initialized_empty
@@ -58,19 +58,19 @@ current_counts:
   creators: 2006
   work_creators: 3015
   aliases: 445
-  source_items: 1422
-  evidence_rows: 212
-  relation_scope_status_rows: 1633
+  source_items: 2435
+  evidence_rows: 226
+  relation_scope_status_rows: 3362
   source_debt_status_rows: 3008
   omission_queue_rows: 8
   scoring_input_rows: 3008
   scoring_ready_rows: 0
   scoring_blocked_rows: 3008
-  source_items_matched_current_path: 133
+  source_items_matched_current_path: 146
   source_items_matched_candidate: 8
-  source_items_represented_by_selection: 71
+  source_items_represented_by_selection: 72
   source_items_out_of_scope: 1
-  source_items_unmatched: 1209
+  source_items_unmatched: 2208
   source_registry_rows: 71
 source_crosswalk_batch_e001_e006:
   source_registry_rows: 9
@@ -198,5 +198,17 @@ source_item_extraction_batch_x023:
   japanese_major_work_rows: 32
   evidence_rows_added: 0
   evidence_rows_after_x013_x014_x017_rerun: 55
+  status: source_items_ingested_matching_required
+  direct_replacements: 0
+source_item_extraction_batch_x024:
+  source_items_added_or_updated: 1059
+  sources_replaced_or_expanded: 6
+  modern_chinese_line_rows: 168
+  traditional_japanese_line_rows: 409
+  early_modern_japanese_line_rows: 282
+  cambridge_african_caribbean_context_rows: 40
+  cambridge_latin_american_context_rows: 52
+  ctext_metadata_rows: 108
+  evidence_rows_added: 0
   status: source_items_ingested_matching_required
   direct_replacements: 0

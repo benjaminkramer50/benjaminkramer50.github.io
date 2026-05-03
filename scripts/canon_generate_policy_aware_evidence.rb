@@ -64,6 +64,13 @@ source_weights = YAML.load_file(SOURCE_WEIGHTS_PATH)
 sources_by_id = source_registry.to_h { |row| [row.fetch("source_id"), row] }
 source_type_mapping = source_weights.fetch("source_type_mapping")
 source_classes = source_weights.fetch("source_classes")
+valid_source_item_ids = source_items.map { |row| row.fetch("source_item_id") }.to_set
+before_prune = evidence_rows.size
+evidence_rows = evidence_rows.reject do |row|
+  source_item_id = row.fetch("source_item_id", "").to_s
+  !source_item_id.empty? && !valid_source_item_ids.include?(source_item_id)
+end
+pruned = before_prune - evidence_rows.size
 existing_source_item_ids = evidence_rows.map { |row| row.fetch("source_item_id", "") }.reject(&:empty?).to_set
 existing_evidence_ids = evidence_rows.map { |row| row.fetch("evidence_id") }.to_set
 
@@ -104,3 +111,4 @@ end
 write_tsv(EVIDENCE_PATH, tsv_headers(EVIDENCE_PATH), evidence_rows)
 
 puts "created #{created} evidence rows"
+puts "pruned #{pruned} stale evidence rows"

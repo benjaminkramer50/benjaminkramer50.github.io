@@ -45,7 +45,7 @@ Done when:
 - Unmatched source items are classified as candidate gaps, possible aliases, represented-by-selection, boundary cases, or no-current-work candidates.
 - No source row is promoted to a true omission before matching/relation review.
 
-Current status: started; X013/X014 were rerun after X023. The build now has 236 match candidates, 1,210 match-review decisions, and 1,633 relation-scope status rows. No final relation rows are ready to write.
+Current status: started; X013/X014 were rerun after X024. The build now has 255 match candidates, 2,209 match-review decisions, and 3,362 relation-scope status rows. No final relation rows are ready to write.
 
 ## Phase 3: Source Extraction At Scale
 
@@ -58,7 +58,7 @@ Done when:
 - Source fetch/access logs identify exact pages, files, APIs, and access limits.
 - Extracted rows pass matching and relation review queues.
 
-Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; X020-X023 generated/updated 1,354 E013/E014/E015/E016/E017/E018 source-item observations, leaving `canon_source_items.tsv` at 1,422 total rows. Expanded matching/relation/evidence queues now exist; full-line Chinese/Japanese/context extraction and evidence acceptance remain pending.
+Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; X020-X024 generated/updated 2,413 E013/E014/E015/E016/E017/E018 source-item observations, leaving `canon_source_items.tsv` at 2,435 total rows. Expanded matching/relation/evidence queues now exist; Traditional Chinese CPL line-level access and Oxford modern Indian poem-level official-copy reconciliation remain pending.
 
 ## Phase 4: Evidence Ledger And Source-Debt Rules
 
@@ -71,7 +71,7 @@ Done when:
 - Corpus/database rows support identity/provenance only unless explicitly waived.
 - At least two independent canon-support source families support non-obvious additions.
 
-Current status: started; source weights, source-debt rules, 212 total evidence rows, a 3,008-row source-debt status report, and scoring-input blockers exist. Source-debt closure remains 0 until evidence is accepted under the rules.
+Current status: started; source weights, source-debt rules, 226 total evidence rows, a 3,008-row source-debt status report, and scoring-input blockers exist. Source-debt closure remains 0 until evidence is accepted under the rules.
 
 ## Phase 5: Taxonomy, Boundary, And Quality Gates
 

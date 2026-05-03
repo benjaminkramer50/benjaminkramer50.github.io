@@ -16,7 +16,7 @@ Direct public-list replacements remain paused until these packets produce source
 |---|---|---|---|
 | E Batch 1 | E001-E006 | Registered; E001 extracted; E004-E006 extraction pending | `source_crosswalk_reports/e_batch_001_e001_e006.md` |
 | E Batch 2 | E007-E012 | Registered; X001-X006 pilot rows ingested; full extraction pending | `source_crosswalk_reports/e_batch_002_e007_e012.md` |
-| E Batch 3 | E013-E018 | Registered; X020-X023 generated/updated 1,354 E013/E014/E015/E016/E017/E018 source-item observations; current table has 1,422 total source-item rows; X013/X014/X017 queues rerun; deeper full-line TOC extraction remains pending for selected Chinese/Japanese/context sources | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
+| E Batch 3 | E013-E018 | Registered; X020-X024 generated/updated 2,413 E013/E014/E015/E016/E017/E018 source-item observations; current table has 2435 total source-item rows; X013/X014/X017 queues rerun after X024; remaining source debt is explicit for blocked Traditional Chinese CPL TOC and official Oxford modern Indian poem-level reconciliation | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
 
 ## Extraction Contract
 
@@ -56,14 +56,14 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 
 | Packet | Source layers | Purpose |
 |---|---|---|
-| X013 | All extracted source items | Generated after X023: 236 title/creator normalization candidates and 1,210 explicit match-review decisions |
-| X014 | All extracted source items | Generated after X023: 1,633 alias, contained-work, series, selection, variant, adaptation, and duplicate relation-scope rows; 0 final relations ready |
+| X013 | All extracted source items | Generated after X024: 255 title/creator normalization candidates and 2,209 explicit match-review decisions |
+| X014 | All extracted source items | Generated after X024: 3,362 alias, contained-work, series, selection, variant, adaptation, and duplicate relation-scope rows; 0 final relations ready |
 | X015 | All source and work tables | Hardening pass: controlled-value validation, status coherence, source-fetch/extraction denominators, and packet status table |
 | X016 | All source types | Draft created: evidence weighting policy by anthology, syllabus, edition, reference, corpus, access metadata, award, national canon, and internal record |
 | X017 | All matched source items | Evidence-row generation and source-debt closure rules after X016 policy is encoded |
 | X018 | All unresolved source items | Omission queue creation with duplicate, boundary, chronology, source-family, and item-scope checks |
 | X019 | Current path plus omissions | Scored replacement transaction candidates only after coverage targets and quality issues exist |
-| X024 | Full-line TOC and context cleanup | Continue E013-E018 cleanup where X023 deliberately stopped: full line-level Chinese and Japanese TOCs, Cambridge African/Caribbean and Latin American chapter-context rows, Chinese Text Project metadata boundaries, and official-copy reconciliation for Oxford modern Indian poetry |
+| X024 | Full-line TOC and context cleanup | Source items ingested; 1,059 generated rows from LOC Modern Chinese, LOC/Dandelon Japanese, Cambridge African/Caribbean and Latin American chapter-context rows, and Chinese Text Project metadata; Traditional Chinese CPL and Oxford modern Indian poem-level official-copy debt retained explicitly |
 
 ## Integration Gate
 
