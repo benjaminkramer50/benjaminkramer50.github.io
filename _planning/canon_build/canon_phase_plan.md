@@ -71,7 +71,7 @@ Done when:
 - Corpus/database rows support identity/provenance only unless explicitly waived.
 - At least two independent canon-support source families support non-obvious additions.
 
-Current status: started; source weights, source-debt rules, and 9 provisional X017 evidence rows exist, but scoring/source-debt closure is not integrated.
+Current status: started; source weights, source-debt rules, 9 provisional X017 evidence rows, and a 3,008-row source-debt status report exist, but scoring/source-debt closure is not integrated.
 
 ## Phase 5: Taxonomy, Boundary, And Quality Gates
 

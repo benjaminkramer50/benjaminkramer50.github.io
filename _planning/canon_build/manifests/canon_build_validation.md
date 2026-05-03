@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 24
+- checked_files: 25
 - failures: 0
 
 ## Checks
@@ -28,6 +28,7 @@
 | table:scores | PASS | `_planning/canon_build/tables/canon_scores.tsv (27 columns)` |
 | table:source_weights | PASS | `_planning/canon_build/tables/canon_source_weights.yml` |
 | table:source_debt_rules | PASS | `_planning/canon_build/tables/canon_source_debt_rules.yml` |
+| table:source_debt_status | PASS | `_planning/canon_build/tables/canon_source_debt_status.tsv (15 columns)` |
 | table:coverage_targets | PASS | `_planning/canon_build/tables/canon_coverage_targets.yml` |
 | table:path_selection | PASS | `_planning/canon_build/tables/canon_path_selection.tsv (8 columns)` |
 | table:replacement_candidates | PASS | `_planning/canon_build/tables/canon_replacement_candidates.tsv (18 columns)` |
@@ -63,4 +64,5 @@
 | integrity:relation_review_queue.refs | PASS | `all relation review refs exist` |
 | integrity:relation_review_decisions.refs | PASS | `all relation decisions cover queued rows and valid existing/proposed targets` |
 | integrity:path_selection.work_id | PASS | `all selected work IDs exist` |
+| integrity:source_debt_status.work_id | PASS | `one source-debt status row per work candidate` |
 | integrity:path_selection.selected_rank_continuity | PASS | `3000 selected rows` |

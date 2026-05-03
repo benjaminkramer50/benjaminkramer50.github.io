@@ -37,6 +37,7 @@ artifacts:
   evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows
   source_weights: draft_policy_created
   source_debt_rules: draft_policy_created
+  source_debt_status: generated_x017
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
@@ -55,6 +56,7 @@ current_counts:
   aliases: 445
   source_items: 118
   evidence_rows: 117
+  source_debt_status_rows: 3008
   source_items_matched_candidate: 8
   source_items_represented_by_selection: 8
   source_items_out_of_scope: 1
@@ -104,6 +106,13 @@ source_item_matching_phase_x013_x014:
   source_backed_candidate_rows_created: 8
   source_items_updated_from_review_decisions: 9
   policy_aware_evidence_rows_generated: 9
+  source_debt_status_summary:
+    open_no_evidence: 2913
+    open_internal_only: 45
+    open_non_scoring_only: 22
+    open_provisional_external_support: 18
+    open_selection_only: 9
+    open_needs_review: 1
   relation_review_queue_rows: 41
   relation_review_decision_rows: 41
   match_decision_summary:

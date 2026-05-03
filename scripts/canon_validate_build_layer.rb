@@ -35,6 +35,7 @@ TABLE_FILES = {
   "scores" => File.join(BUILD_DIR, "tables", "canon_scores.tsv"),
   "source_weights" => File.join(BUILD_DIR, "tables", "canon_source_weights.yml"),
   "source_debt_rules" => File.join(BUILD_DIR, "tables", "canon_source_debt_rules.yml"),
+  "source_debt_status" => File.join(BUILD_DIR, "tables", "canon_source_debt_status.tsv"),
   "coverage_targets" => File.join(BUILD_DIR, "tables", "canon_coverage_targets.yml"),
   "path_selection" => File.join(BUILD_DIR, "tables", "canon_path_selection.tsv"),
   "replacement_candidates" => File.join(BUILD_DIR, "tables", "canon_replacement_candidates.tsv"),
@@ -53,6 +54,7 @@ HEADER_REQUIREMENTS = {
   "relation_review_queue" => ["source_item_id", "source_id", "raw_title", "proposed_relation_type", "issue_type", "recommendation"],
   "relation_review_decisions" => ["source_item_id", "source_id", "raw_title", "proposed_relation_type", "decision", "next_action", "reviewer_status"],
   "evidence" => ["evidence_id", "work_id", "source_id", "evidence_type", "evidence_strength", "reviewer_status"],
+  "source_debt_status" => ["work_id", "evidence_count", "source_debt_status", "closure_scope", "blocking_reason", "next_action"],
   "scores" => ["work_id", "source_weighted_score", "source_diversity_score", "coverage_scarcity_bonus", "boundary_penalty", "duplicate_overlap_penalty", "source_debt_penalty", "final_score", "must_include", "must_exclude"],
   "replacement_candidates" => ["transaction_id", "add_work_id", "cut_work_id", "evidence_refs", "rationale", "gate_status"],
   "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
@@ -161,6 +163,7 @@ if failures.empty?
   relation_review_rows = read_tsv(TABLE_FILES["relation_review_queue"])
   relation_decision_rows = read_tsv(TABLE_FILES["relation_review_decisions"])
   path_selection_rows = read_tsv(TABLE_FILES["path_selection"])
+  source_debt_status_rows = read_tsv(TABLE_FILES["source_debt_status"])
   replacement_rows = read_tsv(TABLE_FILES["replacement_candidates"])
 
   table_rows = {
@@ -176,6 +179,7 @@ if failures.empty?
     "relation_review_queue" => relation_review_rows,
     "relation_review_decisions" => relation_decision_rows,
     "evidence" => evidence_rows,
+    "source_debt_status" => source_debt_status_rows,
     "replacement_candidates" => replacement_rows
   }
 
@@ -425,6 +429,19 @@ if failures.empty?
     examples = path_selection_work_refs.first(10).map { |row| "#{row["path_id"]}:#{row["work_id"]}" }
     failures << "path_selection rows reference unknown work IDs: #{examples.join(", ")}"
     checks << ["integrity:path_selection.work_id", "FAIL", "#{path_selection_work_refs.size} unknown references"]
+  end
+
+  source_debt_status_work_refs = source_debt_status_rows.reject { |row| work_ids.include?(row["work_id"]) }
+  source_debt_status_work_ids = source_debt_status_rows.map { |row| row["work_id"] }.to_set
+  missing_source_debt_status = work_ids - source_debt_status_work_ids
+  duplicate_source_debt_status = duplicate_values(source_debt_status_rows, "work_id")
+  if source_debt_status_work_refs.empty? && missing_source_debt_status.empty? && duplicate_source_debt_status.empty?
+    checks << ["integrity:source_debt_status.work_id", "PASS", "one source-debt status row per work candidate"]
+  else
+    failures << "source_debt_status references unknown work IDs: #{source_debt_status_work_refs.first(10).map { |row| row["work_id"] }.join(", ")}" unless source_debt_status_work_refs.empty?
+    failures << "source_debt_status missing work IDs: #{missing_source_debt_status.first(10).join(", ")}" unless missing_source_debt_status.empty?
+    failures << "source_debt_status has duplicate work IDs: #{duplicate_source_debt_status.keys.first(10).join(", ")}" unless duplicate_source_debt_status.empty?
+    checks << ["integrity:source_debt_status.work_id", "FAIL", "#{source_debt_status_work_refs.size} unknown refs; #{missing_source_debt_status.size} missing; #{duplicate_source_debt_status.size} duplicates"]
   end
 
   selected_path_rows = path_selection_rows.select { |row| row["selected"].to_s == "true" }
