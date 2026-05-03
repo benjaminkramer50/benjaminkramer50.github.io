@@ -439,3 +439,13 @@ evidence_scope_gate_x039:
   scoring_inputs_rows: 3012
   score_ready_rows: 0
   direct_replacements: 0
+source_backed_candidate_triage_x040:
+  candidate_rows_updated: 8
+  source_item_rows_updated: 3
+  evidence_rows_accepted: 8
+  open_insufficient_independent_support_candidates: 5
+  open_selection_only_candidates: 2
+  open_non_scoring_only_candidates: 1
+  omission_queue_rows: 12
+  score_ready_rows: 0
+  direct_replacements: 0

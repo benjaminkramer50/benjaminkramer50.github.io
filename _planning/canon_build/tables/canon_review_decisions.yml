@@ -88,6 +88,31 @@ decisions:
       - keep_duplicate_author_representation_review_open
       - do_not_write_source_container_rows_as_work_to_work_relations
     public_path_effect: none
+  - decision_id: x040_source_backed_candidate_triage_001
+    decision_type: source_backed_candidate_triage
+    applies_to_work_ids:
+      - work_candidate_source_broadview_hrotsvitha_abraham
+      - work_candidate_source_aap_harper_bury_me_free_land
+      - work_candidate_source_loa_brown_narrative
+      - work_candidate_source_loa_gronniosaw_narrative
+      - work_candidate_source_loa_nat_turner_confessions
+      - work_candidate_source_naal_brooks_maud_martha
+      - work_candidate_source_naal_whitehead_nickel_boys
+      - work_candidate_source_philobiblon_curial_e_guelfa
+    decision: metadata_and_evidence_scope_triaged
+    rationale: >
+      The original source-backed candidate rows needed non-placeholder metadata
+      and scope-sensitive evidence statuses before they could be compared against
+      the X036 candidates. Exact poem or complete-work evidence was accepted as
+      candidate support; Norton African American Literature novel rows were kept
+      as representative-selection support until complete-work scope is proven;
+      PhiloBiblon remains identity support only.
+    scoring_effect: removes_date_noise_and_replaces_generic_scope_pending_with_specific_support_debt
+    required_followup:
+      - seek_additional_independent_support_for_single_source_candidates
+      - resolve_selection_vs_complete_work_policy_for_maud_martha_and_nickel_boys
+      - find_canon_support_source_for_curial_e_guelfa
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3012
