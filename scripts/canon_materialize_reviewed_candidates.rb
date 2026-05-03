@@ -99,6 +99,17 @@ def selection_basis_for(item_scope)
   end
 end
 
+def boundary_flags_for(decision, item_scope)
+  case decision.fetch("decision")
+  when "create_source_backed_candidate_needs_corroboration"
+    "corroboration_required"
+  when "create_source_backed_candidate_needs_boundary_review"
+    item_scope
+  else
+    "scope_pending"
+  end
+end
+
 match_decisions = read_tsv(MATCH_DECISIONS_PATH)
 source_items = read_tsv(SOURCE_ITEMS_PATH)
 work_candidates = read_tsv(WORK_CANDIDATES_PATH)
@@ -148,7 +159,7 @@ candidate_decisions.each do |decision|
     "period_bucket" => "taxonomy_pending",
     "form_bucket" => "taxonomy_pending",
     "unit_type" => unit_type_for(decision.fetch("source_item_id"), item_scope),
-    "boundary_flags" => decision["decision"] == "create_source_backed_candidate_needs_corroboration" ? "corroboration_required" : "scope_pending",
+    "boundary_flags" => boundary_flags_for(decision, item_scope),
     "included_as_literature" => "",
     "boundary_policy_id" => "",
     "boundary_note" => "Public inclusion blocked until evidence, duplicate, boundary, taxonomy, and scoring review.",

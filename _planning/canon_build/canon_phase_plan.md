@@ -45,7 +45,7 @@ Done when:
 - Unmatched source items are classified as candidate gaps, possible aliases, represented-by-selection, boundary cases, or no-current-work candidates.
 - No source row is promoted to a true omission before matching/relation review.
 
-Current status: started; X013/X014 were rerun after X027, and X013 matching was rerun again after X031 aliases, the X033 `from`-prefix matcher fix, X034 creator variants, and X035 X030 scope routes. The build now has 557 match candidates, 5,474 match-review decisions, and 7,567 relation-scope status rows. No final relation rows are ready to write.
+Current status: started; X013/X014 were rerun after X027, and X013 matching was rerun again after X031 aliases, the X033 `from`-prefix matcher fix, X034 creator variants, X035 X030 scope routes, and X036 boundary-candidate materialization. The build now has 584 match candidates, 5,447 match-review decisions, and 7,586 relation-scope status rows. No final relation rows are ready to write.
 
 ## Phase 3: Source Extraction At Scale
 
@@ -71,7 +71,7 @@ Done when:
 - Corpus/database rows support identity/provenance only unless explicitly waived.
 - At least two independent canon-support source families support non-obvious additions.
 
-Current status: started; source weights, source-debt rules, 468 total evidence rows, a 3,008-row source-debt status report, and scoring-input blockers exist. Source-debt closure remains 0 until evidence is accepted under the rules.
+Current status: started; source weights, source-debt rules, 495 total evidence rows, a 3,012-row source-debt status report, and scoring-input blockers exist. Source-debt closure remains 0 until evidence is accepted under the rules.
 
 ## Phase 5: Taxonomy, Boundary, And Quality Gates
 
@@ -83,7 +83,7 @@ Done when:
 - Boundary policies exist for scripture, philosophy, theology, history, oral tradition, Indigenous/public material, memoir/testimonio, children's/YA, genre fiction, graphic narrative, series, and anthology excerpts.
 - Quality reports cover duplicates, generic titles, chronology/date-basis issues, and boundary cases from build tables.
 
-Current status: started for the X018 pilot queue only; 8 source-backed omissions are queued, and 0 are ready for scoring.
+Current status: started for the X018 queue; 12 source-backed omissions are queued, and 0 are ready for scoring.
 
 ## Phase 6: Coverage Targets And Scoring
 
@@ -95,7 +95,7 @@ Done when:
 - `canon_scores.tsv` is generated for current works and source-backed omissions.
 - Scores include source support, source diversity, coverage scarcity, boundary penalty, duplicate penalty, source debt penalty, generic-title penalty, date uncertainty, recency, and incumbent bonus.
 
-Current status: started; `canon_scoring_inputs.tsv` now covers all 3,008 work candidates, but 0 rows are ready for score computation because source debt and other blockers remain open. Coverage targets and final scores are not generated yet.
+Current status: started; `canon_scoring_inputs.tsv` now covers all 3,012 work candidates, but 0 rows are ready for score computation because source debt and other blockers remain open. Coverage targets and final scores are not generated yet.
 
 ## Phase 7: Diagnostic-First Validation Sweeps
 
@@ -110,7 +110,7 @@ Done when:
 - Period packets B001-B034, region/tradition packets C001-C196, form packets D001-D046, sentinel packets F001-F034, and intersection packets I001-I030 are complete, waived, or represented by generated diagnostics with no red-cell flag.
 - All high-priority gaps are added to the omission queue, rejected with rationale, or deferred with source-gap rationale.
 
-Current status: first X028-X035 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule to lift the candidate-match table to 557 rows, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, and applies 39 reviewed X030 scope routes to match/relation decisions.
+Current status: first X028-X036 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, applies 39 reviewed X030 scope routes to match/relation decisions, and materializes 4 provisional boundary-review candidates.
 
 ## Phase 8: Source-Backed Integration
 
