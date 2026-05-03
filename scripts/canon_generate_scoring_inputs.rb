@@ -59,6 +59,8 @@ relation_blockers_by_work = Hash.new(0)
 relation_scope_rows.each do |row|
   next if row.fetch("readiness_status") == "ready_to_write_relation"
   next if row.fetch("scope_status") == "source_container_only"
+  next if row.fetch("scope_status") == "selection_scope_pending"
+  next if row.fetch("scope_status") == "alias_or_variant_confirmed_same_work"
 
   [row.fetch("target_work_id"), row.fetch("matched_work_id")].reject(&:empty?).uniq.each do |work_id|
     relation_blockers_by_work[work_id] += 1

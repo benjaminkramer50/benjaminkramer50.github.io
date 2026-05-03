@@ -1,15 +1,15 @@
 ---
 generated_on: '2026-05-03'
-status: scoring_batch_x042_first_provisional_score_generated
+status: reference_corroboration_x043_scores_regenerated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
   public_path: _data/canon_quick_path.yml
   target_count: 3000
 current_blockers:
-  source_debt_rows: 3007
+  source_debt_rows: 3002
   manual_only_rows: 2938
-  needs_sources_rows: 3007
+  needs_sources_rows: 3002
   duplicate_candidate_keys: 39
   chronology_inversion_rows: 138
   generic_title_rows: 267
@@ -25,24 +25,24 @@ gates:
   metadata_access_rows_do_not_close_canon_support_debt: true
 artifacts:
   source_registry: e001_e018_registered_source_items_pending
-  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_x023_x024_x025_x026_x027_x036_source_items
+  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_x023_x024_x025_x026_x027_x036_x043_source_items
   work_candidates: bootstrapped_from_current_path_plus_x013_source_candidates_plus_x036_boundary_candidates
   aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases_plus_x031
   relations: initialized_empty
-  match_candidates: generated_x013_expanded_after_x036_materialization
-  match_review_queue: generated_x013_after_x036_materialization
-  match_review_decisions: generated_x013_reviewed_after_x036_materialization
-  relation_review_queue: generated_x014_expanded_after_x036_materialization
-  relation_review_decisions: generated_x014_explicit_decisions_after_x036_materialization
-  relation_scope_rules: draft_policy_created
-  relation_scope_status: generated_x014_expanded_after_x036_materialization
-  evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows_after_x036
+  match_candidates: generated_x013_expanded_after_x043_reference_corroboration
+  match_review_queue: generated_x013_after_x043_reference_corroboration
+  match_review_decisions: generated_x013_reviewed_after_x043_reference_corroboration
+  relation_review_queue: generated_x014_expanded_after_x043_reference_corroboration
+  relation_review_decisions: generated_x014_explicit_decisions_after_x043_reference_corroboration
+  relation_scope_rules: draft_policy_plus_x043_same_work_alias_scope
+  relation_scope_status: generated_x014_expanded_after_x043_reference_corroboration
+  evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows_after_x043
   source_weights: draft_policy_created
   source_debt_rules: draft_policy_created
-  source_debt_status: generated_x017_after_x036
-  omission_queue: generated_x018_after_x036
-  scoring_inputs: generated_x019_after_x036
-  scores: generated_x042_provisional_ready_rows_only
+  source_debt_status: generated_x017_after_x043
+  omission_queue: generated_x018_after_x043
+  scoring_inputs: generated_x019_after_x043
+  scores: generated_x043_provisional_ready_rows_only
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
   creators: bootstrapped_from_current_path_plus_x013_candidate_creators_plus_x034_variants
@@ -64,21 +64,21 @@ current_counts:
   creators: 2006
   work_creators: 3019
   aliases: 452
-  source_items: 5944
-  evidence_rows: 497
+  source_items: 5950
+  evidence_rows: 503
   relation_scope_status_rows: 7588
   source_debt_status_rows: 3012
   omission_queue_rows: 12
   scoring_input_rows: 3012
-  scoring_ready_rows: 1
-  scoring_blocked_rows: 3011
-  score_rows: 1
+  scoring_ready_rows: 5
+  scoring_blocked_rows: 3007
+  score_rows: 5
   source_items_matched_current_path: 282
-  source_items_matched_candidate: 18
+  source_items_matched_candidate: 24
   source_items_represented_by_selection: 197
   source_items_out_of_scope: 1
   source_items_unmatched: 5446
-  source_registry_rows: 72
+  source_registry_rows: 78
 source_crosswalk_batch_e001_e006:
   source_registry_rows: 9
   e001_source_items: 61
@@ -119,8 +119,8 @@ next_hardening_steps:
 - derive_evidence_weights_centrally_before_scoring
 - populate_quality_issues_and_coverage_targets_before_replacements
 source_item_matching_phase_x013_x014:
-  latest_match_rerun: x036_after_boundary_candidate_materialization
-  match_candidate_rows: 584
+  latest_match_rerun: x043_after_reference_corroboration
+  match_candidate_rows: 592
   match_review_queue_rows: 5447
   match_review_decision_rows: 5447
   match_review_decision_summary:
@@ -132,37 +132,39 @@ source_item_matching_phase_x013_x014:
     unresolved_no_candidate_match: 5366
   source_backed_candidate_rows_created: 12
   source_items_updated_from_review_decisions: 36
-  policy_aware_evidence_rows_generated: 495
+  policy_aware_evidence_rows_generated: 503
   source_debt_status_summary:
+    closed_by_independent_external_support: 10
     open_no_evidence: 2715
     open_internal_only: 26
-    open_non_scoring_only: 16
-    open_provisional_external_support: 124
-    open_selection_only: 107
+    open_non_scoring_only: 15
+    open_provisional_external_support: 114
+    open_selection_only: 108
     open_needs_review: 24
   omission_queue_summary:
     total_rows: 12
-    ready_for_scoring_review: 0
-    not_ready_for_scoring: 12
-  relation_review_queue_rows: 7586
-  relation_review_decision_rows: 7586
+    ready_for_scoring_review: 5
+    not_ready_for_scoring: 7
+  relation_review_queue_rows: 7588
+  relation_review_decision_rows: 7588
   relation_scope_status_summary:
-    not_writable_policy_blocked: 7564
-    scope_review_required: 22
+    not_writable_policy_blocked: 7568
+    scope_review_required: 20
     ready_to_write_relation: 0
   relation_scope_blockers:
     source_container_only: 5134
-    selection_scope_pending: 2428
-    alias_or_variant_review_required: 8
+    selection_scope_pending: 2430
+    alias_or_variant_review_required: 6
+    alias_or_variant_confirmed_same_work: 2
     represented_by_existing_selection_review_required: 2
     contained_component_review_required: 10
     creator_disambiguation_required: 2
     cycle_container_required: 2
   scoring_input_summary:
     total_rows: 3012
-    ready_for_score_computation: 0
-    blocked_from_score_computation: 3012
-    gate_interpretation: scores_not_generated_until_source_debt_and_scope_blockers_are_resolved
+    ready_for_score_computation: 5
+    blocked_from_score_computation: 3007
+    gate_interpretation: scores_generated_only_for_rows_with_closed_source_debt_and_no_scope_boundary_date_blockers
   match_decision_summary:
     candidate_match_requires_manual_confirmation: 54
     contained_in_existing_work: 10
@@ -464,4 +466,18 @@ score_ready_rows_x042:
   score_rows_generated: 1
   ready_for_score_computation_rows: 1
   replacement_candidates_generated: 0
+  direct_replacements: 0
+reference_corroboration_x043:
+  source_registry_rows_added: 6
+  source_item_rows_added: 6
+  evidence_rows_created: 6
+  evidence_rows_accepted: 6
+  same_work_alias_scope_routes_added: 2
+  source_debts_closed_by_independent_external_support_total: 10
+  omission_ready_for_scoring_review_rows: 5
+  scoring_ready_rows: 5
+  scoring_blocked_rows: 3007
+  score_rows_generated_total: 5
+  boundary_or_completion_gated_after_source_debt_closed:
+    - work_candidate_source_philobiblon_curial_e_guelfa
   direct_replacements: 0

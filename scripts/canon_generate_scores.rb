@@ -140,7 +140,7 @@ score_rows = ready_inputs.map do |input|
     "final_score" => number(final_score),
     "must_include" => "false",
     "must_exclude" => "false",
-    "notes" => "X042 provisional score for rows already ready_for_score_computation; no replacement action is implied."
+    "notes" => "Provisional score for rows already ready_for_score_computation; no replacement action is implied."
   }
 end
 

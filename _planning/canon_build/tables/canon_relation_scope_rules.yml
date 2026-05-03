@@ -49,6 +49,10 @@ decision_rules:
     writable_relation: conditional
     scope_status: alias_or_variant_review_required
     blocker: Variant/alias rows require manual alias review before merge or relation write.
+  alias_or_variant_confirmed_same_work:
+    writable_relation: false
+    scope_status: alias_or_variant_confirmed_same_work
+    blocker: Reviewed source-title variant refers to the same work; no final work-to-work relation is needed.
   reject_relation_out_of_scope:
     writable_relation: false
     scope_status: out_of_scope

@@ -45,7 +45,7 @@ Done when:
 - Unmatched source items are classified as candidate gaps, possible aliases, represented-by-selection, boundary cases, or no-current-work candidates.
 - No source row is promoted to a true omission before matching/relation review.
 
-Current status: started; X013/X014 were rerun after X027, and X013 matching was rerun again after X031 aliases, the X033 `from`-prefix matcher fix, X034 creator variants, X035 X030 scope routes, and X036 boundary-candidate materialization. The build now has 584 match candidates, 5,447 match-review decisions, and 7,586 relation-scope status rows. No final relation rows are ready to write.
+Current status: started; X013/X014 were rerun after X027, and X013 matching was rerun again after X031 aliases, the X033 `from`-prefix matcher fix, X034 creator variants, X035 X030 scope routes, X036 boundary-candidate materialization, and X043 reference corroboration. The build now has 592 match candidates, 5,447 match-review decisions, and 7,588 relation-scope status rows. No final relation rows are ready to write.
 
 ## Phase 3: Source Extraction At Scale
 
@@ -58,7 +58,7 @@ Done when:
 - Source fetch/access logs identify exact pages, files, APIs, and access limits.
 - Extracted rows pass matching and relation review queues.
 
-Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; X020-X025 generated/updated 2,690 E013/E014/E015/E016/E017/E018 source-item observations; X026 added 1,586 official Norton World Literature 5e TOC rows; X027 added 1,644 Longman World Literature 2e public TOC rows; `canon_source_items.tsv` now has 5,942 total rows. Expanded matching/relation/evidence queues now exist; full Traditional Chinese CPL line-level access and Oxford modern Indian poem-level official-copy reconciliation remain pending.
+Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; X020-X025 generated/updated 2,690 E013/E014/E015/E016/E017/E018 source-item observations; X026 added 1,586 official Norton World Literature 5e TOC rows; X027 added 1,644 Longman World Literature 2e public TOC rows; X043 added 6 targeted public reference/literary-history corroboration rows; `canon_source_items.tsv` now has 5,950 total rows. Expanded matching/relation/evidence queues now exist; full Traditional Chinese CPL line-level access and Oxford modern Indian poem-level official-copy reconciliation remain pending.
 
 ## Phase 4: Evidence Ledger And Source-Debt Rules
 
@@ -71,7 +71,7 @@ Done when:
 - Corpus/database rows support identity/provenance only unless explicitly waived.
 - At least two independent canon-support source families support non-obvious additions.
 
-Current status: started; source weights, source-debt rules, 495 total evidence rows, a 3,012-row source-debt status report, and scoring-input blockers exist. Source-debt closure remains 0 until evidence is accepted under the rules.
+Current status: started; source weights, source-debt rules, 503 total evidence rows, a 3,012-row source-debt status report, and scoring-input blockers exist. Ten source-backed rows have closed source debt under accepted independent external support; source-debt closure still does not imply public-path integration.
 
 ## Phase 5: Taxonomy, Boundary, And Quality Gates
 
@@ -83,7 +83,7 @@ Done when:
 - Boundary policies exist for scripture, philosophy, theology, history, oral tradition, Indigenous/public material, memoir/testimonio, children's/YA, genre fiction, graphic narrative, series, and anthology excerpts.
 - Quality reports cover duplicates, generic titles, chronology/date-basis issues, and boundary cases from build tables.
 
-Current status: started for the X018 queue; 12 source-backed omissions are queued, 3 conditional boundary-policy routes have been recorded for the X036 candidates, 8 exact-title anthology evidence rows have been accepted for those candidates, the original 8 source-backed candidates now have metadata/evidence-scope triage, and 1 row is ready for score computation.
+Current status: started for the X018 queue; 12 source-backed omissions are queued, 3 conditional boundary-policy routes have been recorded for the X036 candidates, 8 exact-title anthology evidence rows have been accepted for those candidates, the original 8 source-backed candidates now have metadata/evidence-scope triage, and X043 added explicit same-work alias handling for Brown and Nat Turner. Five rows are ready for score computation; Curial has closed source debt but remains boundary/completion-gated.
 
 ## Phase 6: Coverage Targets And Scoring
 
@@ -95,7 +95,7 @@ Done when:
 - `canon_scores.tsv` is generated for current works and source-backed omissions.
 - Scores include source support, source diversity, coverage scarcity, boundary penalty, duplicate penalty, source debt penalty, generic-title penalty, date uncertainty, recency, and incumbent bonus.
 
-Current status: started; `canon_scoring_inputs.tsv` now covers all 3,012 work candidates, 1 row is ready for score computation, and `canon_scores.tsv` contains 1 provisional score row. Coverage targets and replacement candidates are not generated yet.
+Current status: started; `canon_scoring_inputs.tsv` now covers all 3,012 work candidates, 5 rows are ready for score computation, and `canon_scores.tsv` contains 5 provisional score rows. Coverage targets and replacement candidates are not generated yet.
 
 ## Phase 7: Diagnostic-First Validation Sweeps
 
@@ -110,7 +110,7 @@ Done when:
 - Period packets B001-B034, region/tradition packets C001-C196, form packets D001-D046, sentinel packets F001-F034, and intersection packets I001-I030 are complete, waived, or represented by generated diagnostics with no red-cell flag.
 - All high-priority gaps are added to the omission queue, rejected with rationale, or deferred with source-gap rationale.
 
-Current status: first X028-X042 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, applies 39 reviewed X030 scope routes to match/relation decisions, materializes 4 provisional boundary-review candidates, adds metadata for those 4 candidates, records 3 conditional boundary-policy routes, accepts 8 exact-title anthology evidence rows for those 4 candidates, triages the original 8 source-backed candidates, adds official Norton African American Literature 4e Volume 1 corroboration that moves Harper's `Bury Me in a Free Land` to `ready_for_score_computation`, and generates the first provisional score row.
+Current status: first X028-X043 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, applies 39 reviewed X030 scope routes to match/relation decisions, materializes 4 provisional boundary-review candidates, adds metadata for those 4 candidates, records 3 conditional boundary-policy routes, accepts 8 exact-title anthology evidence rows for those 4 candidates, triages the original 8 source-backed candidates, adds official Norton African American Literature 4e Volume 1 corroboration, adds X043 public reference/literary-history corroboration, closes source debt for 10 candidates total, and generates 5 provisional score rows.
 
 ## Phase 8: Source-Backed Integration
 

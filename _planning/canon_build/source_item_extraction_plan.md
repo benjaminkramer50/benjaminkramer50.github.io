@@ -16,7 +16,7 @@ Direct public-list replacements remain paused until these packets produce source
 |---|---|---|---|
 | E Batch 1 | E001-E006 | Registered; E001 extracted; E004 Norton World Literature 5e extracted by X026; E005 Longman World Literature 2e extracted by X027; E006 Bedford fragment extraction pending | `source_crosswalk_reports/e_batch_001_e001_e006.md` |
 | E Batch 2 | E007-E012 | Registered; X001-X006 pilot rows ingested; full extraction pending | `source_crosswalk_reports/e_batch_002_e007_e012.md` |
-| E Batch 3 | E013-E018 | Registered; X020-X025 generated/updated 2,690 E013/E014/E015/E016/E017/E018 source-item observations; current table has 5,944 total source-item rows after X041; X013/X014/X017 queues rerun after X041; remaining source debt is explicit for blocked full Traditional Chinese CPL TOC and official Oxford modern Indian poem-level reconciliation | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
+| E Batch 3 | E013-E018 | Registered; X020-X025 generated/updated 2,690 E013/E014/E015/E016/E017/E018 source-item observations; current table has 5,950 total source-item rows after X043; X013/X014/X017 queues rerun after X043; remaining source debt is explicit for blocked full Traditional Chinese CPL TOC and official Oxford modern Indian poem-level reconciliation | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
 
 ## Extraction Contract
 
@@ -70,6 +70,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X040 | Original 8 source-backed candidates | Metadata and evidence-scope triage completed | 8 candidate rows cleaned up with date/taxonomy/form/unit metadata; 8 evidence rows accepted with scope caveats; Maud Martha and The Nickel Boys kept as selection-only evidence; Curial remains non-scoring identity support; public path unchanged |
 | X041 | Norton African American Literature 4e Vol. 1 TOC | Targeted corroboration added | 2 official Norton public TOC rows added for Harper and William Wells Brown; Harper reaches `ready_for_score_computation`; Brown remains selection-only corroboration; public path unchanged |
 | X042 | Score-ready rows | First score generated | Added `scripts/canon_generate_scores.rb` and generated one provisional score row for Harper's `Bury Me in a Free Land`; no replacement transaction generated; public path unchanged |
+| X043 | Public reference/literary-history corroboration | Targeted corroboration added and scores regenerated | 6 public reference/literary-history source rows added for Hrotsvitha, William Wells Brown, Gronniosaw, Nat Turner, and `Curial e Guelfa`; 6 evidence rows accepted; 5 source-backed candidates now score-ready and scored; Curial remains boundary/completion-gated; public path unchanged |
 
 ## Planned Extraction Packets
 

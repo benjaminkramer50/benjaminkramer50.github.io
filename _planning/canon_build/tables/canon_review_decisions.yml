@@ -146,9 +146,37 @@ decisions:
       - populate_coverage_targets_before_replacement_candidates
       - continue_corroboration_and_boundary_review_for_other_omissions
     public_path_effect: none
+  - decision_id: x043_reference_corroboration_001
+    decision_type: targeted_source_corroboration_and_scope_gate
+    applies_to_work_ids:
+      - work_candidate_source_broadview_hrotsvitha_abraham
+      - work_candidate_source_loa_brown_narrative
+      - work_candidate_source_loa_gronniosaw_narrative
+      - work_candidate_source_loa_nat_turner_confessions
+      - work_candidate_source_philobiblon_curial_e_guelfa
+    applies_to_evidence_ids:
+      - x017_ev_x043_encyclopedia_com_hrotsvit_abraham
+      - x017_ev_x043_britannica_brown_narrative
+      - x017_ev_x043_yale_gronniosaw_narrative
+      - x017_ev_x043_britannica_nat_turner_confessions
+      - x017_ev_x043_britannica_catalan_lit_curial
+      - x017_ev_x043_enciclopedia_cat_curial
+    decision: accept_targeted_public_reference_corroboration
+    rationale: >
+      The X043 public reference and literary-history rows provide independent
+      corroboration for source-backed candidates that previously lacked enough
+      non-internal support. Brown and Nat Turner also had stale same-work
+      title-variant blockers; these were routed as confirmed source-title aliases,
+      not as distinct-work relations or duplicate candidates.
+    scoring_effect: five_rows_ready_for_score_computation_and_scored
+    required_followup:
+      - keep_curial_boundary_and_completion_scope_open_until_final_policy_review
+      - populate_coverage_targets_before_replacement_candidates
+      - continue_targeted_corroboration_for_remaining_source_backed_candidates
+    public_path_effect: none
 waivers: []
 open_questions:
-  - source_debt_rows_currently_3012
+  - source_debt_rows_currently_3002
   - unmatched_source_items_currently_5446
   - duplicate_candidate_keys_currently_39
   - chronology_inversion_rows_currently_138

@@ -39,7 +39,7 @@
 | table:packet_status | PASS | `_planning/canon_build/tables/canon_packet_status.tsv (8 columns)` |
 | policy:source_weights.source_type_mapping | PASS | `42 source types mapped` |
 | policy:source_debt_rules.source_class_rules | PASS | `10 source classes covered` |
-| policy:relation_scope_rules.decision_rules | PASS | `11 decision rules declared` |
+| policy:relation_scope_rules.decision_rules | PASS | `12 decision rules declared` |
 | controlled:source_registry.source_type | PASS | `42 allowed values` |
 | controlled:source_registry.extraction_status | PASS | `16 allowed values` |
 | controlled:source_items.evidence_type | PASS | `6 allowed values` |

@@ -80,6 +80,21 @@ X030_PROPOSED_CANDIDATES = {
   }
 }.freeze
 
+CONFIRMED_SAME_WORK_VARIANTS = {
+  ["e012_loa_sn_brown_narrative", "variant_of"] => {
+    target_work_id: "work_candidate_source_loa_brown_narrative",
+    item_scope: "source_title_alias_same_work",
+    next_action: "no_final_relation_needed",
+    rationale: "X043 alias review: the LOA title is the candidate's canonical complete-work title, not a separate work or duplicate."
+  },
+  ["e012_loa_sn_nat_turner", "variant_of"] => {
+    target_work_id: "work_candidate_source_loa_nat_turner_confessions",
+    item_scope: "source_title_alias_same_work",
+    next_action: "no_final_relation_needed",
+    rationale: "X043 alias review: the longer LOA source title is a source-title alias for The Confessions of Nat Turner, not a separate work or duplicate."
+  }
+}.freeze
+
 def x030_route_index(rows)
   rows.each_with_object({}) do |row, by_title|
     row.fetch("subject").split("|").each do |subject|
@@ -296,7 +311,15 @@ relation_decisions = read_tsv(RELATION_REVIEW_PATH).map do |row|
   match_decision = match_decisions_by_item[source_item_id]
 
   decision =
-    if match_decision && match_decision["decision"] == "out_of_scope_media_boundary"
+    if (same_work_variant = CONFIRMED_SAME_WORK_VARIANTS[[source_item_id, proposed_relation_type]])
+      {
+        decision: "alias_or_variant_confirmed_same_work",
+        target_work_id: same_work_variant.fetch(:target_work_id),
+        item_scope: same_work_variant.fetch(:item_scope),
+        next_action: same_work_variant.fetch(:next_action),
+        rationale: same_work_variant.fetch(:rationale)
+      }
+    elsif match_decision && match_decision["decision"] == "out_of_scope_media_boundary"
       {
         decision: "reject_relation_out_of_scope",
         target_work_id: "",
