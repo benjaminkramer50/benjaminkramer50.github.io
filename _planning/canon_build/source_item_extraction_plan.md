@@ -10,6 +10,14 @@ The source registry says which sources matter. It does not yet prove coverage. T
 
 Direct public-list replacements remain paused until these packets produce source items, matches, and evidence.
 
+## Registered Source-Crosswalk Batches
+
+| Batch | Packets | Status | Report |
+|---|---|---|---|
+| E Batch 1 | E001-E006 | Registered; E001 extracted; E004-E006 extraction pending | `source_crosswalk_reports/e_batch_001_e001_e006.md` |
+| E Batch 2 | E007-E012 | Registered; X001-X006 pilot rows ingested; full extraction pending | `source_crosswalk_reports/e_batch_002_e007_e012.md` |
+| E Batch 3 | E013-E018 | Registered; source-item extraction pending | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
+
 ## Extraction Contract
 
 Each extraction packet must return:
