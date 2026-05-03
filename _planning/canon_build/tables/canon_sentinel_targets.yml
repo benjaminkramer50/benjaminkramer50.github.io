@@ -1,0 +1,350 @@
+---
+generated_on: '2026-05-03'
+status: seed_for_x028_diagnostic_checks
+notes:
+  - Sentinel targets are tests, not automatic inclusions.
+  - A missing sentinel opens review only when source support, coverage pressure, or field judgment warrants it.
+  - This seed is intentionally compact; later packets should expand it by region, period, form, and source family.
+targets:
+  - sentinel_id: sent_american_irving_sketch_book
+    title: The Sketch Book of Geoffrey Crayon, Gent.
+    creator_hint: Washington Irving
+    variants: [The Sketch Book, Rip Van Winkle, The Legend of Sleepy Hollow]
+    category: american_early_national_prose
+    severity: high
+  - sentinel_id: sent_american_cooper_last_mohicans
+    title: The Last of the Mohicans
+    creator_hint: James Fenimore Cooper
+    variants: [Last of the Mohicans]
+    category: american_early_national_fiction
+    severity: high
+  - sentinel_id: sent_american_emerson_nature
+    title: Nature
+    creator_hint: Ralph Waldo Emerson
+    variants: [Nature and Selected Essays]
+    category: american_transcendentalism
+    severity: high
+  - sentinel_id: sent_american_fuller_woman
+    title: Woman in the Nineteenth Century
+    creator_hint: Margaret Fuller
+    variants: []
+    category: american_transcendentalism_feminist_prose
+    severity: high
+  - sentinel_id: sent_american_douglass_narrative
+    title: Narrative of the Life of Frederick Douglass, an American Slave
+    creator_hint: Frederick Douglass
+    variants: [Narrative of the Life of Frederick Douglass, Narrative of Frederick Douglass]
+    category: african_american_slave_narrative
+    severity: critical
+  - sentinel_id: sent_american_hawthorne_scarlet_letter
+    title: The Scarlet Letter
+    creator_hint: Nathaniel Hawthorne
+    variants: []
+    category: american_romance
+    severity: critical
+  - sentinel_id: sent_american_melville_moby_dick
+    title: Moby-Dick
+    creator_hint: Herman Melville
+    variants: [Moby Dick]
+    category: american_novel
+    severity: critical
+  - sentinel_id: sent_american_whitman_leaves
+    title: Leaves of Grass
+    creator_hint: Walt Whitman
+    variants: []
+    category: american_poetry
+    severity: critical
+  - sentinel_id: sent_american_dickinson_poems
+    title: Complete Poems
+    creator_hint: Emily Dickinson
+    variants: [Poems of Emily Dickinson]
+    category: american_poetry
+    severity: critical
+  - sentinel_id: sent_british_beowulf
+    title: Beowulf
+    creator_hint: Old English poetic tradition
+    variants: []
+    category: old_english_epic
+    severity: critical
+  - sentinel_id: sent_british_chaucer_canterbury
+    title: The Canterbury Tales
+    creator_hint: Geoffrey Chaucer
+    variants: [Canterbury Tales]
+    category: middle_english_literature
+    severity: critical
+  - sentinel_id: sent_british_spenser_faerie
+    title: The Faerie Queene
+    creator_hint: Edmund Spenser
+    variants: []
+    category: renaissance_british_epic
+    severity: high
+  - sentinel_id: sent_british_milton_paradise_lost
+    title: Paradise Lost
+    creator_hint: John Milton
+    variants: []
+    category: english_epic
+    severity: critical
+  - sentinel_id: sent_british_austen_pride
+    title: Pride and Prejudice
+    creator_hint: Jane Austen
+    variants: []
+    category: british_novel
+    severity: critical
+  - sentinel_id: sent_british_shelley_frankenstein
+    title: Frankenstein
+    creator_hint: Mary Shelley
+    variants: [Frankenstein; or, The Modern Prometheus]
+    category: british_romantic_gothic
+    severity: critical
+  - sentinel_id: sent_british_wordsworth_lyrical_ballads
+    title: Lyrical Ballads
+    creator_hint: William Wordsworth and Samuel Taylor Coleridge
+    variants: []
+    category: british_romantic_poetry
+    severity: high
+  - sentinel_id: sent_british_dickens_bleak_house
+    title: Bleak House
+    creator_hint: Charles Dickens
+    variants: []
+    category: victorian_novel
+    severity: high
+  - sentinel_id: sent_british_eliot_middlemarch
+    title: Middlemarch
+    creator_hint: George Eliot
+    variants: []
+    category: victorian_novel
+    severity: critical
+  - sentinel_id: sent_french_montaigne_essays
+    title: Essays
+    creator_hint: Michel de Montaigne
+    variants: [The Essays]
+    category: renaissance_essay
+    severity: critical
+  - sentinel_id: sent_french_moliere_tartuffe
+    title: Tartuffe
+    creator_hint: Moliere
+    variants: []
+    category: french_drama
+    severity: high
+  - sentinel_id: sent_french_racine_phedre
+    title: Phedre
+    creator_hint: Jean Racine
+    variants: [Phaedra]
+    category: french_drama
+    severity: high
+  - sentinel_id: sent_french_flaubert_bovary
+    title: Madame Bovary
+    creator_hint: Gustave Flaubert
+    variants: []
+    category: french_novel
+    severity: critical
+  - sentinel_id: sent_french_baudelaire_flowers
+    title: Les Fleurs du mal
+    creator_hint: Charles Baudelaire
+    variants: [The Flowers of Evil]
+    category: french_poetry
+    severity: critical
+  - sentinel_id: sent_german_goethe_faust
+    title: Faust
+    creator_hint: Johann Wolfgang von Goethe
+    variants: [Faust, Part One]
+    category: german_drama_poetry
+    severity: critical
+  - sentinel_id: sent_russian_pushkin_onegin
+    title: Eugene Onegin
+    creator_hint: Alexander Pushkin
+    variants: []
+    category: russian_poetry_novel
+    severity: critical
+  - sentinel_id: sent_russian_gogol_dead_souls
+    title: Dead Souls
+    creator_hint: Nikolai Gogol
+    variants: []
+    category: russian_novel
+    severity: high
+  - sentinel_id: sent_russian_dostoevsky_brothers
+    title: The Brothers Karamazov
+    creator_hint: Fyodor Dostoevsky
+    variants: [Brothers Karamazov]
+    category: russian_novel
+    severity: critical
+  - sentinel_id: sent_russian_tolstoy_war_peace
+    title: War and Peace
+    creator_hint: Leo Tolstoy
+    variants: []
+    category: russian_novel
+    severity: critical
+  - sentinel_id: sent_spanish_cervantes_don_quixote
+    title: Don Quixote
+    creator_hint: Miguel de Cervantes
+    variants: [The Ingenious Gentleman Don Quixote of La Mancha]
+    category: spanish_novel
+    severity: critical
+  - sentinel_id: sent_italian_dante_comedy
+    title: Divine Comedy
+    creator_hint: Dante Alighieri
+    variants: [The Divine Comedy]
+    category: italian_medieval_poetry
+    severity: critical
+  - sentinel_id: sent_italian_boccaccio_decameron
+    title: The Decameron
+    creator_hint: Giovanni Boccaccio
+    variants: [Decameron]
+    category: italian_prose
+    severity: critical
+  - sentinel_id: sent_classical_homer_iliad
+    title: Iliad
+    creator_hint: Homeric epic tradition
+    variants: [The Iliad]
+    category: ancient_greek_epic
+    severity: critical
+  - sentinel_id: sent_classical_homer_odyssey
+    title: Odyssey
+    creator_hint: Homeric epic tradition
+    variants: [The Odyssey]
+    category: ancient_greek_epic
+    severity: critical
+  - sentinel_id: sent_classical_sophocles_oedipus
+    title: Oedipus Tyrannus
+    creator_hint: Sophocles
+    variants: [Oedipus the King, Oedipus Rex]
+    category: ancient_greek_drama
+    severity: critical
+  - sentinel_id: sent_classical_euripides_medea
+    title: Medea
+    creator_hint: Euripides
+    variants: []
+    category: ancient_greek_drama
+    severity: critical
+  - sentinel_id: sent_classical_virgil_aeneid
+    title: Aeneid
+    creator_hint: Virgil
+    variants: [The Aeneid]
+    category: roman_epic
+    severity: critical
+  - sentinel_id: sent_classical_ovid_metamorphoses
+    title: Metamorphoses
+    creator_hint: Ovid
+    variants: []
+    category: roman_poetry
+    severity: critical
+  - sentinel_id: sent_china_shijing
+    title: Book of Songs / Shijing
+    creator_hint: Classical Chinese poetic tradition
+    variants: [Classic of Poetry, Shijing]
+    category: classical_chinese_poetry
+    severity: critical
+  - sentinel_id: sent_china_analects
+    title: Analects
+    creator_hint: Confucius
+    variants: [The Analects]
+    category: classical_chinese_thought_literature
+    severity: critical
+  - sentinel_id: sent_china_zhuangzi
+    title: Zhuangzi
+    creator_hint: Zhuangzi
+    variants: []
+    category: classical_chinese_prose
+    severity: critical
+  - sentinel_id: sent_china_dream_red_chamber
+    title: Dream of the Red Chamber
+    creator_hint: Cao Xueqin
+    variants: [Story of the Stone, The Story of the Stone]
+    category: chinese_novel
+    severity: critical
+  - sentinel_id: sent_japan_genji
+    title: The Tale of Genji
+    creator_hint: Murasaki Shikibu
+    variants: [Tale of Genji]
+    category: japanese_court_fiction
+    severity: critical
+  - sentinel_id: sent_japan_manyoshu
+    title: Man'yoshu
+    creator_hint: Classical Japanese poetic tradition
+    variants: [Manyoshu]
+    category: japanese_poetry
+    severity: critical
+  - sentinel_id: sent_india_mahabharata
+    title: Mahabharata
+    creator_hint: Sanskrit epic tradition
+    variants: [The Mahabharata]
+    category: sanskrit_epic
+    severity: critical
+  - sentinel_id: sent_india_ramayana
+    title: Ramayana
+    creator_hint: Sanskrit epic tradition
+    variants: [The Ramayana]
+    category: sanskrit_epic
+    severity: critical
+  - sentinel_id: sent_india_bhagavad_gita
+    title: Bhagavad Gita
+    creator_hint: Mahabharata and Hindu philosophical tradition
+    variants: [The Bhagavad Gita]
+    category: sanskrit_scripture_literature
+    severity: critical
+  - sentinel_id: sent_india_shakuntala
+    title: "Kalidasa: The Recognition of Shakuntala"
+    creator_hint: Kalidasa
+    variants: [The Recognition of Shakuntala, Shakuntala]
+    category: sanskrit_drama
+    severity: critical
+  - sentinel_id: sent_persian_shahnameh
+    title: Shahnameh
+    creator_hint: Ferdowsi
+    variants: [Shah-nama, Book of Kings]
+    category: persian_epic
+    severity: critical
+  - sentinel_id: sent_persian_rumi_masnavi
+    title: Masnavi
+    creator_hint: Jalal al-Din Rumi
+    variants: [Mathnawi]
+    category: persian_sufi_poetry
+    severity: critical
+  - sentinel_id: sent_arabic_quran
+    title: Qur'an
+    creator_hint: Islamic scripture
+    variants: [Quran, Koran]
+    category: arabic_scripture_literature
+    severity: critical
+  - sentinel_id: sent_arabic_nights
+    title: One Thousand and One Nights
+    creator_hint: Arabic and transregional story-cycle tradition
+    variants: [Arabian Nights, The Thousand and One Nights]
+    category: arabic_story_cycle
+    severity: critical
+  - sentinel_id: sent_africa_sunjata
+    title: Sunjata Epic
+    creator_hint: Mande oral epic tradition
+    variants: [Epic of Sundiata, Sundiata]
+    category: west_african_oral_epic
+    severity: critical
+  - sentinel_id: sent_africa_achebe_things_fall_apart
+    title: Things Fall Apart
+    creator_hint: Chinua Achebe
+    variants: []
+    category: african_novel
+    severity: critical
+  - sentinel_id: sent_latin_america_popol_vuh
+    title: Popol Vuh
+    creator_hint: K'iche' Maya textual tradition
+    variants: []
+    category: maya_literature
+    severity: critical
+  - sentinel_id: sent_latin_america_garcia_marquez_solitude
+    title: One Hundred Years of Solitude
+    creator_hint: Gabriel Garcia Marquez
+    variants: [Cien anos de soledad]
+    category: latin_american_novel
+    severity: critical
+  - sentinel_id: sent_modern_kafka_trial
+    title: The Trial
+    creator_hint: Franz Kafka
+    variants: [Der Prozess]
+    category: modernist_fiction
+    severity: critical
+  - sentinel_id: sent_modern_borges_ficciones
+    title: Ficciones
+    creator_hint: Jorge Luis Borges
+    variants: []
+    category: latin_american_modernism
+    severity: critical

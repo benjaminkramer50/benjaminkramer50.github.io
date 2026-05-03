@@ -97,20 +97,20 @@ Done when:
 
 Current status: started; `canon_scoring_inputs.tsv` now covers all 3,008 work candidates, but 0 rows are ready for score computation because source debt and other blockers remain open. Coverage targets and final scores are not generated yet.
 
-## Phase 7: Validation Sweeps
+## Phase 7: Diagnostic-First Validation Sweeps
 
-Goal: use B/C/D/F/I packets to attack the scored universe before integration.
+Goal: use B/C/D/F/I packets as a coverage map, not as 340 sequential hand audits. First generate whole-canon diagnostics that rank coverage cells, sentinel works, and source-backed unmatched clusters. Then manually audit only flagged red cells and high-risk omissions.
 
 Done when:
 
-- Period packets B001-B034 are complete or waived.
-- Region/tradition packets C001-C196 are complete or waived.
-- Form packets D001-D046 are complete or waived.
-- Sentinel packets F001-F034 are complete or waived.
-- Intersection packets I001-I030 are complete or expanded where weak cells remain.
+- `canon_coverage_matrix.tsv` exists and summarizes selected counts, candidate counts, source-item pressure, evidence counts, and source-debt state across period, region, form, and intersection cells.
+- `canon_sentinel_checks.tsv` exists and tests a maintained sentinel list against current path rows, aliases, source items, and evidence.
+- `canon_gap_diagnostics.tsv` ranks missing or suspicious cells by severity, source support, sentinel failure, and source-debt status.
+- `canon_red_cell_audit_queue.tsv` identifies the small subset of B/C/D/F/I cells that need manual review.
+- Period packets B001-B034, region/tradition packets C001-C196, form packets D001-D046, sentinel packets F001-F034, and intersection packets I001-I030 are complete, waived, or represented by generated diagnostics with no red-cell flag.
 - All high-priority gaps are added to the omission queue, rejected with rationale, or deferred with source-gap rationale.
 
-Current status: pending.
+Current status: first X028 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, and produces a 120-row red-cell queue for manual review.
 
 ## Phase 8: Source-Backed Integration
 

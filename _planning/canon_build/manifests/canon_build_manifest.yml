@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x027_longman_world_lit_toc_ingested
+status: source_item_batch_x028_gap_diagnostics_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -46,6 +46,10 @@ artifacts:
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
   creators: bootstrapped_from_current_path_plus_x013_candidate_creators
+  coverage_matrix: generated_x028
+  sentinel_checks: generated_x028
+  gap_diagnostics: generated_x028
+  red_cell_audit_queue: generated_x028
 bootstrap_counts:
   work_candidates: 3000
   creators: 2000
@@ -248,4 +252,13 @@ source_item_extraction_batch_x027:
   evidence_rows_added: 0
   evidence_rows_after_x013_x014_x017_rerun: 112
   status: source_items_ingested_evidence_scope_review_required
+  direct_replacements: 0
+diagnostic_first_validation_x028:
+  coverage_matrix_rows: 123
+  sentinel_targets: 57
+  sentinel_failures_or_reviews: 0
+  source_backed_unmatched_clusters: 114
+  coverage_red_cells: 73
+  gap_diagnostics_rows: 187
+  red_cell_audit_queue_rows: 120
   direct_replacements: 0
