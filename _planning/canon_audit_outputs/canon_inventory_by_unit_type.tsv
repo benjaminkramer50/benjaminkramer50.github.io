@@ -1,10 +1,10 @@
 bucket	count
-novel	1342
-play	205
-poetry_selection	139
-poetry_collection	126
-literary_work	111
-novella	74
+novel	1354
+play	201
+poetry_selection	138
+poetry_collection	132
+literary_work	100
+novella	73
 short_story_collection	70
 book	33
 epic_poem	31
@@ -16,15 +16,15 @@ story_collection	20
 tragedy	19
 comedy	18
 oral_epic	18
-short_story	18
+short_story	17
 story_cycle	17
 poetry_anthology	16
 long_poem	15
 romance_poem	10
 devotional_poetry_collection	9
 lyric_poetry_collection	9
-narrative_poem	9
 graphic_narrative	8
+narrative_poem	8
 poetry_sequence	8
 court_epic	7
 didactic_poem	7
@@ -43,7 +43,6 @@ short_story_selection	6
 travel_narrative	6
 detective_novel	5
 fable_collection	5
-gothic_novel	5
 lyric_poetry_selection	5
 prophetic_book	5
 prose_poetry_collection	5
@@ -57,6 +56,7 @@ devotional_poetry_selection	4
 diary_literature	4
 essay_collection	4
 fantasy_novel	4
+gothic_novel	4
 literary_chronicle	4
 mythic_poem	4
 philosophical_tale	4
@@ -108,6 +108,7 @@ literary_nonfiction	2
 literary_testimony	2
 lyric_sequence	2
 mystical_poem	2
+mystical_prose	2
 mythic_chronicle	2
 novel_cycle	2
 novella_sequence	2
@@ -180,6 +181,7 @@ epic_retelling	1
 epic_romance_poem	1
 epic_tale	1
 epigram_collection	1
+epistolary_prose	1
 epistolary_satire	1
 fantasy_romance	1
 folktale_collection	1
@@ -245,7 +247,6 @@ modernist_novel	1
 monastic_scripture	1
 mystical_narrative_poem	1
 mystical_poetry_collection	1
-mystical_prose	1
 myth_cycle	1
 mythic_cycle	1
 mythic_dynastic_saga	1
@@ -280,7 +281,6 @@ picaresque_novel	1
 picture_book	1
 play_and_novel	1
 play_collection	1
-play_cycle	1
 play_trilogy	1
 poem_cycle	1
 poem_tale_sequence	1
@@ -298,6 +298,7 @@ prakrit_romance_poem	1
 prose_collection	1
 prose_narrative	1
 prose_poem_novel	1
+prose_poetry	1
 prose_satire_cycle	1
 prosimetrum	1
 prosimetrum_collection	1

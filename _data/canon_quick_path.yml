@@ -12400,25 +12400,25 @@ items:
   lifetime_path: true
   rank: 488
   phase: 2
-- id: candidate:bloom_gap_031_0128_the_muse_reborn_the_poetry_of_antonio_ferreira
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0128_the_muse_reborn_the_poetry_of_antonio_ferreira
-  title: 'The Muse Reborn: The Poetry of Antonio Ferreira'
+- id: candidate:wave004_gil_vicente_auto_da_barca_do_inferno
+  source: wave_004_canon_audit_integration
+  source_id: wave004_gil_vicente_auto_da_barca_do_inferno
+  title: Auto da Barca do Inferno
   creators:
-  - Antonio Ferreira
-  date_label: 16th century
-  sort_year: 1560
+  - Gil Vicente
+  date_label: '1517'
+  sort_year: 1517
   section: textual_humanities
   group: literature
   topic: portuguese_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: play
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the play or dramatic text.
+  rationale: Adds a foundational Portuguese theater anchor; replaces a weaker contextual Antonio Ferreira row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -13364,25 +13364,25 @@ items:
   lifetime_path: true
   rank: 526
   phase: 2
-- id: candidate:bloom_gap_031_0136_sonnets
-  source: wave_031_literature_bloom_gap_classical_early_modern
-  source_id: bloom_gap_031_0136_sonnets
-  title: '"Sonnets"'
+- id: candidate:wave004_teresa_of_avila_interior_castle
+  source: wave_004_canon_audit_integration
+  source_id: wave004_teresa_of_avila_interior_castle
+  title: The Interior Castle
   creators:
-  - Luis de Gongora
-  date_label: 16th-17th century
-  sort_year: 1600
+  - Teresa of Avila
+  date_label: '1577'
+  sort_year: 1577
   section: textual_humanities
   group: literature
   topic: spanish_literature
   medium: text
-  unit_type: poetry_selection
-  tier: contextual
+  unit_type: mystical_prose
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom-gap candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major Spanish Golden Age mystical prose work while Gongora remains represented by Soledades.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -18394,25 +18394,25 @@ items:
   lifetime_path: true
   rank: 724
   phase: 3
-- id: candidate:bloom_reviewed_hermann_dorothea
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_hermann_dorothea
-  title: Hermann and Dorothea
+- id: candidate:wave004_walther_von_der_vogelweide_selected_poems
+  source: wave_004_canon_audit_integration
+  source_id: wave004_walther_von_der_vogelweide_selected_poems
+  title: 'Walther von der Vogelweide: Selected Poems'
   creators:
-  - Johann Wolfgang von Goethe
-  date_label: '1797'
-  sort_year: 1797
+  - Walther von der Vogelweide
+  date_label: c. 1200
+  sort_year: 1200
   section: textual_humanities
   group: literature
   topic: german_literature
   medium: text
-  unit_type: narrative_poem
+  unit_type: poetry_selection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  rationale: Adds a foundational Middle High German lyric poet while Goethe remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -18897,14 +18897,14 @@ items:
   lifetime_path: true
   rank: 744
   phase: 3
-- id: candidate:bloom_schiller_mary_stuart
-  source: wave_019_bloom_western_literature_spine
-  source_id: bloom_schiller_mary_stuart
-  title: Mary Stuart
+- id: candidate:wave004_schiller_wilhelm_tell
+  source: wave_004_canon_audit_integration
+  source_id: wave004_schiller_wilhelm_tell
+  title: Wilhelm Tell
   creators:
   - Friedrich Schiller
-  date_label: '1800'
-  sort_year: 1800
+  date_label: '1804'
+  sort_year: 1804
   section: textual_humanities
   group: literature
   topic: german_literature
@@ -18915,7 +18915,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the play or dramatic text.
-  rationale: Bloom appendix coverage candidate for the Western literary spine; retained as one reference layer inside a broader global literature canon.
+  rationale: Replaces a secondary Schiller history play with his canonical national drama.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -19197,25 +19197,25 @@ items:
   lifetime_path: true
   rank: 756
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0372_the_roman_sonnets_of_g_g_belli
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0372_the_roman_sonnets_of_g_g_belli
-  title: The Roman Sonnets of G G Belli
+- id: candidate:wave004_guido_cavalcanti_rime
+  source: wave_004_canon_audit_integration
+  source_id: wave004_guido_cavalcanti_rime
+  title: Rime
   creators:
-  - Giuseppe Gioacchino Belli
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1802
+  - Guido Cavalcanti
+  date_label: late 13th century
+  sort_year: 1290
   section: textual_humanities
   group: literature
   topic: italian_literature
   medium: text
   unit_type: poetry_selection
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Adds a foundational Dolce Stil Novo lyric poet; removes a duplicate Belli sonnets row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -19372,25 +19372,25 @@ items:
   lifetime_path: true
   rank: 763
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0381_fortunato_and_jacinto
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0381_fortunato_and_jacinto
-  title: Fortunato and Jacinto
+- id: candidate:wave004_pardo_bazan_los_pazos_de_ulloa
+  source: wave_004_canon_audit_integration
+  source_id: wave004_pardo_bazan_los_pazos_de_ulloa
+  title: Los Pazos de Ulloa
   creators:
-  - Benito Perez Galdos
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1804
+  - Emilia Pardo Bazan
+  date_label: '1886'
+  sort_year: 1886
   section: textual_humanities
   group: literature
   topic: spanish_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Adds a major Spanish realist and naturalist novel; removes a typo duplicate of Galdos's Fortunata and Jacinta.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -19797,25 +19797,25 @@ items:
   lifetime_path: true
   rank: 780
   phase: 3
-- id: candidate:bloom_kleist_stories
-  source: wave_019_bloom_western_literature_spine
-  source_id: bloom_kleist_stories
-  title: Stories
+- id: candidate:wave004_droste_hulshoff_jews_beech
+  source: wave_004_canon_audit_integration
+  source_id: wave004_droste_hulshoff_jews_beech
+  title: The Jew's Beech
   creators:
-  - Heinrich von Kleist
-  date_label: 1810-1811
-  sort_year: 1810
+  - Annette von Droste-Hulshoff
+  date_label: '1842'
+  sort_year: 1842
   section: textual_humanities
   group: literature
   topic: german_literature
   medium: text
-  unit_type: short_story_collection
+  unit_type: novella
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the story, tale, story collection, or documented assigned selection.
-  rationale: Bloom appendix coverage candidate for the Western literary spine; retained as one reference layer inside a broader global literature canon.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major nineteenth-century German woman writer and novella; trims a generic Kleist stories row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -20097,25 +20097,25 @@ items:
   lifetime_path: true
   rank: 792
   phase: 3
-- id: candidate:bloom_reviewed_devil_elixirs
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_devil_elixirs
-  title: The Devil's Elixirs
+- id: candidate:wave004_gottfried_keller_green_henry
+  source: wave_004_canon_audit_integration
+  source_id: wave004_gottfried_keller_green_henry
+  title: Green Henry
   creators:
-  - E. T. A. Hoffmann
-  date_label: 1815-1816
-  sort_year: 1815
+  - Gottfried Keller
+  date_label: 1854-1855
+  sort_year: 1854
   section: textual_humanities
   group: literature
   topic: german_literature
   medium: text
-  unit_type: gothic_novel
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  rationale: Adds a major German-language realist novel while Hoffmann remains represented by The Sandman.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -20299,25 +20299,25 @@ items:
   lifetime_path: true
   rank: 800
   phase: 3
-- id: candidate:bloom_late_032_literature_bloom_democratic_age_reviewed_0436_emperor_and_galilean
-  source: wave_032_literature_bloom_democratic_age_reviewed
-  source_id: bloom_late_032_literature_bloom_democratic_age_reviewed_0436_emperor_and_galilean
-  title: Emperor and Galilean
+- id: candidate:wave004_bellman_fredmans_epistles
+  source: wave_004_canon_audit_integration
+  source_id: wave004_bellman_fredmans_epistles
+  title: Fredman's Epistles
   creators:
-  - Henrik Ibsen
-  date_label: The Democratic Age; approximate chronological placement pending review
-  sort_year: 1817
+  - Carl Michael Bellman
+  date_label: '1790'
+  sort_year: 1790
   section: textual_humanities
   group: literature
-  topic: scandinavian_literature
+  topic: swedish_literature
   medium: text
-  unit_type: play
+  unit_type: poetry_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Adds a foundational Swedish lyric and song-poetry anchor while reducing Ibsen overcoverage.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -22333,25 +22333,25 @@ items:
   phase: 3
   aliases:
   - La Cousine Bette
-- id: candidate:bloom_reviewed_double
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_double
-  title: The Double
+- id: candidate:wave004_griboyedov_woe_from_wit
+  source: wave_004_canon_audit_integration
+  source_id: wave004_griboyedov_woe_from_wit
+  title: Woe from Wit
   creators:
-  - Fyodor Dostoevsky
-  date_label: '1846'
-  sort_year: 1846
+  - Alexander Griboyedov
+  date_label: '1824'
+  sort_year: 1824
   section: textual_humanities
   group: literature
   topic: russian_literature
   medium: text
-  unit_type: novella
+  unit_type: play
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the play or dramatic text.
+  rationale: Adds the major early Russian dramatic comedy gap while Dostoevsky remains heavily represented.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -22986,7 +22986,7 @@ items:
 - id: candidate:bloom_becquer_poems
   source: wave_019_bloom_western_literature_spine
   source_id: bloom_becquer_poems
-  title: Poems
+  title: Rimas
   creators:
   - Gustavo Adolfo Becquer
   date_label: 19th century
@@ -23975,25 +23975,25 @@ items:
   - Song of Myself
   - I Sing the Body Electric
   - When Lilacs Last in the Dooryard Bloom'd
-- id: candidate:bloom_reviewed_month_country
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_month_country
-  title: A Month in the Country
+- id: candidate:wave004_chernyshevsky_what_is_to_be_done
+  source: wave_004_canon_audit_integration
+  source_id: wave004_chernyshevsky_what_is_to_be_done
+  title: What Is to Be Done?
   creators:
-  - Ivan Turgenev
-  date_label: '1855'
-  sort_year: 1855
+  - Nikolai Chernyshevsky
+  date_label: '1863'
+  sort_year: 1863
   section: textual_humanities
   group: literature
   topic: russian_literature
   medium: text
-  unit_type: play
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a historically central Russian revolutionary novel while Turgenev remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -24513,25 +24513,25 @@ items:
   lifetime_path: true
   rank: 965
   phase: 4
-- id: candidate:bloom_reviewed_first_love
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_first_love
-  title: First Love
+- id: candidate:wave004_tolstoy_resurrection
+  source: wave_004_canon_audit_integration
+  source_id: wave004_tolstoy_resurrection
+  title: Resurrection
   creators:
-  - Ivan Turgenev
-  date_label: '1860'
-  sort_year: 1860
+  - Leo Tolstoy
+  date_label: '1899'
+  sort_year: 1899
   section: textual_humanities
   group: literature
   topic: russian_literature
   medium: text
-  unit_type: novella
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  rationale: Adds Tolstoy's late major novel while Turgenev remains represented by stronger fiction.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -24790,25 +24790,25 @@ items:
   lifetime_path: true
   rank: 976
   phase: 4
-- id: candidate:bloom_tolstoy_cossacks
-  source: wave_019_bloom_western_literature_spine
-  source_id: bloom_tolstoy_cossacks
-  title: The Cossacks
+- id: candidate:wave004_nabokov_the_gift
+  source: wave_004_canon_audit_integration
+  source_id: wave004_nabokov_the_gift
+  title: The Gift
   creators:
-  - Leo Tolstoy
-  date_label: '1863'
-  sort_year: 1863
+  - Vladimir Nabokov
+  date_label: '1938'
+  sort_year: 1938
   section: textual_humanities
   group: literature
   topic: russian_literature
   medium: text
-  unit_type: novella
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom appendix coverage candidate for the Western literary spine; retained as one reference layer inside a broader global literature canon.
+  rationale: Adds a central Russian-language Nabokov novel while Tolstoy remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -25117,25 +25117,25 @@ items:
   lifetime_path: true
   rank: 989
   phase: 4
-- id: candidate:bloom_reviewed_gambler
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_gambler
-  title: The Gambler
+- id: candidate:wave004_sologub_petty_demon
+  source: wave_004_canon_audit_integration
+  source_id: wave004_sologub_petty_demon
+  title: The Petty Demon
   creators:
-  - Fyodor Dostoevsky
-  date_label: '1866'
-  sort_year: 1866
+  - Fyodor Sologub
+  date_label: '1907'
+  sort_year: 1907
   section: textual_humanities
   group: literature
   topic: russian_literature
   medium: text
-  unit_type: novella
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  rationale: Adds a major Russian Symbolist novel while reducing Dostoevsky overrepresentation.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -25446,25 +25446,25 @@ items:
   lifetime_path: true
   rank: 1002
   phase: 4
-- id: candidate:bloom_reviewed_eternal_husband
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_eternal_husband
-  title: The Eternal Husband
+- id: candidate:wave004_bunin_dark_avenues
+  source: wave_004_canon_audit_integration
+  source_id: wave004_bunin_dark_avenues
+  title: Dark Avenues
   creators:
-  - Fyodor Dostoevsky
-  date_label: '1870'
-  sort_year: 1870
+  - Ivan Bunin
+  date_label: '1943'
+  sort_year: 1943
   section: textual_humanities
   group: literature
   topic: russian_literature
   medium: text
-  unit_type: novella
+  unit_type: short_story_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the story, tale, story collection, or documented assigned selection.
+  rationale: Adds a major Bunin short-fiction anchor while reducing Dostoevsky overrepresentation.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -27173,25 +27173,25 @@ items:
   phase: 4
   aliases:
   - The Life and Death of the Mayor of Casterbridge
-- id: candidate:bloom_reviewed_ivanov
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_ivanov
-  title: Ivanov
+- id: candidate:wave004_zoshchenko_sentimental_tales
+  source: wave_004_canon_audit_integration
+  source_id: wave004_zoshchenko_sentimental_tales
+  title: Sentimental Tales
   creators:
-  - Anton Chekhov
-  date_label: '1887'
-  sort_year: 1887
+  - Mikhail Zoshchenko
+  date_label: 1923-1929
+  sort_year: 1923
   section: textual_humanities
   group: literature
   topic: russian_literature
   medium: text
-  unit_type: play
+  unit_type: short_story_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the story, tale, story collection, or documented assigned selection.
+  rationale: Adds a major Soviet satirical prose voice while Chekhov remains represented by stronger plays and stories.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -27448,25 +27448,25 @@ items:
   lifetime_path: true
   rank: 1081
   phase: 4
-- id: candidate:bloom_reviewed_lady_from_sea
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_lady_from_sea
-  title: The Lady from the Sea
+- id: candidate:wave004_camilla_collett_district_governors_daughters
+  source: wave_004_canon_audit_integration
+  source_id: wave004_camilla_collett_district_governors_daughters
+  title: The District Governor's Daughters
   creators:
-  - Henrik Ibsen
-  date_label: '1888'
-  sort_year: 1888
+  - Camilla Collett
+  date_label: 1854-1855
+  sort_year: 1854
   section: textual_humanities
   group: literature
-  topic: scandinavian_literature
+  topic: norwegian_literature
   medium: text
-  unit_type: play
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds the major early Norwegian feminist novel while Ibsen remains heavily represented by stronger plays.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -29066,25 +29066,25 @@ items:
   lifetime_path: true
   rank: 1145
   phase: 4
-- id: candidate:bloom_reviewed_to_damascus
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_to_damascus
-  title: To Damascus
+- id: candidate:wave004_pontoppidan_lucky_per
+  source: wave_004_canon_audit_integration
+  source_id: wave004_pontoppidan_lucky_per
+  title: Lucky Per
   creators:
-  - August Strindberg
+  - Henrik Pontoppidan
   date_label: 1898-1904
   sort_year: 1898
   section: textual_humanities
   group: literature
-  topic: scandinavian_literature
+  topic: danish_literature
   medium: text
-  unit_type: play_cycle
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major Danish realist novel while Strindberg remains represented by stronger plays.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -29216,25 +29216,25 @@ items:
   lifetime_path: true
   rank: 1151
   phase: 4
-- id: candidate:bloom_reviewed_when_dead_awaken
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_when_dead_awaken
-  title: When We Dead Awaken
+- id: candidate:wave004_bjornson_synnove_solbakken
+  source: wave_004_canon_audit_integration
+  source_id: wave004_bjornson_synnove_solbakken
+  title: Synnove Solbakken
   creators:
-  - Henrik Ibsen
-  date_label: '1899'
-  sort_year: 1899
+  - Bjornstjerne Bjornson
+  date_label: '1857'
+  sort_year: 1857
   section: textual_humanities
   group: literature
-  topic: scandinavian_literature
+  topic: norwegian_literature
   medium: text
-  unit_type: play
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major Norwegian national romantic prose anchor while Ibsen remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -29393,25 +29393,25 @@ items:
   lifetime_path: true
   rank: 1158
   phase: 4
-- id: candidate:bloom_reviewed_dance_death
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_dance_death
-  title: The Dance of Death
+- id: candidate:wave004_alexander_kielland_garman_and_worse
+  source: wave_004_canon_audit_integration
+  source_id: wave004_alexander_kielland_garman_and_worse
+  title: Garman and Worse
   creators:
-  - August Strindberg
-  date_label: '1900'
-  sort_year: 1900
+  - Alexander Kielland
+  date_label: '1880'
+  sort_year: 1880
   section: textual_humanities
   group: literature
-  topic: scandinavian_literature
+  topic: norwegian_literature
   medium: text
-  unit_type: play
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major Norwegian realist novel while Strindberg remains represented by stronger plays.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -29443,25 +29443,25 @@ items:
   lifetime_path: true
   rank: 1160
   phase: 4
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0814_canto_am_agrave
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0814_canto_am_agrave
-  title: Canto Am&agrave
+- id: candidate:wave004_giovanni_pascoli_myricae
+  source: wave_004_canon_audit_integration
+  source_id: wave004_giovanni_pascoli_myricae
+  title: Myricae
   creators:
-  - Gabriele D'Annunzio
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1900
+  - Giovanni Pascoli
+  date_label: '1891'
+  sort_year: 1891
   section: textual_humanities
   group: literature
   topic: italian_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Adds a major modern Italian poetry anchor; removes a corrupted D'Annunzio placeholder title.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -29693,50 +29693,50 @@ items:
   lifetime_path: true
   rank: 1170
   phase: 4
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0816_the_stories_and_recollections_of_umberto_saba
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0816_the_stories_and_recollections_of_umberto_saba
-  title: The Stories and Recollections of Umberto Saba
+- id: candidate:wave004_umberto_saba_il_canzoniere
+  source: wave_004_canon_audit_integration
+  source_id: wave004_umberto_saba_il_canzoniere
+  title: Il Canzoniere
   creators:
   - Umberto Saba
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1901
+  date_label: 1921-1961
+  sort_year: 1921
   section: textual_humanities
   group: literature
   topic: italian_literature
   medium: text
-  unit_type: short_story_collection
+  unit_type: poetry_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the story, tale, story collection, or documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Replaces a secondary Saba prose row with his central poetic life-work.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 1171
   phase: 4
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0823_cuttlefish_bones
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0823_cuttlefish_bones
-  title: Cuttlefish Bones
+- id: candidate:wave004_grazia_deledda_reeds_in_the_wind
+  source: wave_004_canon_audit_integration
+  source_id: wave004_grazia_deledda_reeds_in_the_wind
+  title: Reeds in the Wind
   creators:
-  - Eugenio Montale
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1901
+  - Grazia Deledda
+  date_label: '1913'
+  sort_year: 1913
   section: textual_humanities
   group: literature
   topic: italian_literature
   medium: text
-  unit_type: poetry_selection
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major Sardinian and Nobel-recognized Italian novelist while Montale remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -29818,50 +29818,50 @@ items:
   lifetime_path: true
   rank: 1175
   phase: 4
-- id: candidate:euro_under_lit_city_mountains
-  source: wave_040_literature_europe_undercovered_language_scale
-  source_id: euro_under_lit_city_mountains
-  title: The City and the Mountains
+- id: candidate:wave004_camilo_castelo_branco_doomed_love
+  source: wave_004_canon_audit_integration
+  source_id: wave004_camilo_castelo_branco_doomed_love
+  title: Doomed Love
   creators:
-  - Eca de Queiros
-  date_label: '1901'
-  sort_year: 1901
+  - Camilo Castelo Branco
+  date_label: '1862'
+  sort_year: 1862
   section: textual_humanities
   group: literature
   topic: portuguese_literature
   medium: text
   unit_type: novel
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Undercovered European-language scale candidate for the 3000-text literature-only path; staged to improve Nordic, Baltic, Balkan, Dutch/Flemish, Czech, Polish, Hungarian, Romanian, Greek, Yiddish, Ukrainian, Irish/Welsh/Scottish, and related coverage pending source review.
+  rationale: Adds a central Portuguese Romantic novel while reducing excess Eca de Queiros coverage.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 1176
   phase: 4
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0822_the_occasions
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0822_the_occasions
-  title: The Occasions
+- id: candidate:wave004_sibilla_aleramo_a_woman
+  source: wave_004_canon_audit_integration
+  source_id: wave004_sibilla_aleramo_a_woman
+  title: A Woman
   creators:
-  - Eugenio Montale
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1901
+  - Sibilla Aleramo
+  date_label: '1906'
+  sort_year: 1906
   section: textual_humanities
   group: literature
   topic: italian_literature
   medium: text
-  unit_type: poetry_selection
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major Italian feminist modern prose anchor; trims duplicate Montale coverage.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -29893,14 +29893,14 @@ items:
   lifetime_path: true
   rank: 1178
   phase: 4
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0840_as_a_man_grows_older
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0840_as_a_man_grows_older
-  title: As a Man Grows Older
+- id: candidate:wave004_antonio_tabucchi_pereira_maintains
+  source: wave_004_canon_audit_integration
+  source_id: wave004_antonio_tabucchi_pereira_maintains
+  title: Pereira Maintains
   creators:
-  - Italo Svevo
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1902
+  - Antonio Tabucchi
+  date_label: '1994'
+  sort_year: 1994
   section: textual_humanities
   group: literature
   topic: italian_literature
@@ -29911,7 +29911,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Adds a major late twentieth-century Italian novel while Svevo remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -30196,25 +30196,25 @@ items:
   lifetime_path: true
   rank: 1190
   phase: 4
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0838_il_sistema_periodico
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0838_il_sistema_periodico
-  title: Il Sistema Periodico
+- id: candidate:wave004_dario_fo_accidental_death_of_an_anarchist
+  source: wave_004_canon_audit_integration
+  source_id: wave004_dario_fo_accidental_death_of_an_anarchist
+  title: Accidental Death of an Anarchist
   creators:
-  - Primo Levi
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1902
+  - Dario Fo
+  date_label: '1970'
+  sort_year: 1970
   section: textual_humanities
   group: literature
   topic: italian_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: play
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the play or dramatic text.
+  rationale: Adds a major Italian modern drama and political theater anchor; removes a duplicate Primo Levi row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -30473,25 +30473,25 @@ items:
   lifetime_path: true
   rank: 1201
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0844_1934
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0844_1934
-  title: '1934'
+- id: candidate:wave004_alberto_moravia_time_of_indifference
+  source: wave_004_canon_audit_integration
+  source_id: wave004_alberto_moravia_time_of_indifference
+  title: The Time of Indifference
   creators:
   - Alberto Moravia
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1903
+  date_label: '1929'
+  sort_year: 1929
   section: textual_humanities
   group: literature
   topic: italian_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Replaces a secondary Moravia title with his central debut novel.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -30548,50 +30548,50 @@ items:
   lifetime_path: true
   rank: 1204
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0843_le_donne_di_messina
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0843_le_donne_di_messina
-  title: Le Donne di Messina
+- id: candidate:wave004_elio_vittorini_conversation_in_sicily
+  source: wave_004_canon_audit_integration
+  source_id: wave004_elio_vittorini_conversation_in_sicily
+  title: Conversation in Sicily
   creators:
   - Elio Vittorini
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1903
+  date_label: 1938-1941
+  sort_year: 1938
   section: textual_humanities
   group: literature
   topic: italian_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Replaces a secondary Vittorini title with his major anti-fascist modernist novel.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 1205
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0852_our_lord_don_quixote
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0852_our_lord_don_quixote
-  title: Our Lord Don Quixote
+- id: candidate:wave004_antonio_machado_campos_de_castilla
+  source: wave_004_canon_audit_integration
+  source_id: wave004_antonio_machado_campos_de_castilla
+  title: Campos de Castilla
   creators:
-  - Miguel de Unamuno
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1903
+  - Antonio Machado
+  date_label: '1912'
+  sort_year: 1912
   section: textual_humanities
   group: literature
   topic: spanish_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: poetry_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Adds the clearest missing twentieth-century Spanish poetry anchor; Unamuno remains represented by Niebla and San Manuel Bueno, martir.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -30898,75 +30898,75 @@ items:
   lifetime_path: true
   rank: 1218
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0866_la_colmena
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0866_la_colmena
-  title: La Colmena
+- id: candidate:wave004_valle_inclan_luces_de_bohemia
+  source: wave_004_canon_audit_integration
+  source_id: wave004_valle_inclan_luces_de_bohemia
+  title: Luces de bohemia
   creators:
-  - Camilo Jose Cela
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1904
+  - Ramon del Valle-Inclan
+  date_label: '1920'
+  sort_year: 1920
   section: textual_humanities
   group: literature
   topic: spanish_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: play
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  completion_unit: Read the play or dramatic text.
+  rationale: Adds a major Spanish esperpento and modern drama anchor; removes a duplicate Cela row because The Hive remains present.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 1219
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0854_la_realidad_invisible_1917_1920_1924_libro_inedi
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0854_la_realidad_invisible_1917_1920_1924_libro_inedi
-  title: 'La Realidad Invisible (1917-1920, 1924): Libro Inedito'
+- id: candidate:wave004_juan_ramon_jimenez_platero_y_yo
+  source: wave_004_canon_audit_integration
+  source_id: wave004_juan_ramon_jimenez_platero_y_yo
+  title: Platero and I
   creators:
   - Juan Ramon Jimenez
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1904
+  date_label: '1914'
+  sort_year: 1914
   section: textual_humanities
   group: literature
   topic: spanish_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: prose_poetry
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Replaces an obscure unpublished Jimenez placeholder with his durable canonical prose-poetry anchor.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 1220
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0859_lament_for_ignacio_s_aacute
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0859_lament_for_ignacio_s_aacute
-  title: Lament for Ignacio S&aacute
+- id: candidate:wave004_ana_maria_matute_primera_memoria
+  source: wave_004_canon_audit_integration
+  source_id: wave004_ana_maria_matute_primera_memoria
+  title: Primera memoria
   creators:
-  - Federico Garcia Lorca
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1904
+  - Ana Maria Matute
+  date_label: '1959'
+  sort_year: 1959
   section: textual_humanities
   group: literature
   topic: spanish_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Adds a major postwar Spanish fiction anchor; removes a damaged Lorca title while Lorca remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -31048,25 +31048,25 @@ items:
   lifetime_path: true
   rank: 1224
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0858_the_selected_poems_of_federico_garcia_lorca
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0858_the_selected_poems_of_federico_garcia_lorca
-  title: The Selected Poems of Federico Garcia Lorca
+- id: candidate:wave004_miguel_hernandez_el_rayo_que_no_cesa
+  source: wave_004_canon_audit_integration
+  source_id: wave004_miguel_hernandez_el_rayo_que_no_cesa
+  title: El rayo que no cesa
   creators:
-  - Federico Garcia Lorca
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1904
+  - Miguel Hernandez
+  date_label: '1936'
+  sort_year: 1936
   section: textual_humanities
   group: literature
   topic: spanish_literature
   medium: text
   unit_type: poetry_selection
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Adds a major Spanish Civil War era poet while reducing redundant Lorca poetry coverage.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -31448,25 +31448,25 @@ items:
   lifetime_path: true
   rank: 1240
   phase: 5
-- id: candidate:bloom_late_033_literature_bloom_chaotic_age_reviewed_0880_ballad_of_dogs_beach_dossier_of_a_crime
-  source: wave_033_literature_bloom_chaotic_age_reviewed
-  source_id: bloom_late_033_literature_bloom_chaotic_age_reviewed_0880_ballad_of_dogs_beach_dossier_of_a_crime
-  title: 'Ballad of Dogs'' Beach: Dossier of a Crime'
+- id: candidate:wave004_almeida_garrett_travels_in_my_homeland
+  source: wave_004_canon_audit_integration
+  source_id: wave004_almeida_garrett_travels_in_my_homeland
+  title: Travels in My Homeland
   creators:
-  - Jose Cardoso Pires
-  date_label: 'A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review'
-  sort_year: 1906
+  - Almeida Garrett
+  date_label: '1846'
+  sort_year: 1846
   section: textual_humanities
   group: literature
-  topic: western_literature
+  topic: portuguese_literature
   medium: text
-  unit_type: literary_work
-  tier: contextual
+  unit_type: novel
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Bloom late-age candidate for the 3000-text global literature path; staged from the full Bloom appendix after automatic exclusion of obvious non-literary prose and duplicate variants.
+  rationale: Adds a foundational Portuguese Romantic prose work; removes a misdated Cardoso Pires row with bad topic metadata.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -31623,25 +31623,25 @@ items:
   lifetime_path: true
   rank: 1247
   phase: 5
-- id: candidate:euro_under_lit_nils
-  source: wave_040_literature_europe_undercovered_language_scale
-  source_id: euro_under_lit_nils
-  title: The Wonderful Adventures of Nils
+- id: candidate:wave004_amalie_skram_constance_ring
+  source: wave_004_canon_audit_integration
+  source_id: wave004_amalie_skram_constance_ring
+  title: Constance Ring
   creators:
-  - Selma Lagerlof
-  date_label: 1906-1907
-  sort_year: 1906
+  - Amalie Skram
+  date_label: '1885'
+  sort_year: 1885
   section: textual_humanities
   group: literature
-  topic: swedish_literature
+  topic: norwegian_literature
   medium: text
   unit_type: novel
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Undercovered European-language scale candidate for the 3000-text literature-only path; staged to improve Nordic, Baltic, Balkan, Dutch/Flemish, Czech, Polish, Hungarian, Romanian, Greek, Yiddish, Ukrainian, Irish/Welsh/Scottish, and related coverage pending source review.
+  rationale: Adds a major Scandinavian naturalist woman novelist while Lagerlof remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -35142,25 +35142,25 @@ items:
   lifetime_path: true
   rank: 1387
   phase: 5
-- id: candidate:bloom_reviewed_penal_colony
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_penal_colony
-  title: In the Penal Colony
+- id: candidate:wave004_robert_walser_jakob_von_gunten
+  source: wave_004_canon_audit_integration
+  source_id: wave004_robert_walser_jakob_von_gunten
+  title: Jakob von Gunten
   creators:
-  - Franz Kafka
-  date_label: '1919'
-  sort_year: 1919
+  - Robert Walser
+  date_label: '1909'
+  sort_year: 1909
   section: textual_humanities
   group: literature
   topic: german_literature
   medium: text
-  unit_type: short_story
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the story, tale, story collection, or documented assigned selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major Swiss-German modernist prose work while Kafka remains represented by stronger rows and a stories entry.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -35903,7 +35903,8 @@ items:
   lifetime_path: true
   rank: 1417
   phase: 5
-- source: wave_052_literature_dedupe_rank_audit_repairs
+- id: candidate:wave004_adalbert_stifter_rock_crystal
+  source: wave_004_canon_audit_integration
   section: textual_humanities
   group: literature
   medium: text
@@ -35915,17 +35916,16 @@ items:
   review_status: needs_sources
   url:
   lifetime_path: true
-  id: candidate:mandatory_siddhartha_hesse
-  source_id: mandatory_siddhartha_hesse
-  title: Siddhartha
+  source_id: wave004_adalbert_stifter_rock_crystal
+  title: Rock Crystal
   creators:
-  - Hermann Hesse
-  date_label: '1922'
-  sort_year: 1922
+  - Adalbert Stifter
+  date_label: '1845'
+  sort_year: 1845
   topic: german_literature
-  unit_type: novel
+  unit_type: novella
   tier: major
-  rationale: Major novel in german literature, included for durable literary influence, historical importance, and its role in a comprehensive global literature path centered on complete readable works.
+  rationale: Adds a major Austrian-German prose classic while Hesse remains represented by Steppenwolf and The Glass Bead Game.
   rank: 1418
   phase: 5
 - id: candidate:global_lit_call_to_arms_lu_xun
@@ -36992,14 +36992,14 @@ items:
   lifetime_path: true
   rank: 1460
   phase: 5
-- id: candidate:audit_replacement_amerika
-  source: wave_043_literature_audit_replacements
-  source_id: audit_replacement_amerika
-  title: Amerika
+- id: candidate:wave004_erich_maria_remarque_all_quiet_on_the_western_front
+  source: wave_004_canon_audit_integration
+  source_id: wave004_erich_maria_remarque_all_quiet_on_the_western_front
+  title: All Quiet on the Western Front
   creators:
-  - Franz Kafka
-  date_label: 1927
-  sort_year: 1927
+  - Erich Maria Remarque
+  date_label: '1929'
+  sort_year: 1929
   section: textual_humanities
   group: literature
   topic: german_literature
@@ -37010,7 +37010,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Audit replacement candidate for Kafka's novel corpus and modernist prose.
+  rationale: Adds a major German antiwar novel while Kafka remains heavily represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -38598,25 +38598,25 @@ items:
   lifetime_path: true
   rank: 1524
   phase: 6
-- id: candidate:bloom_reviewed_joseph_brothers
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_joseph_brothers
-  title: Joseph and His Brothers
+- id: candidate:wave004_arthur_schnitzler_dream_story
+  source: wave_004_canon_audit_integration
+  source_id: wave004_arthur_schnitzler_dream_story
+  title: Dream Story
   creators:
-  - Thomas Mann
-  date_label: 1933-1943
-  sort_year: 1933
+  - Arthur Schnitzler
+  date_label: '1926'
+  sort_year: 1926
   section: textual_humanities
   group: literature
   topic: german_literature
   medium: text
-  unit_type: novel_sequence
+  unit_type: novella
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  rationale: Adds a major Viennese modernist prose work while Thomas Mann remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -39150,14 +39150,14 @@ items:
   lifetime_path: true
   rank: 1546
   phase: 6
-- id: candidate:bloom_reviewed_yerma
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_yerma
-  title: Yerma
+- id: candidate:wave004_buero_vallejo_story_of_a_stairway
+  source: wave_004_canon_audit_integration
+  source_id: wave004_buero_vallejo_story_of_a_stairway
+  title: Story of a Stairway
   creators:
-  - Federico Garcia Lorca
-  date_label: '1934'
-  sort_year: 1934
+  - Antonio Buero Vallejo
+  date_label: '1949'
+  sort_year: 1949
   section: textual_humanities
   group: literature
   topic: spanish_literature
@@ -39168,7 +39168,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the play or dramatic text.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  rationale: Adds a major postwar Spanish drama anchor while reducing Lorca overrepresentation.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -40930,25 +40930,25 @@ items:
   lifetime_path: true
   rank: 1617
   phase: 6
-- id: candidate:euro_under_lit_barbara_faroe
-  source: wave_040_literature_europe_undercovered_language_scale
-  source_id: euro_under_lit_barbara_faroe
-  title: Barbara
+- id: candidate:wave004_arne_garborg_peace
+  source: wave_004_canon_audit_integration
+  source_id: wave004_arne_garborg_peace
+  title: Peace
   creators:
-  - Jorgen-Frantz Jacobsen
-  date_label: '1939'
-  sort_year: 1939
+  - Arne Garborg
+  date_label: '1892'
+  sort_year: 1892
   section: textual_humanities
   group: literature
-  topic: scandinavian_literature
+  topic: norwegian_literature
   medium: text
   unit_type: novel
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Undercovered European-language scale candidate for the 3000-text literature-only path; staged to improve Nordic, Baltic, Balkan, Dutch/Flemish, Czech, Polish, Hungarian, Romanian, Greek, Yiddish, Ukrainian, Irish/Welsh/Scottish, and related coverage pending source review.
+  rationale: Adds a major Nynorsk and Norwegian realist-modern prose anchor; replaces a more contextual Faroese row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -41682,25 +41682,25 @@ items:
   lifetime_path: true
   rank: 1647
   phase: 6
-- id: candidate:bloom_reviewed_good_person_szechwan
-  source: wave_030_literature_bloom_reviewed_priority
-  source_id: bloom_reviewed_good_person_szechwan
-  title: The Good Person of Szechwan
+- id: candidate:wave004_nelly_sachs_in_the_habitations_of_death
+  source: wave_004_canon_audit_integration
+  source_id: wave004_nelly_sachs_in_the_habitations_of_death
+  title: In the Habitations of Death
   creators:
-  - Bertolt Brecht
-  date_label: '1943'
-  sort_year: 1943
+  - Nelly Sachs
+  date_label: '1947'
+  sort_year: 1947
   section: textual_humanities
   group: literature
   topic: german_literature
   medium: text
-  unit_type: play
+  unit_type: poetry_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Reviewed Bloom-priority literature candidate for the 3000-text global literature path; Bloom is used as one Western reference layer, with dedupe and global-balance review still required.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Adds a major German-language Holocaust poet while reducing Brecht overrepresentation.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -41862,25 +41862,25 @@ items:
   lifetime_path: true
   rank: 1654
   phase: 6
-- id: candidate:completion_lit_caucasian_chalk_circle
-  source: wave_023_literature_modern_global_completion_spine
-  source_id: completion_lit_caucasian_chalk_circle
-  title: The Caucasian Chalk Circle
+- id: candidate:wave004_ingeborg_bachmann_malina
+  source: wave_004_canon_audit_integration
+  source_id: wave004_ingeborg_bachmann_malina
+  title: Malina
   creators:
-  - Bertolt Brecht
-  date_label: '1944'
-  sort_year: 1944
+  - Ingeborg Bachmann
+  date_label: '1971'
+  sort_year: 1971
   section: textual_humanities
   group: literature
-  topic: modern_global_drama
+  topic: german_literature
   medium: text
-  unit_type: play
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Modern global literature completion candidate for the twentieth- and twenty-first-century canon; retained as a reviewable layer inside the literature-only canon.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major postwar Austrian woman writer while Brecht remains represented by stronger plays.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -43885,13 +43885,13 @@ items:
   rank: 1733
   phase: 6
 - id: candidate:bloom_akhmatova_poems
-  source: wave_019_bloom_western_literature_spine
-  source_id: bloom_akhmatova_poems
-  title: Poems
+  source: wave_004_canon_audit_integration
+  source_id: wave004_akhmatova_requiem_selected_poems
+  title: Requiem and Selected Poems
   creators:
   - Anna Akhmatova
-  date_label: 20th century
-  sort_year: 1950
+  date_label: 1935-1961
+  sort_year: 1935
   section: textual_humanities
   group: literature
   topic: russian_literature
@@ -43902,7 +43902,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Bloom appendix coverage candidate for the Western literary spine; retained as one reference layer inside a broader global literature canon.
+  rationale: Makes Akhmatova's Requiem explicit instead of hiding it as an alias under a generic poetry row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -47624,25 +47624,25 @@ items:
   lifetime_path: true
   rank: 1881
   phase: 7
-- id: candidate:euro_under_lit_fish_can_sing
-  source: wave_040_literature_europe_undercovered_language_scale
-  source_id: euro_under_lit_fish_can_sing
-  title: The Fish Can Sing
+- id: candidate:wave004_jonas_lie_family_at_gilje
+  source: wave_004_canon_audit_integration
+  source_id: wave004_jonas_lie_family_at_gilje
+  title: The Family at Gilje
   creators:
-  - Halldor Laxness
-  date_label: '1957'
-  sort_year: 1957
+  - Jonas Lie
+  date_label: '1883'
+  sort_year: 1883
   section: textual_humanities
   group: literature
-  topic: icelandic_literature
+  topic: norwegian_literature
   medium: text
   unit_type: novel
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Undercovered European-language scale candidate for the 3000-text literature-only path; staged to improve Nordic, Baltic, Balkan, Dutch/Flemish, Czech, Polish, Hungarian, Romanian, Greek, Yiddish, Ukrainian, Irish/Welsh/Scottish, and related coverage pending source review.
+  rationale: Adds a major Norwegian realist novel while Laxness remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -55635,25 +55635,25 @@ items:
   lifetime_path: true
   rank: 2200
   phase: 8
-- id: candidate:euro_under_lit_year_hare
-  source: wave_040_literature_europe_undercovered_language_scale
-  source_id: euro_under_lit_year_hare
-  title: The Year of the Hare
+- id: candidate:wave004_edith_sodergran_september_lyre
+  source: wave_004_canon_audit_integration
+  source_id: wave004_edith_sodergran_september_lyre
+  title: September Lyre
   creators:
-  - Arto Paasilinna
-  date_label: '1975'
-  sort_year: 1975
+  - Edith Sodergran
+  date_label: '1918'
+  sort_year: 1918
   section: textual_humanities
   group: literature
-  topic: finnish_literature
+  topic: finnish_swedish_literature
   medium: text
-  unit_type: novel
-  tier: contextual
+  unit_type: poetry_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Undercovered European-language scale candidate for the 3000-text literature-only path; staged to improve Nordic, Baltic, Balkan, Dutch/Flemish, Czech, Polish, Hungarian, Romanian, Greek, Yiddish, Ukrainian, Irish/Welsh/Scottish, and related coverage pending source review.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Adds a major Finnish-Swedish modernist poet while replacing a contextual late Finnish row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -63624,25 +63624,25 @@ items:
   lifetime_path: true
   rank: 2518
   phase: 9
-- id: candidate:euro_under_lit_smilla
-  source: wave_040_literature_europe_undercovered_language_scale
-  source_id: euro_under_lit_smilla
-  title: Smilla's Sense of Snow
+- id: candidate:wave004_johannes_v_jensen_the_long_journey
+  source: wave_004_canon_audit_integration
+  source_id: wave004_johannes_v_jensen_the_long_journey
+  title: The Long Journey
   creators:
-  - Peter Hoeg
-  date_label: '1992'
-  sort_year: 1992
+  - Johannes V. Jensen
+  date_label: 1908-1922
+  sort_year: 1908
   section: textual_humanities
   group: literature
   topic: danish_literature
   medium: text
-  unit_type: novel
+  unit_type: novel_sequence
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Undercovered European-language scale candidate for the 3000-text literature-only path; staged to improve Nordic, Baltic, Balkan, Dutch/Flemish, Czech, Polish, Hungarian, Romanian, Greek, Yiddish, Ukrainian, Irish/Welsh/Scottish, and related coverage pending source review.
+  rationale: Adds a major Danish Nobel-era prose sequence while replacing a later popular-modern row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -63724,17 +63724,17 @@ items:
   lifetime_path: true
   rank: 2522
   phase: 9
-- id: candidate:globalcon_lit_emigrants
-  source: wave_041_literature_global_contemporary_diaspora_feminist_queer_scale
-  source_id: globalcon_lit_emigrants
-  title: The Emigrants
+- id: candidate:wave004_irmgard_keun_artificial_silk_girl
+  source: wave_004_canon_audit_integration
+  source_id: wave004_irmgard_keun_artificial_silk_girl
+  title: The Artificial Silk Girl
   creators:
-  - W. G. Sebald
-  date_label: '1992'
-  sort_year: 1992
+  - Irmgard Keun
+  date_label: '1932'
+  sort_year: 1932
   section: textual_humanities
   group: literature
-  topic: migration_refugee_literature
+  topic: german_literature
   medium: text
   unit_type: novel
   tier: major
@@ -63742,7 +63742,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Global contemporary, diaspora, feminist, queer, migration, refugee, postcolonial, and hybrid literary candidate for the 3000-text literature-only path; staged to improve late twentieth- and twenty-first-century coverage pending source review.
+  rationale: Adds a Weimar-era German woman novelist while Sebald remains represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -65830,25 +65830,25 @@ items:
   lifetime_path: true
   rank: 2606
   phase: 9
-- id: candidate:africa_lit_under_frangipani
-  source: wave_037_literature_africa_scale
-  source_id: africa_lit_under_frangipani
-  title: Under the Frangipani
+- id: candidate:wave004_sophia_de_mello_breyner_andresen_selected_poems
+  source: wave_004_canon_audit_integration
+  source_id: wave004_sophia_de_mello_breyner_andresen_selected_poems
+  title: 'Sophia de Mello Breyner Andresen: Selected Poems'
   creators:
-  - Mia Couto
-  date_label: '1996'
-  sort_year: 1996
+  - Sophia de Mello Breyner Andresen
+  date_label: 20th century
+  sort_year: 1944
   section: textual_humanities
   group: literature
-  topic: lusophone_african_literature
+  topic: portuguese_literature
   medium: text
-  unit_type: novel
+  unit_type: poetry_selection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Africa scale candidate for the 3000-text literature-only path; staged to improve oral epic, language-specific, drama, poetry, Lusophone, Horn, Swahili, West African, East African, Central African, Southern African, and modern-diasporic coverage pending source review.
+  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
+  rationale: Adds a major twentieth-century Portuguese poet while reducing Mia Couto overrepresentation.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -65930,14 +65930,14 @@ items:
   lifetime_path: true
   rank: 2610
   phase: 9
-- id: candidate:euro_under_lit_all_names
-  source: wave_040_literature_europe_undercovered_language_scale
-  source_id: euro_under_lit_all_names
-  title: All the Names
+- id: candidate:wave004_antonio_lobo_antunes_land_at_the_end_of_the_world
+  source: wave_004_canon_audit_integration
+  source_id: wave004_antonio_lobo_antunes_land_at_the_end_of_the_world
+  title: The Land at the End of the World
   creators:
-  - Jose Saramago
-  date_label: '1997'
-  sort_year: 1997
+  - Antonio Lobo Antunes
+  date_label: '1979'
+  sort_year: 1979
   section: textual_humanities
   group: literature
   topic: portuguese_literature
@@ -65948,7 +65948,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Undercovered European-language scale candidate for the 3000-text literature-only path; staged to improve Nordic, Baltic, Balkan, Dutch/Flemish, Czech, Polish, Hungarian, Romanian, Greek, Yiddish, Ukrainian, Irish/Welsh/Scottish, and related coverage pending source review.
+  rationale: Adds the clearest missing late twentieth-century Portuguese novelist; Saramago remains heavily represented by stronger rows.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -69061,17 +69061,17 @@ items:
   lifetime_path: true
   rank: 2735
   phase: 10
-- id: candidate:euro_under_lit_accordionist_son
-  source: wave_040_literature_europe_undercovered_language_scale
-  source_id: euro_under_lit_accordionist_son
-  title: The Accordionist's Son
+- id: candidate:wave004_carmen_martin_gaite_the_back_room
+  source: wave_004_canon_audit_integration
+  source_id: wave004_carmen_martin_gaite_the_back_room
+  title: The Back Room
   creators:
-  - Bernardo Atxaga
-  date_label: '2003'
-  sort_year: 2003
+  - Carmen Martin Gaite
+  date_label: '1978'
+  sort_year: 1978
   section: textual_humanities
   group: literature
-  topic: basque_literature
+  topic: spanish_literature
   medium: text
   unit_type: novel
   tier: major
@@ -69079,7 +69079,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Undercovered European-language scale candidate for the 3000-text literature-only path; staged to improve Nordic, Baltic, Balkan, Dutch/Flemish, Czech, Polish, Hungarian, Romanian, Greek, Yiddish, Ukrainian, Irish/Welsh/Scottish, and related coverage pending source review.
+  rationale: Adds a major post-Franco Spanish fiction anchor while retaining Atxaga coverage through Obabakoak.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -69386,25 +69386,27 @@ items:
   lifetime_path: true
   rank: 2748
   phase: 10
-- id: candidate:scale4_lit_book_chameleons
-  source: wave_028_literature_undercovered_language_traditions
-  source_id: scale4_lit_book_chameleons
-  title: The Book of Chameleons
+- id: candidate:wave004_new_portuguese_letters
+  source: wave_004_canon_audit_integration
+  source_id: wave004_new_portuguese_letters
+  title: New Portuguese Letters
   creators:
-  - Jose Eduardo Agualusa
-  date_label: '2004'
-  sort_year: 2004
+  - Maria Isabel Barreno
+  - Maria Teresa Horta
+  - Maria Velho da Costa
+  date_label: '1972'
+  sort_year: 1972
   section: textual_humanities
   group: literature
-  topic: african_literature
+  topic: portuguese_literature
   medium: text
-  unit_type: novel
+  unit_type: epistolary_prose
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Scale candidate for the 3000-text literature-only lifetime path; retained for source review, duplicate review, translation review, and coverage-balancing.
+  rationale: Adds a major Portuguese feminist literary and political text; Agualusa remains represented by A General Theory of Oblivion.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -75559,25 +75561,25 @@ items:
   lifetime_path: true
   rank: 2994
   phase: 10
-- id: candidate:globalcon_lit_kairos
-  source: wave_041_literature_global_contemporary_diaspora_feminist_queer_scale
-  source_id: globalcon_lit_kairos
-  title: Kairos
+- id: candidate:wave004_theodor_storm_rider_on_the_white_horse
+  source: wave_004_canon_audit_integration
+  source_id: wave004_theodor_storm_rider_on_the_white_horse
+  title: The Rider on the White Horse
   creators:
-  - Jenny Erpenbeck
-  date_label: '2021'
-  sort_year: 2021
+  - Theodor Storm
+  date_label: '1888'
+  sort_year: 1888
   section: textual_humanities
   group: literature
-  topic: global_contemporary_literature
+  topic: german_literature
   medium: text
-  unit_type: novel
+  unit_type: novella
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Global contemporary, diaspora, feminist, queer, migration, refugee, postcolonial, and hybrid literary candidate for the 3000-text literature-only path; staged to improve late twentieth- and twenty-first-century coverage pending source review.
+  rationale: Adds a major German realist novella while Erpenbeck remains represented by Visitation and Go, Went, Gone.
   source_status: manual_only
   review_status: needs_sources
   url:

@@ -1,6 +1,6 @@
 ---
-generated_on: '2026-05-02T21:48:29Z'
-status: wave_003_integrated_deferred_queue_open
+generated_on: '2026-05-03T00:57:23Z'
+status: wave_004_integrated_wave_005_queue_open
 items:
 - candidate: Letters from an American Farmer
   creator: J. Hector St. John de Crevecoeur
@@ -311,84 +311,329 @@ items:
   creator: Antonio Machado
   packets: [F017]
   priority: high
-  status: queued_for_wave_004_spanish_iberian_integration
+  status: integrated_wave_004_as_Campos_de_Castilla
 - candidate: Primera memoria
   creator: Ana Maria Matute
   packets: [F017]
   priority: high
-  status: queued_for_wave_004_spanish_iberian_integration
+  status: integrated_wave_004
 - candidate: The Land at the End of the World
   creator: Antonio Lobo Antunes
   packets: [F018]
   priority: high
-  status: queued_for_wave_004_portuguese_lusophone_integration
+  status: integrated_wave_004
 - candidate: Auto da Barca do Inferno
   creator: Gil Vicente
   packets: [F018]
   priority: high
-  status: queued_for_wave_004_portuguese_lusophone_integration
+  status: integrated_wave_004
 - candidate: Doomed Love
   creator: Camilo Castelo Branco
   packets: [F018]
   priority: medium_high
-  status: queued_for_wave_004_portuguese_lusophone_integration
+  status: integrated_wave_004
 - candidate: Myricae
   creator: Giovanni Pascoli
   packets: [F019]
   priority: high
-  status: queued_for_wave_004_italian_integration
+  status: integrated_wave_004
 - candidate: Il Canzoniere
   creator: Umberto Saba
   packets: [F019]
   priority: high
-  status: queued_for_wave_004_italian_integration
+  status: integrated_wave_004
 - candidate: Reeds in the Wind
   creator: Grazia Deledda
   packets: [F019]
   priority: high
-  status: queued_for_wave_004_italian_integration
+  status: integrated_wave_004
 - candidate: Walther von der Vogelweide selection
   creator: Walther von der Vogelweide
   packets: [F020]
   priority: high
-  status: queued_for_wave_004_german_language_integration
+  status: integrated_wave_004
 - candidate: The Jew's Beech
   creator: Annette von Droste-Hulshoff
   packets: [F020]
   priority: high
-  status: queued_for_wave_004_german_language_integration
+  status: integrated_wave_004
 - candidate: Green Henry
   creator: Gottfried Keller
   packets: [F020]
   priority: high
-  status: queued_for_wave_004_german_language_integration
+  status: integrated_wave_004
 - candidate: Woe from Wit
   creator: Alexander Griboyedov
   packets: [F021]
   priority: high
-  status: queued_for_wave_004_russian_integration
+  status: integrated_wave_004
 - candidate: Dark Avenues
   creator: Ivan Bunin
   packets: [F021]
   priority: high
-  status: queued_for_wave_004_russian_integration
+  status: integrated_wave_004
 - candidate: Requiem
   creator: Anna Akhmatova
   packets: [F021]
   priority: high
-  status: queued_for_wave_004_russian_integration
+  status: integrated_wave_004_as_Requiem_and_Selected_Poems
 - candidate: Fredman's Epistles
   creator: Carl Michael Bellman
   packets: [F022]
   priority: high
-  status: queued_for_wave_004_scandinavian_integration
+  status: integrated_wave_004
 - candidate: Lucky Per
   creator: Henrik Pontoppidan
   packets: [F022]
   priority: high
-  status: queued_for_wave_004_scandinavian_integration
+  status: integrated_wave_004
 - candidate: The District Governor's Daughters
   creator: Camilla Collett
   packets: [F022]
   priority: medium_high
-  status: queued_for_wave_004_scandinavian_integration
+  status: integrated_wave_004
+- candidate: The Interior Castle
+  creator: Teresa of Avila
+  packets: [F017]
+  priority: high
+  status: integrated_wave_004
+- candidate: Los Pazos de Ulloa
+  creator: Emilia Pardo Bazan
+  packets: [F017]
+  priority: high
+  status: integrated_wave_004
+- candidate: Luces de bohemia
+  creator: Ramon del Valle-Inclan
+  packets: [F017]
+  priority: high
+  status: integrated_wave_004
+- candidate: Platero and I
+  creator: Juan Ramon Jimenez
+  packets: [F017]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: El rayo que no cesa
+  creator: Miguel Hernandez
+  packets: [F017]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Story of a Stairway
+  creator: Antonio Buero Vallejo
+  packets: [F017]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: The Back Room
+  creator: Carmen Martin Gaite
+  packets: [F017]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Travels in My Homeland
+  creator: Almeida Garrett
+  packets: [F018]
+  priority: high
+  status: integrated_wave_004
+- candidate: Sophia de Mello Breyner Andresen selected poems
+  creator: Sophia de Mello Breyner Andresen
+  packets: [F018]
+  priority: high
+  status: integrated_wave_004
+- candidate: New Portuguese Letters
+  creator: Maria Isabel Barreno; Maria Teresa Horta; Maria Velho da Costa
+  packets: [F018]
+  priority: high
+  status: integrated_wave_004
+- candidate: Rime
+  creator: Guido Cavalcanti
+  packets: [F019]
+  priority: high
+  status: integrated_wave_004
+- candidate: A Woman
+  creator: Sibilla Aleramo
+  packets: [F019]
+  priority: high
+  status: integrated_wave_004
+- candidate: Pereira Maintains
+  creator: Antonio Tabucchi
+  packets: [F019]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Accidental Death of an Anarchist
+  creator: Dario Fo
+  packets: [F019]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: The Time of Indifference
+  creator: Alberto Moravia
+  packets: [F019]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Conversation in Sicily
+  creator: Elio Vittorini
+  packets: [F019]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Wilhelm Tell
+  creator: Friedrich Schiller
+  packets: [F020]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Rock Crystal
+  creator: Adalbert Stifter
+  packets: [F020]
+  priority: high
+  status: integrated_wave_004
+- candidate: The Rider on the White Horse
+  creator: Theodor Storm
+  packets: [F020]
+  priority: high
+  status: integrated_wave_004
+- candidate: Dream Story
+  creator: Arthur Schnitzler
+  packets: [F020]
+  priority: high
+  status: integrated_wave_004
+- candidate: All Quiet on the Western Front
+  creator: Erich Maria Remarque
+  packets: [F020]
+  priority: high
+  status: integrated_wave_004
+- candidate: Jakob von Gunten
+  creator: Robert Walser
+  packets: [F020]
+  priority: high
+  status: integrated_wave_004
+- candidate: In the Habitations of Death
+  creator: Nelly Sachs
+  packets: [F020]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Malina
+  creator: Ingeborg Bachmann
+  packets: [F020]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: The Artificial Silk Girl
+  creator: Irmgard Keun
+  packets: [F020]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: What Is to Be Done?
+  creator: Nikolai Chernyshevsky
+  packets: [F021]
+  priority: high
+  status: integrated_wave_004
+- candidate: Resurrection
+  creator: Leo Tolstoy
+  packets: [F021]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: The Gift
+  creator: Vladimir Nabokov
+  packets: [F021]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: The Petty Demon
+  creator: Fyodor Sologub
+  packets: [F021]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Sentimental Tales
+  creator: Mikhail Zoshchenko
+  packets: [F021]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Synnove Solbakken
+  creator: Bjornstjerne Bjornson
+  packets: [F022]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Garman and Worse
+  creator: Alexander Kielland
+  packets: [F022]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Constance Ring
+  creator: Amalie Skram
+  packets: [F022]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Peace
+  creator: Arne Garborg
+  packets: [F022]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: The Family at Gilje
+  creator: Jonas Lie
+  packets: [F022]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: September Lyre
+  creator: Edith Sodergran
+  packets: [F022]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: The Long Journey
+  creator: Johannes V. Jensen
+  packets: [F022]
+  priority: medium_high
+  status: integrated_wave_004
+- candidate: Sarat Chandra coverage
+  creator: Sarat Chandra Chattopadhyay
+  packets: [F025]
+  priority: high
+  status: queued_for_wave_005_south_asian_modern_integration
+- candidate: Iqbal coverage
+  creator: Muhammad Iqbal
+  packets: [F025]
+  priority: high
+  status: queued_for_wave_005_south_asian_modern_integration
+- candidate: Li Sao / Encountering Sorrow
+  creator: Qu Yuan
+  packets: [F026]
+  priority: high
+  status: queued_for_wave_005_chinese_sinophone_integration
+- candidate: Xunzi and Han Feizi coverage
+  creator: Xunzi; Han Feizi
+  packets: [F026]
+  priority: high
+  status: queued_for_wave_005_chinese_sinophone_integration
+- candidate: Izumi Shikibu Diary
+  creator: Izumi Shikibu
+  packets: [F027]
+  priority: high
+  status: queued_for_wave_005_japanese_integration
+- candidate: Midaregami / Tangled Hair
+  creator: Yosano Akiko
+  packets: [F027]
+  priority: high
+  status: queued_for_wave_005_japanese_integration
+- candidate: Samguk Sagi
+  creator: Kim Pu-sik
+  packets: [F028]
+  priority: high
+  status: queued_for_wave_005_korean_integration
+- candidate: Azaleas
+  creator: Kim Sowol
+  packets: [F028]
+  priority: high
+  status: queued_for_wave_005_korean_integration
+- candidate: The Book of Animals
+  creator: al-Jahiz
+  packets: [F029]
+  priority: high
+  status: queued_for_wave_005_arabic_persian_turkic_integration
+- candidate: Divan-i Hikmet
+  creator: Ahmad Yasawi
+  packets: [F029]
+  priority: high
+  status: queued_for_wave_005_arabic_persian_turkic_integration
+- candidate: Xala
+  creator: Ousmane Sembene
+  packets: [F030]
+  priority: high
+  status: queued_for_wave_005_african_integration
+- candidate: Xhosa and Indian Ocean African-language gaps
+  creator: S. E. K. Mqhayi; Jean-Joseph Rabearivelo; related traditions
+  packets: [F030]
+  priority: high
+  status: queued_for_wave_005_african_integration

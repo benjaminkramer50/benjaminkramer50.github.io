@@ -1,6 +1,6 @@
 ---
-generated_on: '2026-05-02T21:48:29Z'
-status: wave_003_integrated_validated
+generated_on: '2026-05-03T00:57:23Z'
+status: wave_004_integrated_validated
 items:
 - wave: wave_001
   added: Selected Orations and Letters
@@ -443,6 +443,384 @@ items:
   replaced_creator: T. S. Eliot
   rank: 1556
   rationale: Adds a major interwar British fiction omission; Eliot remains represented by stronger poetry and criticism rows.
+- wave: wave_004
+  added: Auto da Barca do Inferno
+  added_creator: Gil Vicente
+  replaced: The Muse Reborn
+  replaced_creator: Antonio Ferreira
+  rank: 489
+  rationale: Adds foundational Portuguese theater over a weaker contextual row.
+- wave: wave_004
+  added: The Interior Castle
+  added_creator: Teresa of Avila
+  replaced: '"Sonnets"'
+  replaced_creator: Luis de Gongora
+  rank: 527
+  rationale: Adds major Spanish mystical prose while Gongora remains represented by Soledades.
+- wave: wave_004
+  added: 'Walther von der Vogelweide: Selected Poems'
+  added_creator: Walther von der Vogelweide
+  replaced: Hermann and Dorothea
+  replaced_creator: Johann Wolfgang von Goethe
+  rank: 725
+  rationale: Adds Middle High German lyric coverage while Goethe remains heavily represented.
+- wave: wave_004
+  added: Wilhelm Tell
+  added_creator: Friedrich Schiller
+  replaced: Mary Stuart
+  replaced_creator: Friedrich Schiller
+  rank: 745
+  rationale: Replaces a secondary Schiller play with his canonical national drama.
+- wave: wave_004
+  added: Rime
+  added_creator: Guido Cavalcanti
+  replaced: The Roman Sonnets of G G Belli
+  replaced_creator: Giuseppe Gioacchino Belli
+  rank: 757
+  rationale: Adds a foundational Italian lyric poet and removes a duplicate Belli row.
+- wave: wave_004
+  added: Los Pazos de Ulloa
+  added_creator: Emilia Pardo Bazan
+  replaced: Fortunato and Jacinto
+  replaced_creator: Benito Perez Galdos
+  rank: 764
+  rationale: Adds a major Spanish realist and naturalist novel while removing a typo duplicate.
+- wave: wave_004
+  added: The Jew's Beech
+  added_creator: Annette von Droste-Hulshoff
+  replaced: Stories
+  replaced_creator: Heinrich von Kleist
+  rank: 781
+  rationale: Adds a major German woman writer and trims a generic Kleist row.
+- wave: wave_004
+  added: Green Henry
+  added_creator: Gottfried Keller
+  replaced: The Devil's Elixirs
+  replaced_creator: E. T. A. Hoffmann
+  rank: 793
+  rationale: Adds German-language realism while Hoffmann remains represented by The Sandman.
+- wave: wave_004
+  added: Fredman's Epistles
+  added_creator: Carl Michael Bellman
+  replaced: Emperor and Galilean
+  replaced_creator: Henrik Ibsen
+  rank: 801
+  rationale: Adds a foundational Swedish lyric anchor and trims Ibsen overcoverage.
+- wave: wave_004
+  added: Woe from Wit
+  added_creator: Alexander Griboyedov
+  replaced: The Double
+  replaced_creator: Fyodor Dostoevsky
+  rank: 881
+  rationale: Adds a major Russian dramatic comedy while reducing Dostoevsky saturation.
+- wave: wave_004
+  added: What Is to Be Done?
+  added_creator: Nikolai Chernyshevsky
+  replaced: A Month in the Country
+  replaced_creator: Ivan Turgenev
+  rank: 945
+  rationale: Adds an historically central Russian revolutionary novel.
+- wave: wave_004
+  added: Resurrection
+  added_creator: Leo Tolstoy
+  replaced: First Love
+  replaced_creator: Ivan Turgenev
+  rank: 966
+  rationale: Adds Tolstoy's late major novel while Turgenev remains represented by stronger fiction.
+- wave: wave_004
+  added: The Gift
+  added_creator: Vladimir Nabokov
+  replaced: The Cossacks
+  replaced_creator: Leo Tolstoy
+  rank: 977
+  rationale: Adds a central Russian-language Nabokov work while Tolstoy remains heavily represented.
+- wave: wave_004
+  added: The Petty Demon
+  added_creator: Fyodor Sologub
+  replaced: The Gambler
+  replaced_creator: Fyodor Dostoevsky
+  rank: 990
+  rationale: Adds Russian Symbolist fiction and reduces Dostoevsky overcoverage.
+- wave: wave_004
+  added: Dark Avenues
+  added_creator: Ivan Bunin
+  replaced: The Eternal Husband
+  replaced_creator: Fyodor Dostoevsky
+  rank: 1003
+  rationale: Adds a major Bunin short-fiction anchor and trims Dostoevsky duplication.
+- wave: wave_004
+  added: Sentimental Tales
+  added_creator: Mikhail Zoshchenko
+  replaced: Ivanov
+  replaced_creator: Anton Chekhov
+  rank: 1071
+  rationale: Adds Soviet satirical prose while Chekhov remains represented by stronger rows.
+- wave: wave_004
+  added: The District Governor's Daughters
+  added_creator: Camilla Collett
+  replaced: The Lady from the Sea
+  replaced_creator: Henrik Ibsen
+  rank: 1082
+  rationale: Adds a major Norwegian feminist novel and trims Ibsen overcoverage.
+- wave: wave_004
+  added: Lucky Per
+  added_creator: Henrik Pontoppidan
+  replaced: To Damascus
+  replaced_creator: August Strindberg
+  rank: 1146
+  rationale: Adds a central Danish realist novel while Strindberg remains represented by stronger plays.
+- wave: wave_004
+  added: Synnove Solbakken
+  added_creator: Bjornstjerne Bjornson
+  replaced: When We Dead Awaken
+  replaced_creator: Henrik Ibsen
+  rank: 1152
+  rationale: Adds a major Norwegian national prose anchor while reducing Ibsen saturation.
+- wave: wave_004
+  added: Garman and Worse
+  added_creator: Alexander Kielland
+  replaced: The Dance of Death
+  replaced_creator: August Strindberg
+  rank: 1159
+  rationale: Adds Norwegian realism and trims Strindberg overcoverage.
+- wave: wave_004
+  added: Myricae
+  added_creator: Giovanni Pascoli
+  replaced: Canto Am&agrave
+  replaced_creator: Gabriele D'Annunzio
+  rank: 1161
+  rationale: Adds a major Italian poetry anchor and removes a corrupted placeholder title.
+- wave: wave_004
+  added: Il Canzoniere
+  added_creator: Umberto Saba
+  replaced: The Stories and Recollections of Umberto Saba
+  replaced_creator: Umberto Saba
+  rank: 1171
+  rationale: Replaces secondary Saba prose with his central poetic work.
+- wave: wave_004
+  added: Reeds in the Wind
+  added_creator: Grazia Deledda
+  replaced: Cuttlefish Bones
+  replaced_creator: Eugenio Montale
+  rank: 1172
+  rationale: Adds a major Italian novelist while Montale remains represented elsewhere.
+- wave: wave_004
+  added: Doomed Love
+  added_creator: Camilo Castelo Branco
+  replaced: The City and the Mountains
+  replaced_creator: Eca de Queiros
+  rank: 1176
+  rationale: Adds central Portuguese Romantic fiction and reduces Eca overcoverage.
+- wave: wave_004
+  added: A Woman
+  added_creator: Sibilla Aleramo
+  replaced: The Occasions
+  replaced_creator: Eugenio Montale
+  rank: 1177
+  rationale: Adds Italian feminist modern prose while trimming duplicate Montale coverage.
+- wave: wave_004
+  added: Pereira Maintains
+  added_creator: Antonio Tabucchi
+  replaced: As a Man Grows Older
+  replaced_creator: Italo Svevo
+  rank: 1179
+  rationale: Adds a major late twentieth-century Italian novel while Svevo remains represented.
+- wave: wave_004
+  added: Accidental Death of an Anarchist
+  added_creator: Dario Fo
+  replaced: Il Sistema Periodico
+  replaced_creator: Primo Levi
+  rank: 1191
+  rationale: Adds Italian political theater and removes a duplicate Primo Levi row.
+- wave: wave_004
+  added: The Time of Indifference
+  added_creator: Alberto Moravia
+  replaced: '1934'
+  replaced_creator: Alberto Moravia
+  rank: 1202
+  rationale: Replaces a secondary Moravia title with his central debut novel.
+- wave: wave_004
+  added: Conversation in Sicily
+  added_creator: Elio Vittorini
+  replaced: Le Donne di Messina
+  replaced_creator: Elio Vittorini
+  rank: 1205
+  rationale: Replaces a secondary Vittorini title with his major anti-fascist novel.
+- wave: wave_004
+  added: Campos de Castilla
+  added_creator: Antonio Machado
+  replaced: Our Lord Don Quixote
+  replaced_creator: Miguel de Unamuno
+  rank: 1206
+  rationale: Adds the clearest missing twentieth-century Spanish poetry anchor.
+- wave: wave_004
+  added: Luces de bohemia
+  added_creator: Ramon del Valle-Inclan
+  replaced: La Colmena
+  replaced_creator: Camilo Jose Cela
+  rank: 1219
+  rationale: Adds major Spanish modern drama and removes a duplicate Cela row.
+- wave: wave_004
+  added: Platero and I
+  added_creator: Juan Ramon Jimenez
+  replaced: La Realidad Invisible
+  replaced_creator: Juan Ramon Jimenez
+  rank: 1220
+  rationale: Replaces an obscure Jimenez placeholder with a durable canonical anchor.
+- wave: wave_004
+  added: Primera memoria
+  added_creator: Ana Maria Matute
+  replaced: Lament for Ignacio Sa
+  replaced_creator: Federico Garcia Lorca
+  rank: 1221
+  rationale: Adds postwar Spanish fiction and removes a damaged Lorca title.
+- wave: wave_004
+  added: El rayo que no cesa
+  added_creator: Miguel Hernandez
+  replaced: The Selected Poems of Federico Garcia Lorca
+  replaced_creator: Federico Garcia Lorca
+  rank: 1225
+  rationale: Adds a major Spanish Civil War era poet and trims Lorca overcoverage.
+- wave: wave_004
+  added: Travels in My Homeland
+  added_creator: Almeida Garrett
+  replaced: "Ballad of Dogs' Beach: Dossier of a Crime"
+  replaced_creator: Jose Cardoso Pires
+  rank: 1241
+  rationale: Adds Portuguese Romantic prose and removes a misdated bad-topic row.
+- wave: wave_004
+  added: Constance Ring
+  added_creator: Amalie Skram
+  replaced: The Wonderful Adventures of Nils
+  replaced_creator: Selma Lagerlof
+  rank: 1248
+  rationale: Adds a major Scandinavian naturalist woman novelist.
+- wave: wave_004
+  added: Rock Crystal
+  added_creator: Adalbert Stifter
+  replaced: Siddhartha
+  replaced_creator: Hermann Hesse
+  rank: 1418
+  rationale: Adds Austrian-German prose while Hesse remains represented by stronger rows.
+- wave: wave_004
+  added: Jakob von Gunten
+  added_creator: Robert Walser
+  replaced: In the Penal Colony
+  replaced_creator: Franz Kafka
+  rank: 1388
+  rationale: Adds Swiss-German modernist prose while Kafka remains represented by stronger rows and a stories entry.
+- wave: wave_004
+  added: All Quiet on the Western Front
+  added_creator: Erich Maria Remarque
+  replaced: Amerika
+  replaced_creator: Franz Kafka
+  rank: 1461
+  rationale: Adds a major German antiwar novel while Kafka remains heavily represented.
+- wave: wave_004
+  added: Dream Story
+  added_creator: Arthur Schnitzler
+  replaced: Joseph and His Brothers
+  replaced_creator: Thomas Mann
+  rank: 1525
+  rationale: Adds Viennese modernist prose while Mann remains represented by stronger rows.
+- wave: wave_004
+  added: Story of a Stairway
+  added_creator: Antonio Buero Vallejo
+  replaced: Yerma
+  replaced_creator: Federico Garcia Lorca
+  rank: 1547
+  rationale: Adds postwar Spanish drama while Lorca remains represented by stronger rows.
+- wave: wave_004
+  added: Peace
+  added_creator: Arne Garborg
+  replaced: Barbara
+  replaced_creator: Jorgen-Frantz Jacobsen
+  rank: 1618
+  rationale: Adds a major Nynorsk and Norwegian realist-modern prose anchor.
+- wave: wave_004
+  added: In the Habitations of Death
+  added_creator: Nelly Sachs
+  replaced: The Good Person of Szechwan
+  replaced_creator: Bertolt Brecht
+  rank: 1648
+  rationale: Adds a major German-language Holocaust poet while reducing Brecht saturation.
+- wave: wave_004
+  added: Malina
+  added_creator: Ingeborg Bachmann
+  replaced: The Caucasian Chalk Circle
+  replaced_creator: Bertolt Brecht
+  rank: 1655
+  rationale: Adds a major postwar Austrian woman writer while Brecht remains represented.
+- wave: wave_004
+  added: Requiem and Selected Poems
+  added_creator: Anna Akhmatova
+  replaced: Poems
+  replaced_creator: Anna Akhmatova
+  rank: 1734
+  rationale: Makes Akhmatova's Requiem explicit instead of hiding it under a generic title.
+- wave: wave_004
+  added: The Family at Gilje
+  added_creator: Jonas Lie
+  replaced: The Fish Can Sing
+  replaced_creator: Halldor Laxness
+  rank: 1882
+  rationale: Adds Norwegian realism while Laxness remains represented by stronger rows.
+- wave: wave_004
+  added: September Lyre
+  added_creator: Edith Sodergran
+  replaced: The Year of the Hare
+  replaced_creator: Arto Paasilinna
+  rank: 2201
+  rationale: Adds Finnish-Swedish modernist poetry over a contextual late Finnish row.
+- wave: wave_004
+  added: The Long Journey
+  added_creator: Johannes V. Jensen
+  replaced: Smilla's Sense of Snow
+  replaced_creator: Peter Hoeg
+  rank: 2519
+  rationale: Adds a major Danish prose sequence over a later popular-modern row.
+- wave: wave_004
+  added: The Artificial Silk Girl
+  added_creator: Irmgard Keun
+  replaced: The Emigrants
+  replaced_creator: W. G. Sebald
+  rank: 2523
+  rationale: Adds Weimar-era German woman novelist coverage while Sebald remains represented.
+- wave: wave_004
+  added: 'Sophia de Mello Breyner Andresen: Selected Poems'
+  added_creator: Sophia de Mello Breyner Andresen
+  replaced: Under the Frangipani
+  replaced_creator: Mia Couto
+  rank: 2607
+  rationale: Adds a major Portuguese poet while reducing Mia Couto overcoverage.
+- wave: wave_004
+  added: The Land at the End of the World
+  added_creator: Antonio Lobo Antunes
+  replaced: All the Names
+  replaced_creator: Jose Saramago
+  rank: 2611
+  rationale: Adds the clearest missing late twentieth-century Portuguese novelist.
+- wave: wave_004
+  added: The Back Room
+  added_creator: Carmen Martin Gaite
+  replaced: The Accordionist's Son
+  replaced_creator: Bernardo Atxaga
+  rank: 2736
+  rationale: Adds post-Franco Spanish fiction while Atxaga remains represented by Obabakoak.
+- wave: wave_004
+  added: New Portuguese Letters
+  added_creator: Maria Isabel Barreno; Maria Teresa Horta; Maria Velho da Costa
+  replaced: The Book of Chameleons
+  replaced_creator: Jose Eduardo Agualusa
+  rank: 2749
+  rationale: Adds a major Portuguese feminist literary-political text.
+- wave: wave_004
+  added: The Rider on the White Horse
+  added_creator: Theodor Storm
+  replaced: Kairos
+  replaced_creator: Jenny Erpenbeck
+  rank: 2995
+  rationale: Adds a major German realist novella while Erpenbeck remains represented.
 alias_repairs:
 - wave: wave_001
   item: Tales
