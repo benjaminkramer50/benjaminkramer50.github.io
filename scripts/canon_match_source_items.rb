@@ -53,6 +53,16 @@ def normalize_creator(value)
     .strip
 end
 
+def source_title_norms(value)
+  raw = value.to_s
+  stripped_from = raw.sub(/\A\s*from\s+/i, "")
+  [
+    [normalize_text(raw), nil],
+    [normalize_text(stripped_from), "from_prefix_stripped"]
+  ].reject { |normalized, _suffix| normalized.empty? }
+   .uniq { |normalized, _suffix| normalized }
+end
+
 def creator_matches?(source_creator, candidate_creator)
   source = normalize_creator(source_creator)
   candidate = normalize_creator(candidate_creator)
@@ -100,7 +110,7 @@ source_items.each do |item|
   source_id = item.fetch("source_id")
   raw_title = item.fetch("raw_title")
   raw_creator = item.fetch("raw_creator", "")
-  title_norm = normalize_text(raw_title)
+  title_norms = source_title_norms(raw_title)
   match_status = item.fetch("match_status", "")
   existing_work_id = item.fetch("matched_work_id", "")
 
@@ -125,11 +135,15 @@ source_items.each do |item|
   end
 
   candidates = []
-  title_index[title_norm].each do |work|
-    candidates << [work, "exact_normalized_title"]
-  end
-  alias_index[title_norm].each do |work|
-    candidates << [work, "exact_alias"]
+  title_norms.each do |title_norm, suffix|
+    title_index[title_norm].each do |work|
+      rule = suffix ? "exact_normalized_title_#{suffix}" : "exact_normalized_title"
+      candidates << [work, rule]
+    end
+    alias_index[title_norm].each do |work|
+      rule = suffix ? "exact_alias_#{suffix}" : "exact_alias"
+      candidates << [work, rule]
+    end
   end
   candidates.uniq! { |work, rule| [work["work_id"], rule] }
 
