@@ -2,8 +2,8 @@
 
 - generated_on: 2026-05-03
 - registered_sources: 72
-- source_item_rows: 2712
-- evidence_rows: 240
+- source_item_rows: 4298
+- evidence_rows: 356
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -72,8 +72,8 @@
 | `norton_american_lit_10e_post1865` | E011 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `norton_american_lit_10e_pre1865` | E011 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `norton_english_lit_11e_full_2024` | E010 | ready_public_toc | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
-| `norton_world_lit_5e_full_post1650` | E004 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `norton_world_lit_5e_full_pre1650` | E004 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `norton_world_lit_5e_full_post1650` | E004;X026 | extracted | 533 | 54 | 40 | 0 | 14 | 479 | 0 | 0 |
+| `norton_world_lit_5e_full_pre1650` | E004;X026 | extracted | 1053 | 62 | 28 | 0 | 34 | 991 | 0 | 0 |
 | `osta_2_old_spanish_textual_archive` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `oxford_modern_indian_poetry_1998` | E015;X024;X025 | in_progress | 124 | 0 | 0 | 0 | 0 | 124 | 0 | 0 |
 | `oxford_worlds_classics_online` | E007 | in_progress | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -107,8 +107,6 @@
 - `minnereden_lovesongs_digital` (E009; metadata_ready)
 - `norton_american_lit_10e_post1865` (E011; in_progress)
 - `norton_american_lit_10e_pre1865` (E011; in_progress)
-- `norton_world_lit_5e_full_post1650` (E004; in_progress)
-- `norton_world_lit_5e_full_pre1650` (E004; in_progress)
 - `osta_2_old_spanish_textual_archive` (E009; metadata_ready)
 - `princeton_humanistic_studies_catalog` (E007; context_only)
 - `wimmer_medieval_german_anthology` (E009; metadata_only)
