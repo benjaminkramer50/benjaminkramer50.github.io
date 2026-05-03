@@ -11,7 +11,7 @@ Last updated: 2026-05-03
 | Phase S1H | Hardening pass after workflow review | Active next | Controlled values, source-class policy, packet status, source-fetch logs, stronger validation, and idempotent upserts |
 | Phase S2 | Source registry triage and prioritized extraction | In progress | E001-E012 registered; X001-X006 pilot ingested; X007-X012 feasibility complete but rows held pending hardening |
 | Phase S3 | Continuous normalize, dedupe, and relations | Started | X013/X014 generated review queues, reviewed decisions, and 8 provisional source-backed candidates |
-| Phase S4 | Evidence policy and source weighting | Pending | Source weights must be derived centrally; source-item weights are provisional observations only |
+| Phase S4 | Evidence policy and source weighting | Started | Source weights draft exists; X017 generated 9 provisional policy-aware evidence rows; scoring not integrated |
 | Phase S5 | First-class taxonomy and boundary policy | Pending | Required before boundary-sensitive rows are locked |
 | Phase S6 | Coverage targets, scoring, and coverage matrix | Pending | Current items and omissions scored together after coverage targets exist |
 | Phase S7 | Period, region, form, sentinel, and intersection validation | Pending | B/C/D/F/I packets challenge scored universe, not direct replacement |
@@ -51,7 +51,7 @@ Last updated: 2026-05-03
 |---|---|---|---|
 | X Batch 1 | X001, X002, X003, X004, X005, X006 | Pilot ingested | 57 pilot source items and 47 pilot evidence rows; full extraction/matching pending |
 | X Batch 2 | X007, X008, X009, X010, X011, X012 | Feasibility complete; rows held | Classical editions/reference, world/American anthologies, medieval metadata, and Bloom recovery/blocker decisions |
-| X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Started | X013 candidate rows created; remaining work is evidence generation, source-container policy, omission queue, and replacement candidates |
+| X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Started | X013 candidate rows and X017 provisional evidence rows created; remaining work is source-debt closure rules, source-container policy, omission queue, and replacement candidates |
 
 ## Active Structural Debt
 
@@ -62,7 +62,7 @@ Last updated: 2026-05-03
 - E004-E006: Norton, Longman, and Bedford layers are registered, but line-item TOC extraction remains pending and access-limited.
 - E007-E012: 38 additional source layers are registered for core curricula, classics, medieval Europe, English/British, American, and African American literature.
 - Source-item gate: source registry rows alone do not support additions. Each layer still needs extracted source items, creator-aware matching, and evidence rows.
-- Evidence gate: access metadata, corpus records, bibliographic databases, internal accepted records, and packet outputs cannot count as external canon support until source-class weighting policy exists.
+- Evidence gate: access metadata, corpus records, bibliographic databases, internal accepted records, and packet outputs cannot count as external canon support until source-class weighting policy is integrated into scoring. X017 added 9 provisional evidence rows with `needs_followup`; this does not close source debt.
 - Matching gate: source rows must pass exact/normalized/creator-aware/alias/contained-work/selection/series matching before being called true omissions. X013 has 8 provisional source-backed candidate rows, 1 existing-selection representation, and 1 out-of-scope media boundary; none are public-path additions.
 - Relation gate: selection, contained-work, series, variant, duplicate, and adaptation decisions must be reviewed before final relation rows are written. X014 has 41 reviewed relation decisions; final relation rows remain blocked until source-container and selection-scope policy exists.
 - Taxonomy gate: public category reports are still keyword-inferred; first-class region, language/tradition, form, selection, and boundary fields are required.

@@ -35,3 +35,5 @@ Corpus rows, catalog records, edition-series metadata, and access metadata suppo
 Match/relation review decisions are routing records. A `create_source_backed_candidate` decision means "create a candidate row for later evidence, boundary, duplicate, and scoring review," not "add this work to the public path."
 
 `scripts/canon_materialize_reviewed_candidates.rb` turns reviewed match decisions into provisional candidate rows and updates source-item, creator, work-creator, and alias tables. It does not generate evidence rows, write final relation rows, or change the public path.
+
+`scripts/canon_generate_policy_aware_evidence.rb` creates missing provisional evidence rows only for source items with valid matched work IDs and supported match statuses. It reads `canon_source_weights.yml`, caps representative selections and non-scoring bibliographic sources, and leaves generated rows as `needs_followup`.

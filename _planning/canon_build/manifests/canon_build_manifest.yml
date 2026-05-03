@@ -34,7 +34,7 @@ artifacts:
   match_review_decisions: generated_x013_reviewed
   relation_review_queue: generated_x014
   relation_review_decisions: generated_x014_reviewed
-  evidence: e001_ingested_x001_x006_pilot_ingested
+  evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows
   source_weights: draft_policy_created
   scores: initialized_empty
   replacement_candidates: initialized_empty
@@ -53,6 +53,7 @@ current_counts:
   work_creators: 3015
   aliases: 445
   source_items: 118
+  evidence_rows: 117
   source_items_matched_candidate: 8
   source_items_represented_by_selection: 8
   source_items_out_of_scope: 1
@@ -101,6 +102,7 @@ source_item_matching_phase_x013_x014:
   match_review_decision_rows: 10
   source_backed_candidate_rows_created: 8
   source_items_updated_from_review_decisions: 9
+  policy_aware_evidence_rows_generated: 9
   relation_review_queue_rows: 41
   relation_review_decision_rows: 41
   match_decision_summary:
