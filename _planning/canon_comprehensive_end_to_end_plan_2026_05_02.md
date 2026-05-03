@@ -18,6 +18,8 @@ Direct content replacement is paused. F031-F034 and all later B/C/D/F packets ma
 
 Execution update: E001-E012 are registered in the source universe. Only E001 currently has source-item and evidence rows because it is local accepted-record evidence. E002/E003 remain blocked by missing Bloom artifacts, and E004-E012 now need source-item extraction before they can support scoring or replacement transactions.
 
+Source-item extraction is tracked separately in `_planning/canon_build/source_item_extraction_plan.md`. The first active extraction batch is X001-X006: classical open metadata, Library of America, medieval public corpora, English/British anthology TOCs, university/reference lists, and African American anthology layers.
+
 The new source of truth is four-layered:
 
 1. Source universe: source registry, source items, source scope, and citation/provenance metadata.

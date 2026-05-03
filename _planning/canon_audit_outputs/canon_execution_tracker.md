@@ -43,6 +43,14 @@ Last updated: 2026-05-03
 | E Batch 4 | E019, E020, E021, E022, E023, E024 | Same structured evidence output |
 | E Batch 5 | E025, E026, E027, E028, E029, E030 | Same structured evidence output |
 
+## Source-Item Extraction Batches
+
+| Batch | Packets | Status | Output Contract |
+|---|---|---|---|
+| X Batch 1 | X001, X002, X003, X004, X005, X006 | Running | Source-item feasibility, pilot rows, blockers, and alias/containment risks |
+| X Batch 2 | X007, X008, X009, X010, X011, X012 | Planned | Remaining registered source layers and Bloom recovery/blocker decisions |
+| X Batch 3 | X013, X014, X015, X016, X017, X018 | Planned | Matching, relation creation, evidence generation, weighting, omission queue, and replacement candidates |
+
 ## Active Structural Debt
 
 - Source gate: 2,939 source-debt rows and 2,938 `manual_only` rows remain; no new row should enter as `manual_only`.
