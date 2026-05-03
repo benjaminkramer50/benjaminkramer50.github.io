@@ -44,6 +44,8 @@ HEADER_REQUIREMENTS = {
   "source_registry" => ["source_id", "source_title", "source_type", "source_scope", "source_date", "source_citation", "extraction_status"],
   "source_items" => ["source_id", "source_item_id", "raw_title", "evidence_type", "supports", "match_status"],
   "work_candidates" => ["work_id", "candidate_status", "canonical_title", "creator_display", "date_label", "sort_year", "date_precision", "macro_region", "literary_tradition", "form_bucket", "source_status", "review_status"],
+  "creators" => ["creator_id", "creator_display", "normalized_name"],
+  "work_creators" => ["work_id", "creator_id", "creator_role", "attribution_status"],
   "match_candidates" => ["source_item_id", "source_id", "raw_title", "candidate_work_id", "match_rule", "confidence", "recommendation"],
   "match_review_queue" => ["source_item_id", "source_id", "raw_title", "issue_type", "recommendation"],
   "match_review_decisions" => ["source_item_id", "source_id", "raw_title", "decision", "next_action", "reviewer_status"],
@@ -148,6 +150,8 @@ if failures.empty?
   registry_rows = read_tsv(TABLE_FILES["source_registry"])
   source_item_rows = read_tsv(TABLE_FILES["source_items"])
   work_rows = read_tsv(TABLE_FILES["work_candidates"])
+  creator_rows = read_tsv(TABLE_FILES["creators"])
+  work_creator_rows = read_tsv(TABLE_FILES["work_creators"])
   evidence_rows = read_tsv(TABLE_FILES["evidence"])
   relation_rows = read_tsv(TABLE_FILES["relations"])
   match_candidate_rows = read_tsv(TABLE_FILES["match_candidates"])
@@ -162,6 +166,8 @@ if failures.empty?
     "source_registry" => registry_rows,
     "source_items" => source_item_rows,
     "work_candidates" => work_rows,
+    "creators" => creator_rows,
+    "work_creators" => work_creator_rows,
     "relations" => relation_rows,
     "match_candidates" => match_candidate_rows,
     "match_review_queue" => match_review_rows,
@@ -175,6 +181,7 @@ if failures.empty?
   source_ids = registry_rows.map { |row| row["source_id"] }.to_set
   source_item_ids = source_item_rows.map { |row| row["source_item_id"] }.to_set
   work_ids = work_rows.map { |row| row["work_id"] }.to_set
+  creator_ids = creator_rows.map { |row| row["creator_id"] }.to_set
   proposed_work_ids = match_decision_rows.map { |row| row["proposed_work_id"].to_s }.reject(&:empty?).to_set
 
   source_weights = YAML.load_file(TABLE_FILES["source_weights"])
@@ -221,6 +228,7 @@ if failures.empty?
     "source_registry.source_id" => duplicate_values(registry_rows, "source_id"),
     "source_items.source_item_id" => duplicate_values(source_item_rows, "source_item_id"),
     "work_candidates.work_id" => duplicate_values(work_rows, "work_id"),
+    "creators.creator_id" => duplicate_values(creator_rows, "creator_id"),
     "evidence.evidence_id" => duplicate_values(evidence_rows, "evidence_id")
   }.each do |label, duplicates|
     if duplicates.empty?
@@ -247,6 +255,21 @@ if failures.empty?
     examples = unknown_source_item_works.first(10).map { |row| "#{row["source_item_id"]}:#{row["matched_work_id"]}" }
     failures << "source_items rows reference unknown matched work IDs: #{examples.join(", ")}"
     checks << ["integrity:source_items.matched_work_id", "FAIL", "#{unknown_source_item_works.size} unknown references"]
+  end
+
+  work_creator_pair_counts = work_creator_rows.each_with_object(Hash.new(0)) do |row, counts|
+    counts[[row["work_id"], row["creator_id"]]] += 1
+  end
+  duplicate_work_creator_pairs = work_creator_pair_counts.select { |_pair, count| count > 1 }
+  unknown_work_creator_works = work_creator_rows.reject { |row| work_ids.include?(row["work_id"]) }
+  unknown_work_creator_creators = work_creator_rows.reject { |row| creator_ids.include?(row["creator_id"]) }
+  if duplicate_work_creator_pairs.empty? && unknown_work_creator_works.empty? && unknown_work_creator_creators.empty?
+    checks << ["integrity:work_creators.refs", "PASS", "all work-creator refs exist and pairs are unique"]
+  else
+    failures << "work_creators has duplicate work/creator pairs: #{duplicate_work_creator_pairs.keys.first(10).map { |pair| pair.join(":") }.join(", ")}" unless duplicate_work_creator_pairs.empty?
+    failures << "work_creators references unknown works: #{unknown_work_creator_works.first(10).map { |row| row["work_id"] }.join(", ")}" unless unknown_work_creator_works.empty?
+    failures << "work_creators references unknown creators: #{unknown_work_creator_creators.first(10).map { |row| row["creator_id"] }.join(", ")}" unless unknown_work_creator_creators.empty?
+    checks << ["integrity:work_creators.refs", "FAIL", "#{duplicate_work_creator_pairs.size} duplicate pairs; #{unknown_work_creator_works.size} unknown works; #{unknown_work_creator_creators.size} unknown creators"]
   end
 
   unknown_evidence_sources = evidence_rows.reject { |row| source_ids.include?(row["source_id"]) }

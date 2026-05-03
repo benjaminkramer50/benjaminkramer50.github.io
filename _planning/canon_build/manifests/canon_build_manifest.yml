@@ -25,9 +25,9 @@ gates:
   metadata_access_rows_do_not_close_canon_support_debt: true
 artifacts:
   source_registry: e001_e012_registered
-  source_items: e001_ingested_x001_x006_pilot_ingested
-  work_candidates: bootstrapped_from_current_path
-  aliases: bootstrapped_from_current_path
+  source_items: e001_ingested_x001_x006_pilot_ingested_x013_candidate_links_materialized
+  work_candidates: bootstrapped_from_current_path_plus_x013_source_candidates
+  aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases
   relations: initialized_empty
   match_candidates: generated_x013
   match_review_queue: generated_x013
@@ -39,13 +39,23 @@ artifacts:
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
-  creators: bootstrapped_from_current_path
+  creators: bootstrapped_from_current_path_plus_x013_candidate_creators
 bootstrap_counts:
   work_candidates: 3000
   creators: 2000
   work_creators: 3007
   aliases: 443
   path_selection_rows: 3000
+current_counts:
+  work_candidates: 3008
+  source_backed_candidates: 8
+  creators: 2006
+  work_creators: 3015
+  aliases: 445
+  source_items: 118
+  source_items_matched_candidate: 8
+  source_items_represented_by_selection: 8
+  source_items_out_of_scope: 1
 source_crosswalk_batch_e001_e006:
   source_registry_rows: 9
   e001_source_items: 61
@@ -89,11 +99,13 @@ source_item_matching_phase_x013_x014:
   match_candidate_rows: 108
   match_review_queue_rows: 10
   match_review_decision_rows: 10
+  source_backed_candidate_rows_created: 8
+  source_items_updated_from_review_decisions: 9
   relation_review_queue_rows: 41
   relation_review_decision_rows: 41
   match_decision_summary:
     represented_by_existing_selection: 1
     create_source_backed_candidate_actions: 8
     out_of_scope_media_boundary: 1
-  status: review_decisions_generated_candidates_not_integrated
+  status: candidate_rows_created_evidence_not_generated
   direct_replacements: 0

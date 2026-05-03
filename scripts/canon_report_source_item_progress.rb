@@ -40,8 +40,8 @@ report << "- evidence_types: #{all_evidence_types.join(", ")}"
 report << ""
 report << "## By Source"
 report << ""
-report << "| Source ID | Packet | Extraction Status | Items | Evidence | Matched Current | Represented | Unmatched | Out Of Scope | Unresolved |"
-report << "|---|---:|---|---:|---:|---:|---:|---:|---:|---:|"
+report << "| Source ID | Packet | Extraction Status | Items | Evidence | Matched Current | Matched Candidate | Represented | Unmatched | Out Of Scope | Unresolved |"
+report << "|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|"
 
 registry_rows.sort_by { |row| row["source_id"].to_s }.each do |source|
   rows = items_by_source.fetch(source["source_id"], [])
@@ -55,6 +55,7 @@ registry_rows.sort_by { |row| row["source_id"].to_s }.each do |source|
     rows.size,
     evidence_by_source.fetch(source["source_id"], []).size,
     status_counts.fetch("matched_current_path", 0),
+    status_counts.fetch("matched_candidate", 0),
     status_counts.fetch("represented_by_selection", 0),
     status_counts.fetch("unmatched", 0),
     status_counts.fetch("out_of_scope", 0),
