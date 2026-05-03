@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: replacement_pairings_x047_blocked_pairs_generated
+status: replacement_pair_checks_x048_annotated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -516,4 +516,14 @@ replacement_pairings_x047:
   ready_for_review_rows: 0
   add_candidates_paired: 5
   high_cut_review_candidates_paired: 243
+  direct_replacements: 0
+replacement_pair_checks_x048:
+  status: blocked_pair_checks_annotated
+  replacement_candidate_rows: 1215
+  duplicate_generic_cluster_review_required: 625
+  duplicate_pending_or_author_cluster_review_required: 580
+  duplicate_cluster_review_required: 10
+  cut_chronology_issue_review_required: 170
+  cut_boundary_flag_review_required: 55
+  ready_for_review_rows: 0
   direct_replacements: 0

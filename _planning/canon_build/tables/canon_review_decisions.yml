@@ -240,6 +240,21 @@ decisions:
       - run duplicate_author_cluster_chronology_boundary_checks_for_pairs
       - promote_only_reviewed_pairs_to_ready_for_review
     public_path_effect: none
+  - decision_id: x048_pair_check_annotations_001
+    decision_type: blocked_pair_check_annotation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_replacement_candidates.tsv
+    decision: annotate_blocked_pairs_with_cut_side_risk_signals
+    rationale: >
+      Blocked pair rows need auditable reasons for remaining blocked. X048 adds
+      duplicate-cluster, generic-title, chronology, boundary, source-debt, add-year,
+      cut-year, and cut-risk signals directly to the replacement table fields.
+    scoring_effect: no_ready_transactions_cut_scores_still_uncomputed
+    required_followup:
+      - compute_cut_side_scores_or_select_manual_review_subset
+      - resolve_generic_duplicate_cluster_review_before_any_cut
+      - keep_all_pairs_blocked_until_checks_are_resolved
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002

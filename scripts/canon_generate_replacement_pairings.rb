@@ -9,6 +9,7 @@ TABLE_DIR = File.join(ROOT, "_planning", "canon_build", "tables")
 
 REPLACEMENT_CANDIDATES_PATH = File.join(TABLE_DIR, "canon_replacement_candidates.tsv")
 CUT_CANDIDATES_PATH = File.join(TABLE_DIR, "canon_cut_candidates.tsv")
+WORK_CANDIDATES_PATH = File.join(TABLE_DIR, "canon_work_candidates.tsv")
 
 HEADERS = %w[
   transaction_id add_work_id add_title add_creator cut_work_id cut_title cut_creator
@@ -28,18 +29,43 @@ def write_tsv(path, headers, rows)
   end
 end
 
-add_prefilter_rows = read_tsv(REPLACEMENT_CANDIDATES_PATH)
-                  .select { |row| row.fetch("gate_status") == "blocked" && row.fetch("cut_work_id").to_s.empty? }
+replacement_rows = read_tsv(REPLACEMENT_CANDIDATES_PATH)
+add_prefilter_rows = replacement_rows
+                     .select { |row| row.fetch("gate_status") == "blocked" && row.fetch("cut_work_id").to_s.empty? }
+if add_prefilter_rows.empty?
+  add_prefilter_rows = replacement_rows
+                       .select { |row| row.fetch("gate_status") == "blocked" }
+                       .uniq { |row| row.fetch("add_work_id") }
+end
 cut_rows = read_tsv(CUT_CANDIDATES_PATH)
            .select { |row| row.fetch("gate_status") == "high_cut_review_priority" }
            .sort_by { |row| [-row.fetch("risk_score").to_f, row.fetch("rank").to_i] }
+works_by_id = read_tsv(WORK_CANDIDATES_PATH).to_h { |row| [row.fetch("work_id"), row] }
 
 rows = []
 add_prefilter_rows.each do |add|
   add_score = add.fetch("score_delta").split.first.delete_prefix("+")
   cut_rows.each do |cut|
     same_author = add.fetch("add_creator").downcase.strip == cut.fetch("creator").downcase.strip
-    boundary_check = cut.fetch("boundary_flag") == "true" ? "cut_boundary_flag_review_required" : "cut_boundary_clear_or_not_flagged"
+    duplicate_check =
+      if same_author
+        "same_author_cluster_blocked"
+      elsif cut.fetch("generic_title_flag") == "true" && cut.fetch("duplicate_cluster_size").to_i.positive?
+        "cut_generic_duplicate_cluster_review_required"
+      elsif cut.fetch("duplicate_cluster_size").to_i.positive?
+        "cut_duplicate_cluster_review_required"
+      else
+        "pending_duplicate_and_author_cluster_review"
+      end
+    chronology_check =
+      if cut.fetch("chronology_issue_count").to_i.positive?
+        "cut_chronology_issue_review_required"
+      else
+        "pending_path_position_chronology_validation"
+      end
+    boundary_check = cut.fetch("boundary_flag") == "true" ? "cut_boundary_flag_review_required" : "add_boundary_clear_cut_not_flagged"
+    add_work = works_by_id.fetch(add.fetch("add_work_id"))
+    cut_work = works_by_id.fetch(cut.fetch("work_id"))
 
     rows << {
       "transaction_id" => "x047_pair_#{(rows.size + 1).to_s.rjust(6, "0")}",
@@ -51,11 +77,11 @@ add_prefilter_rows.each do |add|
       "cut_creator" => cut.fetch("creator"),
       "packet_ids" => "X045;X046;X047",
       "evidence_refs" => add.fetch("evidence_refs"),
-      "score_delta" => "+#{add_score} minus_cut_score_uncomputed",
+      "score_delta" => "+#{add_score} minus_cut_score_uncomputed cut_risk=#{cut.fetch("risk_score")}",
       "coverage_effect" => "add_candidate_has_capped_coverage_bonus_cut_effect_uncomputed",
-      "source_status_effect" => "add_source_debt_closed_cut_review_risk=#{cut.fetch("risk_score")}",
-      "duplicate_check" => same_author ? "same_author_cluster_blocked" : "pending_duplicate_and_author_cluster_review",
-      "chronology_check" => "pending_path_position_chronology_validation",
+      "source_status_effect" => "add_source_debt_closed_cut_source_debt=#{cut.fetch("source_debt_status")}",
+      "duplicate_check" => duplicate_check,
+      "chronology_check" => "#{chronology_check};add_year=#{add_work.fetch("sort_year")};cut_year=#{cut_work.fetch("sort_year")}",
       "boundary_check" => boundary_check,
       "gate_status" => "blocked",
       "rationale" => "Blocked add/cut pair generated for review. Cut risk: #{cut.fetch("rationale")}. No cut is approved and no transaction is ready.",
