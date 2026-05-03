@@ -11,9 +11,9 @@ Last updated: 2026-05-03
 | Phase S1H | Hardening pass after workflow review | Active next | Controlled values, source-class policy, packet status, source-fetch logs, stronger validation, and idempotent upserts |
 | Phase S2 | Source registry triage and prioritized extraction | In progress | E001-E012 registered; X001-X006 pilot ingested; X007-X012 feasibility complete but rows held pending hardening |
 | Phase S3 | Continuous normalize, dedupe, and relations | Started | X013/X014 generated review queues, reviewed decisions, relation-scope status, and 8 provisional source-backed candidates |
-| Phase S4 | Evidence policy and source weighting | Started | Source weights, source-debt rules, 9 provisional X017 evidence rows, and a 3,008-row source-debt status table exist; scoring not integrated |
+| Phase S4 | Evidence policy and source weighting | Started | Source weights, source-debt rules, 9 provisional X017 evidence rows, a 3,008-row source-debt status table, and scoring-input blockers exist; 0 source-debt rows are closed |
 | Phase S5 | First-class taxonomy and boundary policy | Pending | Required before boundary-sensitive rows are locked |
-| Phase S6 | Coverage targets, scoring, and coverage matrix | Pending | Current items and omissions scored together after coverage targets exist |
+| Phase S6 | Coverage targets, scoring, and coverage matrix | Started | `canon_scoring_inputs.tsv` covers 3,008 candidates; 0 rows are ready for score computation, and coverage targets/scores are not generated |
 | Phase S7 | Period, region, form, sentinel, and intersection validation | Pending | B/C/D/F/I packets challenge scored universe, not direct replacement |
 | Phase S8 | Source-backed integration H packets | Paused | No further content replacements until S1H-S6 gates exist |
 | Phase S9 | Public UI and generated path | Pending | Conservative simplification allowed; precise filters wait for first-class taxonomy fields |
@@ -51,12 +51,12 @@ Last updated: 2026-05-03
 |---|---|---|---|
 | X Batch 1 | X001, X002, X003, X004, X005, X006 | Pilot ingested | 57 pilot source items and 47 pilot evidence rows; full extraction/matching pending |
 | X Batch 2 | X007, X008, X009, X010, X011, X012 | Feasibility complete; rows held | Classical editions/reference, world/American anthologies, medieval metadata, and Bloom recovery/blocker decisions |
-| X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Started | X013 candidates, X014 relation-scope status, X017 source-debt status, and X018 draft omission queue created; remaining work is scoring and replacement candidates |
+| X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Started | X013 candidates, X014 relation-scope status, X017 source-debt status, X018 draft omission queue, and X019 scoring inputs created; remaining work is evidence acceptance, coverage targets, scores, and replacement candidates |
 
 ## Active Structural Debt
 
 - Source gate: 2,939 source-debt rows and 2,938 `manual_only` rows remain; no new row should enter as `manual_only`.
-- Validation gate: current PASS means headers/foreign keys only. Controlled vocabularies, source-role semantics, extraction-status coherence, source-debt closure, scoring readiness, and replacement readiness still need hardening.
+- Validation gate: current PASS means headers/foreign keys plus the current hardening checks. Controlled vocabularies, source-role semantics, extraction-status coherence, source-debt closure, scoring readiness, and replacement readiness still need further hardening before public integration.
 - E002: Bloom curated seed table is blocked; exact 200-row seed cannot be reconstructed from target repo or current path annotations without guessing.
 - E003: Bloom full appendix/review tables are recoverable from local untracked artifacts outside the target worktree, but publication/scoring is policy-gated.
 - E004-E006: Norton, Longman, and Bedford layers are registered, but line-item TOC extraction remains pending and access-limited.
@@ -66,6 +66,7 @@ Last updated: 2026-05-03
 - Matching gate: source rows must pass exact/normalized/creator-aware/alias/contained-work/selection/series matching before being called true omissions. X013 has 8 provisional source-backed candidate rows, 1 existing-selection representation, and 1 out-of-scope media boundary; none are public-path additions.
 - Relation gate: selection, contained-work, series, variant, duplicate, and adaptation decisions must be reviewed before final relation rows are written. X014 has 41 relation-scope status rows; 24 are policy-blocked and 17 need scope review, so 0 are ready to write as final relations.
 - Omission gate: X018 currently has 8 source-backed omission rows and 0 ready-for-scoring rows; every gap still has source-debt, selection/scope, chronology, or corroboration blockers.
+- Scoring gate: X019 currently has 3,008 scoring input rows and 0 ready-for-score rows. This is expected until source debt is closed under the evidence rules and relation/date/boundary blockers are resolved.
 - Taxonomy gate: public category reports are still keyword-inferred; first-class region, language/tradition, form, selection, and boundary fields are required.
 - A029-A031/H013: replacement-induced chronology inversions must be repaired or explicitly waived before the path is locked.
 - H014: duplicate-like clusters and collection/selection overlaps remain; these now move into alias/relation/decision tables.

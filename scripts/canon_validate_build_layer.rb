@@ -38,6 +38,7 @@ TABLE_FILES = {
   "source_weights" => File.join(BUILD_DIR, "tables", "canon_source_weights.yml"),
   "source_debt_rules" => File.join(BUILD_DIR, "tables", "canon_source_debt_rules.yml"),
   "source_debt_status" => File.join(BUILD_DIR, "tables", "canon_source_debt_status.tsv"),
+  "scoring_inputs" => File.join(BUILD_DIR, "tables", "canon_scoring_inputs.tsv"),
   "coverage_targets" => File.join(BUILD_DIR, "tables", "canon_coverage_targets.yml"),
   "path_selection" => File.join(BUILD_DIR, "tables", "canon_path_selection.tsv"),
   "omission_queue" => File.join(BUILD_DIR, "tables", "canon_omission_queue.tsv"),
@@ -59,6 +60,7 @@ HEADER_REQUIREMENTS = {
   "relation_scope_status" => ["relation_scope_id", "source_item_id", "proposed_relation_type", "decision", "target_work_id", "scope_status", "readiness_status"],
   "evidence" => ["evidence_id", "work_id", "source_id", "evidence_type", "evidence_strength", "reviewer_status"],
   "source_debt_status" => ["work_id", "evidence_count", "source_debt_status", "closure_scope", "blocking_reason", "next_action"],
+  "scoring_inputs" => ["work_id", "source_debt_status", "relation_scope_blocker_count", "scoring_readiness", "blocking_reasons", "next_action"],
   "scores" => ["work_id", "source_weighted_score", "source_diversity_score", "coverage_scarcity_bonus", "boundary_penalty", "duplicate_overlap_penalty", "source_debt_penalty", "final_score", "must_include", "must_exclude"],
   "omission_queue" => ["omission_id", "work_id", "source_debt_status", "evidence_refs", "readiness_status", "blocking_reason", "next_action"],
   "replacement_candidates" => ["transaction_id", "add_work_id", "cut_work_id", "evidence_refs", "rationale", "gate_status"],
@@ -170,6 +172,7 @@ if failures.empty?
   relation_scope_status_rows = read_tsv(TABLE_FILES["relation_scope_status"])
   path_selection_rows = read_tsv(TABLE_FILES["path_selection"])
   source_debt_status_rows = read_tsv(TABLE_FILES["source_debt_status"])
+  scoring_input_rows = read_tsv(TABLE_FILES["scoring_inputs"])
   omission_queue_rows = read_tsv(TABLE_FILES["omission_queue"])
   replacement_rows = read_tsv(TABLE_FILES["replacement_candidates"])
 
@@ -188,6 +191,7 @@ if failures.empty?
     "relation_scope_status" => relation_scope_status_rows,
     "evidence" => evidence_rows,
     "source_debt_status" => source_debt_status_rows,
+    "scoring_inputs" => scoring_input_rows,
     "omission_queue" => omission_queue_rows,
     "replacement_candidates" => replacement_rows
   }
@@ -492,6 +496,19 @@ if failures.empty?
     failures << "source_debt_status missing work IDs: #{missing_source_debt_status.first(10).join(", ")}" unless missing_source_debt_status.empty?
     failures << "source_debt_status has duplicate work IDs: #{duplicate_source_debt_status.keys.first(10).join(", ")}" unless duplicate_source_debt_status.empty?
     checks << ["integrity:source_debt_status.work_id", "FAIL", "#{source_debt_status_work_refs.size} unknown refs; #{missing_source_debt_status.size} missing; #{duplicate_source_debt_status.size} duplicates"]
+  end
+
+  scoring_input_work_refs = scoring_input_rows.reject { |row| work_ids.include?(row["work_id"]) }
+  scoring_input_work_ids = scoring_input_rows.map { |row| row["work_id"] }.to_set
+  missing_scoring_inputs = work_ids - scoring_input_work_ids
+  duplicate_scoring_inputs = duplicate_values(scoring_input_rows, "work_id")
+  if scoring_input_work_refs.empty? && missing_scoring_inputs.empty? && duplicate_scoring_inputs.empty?
+    checks << ["integrity:scoring_inputs.work_id", "PASS", "one scoring input row per work candidate"]
+  else
+    failures << "scoring_inputs references unknown work IDs: #{scoring_input_work_refs.first(10).map { |row| row["work_id"] }.join(", ")}" unless scoring_input_work_refs.empty?
+    failures << "scoring_inputs missing work IDs: #{missing_scoring_inputs.first(10).join(", ")}" unless missing_scoring_inputs.empty?
+    failures << "scoring_inputs has duplicate work IDs: #{duplicate_scoring_inputs.keys.first(10).join(", ")}" unless duplicate_scoring_inputs.empty?
+    checks << ["integrity:scoring_inputs.work_id", "FAIL", "#{scoring_input_work_refs.size} unknown refs; #{missing_scoring_inputs.size} missing; #{duplicate_scoring_inputs.size} duplicates"]
   end
 
   evidence_ids = evidence_rows.map { |row| row["evidence_id"] }.to_set

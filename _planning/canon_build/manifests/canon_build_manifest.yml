@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: workflow_hardening_pivot_after_x007_x012
+status: workflow_hardening_scoring_inputs_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -41,6 +41,7 @@ artifacts:
   source_debt_rules: draft_policy_created
   source_debt_status: generated_x017
   omission_queue: generated_x018
+  scoring_inputs: generated_x019
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
@@ -62,6 +63,9 @@ current_counts:
   relation_scope_status_rows: 41
   source_debt_status_rows: 3008
   omission_queue_rows: 8
+  scoring_input_rows: 3008
+  scoring_ready_rows: 0
+  scoring_blocked_rows: 3008
   source_items_matched_candidate: 8
   source_items_represented_by_selection: 8
   source_items_out_of_scope: 1
@@ -135,9 +139,14 @@ source_item_matching_phase_x013_x014:
     alias_or_variant_review_required: 4
     represented_by_existing_selection_review_required: 2
     cycle_container_required: 1
+  scoring_input_summary:
+    total_rows: 3008
+    ready_for_score_computation: 0
+    blocked_from_score_computation: 3008
+    gate_interpretation: scores_not_generated_until_source_debt_and_scope_blockers_are_resolved
   match_decision_summary:
     represented_by_existing_selection: 1
     create_source_backed_candidate_actions: 8
     out_of_scope_media_boundary: 1
-  status: candidate_rows_created_evidence_not_generated
+  status: source_debt_and_scoring_inputs_generated
   direct_replacements: 0

@@ -17,10 +17,11 @@ The phase plan and lock criteria live in `canon_phase_plan.md`.
 7. `tables/canon_evidence.tsv`: work-level evidence records.
 8. `tables/canon_review_decisions.yml`: human adjudication, waivers, and policy decisions.
 9. `tables/canon_source_weights.yml`: central source-class policy used before scores are derived.
-10. `tables/canon_scores.tsv`: derived scores and penalties.
-11. `tables/canon_replacement_candidates.tsv`: proposed add/cut transactions.
-12. `tables/canon_path_selection.tsv`: selected rows for generated public paths.
-13. `tables/canon_packet_status.tsv`: machine-readable packet status and next-action tracking.
+10. `tables/canon_scoring_inputs.tsv`: source-debt, omission, relation, date, and boundary blockers that must be clear before score computation.
+11. `tables/canon_scores.tsv`: derived scores and penalties.
+12. `tables/canon_replacement_candidates.tsv`: proposed add/cut transactions.
+13. `tables/canon_path_selection.tsv`: selected rows for generated public paths.
+14. `tables/canon_packet_status.tsv`: machine-readable packet status and next-action tracking.
 
 ## Gate
 
@@ -45,3 +46,5 @@ Match/relation review decisions are routing records. A `create_source_backed_can
 `scripts/canon_generate_omission_queue.rb` writes `tables/canon_omission_queue.tsv` from provisional source-backed candidates. It records duplicate, boundary, chronology, scope, and source-debt blockers before any candidate can be scored or proposed as a public-path addition.
 
 `scripts/canon_generate_relation_scope_status.rb` applies `tables/canon_relation_scope_rules.yml` to X014 decisions. It keeps source-container, selection, variant, and cycle rows blocked until relation scope is explicit; it does not write final relation rows.
+
+`scripts/canon_generate_scoring_inputs.rb` writes `tables/canon_scoring_inputs.tsv` for every work candidate. It records source-debt, omission, relation-scope, date, and boundary blockers and refuses to mark rows score-ready while those gates remain open.

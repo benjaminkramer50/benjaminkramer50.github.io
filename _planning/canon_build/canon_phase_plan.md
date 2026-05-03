@@ -71,7 +71,7 @@ Done when:
 - Corpus/database rows support identity/provenance only unless explicitly waived.
 - At least two independent canon-support source families support non-obvious additions.
 
-Current status: started; source weights, source-debt rules, 9 provisional X017 evidence rows, and a 3,008-row source-debt status report exist, but scoring/source-debt closure is not integrated.
+Current status: started; source weights, source-debt rules, 9 provisional X017 evidence rows, a 3,008-row source-debt status report, and scoring-input blockers exist. Source-debt closure remains 0 until evidence is accepted under the rules.
 
 ## Phase 5: Taxonomy, Boundary, And Quality Gates
 
@@ -95,7 +95,7 @@ Done when:
 - `canon_scores.tsv` is generated for current works and source-backed omissions.
 - Scores include source support, source diversity, coverage scarcity, boundary penalty, duplicate penalty, source debt penalty, generic-title penalty, date uncertainty, recency, and incumbent bonus.
 
-Current status: not started.
+Current status: started; `canon_scoring_inputs.tsv` now covers all 3,008 work candidates, but 0 rows are ready for score computation because source debt and other blockers remain open. Coverage targets and final scores are not generated yet.
 
 ## Phase 7: Validation Sweeps
 
