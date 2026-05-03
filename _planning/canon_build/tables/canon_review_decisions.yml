@@ -223,6 +223,23 @@ decisions:
       - keep_core_rows_protected_until_specific waiver_or_policy_review
       - require manual review before any cut row is used in a public transaction
     public_path_effect: none
+  - decision_id: x047_replacement_pairings_001
+    decision_type: blocked_replacement_pair_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_replacement_candidates.tsv
+    decision: generate_blocked_add_cut_pair_rows
+    rationale: >
+      Add/cut review should be concrete enough to audit, but no pair is safe
+      until the proposed cut has a score, duplicate/author-cluster review,
+      chronology/path-position validation, and boundary confirmation. X047
+      therefore pairs score-ready additions with high-priority cut-review rows
+      while leaving every pair blocked.
+    scoring_effect: no_ready_transactions_cut_scores_uncomputed
+    required_followup:
+      - compute_or_record_cut_side_scores_and_source_status
+      - run duplicate_author_cluster_chronology_boundary_checks_for_pairs
+      - promote_only_reviewed_pairs_to_ready_for_review
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002

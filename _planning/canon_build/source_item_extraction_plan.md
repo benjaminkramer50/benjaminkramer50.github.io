@@ -74,6 +74,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X044 | X028 diagnostic coverage matrix | Coverage targets generated | 72 medium/high-risk coverage review targets generated and scores regenerated with a capped coverage-scarcity bonus; no replacement transaction generated; public path unchanged |
 | X045 | Score-ready add candidates | Blocked replacement prefilter generated | 5 score-ready source-backed add candidates written to `canon_replacement_candidates.tsv` with `gate_status=blocked` and intentionally blank cut fields; public path unchanged |
 | X046 | Current selected incumbents | Cut-risk table generated | 3,000 incumbent rows ranked by source-debt, generic-title, duplicate-cluster, chronology, boundary, and tier signals; no cut approved; public path unchanged |
+| X047 | X045 add prefilter plus X046 cut-risk table | Blocked replacement pairings generated | 1,215 add/cut pair rows generated from 5 score-ready additions and 243 high-priority cut-review rows; all remain `blocked`; public path unchanged |
 
 ## Planned Extraction Packets
 
