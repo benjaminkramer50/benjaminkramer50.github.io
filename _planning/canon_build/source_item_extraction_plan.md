@@ -61,12 +61,13 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X031 | X030 reviewed title variants | Aliases added | 7 safe source-title variant aliases added for existing selected works; contained poem/excerpt rows intentionally left for relation/scope review; public path unchanged |
 | X032 | X031 aliases and all extracted source items | Matching rerun generated | 541 match candidates and 5,474 match-review rows generated after the alias index update; `from`-prefixed excerpt titles remain a matcher defect queued for the next automation pass; public path unchanged |
 | X033 | Source-title matcher and all extracted source items | Matcher rule added and rerun | Leading `from` source titles now try both literal and stripped title forms; 557 match candidates and 5,474 match-review rows generated; 16 from-prefix candidate rows across 10 source rows remain review-gated; public path unchanged |
+| X034 | Creator variants and all extracted source items | Creator variants added and matching rerun | Reviewed romanization variants added for Tao Yuanming and Bai Juyi; 4 candidate rows changed from creator mismatch to creator match; 557 match candidates and 5,474 match-review rows remain review-gated; public path unchanged |
 
 ## Planned Extraction Packets
 
 | Packet | Source layers | Purpose |
 |---|---|---|
-| X013 | All extracted source items | Rerun after X033: 557 title/creator normalization candidates and 5,474 explicit match-review decisions |
+| X013 | All extracted source items | Rerun after X034: 557 title/creator normalization candidates and 5,474 explicit match-review decisions |
 | X014 | All extracted source items | Generated after X027: 7,567 alias, contained-work, series, selection, variant, adaptation, and duplicate relation-scope rows; 0 final relations ready |
 | X015 | All source and work tables | Hardening pass: controlled-value validation, status coherence, source-fetch/extraction denominators, and packet status table |
 | X016 | All source types | Draft created: evidence weighting policy by anthology, syllabus, edition, reference, corpus, access metadata, award, national canon, and internal record |

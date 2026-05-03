@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x033_from_prefix_matcher_generated
+status: source_item_batch_x034_creator_variants_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -45,7 +45,7 @@ artifacts:
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
-  creators: bootstrapped_from_current_path_plus_x013_candidate_creators
+  creators: bootstrapped_from_current_path_plus_x013_candidate_creators_plus_x034_variants
   coverage_matrix: generated_x028
   sentinel_checks: generated_x028
   gap_diagnostics: generated_x028
@@ -118,7 +118,7 @@ next_hardening_steps:
 - derive_evidence_weights_centrally_before_scoring
 - populate_quality_issues_and_coverage_targets_before_replacements
 source_item_matching_phase_x013_x014:
-  latest_match_rerun: x033_after_from_prefix_matcher
+  latest_match_rerun: x034_after_creator_variants
   match_candidate_rows: 557
   match_review_queue_rows: 5474
   match_review_decision_rows: 5474
@@ -186,6 +186,22 @@ x033_from_prefix_matcher:
   match_review_decision_rows: 5474
   from_prefix_candidate_rows: 16
   from_prefix_source_rows: 10
+  decision_summary:
+    candidate_match_requires_manual_confirmation: 54
+    out_of_scope_media_boundary: 1
+    unresolved_ambiguous_candidate_match: 16
+    unresolved_no_candidate_match: 5403
+  direct_replacements: 0
+x034_creator_variant_matching:
+  status: creator_variants_added_and_matching_rerun_generated
+  report: _planning/canon_build/source_crosswalk_reports/x_batch_018_x034_creator_variants.md
+  creator_rows_updated: 2
+  creator_variant_strings_added: 4
+  match_candidate_rows: 557
+  creator_match_yes_rows: 209
+  creator_match_no_rows: 91
+  creator_match_unknown_rows: 257
+  creator_no_to_yes_rows: 4
   decision_summary:
     candidate_match_requires_manual_confirmation: 54
     out_of_scope_media_boundary: 1

@@ -3,6 +3,7 @@
 
 require "csv"
 require "fileutils"
+require "set"
 
 ROOT = File.expand_path("..", __dir__)
 BUILD_DIR = File.join(ROOT, "_planning", "canon_build")
@@ -10,6 +11,7 @@ TABLE_DIR = File.join(BUILD_DIR, "tables")
 
 SOURCE_ITEMS_PATH = File.join(TABLE_DIR, "canon_source_items.tsv")
 WORKS_PATH = File.join(TABLE_DIR, "canon_work_candidates.tsv")
+CREATORS_PATH = File.join(TABLE_DIR, "canon_creators.tsv")
 ALIASES_PATH = File.join(TABLE_DIR, "canon_aliases.tsv")
 MATCH_CANDIDATES_PATH = File.join(TABLE_DIR, "canon_match_candidates.tsv")
 MATCH_REVIEW_PATH = File.join(TABLE_DIR, "canon_match_review_queue.tsv")
@@ -63,13 +65,36 @@ def source_title_norms(value)
    .uniq { |normalized, _suffix| normalized }
 end
 
-def creator_matches?(source_creator, candidate_creator)
+def creator_parts(value, variant_index)
+  normalize_creator(value)
+    .split(/\s+\|\s+|;| and /)
+    .map(&:strip)
+    .reject(&:empty?)
+    .flat_map { |part| [part, *variant_index.fetch(part, Set.new).to_a] }
+    .uniq
+end
+
+def creator_variant_index(creators)
+  creators.each_with_object(Hash.new { |hash, key| hash[key] = Set.new }) do |creator, index|
+    names = [
+      creator["creator_display"],
+      creator["normalized_name"],
+      *creator.fetch("name_variants", "").to_s.split(";")
+    ].map { |name| normalize_creator(name) }.reject(&:empty?).uniq
+
+    names.each do |name|
+      (names - [name]).each { |variant| index[name] << variant }
+    end
+  end
+end
+
+def creator_matches?(source_creator, candidate_creator, variant_index)
   source = normalize_creator(source_creator)
   candidate = normalize_creator(candidate_creator)
   return "unknown" if source.empty? || candidate.empty?
 
-  source_parts = source.split(/\s+\|\s+|;| and /).map(&:strip).reject(&:empty?)
-  candidate_parts = candidate.split(/\s+\|\s+|;| and /).map(&:strip).reject(&:empty?)
+  source_parts = creator_parts(source_creator, variant_index)
+  candidate_parts = creator_parts(candidate_creator, variant_index)
   return "no" if source_parts.empty? || candidate_parts.empty?
 
   source_parts.any? do |source_part|
@@ -82,8 +107,10 @@ def creator_matches?(source_creator, candidate_creator)
 end
 
 works = read_tsv(WORKS_PATH)
+creators = read_tsv(CREATORS_PATH)
 aliases = read_tsv(ALIASES_PATH)
 source_items = read_tsv(SOURCE_ITEMS_PATH)
+creator_variants = creator_variant_index(creators)
 
 works_by_id = works.each_with_object({}) { |row, by_id| by_id[row.fetch("work_id")] = row }
 title_index = Hash.new { |hash, key| hash[key] = [] }
@@ -126,7 +153,7 @@ source_items.each do |item|
       "candidate_creator" => work.fetch("creator_display"),
       "match_rule" => "preexisting_#{match_status}",
       "title_match" => "preexisting",
-      "creator_match" => creator_matches?(raw_creator, work.fetch("creator_display")),
+      "creator_match" => creator_matches?(raw_creator, work.fetch("creator_display"), creator_variants),
       "confidence" => item.fetch("match_confidence", "").empty? ? "1.00" : item.fetch("match_confidence"),
       "recommendation" => "accepted_existing_match",
       "notes" => "Existing source_items.matched_work_id retained."
@@ -162,7 +189,7 @@ source_items.each do |item|
   end
 
   candidates.each do |work, rule|
-    creator_match = creator_matches?(raw_creator, work.fetch("creator_display"))
+    creator_match = creator_matches?(raw_creator, work.fetch("creator_display"), creator_variants)
     confidence =
       if creator_match == "yes" && rule == "exact_normalized_title"
         "0.97"
