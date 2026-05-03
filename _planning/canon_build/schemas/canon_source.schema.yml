@@ -40,6 +40,39 @@ source_items_optional:
 controlled_values:
   source_type:
     - accepted_site_record
+    - american_literature_anthology
+    - arthurian_cycle_translation
+    - authoritative_collection
+    - authoritative_edition_series
+    - bibliographic_database
+    - commentary_text_series
+    - critical_edition_series
+    - critical_source_series
+    - digital_primary_text_series
+    - digital_text_collection
+    - drama_anthology
+    - edited_text_series
+    - english_literature_anthology
+    - field_anthology
+    - ibero_romance_bibliographic_database
+    - latin_text_corpus
+    - legacy_canon_list
+    - linguistic_corpus
+    - metadata_catalog
+    - packet_audit_output
+    - period_anthology
+    - poetry_anthology
+    - primary_anthology
+    - publisher_reference_series
+    - reference_encyclopedia
+    - specialist_digital_corpus
+    - specialist_digital_project
+    - teaching_anthology
+    - university_core_historical_reading_list
+    - university_core_reading_list
+    - university_course_catalog
+    - university_sequence_selected_readings
+    - world_literature_reference_method
     - world_literature_anthology
     - region_literary_history
     - language_literary_history
@@ -56,6 +89,17 @@ controlled_values:
     - extracted
     - reviewed
     - rejected
+    - ready_for_extraction
+    - ready_public_metadata
+    - ready_public_toc
+    - ready_partial_public
+    - ready_with_access_limits
+    - public_index_ready
+    - public_toc_ready
+    - metadata_ready
+    - metadata_only
+    - partial_public_metadata
+    - context_only
   evidence_type:
     - inclusion
     - omission

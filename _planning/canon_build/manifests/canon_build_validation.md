@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 16
+- checked_files: 17
 - failures: 0
 
 ## Checks
@@ -24,6 +24,17 @@
 | table:coverage_targets | PASS | `_planning/canon_build/tables/canon_coverage_targets.yml` |
 | table:path_selection | PASS | `_planning/canon_build/tables/canon_path_selection.tsv (8 columns)` |
 | table:replacement_candidates | PASS | `_planning/canon_build/tables/canon_replacement_candidates.tsv (18 columns)` |
+| table:packet_status | PASS | `_planning/canon_build/tables/canon_packet_status.tsv (8 columns)` |
+| controlled:source_registry.source_type | PASS | `42 allowed values` |
+| controlled:source_registry.extraction_status | PASS | `16 allowed values` |
+| controlled:source_items.evidence_type | PASS | `6 allowed values` |
+| controlled:source_items.match_status | PASS | `7 allowed values` |
+| controlled:work_candidates.candidate_status | PASS | `5 allowed values` |
+| controlled:work_candidates.date_precision | PASS | `6 allowed values` |
+| controlled:work_candidates.review_status | PASS | `7 allowed values` |
+| controlled:evidence.evidence_strength | PASS | `4 allowed values` |
+| controlled:evidence.reviewer_status | PASS | `4 allowed values` |
+| controlled:replacement_candidates.gate_status | PASS | `4 allowed values` |
 | integrity:unique:source_registry.source_id | PASS | `0 duplicates` |
 | integrity:unique:source_items.source_item_id | PASS | `0 duplicates` |
 | integrity:unique:work_candidates.work_id | PASS | `0 duplicates` |
@@ -33,3 +44,7 @@
 | integrity:evidence.source_id | PASS | `all source IDs registered` |
 | integrity:evidence.source_item_id | PASS | `all nonblank source item IDs exist` |
 | integrity:evidence.work_id | PASS | `all work IDs exist` |
+| integrity:evidence.supported_source_item_status | PASS | `no evidence from unmatched/out-of-scope source items` |
+| integrity:relations.work_refs | PASS | `all relation work refs exist` |
+| integrity:path_selection.work_id | PASS | `all selected work IDs exist` |
+| integrity:path_selection.selected_rank_continuity | PASS | `3000 selected rows` |

@@ -31,6 +31,26 @@ The new source of truth is four-layered:
 
 `_data/canon_quick_path.yml` is therefore a provisional published path and incumbent snapshot, not the final master scholarly dataset.
 
+## 2026-05-03 Workflow Optimization Review
+
+Six workflow agents independently reviewed the plan, packet structure, evidence model, automation path, UI constraints, and QA risks. The conclusion is a hybrid pivot:
+
+- The narrow-packet model is still correct.
+- The problem is not too few packets. The plan already has enough packet coverage to find failures like Washington Irving.
+- The problem is sequencing and enforceability: broad domain packets and replacement waves ran before source extraction, source-class policy, matching, relation handling, scoring, and validation gates were mature.
+- The next phase is therefore a hardening pass, not another broad content-harvest wave.
+
+Immediate operating change:
+
+1. Harden schemas, controlled values, packet status tracking, and validation before scaling extraction.
+2. Treat source-item rows as observations. Do not let row-level `evidence_weight` drive canon status until X016/source-weight policy is encoded and scoring derives weights centrally.
+3. Move normalization, alias matching, relation creation, and source-class policy forward so they run continuously after each extraction batch.
+4. Use up to six agents by function rather than by six unrelated domains: extraction, extraction, blocked-source recovery, matching QA, boundary/taxonomy adjudication, and red-team validation.
+5. Keep all B/C/D/F packets as validation and gap-discovery sweeps until replacement candidates are generated from scores and coverage targets.
+6. Ship only conservative public UI improvements until first-class taxonomy exists; do not make precise language/tradition/source-score filters from inferred metadata.
+
+This is not a retreat from comprehensiveness. It is the route to it. More packets without a stronger build layer would create more apparent precision while preserving the same false-omission, duplicate, boundary, and source-inflation risks.
+
 ## Immediate Freeze Rules
 
 - No new work may be added as `manual_only`.
@@ -39,6 +59,7 @@ The new source of truth is four-layered:
 - Wave 006 is recast as harvest-only unless the user explicitly authorizes an exception after source evidence is present.
 - A replacement batch must not increase source debt, unwaived duplicate debt, unwaived chronology debt, or generic-title debt.
 - UI/category redesign waits until first-class taxonomy fields exist; presentation filters must not imply precision from keyword-inferred buckets.
+- Current validation `PASS` means structural integrity only until hardening is complete. It does not yet mean scholarly readiness, scoring readiness, or replacement readiness.
 
 ## Core Correction
 
@@ -92,6 +113,25 @@ Evidence classes:
 - Bloom and other Western canon lists only as one layer, never as sole authority.
 - Specialist sources for oral, Indigenous, manuscript, and performance traditions.
 
+Evidence hierarchy:
+
+| Class | Canon role | Working weight band |
+|---|---:|---:|
+| Curated teaching anthologies, complete works | Strongest source-level inclusion evidence | 0.75-0.90 |
+| Required university core syllabi and long-running required lists | Strong pedagogical-canon evidence, institution-biased | 0.65-0.90 |
+| Field, national, or primary anthologies | Strong within-field or tradition evidence | 0.60-0.85 |
+| National canon, school-exam, or academy lists | Strong regional evidence, globally capped | 0.55-0.80 |
+| Scholarly literary histories and reference works | Contextual and boundary evidence; work-specific only | 0.45-0.75 |
+| Authoritative edition or translation series | Reception/provenance evidence, not a canon vote alone | 0.25-0.60 |
+| Awards and prizes | Reception/discovery evidence; recent works capped | 0.20-0.60 |
+| Specialist corpora, bibliographic databases, and catalogs | Identity, access, alias, and edition evidence | 0.10-0.35 |
+| Access metadata, ISBN/OCLC/catalog rows, public-domain availability | Provenance/access only | 0.00 |
+| Internal accepted records and packet audit outputs | Workflow state only | 0.00 for external canon score |
+
+Anthology rows must distinguish complete works, substantial selections, excerpts, individual poems/stories, author headings, context items, and companion material. Only complete works receive full anthology weight. Excerpts and components support `represented_by_selection`, `selection_from`, or contained-work relations, not automatic whole-work inclusion.
+
+Reference corpora, edition series, and access catalogs can close identity/provenance debt. They cannot by themselves close canon-support debt. E001 accepted site records remain useful incumbent evidence, but they do not count as external evidence.
+
 Evidence tiers:
 
 - Tier A, essential: repeated strong evidence across source types or unavoidable status in a major tradition.
@@ -122,12 +162,22 @@ Required build-layer artifacts under `_planning/canon_build/`:
 - `tables/canon_coverage_targets.yml`: period, region, language/tradition, form, and boundary targets.
 - `tables/canon_path_selection.tsv`: selected works for the generated 3,000-item path.
 - `tables/canon_replacement_candidates.tsv`: proposed add/cut transactions with evidence.
+- `tables/canon_quality_issues.tsv`: duplicate, time, boundary, generic-title, and schema/model issues generated from build tables.
+- `tables/canon_match_candidates.tsv`: machine-generated candidate matches for source items before review.
+- `tables/canon_match_review_queue.tsv`: ambiguous matches that require creator-aware or contained-work review.
+- `tables/canon_source_weights.yml`: source-class policy used to derive scores.
+- `tables/canon_packet_status.tsv`: machine-readable packet registry and status table.
+- `tables/canon_source_fetches.tsv`: source-fetch/access log recording pages, files, APIs, access limits, and extraction denominators.
 - `manifests/canon_build_manifest.yml`: build provenance, gates, and artifact status.
+- `manifests/canon_pipeline_runs.tsv`: run log for extraction, matching, validation, scoring, and generation commands.
 
 Required source-backed build scripts or script modes:
 
+- Provide shared TSV/YAML IO, upsert helpers, normalization, stable IDs, controlled values, and report writing through a common library.
 - Validate schemas and required columns.
+- Enforce controlled values and gate semantics, not just headers and foreign keys.
 - Import source registry and source item rows.
+- Extract source items from declared extractor specs.
 - Normalize titles, original titles, translated titles, and creator labels.
 - Build alias and relation indexes.
 - Match source items to candidate works.
@@ -165,10 +215,23 @@ Required scripts or script modes:
 - Produce a packet-specific excerpt for an audit agent.
 - Validate proposed edits before they are merged.
 - Re-rank after additions/cuts if needed.
+- Detect quality issues from build tables, not only from `_data/canon_quick_path.yml`.
+- Generate replacement candidates only after score, relation, boundary, and coverage gates pass.
 
 ## Agent Workflow
 
-Agents are useful, but not as six broad domain audits. The correct pattern is many narrow packets, run iteratively.
+Agents are useful, but not as six broad domain audits. The optimized pattern is many narrow packets plus a functional six-agent operating model.
+
+Per active wave, the default allocation is:
+
+- Agent 1: source extraction for a high-priority anthology or source layer.
+- Agent 2: source extraction for a second independent layer.
+- Agent 3: blocked-source recovery, artifact recovery, or source-denominator audit.
+- Agent 4: normalization, alias, creator-aware matching, and contained-work QA for rows produced by Agents 1-3.
+- Agent 5: boundary, taxonomy, selection-basis, and evidence-role adjudication for surfaced cases.
+- Agent 6: validation/red-team review for false omissions, duplicates, evidence inflation, gate violations, and chronology risks.
+
+Domain-only waves can still be used for later B/C/D/F validation sweeps. They are not the default while source extraction, matching, and weighting are immature.
 
 Coordinator role:
 
@@ -180,6 +243,8 @@ Coordinator role:
 - Integrates additions/cuts locally.
 - Runs validation after each integration batch.
 - Updates the audit plan with packet status.
+- Merges only machine-checkable rows and reports that satisfy the current gate.
+- Keeps domain packets harvest-only until source, matching, evidence, policy, and scoring gates are ready.
 
 Packet-agent contract:
 
@@ -206,19 +271,22 @@ Each agent returns:
 - `required_alias_repairs`.
 - `recommended_edits`.
 - `uncertainties`.
+- `extraction_denominator`: complete, partial, metadata-only, context-only, blocked, sampled, or unknown.
+- `source_class_or_evidence_role`: anthology, syllabus, field anthology, reference, edition series, corpus/catalog, award/reception, internal record, or other.
+- `item_scope`: complete work, substantial selection, excerpt, poem/story, author heading, context item, edition/volume, corpus witness, or access metadata.
 
 No agent is allowed to directly edit the source list unless assigned an integration packet. Most agents should report, not edit.
 
 Wave rhythm:
 
-1. Generate audit inventory.
-2. Assign up to six narrow packets.
+1. Generate or refresh build-table excerpts and current source/status reports.
+2. Assign up to six functional packets.
 3. Wait for all six.
-4. Review and merge their findings into `canon_omission_queue.yml`.
-5. Apply only high-confidence edits or create a deferred queue.
-6. Validate.
+4. Merge source items, match candidates, relation candidates, policy notes, or validation findings only into build-layer artifacts.
+5. Do not add/cut public works unless an H integration packet passes the replacement gate.
+6. Run hardened validation and progress reports.
 7. Commit.
-8. Repeat with the next six packets.
+8. Repeat with the next source or hardening packet set.
 
 ## Replacement Rules
 
@@ -562,6 +630,41 @@ Every packet below should eventually be audited. Packets are intentionally small
 - D045: Series treatment policy.
 - D046: Anthology versus individual-work treatment.
 
+### I. Intersection Coverage Packets
+
+These packets catch gaps that can be invisible in period-only, region-only, or form-only sweeps. They are generated from weak cells in the coverage matrix and from source-backed omissions. The list below is the initial seed; more I packets are opened whenever scoring or red-team review identifies a weak `period x region/tradition x form` cell.
+
+- I001: 1800-1830 US prose and early national fiction.
+- I002: 1830-1870 US fiction, slave narrative, sketch, and short prose.
+- I003: US nineteenth-century poetry versus prose balance.
+- I004: Tang poetry high-canon coverage against classical Chinese anthology sources.
+- I005: Song/Yuan/Ming transition: ci, drama, vernacular fiction, and prose.
+- I006: Premodern Southeast Asian manuscript and court literature.
+- I007: Medieval Persianate romance, epic, and lyric balance.
+- I008: Abbasid Arabic poetry/adab/narrative balance.
+- I009: South Asian bhakti across Tamil, Kannada, Hindi, Bengali, Marathi, and related traditions.
+- I010: Sanskrit kavya/drama/narrative versus scripture/philosophy boundary.
+- I011: African oral epic and manuscript traditions before 1800.
+- I012: Swahili, Hausa, Yoruba, Somali, and other African language-literature anchors.
+- I013: Indigenous Americas precolonial, colonial, and modern-public text boundary.
+- I014: Indigenous contemporary poetry and fiction across North America, Australia, Aotearoa, Arctic, and Pacific.
+- I015: Caribbean language, empire, and form coverage across Anglophone, Francophone, Hispanophone, and Creole traditions.
+- I016: Latin American nineteenth-century prose and poetry before the Boom.
+- I017: Modern Arabic fiction/poetry by region and diaspora.
+- I018: Persian, Turkish, Kurdish, Armenian, Georgian, and Central Asian modern coverage.
+- I019: Korean modern and contemporary fiction/poetry/drama.
+- I020: Japanese modern/postwar/contemporary balance by form.
+- I021: Holocaust, camp, exile, prison, and witness writing across Europe and global contexts.
+- I022: Women's writing before 1800 across Europe, East Asia, South Asia, Middle East, and Americas.
+- I023: Women's writing 1800-1945 across regions and forms.
+- I024: Feminist, queer, and gender-expansive literature after 1945 without overfitting recent works.
+- I025: Graphic narrative, YA, children's literature, genre fiction, and literary-boundary weighting.
+- I026: Modern drama outside Britain/France/US/Russia.
+- I027: Short story cycles and tale traditions across oral, manuscript, and modern forms.
+- I028: Memoir, testimonio, diary, travel, and essay as literature across boundary policies.
+- I029: Translation-series overrepresentation versus underrepresented source-language anchors.
+- I030: Very contemporary 2010-present works under probation and reception thresholds.
+
 ### E. Source-Crosswalk Packets
 
 These packets compare the current YAML against major reference layers. Each source-crosswalk packet must report present, absent, represented-by-selection, duplicate, and rejected/out-of-scope entries.
@@ -681,6 +784,21 @@ These are not automatic inclusion lists. They are "must check" sentinels because
 - H013: Chronology repair after replacement batches.
 - H014: Duplicate candidate closeout after replacement batches.
 
+### Q. Final Adversarial Packets
+
+These are red-team packets after scoring and integration. They do not add works directly; they try to break the locked result.
+
+- Q001: Missing essential authors or works by source-family consensus.
+- Q002: False omissions caused by aliases, original titles, translated titles, or contained-work relations.
+- Q003: Duplicate and variant clusters that survived relation review.
+- Q004: Chronology and date-basis errors, especially manuscript/oral/publication-date confusion.
+- Q005: Boundary leakage: philosophy, theology, history, criticism, theory, film, music, and non-literary context rows.
+- Q006: Western, English-language, and recent-work overrepresentation after coverage targets.
+- Q007: Underrepresented language/tradition anchors displaced by lower-evidence global works.
+- Q008: Anthology excerpts incorrectly scored as complete works.
+- Q009: Access/corpus metadata incorrectly treated as canon evidence.
+- Q010: Public UI claims that overstate source, category, balance, or completeness status.
+
 ## Execution Order
 
 The packet registry is large by design. The execution order should be staged so errors are caught early.
@@ -696,52 +814,70 @@ Phase S1: Source and candidate universe scaffolding.
 - Build `_planning/canon_build/` schemas, tables, manifest, and gates.
 - Freeze source classes and extraction rules.
 - Make path membership separate from work identity.
+- Harden schema enums, controlled values, required columns, validation, packet status, and pipeline-run reporting before scaling extraction.
+- Split readiness/access/extraction semantics so a source cannot be both `not_started` and already represented by rows without an explicit explanation.
 
-Phase S2: Source-crosswalk ingestion.
+Phase S2: Source registry triage and prioritized source extraction.
 
-- Run E001-E030 in waves of six.
-- Each E packet outputs structured source items: present, absent, represented-by-selection, duplicate/variant, out-of-scope, rejected, unresolved.
+- Register and triage E001-E030, but do not mechanically run all E packets before the model can absorb them.
+- Prioritize sources by evidence class, regional/form coverage value, extraction feasibility, and ability to expose omissions.
+- Each source packet outputs structured source items: present, absent, represented-by-selection, duplicate/variant, out-of-scope, rejected, unresolved.
+- Each packet must state denominator status: complete, partial, metadata-only, context-only, blocked, sampled, or unknown.
 - Convert source debt only when evidence records support the change.
 - Do not use E packets as immediate replacement engines.
 
-Phase S3: Normalize, dedupe, and first-class taxonomy.
+Phase S3: Continuous normalization, matching, and relations.
 
 - Build aliases, relations, and duplicate decisions.
+- Run title/creator normalization and alias/contained-work/series matching immediately after every extraction batch, not as a late cleanup step.
+- Route ambiguous matches to `canon_match_review_queue.tsv`.
+- Generate `canon_quality_issues.tsv` for duplicate, generic-title, chronology, boundary, and status-coherence issues from build tables.
+
+Phase S4: Evidence policy and source weighting.
+
+- Define source classes, source roles, item scope, access class, provenance level, and `counts_for_canon_score`.
+- Move X016 ahead of evidence scoring and replacement generation.
+- Derive weights centrally in scoring; do not rely on source-item row weights as final canon evidence.
+- Corpus/database/catalog/access rows can support identity and provenance but not standalone canon inclusion.
+
+Phase S5: First-class taxonomy and boundary policies.
+
 - Add or derive candidate-level `macro_region`, `subregion`, `original_language`, `literary_tradition`, `period_bucket`, `form_bucket`, `selection_basis`, `included_as_literature`, and `boundary_policy_id`.
 - Close or explicitly waive generic-title, duplicate, and major chronology debt before large integration resumes.
+- Run G001-G025 before locking boundary-sensitive rows.
+- Boundary-sensitive rows must carry an inclusion rationale before being treated as locked.
 
-Phase S4: Score and coverage matrix.
+Phase S6: Coverage targets, score, and coverage matrix.
 
 - Score every current item and every source-backed omission with the same rubric.
 - Build period x region x language/tradition x form x source-class coverage matrices.
 - Create replacement candidates from score deltas and coverage constraints, not from ad hoc preference.
+- Populate `canon_coverage_targets.yml` before scoring is treated as actionable.
 
-Phase S5: Boundary and policy adjudication.
+Phase S7: Period, region, form, sentinel, and intersection sweeps as validation.
 
-- Run G001-G025 before large replacement batches.
-- Lock policies for scripture, oral tradition, Indigenous/public material, philosophy/theology/history leakage, memoir/testimonio, children/YA, genre fiction, graphic narrative, anthology selections, and series.
-- Boundary-sensitive rows must carry an inclusion rationale before being treated as locked.
-
-Phase S6: Period, region, and form sweeps as validation.
-
-- Run B001-B034 and C001-C196 in waves of six.
+- Run B001-B034 and C001-C196 in targeted waves, prioritized by weak cells and source-backed uncertainty rather than simple serial order.
 - Run D001-D046 as form-validation packets.
+- Run F packets as sentinel stress tests, not as direct replacement batches.
+- Run I packets where coverage matrices or red-team review reveal weak intersections.
 - Use these packets to challenge the scored universe, find source blind spots, and identify weak coverage cells.
-- Do not integrate directly unless gates in S2-S5 are satisfied.
+- Do not integrate directly unless gates in S2-S6 are satisfied.
 
-Phase S7: Source-backed integration.
+Phase S8: Source-backed integration.
 
 - Apply add/cut transactions only from `canon_replacement_candidates.tsv`.
 - Every addition names a displacement and every displacement has a source-reviewed rationale.
 - Each integration batch regenerates validation outputs, replacement log, omission queue, source debt report, duplicate report, chronology report, and build status.
+- Each batch must not increase source debt, duplicate debt, chronology debt, generic-title debt, or unresolved boundary debt.
 
-Phase S8: Public UI and generated path.
+Phase S9: Public UI and generated path.
 
 - Generate `_data/canon_quick_path.yml` from selected path rows once build-layer tables are stable.
-- Update UI filters to use first-class period, region, language/tradition, form, tier, source status, and review status fields.
+- Simplify the UI first: quieter grouped reading-path rows, cautious broad filters, provisional language, and reader-facing progress labels.
+- Add precise filters only when they use first-class period, region, language/tradition, form, tier, source status, and review status fields.
 - Keep source/review status visible until locked-canon thresholds are actually met.
 
-Phase S9: Final adversarial review.
+Phase S10: Final adversarial review.
 
 - Assign agents to attack the finished list by trying to find missing essentials, duplicates, weak overrepresented clusters, and unjustified boundary decisions.
 - Any found omission opens a new packet rather than an ad hoc fix.
@@ -761,12 +897,14 @@ After each wave of up to six packets, the coordinator should produce:
 
 ## Immediate Next Steps
 
-1. Commit the source-backed pivot plan and tracker update.
-2. Add `_planning/canon_build/` schemas, empty tables, and manifest.
-3. Recast F031-F034 as harvest-only if run before source scoring.
-4. Start E001-E006 as structured source-crosswalk ingestion, not replacement integration.
-5. Populate source and candidate rows from E packet outputs.
-6. Build scoring, coverage, duplicate, chronology, and boundary gates before the next content-replacement batch.
+1. Commit this workflow optimization update and X007-X012 outcome report.
+2. Harden schemas and validation: controlled values, extraction-status semantics, source-type/source-role distinctions, and no source-debt closure from access metadata.
+3. Convert one-off ingestion scripts into idempotent upsert/extractor-spec workflow before broadening source ingestion.
+4. Run X013/X014-style matching and relation work continuously against existing X001-X012 pilot rows before scoring.
+5. Define X016 source-weight policy before using evidence weights for scores or source-status upgrades.
+6. Populate coverage targets and quality-issue reports before replacement candidates.
+7. Keep F/B/C/D/I packets harvest-only until H integration gates are satisfied.
+8. Apply conservative UI simplification separately, without claiming final taxonomy or source completeness.
 
 ## Current Known Red Flags To Seed The Queue
 

@@ -4,6 +4,25 @@ Packet ID:
 
 Packet Scope:
 
+Extraction Denominator:
+
+- complete:
+- partial:
+- metadata_only:
+- context_only:
+- blocked:
+- sampled:
+- unknown:
+
+Source Class / Evidence Role:
+
+- source_class:
+- source_subclass:
+- evidence_role:
+- access_class:
+- provenance_level:
+- counts_for_canon_score: yes/no/pending
+
 Source Registry Rows:
 
 ```tsv
@@ -15,6 +34,18 @@ Source Item Rows:
 ```tsv
 source_id	source_item_id	raw_title	raw_creator	raw_date	source_rank	source_section	source_url	source_citation	matched_work_id	match_method	match_confidence	evidence_type	evidence_weight	supports	match_status	notes
 ```
+
+Item-Scope Rules:
+
+- complete_work:
+- substantial_selection:
+- excerpt:
+- poem_or_story:
+- author_heading:
+- context_material:
+- edition_or_volume:
+- corpus_witness:
+- access_metadata:
 
 Evidence Rows:
 

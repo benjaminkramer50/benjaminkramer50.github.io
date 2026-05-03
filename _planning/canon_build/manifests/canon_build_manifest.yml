@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_pilot_x001_x006_ingested
+status: workflow_hardening_pivot_after_x007_x012
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -20,6 +20,9 @@ gates:
   source_crosswalk_required_before_integration: true
   boundary_policy_required_before_boundary_lock: true
   first_class_taxonomy_required_before_ui_precision: true
+  validation_is_structural_only_until_hardened: true
+  source_item_weights_are_provisional_until_x016: true
+  metadata_access_rows_do_not_close_canon_support_debt: true
 artifacts:
   source_registry: e001_e012_registered
   source_items: e001_ingested_x001_x006_pilot_ingested
@@ -59,3 +62,20 @@ source_item_extraction_batch_x001_x006:
   pilot_evidence_rows_added_or_updated: 47
   status: pilot_ingested_needs_full_extraction_and_matching
   direct_replacements: 0
+source_item_extraction_batch_x007_x012:
+  status: feasibility_complete_rows_held_pending_hardening
+  report: _planning/canon_build/source_crosswalk_reports/x_batch_002_x007_x012.md
+  x007_status: feasible_public_metadata_with_access_limits
+  x008_status: norton_world_lit_feasible_longman_partial_bedford_fragmentary
+  x009_status: medieval_metadata_feasible_context_or_identity_evidence
+  x010_status: american_anthology_feasible_heath_vol_a_gap
+  x011_status: blocked_missing_exact_bloom_seed_artifact
+  x012_status: recoverable_local_untracked_policy_gated
+  direct_replacements: 0
+next_hardening_steps:
+  - enforce_controlled_values_and_status_coherence
+  - add_source_class_and_evidence_role_policy
+  - convert_ingestion_scripts_to_idempotent_upserts
+  - run_continuous_matching_and_relation_generation
+  - derive_evidence_weights_centrally_before_scoring
+  - populate_quality_issues_and_coverage_targets_before_replacements

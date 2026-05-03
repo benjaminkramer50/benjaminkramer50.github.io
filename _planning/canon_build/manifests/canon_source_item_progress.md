@@ -15,9 +15,9 @@
 | `bedford_world_lit_compact_v1_2009` | E006 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `bedford_world_lit_compact_v2_2008` | E006 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `bibliotheca_augustana_germanica` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `bloom_curated_seed_layer` | E002 | not_started | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `bloom_full_appendix_1994` | E003 | not_started | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `bloom_full_appendix_review_batches` | E003 | not_started | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `bloom_curated_seed_layer` | E002 | rejected | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `bloom_full_appendix_1994` | E003 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `bloom_full_appendix_review_batches` | E003 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `broadview_brit_lit_medieval_r3_2023` | E009 | public_toc_ready | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | `broadview_british_lit_concise_a_b_2019_2024` | E010 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `broadview_medieval_drama_2012` | E009 | public_toc_ready | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
@@ -32,11 +32,11 @@
 | `e008_oxford_scholarly_editions_oct` | E008 | partial_public_metadata | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `e008_perseus_catalog_greek_latin_works` | E008 | ready_public_metadata | 11 | 11 | 11 | 0 | 0 | 0 | 0 |
 | `e008_phi_classical_latin_texts` | E008 | ready_public_metadata | 5 | 5 | 5 | 0 | 0 | 0 | 0 |
-| `e012_loa_african_american_poetry_2020` | E012 | not_started | 4 | 3 | 0 | 3 | 1 | 0 | 0 |
-| `e012_loa_slave_narratives` | E012 | not_started | 6 | 3 | 3 | 0 | 3 | 0 | 0 |
+| `e012_loa_african_american_poetry_2020` | E012 | in_progress | 4 | 3 | 0 | 3 | 1 | 0 | 0 |
+| `e012_loa_slave_narratives` | E012 | in_progress | 6 | 3 | 3 | 0 | 3 | 0 | 0 |
 | `e012_locke_new_negro_1925` | E012 | not_started | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `e012_norton_african_american_lit_4e_v1_2025` | E012 | not_started | 3 | 3 | 1 | 2 | 0 | 0 | 0 |
-| `e012_norton_african_american_lit_4e_v2_2025` | E012 | not_started | 3 | 1 | 0 | 1 | 2 | 0 | 0 |
+| `e012_norton_african_american_lit_4e_v1_2025` | E012 | in_progress | 3 | 3 | 1 | 2 | 0 | 0 | 0 |
+| `e012_norton_african_american_lit_4e_v2_2025` | E012 | in_progress | 3 | 1 | 0 | 1 | 2 | 0 | 0 |
 | `heath_american_lit_7e_2014` | E011 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `icelandic_saga_database` | E009 | public_index_ready | 2 | 2 | 2 | 0 | 0 | 0 | 0 |
 | `lancelot_grail_lacy_5vol` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -64,9 +64,9 @@
 - `bedford_world_lit_compact_v1_2009` (E006; in_progress)
 - `bedford_world_lit_compact_v2_2008` (E006; in_progress)
 - `bibliotheca_augustana_germanica` (E009; metadata_ready)
-- `bloom_curated_seed_layer` (E002; not_started)
-- `bloom_full_appendix_1994` (E003; not_started)
-- `bloom_full_appendix_review_batches` (E003; not_started)
+- `bloom_curated_seed_layer` (E002; rejected)
+- `bloom_full_appendix_1994` (E003; in_progress)
+- `bloom_full_appendix_review_batches` (E003; in_progress)
 - `broadview_british_lit_concise_a_b_2019_2024` (E010; ready_public_toc)
 - `dumbarton_oaks_medieval_library` (E009; metadata_ready)
 - `e008_cambridge_greek_latin_classics` (E008; ready_public_metadata)

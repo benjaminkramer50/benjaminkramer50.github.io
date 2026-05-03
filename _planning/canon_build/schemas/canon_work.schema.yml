@@ -53,6 +53,7 @@ controlled_values:
     - needs_sources
     - source_reviewed
     - accepted
+    - accepted_with_caveat
     - rejected
     - deferred
     - provisional

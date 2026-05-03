@@ -30,7 +30,8 @@ TABLE_FILES = {
   "scores" => File.join(BUILD_DIR, "tables", "canon_scores.tsv"),
   "coverage_targets" => File.join(BUILD_DIR, "tables", "canon_coverage_targets.yml"),
   "path_selection" => File.join(BUILD_DIR, "tables", "canon_path_selection.tsv"),
-  "replacement_candidates" => File.join(BUILD_DIR, "tables", "canon_replacement_candidates.tsv")
+  "replacement_candidates" => File.join(BUILD_DIR, "tables", "canon_replacement_candidates.tsv"),
+  "packet_status" => File.join(BUILD_DIR, "tables", "canon_packet_status.tsv")
 }.freeze
 
 HEADER_REQUIREMENTS = {
@@ -39,7 +40,31 @@ HEADER_REQUIREMENTS = {
   "work_candidates" => ["work_id", "candidate_status", "canonical_title", "creator_display", "date_label", "sort_year", "date_precision", "macro_region", "literary_tradition", "form_bucket", "source_status", "review_status"],
   "evidence" => ["evidence_id", "work_id", "source_id", "evidence_type", "evidence_strength", "reviewer_status"],
   "scores" => ["work_id", "source_weighted_score", "source_diversity_score", "coverage_scarcity_bonus", "boundary_penalty", "duplicate_overlap_penalty", "source_debt_penalty", "final_score", "must_include", "must_exclude"],
-  "replacement_candidates" => ["transaction_id", "add_work_id", "cut_work_id", "evidence_refs", "rationale", "gate_status"]
+  "replacement_candidates" => ["transaction_id", "add_work_id", "cut_work_id", "evidence_refs", "rationale", "gate_status"],
+  "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
+}.freeze
+
+CONTROLLED_FIELD_CHECKS = {
+  "source_registry" => {
+    "schema" => "source",
+    "fields" => ["source_type", "extraction_status"]
+  },
+  "source_items" => {
+    "schema" => "source",
+    "fields" => ["evidence_type", "match_status"]
+  },
+  "work_candidates" => {
+    "schema" => "work",
+    "fields" => ["candidate_status", "date_precision", "review_status"]
+  },
+  "evidence" => {
+    "schema" => "evidence",
+    "fields" => ["evidence_strength", "reviewer_status"]
+  },
+  "replacement_candidates" => {
+    "schema" => "evidence",
+    "fields" => ["gate_status"]
+  }
 }.freeze
 
 def tsv_headers(path)
@@ -108,14 +133,54 @@ rescue EOFError
 end
 
 if failures.empty?
+  schemas = SCHEMA_FILES.transform_values { |path| YAML.load_file(path) }
   registry_rows = read_tsv(TABLE_FILES["source_registry"])
   source_item_rows = read_tsv(TABLE_FILES["source_items"])
   work_rows = read_tsv(TABLE_FILES["work_candidates"])
   evidence_rows = read_tsv(TABLE_FILES["evidence"])
+  relation_rows = read_tsv(TABLE_FILES["relations"])
+  path_selection_rows = read_tsv(TABLE_FILES["path_selection"])
+  replacement_rows = read_tsv(TABLE_FILES["replacement_candidates"])
+
+  table_rows = {
+    "source_registry" => registry_rows,
+    "source_items" => source_item_rows,
+    "work_candidates" => work_rows,
+    "relations" => relation_rows,
+    "evidence" => evidence_rows,
+    "replacement_candidates" => replacement_rows
+  }
 
   source_ids = registry_rows.map { |row| row["source_id"] }.to_set
   source_item_ids = source_item_rows.map { |row| row["source_item_id"] }.to_set
   work_ids = work_rows.map { |row| row["work_id"] }.to_set
+
+  CONTROLLED_FIELD_CHECKS.each do |table, config|
+    schema = schemas.fetch(config.fetch("schema"))
+    controlled_values = schema.fetch("controlled_values", {})
+    rows = table_rows.fetch(table)
+
+    config.fetch("fields").each do |field|
+      allowed = Array(controlled_values[field]).to_set
+      if allowed.empty?
+        checks << ["controlled:#{table}.#{field}", "WARN", "no controlled values declared"]
+        next
+      end
+
+      invalid = rows.reject do |row|
+        value = row[field].to_s
+        value.empty? || allowed.include?(value)
+      end
+
+      if invalid.empty?
+        checks << ["controlled:#{table}.#{field}", "PASS", "#{allowed.size} allowed values"]
+      else
+        examples = invalid.first(10).map { |row| row[field].to_s }.uniq
+        failures << "#{table}.#{field} has invalid controlled values: #{examples.join(", ")}"
+        checks << ["controlled:#{table}.#{field}", "FAIL", "#{invalid.size} invalid rows"]
+      end
+    end
+  end
 
   {
     "source_registry.source_id" => duplicate_values(registry_rows, "source_id"),
@@ -174,6 +239,55 @@ if failures.empty?
     examples = unknown_evidence_works.first(10).map { |row| "#{row["evidence_id"]}:#{row["work_id"]}" }
     failures << "evidence rows reference unknown work IDs: #{examples.join(", ")}"
     checks << ["integrity:evidence.work_id", "FAIL", "#{unknown_evidence_works.size} unknown references"]
+  end
+
+  source_items_by_id = source_item_rows.each_with_object({}) { |row, by_id| by_id[row["source_item_id"]] = row }
+  evidence_with_unsupported_source_items = evidence_rows.select do |row|
+    source_item_id = row["source_item_id"].to_s
+    next false if source_item_id.empty?
+
+    source_item = source_items_by_id[source_item_id]
+    source_item && !%w[matched_current_path matched_candidate represented_by_selection duplicate_or_variant].include?(source_item["match_status"])
+  end
+  if evidence_with_unsupported_source_items.empty?
+    checks << ["integrity:evidence.supported_source_item_status", "PASS", "no evidence from unmatched/out-of-scope source items"]
+  else
+    examples = evidence_with_unsupported_source_items.first(10).map { |row| "#{row["evidence_id"]}:#{row["source_item_id"]}" }
+    failures << "evidence rows reference source items with unsupported match_status: #{examples.join(", ")}"
+    checks << ["integrity:evidence.supported_source_item_status", "FAIL", "#{evidence_with_unsupported_source_items.size} invalid evidence rows"]
+  end
+
+  unknown_relation_works = relation_rows.reject do |row|
+    work_ids.include?(row["work_id"]) && work_ids.include?(row["related_work_id"])
+  end
+  if unknown_relation_works.empty?
+    checks << ["integrity:relations.work_refs", "PASS", "all relation work refs exist"]
+  else
+    examples = unknown_relation_works.first(10).map { |row| "#{row["relation_id"]}:#{row["work_id"]}->#{row["related_work_id"]}" }
+    failures << "relations reference unknown work IDs: #{examples.join(", ")}"
+    checks << ["integrity:relations.work_refs", "FAIL", "#{unknown_relation_works.size} unknown references"]
+  end
+
+  path_selection_work_refs = path_selection_rows.reject { |row| work_ids.include?(row["work_id"]) }
+  if path_selection_work_refs.empty?
+    checks << ["integrity:path_selection.work_id", "PASS", "all selected work IDs exist"]
+  else
+    examples = path_selection_work_refs.first(10).map { |row| "#{row["path_id"]}:#{row["work_id"]}" }
+    failures << "path_selection rows reference unknown work IDs: #{examples.join(", ")}"
+    checks << ["integrity:path_selection.work_id", "FAIL", "#{path_selection_work_refs.size} unknown references"]
+  end
+
+  selected_path_rows = path_selection_rows.select { |row| row["selected"].to_s == "true" }
+  rank_counts = selected_path_rows.each_with_object(Hash.new(0)) { |row, counts| counts[row["rank"].to_i] += 1 }
+  duplicate_ranks = rank_counts.select { |_rank, count| count > 1 }
+  expected_ranks = (1..selected_path_rows.size).to_set
+  actual_ranks = rank_counts.keys.to_set
+  missing_ranks = expected_ranks - actual_ranks
+  if duplicate_ranks.empty? && missing_ranks.empty?
+    checks << ["integrity:path_selection.selected_rank_continuity", "PASS", "#{selected_path_rows.size} selected rows"]
+  else
+    failures << "path_selection selected ranks are not unique/continuous: #{duplicate_ranks.size} duplicate ranks, #{missing_ranks.size} missing ranks"
+    checks << ["integrity:path_selection.selected_rank_continuity", "FAIL", "#{duplicate_ranks.size} duplicate ranks; #{missing_ranks.size} missing ranks"]
   end
 end
 

@@ -23,7 +23,7 @@ Each extraction packet must return:
 
 No packet may treat a corpus/database as a canon list. Corpus rows supply metadata and access evidence; anthology, syllabus, edition-series, and reference rows receive different weights later.
 
-## Active Agent Batch
+## Completed Extraction Batches
 
 | Packet | Source layers | Status | Output target |
 |---|---|---|---|
@@ -33,23 +33,24 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X004 | `norton_english_lit_11e_full_2024`; `longman_british_lit_period_volumes_2009_2017`; `broadview_british_lit_concise_a_b_2019_2024`; `longman_brit_lit_middle_ages_1a_4e`; `broadview_brit_lit_medieval_r3_2023`; `broadview_medieval_drama_2012` | Pilot ingested | English/British and medieval anthology TOC feasibility and pilot rows |
 | X005 | `columbia_lithum_current_2026`; `columbia_lithum_historical_1937_present`; `princeton_humanities_sequences_2024`; `oxford_worlds_classics_online`; `princeton_damrosch_world_literature_2003` | Pilot ingested | University/reference list pilot rows |
 | X006 | `e012_norton_african_american_lit_4e_v1_2025`; `e012_norton_african_american_lit_4e_v2_2025`; `e012_locke_new_negro_1925` | Pilot ingested | African American anthology pilot rows |
+| X007 | `e008_loeb_classical_library_digital`; `e008_oxford_classical_dictionary_online`; `e008_oxford_scholarly_editions_oct`; `e008_cambridge_greek_latin_classics` | Feasibility complete, pilot rows held | Classical edition/reference metadata; corpus/edition rows cannot count as canon votes without source-weight policy |
+| X008 | `norton_world_lit_5e_full_pre1650`; `norton_world_lit_5e_full_post1650`; `longman_world_lit_2e_2009`; `bedford_world_lit_compact_v1_2009`; `bedford_world_lit_compact_v2_2008` | Feasibility complete, pilot rows held | Norton 5e official TOC extractable; Longman partial; Bedford fragment-only |
+| X009 | `dumbarton_oaks_medieval_library`; `mgh_medieval_latin_sources`; `bibliotheca_augustana_germanica`; `wimmer_medieval_german_anthology`; `minnereden_lovesongs_digital`; `osta_2_old_spanish_textual_archive` | Feasibility complete, pilot rows held | Medieval edition/corpus metadata; mostly identity/access/context evidence |
+| X010 | `norton_american_lit_10e_pre1865`; `norton_american_lit_10e_post1865`; `heath_american_lit_7e_2014` | Feasibility complete, pilot rows held | American anthology TOCs; Heath Vol. A item-level gap remains |
+| X011 | `bloom_curated_seed_layer` | Blocked | Exact 200-row seed cannot be recovered from target repo or current path annotations |
+| X012 | `bloom_full_appendix_1994`; `bloom_full_appendix_review_batches` | Recoverable but policy-gated | Local untracked Bloom artifacts found outside target worktree; do not publish or score full appendix blindly |
 
 ## Planned Extraction Packets
 
 | Packet | Source layers | Purpose |
 |---|---|---|
-| X007 | `e008_loeb_classical_library_digital`; `e008_oxford_classical_dictionary_online`; `e008_oxford_scholarly_editions_oct`; `e008_cambridge_greek_latin_classics` | Running: classical edition/reference metadata after open-catalog pilot |
-| X008 | `norton_world_lit_5e_full_pre1650`; `norton_world_lit_5e_full_post1650`; `longman_world_lit_2e_2009`; `bedford_world_lit_compact_v1_2009`; `bedford_world_lit_compact_v2_2008` | Running: world-literature anthology TOC extraction and access blockers |
-| X009 | `dumbarton_oaks_medieval_library`; `mgh_medieval_latin_sources`; `bibliotheca_augustana_germanica`; `wimmer_medieval_german_anthology`; `minnereden_lovesongs_digital`; `osta_2_old_spanish_textual_archive` | Running: medieval edition/corpus metadata not covered by X003 |
-| X010 | `norton_american_lit_10e_pre1865`; `norton_american_lit_10e_post1865`; `heath_american_lit_7e_2014` | Running: American anthology TOC extraction |
-| X011 | `bloom_curated_seed_layer` | Running: recover or reconstruct the 200-row Bloom seed layer |
-| X012 | `bloom_full_appendix_1994`; `bloom_full_appendix_review_batches` | Running: recover, reconstruct, or permanently block Bloom appendix raw/review artifacts |
-| X013 | All extracted source items | Title/creator normalization and incumbent path matching |
-| X014 | All extracted source items | Alias, contained-work, series, and cycle relation creation |
-| X015 | All matched source items | Evidence-row generation into `canon_evidence.tsv` |
-| X016 | All source types | Evidence weighting policy by anthology, syllabus, edition, reference, corpus, and internal record |
-| X017 | All unresolved source items | Omission queue creation with duplicate and boundary checks |
-| X018 | Current path plus omissions | Scored replacement transaction candidates |
+| X013 | All extracted source items | Title/creator normalization and incumbent path matching; run continuously after each extraction batch |
+| X014 | All extracted source items | Alias, contained-work, series, selection, variant, adaptation, and duplicate relation creation |
+| X015 | All source and work tables | Hardening pass: controlled-value validation, status coherence, source-fetch/extraction denominators, and packet status table |
+| X016 | All source types | Evidence weighting policy by anthology, syllabus, edition, reference, corpus, access metadata, award, national canon, and internal record |
+| X017 | All matched source items | Evidence-row generation and source-debt closure rules after X016 policy is encoded |
+| X018 | All unresolved source items | Omission queue creation with duplicate, boundary, chronology, source-family, and item-scope checks |
+| X019 | Current path plus omissions | Scored replacement transaction candidates only after coverage targets and quality issues exist |
 
 ## Integration Gate
 
@@ -61,4 +62,6 @@ An extraction packet can be integrated only after:
 - source URLs/citations are traceable,
 - match status is explicit,
 - source-type weight is not assumed from registry presence,
+- source-class, item-scope, access/provenance, and extraction-denominator status are explicit or queued,
+- source-item `evidence_weight` is treated as provisional observation metadata until derived scoring exists,
 - no copyrighted text is copied into the repo.

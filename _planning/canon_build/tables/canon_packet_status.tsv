@@ -1,0 +1,20 @@
+packet_id	packet_family	scope	status	gate	output_artifact	next_action	notes
+X001	X	classical open metadata	pilot_ingested	matching_needed	_planning/canon_build/source_crosswalk_reports/x_batch_001_x001_x006.md	run_x013_x014	Perseus/PHI pilot rows ingested.
+X002	X	Library of America and African American poetry/slave narrative layers	pilot_ingested	matching_needed	_planning/canon_build/source_crosswalk_reports/x_batch_001_x001_x006.md	run_x013_x014	LOA pilot rows ingested.
+X003	X	medieval public corpora/catalogs	pilot_ingested	matching_needed	_planning/canon_build/source_crosswalk_reports/x_batch_001_x001_x006.md	run_x013_x014	Medieval pilot rows ingested.
+X004	X	English/British anthology TOCs	pilot_ingested	matching_needed	_planning/canon_build/source_crosswalk_reports/x_batch_001_x001_x006.md	run_x013_x014	English/British pilot rows ingested.
+X005	X	university/reference lists	pilot_ingested	matching_needed	_planning/canon_build/source_crosswalk_reports/x_batch_001_x001_x006.md	run_x013_x014	Columbia/Princeton/OWC pilot rows ingested.
+X006	X	African American anthology layers	pilot_ingested	matching_needed	_planning/canon_build/source_crosswalk_reports/x_batch_001_x001_x006.md	run_x013_x014	African American pilot rows ingested.
+X007	X	classical edition/reference metadata	feasibility_complete	rows_held	_planning/canon_build/source_crosswalk_reports/x_batch_002_x007_x012.md	harden_source_policy	Pilot rows held pending source-class policy.
+X008	X	world-literature anthology TOCs	feasibility_complete	rows_held	_planning/canon_build/source_crosswalk_reports/x_batch_002_x007_x012.md	harden_extractor_specs	Norton feasible; Longman partial; Bedford fragmentary.
+X009	X	medieval edition/corpus metadata	feasibility_complete	rows_held	_planning/canon_build/source_crosswalk_reports/x_batch_002_x007_x012.md	harden_item_scope	Mostly identity/access/context evidence.
+X010	X	American anthology TOCs	feasibility_complete	rows_held	_planning/canon_build/source_crosswalk_reports/x_batch_002_x007_x012.md	harden_extractor_specs	Norton feasible; Heath partial.
+X011	X	Bloom curated seed layer	blocked	missing_artifact	_planning/canon_build/source_crosswalk_reports/x_batch_002_x007_x012.md	need_external_seed	Do not reconstruct from current path annotations.
+X012	X	Bloom full appendix/review batches	recoverable	policy_gated	_planning/canon_build/source_crosswalk_reports/x_batch_002_x007_x012.md	record_recovery_manifest	Local untracked artifacts found; do not publish full appendix blindly.
+X013	X	title/creator normalization and matching	planned	hardening_required		run_continuously	Should run after each extraction batch.
+X014	X	alias/contained-work/series relation generation	planned	hardening_required		run_continuously	Needed before omission calls.
+X015	X	controlled-value and status-coherence hardening	active	blocking		schema_validator_update	First hardening pass after workflow review.
+X016	X	source weighting policy	planned	blocking		source_weights_policy	Weights must be centrally derived before scoring.
+X017	X	evidence-row generation and source-debt closure rules	planned	requires_x016		policy_aware_evidence	Do not close debt from metadata/access rows.
+X018	X	omission queue with duplicate/boundary/chronology checks	planned	requires_x013_x017		omission_queue	Gaps remain discovery until matching and policy gates pass.
+X019	X	scored replacement transaction candidates	planned	requires_scores_targets_quality		replacement_candidates	No direct public add/cut before this gate.

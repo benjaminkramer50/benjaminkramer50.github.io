@@ -15,7 +15,14 @@ The public YAML path remains the incumbent display artifact. The scholarly build
 7. `tables/canon_scores.tsv`: derived scores and penalties.
 8. `tables/canon_replacement_candidates.tsv`: proposed add/cut transactions.
 9. `tables/canon_path_selection.tsv`: selected rows for generated public paths.
+10. `tables/canon_packet_status.tsv`: machine-readable packet status and next-action tracking.
 
 ## Gate
 
 No further direct content-replacement wave should merge until the relevant rows in this build layer exist or the tracker records an explicit waiver.
+
+Current validation is structural until the hardening pass is complete. A PASS means headers, uniqueness, and basic references are intact; it does not yet mean evidence is sufficient, taxonomy is complete, scoring is ready, or replacements are safe.
+
+Source items are observations. Source-class policy and scoring scripts must derive weights centrally; row-level `evidence_weight` values are provisional notes until X016/source-weight policy is encoded.
+
+Corpus rows, catalog records, edition-series metadata, and access metadata support identity, alias, edition, provenance, and boundary review. They must not be treated as standalone canon-selection evidence.

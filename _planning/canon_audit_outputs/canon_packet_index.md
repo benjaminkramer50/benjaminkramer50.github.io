@@ -2,9 +2,9 @@
 
 Generated from `_planning/canon_comprehensive_end_to_end_plan_2026_05_02.md`.
 
-Total packets: 410
+Total packets: 450
 
-## A. Control And Infrastructure Packets
+### A. Control And Infrastructure Packets
 
 - A001: YAML schema and required fields.
 - A002: Rank uniqueness, rank continuity, and hidden/non-lifetime leakage.
@@ -38,7 +38,7 @@ Total packets: 410
 - A030: Date-label and sort-year consistency audit.
 - A031: Replacement-induced chronology drift audit.
 
-## B. Period Coverage Packets
+### B. Period Coverage Packets
 
 - B001: Pre-2500 BCE ritual, myth, and early text traditions.
 - B002: 2500-1500 BCE ancient Near Eastern and Egyptian literature.
@@ -75,7 +75,7 @@ Total packets: 410
 - B033: 2010-2019 contemporary global reception, translation boom, Indigenous resurgence, feminist/queer expansion.
 - B034: 2020-present probationary contemporary works and reception threshold.
 
-## C. Macro-Region And Tradition Packets
+### C. Macro-Region And Tradition Packets
 
 - C001: Ancient Egypt.
 - C002: Sumerian literature.
@@ -274,7 +274,7 @@ Total packets: 410
 - C195: Chicano/a/x and borderlands literature.
 - C196: Diasporic, migration, and refugee literature cross-audit.
 
-## D. Form And Genre Packets
+### D. Form And Genre Packets
 
 - D001: Epic.
 - D002: Oral epic.
@@ -323,7 +323,44 @@ Total packets: 410
 - D045: Series treatment policy.
 - D046: Anthology versus individual-work treatment.
 
-## E. Source Crosswalk Packets
+### I. Intersection Coverage Packets
+
+These packets catch gaps that can be invisible in period-only, region-only, or form-only sweeps. They are generated from weak cells in the coverage matrix and from source-backed omissions. The list below is the initial seed; more I packets are opened whenever scoring or red-team review identifies a weak `period x region/tradition x form` cell.
+
+- I001: 1800-1830 US prose and early national fiction.
+- I002: 1830-1870 US fiction, slave narrative, sketch, and short prose.
+- I003: US nineteenth-century poetry versus prose balance.
+- I004: Tang poetry high-canon coverage against classical Chinese anthology sources.
+- I005: Song/Yuan/Ming transition: ci, drama, vernacular fiction, and prose.
+- I006: Premodern Southeast Asian manuscript and court literature.
+- I007: Medieval Persianate romance, epic, and lyric balance.
+- I008: Abbasid Arabic poetry/adab/narrative balance.
+- I009: South Asian bhakti across Tamil, Kannada, Hindi, Bengali, Marathi, and related traditions.
+- I010: Sanskrit kavya/drama/narrative versus scripture/philosophy boundary.
+- I011: African oral epic and manuscript traditions before 1800.
+- I012: Swahili, Hausa, Yoruba, Somali, and other African language-literature anchors.
+- I013: Indigenous Americas precolonial, colonial, and modern-public text boundary.
+- I014: Indigenous contemporary poetry and fiction across North America, Australia, Aotearoa, Arctic, and Pacific.
+- I015: Caribbean language, empire, and form coverage across Anglophone, Francophone, Hispanophone, and Creole traditions.
+- I016: Latin American nineteenth-century prose and poetry before the Boom.
+- I017: Modern Arabic fiction/poetry by region and diaspora.
+- I018: Persian, Turkish, Kurdish, Armenian, Georgian, and Central Asian modern coverage.
+- I019: Korean modern and contemporary fiction/poetry/drama.
+- I020: Japanese modern/postwar/contemporary balance by form.
+- I021: Holocaust, camp, exile, prison, and witness writing across Europe and global contexts.
+- I022: Women's writing before 1800 across Europe, East Asia, South Asia, Middle East, and Americas.
+- I023: Women's writing 1800-1945 across regions and forms.
+- I024: Feminist, queer, and gender-expansive literature after 1945 without overfitting recent works.
+- I025: Graphic narrative, YA, children's literature, genre fiction, and literary-boundary weighting.
+- I026: Modern drama outside Britain/France/US/Russia.
+- I027: Short story cycles and tale traditions across oral, manuscript, and modern forms.
+- I028: Memoir, testimonio, diary, travel, and essay as literature across boundary policies.
+- I029: Translation-series overrepresentation versus underrepresented source-language anchors.
+- I030: Very contemporary 2010-present works under probation and reception thresholds.
+
+### E. Source-Crosswalk Packets
+
+These packets compare the current YAML against major reference layers. Each source-crosswalk packet must report present, absent, represented-by-selection, duplicate, and rejected/out-of-scope entries.
 
 - E001: Existing accepted `_canon` records crosswalk.
 - E002: Bloom curated seed layer.
@@ -356,7 +393,9 @@ Total packets: 410
 - E029: University syllabus sampled layer by region.
 - E030: Specialist minority-language source layer.
 
-## F. Sentinel Author And Title Packets
+### F. Sentinel Author And Title Packets
+
+These are not automatic inclusion lists. They are "must check" sentinels because an omission here would likely indicate a process failure.
 
 - F001: Early US: Washington Irving, James Fenimore Cooper, Catharine Maria Sedgwick, Charles Brockden Brown, Susanna Rowson.
 - F002: US transcendentalism: Emerson, Thoreau, Fuller, Margaret Fuller boundary decision.
@@ -393,7 +432,7 @@ Total packets: 410
 - F033: Indigenous Americas: Popol Vuh, Rabinal Achi, Cantares Mexicanos, Huarochiri, Silko, Momaday, Erdrich, Vizenor, Alexie, Harjo, Ortiz, King, Orange, Long Soldier.
 - F034: Oceania/Arctic: Kumulipo, Wendt, Grace, Ihimaera, Hulme, Wright, Kim Scott, Alexis Wright, Tagaq, Avia, Nappaaluk.
 
-## G. Boundary And Policy Packets
+### G. Boundary And Policy Packets
 
 - G001: What counts as literature versus philosophy.
 - G002: What counts as literature versus theology.
@@ -421,7 +460,7 @@ Total packets: 410
 - G024: Colonization, race, gender, and empire coverage policy.
 - G025: Source-backed exclusion policy.
 
-## H. Integration Packets
+### H. Integration Packets
 
 - H001: First integration wave from high-confidence omissions.
 - H002: Rank repair after first integration.
@@ -437,3 +476,18 @@ Total packets: 410
 - H012: Final validation report.
 - H013: Chronology repair after replacement batches.
 - H014: Duplicate candidate closeout after replacement batches.
+
+### Q. Final Adversarial Packets
+
+These are red-team packets after scoring and integration. They do not add works directly; they try to break the locked result.
+
+- Q001: Missing essential authors or works by source-family consensus.
+- Q002: False omissions caused by aliases, original titles, translated titles, or contained-work relations.
+- Q003: Duplicate and variant clusters that survived relation review.
+- Q004: Chronology and date-basis errors, especially manuscript/oral/publication-date confusion.
+- Q005: Boundary leakage: philosophy, theology, history, criticism, theory, film, music, and non-literary context rows.
+- Q006: Western, English-language, and recent-work overrepresentation after coverage targets.
+- Q007: Underrepresented language/tradition anchors displaced by lower-evidence global works.
+- Q008: Anthology excerpts incorrectly scored as complete works.
+- Q009: Access/corpus metadata incorrectly treated as canon evidence.
+- Q010: Public UI claims that overstate source, category, balance, or completeness status.

@@ -8,14 +8,16 @@ Last updated: 2026-05-03
 |---|---|---|---|
 | Phase S0 | Freeze current baseline and claims | Complete for Wave 005 baseline | Commit `64600ddb264839d57a173438490f36eeed4c31b3`; validation outputs current |
 | Phase S1 | Source/candidate universe scaffolding | Complete for first scaffold | `_planning/canon_build/` schemas, empty tables, validation, and incumbent bootstrap created |
-| Phase S2 | Source crosswalk ingestion E001-E030 | In progress | E001-E012 registered; E001 ingested; Bloom/anthology/source-item blockers documented |
-| Phase S3 | Normalize, dedupe, and first-class taxonomy | Pending | Alias/relation/taxonomy tables required before broad integration |
-| Phase S4 | Scoring and coverage matrix | Pending | Current items and omissions scored together |
-| Phase S5 | Boundary and policy adjudication G001-G025 | Pending | Required before boundary-sensitive rows are locked |
-| Phase S6 | Period, region, and form validation B/C/D packets | Pending | Used to challenge scored universe, not direct replacement |
-| Phase S7 | Source-backed integration H packets | Paused | No further content replacements until S1-S5 gates exist |
-| Phase S8 | Public UI and generated path | Pending | UI filters wait for first-class taxonomy fields |
-| Phase S9 | Final adversarial review | Pending | Not started |
+| Phase S1H | Hardening pass after workflow review | Active next | Controlled values, source-class policy, packet status, source-fetch logs, stronger validation, and idempotent upserts |
+| Phase S2 | Source registry triage and prioritized extraction | In progress | E001-E012 registered; X001-X006 pilot ingested; X007-X012 feasibility complete but rows held pending hardening |
+| Phase S3 | Continuous normalize, dedupe, and relations | Pending | Alias/relation/match-review/quality-issue tables required before broad integration |
+| Phase S4 | Evidence policy and source weighting | Pending | Source weights must be derived centrally; source-item weights are provisional observations only |
+| Phase S5 | First-class taxonomy and boundary policy | Pending | Required before boundary-sensitive rows are locked |
+| Phase S6 | Coverage targets, scoring, and coverage matrix | Pending | Current items and omissions scored together after coverage targets exist |
+| Phase S7 | Period, region, form, sentinel, and intersection validation | Pending | B/C/D/F/I packets challenge scored universe, not direct replacement |
+| Phase S8 | Source-backed integration H packets | Paused | No further content replacements until S1H-S6 gates exist |
+| Phase S9 | Public UI and generated path | Pending | Conservative simplification allowed; precise filters wait for first-class taxonomy fields |
+| Phase S10 | Final adversarial review | Pending | Q packets not started |
 
 ## Completed Waves
 
@@ -48,16 +50,20 @@ Last updated: 2026-05-03
 | Batch | Packets | Status | Output Contract |
 |---|---|---|---|
 | X Batch 1 | X001, X002, X003, X004, X005, X006 | Pilot ingested | 57 pilot source items and 47 pilot evidence rows; full extraction/matching pending |
-| X Batch 2 | X007, X008, X009, X010, X011, X012 | Running | Remaining registered source layers and Bloom recovery/blocker decisions |
-| X Batch 3 | X013, X014, X015, X016, X017, X018 | Planned | Matching, relation creation, evidence generation, weighting, omission queue, and replacement candidates |
+| X Batch 2 | X007, X008, X009, X010, X011, X012 | Feasibility complete; rows held | Classical editions/reference, world/American anthologies, medieval metadata, and Bloom recovery/blocker decisions |
+| X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Recast | Matching, relation creation, hardening, weighting, evidence generation, omission queue, and replacement candidates |
 
 ## Active Structural Debt
 
 - Source gate: 2,939 source-debt rows and 2,938 `manual_only` rows remain; no new row should enter as `manual_only`.
-- E002/E003: Bloom seed/raw/review tables are missing as machine-readable artifacts; current Bloom path annotations cannot close source debt.
+- Validation gate: current PASS means headers/foreign keys only. Controlled vocabularies, source-role semantics, extraction-status coherence, source-debt closure, scoring readiness, and replacement readiness still need hardening.
+- E002: Bloom curated seed table is blocked; exact 200-row seed cannot be reconstructed from target repo or current path annotations without guessing.
+- E003: Bloom full appendix/review tables are recoverable from local untracked artifacts outside the target worktree, but publication/scoring is policy-gated.
 - E004-E006: Norton, Longman, and Bedford layers are registered, but line-item TOC extraction remains pending and access-limited.
 - E007-E012: 38 additional source layers are registered for core curricula, classics, medieval Europe, English/British, American, and African American literature.
 - Source-item gate: source registry rows alone do not support additions. Each layer still needs extracted source items, creator-aware matching, and evidence rows.
+- Evidence gate: access metadata, corpus records, bibliographic databases, internal accepted records, and packet outputs cannot count as external canon support until source-class weighting policy exists.
+- Matching gate: source rows must pass exact/normalized/creator-aware/alias/contained-work/selection/series matching before being called true omissions.
 - Taxonomy gate: public category reports are still keyword-inferred; first-class region, language/tradition, form, selection, and boundary fields are required.
 - A029-A031/H013: replacement-induced chronology inversions must be repaired or explicitly waived before the path is locked.
 - H014: duplicate-like clusters and collection/selection overlaps remain; these now move into alias/relation/decision tables.
@@ -69,8 +75,8 @@ Last updated: 2026-05-03
 Direct replacement waves are paused. Each source-crosswalk or harvest wave must end with:
 
 - a written wave report,
-- an omission queue update,
-- source registry/source item evidence updates when applicable,
+- source registry/source item/evidence updates only when hardening gates permit them,
+- match/relation/quality-issue updates when applicable,
 - a replacement log update only if no content changed or if a later gated integration batch merges changes,
 - regenerated validation outputs,
 - duplicate and chronology warning review,
