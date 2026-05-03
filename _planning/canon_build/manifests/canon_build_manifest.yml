@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_crosswalk_batch_e001_e006_registered
+status: source_crosswalk_batch_e007_e012_registered
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -21,7 +21,7 @@ gates:
   boundary_policy_required_before_boundary_lock: true
   first_class_taxonomy_required_before_ui_precision: true
 artifacts:
-  source_registry: e001_e006_registered
+  source_registry: e001_e012_registered_source_items_pending
   source_items: e001_accepted_records_ingested
   work_candidates: bootstrapped_from_current_path
   aliases: bootstrapped_from_current_path
@@ -46,3 +46,11 @@ source_crosswalk_batch_e001_e006:
   e004_status: registered_needs_complete_norton_toc_extraction
   e005_status: registered_needs_longman_toc_extraction
   e006_status: registered_partial_bedford_public_toc
+source_crosswalk_batch_e007_e012:
+  source_registry_rows_added_or_updated: 38
+  e007_status: registered_needs_extraction
+  e008_status: registered_needs_classics_metadata_extraction
+  e009_status: registered_needs_medieval_metadata_and_toc_extraction
+  e010_status: registered_needs_english_toc_extraction
+  e011_status: registered_needs_american_toc_extraction
+  e012_status: registered_needs_african_american_toc_extraction

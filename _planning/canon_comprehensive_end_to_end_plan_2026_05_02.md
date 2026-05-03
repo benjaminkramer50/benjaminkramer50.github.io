@@ -16,6 +16,8 @@ The workflow is being changed before Wave 006. The first five waves improved obv
 
 Direct content replacement is paused. F031-F034 and all later B/C/D/F packets may still run, but their default role is evidence harvesting and gap discovery, not immediate add/cut integration. Integration resumes only after the source universe, candidate universe, evidence ledger, scoring layer, and boundary policies exist enough to compare current rows and omissions on the same evidence scale.
 
+Execution update: E001-E012 are registered in the source universe. Only E001 currently has source-item and evidence rows because it is local accepted-record evidence. E002/E003 remain blocked by missing Bloom artifacts, and E004-E012 now need source-item extraction before they can support scoring or replacement transactions.
+
 The new source of truth is four-layered:
 
 1. Source universe: source registry, source items, source scope, and citation/provenance metadata.

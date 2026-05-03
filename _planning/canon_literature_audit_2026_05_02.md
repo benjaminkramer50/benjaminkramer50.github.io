@@ -15,6 +15,8 @@ After workflow review, direct replacement waves are paused. The current path is 
 
 First source-crosswalk batch status: E001-E006 are registered in the build layer. E001 ingested 61 accepted `_canon` records as internal accepted-record evidence. E002/E003 remain blocked until Bloom seed/raw/review tables are recovered or reconstructed. Norton, Longman, and Bedford anthology layers are registered, but line-item TOC extraction remains pending.
 
+Second source-crosswalk batch status: E007-E012 are registered as source layers for university core/reference lists, Greek/Roman classics, medieval Europe, English/British literature, American literature, and African American literature. These registry rows do not yet close source debt; source-item extraction and evidence matching are still required.
+
 ## Current Verified State
 
 - Public checklist target: 3,000 texts.
