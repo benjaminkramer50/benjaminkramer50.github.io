@@ -11,6 +11,7 @@ MATCH_REVIEW_PATH = File.join(TABLE_DIR, "canon_match_review_queue.tsv")
 RELATION_REVIEW_PATH = File.join(TABLE_DIR, "canon_relation_review_queue.tsv")
 MATCH_DECISIONS_PATH = File.join(TABLE_DIR, "canon_match_review_decisions.tsv")
 RELATION_DECISIONS_PATH = File.join(TABLE_DIR, "canon_relation_review_decisions.tsv")
+RED_CELL_REVIEW_DECISIONS_PATH = File.join(TABLE_DIR, "canon_red_cell_review_decisions.tsv")
 
 MATCH_DECISION_HEADERS = %w[
   source_item_id source_id raw_title raw_creator decision matched_work_id proposed_work_id
@@ -31,6 +32,111 @@ def write_tsv(path, headers, rows)
   CSV.open(path, "w", col_sep: "\t", force_quotes: false) do |csv|
     csv << headers
     rows.each { |row| csv << headers.map { |header| row.fetch(header, "") } }
+  end
+end
+
+def normalize_title(value)
+  value.to_s
+       .downcase
+       .gsub(/&/, " and ")
+       .gsub(/[[:punct:]]+/, " ")
+       .gsub(/\b(the|a|an|le|la|les|el|los|las|il|lo|gli|i|der|die|das)\b/, " ")
+       .gsub(/\s+/, " ")
+       .strip
+end
+
+X030_PROPOSED_CANDIDATES = {
+  "holy sonnets" => {
+    proposed_work_id: "work_candidate_x030_donne_holy_sonnets",
+    proposed_title: "Holy Sonnets",
+    proposed_creator: "John Donne",
+    item_scope: "poetry_collection_boundary_pending",
+    evidence_role: "field_anthology_support_limited",
+    next_action: "create_candidate_after_collection_boundary_review"
+  },
+  "prince" => {
+    proposed_work_id: "work_candidate_x030_machiavelli_prince",
+    proposed_title: "The Prince",
+    proposed_creator: "Niccolo Machiavelli",
+    item_scope: "political_philosophical_prose_boundary_pending",
+    evidence_role: "field_anthology_support_limited",
+    next_action: "create_candidate_after_boundary_policy_review"
+  },
+  "yellow woman" => {
+    proposed_work_id: "work_candidate_x030_silko_yellow_woman",
+    proposed_title: "Yellow Woman",
+    proposed_creator: "Leslie Marmon Silko",
+    item_scope: "short_story_granularity_pending",
+    evidence_role: "field_anthology_support_limited",
+    next_action: "create_candidate_after_short_story_granularity_review"
+  },
+  "zaabalawi" => {
+    proposed_work_id: "work_candidate_x030_mahfouz_zaabalawi",
+    proposed_title: "Zaabalawi",
+    proposed_creator: "Naguib Mahfouz",
+    item_scope: "short_story_granularity_pending",
+    evidence_role: "field_anthology_support_limited",
+    next_action: "create_candidate_after_short_story_granularity_review"
+  }
+}.freeze
+
+def x030_route_index(rows)
+  rows.each_with_object({}) do |row, by_title|
+    row.fetch("subject").split("|").each do |subject|
+      normalized = normalize_title(subject)
+      by_title[normalized] = row unless normalized.empty?
+    end
+  end
+end
+
+def x030_route_override(row, route_index)
+  route_key = normalize_title(row.fetch("raw_title"))
+  route = route_index[route_key]
+  return nil unless route
+
+  target_work_id = route.fetch("target_work_id", "")
+  rationale = "X030 reviewed route: #{route.fetch("rationale")}"
+
+  case route.fetch("review_decision")
+  when "contained_in_current_collection"
+    {
+      decision: "represented_by_existing_selection",
+      matched_work_id: target_work_id,
+      item_scope: "selection_in_existing_collection",
+      evidence_role: "representative_selection",
+      next_action: "record_selection_relation_after_relation_review",
+      reviewer_status: "reviewed_not_integrated",
+      rationale: rationale
+    }
+  when "contained_in_current_work"
+    {
+      decision: "contained_in_existing_work",
+      matched_work_id: target_work_id,
+      item_scope: "contained_work_component",
+      evidence_role: "component_or_excerpt_evidence",
+      next_action: "record_contained_work_scope_after_relation_review",
+      reviewer_status: "reviewed_not_integrated",
+      rationale: rationale
+    }
+  when "new_or_collection_candidate_review", "new_omission_candidate_boundary_review", "new_omission_candidate_short_story_review"
+    proposed = X030_PROPOSED_CANDIDATES.fetch(route_key)
+    proposed.merge(
+      decision: "create_source_backed_candidate_needs_boundary_review",
+      reviewer_status: "reviewed_not_integrated",
+      rationale: rationale
+    )
+  when "existing_current_match_needs_creator_disambiguation"
+    {
+      decision: "existing_match_requires_creator_disambiguation",
+      matched_work_id: target_work_id,
+      item_scope: "story_component_creator_disambiguation_pending",
+      evidence_role: "pending_match_review",
+      next_action: route.fetch("next_action"),
+      reviewer_status: "reviewed_not_integrated",
+      rationale: rationale
+    }
+  else
+    nil
   end
 end
 
@@ -132,8 +238,11 @@ match_overrides = {
   }
 }.freeze
 
+x030_routes = File.exist?(RED_CELL_REVIEW_DECISIONS_PATH) ? x030_route_index(read_tsv(RED_CELL_REVIEW_DECISIONS_PATH)) : {}
+
 match_decisions = read_tsv(MATCH_REVIEW_PATH).map do |row|
   override = match_overrides[row.fetch("source_item_id")]
+  override ||= x030_route_override(row, x030_routes)
   unless override
     candidate_work_ids = row.fetch("candidate_work_ids", "").split(";").reject(&:empty?)
     issue_type = row.fetch("issue_type", "")
@@ -202,6 +311,22 @@ relation_decisions = read_tsv(RELATION_REVIEW_PATH).map do |row|
         item_scope: match_decision["item_scope"],
         next_action: "create_candidate_before_final_relation",
         rationale: "Relation decision depends on proposed candidate #{match_decision["proposed_work_id"]}."
+      }
+    elsif match_decision && ["represented_by_existing_selection", "contained_in_existing_work"].include?(match_decision["decision"])
+      {
+        decision: match_decision["decision"] == "contained_in_existing_work" ? "link_contained_component_to_existing_work" : "link_selection_to_existing_collection",
+        target_work_id: match_decision["matched_work_id"],
+        item_scope: match_decision["item_scope"],
+        next_action: match_decision["next_action"],
+        rationale: match_decision["rationale"]
+      }
+    elsif match_decision && match_decision["decision"] == "existing_match_requires_creator_disambiguation"
+      {
+        decision: "blocked_until_creator_disambiguation",
+        target_work_id: match_decision["matched_work_id"],
+        item_scope: match_decision["item_scope"],
+        next_action: match_decision["next_action"],
+        rationale: match_decision["rationale"]
       }
     elsif source_item_id == "broadview_medieval_r3_exeter_wanderer"
       {

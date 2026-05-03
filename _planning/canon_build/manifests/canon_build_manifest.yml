@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x034_creator_variants_generated
+status: source_item_batch_x035_x030_scope_routes_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -118,15 +118,19 @@ next_hardening_steps:
 - derive_evidence_weights_centrally_before_scoring
 - populate_quality_issues_and_coverage_targets_before_replacements
 source_item_matching_phase_x013_x014:
-  latest_match_rerun: x034_after_creator_variants
+  latest_match_rerun: x035_after_x030_scope_routes
   match_candidate_rows: 557
   match_review_queue_rows: 5474
   match_review_decision_rows: 5474
   match_review_decision_summary:
-    unresolved_no_candidate_match: 5403
     candidate_match_requires_manual_confirmation: 54
-    unresolved_ambiguous_candidate_match: 16
+    contained_in_existing_work: 10
+    create_source_backed_candidate_needs_boundary_review: 8
+    existing_match_requires_creator_disambiguation: 2
     out_of_scope_media_boundary: 1
+    represented_by_existing_selection: 19
+    unresolved_ambiguous_candidate_match: 14
+    unresolved_no_candidate_match: 5366
   source_backed_candidate_rows_created: 8
   source_items_updated_from_review_decisions: 9
   policy_aware_evidence_rows_generated: 360
@@ -144,15 +148,19 @@ source_item_matching_phase_x013_x014:
   relation_review_queue_rows: 7567
   relation_review_decision_rows: 7567
   relation_scope_status_summary:
-    not_writable_policy_blocked: 7555
-    scope_review_required: 12
+    not_writable_policy_blocked: 7518
+    scope_review_required: 41
+    target_missing: 8
     ready_to_write_relation: 0
   relation_scope_blockers:
-    source_container_only: 5146
+    source_container_only: 5107
     selection_scope_pending: 2409
     alias_or_variant_review_required: 8
-    represented_by_existing_selection_review_required: 2
+    represented_by_existing_selection_review_required: 21
+    contained_component_review_required: 10
+    creator_disambiguation_required: 2
     cycle_container_required: 2
+    target_exists_scope_review_required: 8
   scoring_input_summary:
     total_rows: 3008
     ready_for_score_computation: 0
@@ -160,9 +168,13 @@ source_item_matching_phase_x013_x014:
     gate_interpretation: scores_not_generated_until_source_debt_and_scope_blockers_are_resolved
   match_decision_summary:
     candidate_match_requires_manual_confirmation: 54
+    contained_in_existing_work: 10
+    create_source_backed_candidate_needs_boundary_review: 8
+    existing_match_requires_creator_disambiguation: 2
     out_of_scope_media_boundary: 1
-    unresolved_ambiguous_candidate_match: 16
-    unresolved_no_candidate_match: 5403
+    represented_by_existing_selection: 19
+    unresolved_ambiguous_candidate_match: 14
+    unresolved_no_candidate_match: 5366
   status: source_debt_and_scoring_inputs_generated
   direct_replacements: 0
 x032_alias_match_rerun:
@@ -207,6 +219,18 @@ x034_creator_variant_matching:
     out_of_scope_media_boundary: 1
     unresolved_ambiguous_candidate_match: 16
     unresolved_no_candidate_match: 5403
+  direct_replacements: 0
+x035_x030_scope_routes:
+  status: x030_routes_applied_to_match_and_relation_decisions
+  report: _planning/canon_build/source_crosswalk_reports/x_batch_019_x035_x030_scope_routes.md
+  x030_routed_match_rows: 39
+  represented_by_existing_selection_rows: 19
+  contained_in_existing_work_rows: 10
+  boundary_review_candidate_rows: 8
+  creator_disambiguation_rows: 2
+  relation_scope_status_rows: 7567
+  relation_scope_review_required_rows: 41
+  relation_scope_target_missing_rows: 8
   direct_replacements: 0
 source_crosswalk_batch_e013_e018:
   source_registry_rows_added_or_updated: 25

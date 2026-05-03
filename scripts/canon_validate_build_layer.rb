@@ -458,8 +458,9 @@ if failures.empty?
   extra_relation_scope_status = relation_scope_status_keys - relation_decision_scope_keys
   unknown_relation_scope_sources = relation_scope_status_rows.reject { |row| source_ids.include?(row["source_id"]) }
   unknown_relation_scope_items = relation_scope_status_rows.reject { |row| source_item_ids.include?(row["source_item_id"]) }
+  valid_relation_scope_targets = work_ids + proposed_work_ids
   unknown_relation_scope_targets = relation_scope_status_rows.reject do |row|
-    row["target_work_id"].to_s.empty? || work_ids.include?(row["target_work_id"])
+    row["target_work_id"].to_s.empty? || valid_relation_scope_targets.include?(row["target_work_id"])
   end
   unknown_relation_scope_matched = relation_scope_status_rows.reject do |row|
     row["matched_work_id"].to_s.empty? || work_ids.include?(row["matched_work_id"])

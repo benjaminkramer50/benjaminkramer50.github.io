@@ -25,6 +25,18 @@ decision_rules:
     writable_relation: conditional
     scope_status: represented_by_existing_selection_review_required
     blocker: Existing selection candidate can be linked only after selection policy review.
+  link_selection_to_existing_collection:
+    writable_relation: conditional
+    scope_status: represented_by_existing_selection_review_required
+    blocker: X030 reviewed a source row as a selection contained in an existing collection; write only after selection policy review.
+  link_contained_component_to_existing_work:
+    writable_relation: conditional
+    scope_status: contained_component_review_required
+    blocker: X030 reviewed a source row as a component of an existing selected work; write only after contained-work relation policy review.
+  blocked_until_creator_disambiguation:
+    writable_relation: false
+    scope_status: creator_disambiguation_required
+    blocker: Same-title row needs creator disambiguation before any relation or evidence write.
   keep_selection_scope_pending:
     writable_relation: false
     scope_status: selection_scope_pending
