@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x030_title_route_review_recorded
+status: source_item_batch_x031_title_variant_aliases_added
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -27,7 +27,7 @@ artifacts:
   source_registry: e001_e018_registered_source_items_pending
   source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_x023_x024_x025_x026_x027_source_items
   work_candidates: bootstrapped_from_current_path_plus_x013_source_candidates
-  aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases
+  aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases_plus_x031
   relations: initialized_empty
   match_candidates: generated_x013_expanded_after_x027
   match_review_queue: generated_x013_after_x027
@@ -63,7 +63,7 @@ current_counts:
   source_backed_candidates: 8
   creators: 2006
   work_creators: 3015
-  aliases: 445
+  aliases: 452
   source_items: 5942
   evidence_rows: 468
   relation_scope_status_rows: 7567
@@ -298,4 +298,7 @@ red_cell_review_x030:
     review_collection_boundary_and_existing_donne_coverage: 1
     review_short_story_granularity_and_create_candidate_if_policy_allows: 2
     split_by_creator_then_match_joyce_rows_to_dubliners: 1
+  direct_replacements: 0
+title_variant_aliases_x031:
+  aliases_added: 7
   direct_replacements: 0

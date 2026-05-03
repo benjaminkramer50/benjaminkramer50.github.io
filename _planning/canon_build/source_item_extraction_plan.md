@@ -58,6 +58,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X028 | All current works, source items, evidence rows, source debt rows, and sentinel targets | Diagnostics generated | Coverage matrix, 57 sentinel checks, 185 gap diagnostics, and 120 red-cell audit rows generated; Washington Irving, Frederick Douglass, and Emily Dickinson sentinels resolve as present; public path unchanged |
 | X029 | X028 red-cell audit queue | Triage generated | 120 red-cell rows classified into omission-candidate, variant-alias, existing-match, subwork/scope, coverage, and source-debt/taxonomy routes; public path unchanged |
 | X030 | X029 title-level rows | Review decisions recorded | 25 clear title-route decisions recorded: variants/aliases, contained-work or collection coverage, and a small set of boundary-review omission candidates; public path unchanged |
+| X031 | X030 reviewed title variants | Aliases added | 7 safe source-title variant aliases added for existing selected works; contained poem/excerpt rows intentionally left for relation/scope review; public path unchanged |
 
 ## Planned Extraction Packets
 
