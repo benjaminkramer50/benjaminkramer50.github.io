@@ -45,6 +45,7 @@ TABLE_FILES = {
   "replacement_candidates" => File.join(BUILD_DIR, "tables", "canon_replacement_candidates.tsv"),
   "replacement_pair_review_queue" => File.join(BUILD_DIR, "tables", "canon_replacement_pair_review_queue.tsv"),
   "cut_review_work_orders" => File.join(BUILD_DIR, "tables", "canon_cut_review_work_orders.tsv"),
+  "generic_selection_basis_review" => File.join(BUILD_DIR, "tables", "canon_generic_selection_basis_review.tsv"),
   "packet_status" => File.join(BUILD_DIR, "tables", "canon_packet_status.tsv")
 }.freeze
 
@@ -68,6 +69,7 @@ HEADER_REQUIREMENTS = {
   "replacement_candidates" => ["transaction_id", "add_work_id", "cut_work_id", "evidence_refs", "rationale", "gate_status"],
   "replacement_pair_review_queue" => ["queue_id", "transaction_id", "add_work_id", "cut_work_id", "pair_review_priority", "review_bucket", "next_action"],
   "cut_review_work_orders" => ["work_order_id", "cut_work_id", "cut_title", "cut_risk_score", "paired_add_work_ids", "review_focus", "next_action"],
+  "generic_selection_basis_review" => ["review_id", "work_order_id", "cut_work_id", "selection_basis_status", "recommended_resolution", "next_action"],
   "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
 }.freeze
 

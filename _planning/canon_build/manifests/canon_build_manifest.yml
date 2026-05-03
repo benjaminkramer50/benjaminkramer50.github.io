@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: cut_review_work_orders_x050_generated
+status: generic_selection_basis_review_x051_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -45,6 +45,7 @@ artifacts:
   scores: generated_x043_provisional_ready_rows_only
   replacement_candidates: generated_x047_blocked_add_cut_pairings
   cut_candidates: generated_x046_all_incumbent_cut_risk_table
+  generic_selection_basis_review: generated_x051_from_cut_review_work_orders
   path_selection: bootstrapped_from_current_path
   creators: bootstrapped_from_current_path_plus_x013_candidate_creators_plus_x034_variants
   coverage_matrix: generated_x028
@@ -79,6 +80,7 @@ current_counts:
   replacement_candidate_rows: 1215
   replacement_pair_review_queue_rows: 75
   cut_review_work_order_rows: 50
+  generic_selection_basis_review_rows: 50
   cut_candidate_rows: 3000
   source_items_matched_current_path: 282
   source_items_matched_candidate: 24
@@ -548,4 +550,15 @@ cut_review_work_orders_x050:
     generic_title_selection_basis_duplicate_cluster_chronology_source_debt: 2
     duplicate_cluster_source_debt: 1
     generic_title_selection_basis_chronology_source_debt: 1
+  direct_replacements: 0
+generic_selection_basis_review_x051:
+  status: generated_from_x050_cut_review_work_orders
+  review_rows: 50
+  rows_with_alias_support: 6
+  rows_with_matched_source_items: 2
+  generic_title_rows_without_accepted_evidence: 49
+  selection_basis_status_counts:
+    generic_title_unresolved_no_source_support: 47
+    generic_title_source_items_need_evidence_review: 2
+    non_generic_source_support_unresolved: 1
   direct_replacements: 0
