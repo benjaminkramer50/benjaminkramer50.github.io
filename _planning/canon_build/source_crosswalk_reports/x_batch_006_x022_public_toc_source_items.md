@@ -1,10 +1,11 @@
 # X022 Public TOC Source-Item Expansion
 
-- status: source_items_ingested_x013_x014_rerun_evidence_pending
+- status: source_items_ingested_x013_x014_rerun_x017_provisional_evidence_generated
 - generated_rows: 697
 - replaced_sources: 9
 - direct_public_path_changes: 0
-- evidence_rows_added: 0
+- evidence_rows_added_by_x022: 0
+- evidence_rows_added_by_x017_after_matching: 40
 
 ## Source Counts
 

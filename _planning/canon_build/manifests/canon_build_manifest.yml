@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: x013_x014_rerun_after_x022_source_item_expansion
+status: x017_evidence_refresh_after_x022_matching
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -59,7 +59,7 @@ current_counts:
   work_creators: 3015
   aliases: 445
   source_items: 1088
-  evidence_rows: 117
+  evidence_rows: 157
   relation_scope_status_rows: 1315
   source_debt_status_rows: 3008
   omission_queue_rows: 8
@@ -119,14 +119,14 @@ source_item_matching_phase_x013_x014:
     out_of_scope_media_boundary: 1
   source_backed_candidate_rows_created: 8
   source_items_updated_from_review_decisions: 9
-  policy_aware_evidence_rows_generated: 9
+  policy_aware_evidence_rows_generated: 49
   source_debt_status_summary:
-    open_no_evidence: 2913
-    open_internal_only: 45
+    open_no_evidence: 2880
+    open_internal_only: 39
     open_non_scoring_only: 22
-    open_provisional_external_support: 18
-    open_selection_only: 9
-    open_needs_review: 1
+    open_provisional_external_support: 25
+    open_selection_only: 40
+    open_needs_review: 2
   omission_queue_summary:
     total_rows: 8
     ready_for_scoring_review: 0

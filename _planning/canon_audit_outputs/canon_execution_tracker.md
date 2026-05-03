@@ -11,7 +11,7 @@ Last updated: 2026-05-03
 | Phase S1H | Hardening pass after workflow review | Active next | Controlled values, source-class policy, packet status, source-fetch logs, stronger validation, and idempotent upserts |
 | Phase S2 | Source registry triage and prioritized extraction | In progress | E001-E018 registered; X001-X006 pilot ingested; X007-X012 feasibility complete but rows held pending hardening; X020-X022 generated/updated 1,020 E013/E014/E015/E016/E017/E018 source-item observations; source table now has 1,088 rows |
 | Phase S3 | Continuous normalize, dedupe, and relations | Started | X013/X014 rerun after X022: 175 match candidates, 931 match-review decisions, 1,315 relation-scope rows, and 8 provisional source-backed candidates |
-| Phase S4 | Evidence policy and source weighting | Started | Source weights, source-debt rules, 9 provisional X017 evidence rows, a 3,008-row source-debt status table, and scoring-input blockers exist; 0 source-debt rows are closed |
+| Phase S4 | Evidence policy and source weighting | Started | Source weights, source-debt rules, 49 provisional X017 evidence rows, 157 total evidence rows, a 3,008-row source-debt status table, and scoring-input blockers exist; 0 source-debt rows are closed |
 | Phase S5 | First-class taxonomy and boundary policy | Pending | Required before boundary-sensitive rows are locked |
 | Phase S6 | Coverage targets, scoring, and coverage matrix | Started | `canon_scoring_inputs.tsv` covers 3,008 candidates; 0 rows are ready for score computation, and coverage targets/scores are not generated |
 | Phase S7 | Period, region, form, sentinel, and intersection validation | Pending | B/C/D/F/I packets challenge scored universe, not direct replacement |
@@ -52,9 +52,9 @@ Last updated: 2026-05-03
 | X Batch 1 | X001, X002, X003, X004, X005, X006 | Pilot ingested | 57 pilot source items and 47 pilot evidence rows; full extraction/matching pending |
 | X Batch 2 | X007, X008, X009, X010, X011, X012 | Feasibility complete; rows held | Classical editions/reference, world/American anthologies, medieval metadata, and Bloom recovery/blocker decisions |
 | X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Started | X013/X014 now cover the 1,088-row source table: 175 match candidates, 931 match-review decisions, and 1,315 relation-scope rows; remaining work is evidence acceptance, coverage targets, scores, and replacement candidates |
-| X Batch 4 | X020 | Started | 85 source-item observations from E014/E018; matching now covered by expanded X013/X014; evidence generation pending |
-| X Batch 5 | X021 | Started | 238 source-item observations from E013/E016/E017; matching now covered by expanded X013/X014; evidence generation pending |
-| X Batch 6 | X022 | Started | 697 parser-backed source-item observations generated/updated from E013/E014/E015/E017/E018 public TOCs, series lists, and metadata endpoints; X013/X014 queues rerun; evidence generation pending |
+| X Batch 4 | X020 | Started | 85 source-item observations from E014/E018; matching now covered by expanded X013/X014; provisional X017 evidence generated where eligible |
+| X Batch 5 | X021 | Started | 238 source-item observations from E013/E016/E017; matching now covered by expanded X013/X014; provisional X017 evidence generated where eligible |
+| X Batch 6 | X022 | Started | 697 parser-backed source-item observations generated/updated from E013/E014/E015/E017/E018 public TOCs, series lists, and metadata endpoints; X013/X014 queues rerun; provisional X017 evidence generated where eligible |
 
 ## Active Structural Debt
 
@@ -65,8 +65,8 @@ Last updated: 2026-05-03
 - E004-E006: Norton, Longman, and Bedford layers are registered, but line-item TOC extraction remains pending and access-limited.
 - E007-E012: 38 additional source layers are registered for core curricula, classics, medieval Europe, English/British, American, and African American literature.
 - E013-E018: 24 additional source layers are registered for Latin American, African, South Asian, Chinese, Japanese, and Korean literature. X020-X022 generated/updated 1,020 E013/E014/E015/E016/E017/E018 source-item observations, and `canon_source_items.tsv` now has 1,088 total rows. X013/X014 queues have been rerun, but these remain source items only until evidence generation and scoring gates run.
-- Source-item gate: source registry rows alone do not support additions. Each layer still needs extracted source items, creator-aware matching, and evidence rows.
-- Evidence gate: access metadata, corpus records, bibliographic databases, internal accepted records, and packet outputs cannot count as external canon support until source-class weighting and source-debt rules are integrated into scoring. X017 source-debt status has 0 closed rows; this is expected because accepted independent external support has not been adjudicated.
+- Source-item gate: source registry rows alone do not support additions. Each layer still needs extracted source items, creator-aware matching, accepted evidence rows, and source-scope review.
+- Evidence gate: access metadata, corpus records, bibliographic databases, internal accepted records, and packet outputs cannot count as external canon support until source-class weighting and source-debt rules are integrated into scoring. X017 now has 49 provisional policy-aware rows and 157 total evidence rows, but source-debt status still has 0 closed rows because accepted independent external support has not been adjudicated.
 - Matching gate: source rows must pass exact/normalized/creator-aware/alias/contained-work/selection/series matching before being called true omissions. X013 now has 175 match candidates and 931 match-review decisions: 912 unresolved no-candidate rows, 18 candidate matches requiring manual confirmation, and 1 out-of-scope media boundary. None are public-path additions.
 - Relation gate: selection, contained-work, series, variant, duplicate, and adaptation decisions must be reviewed before final relation rows are written. X014 now has 1,315 relation-scope status rows; 1,303 are policy-blocked and 12 need scope review, so 0 are ready to write as final relations.
 - Omission gate: X018 currently has 8 source-backed omission rows and 0 ready-for-scoring rows; every gap still has source-debt, selection/scope, chronology, or corroboration blockers.
