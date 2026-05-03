@@ -3,6 +3,7 @@
 
 require "csv"
 require "fileutils"
+require "set"
 require "yaml"
 
 ROOT = File.expand_path("..", __dir__)
@@ -44,6 +45,17 @@ HEADER_REQUIREMENTS = {
 def tsv_headers(path)
   line = File.open(path, &:readline)
   CSV.parse_line(line, col_sep: "\t")
+end
+
+def read_tsv(path)
+  CSV.read(path, headers: true, col_sep: "\t").map(&:to_h)
+end
+
+def duplicate_values(rows, key)
+  rows.each_with_object(Hash.new(0)) do |row, counts|
+    value = row[key].to_s
+    counts[value] += 1 unless value.empty?
+  end.select { |_value, count| count > 1 }
 end
 
 failures = []
@@ -93,6 +105,67 @@ TABLE_FILES.each do |label, path|
 rescue EOFError
   failures << "Table #{label} is empty: #{path}"
   checks << ["table:#{label}", "FAIL", path]
+end
+
+if failures.empty?
+  registry_rows = read_tsv(TABLE_FILES["source_registry"])
+  source_item_rows = read_tsv(TABLE_FILES["source_items"])
+  work_rows = read_tsv(TABLE_FILES["work_candidates"])
+  evidence_rows = read_tsv(TABLE_FILES["evidence"])
+
+  source_ids = registry_rows.map { |row| row["source_id"] }.to_set
+  source_item_ids = source_item_rows.map { |row| row["source_item_id"] }.to_set
+  work_ids = work_rows.map { |row| row["work_id"] }.to_set
+
+  {
+    "source_registry.source_id" => duplicate_values(registry_rows, "source_id"),
+    "source_items.source_item_id" => duplicate_values(source_item_rows, "source_item_id"),
+    "work_candidates.work_id" => duplicate_values(work_rows, "work_id"),
+    "evidence.evidence_id" => duplicate_values(evidence_rows, "evidence_id")
+  }.each do |label, duplicates|
+    if duplicates.empty?
+      checks << ["integrity:unique:#{label}", "PASS", "0 duplicates"]
+    else
+      failures << "#{label} has duplicate values: #{duplicates.keys.first(10).join(", ")}"
+      checks << ["integrity:unique:#{label}", "FAIL", "#{duplicates.size} duplicate keys"]
+    end
+  end
+
+  unknown_source_items = source_item_rows.reject { |row| source_ids.include?(row["source_id"]) }
+  if unknown_source_items.empty?
+    checks << ["integrity:source_items.source_id", "PASS", "all source IDs registered"]
+  else
+    examples = unknown_source_items.first(10).map { |row| "#{row["source_item_id"]}:#{row["source_id"]}" }
+    failures << "source_items rows reference unknown source IDs: #{examples.join(", ")}"
+    checks << ["integrity:source_items.source_id", "FAIL", "#{unknown_source_items.size} unknown references"]
+  end
+
+  unknown_evidence_sources = evidence_rows.reject { |row| source_ids.include?(row["source_id"]) }
+  if unknown_evidence_sources.empty?
+    checks << ["integrity:evidence.source_id", "PASS", "all source IDs registered"]
+  else
+    examples = unknown_evidence_sources.first(10).map { |row| "#{row["evidence_id"]}:#{row["source_id"]}" }
+    failures << "evidence rows reference unknown source IDs: #{examples.join(", ")}"
+    checks << ["integrity:evidence.source_id", "FAIL", "#{unknown_evidence_sources.size} unknown references"]
+  end
+
+  unknown_evidence_items = evidence_rows.reject { |row| row["source_item_id"].to_s.empty? || source_item_ids.include?(row["source_item_id"]) }
+  if unknown_evidence_items.empty?
+    checks << ["integrity:evidence.source_item_id", "PASS", "all nonblank source item IDs exist"]
+  else
+    examples = unknown_evidence_items.first(10).map { |row| "#{row["evidence_id"]}:#{row["source_item_id"]}" }
+    failures << "evidence rows reference unknown source item IDs: #{examples.join(", ")}"
+    checks << ["integrity:evidence.source_item_id", "FAIL", "#{unknown_evidence_items.size} unknown references"]
+  end
+
+  unknown_evidence_works = evidence_rows.reject { |row| work_ids.include?(row["work_id"]) }
+  if unknown_evidence_works.empty?
+    checks << ["integrity:evidence.work_id", "PASS", "all work IDs exist"]
+  else
+    examples = unknown_evidence_works.first(10).map { |row| "#{row["evidence_id"]}:#{row["work_id"]}" }
+    failures << "evidence rows reference unknown work IDs: #{examples.join(", ")}"
+    checks << ["integrity:evidence.work_id", "FAIL", "#{unknown_evidence_works.size} unknown references"]
+  end
 end
 
 FileUtils.mkdir_p(MANIFEST_DIR)

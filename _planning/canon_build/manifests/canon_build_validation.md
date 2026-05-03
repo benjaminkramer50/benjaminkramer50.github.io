@@ -24,3 +24,11 @@
 | table:coverage_targets | PASS | `_planning/canon_build/tables/canon_coverage_targets.yml` |
 | table:path_selection | PASS | `_planning/canon_build/tables/canon_path_selection.tsv (8 columns)` |
 | table:replacement_candidates | PASS | `_planning/canon_build/tables/canon_replacement_candidates.tsv (18 columns)` |
+| integrity:unique:source_registry.source_id | PASS | `0 duplicates` |
+| integrity:unique:source_items.source_item_id | PASS | `0 duplicates` |
+| integrity:unique:work_candidates.work_id | PASS | `0 duplicates` |
+| integrity:unique:evidence.evidence_id | PASS | `0 duplicates` |
+| integrity:source_items.source_id | PASS | `all source IDs registered` |
+| integrity:evidence.source_id | PASS | `all source IDs registered` |
+| integrity:evidence.source_item_id | PASS | `all nonblank source item IDs exist` |
+| integrity:evidence.work_id | PASS | `all work IDs exist` |
