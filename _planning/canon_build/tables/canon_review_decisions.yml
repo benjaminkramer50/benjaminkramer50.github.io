@@ -58,6 +58,36 @@ decisions:
       - compare_against_existing_author_representation
       - require_source_diversity_before_any_public_path_addition
     public_path_effect: none
+  - decision_id: x039_evidence_review_001
+    decision_type: evidence_scope_review
+    applies_to_work_ids:
+      - work_candidate_x030_machiavelli_prince
+      - work_candidate_x030_donne_holy_sonnets
+      - work_candidate_x030_mahfouz_zaabalawi
+      - work_candidate_x030_silko_yellow_woman
+    applies_to_evidence_ids:
+      - x017_ev_longman2e_volc_140_niccolo_machiavelli_the_prince
+      - x017_ev_nawol5e_volc_109_the_prince
+      - x017_ev_longman2e_volc_241_john_donne_holy_sonnets
+      - x017_ev_nawol5e_volc_188_john_donne_holy_sonnets
+      - x017_ev_longman2e_volf_179_zaabalawi
+      - x017_ev_nawol5e_volf_188_zaabalawi
+      - x017_ev_longman2e_volf_216_leslie_marmon_silko_yellow_woman
+      - x017_ev_nawol5e_volf_194_yellow_woman
+    decision: accepted_as_external_anthology_inclusion_support
+    rationale: >
+      Each row is an exact-title item in either Norton World Literature 5e or
+      Longman World Literature 2e, both registered as extracted world-literature
+      anthology sources. Acceptance here means the evidence can close external
+      source-support debt under current source-debt rules. It does not decide
+      public-path inclusion, complete-text reading scope, boundary policy, duplicate
+      replacement, or final score readiness.
+    scoring_effect: source_debt_can_close_if_independent_support_threshold_is_met
+    required_followup:
+      - keep_boundary_flags_open_until_policy_and_granularity_review
+      - keep_duplicate_author_representation_review_open
+      - do_not_write_source_container_rows_as_work_to_work_relations
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3012

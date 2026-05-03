@@ -83,7 +83,7 @@ Done when:
 - Boundary policies exist for scripture, philosophy, theology, history, oral tradition, Indigenous/public material, memoir/testimonio, children's/YA, genre fiction, graphic narrative, series, and anthology excerpts.
 - Quality reports cover duplicates, generic titles, chronology/date-basis issues, and boundary cases from build tables.
 
-Current status: started for the X018 queue; 12 source-backed omissions are queued, 3 conditional boundary-policy routes have been recorded for the X036 candidates, and 0 rows are ready for scoring.
+Current status: started for the X018 queue; 12 source-backed omissions are queued, 3 conditional boundary-policy routes have been recorded for the X036 candidates, 8 exact-title anthology evidence rows have been accepted for those candidates, and 0 rows are ready for scoring.
 
 ## Phase 6: Coverage Targets And Scoring
 
@@ -110,7 +110,7 @@ Done when:
 - Period packets B001-B034, region/tradition packets C001-C196, form packets D001-D046, sentinel packets F001-F034, and intersection packets I001-I030 are complete, waived, or represented by generated diagnostics with no red-cell flag.
 - All high-priority gaps are added to the omission queue, rejected with rationale, or deferred with source-gap rationale.
 
-Current status: first X028-X038 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, applies 39 reviewed X030 scope routes to match/relation decisions, materializes 4 provisional boundary-review candidates, adds metadata for those 4 candidates, and records 3 conditional boundary-policy routes while keeping all 4 candidates scoring-blocked.
+Current status: first X028-X039 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, applies 39 reviewed X030 scope routes to match/relation decisions, materializes 4 provisional boundary-review candidates, adds metadata for those 4 candidates, records 3 conditional boundary-policy routes, accepts 8 exact-title anthology evidence rows for those 4 candidates, and keeps all 4 candidates scoring-blocked by boundary flags.
 
 ## Phase 8: Source-Backed Integration
 

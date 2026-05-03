@@ -430,3 +430,12 @@ boundary_policy_routes_x038:
   scoring_inputs_rows: 3012
   score_ready_rows: 0
   direct_replacements: 0
+evidence_scope_gate_x039:
+  evidence_rows_accepted: 8
+  source_debts_closed_for_x036_candidates: 4
+  source_container_relation_blockers_removed_for_x036_candidates: 8
+  scoring_input_rows_with_relation_penalty_removed: 97
+  closed_by_independent_external_support_total: 4
+  scoring_inputs_rows: 3012
+  score_ready_rows: 0
+  direct_replacements: 0
