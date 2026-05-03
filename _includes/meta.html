@@ -1,7 +1,7 @@
 {% if page.title and page.title != site.title %}
   <title>{{ page.title }} | {{ site.title }}</title>
 {% else %}
-  <title>{{ site.title }} - Computational Biology & Epidemiology Researcher</title>
+  <title>{{ site.title }}</title>
 {% endif %}
 
 <meta charset="utf-8">
@@ -40,7 +40,7 @@
 {% if page.title and page.title != site.title %}
   <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
 {% else %}
-  <meta property="og:title" content="{{ site.title }} - Computational Biology & Epidemiology Researcher">
+  <meta property="og:title" content="{{ site.title }}">
 {% endif %}
 
 {% if page.description %}
@@ -67,7 +67,7 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{% if page.title and page.title != site.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }} - Computational Biology & Epidemiology Researcher{% endif %}">
+<meta name="twitter:title" content="{% if page.title and page.title != site.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.tagline %}{{ page.tagline }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% else %}Benjamin Kramer is a computational biology and epidemiology researcher at the University of Chicago in the Rzhetsky Lab.{% endif %}">
 {% if page.image %}
   <meta name="twitter:image" content="{{ page.image | absolute_url }}">
