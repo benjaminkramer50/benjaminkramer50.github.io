@@ -10,7 +10,7 @@ Last updated: 2026-05-03
 | Phase S1 | Source/candidate universe scaffolding | Complete for first scaffold | `_planning/canon_build/` schemas, empty tables, validation, and incumbent bootstrap created |
 | Phase S1H | Hardening pass after workflow review | Active next | Controlled values, source-class policy, packet status, source-fetch logs, stronger validation, and idempotent upserts |
 | Phase S2 | Source registry triage and prioritized extraction | In progress | E001-E012 registered; X001-X006 pilot ingested; X007-X012 feasibility complete but rows held pending hardening |
-| Phase S3 | Continuous normalize, dedupe, and relations | Started | X013/X014 generated match candidates, match review queue, and relation review queue |
+| Phase S3 | Continuous normalize, dedupe, and relations | Started | X013/X014 generated match/relation review queues and reviewed next-action decision tables |
 | Phase S4 | Evidence policy and source weighting | Pending | Source weights must be derived centrally; source-item weights are provisional observations only |
 | Phase S5 | First-class taxonomy and boundary policy | Pending | Required before boundary-sensitive rows are locked |
 | Phase S6 | Coverage targets, scoring, and coverage matrix | Pending | Current items and omissions scored together after coverage targets exist |
@@ -51,7 +51,7 @@ Last updated: 2026-05-03
 |---|---|---|---|
 | X Batch 1 | X001, X002, X003, X004, X005, X006 | Pilot ingested | 57 pilot source items and 47 pilot evidence rows; full extraction/matching pending |
 | X Batch 2 | X007, X008, X009, X010, X011, X012 | Feasibility complete; rows held | Classical editions/reference, world/American anthologies, medieval metadata, and Bloom recovery/blocker decisions |
-| X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Started | X013/X014 generated review queues; remaining work is hardening, evidence generation, omission queue, and replacement candidates |
+| X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Started | X013/X014 review decisions generated; remaining work is candidate creation, evidence generation, omission queue, and replacement candidates |
 
 ## Active Structural Debt
 
@@ -63,8 +63,8 @@ Last updated: 2026-05-03
 - E007-E012: 38 additional source layers are registered for core curricula, classics, medieval Europe, English/British, American, and African American literature.
 - Source-item gate: source registry rows alone do not support additions. Each layer still needs extracted source items, creator-aware matching, and evidence rows.
 - Evidence gate: access metadata, corpus records, bibliographic databases, internal accepted records, and packet outputs cannot count as external canon support until source-class weighting policy exists.
-- Matching gate: source rows must pass exact/normalized/creator-aware/alias/contained-work/selection/series matching before being called true omissions. X013 currently leaves 10 source items in the match review queue.
-- Relation gate: selection, contained-work, series, variant, duplicate, and adaptation decisions must be reviewed before final relation rows are written. X014 currently leaves 41 relation review rows.
+- Matching gate: source rows must pass exact/normalized/creator-aware/alias/contained-work/selection/series matching before being called true omissions. X013 has 10 reviewed match decisions: 8 proposed source-backed candidate actions, 1 existing-selection representation, and 1 out-of-scope media boundary.
+- Relation gate: selection, contained-work, series, variant, duplicate, and adaptation decisions must be reviewed before final relation rows are written. X014 has 41 reviewed relation decisions; final relation rows remain blocked until candidate rows and source-container policy exist.
 - Taxonomy gate: public category reports are still keyword-inferred; first-class region, language/tradition, form, selection, and boundary fields are required.
 - A029-A031/H013: replacement-induced chronology inversions must be repaired or explicitly waived before the path is locked.
 - H014: duplicate-like clusters and collection/selection overlaps remain; these now move into alias/relation/decision tables.

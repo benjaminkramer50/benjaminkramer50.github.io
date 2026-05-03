@@ -27,7 +27,9 @@ TABLE_FILES = {
   "relations" => File.join(BUILD_DIR, "tables", "canon_relations.tsv"),
   "match_candidates" => File.join(BUILD_DIR, "tables", "canon_match_candidates.tsv"),
   "match_review_queue" => File.join(BUILD_DIR, "tables", "canon_match_review_queue.tsv"),
+  "match_review_decisions" => File.join(BUILD_DIR, "tables", "canon_match_review_decisions.tsv"),
   "relation_review_queue" => File.join(BUILD_DIR, "tables", "canon_relation_review_queue.tsv"),
+  "relation_review_decisions" => File.join(BUILD_DIR, "tables", "canon_relation_review_decisions.tsv"),
   "evidence" => File.join(BUILD_DIR, "tables", "canon_evidence.tsv"),
   "review_decisions" => File.join(BUILD_DIR, "tables", "canon_review_decisions.yml"),
   "scores" => File.join(BUILD_DIR, "tables", "canon_scores.tsv"),
@@ -44,7 +46,9 @@ HEADER_REQUIREMENTS = {
   "work_candidates" => ["work_id", "candidate_status", "canonical_title", "creator_display", "date_label", "sort_year", "date_precision", "macro_region", "literary_tradition", "form_bucket", "source_status", "review_status"],
   "match_candidates" => ["source_item_id", "source_id", "raw_title", "candidate_work_id", "match_rule", "confidence", "recommendation"],
   "match_review_queue" => ["source_item_id", "source_id", "raw_title", "issue_type", "recommendation"],
+  "match_review_decisions" => ["source_item_id", "source_id", "raw_title", "decision", "next_action", "reviewer_status"],
   "relation_review_queue" => ["source_item_id", "source_id", "raw_title", "proposed_relation_type", "issue_type", "recommendation"],
+  "relation_review_decisions" => ["source_item_id", "source_id", "raw_title", "proposed_relation_type", "decision", "next_action", "reviewer_status"],
   "evidence" => ["evidence_id", "work_id", "source_id", "evidence_type", "evidence_strength", "reviewer_status"],
   "scores" => ["work_id", "source_weighted_score", "source_diversity_score", "coverage_scarcity_bonus", "boundary_penalty", "duplicate_overlap_penalty", "source_debt_penalty", "final_score", "must_include", "must_exclude"],
   "replacement_candidates" => ["transaction_id", "add_work_id", "cut_work_id", "evidence_refs", "rationale", "gate_status"],
@@ -148,7 +152,9 @@ if failures.empty?
   relation_rows = read_tsv(TABLE_FILES["relations"])
   match_candidate_rows = read_tsv(TABLE_FILES["match_candidates"])
   match_review_rows = read_tsv(TABLE_FILES["match_review_queue"])
+  match_decision_rows = read_tsv(TABLE_FILES["match_review_decisions"])
   relation_review_rows = read_tsv(TABLE_FILES["relation_review_queue"])
+  relation_decision_rows = read_tsv(TABLE_FILES["relation_review_decisions"])
   path_selection_rows = read_tsv(TABLE_FILES["path_selection"])
   replacement_rows = read_tsv(TABLE_FILES["replacement_candidates"])
 
@@ -159,7 +165,9 @@ if failures.empty?
     "relations" => relation_rows,
     "match_candidates" => match_candidate_rows,
     "match_review_queue" => match_review_rows,
+    "match_review_decisions" => match_decision_rows,
     "relation_review_queue" => relation_review_rows,
+    "relation_review_decisions" => relation_decision_rows,
     "evidence" => evidence_rows,
     "replacement_candidates" => replacement_rows
   }
@@ -167,6 +175,7 @@ if failures.empty?
   source_ids = registry_rows.map { |row| row["source_id"] }.to_set
   source_item_ids = source_item_rows.map { |row| row["source_item_id"] }.to_set
   work_ids = work_rows.map { |row| row["work_id"] }.to_set
+  proposed_work_ids = match_decision_rows.map { |row| row["proposed_work_id"].to_s }.reject(&:empty?).to_set
 
   source_weights = YAML.load_file(TABLE_FILES["source_weights"])
   source_classes = source_weights.fetch("source_classes", {}).keys.to_set
@@ -312,6 +321,26 @@ if failures.empty?
     checks << ["integrity:match_review_queue.source_item_id", "FAIL", "#{unknown_review_items.size} unknown source items"]
   end
 
+  match_review_ids = match_review_rows.map { |row| row["source_item_id"] }.to_set
+  match_decision_ids = match_decision_rows.map { |row| row["source_item_id"] }.to_set
+  missing_match_decisions = match_review_ids - match_decision_ids
+  extra_match_decisions = match_decision_ids - match_review_ids
+  unknown_match_decision_sources = match_decision_rows.reject { |row| source_ids.include?(row["source_id"]) }
+  unknown_match_decision_items = match_decision_rows.reject { |row| source_item_ids.include?(row["source_item_id"]) }
+  unknown_match_decision_works = match_decision_rows.reject do |row|
+    row["matched_work_id"].to_s.empty? || work_ids.include?(row["matched_work_id"])
+  end
+  if missing_match_decisions.empty? && extra_match_decisions.empty? && unknown_match_decision_sources.empty? && unknown_match_decision_items.empty? && unknown_match_decision_works.empty?
+    checks << ["integrity:match_review_decisions.refs", "PASS", "all match decisions cover queued source items and existing work refs"]
+  else
+    failures << "match_review_decisions missing queued items: #{missing_match_decisions.first(10).join(", ")}" unless missing_match_decisions.empty?
+    failures << "match_review_decisions has extra items: #{extra_match_decisions.first(10).join(", ")}" unless extra_match_decisions.empty?
+    failures << "match_review_decisions references unknown sources: #{unknown_match_decision_sources.first(10).map { |row| row["source_id"] }.join(", ")}" unless unknown_match_decision_sources.empty?
+    failures << "match_review_decisions references unknown source items: #{unknown_match_decision_items.first(10).map { |row| row["source_item_id"] }.join(", ")}" unless unknown_match_decision_items.empty?
+    failures << "match_review_decisions references unknown matched works: #{unknown_match_decision_works.first(10).map { |row| row["matched_work_id"] }.join(", ")}" unless unknown_match_decision_works.empty?
+    checks << ["integrity:match_review_decisions.refs", "FAIL", "#{missing_match_decisions.size} missing; #{extra_match_decisions.size} extra; #{unknown_match_decision_sources.size} unknown sources; #{unknown_match_decision_items.size} unknown source items; #{unknown_match_decision_works.size} unknown works"]
+  end
+
   unknown_relation_review_items = relation_review_rows.reject { |row| source_item_ids.include?(row["source_item_id"]) }
   unknown_relation_review_works = relation_review_rows.reject do |row|
     row["matched_work_id"].to_s.empty? || work_ids.include?(row["matched_work_id"])
@@ -322,6 +351,35 @@ if failures.empty?
     failures << "relation_review_queue references unknown source items: #{unknown_relation_review_items.first(10).map { |row| row["source_item_id"] }.join(", ")}" unless unknown_relation_review_items.empty?
     failures << "relation_review_queue references unknown works: #{unknown_relation_review_works.first(10).map { |row| row["matched_work_id"] }.join(", ")}" unless unknown_relation_review_works.empty?
     checks << ["integrity:relation_review_queue.refs", "FAIL", "#{unknown_relation_review_items.size} unknown source items; #{unknown_relation_review_works.size} unknown works"]
+  end
+
+  relation_review_keys = relation_review_rows.map do |row|
+    [row["source_item_id"], row["matched_work_id"], row["proposed_relation_type"], row["issue_type"]]
+  end.to_set
+  relation_decision_keys = relation_decision_rows.map do |row|
+    [row["source_item_id"], row["matched_work_id"], row["proposed_relation_type"], row["issue_type"]]
+  end.to_set
+  missing_relation_decisions = relation_review_keys - relation_decision_keys
+  extra_relation_decisions = relation_decision_keys - relation_review_keys
+  valid_relation_decision_targets = work_ids + proposed_work_ids
+  unknown_relation_decision_sources = relation_decision_rows.reject { |row| source_ids.include?(row["source_id"]) }
+  unknown_relation_decision_items = relation_decision_rows.reject { |row| source_item_ids.include?(row["source_item_id"]) }
+  unknown_relation_decision_matched_works = relation_decision_rows.reject do |row|
+    row["matched_work_id"].to_s.empty? || work_ids.include?(row["matched_work_id"])
+  end
+  unknown_relation_decision_targets = relation_decision_rows.reject do |row|
+    row["target_work_id"].to_s.empty? || valid_relation_decision_targets.include?(row["target_work_id"])
+  end
+  if missing_relation_decisions.empty? && extra_relation_decisions.empty? && unknown_relation_decision_sources.empty? && unknown_relation_decision_items.empty? && unknown_relation_decision_matched_works.empty? && unknown_relation_decision_targets.empty?
+    checks << ["integrity:relation_review_decisions.refs", "PASS", "all relation decisions cover queued rows and valid existing/proposed targets"]
+  else
+    failures << "relation_review_decisions missing queued rows: #{missing_relation_decisions.first(10).map { |key| key.join(":") }.join(", ")}" unless missing_relation_decisions.empty?
+    failures << "relation_review_decisions has extra rows: #{extra_relation_decisions.first(10).map { |key| key.join(":") }.join(", ")}" unless extra_relation_decisions.empty?
+    failures << "relation_review_decisions references unknown sources: #{unknown_relation_decision_sources.first(10).map { |row| row["source_id"] }.join(", ")}" unless unknown_relation_decision_sources.empty?
+    failures << "relation_review_decisions references unknown source items: #{unknown_relation_decision_items.first(10).map { |row| row["source_item_id"] }.join(", ")}" unless unknown_relation_decision_items.empty?
+    failures << "relation_review_decisions references unknown matched works: #{unknown_relation_decision_matched_works.first(10).map { |row| row["matched_work_id"] }.join(", ")}" unless unknown_relation_decision_matched_works.empty?
+    failures << "relation_review_decisions references unknown target works/proposals: #{unknown_relation_decision_targets.first(10).map { |row| row["target_work_id"] }.join(", ")}" unless unknown_relation_decision_targets.empty?
+    checks << ["integrity:relation_review_decisions.refs", "FAIL", "#{missing_relation_decisions.size} missing; #{extra_relation_decisions.size} extra; #{unknown_relation_decision_sources.size} unknown sources; #{unknown_relation_decision_items.size} unknown source items; #{unknown_relation_decision_matched_works.size} unknown matched works; #{unknown_relation_decision_targets.size} unknown targets"]
   end
 
   path_selection_work_refs = path_selection_rows.reject { |row| work_ids.include?(row["work_id"]) }

@@ -12,8 +12,8 @@ The phase plan and lock criteria live in `canon_phase_plan.md`.
 2. `tables/canon_source_items.tsv`: raw works extracted from each source.
 3. `tables/canon_work_candidates.tsv`: normalized work clusters, including current path rows and source-backed omissions.
 4. `tables/canon_aliases.tsv` and `tables/canon_relations.tsv`: title variants, translations, contained works, series, duplicates, and selection relations.
-5. `tables/canon_match_candidates.tsv` and `tables/canon_match_review_queue.tsv`: generated source-item match candidates and ambiguous/unresolved review rows.
-6. `tables/canon_relation_review_queue.tsv`: candidate selection, contained-work, series, variant, duplicate, and adaptation decisions that should not yet be written as final relations.
+5. `tables/canon_match_candidates.tsv`, `tables/canon_match_review_queue.tsv`, and `tables/canon_match_review_decisions.tsv`: generated source-item match candidates, unresolved review rows, and reviewed next actions.
+6. `tables/canon_relation_review_queue.tsv` and `tables/canon_relation_review_decisions.tsv`: candidate selection, contained-work, series, variant, duplicate, and adaptation decisions that should not yet be written as final relations.
 7. `tables/canon_evidence.tsv`: work-level evidence records.
 8. `tables/canon_review_decisions.yml`: human adjudication, waivers, and policy decisions.
 9. `tables/canon_source_weights.yml`: central source-class policy used before scores are derived.
@@ -31,3 +31,5 @@ Current validation is structural until the hardening pass is complete. A PASS me
 Source items are observations. Source-class policy and scoring scripts must derive weights centrally; row-level `evidence_weight` values are provisional notes until X016/source-weight policy is encoded.
 
 Corpus rows, catalog records, edition-series metadata, and access metadata support identity, alias, edition, provenance, and boundary review. They must not be treated as standalone canon-selection evidence.
+
+Match/relation review decisions are routing records. A `create_source_backed_candidate` decision means "create a candidate row for later evidence, boundary, duplicate, and scoring review," not "add this work to the public path."
