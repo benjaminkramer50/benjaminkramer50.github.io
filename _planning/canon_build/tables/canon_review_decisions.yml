@@ -207,6 +207,22 @@ decisions:
       - compare_add_scores_to_cut_scores
       - validate_duplicate_author_cluster_chronology_and_path_count_before_any_ready_for_review_transaction
     public_path_effect: none
+  - decision_id: x046_cut_candidates_001
+    decision_type: cut_candidate_risk_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_cut_candidates.tsv
+    decision: generate_all_incumbent_cut_risk_table
+    rationale: >
+      Cut review must not be arbitrary. X046 scores all 3,000 selected incumbent
+      rows for review risk using source-debt, generic-title, duplicate-cluster,
+      chronology, boundary, and tier-protection signals. This ranks review
+      priority only; it does not approve any cut.
+    scoring_effect: none
+    required_followup:
+      - pair_score_ready_add_candidates_with_cut_review_candidates_under_blocked_status
+      - keep_core_rows_protected_until_specific waiver_or_policy_review
+      - require manual review before any cut row is used in a public transaction
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
