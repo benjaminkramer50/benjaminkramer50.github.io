@@ -70,6 +70,7 @@ GENERIC_SOURCE_TITLES = Set.new([
   "fish",
   "ode",
   "odes",
+  "part",
   "poem",
   "poems",
   "preface",
@@ -166,7 +167,7 @@ def infer_form(row)
   text = normalize(text_blob(row))
   unit_type = normalize(row["unit_type"])
   return "children_young_adult" if text.match?(/\b(children|childrens|young adult)\b/)
-  return "graphic_visual_narrative" if text.match?(/\b(graphic|comic|comics|manga)\b/)
+  return "graphic_visual_narrative" if text.match?(/\b(graphic|graphic novel|graphic narrative|comic book|comic books|comics|manga|manhwa|manhua)\b/)
   return "speculative_genre" if text.match?(/\b(science fiction|fantasy|horror|weird|crime|detective|gothic)\b/)
   return "drama_performance" if text.match?(/\b(play|drama|theater|theatre|tragedy|comedy|satyr|noh|bunraku|performance|pansori)\b/) || unit_type.include?("play")
   return "sacred_myth_ritual" if text.match?(/\b(scripture|religion|religious|myth|mythology|ritual|funerary|liturgical|sutra|bible|qur|hadith|buddhist|hindu|jain|sikh|zoroastrian|apocalyptic)\b/)

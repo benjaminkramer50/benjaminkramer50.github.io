@@ -17,19 +17,18 @@ X028 replaces the slow default of hand-auditing every B/C/D/F/I packet in sequen
 
 | Artifact | Rows |
 |---|---:|
-| Coverage matrix | 123 |
+| Coverage matrix | 122 |
 | Sentinel targets checked | 57 |
 | Sentinel failures/reviews | 0 |
-| Source-backed unmatched clusters | 114 |
-| Coverage red cells | 73 |
-| Gap diagnostics | 187 |
+| Source-backed unmatched clusters | 113 |
+| Coverage red cells | 72 |
+| Gap diagnostics | 185 |
 | Red-cell audit queue | 120 |
 
 ## Top Red Cells
 
 | Priority | Severity | Subject | Rationale |
 |---:|---|---|---|
-| 120 | critical | region_form: east_asia/graphic_visual_narrative | selected=0; unmatched_source_pressure=20; no_evidence_selected=0 |
 | 111 | high | Fireflies | Unmatched source-title cluster appears in 4 source(s) and 4 source item(s). |
 | 94 | high | Invitation to the Voyage | Unmatched source-title cluster appears in 2 source(s) and 3 source item(s). |
 | 94 | high | Kubla Khan | Unmatched source-title cluster appears in 2 source(s) and 3 source item(s). |
@@ -49,6 +48,7 @@ X028 replaces the slow default of hand-auditing every B/C/D/F/I packet in sequen
 | 93 | high | Atsumori | Unmatched source-title cluster appears in 2 source(s) and 2 source item(s). |
 | 93 | high | Autumn Night / The autumn night | Unmatched source-title cluster appears in 2 source(s) and 2 source item(s). |
 | 93 | high | Begging for Food | Unmatched source-title cluster appears in 2 source(s) and 2 source item(s). |
+| 93 | high | Bells of Gion Monastery / The Bells of Gion Monastery | Unmatched source-title cluster appears in 2 source(s) and 2 source item(s). |
 
 ## Interpretation
 

@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x028_gap_diagnostics_generated
+status: source_item_batch_x029_red_cell_triage_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -50,6 +50,7 @@ artifacts:
   sentinel_checks: generated_x028
   gap_diagnostics: generated_x028
   red_cell_audit_queue: generated_x028
+  red_cell_triage: generated_x029
 bootstrap_counts:
   work_candidates: 3000
   creators: 2000
@@ -254,11 +255,25 @@ source_item_extraction_batch_x027:
   status: source_items_ingested_evidence_scope_review_required
   direct_replacements: 0
 diagnostic_first_validation_x028:
-  coverage_matrix_rows: 123
+  coverage_matrix_rows: 122
   sentinel_targets: 57
   sentinel_failures_or_reviews: 0
-  source_backed_unmatched_clusters: 114
-  coverage_red_cells: 73
-  gap_diagnostics_rows: 187
+  source_backed_unmatched_clusters: 113
+  coverage_red_cells: 72
+  gap_diagnostics_rows: 185
   red_cell_audit_queue_rows: 120
+  direct_replacements: 0
+red_cell_triage_x029:
+  triage_rows: 120
+  triage_class_counts:
+    coverage_cell_review: 3
+    existing_current_match_or_alias_gap: 1
+    homonymous_title_collision_review: 17
+    possible_variant_alias_to_current_work: 2
+    source_backed_omission_candidate: 40
+    source_debt_and_taxonomy_pressure: 8
+    subwork_or_selection_scope_review: 49
+  confidence_counts:
+    high: 1
+    medium: 119
   direct_replacements: 0
