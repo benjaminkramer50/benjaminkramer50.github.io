@@ -303,6 +303,23 @@ decisions:
       - review_source_item_scope_for_hughes_and_dunbar_selection_rows
       - keep_all_replacement_pairs_blocked_until_cut_side_basis_is_resolved
     public_path_effect: none
+  - decision_id: x052_cut_source_item_rescue_candidates_001
+    decision_type: cut_source_item_rescue_queue_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_cut_source_item_rescue_candidates.tsv
+    decision: mine_existing_source_items_for_cut_side_rescue_matches
+    rationale: >
+      X051 showed that most proposed cut-side rows lack accepted source support
+      in the build layer. X052 searches already extracted source items for
+      creator-exact or already-linked rows that can be reviewed for cut-side
+      match/scope/evidence generation, while excluding generic-title matches
+      with different creators and source items already assigned to different works.
+    scoring_effect: none
+    required_followup:
+      - review_rescue_source_items_for_match_scope_and_evidence_generation
+      - preserve_selection_scope_distinctions_for_poem_level_source_items
+      - keep_public_path_unchanged_until_cut_side_scores_are_computed
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
