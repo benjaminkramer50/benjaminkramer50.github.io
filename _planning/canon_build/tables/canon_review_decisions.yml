@@ -113,6 +113,24 @@ decisions:
       - resolve_selection_vs_complete_work_policy_for_maud_martha_and_nickel_boys
       - find_canon_support_source_for_curial_e_guelfa
     public_path_effect: none
+  - decision_id: x041_naal_v1_corroboration_001
+    decision_type: targeted_source_corroboration
+    source_id: e012_norton_african_american_lit_4e_v1_2025
+    applies_to_work_ids:
+      - work_candidate_source_aap_harper_bury_me_free_land
+      - work_candidate_source_loa_brown_narrative
+    decision: add_verified_public_toc_rows
+    rationale: >
+      The official Norton African American Literature 4e Volume 1 public TOC
+      provides independent corroboration for Harper's poem and selection-level
+      corroboration for William Wells Brown's narrative. Harper can be treated as
+      poem-level work support; Brown remains selection support because the TOC
+      lists chapter excerpts, not complete-work inclusion.
+    scoring_effect: harper_candidate_reaches_ready_for_score_computation
+    required_followup:
+      - compute_candidate_score_before_any_public_path_action
+      - seek_complete_work_support_or_waiver_for_brown_narrative
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3012

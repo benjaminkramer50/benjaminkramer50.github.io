@@ -1,15 +1,15 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x037_boundary_candidate_metadata_added
+status: source_item_batch_x041_naal_v1_corroboration_added
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
   public_path: _data/canon_quick_path.yml
   target_count: 3000
 current_blockers:
-  source_debt_rows: 2939
+  source_debt_rows: 3007
   manual_only_rows: 2938
-  needs_sources_rows: 2939
+  needs_sources_rows: 3007
   duplicate_candidate_keys: 39
   chronology_inversion_rows: 138
   generic_title_rows: 267
@@ -64,16 +64,16 @@ current_counts:
   creators: 2006
   work_creators: 3019
   aliases: 452
-  source_items: 5942
-  evidence_rows: 495
-  relation_scope_status_rows: 7586
+  source_items: 5944
+  evidence_rows: 497
+  relation_scope_status_rows: 7588
   source_debt_status_rows: 3012
   omission_queue_rows: 12
   scoring_input_rows: 3012
-  scoring_ready_rows: 0
-  scoring_blocked_rows: 3012
+  scoring_ready_rows: 1
+  scoring_blocked_rows: 3011
   source_items_matched_current_path: 282
-  source_items_matched_candidate: 16
+  source_items_matched_candidate: 18
   source_items_represented_by_selection: 197
   source_items_out_of_scope: 1
   source_items_unmatched: 5446
@@ -448,4 +448,14 @@ source_backed_candidate_triage_x040:
   open_non_scoring_only_candidates: 1
   omission_queue_rows: 12
   score_ready_rows: 0
+  direct_replacements: 0
+naal_v1_corroboration_x041:
+  source_item_rows_added: 2
+  evidence_rows_created: 2
+  evidence_rows_accepted: 2
+  match_candidates: 586
+  relation_scope_rows: 7588
+  omission_queue_rows: 12
+  ready_for_scoring_review_rows: 1
+  score_ready_rows: 1
   direct_replacements: 0

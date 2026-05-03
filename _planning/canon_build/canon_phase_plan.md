@@ -83,7 +83,7 @@ Done when:
 - Boundary policies exist for scripture, philosophy, theology, history, oral tradition, Indigenous/public material, memoir/testimonio, children's/YA, genre fiction, graphic narrative, series, and anthology excerpts.
 - Quality reports cover duplicates, generic titles, chronology/date-basis issues, and boundary cases from build tables.
 
-Current status: started for the X018 queue; 12 source-backed omissions are queued, 3 conditional boundary-policy routes have been recorded for the X036 candidates, 8 exact-title anthology evidence rows have been accepted for those candidates, the original 8 source-backed candidates now have metadata/evidence-scope triage, and 0 rows are ready for scoring.
+Current status: started for the X018 queue; 12 source-backed omissions are queued, 3 conditional boundary-policy routes have been recorded for the X036 candidates, 8 exact-title anthology evidence rows have been accepted for those candidates, the original 8 source-backed candidates now have metadata/evidence-scope triage, and 1 row is ready for score computation.
 
 ## Phase 6: Coverage Targets And Scoring
 
@@ -95,7 +95,7 @@ Done when:
 - `canon_scores.tsv` is generated for current works and source-backed omissions.
 - Scores include source support, source diversity, coverage scarcity, boundary penalty, duplicate penalty, source debt penalty, generic-title penalty, date uncertainty, recency, and incumbent bonus.
 
-Current status: started; `canon_scoring_inputs.tsv` now covers all 3,012 work candidates, but 0 rows are ready for score computation because source debt and other blockers remain open. Coverage targets and final scores are not generated yet.
+Current status: started; `canon_scoring_inputs.tsv` now covers all 3,012 work candidates, and 1 row is ready for score computation. Coverage targets and final scores are not generated yet.
 
 ## Phase 7: Diagnostic-First Validation Sweeps
 
@@ -110,7 +110,7 @@ Done when:
 - Period packets B001-B034, region/tradition packets C001-C196, form packets D001-D046, sentinel packets F001-F034, and intersection packets I001-I030 are complete, waived, or represented by generated diagnostics with no red-cell flag.
 - All high-priority gaps are added to the omission queue, rejected with rationale, or deferred with source-gap rationale.
 
-Current status: first X028-X040 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, applies 39 reviewed X030 scope routes to match/relation decisions, materializes 4 provisional boundary-review candidates, adds metadata for those 4 candidates, records 3 conditional boundary-policy routes, accepts 8 exact-title anthology evidence rows for those 4 candidates, triages the original 8 source-backed candidates, and keeps all 12 omission rows scoring-blocked by explicit source, boundary, or selection gates.
+Current status: first X028-X041 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, applies 39 reviewed X030 scope routes to match/relation decisions, materializes 4 provisional boundary-review candidates, adds metadata for those 4 candidates, records 3 conditional boundary-policy routes, accepts 8 exact-title anthology evidence rows for those 4 candidates, triages the original 8 source-backed candidates, and adds official Norton African American Literature 4e Volume 1 corroboration that moves Harper's `Bury Me in a Free Land` to `ready_for_score_computation`.
 
 ## Phase 8: Source-Backed Integration
 

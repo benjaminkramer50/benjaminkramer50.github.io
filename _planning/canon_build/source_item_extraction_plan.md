@@ -16,7 +16,7 @@ Direct public-list replacements remain paused until these packets produce source
 |---|---|---|---|
 | E Batch 1 | E001-E006 | Registered; E001 extracted; E004 Norton World Literature 5e extracted by X026; E005 Longman World Literature 2e extracted by X027; E006 Bedford fragment extraction pending | `source_crosswalk_reports/e_batch_001_e001_e006.md` |
 | E Batch 2 | E007-E012 | Registered; X001-X006 pilot rows ingested; full extraction pending | `source_crosswalk_reports/e_batch_002_e007_e012.md` |
-| E Batch 3 | E013-E018 | Registered; X020-X025 generated/updated 2,690 E013/E014/E015/E016/E017/E018 source-item observations; current table has 5,942 total source-item rows after X027; X013/X014/X017 queues rerun after X027; remaining source debt is explicit for blocked full Traditional Chinese CPL TOC and official Oxford modern Indian poem-level reconciliation | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
+| E Batch 3 | E013-E018 | Registered; X020-X025 generated/updated 2,690 E013/E014/E015/E016/E017/E018 source-item observations; current table has 5,944 total source-item rows after X041; X013/X014/X017 queues rerun after X041; remaining source debt is explicit for blocked full Traditional Chinese CPL TOC and official Oxford modern Indian poem-level reconciliation | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
 
 ## Extraction Contract
 
@@ -68,6 +68,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X038 | X036 provisional candidates | Boundary policy routes recorded | 3 conditional boundary policies recorded for political-philosophical prose, named poetry sequences/collections, and individual short stories; 4 candidates and 8 evidence rows updated; 0 rows score-ready; public path unchanged |
 | X039 | X036/X038 evidence rows | Evidence accepted; scoring guard fixed | 8 exact-title Norton/Longman anthology evidence rows accepted for the 4 provisional candidates; source-container-only relation rows no longer count as scoring blockers; boundary flags still block scoring; public path unchanged |
 | X040 | Original 8 source-backed candidates | Metadata and evidence-scope triage completed | 8 candidate rows cleaned up with date/taxonomy/form/unit metadata; 8 evidence rows accepted with scope caveats; Maud Martha and The Nickel Boys kept as selection-only evidence; Curial remains non-scoring identity support; public path unchanged |
+| X041 | Norton African American Literature 4e Vol. 1 TOC | Targeted corroboration added | 2 official Norton public TOC rows added for Harper and William Wells Brown; Harper reaches `ready_for_score_computation`; Brown remains selection-only corroboration; public path unchanged |
 
 ## Planned Extraction Packets
 
