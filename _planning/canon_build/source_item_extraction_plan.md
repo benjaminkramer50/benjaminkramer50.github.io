@@ -69,6 +69,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X039 | X036/X038 evidence rows | Evidence accepted; scoring guard fixed | 8 exact-title Norton/Longman anthology evidence rows accepted for the 4 provisional candidates; source-container-only relation rows no longer count as scoring blockers; boundary flags still block scoring; public path unchanged |
 | X040 | Original 8 source-backed candidates | Metadata and evidence-scope triage completed | 8 candidate rows cleaned up with date/taxonomy/form/unit metadata; 8 evidence rows accepted with scope caveats; Maud Martha and The Nickel Boys kept as selection-only evidence; Curial remains non-scoring identity support; public path unchanged |
 | X041 | Norton African American Literature 4e Vol. 1 TOC | Targeted corroboration added | 2 official Norton public TOC rows added for Harper and William Wells Brown; Harper reaches `ready_for_score_computation`; Brown remains selection-only corroboration; public path unchanged |
+| X042 | Score-ready rows | First score generated | Added `scripts/canon_generate_scores.rb` and generated one provisional score row for Harper's `Bury Me in a Free Land`; no replacement transaction generated; public path unchanged |
 
 ## Planned Extraction Packets
 

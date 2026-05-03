@@ -131,6 +131,21 @@ decisions:
       - compute_candidate_score_before_any_public_path_action
       - seek_complete_work_support_or_waiver_for_brown_narrative
     public_path_effect: none
+  - decision_id: x042_score_generation_001
+    decision_type: score_generation_gate
+    applies_to_work_ids:
+      - work_candidate_source_aap_harper_bury_me_free_land
+    decision: generate_provisional_score_for_ready_rows_only
+    rationale: >
+      Harper's poem is the first candidate with closed source debt, ready omission
+      status, no relation blocker, no date uncertainty, and no open boundary or
+      completion-scope flag. Scoring is allowed for this row, but replacement
+      generation remains blocked until coverage targets and add/cut gates exist.
+    scoring_effect: one_row_written_to_canon_scores
+    required_followup:
+      - populate_coverage_targets_before_replacement_candidates
+      - continue_corroboration_and_boundary_review_for_other_omissions
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3012

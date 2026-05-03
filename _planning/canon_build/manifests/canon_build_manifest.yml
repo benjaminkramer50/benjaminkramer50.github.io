@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x041_naal_v1_corroboration_added
+status: scoring_batch_x042_first_provisional_score_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -42,7 +42,7 @@ artifacts:
   source_debt_status: generated_x017_after_x036
   omission_queue: generated_x018_after_x036
   scoring_inputs: generated_x019_after_x036
-  scores: initialized_empty
+  scores: generated_x042_provisional_ready_rows_only
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
   creators: bootstrapped_from_current_path_plus_x013_candidate_creators_plus_x034_variants
@@ -72,6 +72,7 @@ current_counts:
   scoring_input_rows: 3012
   scoring_ready_rows: 1
   scoring_blocked_rows: 3011
+  score_rows: 1
   source_items_matched_current_path: 282
   source_items_matched_candidate: 18
   source_items_represented_by_selection: 197
@@ -458,4 +459,9 @@ naal_v1_corroboration_x041:
   omission_queue_rows: 12
   ready_for_scoring_review_rows: 1
   score_ready_rows: 1
+  direct_replacements: 0
+score_ready_rows_x042:
+  score_rows_generated: 1
+  ready_for_score_computation_rows: 1
+  replacement_candidates_generated: 0
   direct_replacements: 0
