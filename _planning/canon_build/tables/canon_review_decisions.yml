@@ -353,6 +353,22 @@ decisions:
       - accept_only_scope_reviewed_representative_selection_evidence
       - keep_cut_side_score_generation_blocked_until_scope_gates_are_clear
     public_path_effect: none
+  - decision_id: x055_cut_evidence_proposals_001
+    decision_type: cut_evidence_proposal_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_cut_evidence_proposals.tsv
+    decision: generate_review_gated_cut_side_evidence_proposals_from_medium_scope_rows
+    rationale: >
+      Medium-risk X054 rows can be grouped into evidence proposals, but evidence
+      should not be written or accepted until a reviewer confirms representative
+      selection scope. X055 therefore creates proposal rows and explicitly skips
+      high-risk collection-membership and form-mismatch rows.
+    scoring_effect: none
+    required_followup:
+      - manually_review_scope_before_evidence_table_update
+      - keep_high_risk_scope_rows_blocked
+      - recompute_cut_side_source_debt_only_after_reviewed_evidence_changes
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
