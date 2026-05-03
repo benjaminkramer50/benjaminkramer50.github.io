@@ -65,6 +65,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X035 | X030 reviewed title-route rows | Scope routes applied | 39 X030 rows routed into match/relation decisions: 19 represented by existing selections, 10 contained in existing works, 8 boundary-review candidate proposals, and 2 creator-disambiguation holds; public path unchanged |
 | X036 | X035 boundary-review proposals | Provisional candidates materialized | 4 source-backed build-layer candidates created for The Prince, Holy Sonnets, Yellow Woman, and Zaabalawi; downstream evidence, source-debt, omission, relation-scope, and scoring-input tables regenerated; 0 rows score-ready; public path unchanged |
 | X037 | X036 provisional candidates | Metadata added | Date, taxonomy, form, and boundary-review metadata added for The Prince, Holy Sonnets, Yellow Woman, and Zaabalawi; chronology blockers removed for those rows, but boundary/scope/evidence blockers remain; public path unchanged |
+| X038 | X036 provisional candidates | Boundary policy routes recorded | 3 conditional boundary policies recorded for political-philosophical prose, named poetry sequences/collections, and individual short stories; 4 candidates and 8 evidence rows updated; 0 rows score-ready; public path unchanged |
 
 ## Planned Extraction Packets
 

@@ -1,11 +1,67 @@
 ---
 generated_on: '2026-05-03'
-status: initialized_empty
-decisions: []
+status: boundary_policy_routes_started
+decisions:
+  - decision_id: x038_boundary_policy_001
+    decision_type: boundary_policy_route
+    policy_id: boundary_policy_political_philosophical_prose_conditional
+    label: political-philosophical prose as literature
+    applies_to_work_ids:
+      - work_candidate_x030_machiavelli_prince
+    decision: conditionally_in_scope_for_scoring_review
+    rationale: >
+      Source-backed political-philosophical prose can be reviewed as literature when
+      the source presents the work inside a literature anthology or course-literature
+      context and the work is conventionally read for rhetoric, form, style, and
+      historical literary influence. This does not make all political philosophy
+      automatically in scope.
+    scoring_effect: eligible_but_boundary_penalized_until_final_lock
+    required_followup:
+      - accept_or_reject_the_specific_evidence_rows
+      - confirm_complete_work_not_excerpt_scope
+      - compare_against_current_early_modern_italian_and_essay_prose_coverage
+    public_path_effect: none
+  - decision_id: x038_boundary_policy_002
+    decision_type: boundary_policy_route
+    policy_id: boundary_policy_poetry_sequence_collection_conditional
+    label: poetry sequence or named collection
+    applies_to_work_ids:
+      - work_candidate_x030_donne_holy_sonnets
+    decision: conditionally_in_scope_for_scoring_review
+    rationale: >
+      A named poetry sequence or stable collection can be reviewed as a work-level
+      candidate when anthology evidence presents it at collection or sequence level.
+      It still needs duplicate and granularity review against existing selected
+      poems or author-level selected-poems rows.
+    scoring_effect: eligible_but_duplicate_and_boundary_blocked_until_final_lock
+    required_followup:
+      - accept_or_reject_the_specific_evidence_rows
+      - resolve_overlap_with_existing_donne_selected_poems_row
+      - decide_whether_public_path_should_represent_donne_by_collection_or_selection
+    public_path_effect: none
+  - decision_id: x038_boundary_policy_003
+    decision_type: boundary_policy_route
+    policy_id: boundary_policy_short_story_granularity_conditional
+    label: individual short story
+    applies_to_work_ids:
+      - work_candidate_x030_mahfouz_zaabalawi
+      - work_candidate_x030_silko_yellow_woman
+    decision: conditionally_in_scope_for_scoring_review
+    rationale: >
+      Individual short stories can be reviewed as work-level candidates when multiple
+      independent literature anthology sources present the story by title. This is a
+      granularity-sensitive route, not a blanket rule that every anthologized story
+      should displace a book-level work.
+    scoring_effect: eligible_but_granularity_and_author_representation_blocked_until_final_lock
+    required_followup:
+      - accept_or_reject_the_specific_evidence_rows
+      - compare_against_existing_author_representation
+      - require_source_diversity_before_any_public_path_addition
+    public_path_effect: none
 waivers: []
 open_questions:
-  - source_debt_rows_currently_2939
-  - manual_only_rows_currently_2938
+  - source_debt_rows_currently_3012
+  - unmatched_source_items_currently_5446
   - duplicate_candidate_keys_currently_39
   - chronology_inversion_rows_currently_138
   - generic_title_rows_currently_267

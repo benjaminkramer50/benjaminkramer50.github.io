@@ -386,3 +386,47 @@ red_cell_review_x030:
 title_variant_aliases_x031:
   aliases_added: 7
   direct_replacements: 0
+match_rerun_x032:
+  match_candidates: 541
+  match_review_decisions: 5474
+  net_candidate_rows_added_after_aliases: 12
+  direct_replacements: 0
+from_prefix_matcher_x033:
+  match_candidates: 557
+  match_review_decisions: 5474
+  from_prefix_candidate_rows: 16
+  from_prefix_source_rows: 10
+  direct_replacements: 0
+creator_variants_x034:
+  creator_rows_updated: 2
+  candidate_rows_changed_creator_mismatch_to_match: 4
+  direct_replacements: 0
+x030_scope_routes_x035:
+  routed_rows: 39
+  route_counts:
+    represented_by_existing_selection: 19
+    contained_in_existing_work: 10
+    create_source_backed_candidate_needs_boundary_review: 8
+    existing_match_requires_creator_disambiguation: 2
+  direct_replacements: 0
+boundary_candidate_materialization_x036:
+  provisional_candidates_created: 4
+  evidence_rows_created_in_run: 27
+  evidence_rows_total: 495
+  omission_queue_rows: 12
+  scoring_inputs_rows: 3012
+  score_ready_rows: 0
+  direct_replacements: 0
+boundary_candidate_metadata_x037:
+  provisional_candidates_updated: 4
+  chronology_blockers_removed_for_x036_candidates: 4
+  score_ready_rows: 0
+  direct_replacements: 0
+boundary_policy_routes_x038:
+  boundary_policy_routes_recorded: 3
+  provisional_candidates_updated: 4
+  evidence_rows_annotated_with_boundary_policy: 8
+  omission_queue_rows: 12
+  scoring_inputs_rows: 3012
+  score_ready_rows: 0
+  direct_replacements: 0
