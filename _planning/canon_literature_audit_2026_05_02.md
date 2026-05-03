@@ -13,6 +13,8 @@ Verdict: the site now has a usable 3,000-item literature checklist, but it is no
 
 After workflow review, direct replacement waves are paused. The current path is mechanically valid but not replacement-ready as a locked canon because source debt and inferred taxonomy dominate the dataset. The next phase is to build the `_planning/canon_build/` source universe, candidate universe, evidence ledger, scoring layer, and policy gates. Future content changes should come from source-backed replacement transactions, not packet-by-packet taste corrections.
 
+First source-crosswalk batch status: E001-E006 are registered in the build layer. E001 ingested 61 accepted `_canon` records as internal accepted-record evidence. E002/E003 remain blocked until Bloom seed/raw/review tables are recovered or reconstructed. Norton, Longman, and Bedford anthology layers are registered, but line-item TOC extraction remains pending.
+
 ## Current Verified State
 
 - Public checklist target: 3,000 texts.

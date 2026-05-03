@@ -7,8 +7,8 @@ Last updated: 2026-05-03
 | Phase | Scope | Status | Output |
 |---|---|---|---|
 | Phase S0 | Freeze current baseline and claims | Complete for Wave 005 baseline | Commit `64600ddb264839d57a173438490f36eeed4c31b3`; validation outputs current |
-| Phase S1 | Source/candidate universe scaffolding | In progress | `_planning/canon_build/` schemas and tables being created |
-| Phase S2 | Source crosswalk ingestion E001-E030 | Pending | Next execution lane; evidence rows only |
+| Phase S1 | Source/candidate universe scaffolding | Complete for first scaffold | `_planning/canon_build/` schemas, empty tables, validation, and incumbent bootstrap created |
+| Phase S2 | Source crosswalk ingestion E001-E030 | In progress | E001-E006 registered; E001 ingested; Bloom/anthology blockers documented |
 | Phase S3 | Normalize, dedupe, and first-class taxonomy | Pending | Alias/relation/taxonomy tables required before broad integration |
 | Phase S4 | Scoring and coverage matrix | Pending | Current items and omissions scored together |
 | Phase S5 | Boundary and policy adjudication G001-G025 | Pending | Required before boundary-sensitive rows are locked |
@@ -46,6 +46,8 @@ Last updated: 2026-05-03
 ## Active Structural Debt
 
 - Source gate: 2,939 source-debt rows and 2,938 `manual_only` rows remain; no new row should enter as `manual_only`.
+- E002/E003: Bloom seed/raw/review tables are missing as machine-readable artifacts; current Bloom path annotations cannot close source debt.
+- E004-E006: Norton, Longman, and Bedford layers are registered, but line-item TOC extraction remains pending and access-limited.
 - Taxonomy gate: public category reports are still keyword-inferred; first-class region, language/tradition, form, selection, and boundary fields are required.
 - A029-A031/H013: replacement-induced chronology inversions must be repaired or explicitly waived before the path is locked.
 - H014: duplicate-like clusters and collection/selection overlaps remain; these now move into alias/relation/decision tables.

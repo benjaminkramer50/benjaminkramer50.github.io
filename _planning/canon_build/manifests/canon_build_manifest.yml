@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: incumbent_path_bootstrapped
+status: source_crosswalk_batch_e001_e006_registered
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -21,12 +21,12 @@ gates:
   boundary_policy_required_before_boundary_lock: true
   first_class_taxonomy_required_before_ui_precision: true
 artifacts:
-  source_registry: initialized_empty
-  source_items: initialized_empty
+  source_registry: e001_e006_registered
+  source_items: e001_accepted_records_ingested
   work_candidates: bootstrapped_from_current_path
   aliases: bootstrapped_from_current_path
   relations: initialized_empty
-  evidence: initialized_empty
+  evidence: e001_accepted_records_ingested
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
@@ -37,3 +37,12 @@ bootstrap_counts:
   work_creators: 3007
   aliases: 443
   path_selection_rows: 3000
+source_crosswalk_batch_e001_e006:
+  source_registry_rows: 9
+  e001_source_items: 61
+  e001_evidence_rows: 61
+  e002_status: blocked_missing_bloom_seed_table
+  e003_status: blocked_missing_bloom_raw_and_review_tables
+  e004_status: registered_needs_complete_norton_toc_extraction
+  e005_status: registered_needs_longman_toc_extraction
+  e006_status: registered_partial_bedford_public_toc
