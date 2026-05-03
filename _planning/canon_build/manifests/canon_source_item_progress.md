@@ -2,9 +2,9 @@
 
 - generated_on: 2026-05-03
 - registered_sources: 71
-- source_item_rows: 118
+- source_item_rows: 203
 - evidence_rows: 117
-- match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection
+- match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
 ## By Source
@@ -50,13 +50,13 @@
 | `e014_african_writers_series_heinemann_penguin` | E014 | public_index_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `e014_cambridge_history_african_caribbean_lit_2000` | E014 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `e014_penguin_modern_african_poetry_4e_2007` | E014 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `e014_rienner_anthology_african_lit_2007` | E014 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `e014_rienner_anthology_african_lit_2007` | E014 | in_progress | 20 | 0 | 0 | 0 | 4 | 16 | 0 | 0 |
 | `e017_columbia_early_modern_japanese_lit_2002` | E017 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `e017_columbia_modern_japanese_lit_v1_2005` | E017 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `e017_columbia_modern_japanese_lit_v2_2007` | E017 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `e017_columbia_traditional_japanese_lit_2007` | E017 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `e018_columbia_modern_korean_fiction_2005` | E018 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `e018_columbia_premodern_korean_prose_2018` | E018 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `e018_columbia_modern_korean_fiction_2005` | E018 | extracted | 22 | 0 | 3 | 0 | 0 | 19 | 0 | 0 |
+| `e018_columbia_premodern_korean_prose_2018` | E018 | extracted | 43 | 0 | 0 | 0 | 3 | 40 | 0 | 0 |
 | `e018_columbia_traditional_korean_poetry_2003` | E018 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `e018_lti_korea_digital_library_classics` | E018 | public_index_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `heath_american_lit_7e_2014` | E011 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -111,13 +111,10 @@
 - `e014_african_writers_series_heinemann_penguin` (E014; public_index_ready)
 - `e014_cambridge_history_african_caribbean_lit_2000` (E014; ready_partial_public)
 - `e014_penguin_modern_african_poetry_4e_2007` (E014; ready_partial_public)
-- `e014_rienner_anthology_african_lit_2007` (E014; ready_public_toc)
 - `e017_columbia_early_modern_japanese_lit_2002` (E017; ready_partial_public)
 - `e017_columbia_modern_japanese_lit_v1_2005` (E017; ready_public_toc)
 - `e017_columbia_modern_japanese_lit_v2_2007` (E017; ready_partial_public)
 - `e017_columbia_traditional_japanese_lit_2007` (E017; ready_partial_public)
-- `e018_columbia_modern_korean_fiction_2005` (E018; ready_public_toc)
-- `e018_columbia_premodern_korean_prose_2018` (E018; ready_public_toc)
 - `e018_columbia_traditional_korean_poetry_2003` (E018; ready_partial_public)
 - `e018_lti_korea_digital_library_classics` (E018; public_index_ready)
 - `heath_american_lit_7e_2014` (E011; in_progress)

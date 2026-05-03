@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_crosswalk_batch_e013_e018_registered
+status: source_item_batch_x020_e014_e018_ingested
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -25,7 +25,7 @@ gates:
   metadata_access_rows_do_not_close_canon_support_debt: true
 artifacts:
   source_registry: e001_e018_registered_source_items_pending
-  source_items: e001_ingested_x001_x006_pilot_ingested_x013_candidate_links_materialized
+  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_e014_e018_source_items
   work_candidates: bootstrapped_from_current_path_plus_x013_source_candidates
   aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases
   relations: initialized_empty
@@ -58,7 +58,7 @@ current_counts:
   creators: 2006
   work_creators: 3015
   aliases: 445
-  source_items: 118
+  source_items: 203
   evidence_rows: 117
   relation_scope_status_rows: 41
   source_debt_status_rows: 3008
@@ -159,4 +159,12 @@ source_crosswalk_batch_e013_e018:
   e016_status: registered_needs_chinese_toc_and_metadata_extraction
   e017_status: registered_needs_japanese_toc_extraction
   e018_status: registered_needs_korean_toc_and_metadata_extraction
+  direct_replacements: 0
+source_item_extraction_batch_x020:
+  source_items_added_or_updated: 85
+  sources_touched: 3
+  complete_public_toc_sources: 2
+  partial_public_toc_sources: 1
+  evidence_rows_added: 0
+  status: source_items_ingested_matching_required
   direct_replacements: 0

@@ -58,7 +58,7 @@ Done when:
 - Source fetch/access logs identify exact pages, files, APIs, and access limits.
 - Extracted rows pass matching and relation review queues.
 
-Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; E013-E018 source-item extraction has not started.
+Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; X020 extracted 85 E014/E018 source-item observations, with matching and evidence generation still pending.
 
 ## Phase 4: Evidence Ledger And Source-Debt Rules
 
