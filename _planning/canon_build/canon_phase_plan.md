@@ -45,7 +45,7 @@ Done when:
 - Unmatched source items are classified as candidate gaps, possible aliases, represented-by-selection, boundary cases, or no-current-work candidates.
 - No source row is promoted to a true omission before matching/relation review.
 
-Current status: started; X013/X014 were rerun after X027. The build now has 529 match candidates, 5,474 match-review decisions, and 7,567 relation-scope status rows. No final relation rows are ready to write.
+Current status: started; X013/X014 were rerun after X027, and X013 matching was rerun again after X031 aliases. The build now has 541 match candidates, 5,474 match-review decisions, and 7,567 relation-scope status rows. No final relation rows are ready to write.
 
 ## Phase 3: Source Extraction At Scale
 
@@ -110,7 +110,7 @@ Done when:
 - Period packets B001-B034, region/tradition packets C001-C196, form packets D001-D046, sentinel packets F001-F034, and intersection packets I001-I030 are complete, waived, or represented by generated diagnostics with no red-cell flag.
 - All high-priority gaps are added to the omission queue, rejected with rationale, or deferred with source-gap rationale.
 
-Current status: first X028-X031 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, and writes 7 safe title-variant aliases for already selected works.
+Current status: first X028-X032 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, and reruns matching to lift the candidate-match table to 541 rows.
 
 ## Phase 8: Source-Backed Integration
 
