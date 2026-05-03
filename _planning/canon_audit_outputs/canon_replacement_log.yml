@@ -1,6 +1,6 @@
 ---
-generated_on: '2026-05-03T00:57:23Z'
-status: wave_004_integrated_validated
+generated_on: '2026-05-03T01:17:41Z'
+status: wave_005_integrated_validated
 items:
 - wave: wave_001
   added: Selected Orations and Letters
@@ -821,6 +821,202 @@ items:
   replaced_creator: Jenny Erpenbeck
   rank: 2995
   rationale: Adds a major German realist novella while Erpenbeck remains represented.
+- wave: wave_005
+  added: Bang-e-Dara / The Call of the Marching Bell
+  added_creator: Muhammad Iqbal
+  replaced: Raktakarabi / Red Oleanders
+  replaced_creator: Rabindranath Tagore
+  rank: 1432
+  rationale: Adds the missing Iqbal poetry anchor while Tagore remains strongly represented.
+- wave: wave_005
+  added: Srikanta
+  added_creator: Sarat Chandra Chattopadhyay
+  replaced: Char Adhyay
+  replaced_creator: Rabindranath Tagore
+  rank: 1548
+  rationale: Adds the missing Sarat Chandra Bengali fiction anchor while trimming a contextual Tagore row.
+- wave: wave_005
+  added: Xunzi
+  added_creator: Xunzi and early Confucian textual tradition
+  replaced: Spring
+  replaced_creator: Ba Jin
+  rank: 1603
+  rationale: Adds a central Warring States prose text; Ba Jin remains represented by Family.
+- wave: wave_005
+  added: Han Feizi
+  added_creator: Han Fei and Legalist textual tradition
+  replaced: Autumn
+  replaced_creator: Ba Jin
+  rank: 1626
+  rationale: Adds the major Legalist prose classic; Ba Jin remains represented by Family.
+- wave: wave_005
+  added: Shishuo Xinyu / A New Account of Tales of the World
+  added_creator: Liu Yiqing attribution and Six Dynasties anecdote tradition
+  replaced: Wolf Totem
+  replaced_creator: Jiang Rong
+  rank: 2756
+  rationale: Adds a foundational Six Dynasties anecdote collection and removes a contextual contemporary Chinese row.
+- wave: wave_005
+  added: The Literary Mind and the Carving of Dragons
+  added_creator: Liu Xie
+  replaced: The Seventh Day
+  replaced_creator: Yu Hua
+  rank: 2882
+  rationale: Adds the major classical Chinese literary-critical treatise while trimming a contextual Yu Hua row.
+- wave: wave_005
+  added: Izumi Shikibu Diary
+  added_creator: Izumi Shikibu
+  replaced: Hamamatsu Chunagon Monogatari
+  replaced_creator: Sugawara no Takasue's Daughter attribution
+  rank: 305
+  rationale: Adds a major Heian woman writer and court diary while removing a contextual Heian tale row.
+- wave: wave_005
+  added: Fushikaden / The Flowering Spirit
+  added_creator: Zeami
+  replaced: Sotoba Komachi
+  replaced_creator: Noh theater tradition
+  rank: 436
+  rationale: Adds Zeami theatrical poetics while Noh plays remain represented elsewhere.
+- wave: wave_005
+  added: Midaregami / Tangled Hair
+  added_creator: Yosano Akiko
+  replaced: The Gate
+  replaced_creator: Natsume Soseki
+  rank: 1288
+  rationale: Adds a major modern Japanese woman poet and trims one of five Soseki rows.
+- wave: wave_005
+  added: A Handful of Sand
+  added_creator: Ishikawa Takuboku
+  replaced: Schoolgirl
+  replaced_creator: Dazai Osamu
+  rank: 1619
+  rationale: Adds an important modern Japanese tanka collection while Dazai remains represented.
+- wave: wave_005
+  added: Night on the Galactic Railroad
+  added_creator: Miyazawa Kenji
+  replaced: The Old Capital
+  replaced_creator: Kawabata Yasunari
+  rank: 1965
+  rationale: Adds Miyazawa Kenji while trimming Kawabata overcoverage.
+- wave: wave_005
+  added: Samguk Sagi
+  added_creator: Kim Pu-sik and Goryeo historiographic tradition
+  replaced: Sassi namjeonggi
+  replaced_creator: Kim Man-jung
+  rank: 623
+  rationale: Adds the major Korean dynastic-history prose anchor alongside Samguk Yusa.
+- wave: wave_005
+  added: Azaleas
+  added_creator: Kim Sowol
+  replaced: The Plotters
+  replaced_creator: Un-su Kim
+  rank: 2845
+  rationale: Adds the missing canonical modern Korean lyric poet while removing a contextual late crime-fiction row.
+- wave: wave_005
+  added: Sky, Wind, Stars, and Poems
+  added_creator: Yun Dong-ju
+  replaced: The Naked Tree
+  replaced_creator: Park Wan-suh
+  rank: 2108
+  rationale: Adds a central Korean resistance-era poetry anchor while Park Wan-suh remains represented.
+- wave: wave_005
+  added: The Silence of Love
+  added_creator: Han Yong-un
+  replaced: The Poet
+  replaced_creator: Yi Mun-yol
+  rank: 2508
+  rationale: Adds a major Korean Buddhist and anti-colonial poetry collection while trimming a secondary Yi Mun-yol row.
+- wave: wave_005
+  added: Diwan of al-Khansa
+  added_creator: al-Khansa
+  replaced: Selected Poems
+  replaced_creator: al-Buhturi
+  rank: 256
+  rationale: Adds the major early Arabic woman elegist while retaining stronger Abbasid poetry anchors.
+- wave: wave_005
+  added: The Book of Animals
+  added_creator: al-Jahiz
+  replaced: Deliverance Follows Adversity
+  replaced_creator: al-Tanukhi
+  rank: 274
+  rationale: Adds al-Jahiz's major adab and natural-history prose work.
+- wave: wave_005
+  added: The Book of Delight and Conviviality
+  added_creator: Abu Hayyan al-Tawhidi
+  replaced: Ilahi-nama
+  replaced_creator: Farid ud-Din Attar
+  rank: 317
+  rationale: Adds a major Arabic adab prose gap while Attar remains represented by The Conference of the Birds and Memorial of the Saints.
+- wave: wave_005
+  added: Divan-i Hikmet
+  added_creator: Ahmad Yasawi
+  replaced: Alpamish
+  replaced_creator: Turkic oral epic tradition
+  rank: 731
+  rationale: Adds an early Turkic Sufi poetry anchor and removes the duplicate Alpamish/Alpamysh row.
+- wave: wave_005
+  added: Yaban
+  added_creator: Yakup Kadri Karaosmanoglu
+  replaced: The Black Book
+  replaced_creator: Orhan Pamuk
+  rank: 2487
+  rationale: Adds a Turkish republican novel anchor while Pamuk remains represented by My Name Is Red and Snow.
+- wave: wave_005
+  added: The Clown and His Daughter
+  added_creator: Halide Edib Adivar
+  replaced: The Museum of Innocence
+  replaced_creator: Orhan Pamuk
+  rank: 2807
+  rationale: Adds a major Turkish woman novelist and trims Pamuk overcoverage.
+- wave: wave_005
+  added: A Cup of Sin
+  added_creator: Simin Behbahani
+  replaced: Let Us Believe in the Beginning of the Cold Season
+  replaced_creator: Forugh Farrokhzad
+  rank: 2173
+  rationale: Adds a major modern Persian woman poet while Forugh Farrokhzad remains represented by Another Birth.
+- wave: wave_005
+  added: Ityala lamawele / The Lawsuit of the Twins
+  added_creator: S. E. K. Mqhayi
+  replaced: Climbie
+  replaced_creator: Bernard Dadie
+  rank: 1867
+  rationale: Adds foundational Xhosa prose and African-language coverage.
+- wave: wave_005
+  added: Xala
+  added_creator: Ousmane Sembene
+  replaced: The Money-Order
+  replaced_creator: Ousmane Sembene
+  rank: 2045
+  rationale: Swaps Sembene to his central postcolonial satire while preserving God's Bits of Wood.
+- wave: wave_005
+  added: The Collector of Treasures
+  added_creator: Bessie Head
+  replaced: The Wanderers
+  replaced_creator: Ezekiel Mphahlele
+  rank: 2129
+  rationale: Adds Bessie Head's major short-fiction collection while replacing a contextual row.
+- wave: wave_005
+  added: The Trial of Dedan Kimathi
+  added_creator: Ngugi wa Thiong'o; Micere Githae Mugo
+  replaced: Going Down River Road
+  replaced_creator: Meja Mwangi
+  rank: 2208
+  rationale: Adds major Kenyan anti-colonial drama and Micere Githae Mugo while replacing a secondary Meja Mwangi row.
+- wave: wave_005
+  added: Translated from the Night
+  added_creator: Jean-Joseph Rabearivelo
+  replaced: The Call of the Arena
+  replaced_creator: Aminata Sow Fall
+  rank: 2329
+  rationale: Adds Malagasy and Indian Ocean African poetry coverage while replacing a contextual row.
+- wave: wave_005
+  added: Magersfontein, O Magersfontein!
+  added_creator: Etienne Leroux
+  replaced: The Whale Caller
+  replaced_creator: Zakes Mda
+  rank: 2765
+  rationale: Adds an Afrikaans modernist fiction anchor while replacing a contextual Zakes Mda row.
 alias_repairs:
 - wave: wave_001
   item: Tales
@@ -830,3 +1026,11 @@ alias_repairs:
   item: The Weary Blues and Selected Poems
   creator: Langston Hughes
   added_alias: The Weary Blues; Fine Clothes to the Jew; Montage of a Dream Deferred; Harlem; The Negro Speaks of Rivers; I, Too
+- wave: wave_005
+  item: Li Sao / Encountering Sorrow and Songs of Chu
+  creator: Qu Yuan and the Classical Chinese poetic tradition
+  added_alias: Chu Ci; Songs of Chu; Li Sao; Encountering Sorrow
+- wave: wave_005
+  item: Diwan-e-Ghalib
+  creator: Mirza Ghalib
+  added_alias: Selected Ghazals

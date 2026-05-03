@@ -1,10 +1,10 @@
 bucket	count
-novel	1354
-play	201
-poetry_selection	138
-poetry_collection	132
+novel	1341
+play	199
+poetry_collection	139
+poetry_selection	136
 literary_work	100
-novella	73
+novella	72
 short_story_collection	70
 book	33
 epic_poem	31
@@ -15,13 +15,13 @@ poem	20
 story_collection	20
 tragedy	19
 comedy	18
-oral_epic	18
+oral_epic	17
 short_story	17
 story_cycle	17
 poetry_anthology	16
 long_poem	15
+devotional_poetry_collection	10
 romance_poem	10
-devotional_poetry_collection	9
 lyric_poetry_collection	9
 graphic_narrative	8
 narrative_poem	8
@@ -62,9 +62,10 @@ mythic_poem	4
 philosophical_tale	4
 poetry_and_prose_sequence	4
 tale	4
+adab_prose	3
 chronicle	3
-court_tale	3
 dialogue	3
+drama	3
 dream_vision_poem	3
 epic_adaptation	3
 fairy_tale_collection	3
@@ -90,7 +91,7 @@ autobiographical_novel	2
 autobiographical_prose	2
 biblical_narrative	2
 childrens_novel	2
-drama	2
+court_tale	2
 dramatic_poem	2
 epic_fragment	2
 essay	2
@@ -99,6 +100,7 @@ essay_selection	2
 experimental_novel	2
 experimental_prose	2
 fantasy_series	2
+ghazal_collection	2
 graphic_narrative_series	2
 hadith_collection	2
 hymn_collection	2
@@ -118,9 +120,11 @@ oral_history_literature	2
 oral_poetry_selection	2
 pastoral_poetry_collection	2
 philosophical_poem	2
+philosophical_prose	2
 poetry_cycle	2
 prose_and_poetry_collection	2
 prose_cycle	2
+prose_narrative	2
 prose_poem_collection	2
 public_oral_tradition_selection	2
 religious_poem	2
@@ -134,7 +138,6 @@ sufi_poetry_selection	2
 utopian_novel	2
 vernacular_novel	2
 adab_anthology	1
-adab_prose	1
 adab_prose_collection	1
 allegorical_romance_poem	1
 ancient_novel	1
@@ -160,6 +163,7 @@ classic	1
 closet_drama	1
 compiled_oral_epic	1
 cosmological_text	1
+court_diary	1
 creation_chant	1
 crime_novel	1
 debate_poem	1
@@ -172,6 +176,7 @@ dialogue_poem	1
 dialogue_text	1
 didactic_poetry_collection	1
 divination_verse_corpus	1
+diwan	1
 documentary_literary_selection	1
 documentary_literary_testimony	1
 dramatic_monologue_poem	1
@@ -190,7 +195,6 @@ fragmentary_prose	1
 frame_story_collection	1
 future_history	1
 gaucho_epic	1
-ghazal_collection	1
 goddess_scripture	1
 graphic_journalism	1
 graphic_novel	1
@@ -205,6 +209,7 @@ heroic_tale_cycle	1
 historical_novel_sequence	1
 historical_prose	1
 historiographic_corpus	1
+historiographic_prose	1
 hybrid_memoir_essay	1
 hybrid_prose_poetry	1
 hybrid_text	1
@@ -218,6 +223,7 @@ jataka_story	1
 learned_prose	1
 legendary_saga	1
 letter_collection	1
+literary_criticism	1
 literary_dialogues	1
 literary_documentary_prose	1
 literary_essay	1
@@ -245,7 +251,6 @@ metrical_romance	1
 midrashic_anthology	1
 modernist_novel	1
 monastic_scripture	1
-mystical_narrative_poem	1
 mystical_poetry_collection	1
 myth_cycle	1
 mythic_cycle	1
@@ -296,7 +301,6 @@ praise_poetry_selection	1
 prakrit_court_poem	1
 prakrit_romance_poem	1
 prose_collection	1
-prose_narrative	1
 prose_poem_novel	1
 prose_poetry	1
 prose_satire_cycle	1
@@ -326,6 +330,7 @@ science_fiction_novel	1
 scriptural_poetry_and_prose	1
 sentimental_romance	1
 setsuwa_collection	1
+short_fiction_collection	1
 short_prose_cycle	1
 slave_narrative	1
 song_poetry_collection	1
@@ -341,6 +346,7 @@ supernatural_tale_collection	1
 surrealist_prose	1
 tale_cycle	1
 testimonial_novel	1
+theater_treatise	1
 theological_autobiography	1
 travel_novel	1
 travel_satire	1

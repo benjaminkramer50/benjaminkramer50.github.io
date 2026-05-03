@@ -1,6 +1,6 @@
 ---
-generated_on: '2026-05-03T00:57:23Z'
-status: wave_004_integrated_wave_005_queue_open
+generated_on: '2026-05-03T01:17:41Z'
+status: wave_005_integrated_next_wave_pending
 items:
 - candidate: Letters from an American Farmer
   creator: J. Hector St. John de Crevecoeur
@@ -581,59 +581,134 @@ items:
   creator: Sarat Chandra Chattopadhyay
   packets: [F025]
   priority: high
-  status: queued_for_wave_005_south_asian_modern_integration
+  status: integrated_wave_005_as_Srikanta
 - candidate: Iqbal coverage
   creator: Muhammad Iqbal
   packets: [F025]
   priority: high
-  status: queued_for_wave_005_south_asian_modern_integration
+  status: integrated_wave_005_as_Bang_e_Dara
 - candidate: Li Sao / Encountering Sorrow
   creator: Qu Yuan
   packets: [F026]
   priority: high
-  status: queued_for_wave_005_chinese_sinophone_integration
+  status: integrated_wave_005_as_title_alias_repair
 - candidate: Xunzi and Han Feizi coverage
   creator: Xunzi; Han Feizi
   packets: [F026]
   priority: high
-  status: queued_for_wave_005_chinese_sinophone_integration
+  status: integrated_wave_005_as_Xunzi_and_Han_Feizi
 - candidate: Izumi Shikibu Diary
   creator: Izumi Shikibu
   packets: [F027]
   priority: high
-  status: queued_for_wave_005_japanese_integration
+  status: integrated_wave_005
 - candidate: Midaregami / Tangled Hair
   creator: Yosano Akiko
   packets: [F027]
   priority: high
-  status: queued_for_wave_005_japanese_integration
+  status: integrated_wave_005
 - candidate: Samguk Sagi
   creator: Kim Pu-sik
   packets: [F028]
   priority: high
-  status: queued_for_wave_005_korean_integration
+  status: integrated_wave_005
 - candidate: Azaleas
   creator: Kim Sowol
   packets: [F028]
   priority: high
-  status: queued_for_wave_005_korean_integration
+  status: integrated_wave_005
 - candidate: The Book of Animals
   creator: al-Jahiz
   packets: [F029]
   priority: high
-  status: queued_for_wave_005_arabic_persian_turkic_integration
+  status: integrated_wave_005
 - candidate: Divan-i Hikmet
   creator: Ahmad Yasawi
   packets: [F029]
   priority: high
-  status: queued_for_wave_005_arabic_persian_turkic_integration
+  status: integrated_wave_005
 - candidate: Xala
   creator: Ousmane Sembene
   packets: [F030]
   priority: high
-  status: queued_for_wave_005_african_integration
+  status: integrated_wave_005
 - candidate: Xhosa and Indian Ocean African-language gaps
   creator: S. E. K. Mqhayi; Jean-Joseph Rabearivelo; related traditions
   packets: [F030]
   priority: high
-  status: queued_for_wave_005_african_integration
+  status: integrated_wave_005_as_Ityala_lamawele_and_Translated_from_the_Night
+- candidate: Shishuo Xinyu / A New Account of Tales of the World
+  creator: Liu Yiqing attribution and Six Dynasties anecdote tradition
+  packets: [F026]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: The Literary Mind and the Carving of Dragons
+  creator: Liu Xie
+  packets: [F026]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: Fushikaden / The Flowering Spirit
+  creator: Zeami
+  packets: [F027]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: A Handful of Sand
+  creator: Ishikawa Takuboku
+  packets: [F027]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: Night on the Galactic Railroad
+  creator: Miyazawa Kenji
+  packets: [F027]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: Sky, Wind, Stars, and Poems
+  creator: Yun Dong-ju
+  packets: [F028]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: The Silence of Love
+  creator: Han Yong-un
+  packets: [F028]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: Diwan of al-Khansa
+  creator: al-Khansa
+  packets: [F029]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: The Book of Delight and Conviviality
+  creator: Abu Hayyan al-Tawhidi
+  packets: [F029]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: Yaban
+  creator: Yakup Kadri Karaosmanoglu
+  packets: [F029]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: The Clown and His Daughter
+  creator: Halide Edib Adivar
+  packets: [F029]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: A Cup of Sin
+  creator: Simin Behbahani
+  packets: [F029]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: The Collector of Treasures
+  creator: Bessie Head
+  packets: [F030]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: The Trial of Dedan Kimathi
+  creator: Ngugi wa Thiong'o; Micere Githae Mugo
+  packets: [F030]
+  priority: medium_high
+  status: integrated_wave_005
+- candidate: Magersfontein, O Magersfontein!
+  creator: Etienne Leroux
+  packets: [F030]
+  priority: medium_high
+  status: integrated_wave_005

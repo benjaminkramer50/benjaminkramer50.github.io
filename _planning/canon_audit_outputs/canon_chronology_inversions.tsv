@@ -1,18 +1,26 @@
 previous_rank	previous_title	previous_creators	previous_date_label	previous_sort_year	current_rank	current_title	current_creators	current_date_label	current_sort_year	backward_delta_years
+125	The Eunuch	Terence	161 BCE	-161	126	Li Sao / Encountering Sorrow and Songs of Chu	Qu Yuan and the Classical Chinese poetic tradition	c. 4th-2nd century BCE	-300	139
 153	Letters to Lucilius	Lucius Annaeus Seneca	c. 63-65 CE	64	154	Pharsalia	Lucan	1st century CE	50	14
+255	Selected Poems	Abu Nuwas	8th-9th century	850	256	Diwan of al-Khansa	al-Khansa	7th century	625	225
 257	Selected Poems	Abu Tammam	9th century	850	258	Tolkappiyam	Classical Tamil grammatical and poetic tradition	classical Tamil tradition; date debated	200	650
+273	Bhagavata Purana	Sanskrit Puranic tradition	c. 9th-10th century	950	274	The Book of Animals	al-Jahiz	9th century	850	100
+304	Chaurapanchasika	Bilhana	11th century	1050	305	Izumi Shikibu Diary	Izumi Shikibu	early 11th century	1008	42
+316	Hayy ibn Yaqzan	Ibn Tufayl	12th century	1150	317	The Book of Delight and Conviviality	Abu Hayyan al-Tawhidi	10th century	975	175
+435	Selected Poems	Francois Villon	15th century	1450	436	Fushikaden / The Flowering Spirit	Zeami	c. 1400	1400	50
 485	The Heptameron	Marguerite de Navarre	1558-1559	1558	486	Sonnets et elegies	Louise Labe	1555	1555	3
 488	Les Odes	Pierre de Ronsard	16th century	1560	489	Auto da Barca do Inferno	Gil Vicente	1517	1517	43
 526	The Unfortunate Traveller: or, The Life of Jacke Wilton	Thomas Nashe	late 16th-early 17th century	1600	527	The Interior Castle	Teresa of Avila	1577	1577	23
 582	Horace	Pierre Corneille	17th century	1650	583	Le Livre du Voir Dit	Guillaume de Machaut	c. 1360s	1365	285
 585	Histoires ou contes du temps passe	Charles Perrault	1697	1697	586	Polyeucte	Pierre Corneille	17th century	1650	47
 606	Britannicus	Jean Racine	1669	1669	607	The Other World	Cyrano de Bergerac	published 1657 and 1662	1657	12
+622	The Narrow Road to the Deep North	Matsuo Basho	1689; published 1702	1689	623	Samguk Sagi	Kim Pu-sik and Goryeo historiographic tradition	1145	1145	544
 666	The Female Quixote	Charlotte Lennox	1752	1752	667	The Book of Wisdom and Lies	Sulkhan-Saba Orbeliani	17th-18th century	1750	2
 680	The Country Wife	William Wycherley	18th century	1760	681	The Man of Mode	George Etherege	1676	1676	84
 684	The Vicar of Wakefield	Oliver Goldsmith	18th century	1760	685	Elegy Written in a Country Churchyard	Thomas Gray	1751	1751	9
 685	Elegy Written in a Country Churchyard	Thomas Gray	1751	1751	686	Selected Poems	John Wilmot, Earl of Rochester	17th century	1675	76
 688	Turkish Embassy Letters	Lady Mary Wortley Montagu	1763	1763	689	The Traveller	Oliver Goldsmith	18th century	1760	3
 724	Jacques the Fatalist	Denis Diderot	written c. 1765-1780; published 1796	1796	725	Walther von der Vogelweide: Selected Poems	Walther von der Vogelweide	c. 1200	1200	596
+730	Odu Ifa: Selected Public Verses	Yoruba Ifa divination and priestly tradition	living oral and ritual tradition	1800	731	Divan-i Hikmet	Ahmad Yasawi	12th century	1150	650
 745	Wilhelm Tell	Friedrich Schiller	1804	1804	746	Miorita	Romanian pastoral ballad tradition	oral tradition; 19th century publication	1800	4
 756	Heinrich von Ofterdingen	Novalis	1802	1802	757	Rime	Guido Cavalcanti	late 13th century	1290	512
 764	Los Pazos de Ulloa	Emilia Pardo Bazan	1886	1886	765	Chatterton	Alfred de Vigny	The Democratic Age; approximate chronological placement pending review	1806	80
@@ -83,6 +91,7 @@ previous_rank	previous_title	previous_creators	previous_date_label	previous_sort
 1270	Nadja	Andre Breton	1928	1928	1271	Poems of Rene Char	Rene Char	A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review	1908	20
 1277	L'Age d'homme	Michel Leiris	1939	1939	1278	L'Idiot de la Famille: Gustave Flaubert de 1821 a 1857	Jean-Paul Sartre	A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review	1909	30
 1279	Les Mots	Jean-Paul Sartre	1964	1964	1280	Saint Genet, Comedien et Martyr	Jean-Paul Sartre	A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review	1909	55
+1287	Rashomon and Other Stories	Ryunosuke Akutagawa	1910s-1920s	1910	1288	Midaregami / Tangled Hair	Yosano Akiko	1901	1901	9
 1294	The Rebel	Albert Camus	1951	1951	1295	Pelle the Conqueror	Martin Andersen Nexo	1906-1910	1910	41
 1319	The Lesson	Eugene Ionesco	1951	1951	1320	Le Souffleur	Pierre Klossowski	A Chaotic Age: A Canonical Prophecy; approximate chronological placement pending review	1912	39
 1326	Exercises in Style	Raymond Queneau	1947	1947	1327	Sons and Lovers	D. H. Lawrence	1913	1913	34
@@ -96,19 +105,35 @@ previous_rank	previous_title	previous_creators	previous_date_label	previous_sort
 1461	All Quiet on the Western Front	Erich Maria Remarque	1929	1929	1462	Cogewea, the Half-Blood	Mourning Dove	1927	1927	2
 1520	Blood Wedding	Federico Garcia Lorca	1933	1933	1521	Harlem Shadows	Claude McKay	1922	1922	11
 1524	Coyote Stories	Mourning Dove	1933	1933	1525	Dream Story	Arthur Schnitzler	1926	1926	7
-1547	Story of a Stairway	Antonio Buero Vallejo	1949	1949	1548	Char Adhyay	Rabindranath Tagore	1934	1934	15
+1547	Story of a Stairway	Antonio Buero Vallejo	1949	1949	1548	Srikanta	Sarat Chandra Chattopadhyay	1917-1933	1917	32
 1556	The Death of the Heart	Elizabeth Bowen	1938	1938	1557	Satan in Goray	Isaac Bashevis Singer	1935	1935	3
+1602	Son of Old Man Hat	Left Handed and Walter Dyk	1938	1938	1603	Xunzi	Xunzi and early Confucian textual tradition	3rd century BCE	-250	2188
 1617	The Third Policeman	Flann O'Brien	written 1939-1940; published 1967	1939	1618	Peace	Arne Garborg	1892	1892	47
+1625	The Power and the Glory	Graham Greene	1940	1940	1626	Han Feizi	Han Fei and Legalist textual tradition	3rd century BCE	-250	2190
 1648	In the Habitations of Death	Nelly Sachs	1947	1947	1649	The Makioka Sisters	Tanizaki Junichiro	1943-1948	1943	4
 1655	Malina	Ingeborg Bachmann	1971	1971	1656	The Dwarf	Par Lagerkvist	1944	1944	27
 1733	Poems	Paul Celan	20th century	1950	1734	Requiem and Selected Poems	Anna Akhmatova	1935-1961	1935	15
 1813	In the Castle of My Skin	George Lamming	1953	1953	1814	The Naked and the Dead	Norman Mailer	1948	1948	5
+1866	Zama	Antonio Di Benedetto	1956	1956	1867	Ityala lamawele / The Lawsuit of the Twins	S. E. K. Mqhayi	1914	1914	42
 1881	The Waiting Years	Enchi Fumiko	1957	1957	1882	The Family at Gilje	Jonas Lie	1883	1883	74
+1964	The Man in the High Castle	Philip K. Dick	1962	1962	1965	Night on the Galactic Railroad	Miyazawa Kenji	written 1927-1933; published 1934	1934	28
+2045	Xala	Ousmane Sembene	1973	1973	2046	The Promised Land	Grace Ogot	1966	1966	7
+2107	The Fortress	Mesa Selimovic	1970	1970	2108	Sky, Wind, Stars, and Poems	Yun Dong-ju	1948 posthumous collection	1948	22
+2129	The Collector of Treasures	Bessie Head	1977	1977	2130	Invisible Cities	Italo Calvino	1972	1972	5
+2172	I the Supreme	Augusto Roa Bastos	1974	1974	2173	A Cup of Sin	Simin Behbahani	20th century	1970	4
 2200	Woman at Point Zero	Nawal El Saadawi	1975	1975	2201	September Lyre	Edith Sodergran	1918	1918	57
+2328	Zami: A New Spelling of My Name	Audre Lorde	1982	1982	2329	Translated from the Night	Jean-Joseph Rabearivelo	1935	1935	47
+2486	Tehanu	Ursula K. Le Guin	1990	1990	2487	Yaban	Yakup Kadri Karaosmanoglu	1932	1932	58
+2507	The Heirs of Columbus	Gerald Vizenor	1991	1991	2508	The Silence of Love	Han Yong-un	1926	1926	65
 2518	Middle Passages	Kamau Brathwaite	1992	1992	2519	The Long Journey	Johannes V. Jensen	1908-1922	1908	84
 2522	The Discovery of Heaven	Harry Mulisch	1992	1992	2523	The Artificial Silk Girl	Irmgard Keun	1932	1932	60
 2606	The Sparrow	Mary Doria Russell	1996	1996	2607	Sophia de Mello Breyner Andresen: Selected Poems	Sophia de Mello Breyner Andresen	20th century	1944	52
 2610	Primeval and Other Times	Olga Tokarczuk	1996	1996	2611	The Land at the End of the World	Antonio Lobo Antunes	1979	1979	17
 2735	Reading Lolita in Tehran	Azar Nafisi	2003	2003	2736	The Back Room	Carmen Martin Gaite	1978	1978	25
 2748	Small Island	Andrea Levy	2004	2004	2749	New Portuguese Letters	Maria Isabel Barreno | Maria Teresa Horta | Maria Velho da Costa	1972	1972	32
+2755	Wizard of the Crow	Ngugi wa Thiong'o	2004-2006	2004	2756	Shishuo Xinyu / A New Account of Tales of the World	Liu Yiqing attribution and Six Dynasties anecdote tradition	c. 430	430	1574
+2764	Palpasa Cafe	Narayan Wagle	2005	2005	2765	Magersfontein, O Magersfontein!	Etienne Leroux	1976	1976	29
+2806	The Graveyard Book	Neil Gaiman	2008	2008	2807	The Clown and His Daughter	Halide Edib Adivar	1935	1935	73
+2844	Voroshilovgrad	Serhiy Zhadan	2010	2010	2845	Azaleas	Kim Sowol	1925	1925	85
+2881	We Need New Names	NoViolet Bulawayo	2013	2013	2882	The Literary Mind and the Carving of Dragons	Liu Xie	c. 501	501	1512
 2994	Dropbear	Evelyn Araluen	2021	2021	2995	The Rider on the White Horse	Theodor Storm	1888	1888	133

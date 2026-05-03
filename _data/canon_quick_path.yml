@@ -3160,25 +3160,30 @@ items:
   lifetime_path: true
   rank: 125
   phase: 1
-- id: candidate:chu_ci
-  source: wave_006_textual_humanities_literature_philosophy
-  source_id: chu_ci
-  title: Chu Ci / Songs of Chu
+- id: 'candidate:chu_ci'
+  source: 'wave_006_textual_humanities_literature_philosophy'
+  source_id: 'chu_ci'
+  title: Li Sao / Encountering Sorrow and Songs of Chu
+  aliases:
+  - Chu Ci
+  - Songs of Chu
+  - Li Sao
+  - Encountering Sorrow
   creators:
-  - Classical Chinese poetic tradition
+  - Qu Yuan and the Classical Chinese poetic tradition
   date_label: c. 4th-2nd century BCE
-  sort_year: -150
+  sort_year: -300
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: 'classical_chinese_literature'
   medium: text
-  unit_type: poetry_anthology
+  unit_type: 'poetry_anthology'
   tier: core
   pool: spine
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Foundational Chinese poetic anthology for lyric voice, exile, ritual imagination, and southern literary style.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Makes Qu Yuan and Li Sao visible within the Chu Ci anthology entry while retaining the broader Songs of Chu coverage.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -6462,25 +6467,27 @@ items:
   lifetime_path: true
   rank: 255
   phase: 1
-- id: candidate:me_lit_al_buhturi_poems
-  source: wave_036_literature_middle_east_persian_turkic_hebrew_scale
-  source_id: me_lit_al_buhturi_poems
-  title: Selected Poems
+- id: 'candidate:wave005_al_khansa_elegies'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_al_khansa_elegies'
+  title: Diwan of al-Khansa
+  aliases:
+  - Selected Elegies
   creators:
-  - al-Buhturi
-  date_label: 9th century
-  sort_year: 850
+  - al-Khansa
+  date_label: 7th century
+  sort_year: 625
   section: textual_humanities
   group: literature
-  topic: arabic_literature
+  topic: 'arabic_literature'
   medium: text
-  unit_type: poetry_selection
+  unit_type: diwan
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Middle Eastern, Persianate, Turkic, Hebrew/Jewish, Caucasus, Central Asian, and North African literature scale candidate for the 3000-text literature-only path; staged to improve language, period, genre, sacred-text, oral-epic, and modern coverage pending source review.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds the major early Arabic woman elegist while retaining Abu Tammam, al-Mutanabbi, Abu Nuwas, and other Abbasid poetry anchors.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -6923,25 +6930,25 @@ items:
   lifetime_path: true
   rank: 273
   phase: 1
-- id: candidate:me_lit_tanukhi_deliverance
-  source: wave_036_literature_middle_east_persian_turkic_hebrew_scale
-  source_id: me_lit_tanukhi_deliverance
-  title: Deliverance Follows Adversity
+- id: 'candidate:wave005_jahiz_animals'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_jahiz_animals'
+  title: The Book of Animals
   creators:
-  - al-Tanukhi
-  date_label: 10th century
-  sort_year: 950
+  - al-Jahiz
+  date_label: 9th century
+  sort_year: 850
   section: textual_humanities
   group: literature
-  topic: arabic_literature
+  topic: 'arabic_literature'
   medium: text
-  unit_type: anecdote_collection
+  unit_type: 'adab_prose'
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Middle Eastern, Persianate, Turkic, Hebrew/Jewish, Caucasus, Central Asian, and North African literature scale candidate for the 3000-text literature-only path; staged to improve language, period, genre, sacred-text, oral-epic, and modern coverage pending source review.
+  rationale: Adds al-Jahiz's major adab and natural-history prose work; al-Tanukhi is a lower-priority prose anthology by comparison.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -7719,25 +7726,25 @@ items:
   lifetime_path: true
   rank: 304
   phase: 2
-- id: candidate:eastasia_lit_hamamatsu_chunagon
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_hamamatsu_chunagon
-  title: Hamamatsu Chunagon Monogatari
+- id: 'candidate:wave005_izumi_shikibu_diary'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_izumi_shikibu_diary'
+  title: Izumi Shikibu Diary
   creators:
-  - Sugawara no Takasue's Daughter attribution
-  date_label: 11th century
-  sort_year: 1050
+  - Izumi Shikibu
+  date_label: early 11th century
+  sort_year: 1008
   section: textual_humanities
   group: literature
-  topic: japanese_literature
+  topic: 'japanese_literature'
   medium: text
-  unit_type: court_tale
-  tier: contextual
+  unit_type: 'court_diary'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the story, tale, story collection, or documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major Heian woman writer and court diary while removing a contextual Heian tale row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -8019,25 +8026,27 @@ items:
   lifetime_path: true
   rank: 316
   phase: 2
-- id: candidate:me_lit_attar_ilahi_nama
-  source: wave_036_literature_middle_east_persian_turkic_hebrew_scale
-  source_id: me_lit_attar_ilahi_nama
-  title: Ilahi-nama
+- id: 'candidate:wave005_tawhidi_delight_conviviality'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_tawhidi_delight_conviviality'
+  title: The Book of Delight and Conviviality
+  aliases:
+  - Kitab al-Imta wa'l-Mu'anasa
   creators:
-  - Farid ud-Din Attar
-  date_label: 12th century
-  sort_year: 1150
+  - Abu Hayyan al-Tawhidi
+  date_label: 10th century
+  sort_year: 975
   section: textual_humanities
   group: literature
-  topic: persian_literature
+  topic: 'arabic_literature'
   medium: text
-  unit_type: mystical_narrative_poem
+  unit_type: 'adab_prose'
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Middle Eastern, Persianate, Turkic, Hebrew/Jewish, Caucasus, Central Asian, and North African literature scale candidate for the 3000-text literature-only path; staged to improve language, period, genre, sacred-text, oral-epic, and modern coverage pending source review.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major Arabic adab prose gap while Attar remains represented by The Conference of the Birds and Memorial of the Saints.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -11049,25 +11058,25 @@ items:
   lifetime_path: true
   rank: 435
   phase: 2
-- id: candidate:eastasia_lit_sotoba_komachi
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_sotoba_komachi
-  title: Sotoba Komachi
+- id: 'candidate:wave005_fushikaden'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_fushikaden'
+  title: Fushikaden / The Flowering Spirit
   creators:
-  - Noh theater tradition
-  date_label: medieval Noh repertoire
-  sort_year: 1450
+  - Zeami
+  date_label: c. 1400
+  sort_year: 1400
   section: textual_humanities
   group: literature
-  topic: japanese_drama
+  topic: 'japanese_drama'
   medium: text
-  unit_type: play
+  unit_type: 'theater_treatise'
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds Zeami theatrical poetics, a central Noh text, while Noh plays remain represented elsewhere.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -15789,33 +15798,31 @@ items:
   phase: 3
   aliases:
   - Oku no Hosomichi
-- source: wave_053_literature_second_tier_omissions_cleanup
+- id: 'candidate:wave005_samguk_sagi'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_samguk_sagi'
+  title: Samguk Sagi
+  creators:
+  - Kim Pu-sik and Goryeo historiographic tradition
+  date_label: 1145
+  sort_year: 1145
   section: textual_humanities
   group: literature
+  topic: 'korean_literature'
   medium: text
+  unit_type: 'historiographic_prose'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds the major Korean dynastic-history prose anchor alongside Samguk Yusa.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
-  id: candidate:mandatory_sassi_namjeonggi
-  source_id: mandatory_sassi_namjeonggi
-  title: Sassi namjeonggi
-  creators:
-  - Kim Man-jung
-  date_label: late 17th century
-  sort_year: 1689
-  topic: korean_literature
-  unit_type: novel
-  tier: major
-  rationale: Major Korean vernacular and classical fiction, included to complement Kim Man-jung beyond The Cloud Dream of the Nine.
   rank: 623
   phase: 3
-  aliases:
-  - Record of Lady Sa's Southward Journey
 - id: candidate:latcarib_lit_infortunios_ramirez
   source: wave_039_literature_latin_america_caribbean_scale
   source_id: latcarib_lit_infortunios_ramirez
@@ -18547,25 +18554,25 @@ items:
   lifetime_path: true
   rank: 730
   phase: 3
-- id: candidate:scale_lit_alpamish
-  source: wave_025_literature_global_scale_completion
-  source_id: scale_lit_alpamish
-  title: Alpamish
+- id: 'candidate:wave005_divan_i_hikmet'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_divan_i_hikmet'
+  title: Divan-i Hikmet
   creators:
-  - Turkic oral epic tradition
-  date_label: oral epic strata; 19th century recordings
-  sort_year: 1800
+  - Ahmad Yasawi
+  date_label: 12th century
+  sort_year: 1150
   section: textual_humanities
   group: literature
-  topic: turkic_literature
+  topic: 'turkic_literature'
   medium: text
-  unit_type: oral_epic
+  unit_type: 'devotional_poetry_collection'
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the complete oral-history literary work or documented assigned selection.
-  rationale: Scale candidate for the 3000-text literature-only lifetime path; retained for source review, duplicate review, translation review, and coverage-balancing.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds an early Turkic Sufi poetry anchor and removes the duplicate Alpamish/Alpamysh row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -22753,31 +22760,33 @@ items:
   lifetime_path: true
   rank: 896
   phase: 3
-- id: candidate:ghalib_selected_ghazals
-  source: wave_018_phase_0_expansion
-  source_id: ghalib_selected_ghazals
-  title: Selected Ghazals
+- id: 'candidate:ghalib_selected_ghazals'
+  source: 'wave_018_phase_0_expansion'
+  source_id: 'ghalib_selected_ghazals'
+  title: Diwan-e-Ghalib
+  aliases:
+  - Selected Ghazals
   creators:
   - Mirza Ghalib
   date_label: 19th century
   sort_year: 1850
   section: textual_humanities
   group: literature
-  topic: urdu_literature
+  topic: 'urdu_literature'
   medium: text
-  unit_type: poetry_selection
+  unit_type: 'ghazal_collection'
   tier: core
   pool: spine
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Canonical Urdu lyric checkpoint for ghazal form, Indo-Persian poetics, modernity, loss, and translation difficulty.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Repairs a generic title so the central Ghalib ghazal collection is discoverable rather than hidden under Selected Ghazals.
   source_status: manual_only
   review_status: needs_sources
   url:
   lifetime_path: true
   rank: 897
-  phase: 3
+  phase: 4
 - id: candidate:bloom_wordsworth_prelude
   source: wave_019_bloom_western_literature_spine
   source_id: bloom_wordsworth_prelude
@@ -30408,7 +30417,7 @@ items:
   sort_year: 1903
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -32630,25 +32639,25 @@ items:
   lifetime_path: true
   rank: 1287
   phase: 5
-- id: candidate:eastasia_lit_the_gate
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_the_gate
-  title: The Gate
+- id: 'candidate:wave005_yosano_midaregami'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_yosano_midaregami'
+  title: Midaregami / Tangled Hair
   creators:
-  - Natsume Soseki
-  date_label: '1910'
-  sort_year: 1910
+  - Yosano Akiko
+  date_label: 1901
+  sort_year: 1901
   section: textual_humanities
   group: literature
-  topic: japanese_literature
+  topic: 'japanese_literature'
   medium: text
-  unit_type: novel
+  unit_type: 'poetry_collection'
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  rationale: Adds a major modern Japanese woman poet and trims one of five Soseki rows while retaining Kokoro and other Soseki anchors.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -35942,7 +35951,7 @@ items:
   sort_year: 1923
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: short_story_collection
   tier: core
@@ -36261,25 +36270,25 @@ items:
   lifetime_path: true
   rank: 1431
   phase: 5
-- id: candidate:scale_lit_raktakarabi
-  source: wave_025_literature_global_scale_completion
-  source_id: scale_lit_raktakarabi
-  title: Raktakarabi / Red Oleanders
+- id: 'candidate:wave005_iqbal_bang_e_dara'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_iqbal_bang_e_dara'
+  title: Bang-e-Dara / The Call of the Marching Bell
   creators:
-  - Rabindranath Tagore
-  date_label: '1924'
+  - Muhammad Iqbal
+  date_label: 1924
   sort_year: 1924
   section: textual_humanities
   group: literature
-  topic: bengali_literature
+  topic: 'urdu_literature'
   medium: text
-  unit_type: play
+  unit_type: 'poetry_collection'
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the play or dramatic text.
-  rationale: Scale candidate for the 3000-text literature-only lifetime path; retained for source review, duplicate review, translation review, and coverage-balancing.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds the missing Iqbal poetry anchor; Tagore remains strongly represented by Gitanjali, Gora, Chokher Bali, The Home and the World, and Sesher Kabita.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -37152,7 +37161,7 @@ items:
   sort_year: 1927
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: prose_poem_collection
   tier: major
@@ -37981,7 +37990,7 @@ items:
   sort_year: 1931
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -38633,7 +38642,7 @@ items:
   sort_year: 1933
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -38810,7 +38819,7 @@ items:
   sort_year: 1934
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novella
   tier: major
@@ -39175,25 +39184,25 @@ items:
   lifetime_path: true
   rank: 1547
   phase: 6
-- id: candidate:southasia_lit_char_adhyay
-  source: wave_034_literature_south_asia_scale
-  source_id: southasia_lit_char_adhyay
-  title: Char Adhyay
+- id: 'candidate:wave005_sarat_chandra_srikanta'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_sarat_chandra_srikanta'
+  title: Srikanta
   creators:
-  - Rabindranath Tagore
-  date_label: '1934'
-  sort_year: 1934
+  - Sarat Chandra Chattopadhyay
+  date_label: 1917-1933
+  sort_year: 1917
   section: textual_humanities
   group: literature
-  topic: bengali_literature
+  topic: 'bengali_literature'
   medium: text
   unit_type: novel
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: South Asia scale candidate for the 3000-text literature-only path; staged to improve vernacular, period, genre, caste, gender, and diaspora coverage pending source review.
+  rationale: Adds the missing Sarat Chandra Bengali fiction anchor while trimming a contextual late Tagore row from an overrepresented cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -39487,7 +39496,7 @@ items:
   sort_year: 1935
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -40064,7 +40073,7 @@ items:
   sort_year: 1937
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -40554,25 +40563,25 @@ items:
   lifetime_path: true
   rank: 1602
   phase: 6
-- id: candidate:eastasia_lit_spring_ba_jin
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_spring_ba_jin
-  title: Spring
+- id: 'candidate:wave005_xunzi'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_xunzi'
+  title: Xunzi
   creators:
-  - Ba Jin
-  date_label: '1938'
-  sort_year: 1938
+  - Xunzi and early Confucian textual tradition
+  date_label: 3rd century BCE
+  sort_year: -250
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: 'classical_chinese_literature'
   medium: text
-  unit_type: novel
-  tier: contextual
+  unit_type: 'philosophical_prose'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  rationale: Adds a central Warring States prose and philosophy text missing from the classical Chinese spine; displaced Ba Jin remains represented by Family.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -40955,25 +40964,25 @@ items:
   lifetime_path: true
   rank: 1618
   phase: 6
-- id: candidate:eastasia_lit_schoolgirl
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_schoolgirl
-  title: Schoolgirl
+- id: 'candidate:wave005_takuboku_handful_sand'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_takuboku_handful_sand'
+  title: A Handful of Sand
   creators:
-  - Dazai Osamu
-  date_label: '1939'
-  sort_year: 1939
+  - Ishikawa Takuboku
+  date_label: 1910
+  sort_year: 1910
   section: textual_humanities
   group: literature
-  topic: japanese_literature
+  topic: 'japanese_literature'
   medium: text
-  unit_type: novella
-  tier: contextual
+  unit_type: 'poetry_collection'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  rationale: Adds an important modern Japanese tanka collection while removing a contextual Dazai row; Dazai remains represented by The Setting Sun and No Longer Human.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -41130,25 +41139,25 @@ items:
   lifetime_path: true
   rank: 1625
   phase: 6
-- id: candidate:eastasia_lit_autumn_ba_jin
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_autumn_ba_jin
-  title: Autumn
+- id: 'candidate:wave005_han_feizi'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_han_feizi'
+  title: Han Feizi
   creators:
-  - Ba Jin
-  date_label: '1940'
-  sort_year: 1940
+  - Han Fei and Legalist textual tradition
+  date_label: 3rd century BCE
+  sort_year: -250
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: 'classical_chinese_literature'
   medium: text
-  unit_type: novel
-  tier: contextual
+  unit_type: 'philosophical_prose'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  rationale: Adds the major Legalist prose classic; displaced Ba Jin remains represented by Family.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -41667,7 +41676,7 @@ items:
   sort_year: 1943
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novella
   tier: major
@@ -47245,25 +47254,25 @@ items:
   lifetime_path: true
   rank: 1866
   phase: 7
-- id: candidate:africa_lit_climbie
-  source: wave_037_literature_africa_scale
-  source_id: africa_lit_climbie
-  title: Climbie
+- id: 'candidate:wave005_mqhayi_ityala_lamawele'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_mqhayi_ityala_lamawele'
+  title: Ityala lamawele / The Lawsuit of the Twins
   creators:
-  - Bernard Dadie
-  date_label: '1956'
-  sort_year: 1956
+  - S. E. K. Mqhayi
+  date_label: 1914
+  sort_year: 1914
   section: textual_humanities
   group: literature
-  topic: west_african_literature
+  topic: 'xhosa_literature'
   medium: text
-  unit_type: novel
-  tier: contextual
+  unit_type: 'prose_narrative'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Africa scale candidate for the 3000-text literature-only path; staged to improve oral epic, language-specific, drama, poetry, Lusophone, Horn, Swahili, West African, East African, Central African, Southern African, and modern-diasporic coverage pending source review.
+  rationale: Adds a foundational Xhosa prose work and African-language coverage while removing a contextual francophone African row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -47484,7 +47493,7 @@ items:
   sort_year: 1957
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: play
   tier: major
@@ -49707,25 +49716,25 @@ items:
   lifetime_path: true
   rank: 1964
   phase: 7
-- id: candidate:eastasia_lit_old_capital
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_old_capital
-  title: The Old Capital
+- id: 'candidate:wave005_miyazawa_night_galactic_railroad'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_miyazawa_night_galactic_railroad'
+  title: Night on the Galactic Railroad
   creators:
-  - Kawabata Yasunari
-  date_label: '1962'
-  sort_year: 1962
+  - Miyazawa Kenji
+  date_label: written 1927-1933; published 1934
+  sort_year: 1934
   section: textual_humanities
   group: literature
-  topic: japanese_literature
+  topic: 'japanese_literature'
   medium: text
-  unit_type: novel
+  unit_type: novella
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  rationale: Adds Miyazawa Kenji, a major modern Japanese prose and poetic imagination gap, while trimming Kawabata overcoverage.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -51720,25 +51729,25 @@ items:
   lifetime_path: true
   rank: 2044
   phase: 7
-- id: candidate:africa_lit_money_order
-  source: wave_037_literature_africa_scale
-  source_id: africa_lit_money_order
-  title: The Money-Order
+- id: 'candidate:wave005_sembene_xala'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_sembene_xala'
+  title: Xala
   creators:
   - Ousmane Sembene
-  date_label: '1966'
-  sort_year: 1966
+  date_label: 1973
+  sort_year: 1973
   section: textual_humanities
   group: literature
-  topic: west_african_literature
+  topic: 'west_african_literature'
   medium: text
-  unit_type: novella
+  unit_type: novel
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Africa scale candidate for the 3000-text literature-only path; staged to improve oral epic, language-specific, drama, poetry, Lusophone, Horn, Swahili, West African, East African, Central African, Southern African, and modern-diasporic coverage pending source review.
+  rationale: Adds Sembene's central postcolonial satire while God's Bits of Wood preserves his earlier major novel coverage.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -53299,25 +53308,25 @@ items:
   lifetime_path: true
   rank: 2107
   phase: 8
-- id: candidate:eastasia_lit_naked_tree
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_naked_tree
-  title: The Naked Tree
+- id: 'candidate:wave005_yun_dong_ju_sky_wind_stars'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_yun_dong_ju_sky_wind_stars'
+  title: Sky, Wind, Stars, and Poems
   creators:
-  - Park Wan-suh
-  date_label: '1970'
-  sort_year: 1970
+  - Yun Dong-ju
+  date_label: 1948 posthumous collection
+  sort_year: 1948
   section: textual_humanities
   group: literature
-  topic: korean_literature
+  topic: 'korean_literature'
   medium: text
-  unit_type: novel
+  unit_type: 'poetry_collection'
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  rationale: 'Adds a central Korean resistance-era poetry anchor while Park Wan-suh remains represented by Who Ate Up All the Shinga?.'
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -53636,7 +53645,7 @@ items:
   sort_year: 1971
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: short_story_collection
   tier: major
@@ -53826,25 +53835,25 @@ items:
   lifetime_path: true
   rank: 2128
   phase: 8
-- id: candidate:africa_lit_wanderers_mphahlele
-  source: wave_037_literature_africa_scale
-  source_id: africa_lit_wanderers_mphahlele
-  title: The Wanderers
+- id: 'candidate:wave005_bessie_head_collector_treasures'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_bessie_head_collector_treasures'
+  title: The Collector of Treasures
   creators:
-  - Ezekiel Mphahlele
-  date_label: '1971'
-  sort_year: 1971
+  - Bessie Head
+  date_label: 1977
+  sort_year: 1977
   section: textual_humanities
   group: literature
-  topic: south_african_literature
+  topic: 'south_african_literature'
   medium: text
-  unit_type: novel
-  tier: contextual
+  unit_type: short_fiction_collection
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Africa scale candidate for the 3000-text literature-only path; staged to improve oral epic, language-specific, drama, poetry, Lusophone, Horn, Swahili, West African, East African, Central African, Southern African, and modern-diasporic coverage pending source review.
+  rationale: Adds Bessie Head's major short-fiction collection while replacing a contextual Ezekiel Mphahlele row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -54930,25 +54939,27 @@ items:
   lifetime_path: true
   rank: 2172
   phase: 8
-- id: candidate:me_lit_forugh_cold_season
-  source: wave_036_literature_middle_east_persian_turkic_hebrew_scale
-  source_id: me_lit_forugh_cold_season
-  title: Let Us Believe in the Beginning of the Cold Season
+- id: 'candidate:wave005_simin_behbahani_cup_sin'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_simin_behbahani_cup_sin'
+  title: A Cup of Sin
+  aliases:
+  - 'A Cup of Sin: Selected Poems'
   creators:
-  - Forugh Farrokhzad
-  date_label: '1974'
-  sort_year: 1974
+  - Simin Behbahani
+  date_label: 20th century
+  sort_year: 1970
   section: textual_humanities
   group: literature
-  topic: persian_literature
+  topic: 'persian_literature'
   medium: text
   unit_type: poetry_collection
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
-  completion_unit: Read the poem, poetry collection, or assigned poetic selection.
-  rationale: Middle Eastern, Persianate, Turkic, Hebrew/Jewish, Caucasus, Central Asian, and North African literature scale candidate for the 3000-text literature-only path; staged to improve language, period, genre, sacred-text, oral-epic, and modern coverage pending source review.
+  completion_unit: Read the complete literary work or a documented assigned selection.
+  rationale: Adds a major modern Persian woman poet while Forugh Farrokhzad remains represented by Another Birth.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -55810,25 +55821,26 @@ items:
   lifetime_path: true
   rank: 2207
   phase: 8
-- id: candidate:africa_lit_going_down_river
-  source: wave_037_literature_africa_scale
-  source_id: africa_lit_going_down_river
-  title: Going Down River Road
+- id: 'candidate:wave005_trial_dedan_kimathi'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_trial_dedan_kimathi'
+  title: The Trial of Dedan Kimathi
   creators:
-  - Meja Mwangi
-  date_label: '1976'
+  - Ngugi wa Thiong'o
+  - Micere Githae Mugo
+  date_label: 1976
   sort_year: 1976
   section: textual_humanities
   group: literature
-  topic: east_african_literature
+  topic: 'east_african_literature'
   medium: text
-  unit_type: novel
+  unit_type: drama
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Africa scale candidate for the 3000-text literature-only path; staged to improve oral epic, language-specific, drama, poetry, Lusophone, Horn, Swahili, West African, East African, Central African, Southern African, and modern-diasporic coverage pending source review.
+  rationale: Adds a major Kenyan anti-colonial drama and Micere Githae Mugo while replacing a secondary Meja Mwangi row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -57199,7 +57211,7 @@ items:
   sort_year: 1979
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novella
   tier: major
@@ -58853,25 +58865,25 @@ items:
   lifetime_path: true
   rank: 2328
   phase: 8
-- id: candidate:africa_lit_call_arena
-  source: wave_037_literature_africa_scale
-  source_id: africa_lit_call_arena
-  title: The Call of the Arena
+- id: 'candidate:wave005_rabearivelo_translated_night'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_rabearivelo_translated_night'
+  title: Translated from the Night
   creators:
-  - Aminata Sow Fall
-  date_label: '1982'
-  sort_year: 1982
+  - Jean-Joseph Rabearivelo
+  date_label: 1935
+  sort_year: 1935
   section: textual_humanities
   group: literature
-  topic: west_african_literature
+  topic: 'malagasy_literature'
   medium: text
-  unit_type: novel
-  tier: contextual
+  unit_type: 'poetry_collection'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Africa scale candidate for the 3000-text literature-only path; staged to improve oral epic, language-specific, drama, poetry, Lusophone, Horn, Swahili, West African, East African, Central African, Southern African, and modern-diasporic coverage pending source review.
+  rationale: Adds a major Malagasy and Indian Ocean African poetry anchor while replacing a contextual Aminata Sow Fall row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -59767,7 +59779,7 @@ items:
   sort_year: 1984
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novella
   tier: major
@@ -60167,7 +60179,7 @@ items:
   sort_year: 1985
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -60645,7 +60657,7 @@ items:
   sort_year: 1986
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -62780,7 +62792,7 @@ items:
   sort_year: 1990
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -62820,17 +62832,17 @@ items:
   lifetime_path: true
   rank: 2486
   phase: 9
-- id: candidate:me_lit_black_book
-  source: wave_036_literature_middle_east_persian_turkic_hebrew_scale
-  source_id: me_lit_black_book
-  title: The Black Book
+- id: 'candidate:wave005_yakup_kadri_yaban'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_yakup_kadri_yaban'
+  title: Yaban
   creators:
-  - Orhan Pamuk
-  date_label: '1990'
-  sort_year: 1990
+  - Yakup Kadri Karaosmanoglu
+  date_label: 1932
+  sort_year: 1932
   section: textual_humanities
   group: literature
-  topic: turkish_literature
+  topic: 'turkish_literature'
   medium: text
   unit_type: novel
   tier: major
@@ -62838,7 +62850,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Middle Eastern, Persianate, Turkic, Hebrew/Jewish, Caucasus, Central Asian, and North African literature scale candidate for the 3000-text literature-only path; staged to improve language, period, genre, sacred-text, oral-epic, and modern coverage pending source review.
+  rationale: Adds a Turkish republican novel anchor while Pamuk remains represented by My Name Is Red and Snow.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -63345,25 +63357,25 @@ items:
   lifetime_path: true
   rank: 2507
   phase: 9
-- id: candidate:eastasia_lit_poet_yi_munyol
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_poet_yi_munyol
-  title: The Poet
+- id: 'candidate:wave005_han_yong_un_silence_love'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_han_yong_un_silence_love'
+  title: The Silence of Love
   creators:
-  - Yi Mun-yol
-  date_label: '1991'
-  sort_year: 1991
+  - Han Yong-un
+  date_label: 1926
+  sort_year: 1926
   section: textual_humanities
   group: literature
-  topic: korean_literature
+  topic: 'korean_literature'
   medium: text
-  unit_type: novel
+  unit_type: 'poetry_collection'
   tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  rationale: Adds a major Korean Buddhist and anti-colonial poetry collection while trimming a secondary Yi Mun-yol row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -64336,7 +64348,7 @@ items:
   sort_year: 1993
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -64536,7 +64548,7 @@ items:
   sort_year: 1994
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -65086,7 +65098,7 @@ items:
   sort_year: 1995
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -65390,7 +65402,7 @@ items:
   sort_year: 1995
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -69563,25 +69575,25 @@ items:
   lifetime_path: true
   rank: 2755
   phase: 10
-- id: candidate:scale_lit_wolf_totem
-  source: wave_025_literature_global_scale_completion
-  source_id: scale_lit_wolf_totem
-  title: Wolf Totem
+- id: 'candidate:wave005_shishuo_xinyu'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_shishuo_xinyu'
+  title: Shishuo Xinyu / A New Account of Tales of the World
   creators:
-  - Jiang Rong
-  date_label: '2004'
-  sort_year: 2004
+  - Liu Yiqing attribution and Six Dynasties anecdote tradition
+  date_label: c. 430
+  sort_year: 430
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: 'classical_chinese_literature'
   medium: text
-  unit_type: novel
-  tier: contextual
+  unit_type: 'anecdote_collection'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Scale candidate for the 3000-text literature-only lifetime path; retained for source review, duplicate review, translation review, and coverage-balancing.
+  rationale: Adds a foundational Six Dynasties anecdote collection and removes a contextual contemporary Chinese row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -69648,7 +69660,7 @@ items:
   sort_year: 2005
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -69788,25 +69800,25 @@ items:
   lifetime_path: true
   rank: 2764
   phase: 10
-- id: candidate:africa_lit_whale_caller
-  source: wave_037_literature_africa_scale
-  source_id: africa_lit_whale_caller
-  title: The Whale Caller
+- id: 'candidate:wave005_leroux_magersfontein'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_leroux_magersfontein'
+  title: Magersfontein, O Magersfontein!
   creators:
-  - Zakes Mda
-  date_label: '2005'
-  sort_year: 2005
+  - Etienne Leroux
+  date_label: 1976
+  sort_year: 1976
   section: textual_humanities
   group: literature
-  topic: south_african_literature
+  topic: 'afrikaans_literature'
   medium: text
   unit_type: novel
-  tier: contextual
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Africa scale candidate for the 3000-text literature-only path; staged to improve oral epic, language-specific, drama, poetry, Lusophone, Horn, Swahili, West African, East African, Central African, Southern African, and modern-diasporic coverage pending source review.
+  rationale: Adds an Afrikaans modernist fiction anchor while replacing a contextual Zakes Mda row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -70073,7 +70085,7 @@ items:
   sort_year: 2006
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -70840,17 +70852,17 @@ items:
   lifetime_path: true
   rank: 2806
   phase: 10
-- id: candidate:me_lit_museum_innocence
-  source: wave_036_literature_middle_east_persian_turkic_hebrew_scale
-  source_id: me_lit_museum_innocence
-  title: The Museum of Innocence
+- id: 'candidate:wave005_halide_edib_clown_daughter'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_halide_edib_clown_daughter'
+  title: The Clown and His Daughter
   creators:
-  - Orhan Pamuk
-  date_label: '2008'
-  sort_year: 2008
+  - Halide Edib Adivar
+  date_label: 1935
+  sort_year: 1935
   section: textual_humanities
   group: literature
-  topic: turkish_literature
+  topic: 'turkish_literature'
   medium: text
   unit_type: novel
   tier: major
@@ -70858,7 +70870,7 @@ items:
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: Middle Eastern, Persianate, Turkic, Hebrew/Jewish, Caucasus, Central Asian, and North African literature scale candidate for the 3000-text literature-only path; staged to improve language, period, genre, sacred-text, oral-epic, and modern coverage pending source review.
+  rationale: Adds a major Turkish woman novelist and trims Pamuk overcoverage.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -71178,7 +71190,7 @@ items:
   sort_year: 2009
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: chinese_literature
   medium: text
   unit_type: novel
   tier: major
@@ -71793,25 +71805,25 @@ items:
   lifetime_path: true
   rank: 2844
   phase: 10
-- id: candidate:eastasia_lit_plotters
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_plotters
-  title: The Plotters
+- id: 'candidate:wave005_kim_sowol_azaleas'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_kim_sowol_azaleas'
+  title: Azaleas
   creators:
-  - Un-su Kim
-  date_label: '2010'
-  sort_year: 2010
+  - Kim Sowol
+  date_label: 1925
+  sort_year: 1925
   section: textual_humanities
   group: literature
-  topic: korean_literature
+  topic: 'korean_literature'
   medium: text
-  unit_type: novel
-  tier: contextual
+  unit_type: 'poetry_collection'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  rationale: Adds the missing canonical modern Korean lyric poet while removing a contextual late crime-fiction row.
   source_status: manual_only
   review_status: needs_sources
   url:
@@ -72720,25 +72732,27 @@ items:
   lifetime_path: true
   rank: 2881
   phase: 10
-- id: candidate:eastasia_lit_seventh_day
-  source: wave_035_literature_east_asia_scale
-  source_id: eastasia_lit_seventh_day
-  title: The Seventh Day
+- id: 'candidate:wave005_wenxin_diaolong'
+  source: 'wave_005_canon_audit_integration'
+  source_id: 'wave005_wenxin_diaolong'
+  title: The Literary Mind and the Carving of Dragons
+  aliases:
+  - Wenxin Diaolong
   creators:
-  - Yu Hua
-  date_label: '2013'
-  sort_year: 2013
+  - Liu Xie
+  date_label: c. 501
+  sort_year: 501
   section: textual_humanities
   group: literature
-  topic: classical_chinese_literature
+  topic: 'classical_chinese_literature'
   medium: text
-  unit_type: novel
-  tier: contextual
+  unit_type: 'literary_criticism'
+  tier: major
   pool: coverage
   engagement_target: read
   progress_status: planned
   completion_unit: Read the complete literary work or a documented assigned selection.
-  rationale: East Asia and Sinosphere scale candidate for the 3000-text literature-only path; staged to improve classical, vernacular, modern, gender, genre, and translation coverage pending source review.
+  rationale: Adds the major classical Chinese literary-critical treatise while trimming a contextual Yu Hua row from an overrepresented modern cluster.
   source_status: manual_only
   review_status: needs_sources
   url:
