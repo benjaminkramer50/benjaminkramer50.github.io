@@ -58,7 +58,7 @@ Done when:
 - Source fetch/access logs identify exact pages, files, APIs, and access limits.
 - Extracted rows pass matching and relation review queues.
 
-Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; X020-X021 extracted 323 E013/E014/E016/E017/E018 source-item observations, with matching and evidence generation still pending.
+Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; X020-X022 generated/updated 1,020 E013/E014/E015/E016/E017/E018 source-item observations, leaving `canon_source_items.tsv` at 1,088 total rows. Matching, relation review, source-weighted evidence generation, and partial-source cleanup remain pending.
 
 ## Phase 4: Evidence Ledger And Source-Debt Rules
 

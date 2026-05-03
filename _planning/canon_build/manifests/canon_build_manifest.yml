@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x021_e013_e016_e017_ingested
+status: source_item_batch_x022_public_toc_expansion_ingested
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -25,7 +25,7 @@ gates:
   metadata_access_rows_do_not_close_canon_support_debt: true
 artifacts:
   source_registry: e001_e018_registered_source_items_pending
-  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_source_items
+  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_source_items
   work_candidates: bootstrapped_from_current_path_plus_x013_source_candidates
   aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases
   relations: initialized_empty
@@ -58,7 +58,7 @@ current_counts:
   creators: 2006
   work_creators: 3015
   aliases: 445
-  source_items: 441
+  source_items: 1088
   evidence_rows: 117
   relation_scope_status_rows: 41
   source_debt_status_rows: 3008
@@ -67,7 +67,7 @@ current_counts:
   scoring_ready_rows: 0
   scoring_blocked_rows: 3008
   source_items_matched_candidate: 8
-  source_items_represented_by_selection: 40
+  source_items_represented_by_selection: 41
   source_items_out_of_scope: 1
   source_registry_rows: 71
 source_crosswalk_batch_e001_e006:
@@ -173,6 +173,14 @@ source_item_extraction_batch_x021:
   sources_touched: 6
   complete_public_toc_sources: 2
   partial_public_toc_sources: 4
+  evidence_rows_added: 0
+  status: source_items_ingested_matching_required
+  direct_replacements: 0
+source_item_extraction_batch_x022:
+  source_items_added_or_updated: 697
+  sources_replaced_or_expanded: 9
+  complete_public_toc_or_index_sources: 6
+  metadata_or_partial_sources: 3
   evidence_rows_added: 0
   status: source_items_ingested_matching_required
   direct_replacements: 0
