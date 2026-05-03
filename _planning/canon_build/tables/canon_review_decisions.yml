@@ -271,6 +271,21 @@ decisions:
       - keep_all_review_queue_rows_blocked_until_cut_basis_is_resolved
       - do_not_apply_public_replacements_from_queue_rows
     public_path_effect: none
+  - decision_id: x050_cut_review_work_orders_001
+    decision_type: cut_review_work_order_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_cut_review_work_orders.tsv
+    decision: generate_cut_side_work_orders_from_pair_queue
+    rationale: >
+      Pair review should not repeat the same cut-side adjudication across multiple
+      add/cut rows. X050 groups the X049 queue by cut candidate and carries forward
+      all paired add candidates, review focus signals, and pair queue IDs.
+    scoring_effect: none
+    required_followup:
+      - review_cut_identity_source_support_selection_basis_before_pair_promotion
+      - resolve_generic_selected_work_rows_as edition_or_selection_basis_cases
+      - keep_public_path_unchanged
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002

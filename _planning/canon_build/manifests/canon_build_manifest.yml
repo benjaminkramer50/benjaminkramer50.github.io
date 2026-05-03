@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: replacement_pair_review_queue_x049_generated
+status: cut_review_work_orders_x050_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -78,6 +78,7 @@ current_counts:
   coverage_target_rows: 72
   replacement_candidate_rows: 1215
   replacement_pair_review_queue_rows: 75
+  cut_review_work_order_rows: 50
   cut_candidate_rows: 3000
   source_items_matched_current_path: 282
   source_items_matched_candidate: 24
@@ -537,4 +538,14 @@ replacement_pair_review_queue_x049:
     source_debt_first: 17
     chronology_first: 6
     duplicate_cluster_first: 2
+  direct_replacements: 0
+cut_review_work_orders_x050:
+  status: cut_side_work_orders_generated
+  work_order_rows: 50
+  review_focus_counts:
+    generic_title_selection_basis_duplicate_cluster_source_debt: 35
+    generic_title_selection_basis_source_debt: 11
+    generic_title_selection_basis_duplicate_cluster_chronology_source_debt: 2
+    duplicate_cluster_source_debt: 1
+    generic_title_selection_basis_chronology_source_debt: 1
   direct_replacements: 0

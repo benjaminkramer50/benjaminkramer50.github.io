@@ -77,6 +77,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X047 | X045 add prefilter plus X046 cut-risk table | Blocked replacement pairings generated | 1,215 add/cut pair rows generated from 5 score-ready additions and 243 high-priority cut-review rows; all remain `blocked`; public path unchanged |
 | X048 | X047 blocked pair rows | Pair checks annotated | Replacement pairs regenerated with explicit duplicate, chronology, boundary, source-debt, add-year, cut-year, and cut-risk signals; all remain `blocked`; public path unchanged |
 | X049 | X048 blocked pair rows | Pair review queue generated | 75 balanced pair-review rows generated, with 15 rows for each score-ready add candidate and capped repeated cut-title clusters; public path unchanged |
+| X050 | X049 pair-review queue | Cut-review work orders generated | 50 cut-side work orders generated so repeated add/cut pair rows can be reviewed by cut candidate and selection-basis issue; public path unchanged |
 
 ## Planned Extraction Packets
 
