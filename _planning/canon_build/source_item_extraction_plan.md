@@ -81,6 +81,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X051 | X050 cut-review work orders | Generic selection-basis review generated | 50 cut-side rows classified by generic-title status, alias/source-item/evidence support, source-debt state, and next resolution action; public path unchanged |
 | X052 | X051 generic selection-basis rows plus source items | Cut-side source-item rescue candidates generated | 48 existing source-item rows identified for cut-side match/scope/evidence review, after excluding generic-title creator mismatches and already-assigned different-work rows; public path unchanged |
 | X053 | X051/X052 cut-side review rows | Cut-review resolution lanes generated | 50 cut-side rows split into 17 existing-source rescue reviews and 33 external-source acquisition rows so the next work is ordered; public path unchanged |
+| X054 | X052 rescue rows | Cut rescue scope review generated | 48 rescue rows classified by representative-selection, named-collection, story-collection, ode-family, existing-evidence, and form-mismatch scope risk; public path unchanged |
 
 ## Planned Extraction Packets
 

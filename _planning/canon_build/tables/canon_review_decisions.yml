@@ -336,6 +336,23 @@ decisions:
       - then_acquire_external_sources_for_no_local_support_rows
       - do_not_promote_replacement_pairs_until_cut_side_source_status_is_resolved
     public_path_effect: none
+  - decision_id: x054_cut_rescue_scope_review_001
+    decision_type: cut_rescue_scope_review_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_cut_rescue_scope_review.tsv
+    decision: classify_rescue_source_items_by_scope_risk_before_evidence_generation
+    rationale: >
+      Creator-exact source rows can be useful, but they are not automatically
+      evidence for a selected collection or named work. X054 classifies X052
+      rescue rows into representative-selection, collection-membership, ode-family,
+      existing-evidence, and form-mismatch cases so unsafe evidence acceptance is
+      blocked before cut-side scoring.
+    scoring_effect: none
+    required_followup:
+      - resolve_high_risk_collection_membership_and_form_mismatch_rows
+      - accept_only_scope_reviewed_representative_selection_evidence
+      - keep_cut_side_score_generation_blocked_until_scope_gates_are_clear
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002

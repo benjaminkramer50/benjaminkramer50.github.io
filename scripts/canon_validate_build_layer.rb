@@ -48,6 +48,7 @@ TABLE_FILES = {
   "generic_selection_basis_review" => File.join(BUILD_DIR, "tables", "canon_generic_selection_basis_review.tsv"),
   "cut_source_item_rescue_candidates" => File.join(BUILD_DIR, "tables", "canon_cut_source_item_rescue_candidates.tsv"),
   "cut_review_resolution_lanes" => File.join(BUILD_DIR, "tables", "canon_cut_review_resolution_lanes.tsv"),
+  "cut_rescue_scope_review" => File.join(BUILD_DIR, "tables", "canon_cut_rescue_scope_review.tsv"),
   "packet_status" => File.join(BUILD_DIR, "tables", "canon_packet_status.tsv")
 }.freeze
 
@@ -74,6 +75,7 @@ HEADER_REQUIREMENTS = {
   "generic_selection_basis_review" => ["review_id", "work_order_id", "cut_work_id", "selection_basis_status", "recommended_resolution", "next_action"],
   "cut_source_item_rescue_candidates" => ["rescue_id", "review_id", "cut_work_id", "source_item_id", "rescue_match_rule", "recommended_action", "next_action"],
   "cut_review_resolution_lanes" => ["resolution_id", "review_id", "cut_work_id", "resolution_lane", "lane_priority", "recommended_action", "next_action"],
+  "cut_rescue_scope_review" => ["scope_review_id", "rescue_id", "cut_work_id", "scope_review_class", "scope_risk", "evidence_generation_gate", "next_action"],
   "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
 }.freeze
 
