@@ -16,7 +16,7 @@ Direct public-list replacements remain paused until these packets produce source
 |---|---|---|---|
 | E Batch 1 | E001-E006 | Registered; E001 extracted; E004-E006 extraction pending | `source_crosswalk_reports/e_batch_001_e001_e006.md` |
 | E Batch 2 | E007-E012 | Registered; X001-X006 pilot rows ingested; full extraction pending | `source_crosswalk_reports/e_batch_002_e007_e012.md` |
-| E Batch 3 | E013-E018 | Registered; X020 extracted 85 E014/E018 source-item observations; remaining extraction pending | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
+| E Batch 3 | E013-E018 | Registered; X020-X021 extracted 323 E013/E014/E016/E017/E018 source-item observations; remaining extraction pending | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
 
 ## Extraction Contract
 
@@ -48,6 +48,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X011 | `bloom_curated_seed_layer` | Blocked | Exact 200-row seed cannot be recovered from target repo or current path annotations |
 | X012 | `bloom_full_appendix_1994`; `bloom_full_appendix_review_batches` | Recoverable but policy-gated | Local untracked Bloom artifacts found outside target worktree; do not publish or score full appendix blindly |
 | X020 | `e018_columbia_modern_korean_fiction_2005`; `e018_columbia_premodern_korean_prose_2018`; `e014_rienner_anthology_african_lit_2007` | Source items ingested, matching required | 85 E014/E018 source-item observations; no evidence rows or public path changes |
+| X021 | `e013_oxford_latin_american_short_stories_1997`; `e013_oxford_latin_american_poetry_2009`; `e013_fsg_20c_latin_american_poetry_2011`; `columbia_modern_chinese_lit_2e_2007`; `columbia_traditional_chinese_lit_1996`; `e017_columbia_modern_japanese_lit_v1_2005` | Source items ingested, matching required | 238 E013/E016/E017 source-item observations; 2 complete public TOCs and 4 partial pilots; no evidence rows or public path changes |
 
 ## Planned Extraction Packets
 
@@ -60,7 +61,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X017 | All matched source items | Evidence-row generation and source-debt closure rules after X016 policy is encoded |
 | X018 | All unresolved source items | Omission queue creation with duplicate, boundary, chronology, source-family, and item-scope checks |
 | X019 | Current path plus omissions | Scored replacement transaction candidates only after coverage targets and quality issues exist |
-| X021 | Remaining E013-E018 public TOCs | Continue source-item extraction for Latin American, African poetry, South Asian, Chinese, Japanese, and Korean poetry layers |
+| X022 | Remaining E013-E018 public TOCs | Continue source-item extraction for remaining Latin American poetry rows, Rienner/Penguin African layers, South Asian, Chinese full TOCs, Japanese v2/traditional/early modern, and Korean poetry layers |
 
 ## Integration Gate
 
