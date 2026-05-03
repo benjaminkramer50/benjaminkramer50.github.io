@@ -38,12 +38,12 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 
 | Packet | Source layers | Purpose |
 |---|---|---|
-| X007 | `e008_loeb_classical_library_digital`; `e008_oxford_classical_dictionary_online`; `e008_oxford_scholarly_editions_oct`; `e008_cambridge_greek_latin_classics` | Classical edition/reference metadata after open-catalog pilot |
-| X008 | `norton_world_lit_5e_full_pre1650`; `norton_world_lit_5e_full_post1650`; `longman_world_lit_2e_2009`; `bedford_world_lit_compact_v1_2009`; `bedford_world_lit_compact_v2_2008` | World-literature anthology TOC extraction and access blockers |
-| X009 | `dumbarton_oaks_medieval_library`; `mgh_medieval_latin_sources`; `bibliotheca_augustana_germanica`; `wimmer_medieval_german_anthology`; `minnereden_lovesongs_digital`; `osta_2_old_spanish_textual_archive` | Medieval edition/corpus metadata not covered by X003 |
-| X010 | `norton_american_lit_10e_pre1865`; `norton_american_lit_10e_post1865`; `heath_american_lit_7e_2014` | American anthology TOC extraction |
-| X011 | `bloom_curated_seed_layer` | Recover or reconstruct the 200-row Bloom seed layer |
-| X012 | `bloom_full_appendix_1994`; `bloom_full_appendix_review_batches` | Recover, reconstruct, or permanently block Bloom appendix raw/review artifacts |
+| X007 | `e008_loeb_classical_library_digital`; `e008_oxford_classical_dictionary_online`; `e008_oxford_scholarly_editions_oct`; `e008_cambridge_greek_latin_classics` | Running: classical edition/reference metadata after open-catalog pilot |
+| X008 | `norton_world_lit_5e_full_pre1650`; `norton_world_lit_5e_full_post1650`; `longman_world_lit_2e_2009`; `bedford_world_lit_compact_v1_2009`; `bedford_world_lit_compact_v2_2008` | Running: world-literature anthology TOC extraction and access blockers |
+| X009 | `dumbarton_oaks_medieval_library`; `mgh_medieval_latin_sources`; `bibliotheca_augustana_germanica`; `wimmer_medieval_german_anthology`; `minnereden_lovesongs_digital`; `osta_2_old_spanish_textual_archive` | Running: medieval edition/corpus metadata not covered by X003 |
+| X010 | `norton_american_lit_10e_pre1865`; `norton_american_lit_10e_post1865`; `heath_american_lit_7e_2014` | Running: American anthology TOC extraction |
+| X011 | `bloom_curated_seed_layer` | Running: recover or reconstruct the 200-row Bloom seed layer |
+| X012 | `bloom_full_appendix_1994`; `bloom_full_appendix_review_batches` | Running: recover, reconstruct, or permanently block Bloom appendix raw/review artifacts |
 | X013 | All extracted source items | Title/creator normalization and incumbent path matching |
 | X014 | All extracted source items | Alias, contained-work, series, and cycle relation creation |
 | X015 | All matched source items | Evidence-row generation into `canon_evidence.tsv` |
