@@ -33,14 +33,14 @@ work_candidate_scale4_lit_wenamun	incumbent_current_path	The Report of Wenamun	0
 work_candidate_avesta	incumbent_current_path	Avesta	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_gathas_zarathustra	incumbent_current_path	Gathas	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_upanishads	incumbent_current_path	Upanishads	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
-work_canon_iliad	incumbent_current_path	Iliad	4	0	1	0	1	1	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
-work_canon_odyssey	incumbent_current_path	Odyssey	4	0	2	0	2	0	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_canon_iliad	incumbent_current_path	Iliad	5	0	1	0	1	2	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_canon_odyssey	incumbent_current_path	Odyssey	5	0	3	0	3	0	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_book_of_isaiah	incumbent_current_path	Book of Isaiah	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_book_job	incumbent_current_path	Book of Job	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_book_of_ruth	incumbent_current_path	Book of Ruth	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_book_of_ruth	incumbent_current_path	Book of Ruth	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_me_lit_ecclesiastes	incumbent_current_path	Ecclesiastes	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_exodus	incumbent_current_path	Exodus	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
-work_candidate_me_lit_genesis	incumbent_current_path	Genesis	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_me_lit_genesis	incumbent_current_path	Genesis	3	0	0	0	0	3	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_me_lit_psalms	incumbent_current_path	Psalms	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_me_lit_song_songs	incumbent_current_path	Song of Songs	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_theogony	incumbent_current_path	Theogony	2	0	0	0	0	1	1	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
@@ -53,11 +53,11 @@ work_candidate_scale_lit_sappho_poems	incumbent_current_path	Selected Poems	0	0	
 work_candidate_sappho_fragments	incumbent_current_path	Sappho: Fragments	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_gap_031_0015_poems	incumbent_current_path	Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_ramayana	incumbent_current_path	Ramayana	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
-work_candidate_me_lit_babylonian_theodicy	incumbent_current_path	Babylonian Theodicy	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_me_lit_babylonian_theodicy	incumbent_current_path	Babylonian Theodicy	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_me_lit_dialogue_pessimism	incumbent_current_path	Dialogue of Pessimism	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_erra_epic	incumbent_current_path	Erra Epic	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_ludlul	incumbent_current_path	Ludlul Bel Nemeqi	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_analects	incumbent_current_path	Analects	5	0	0	0	0	3	2	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_canon_analects	incumbent_current_path	Analects	7	0	0	0	0	5	2	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_scale_lit_persians	incumbent_current_path	The Persians	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_suppliants_aeschylus	incumbent_current_path	The Suppliants	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_seven_against_thebes	incumbent_current_path	Seven Against Thebes	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -70,9 +70,9 @@ work_candidate_bloom_reviewed_trachiniae	incumbent_current_path	Women of Trachis
 work_canon_antigone_sophocles	incumbent_current_path	Antigone	3	0	1	0	1	0	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_euripides_alcestis	incumbent_current_path	Alcestis	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_peloponnesian_war_thucydides	incumbent_current_path	History of the Peloponnesian War	2	0	0	0	0	0	2	1	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
-work_candidate_medea_euripides	incumbent_current_path	Medea	2	0	1	0	1	0	1	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_medea_euripides	incumbent_current_path	Medea	3	0	2	0	2	0	1	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_canon_histories_herodotus	incumbent_current_path	Histories	2	0	0	0	0	0	2	1	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
-work_canon_oedipus_tyrannus	incumbent_current_path	Oedipus Tyrannus	2	0	0	0	0	0	2	1	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
+work_canon_oedipus_tyrannus	incumbent_current_path	Oedipus Tyrannus	3	0	1	0	1	0	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_euripides_hippolytus	incumbent_current_path	Hippolytus	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_andromache	incumbent_current_path	Andromache	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_hecuba	incumbent_current_path	Hecuba	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -84,7 +84,7 @@ work_candidate_mandatory_euripides_trojan_women	incumbent_current_path	The Troja
 work_candidate_bloom_reviewed_ion	incumbent_current_path	Ion	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_aristophanes_birds	incumbent_current_path	The Birds	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_euripides_helen	incumbent_current_path	Helen	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_lysistrata	incumbent_current_path	Lysistrata	2	0	1	0	1	0	1	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_lysistrata	incumbent_current_path	Lysistrata	3	0	2	0	2	0	1	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_sophocles_electra	incumbent_current_path	Electra	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_sophocles_philoctetes	incumbent_current_path	Philoctetes	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_orestes	incumbent_current_path	Orestes	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -95,10 +95,10 @@ work_candidate_bloom_oedipus_colonus	incumbent_current_path	Oedipus at Colonus	0
 work_canon_mahabharata	incumbent_current_path	Mahabharata	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
 work_candidate_bloom_reviewed_assemblywomen	incumbent_current_path	The Assemblywomen	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_plato_symposium	incumbent_current_path	Symposium	1	0	0	0	0	0	1	0	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
-work_canon_dao_de_jing	incumbent_current_path	Dao De Jing	6	0	1	0	1	3	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_canon_dao_de_jing	incumbent_current_path	Dao De Jing	7	0	1	0	1	4	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_menander_girl_samos	incumbent_current_path	The Girl from Samos	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_poetics_aristotle	incumbent_current_path	Poetics	3	0	0	0	0	1	2	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
-work_canon_zhuangzi	incumbent_current_path	Zhuangzi	5	0	0	0	0	3	2	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_canon_poetics_aristotle	incumbent_current_path	Poetics	4	0	0	0	0	2	2	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_canon_zhuangzi	incumbent_current_path	Zhuangzi	6	0	0	0	0	4	2	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_mandatory_mencius	incumbent_current_path	Mencius	3	0	0	0	0	2	1	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_scale_lit_dyskolos	incumbent_current_path	Dyskolos	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_dhammapada	incumbent_current_path	Dhammapada	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -131,7 +131,7 @@ work_candidate_bloom_reviewed_miles_gloriosus	incumbent_current_path	Miles Glori
 work_candidate_bloom_reviewed_rudens	incumbent_current_path	Rudens	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_yuefu_songs	incumbent_current_path	Selected Yuefu Songs	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_natyashastra	incumbent_current_path	Natyashastra	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_wave001_cicero_selected_orations_letters	incumbent_current_path	Selected Orations and Letters	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_wave001_cicero_selected_orations_letters	incumbent_current_path	Selected Orations and Letters	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_bloom_gap_031_0070_on_the_nature_of_things	incumbent_current_path	On the Nature of Things	1	0	0	0	0	0	1	0	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
 work_candidate_shiji	incumbent_current_path	Records of the Grand Historian	1	0	0	0	0	0	1	0	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
 work_candidate_tirukkural	incumbent_current_path	Tirukkural	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -143,7 +143,7 @@ work_candidate_me_lit_wisdom_solomon	incumbent_current_path	Wisdom of Solomon	0	
 work_candidate_bloom_virgil_eclogues	incumbent_current_path	Eclogues	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_virgil_georgics	incumbent_current_path	Georgics	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_horace_odes	incumbent_current_path	Odes	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_aeneid	incumbent_current_path	Aeneid	3	0	0	0	0	1	2	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_canon_aeneid	incumbent_current_path	Aeneid	4	0	1	0	1	1	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_ovid_amores	incumbent_current_path	Amores	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_ovid_heroides	incumbent_current_path	Heroides	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_art_of_love	incumbent_current_path	Ars Amatoria / The Art of Love	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -154,7 +154,7 @@ work_candidate_bloom_martial_epigrams	incumbent_current_path	Epigrams	0	0	0	0	0	
 work_candidate_wave001_seneca_letters_to_lucilius	incumbent_current_path	Letters to Lucilius	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_pharsalia	incumbent_current_path	Pharsalia	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_persius_satires	incumbent_current_path	Satires	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_satyricon_petronius	incumbent_current_path	Satyricon	2	0	0	0	0	0	2	1	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
+work_canon_satyricon_petronius	incumbent_current_path	Satyricon	3	0	0	0	0	1	2	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_scale_lit_statius_thebaid	incumbent_current_path	Thebaid	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_gospel_of_thomas	incumbent_current_path	Gospel of Thomas	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale4_lit_story_ahiqar	incumbent_current_path	The Story of Ahiqar	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -190,7 +190,7 @@ work_candidate_southasia_lit_jatakamala	incumbent_current_path	Jatakamala	0	0	0	
 work_candidate_confessions_augustine	incumbent_current_path	Confessions	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_recognition_of_shakuntala	incumbent_current_path	Kalidasa: The Recognition of Shakuntala	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
 work_candidate_mandatory_psychomachia	incumbent_current_path	Psychomachia	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_peach_blossom_spring	incumbent_current_path	Peach Blossom Spring	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_peach_blossom_spring	incumbent_current_path	Peach Blossom Spring	3	0	3	0	3	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_meghaduta	incumbent_current_path	Meghaduta	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_midrach_rabbah	incumbent_current_path	Genesis Rabbah	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_kumarasambhava	incumbent_current_path	Kumarasambhava	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -213,7 +213,7 @@ work_candidate_scale_lit_imru_al_qays_diwan	incumbent_current_path	Selected Poem
 work_candidate_eastasia_lit_yu_xin_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_silappatikaram	incumbent_current_path	Silappatikaram	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_wen_xuan	incumbent_current_path	Wen Xuan	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_quran	incumbent_current_path	Qur'an	2	0	0	0	0	1	1	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_canon_quran	incumbent_current_path	Qur'an	3	0	1	0	1	1	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_muallaqat	incumbent_current_path	The Mu'allaqat	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_amarushataka	incumbent_current_path	Amarushataka	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_harshacharita	incumbent_current_path	Harshacharita	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -244,7 +244,7 @@ work_candidate_global_lit_uttararama_charita	incumbent_current_path	Uttararama-c
 work_candidate_southasia_lit_lilavai	incumbent_current_path	Lilavai	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_bodhicaryavatara	incumbent_current_path	Bodhicaryavatara	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_manyoshu	incumbent_current_path	Man'yoshu	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
-work_canon_beowulf	incumbent_current_path	Beowulf	5	0	4	0	4	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_canon_beowulf	incumbent_current_path	Beowulf	6	0	5	0	5	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_mandatory_dream_of_rood	incumbent_current_path	The Dream of the Rood	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_song_everlasting_sorrow	incumbent_current_path	Song of Everlasting Sorrow	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_nihon_ryoiki	incumbent_current_path	Nihon Ryoiki	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
@@ -262,7 +262,7 @@ work_candidate_eastasia_lit_du_mu_poems	incumbent_current_path	Selected Poems	0	
 work_candidate_eastasia_lit_li_shangyin_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_tang_tales	incumbent_current_path	Tang Tales	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_book_of_misers	incumbent_current_path	The Book of Misers	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_scale_lit_yingying_biography	incumbent_current_path	The Story of Yingying	3	0	2	0	2	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_scale_lit_yingying_biography	incumbent_current_path	The Story of Yingying	4	0	3	0	3	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_li_wa_zhuan	incumbent_current_path	The Tale of Li Wa	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_tiruvacakam	incumbent_current_path	Tiruvacakam	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_kavirajamarga	incumbent_current_path	Kavirajamarga	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -284,7 +284,7 @@ work_candidate_mandatory_kitab_al_aghani	incumbent_current_path	Kitab al-Aghani	
 work_candidate_mandatory_old_english_elegies	incumbent_current_path	Old English Elegies: Selected Poems	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_canon_pillow_book_sei_shonagon	incumbent_current_path	The Pillow Book	3	0	0	0	0	2	1	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_book_lamentations_narek	incumbent_current_path	Book of Lamentations	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_tale_of_genji	incumbent_current_path	The Tale of Genji	3	0	0	0	0	2	1	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_canon_tale_of_genji	incumbent_current_path	The Tale of Genji	4	0	0	0	0	3	1	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_shahnameh	incumbent_current_path	Shahnameh	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_ring_of_dove	incumbent_current_path	The Ring of the Dove	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_song_of_roland	incumbent_current_path	The Song of Roland	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
@@ -305,11 +305,11 @@ work_candidate_global_lit_vis_and_ramin	incumbent_current_path	Vis and Ramin	1	0
 work_candidate_southasia_lit_bilhana_chaurapanchasika	incumbent_current_path	Chaurapanchasika	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave005_izumi_shikibu_diary	incumbent_current_path	Izumi Shikibu Diary	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_hitopadesha	incumbent_current_path	Hitopadesha	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_scale_lit_sarashina_diary	incumbent_current_path	The Sarashina Diary	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_scale_lit_sarashina_diary	incumbent_current_path	The Sarashina Diary	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_kutadgu_bilig	incumbent_current_path	Kutadgu Bilig / Wisdom of Royal Glory	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_digenes_akritas	incumbent_current_path	Digenes Akritas	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_khamsa_nizami	incumbent_current_path	Khamsa	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_conference_of_birds	incumbent_current_path	The Conference of the Birds	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_conference_of_birds	incumbent_current_path	The Conference of the Birds	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_knight_panther_skin	incumbent_current_path	The Knight in the Panther's Skin	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_charyapada	incumbent_current_path	Charyapada	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_nizami_eskandarnameh	incumbent_current_path	Eskandarnameh	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -318,7 +318,7 @@ work_candidate_hayy_ibn_yaqzan	incumbent_current_path	Hayy ibn Yaqzan	0	0	0	0	0	
 work_candidate_wave005_tawhidi_delight_conviviality	incumbent_current_path	The Book of Delight and Conviviality	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_khosrow_and_shirin_nizami	incumbent_current_path	Khosrow and Shirin	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_konjaku_monogatari	incumbent_current_path	Konjaku Monogatari	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
-work_candidate_lais_marie_de_france	incumbent_current_path	Lais	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_lais_marie_de_france	incumbent_current_path	Lais	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_layla_and_majnun_nizami	incumbent_current_path	Layla and Majnun	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_nizami_makhzan	incumbent_current_path	Makhzan al-Asrar	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_maqamat_al_hariri	incumbent_current_path	Maqamat of al-Hariri	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -344,10 +344,10 @@ work_candidate_seven_beauties_nizami	incumbent_current_path	Haft Paykar / Seven 
 work_candidate_global_lit_gesar_epic	incumbent_current_path	Epic of King Gesar	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mabinogion	incumbent_current_path	Mabinogion	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_tain_bo_cuailnge	incumbent_current_path	Tain Bo Cuailnge	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_one_thousand_and_one_nights	incumbent_current_path	One Thousand and One Nights	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_one_thousand_and_one_nights	incumbent_current_path	One Thousand and One Nights	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_global_lit_alpamysh	incumbent_current_path	Alpamysh	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_book_of_dede_korkut	incumbent_current_path	Book of Dede Korkut	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
-work_canon_cantar_de_mio_cid	incumbent_current_path	Cantar de mio Cid	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
+work_canon_cantar_de_mio_cid	incumbent_current_path	Cantar de mio Cid	2	0	1	0	1	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_global_lit_david_sassoun	incumbent_current_path	Daredevils of Sassoun	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_divyavadana	incumbent_current_path	Divyavadana	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_jangar_epic	incumbent_current_path	Jangar Epic	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -379,7 +379,7 @@ work_candidate_euro_under_lit_laxdaela	incumbent_current_path	Laxdaela Saga	0	0	
 work_candidate_me_lit_attar_memorial_saints	incumbent_current_path	Memorial of the Saints	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_orkneyinga	incumbent_current_path	Orkneyinga Saga	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_roman_de_la_rose	incumbent_current_path	Roman de la Rose	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_romance_western_chamber	incumbent_current_path	Romance of the Western Chamber	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_romance_western_chamber	incumbent_current_path	Romance of the Western Chamber	3	0	0	0	0	3	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_ibn_al_farid_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_injustice_dou_e	incumbent_current_path	The Injustice to Dou E	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_orphan_zhao	incumbent_current_path	The Orphan of Zhao	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -391,13 +391,13 @@ work_candidate_global_lit_bustan	incumbent_current_path	Bustan	0	0	0	0	0	0	0	0	o
 work_candidate_global_lit_gulistan	incumbent_current_path	Gulistan	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_samguk_yusa	incumbent_current_path	Samguk Yusa	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_jnaneshwari	incumbent_current_path	Jnaneshwari	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_completion_lit_vita_nuova	incumbent_current_path	Vita Nuova	1	0	0	0	0	0	1	0	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
+work_candidate_completion_lit_vita_nuova	incumbent_current_path	Vita Nuova	2	0	0	0	0	1	1	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_mandatory_travels_marco_polo	incumbent_current_path	The Travels of Marco Polo	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_divine_comedy	incumbent_current_path	Divine Comedy	2	0	0	0	0	0	2	1	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
+work_canon_divine_comedy	incumbent_current_path	Divine Comedy	3	0	1	0	1	0	2	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_completion_lit_book_good_love	incumbent_current_path	The Book of Good Love	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_tsurezuregusa	incumbent_current_path	Tsurezuregusa / Essays in Idleness	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_completion_lit_count_lucanor	incumbent_current_path	Count Lucanor	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_decameron	incumbent_current_path	The Decameron	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_decameron	incumbent_current_path	The Decameron	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_canzoniere_petrarch	incumbent_current_path	Canzoniere	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_divan_hafez	incumbent_current_path	Divan of Hafez	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_romance_three_kingdoms	incumbent_current_path	Romance of the Three Kingdoms	2	0	0	0	0	1	1	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
@@ -407,7 +407,7 @@ work_candidate_eastasia_lit_tibetan_book_dead	incumbent_current_path	Bardo Thodo
 work_candidate_euro_under_lit_grettir	incumbent_current_path	Grettir's Saga	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_kebra_nagast	incumbent_current_path	Kebra Nagast	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_me_lit_obeyd_mouse_cat	incumbent_current_path	Mouse and Cat	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_scale_lit_pearl	incumbent_current_path	Pearl	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_scale_lit_pearl	incumbent_current_path	Pearl	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_global_lit_yunus_emre_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_soga_monogatari	incumbent_current_path	Soga Monogatari	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_taiheiki	incumbent_current_path	Taiheiki	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
@@ -419,7 +419,7 @@ work_candidate_nagarakretagama	incumbent_current_path	Nagarakretagama	0	0	0	0	0	
 work_candidate_scale_lit_piers_plowman	incumbent_current_path	Piers Plowman	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_sir_gawain_green_knight	incumbent_current_path	Sir Gawain and the Green Knight	2	0	1	0	1	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_troilus_criseyde	incumbent_current_path	Troilus and Criseyde	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_canterbury_tales	incumbent_current_path	The Canterbury Tales	2	0	0	0	0	1	1	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_canon_canterbury_tales	incumbent_current_path	The Canterbury Tales	3	0	1	0	1	1	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_revelations_divine_love	incumbent_current_path	Revelations of Divine Love	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_city_ladies	incumbent_current_path	The Book of the City of Ladies	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_suleyman_celebi_mevlid	incumbent_current_path	Mevlid	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -457,13 +457,13 @@ work_candidate_orlando_furioso	incumbent_current_path	Orlando Furioso	1	0	0	0	0	
 work_candidate_bloom_gap_031_0155_utopia	incumbent_current_path	Utopia	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_audit_replacement_la_mandragola	incumbent_current_path	La Mandragola	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_book_of_courtier	incumbent_current_path	The Book of the Courtier	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_gargantua_and_pantagruel	incumbent_current_path	Gargantua and Pantagruel	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_gargantua_and_pantagruel	incumbent_current_path	Gargantua and Pantagruel	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_me_lit_fuzuli_layla_majnun	incumbent_current_path	Layla and Majnun	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_padmavat	incumbent_current_path	Padmavat	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_naufragios	incumbent_current_path	Naufragios	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_delie	incumbent_current_path	Delie	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_book_common_prayer_1662	incumbent_current_path	Book of Common Prayer	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_journey_to_the_west	incumbent_current_path	Journey to the West	3	0	0	0	0	3	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_journey_to_the_west	incumbent_current_path	Journey to the West	4	0	0	0	0	4	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_ramcharitmanas	incumbent_current_path	Ramcharitmanas	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_amuktamalyada	incumbent_current_path	Amuktamalyada	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_annals_cakchiquels	incumbent_current_path	Annals of the Cakchiquels	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -483,17 +483,17 @@ work_candidate_mandatory_fengshen_yanyi	incumbent_current_path	Investiture of th
 work_canon_lazarillo_de_tormes	incumbent_current_path	Lazarillo de Tormes	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
 work_canon_popol_vuh	incumbent_current_path	Popol Vuh	3	0	1	0	1	1	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_reviewed_les_regrets	incumbent_current_path	Les Regrets	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_scale_lit_heptameron	incumbent_current_path	The Heptameron	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_scale_lit_heptameron	incumbent_current_path	The Heptameron	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_wave003_louise_labe_sonnets_elegies	incumbent_current_path	Sonnets et elegies	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_gap_031_0119_autobiography	incumbent_current_path	Autobiography	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_gap_031_0278_les_odes	incumbent_current_path	Les Odes	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave004_gil_vicente_auto_da_barca_do_inferno	incumbent_current_path	Auto da Barca do Inferno	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_mandatory_true_history_new_spain	incumbent_current_path	A True History of the Conquest of New Spain	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_mandatory_true_history_new_spain	incumbent_current_path	A True History of the Conquest of New Spain	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_la_araucana	incumbent_current_path	La Araucana	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
-work_candidate_bloom_lusiads	incumbent_current_path	The Lusiads	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_lusiads	incumbent_current_path	The Lusiads	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_mandatory_adhyatma_ramayanam	incumbent_current_path	Adhyatma Ramayanam Kilippattu	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_essays_montaigne	incumbent_current_path	Essays	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
-work_candidate_mandatory_kochanowski_laments	incumbent_current_path	Laments	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_essays_montaigne	incumbent_current_path	Essays	3	0	1	0	1	2	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_mandatory_kochanowski_laments	incumbent_current_path	Laments	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_completion_lit_jerusalem_delivered	incumbent_current_path	Jerusalem Delivered	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_tamburlaine	incumbent_current_path	Tamburlaine	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_spanish_tragedy	incumbent_current_path	The Spanish Tragedy	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -534,7 +534,7 @@ work_candidate_bloom_shakespeare_twelfth_night	incumbent_current_path	Twelfth Ni
 work_candidate_bloom_shakespeare_othello	incumbent_current_path	Othello	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_guru_granth_sahib	incumbent_current_path	Guru Granth Sahib	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_shakespeare_measure	incumbent_current_path	Measure for Measure	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_don_quixote	incumbent_current_path	Don Quixote	2	0	1	0	1	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_canon_don_quixote	incumbent_current_path	Don Quixote	3	0	2	0	2	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_shakespeare_king_lear	incumbent_current_path	King Lear	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_shakespeare_macbeth	incumbent_current_path	Macbeth	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_shakespeare_antony_cleopatra	incumbent_current_path	Antony and Cleopatra	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -545,7 +545,7 @@ work_candidate_bloom_jonson_alchemist	incumbent_current_path	The Alchemist	0	0	0
 work_candidate_mandatory_shakespeare_winter_tale	incumbent_current_path	The Winter's Tale	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_holy_bible_kjv	incumbent_current_path	Holy Bible (King James Version)	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_apocrypha_kjv	incumbent_current_path	The Apocrypha	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_tempest_shakespeare	incumbent_current_path	The Tempest	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_tempest_shakespeare	incumbent_current_path	The Tempest	3	0	2	0	2	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_fuente_ovejuna	incumbent_current_path	Fuente Ovejuna	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_webster_duchess_malfi	incumbent_current_path	The Duchess of Malfi	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_cervantes_exemplary_stories	incumbent_current_path	Exemplary Stories	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -571,7 +571,7 @@ work_candidate_mandatory_enchantments_love_zayas	incumbent_current_path	The Ench
 work_candidate_mandatory_alaol_padmavati	incumbent_current_path	Alaol's Padmavati	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_huarochiri_manuscript	incumbent_current_path	Huarochiri Manuscript	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_basho_haiku	incumbent_current_path	Selected Haiku	3	0	0	0	0	3	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
-work_candidate_me_lit_evliya_travels	incumbent_current_path	Book of Travels	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_me_lit_evliya_travels	incumbent_current_path	Book of Travels	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_euro_under_lit_erotokritos	incumbent_current_path	Erotokritos	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_marvell_poems	incumbent_current_path	Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_tukaram_abhangas	incumbent_current_path	Selected Abhangas	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -596,11 +596,11 @@ work_candidate_bloom_gap_031_0212_lycidas	incumbent_current_path	'Lycidas'	0	0	0
 work_candidate_bloom_gap_031_0218_hudibras	incumbent_current_path	Hudibras	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_school_for_wives	incumbent_current_path	The School for Wives	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_bihari_satsai	incumbent_current_path	Bihari Satsai	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_tartuffe	incumbent_current_path	Tartuffe	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_tartuffe	incumbent_current_path	Tartuffe	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_dom_juan_moliere	incumbent_current_path	Dom Juan	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_genre_lit_blazing_world	incumbent_current_path	The Blazing World	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_moliere_misanthrope	incumbent_current_path	The Misanthrope	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_paradise_lost	incumbent_current_path	Paradise Lost	2	0	1	0	1	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_canon_paradise_lost	incumbent_current_path	Paradise Lost	3	0	2	0	2	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_andromaque	incumbent_current_path	Andromaque	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_la_fontaine_fables	incumbent_current_path	Fables	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_completion_lit_simplicissimus	incumbent_current_path	Simplicius Simplicissimus	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -619,8 +619,8 @@ work_candidate_mandatory_rowlandson_captivity	incumbent_current_path	Narrative o
 work_candidate_latcarib_lit_empenos_casa	incumbent_current_path	Los empenos de una casa	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_five_women_loved_love	incumbent_current_path	Five Women Who Loved Love	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_life_amorous_woman	incumbent_current_path	The Life of an Amorous Woman	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
-work_candidate_audit_replacement_oroonoko	incumbent_current_path	Oroonoko	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_narrow_road_deep_north	incumbent_current_path	The Narrow Road to the Deep North	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_audit_replacement_oroonoko	incumbent_current_path	Oroonoko	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_narrow_road_deep_north	incumbent_current_path	The Narrow Road to the Deep North	3	0	0	0	0	3	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_wave005_samguk_sagi	incumbent_current_path	Samguk Sagi	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_infortunios_ramirez	incumbent_current_path	Infortunios de Alonso Ramirez	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_athalie	incumbent_current_path	Athalie	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -634,7 +634,7 @@ work_candidate_bloom_reviewed_tale_tub	incumbent_current_path	A Tale of a Tub	0	
 work_candidate_bloom_gap_031_0231_the_beggar_s_opera	incumbent_current_path	The Beggar's Opera	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_gap_031_0223_the_way_of_the_world	incumbent_current_path	The Way of the World	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_gap_031_0222_venice_preserv_d	incumbent_current_path	Venice Preserv'd	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_pope_poems	incumbent_current_path	The Rape of the Lock and Selected Poems	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_bloom_reviewed_pope_poems	incumbent_current_path	The Rape of the Lock and Selected Poems	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_gil_blas	incumbent_current_path	Gil Blas	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_battles_coxinga	incumbent_current_path	The Battles of Coxinga	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_scale_lit_robinson_crusoe	incumbent_current_path	Robinson Crusoe	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -643,7 +643,7 @@ work_candidate_scale_lit_moll_flanders	incumbent_current_path	Moll Flanders	0	0	
 work_candidate_mandatory_journal_plague_year	incumbent_current_path	A Journal of the Plague Year	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_erasmus_montanus	incumbent_current_path	Erasmus Montanus	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_roxana_defoe	incumbent_current_path	Roxana	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_gap_031_0226_gulliver_s_travels	incumbent_current_path	Gulliver's Travels	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_bloom_gap_031_0226_gulliver_s_travels	incumbent_current_path	Gulliver's Travels	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale4_lit_utendi_wa_tambuka	incumbent_current_path	Utendi wa Tambuka	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_modest_proposal	incumbent_current_path	A Modest Proposal	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_manon_lescaut	incumbent_current_path	Manon Lescaut	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -672,7 +672,7 @@ work_candidate_euro_under_lit_seasons_donelaitis	incumbent_current_path	The Seas
 work_candidate_eastasia_lit_incomparable_prince	incumbent_current_path	The Tale of the Incomparable Prince	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_maya_trials	incumbent_current_path	Maya Testimony: Selected Public Colonial Texts	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_gap_031_0325_poem_on_the_lisbon_disaster	incumbent_current_path	Poem on the Lisbon Disaster	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_candide_voltaire	incumbent_current_path	Candide	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
+work_canon_candide_voltaire	incumbent_current_path	Candide	2	0	1	0	1	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_rasselas	incumbent_current_path	Rasselas	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_tristram_shandy	incumbent_current_path	Tristram Shandy	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
 work_candidate_bloom_gap_031_0251_school_for_scandal	incumbent_current_path	School for Scandal	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -684,9 +684,9 @@ work_candidate_wave002_vanbrugh_provoked_wife	incumbent_current_path	The Provoke
 work_candidate_bloom_gap_031_0252_the_rivals	incumbent_current_path	The Rivals	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_gap_031_0247_the_vicar_of_wakefield	incumbent_current_path	The Vicar of Wakefield	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave002_gray_elegy_country_churchyard	incumbent_current_path	Elegy Written in a Country Churchyard	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_wave002_rochester_selected_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_wave002_rochester_selected_poems	incumbent_current_path	Selected Poems	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_wave002_thomson_seasons	incumbent_current_path	The Seasons	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_wave002_montagu_turkish_embassy_letters	incumbent_current_path	Turkish Embassy Letters	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_wave002_montagu_turkish_embassy_letters	incumbent_current_path	Turkish Embassy Letters	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_gap_031_0249_the_traveller	incumbent_current_path	The Traveller	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_julie_rousseau	incumbent_current_path	Julie, or the New Heloise	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_rameaus_nephew	incumbent_current_path	Rameau's Nephew	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -713,7 +713,7 @@ work_candidate_mandatory_marriage_figaro	incumbent_current_path	The Marriage of 
 work_candidate_mandatory_burns_poems_chiefly	incumbent_current_path	Poems, Chiefly in the Scottish Dialect	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_don_carlos	incumbent_current_path	Don Carlos	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_songs_innocence_experience	incumbent_current_path	Songs of Innocence and of Experience	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_mandatory_equiano_interesting_narrative	incumbent_current_path	The Interesting Narrative	3	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_mandatory_equiano_interesting_narrative	incumbent_current_path	The Interesting Narrative	4	0	1	0	1	2	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_reviewed_marriage_heaven_hell	incumbent_current_path	The Marriage of Heaven and Hell	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_dream_of_the_red_chamber	incumbent_current_path	Dream of the Red Chamber	4	0	0	0	0	2	2	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_mandatory_life_samuel_johnson	incumbent_current_path	Life of Samuel Johnson	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -765,12 +765,12 @@ work_candidate_euro_under_lit_manuscript_saragossa	incumbent_current_path	The Ma
 work_candidate_wave004_pardo_bazan_los_pazos_de_ulloa	incumbent_current_path	Los Pazos de Ulloa	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_032_literature_bloom_democratic_age_reviewed_0388_chatterton	incumbent_current_path	Chatterton	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_032_literature_bloom_democratic_age_reviewed_0387_meditations_poetiques	incumbent_current_path	Meditations Poetiques	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_wave003_montesquieu_persian_letters	incumbent_current_path	Persian Letters	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_wave003_montesquieu_persian_letters	incumbent_current_path	Persian Letters	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_wave003_stael_corinne	incumbent_current_path	Corinne, or Italy	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_faust_goethe	incumbent_current_path	Faust	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_faust_goethe	incumbent_current_path	Faust	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_late_032_literature_bloom_democratic_age_reviewed_0398_lorenzaccio	incumbent_current_path	Lorenzaccio	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_penthesilea	incumbent_current_path	Penthesilea	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_six_records_floating_life	incumbent_current_path	Six Records of a Floating Life	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_six_records_floating_life	incumbent_current_path	Six Records of a Floating Life	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_bloom_gap_031_0359_the_broken_jug	incumbent_current_path	The Broken Jug	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_elective_affinities	incumbent_current_path	Elective Affinities	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_032_literature_bloom_democratic_age_reviewed_0403_enamels_and_cameos	incumbent_current_path	Enamels and Cameos	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -804,7 +804,7 @@ work_candidate_scale2_lit_northanger_abbey	incumbent_current_path	Northanger Abb
 work_candidate_frankenstein	incumbent_current_path	Frankenstein	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_leopardi_poems	incumbent_current_path	Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_heart_midlothian	incumbent_current_path	The Heart of Midlothian	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_wave003_wollstonecraft_rights_woman	incumbent_current_path	A Vindication of the Rights of Woman	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_wave003_wollstonecraft_rights_woman	incumbent_current_path	A Vindication of the Rights of Woman	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_bloom_reviewed_don_juan	incumbent_current_path	Don Juan	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_west_eastern_divan	incumbent_current_path	West-Eastern Divan	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_scott_ivanhoe	incumbent_current_path	Ivanhoe	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -836,9 +836,9 @@ work_canon_red_and_the_black	incumbent_current_path	The Red and the Black	1	0	0	
 work_candidate_bloom_reviewed_notre_dame_paris	incumbent_current_path	Notre-Dame de Paris	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_tales_belkin	incumbent_current_path	The Tales of Belkin	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave001_apess_son_of_the_forest	incumbent_current_path	A Son of the Forest	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_eugene_onegin	incumbent_current_path	Eugene Onegin	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
+work_canon_eugene_onegin	incumbent_current_path	Eugene Onegin	2	0	0	0	0	1	1	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_bloom_reviewed_eugenie_grandet	incumbent_current_path	Eugenie Grandet	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_scale_lit_bronze_horseman	incumbent_current_path	The Bronze Horseman	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_scale_lit_bronze_horseman	incumbent_current_path	The Bronze Horseman	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_pan_tadeusz	incumbent_current_path	Pan Tadeusz	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_queen_of_spades	incumbent_current_path	The Queen of Spades	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_032_literature_bloom_democratic_age_reviewed_0513_the_pickwick_papers	incumbent_current_path	The Pickwick Papers	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -855,7 +855,7 @@ work_candidate_completion_lit_woyzeck	incumbent_current_path	Woyzeck	0	0	0	0	0	0
 work_candidate_wave003_gaskell_wives_daughters	incumbent_current_path	Wives and Daughters	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_lost_illusions	incumbent_current_path	Lost Illusions	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_oliver_twist	incumbent_current_path	Oliver Twist	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_wave001_emerson_nature_selected_essays	incumbent_current_path	Nature and Selected Essays	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_wave001_emerson_nature_selected_essays	incumbent_current_path	Nature and Selected Essays	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_wave003_arnold_dover_beach	incumbent_current_path	Dover Beach and Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave003_swinburne_poems_ballads	incumbent_current_path	Poems and Ballads	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_florante_at_laura	incumbent_current_path	Florante at Laura	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -874,7 +874,7 @@ work_candidate_bloom_late_032_literature_bloom_democratic_age_reviewed_0558_the_
 work_candidate_mandatory_three_musketeers	incumbent_current_path	The Three Musketeers	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_facundo	incumbent_current_path	Facundo	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave003_hopkins_poems	incumbent_current_path	Poems of Gerard Manley Hopkins	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_douglass_narrative	incumbent_current_path	Narrative of the Life of Frederick Douglass	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_bloom_reviewed_douglass_narrative	incumbent_current_path	Narrative of the Life of Frederick Douglass	3	0	3	0	3	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_wave003_harriet_martineau_deerbrook	incumbent_current_path	Deerbrook	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_count_monte_cristo	incumbent_current_path	The Count of Monte Cristo	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_book_nonsense	incumbent_current_path	A Book of Nonsense	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -896,7 +896,7 @@ work_candidate_bloom_dickinson_poems	incumbent_current_path	Complete Poems	0	0	0
 work_candidate_bloom_blake_complete_poetry	incumbent_current_path	Complete Poetry and Prose	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_khun_chang_khun_phaen	incumbent_current_path	Khun Chang Khun Phaen	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_ghalib_selected_ghazals	incumbent_current_path	Diwan-e-Ghalib	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_wordsworth_prelude	incumbent_current_path	The Prelude	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_bloom_wordsworth_prelude	incumbent_current_path	The Prelude	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_chekhov_tales	incumbent_current_path	The Tales	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale4_lit_al_inkishafi	incumbent_current_path	Al-Inkishafi	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_fairy_tales_andersen	incumbent_current_path	Fairy Tales	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -924,7 +924,7 @@ work_candidate_eastasia_lit_life_shabkar	incumbent_current_path	The Life of Shab
 work_candidate_bloom_reviewed_roman_sonnets_belli	incumbent_current_path	The Roman Sonnets	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_hawthorne_scarlet_letter	incumbent_current_path	The Scarlet Letter	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_she_wolf_stories	incumbent_current_path	The She-Wolf and Other Stories	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_tale_of_kieu	incumbent_current_path	The Tale of Kieu	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_tale_of_kieu	incumbent_current_path	The Tale of Kieu	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_tum_teav	incumbent_current_path	Tum Teav	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_moby_dick	incumbent_current_path	Moby-Dick	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_amalia	incumbent_current_path	Amalia	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -941,16 +941,16 @@ work_candidate_mandatory_clotel	incumbent_current_path	Clotel	1	0	1	0	1	0	0	0	op
 work_candidate_bloom_reviewed_hard_times	incumbent_current_path	Hard Times	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_les_chimeres	incumbent_current_path	Les Chimeres	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_north_and_south	incumbent_current_path	North and South	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_mandatory_thoreau_walden	incumbent_current_path	Walden	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_leaves_of_grass	incumbent_current_path	Leaves of Grass	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_mandatory_thoreau_walden	incumbent_current_path	Walden	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_leaves_of_grass	incumbent_current_path	Leaves of Grass	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_wave004_chernyshevsky_what_is_to_be_done	incumbent_current_path	What Is to Be Done?	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_aurelia	incumbent_current_path	Aurelia	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_leg_over_leg	incumbent_current_path	Leg over Leg	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_little_dorrit	incumbent_current_path	Little Dorrit	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_madame_bovary	incumbent_current_path	Madame Bovary	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_piazza_tales	incumbent_current_path	The Piazza Tales	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
-work_candidate_mandatory_aurora_leigh	incumbent_current_path	Aurora Leigh	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_fleurs_du_mal	incumbent_current_path	Les Fleurs du mal	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_bloom_reviewed_piazza_tales	incumbent_current_path	The Piazza Tales	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_mandatory_aurora_leigh	incumbent_current_path	Aurora Leigh	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_fleurs_du_mal	incumbent_current_path	Les Fleurs du mal	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_completion_lit_kalevipoeg	incumbent_current_path	Kalevipoeg	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_ollantay	incumbent_current_path	Ollantay	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_guarani	incumbent_current_path	The Guarani	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -970,14 +970,14 @@ work_candidate_euro_under_lit_max_havelaar	incumbent_current_path	Max Havelaar	0
 work_candidate_global_lit_meghnad_badh_kavya	incumbent_current_path	Meghnad Badh Kavya	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_silas_marner	incumbent_current_path	Silas Marner	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_tragedy_of_man	incumbent_current_path	The Tragedy of Man	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_mandatory_jacobs_incidents	incumbent_current_path	Incidents in the Life of a Slave Girl	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_mandatory_jacobs_incidents	incumbent_current_path	Incidents in the Life of a Slave Girl	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_les_miserables	incumbent_current_path	Les Miserables	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_turgenev_fathers_sons	incumbent_current_path	Fathers and Sons	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_goblin_market	incumbent_current_path	Goblin Market and Other Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_cantares_gallegos	incumbent_current_path	Cantares gallegos	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave004_nabokov_the_gift	incumbent_current_path	The Gift	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_genre_lit_journey_center	incumbent_current_path	Journey to the Center of the Earth	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_dostoevsky_notes_underground	incumbent_current_path	Notes from Underground	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_dostoevsky_notes_underground	incumbent_current_path	Notes from Underground	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_reviewed_our_mutual_friend	incumbent_current_path	Our Mutual Friend	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_rajmohans_wife	incumbent_current_path	Rajmohan's Wife	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale5_lit_alice_wonderland	incumbent_current_path	Alice's Adventures in Wonderland	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -997,7 +997,7 @@ work_candidate_scale2_lit_moonstone	incumbent_current_path	The Moonstone	0	0	0	0
 work_candidate_bloom_reviewed_ring_and_book	incumbent_current_path	The Ring and the Book	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_maldoror	incumbent_current_path	Les Chants de Maldoror	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_mirat_ul_uroos	incumbent_current_path	Mirat-ul-Uroos	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_paris_spleen	incumbent_current_path	Paris Spleen	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_reviewed_paris_spleen	incumbent_current_path	Paris Spleen	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_scale2_lit_sentimental_education	incumbent_current_path	Sentimental Education	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_dostoevsky_idiot	incumbent_current_path	The Idiot	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_seven_brothers	incumbent_current_path	Seven Brothers	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1022,14 +1022,14 @@ work_candidate_bloom_reviewed_clarel	incumbent_current_path	Clarel	0	0	0	0	0	0	0
 work_candidate_scale2_lit_daniel_deronda	incumbent_current_path	Daniel Deronda	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_hunting_snark	incumbent_current_path	The Hunting of the Snark	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_intibah	incumbent_current_path	Intibah	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_scale2_lit_simple_heart	incumbent_current_path	A Simple Heart	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_scale2_lit_simple_heart	incumbent_current_path	A Simple Heart	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_genre_lit_black_beauty	incumbent_current_path	Black Beauty	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_lassommoir	incumbent_current_path	L'Assommoir	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_cousin_bazilio	incumbent_current_path	Cousin Bazilio	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_fasana_e_azad	incumbent_current_path	Fasana-e-Azad	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_benjamin_third	incumbent_current_path	The Travels of Benjamin the Third	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_daisy_miller	incumbent_current_path	Daisy Miller	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_dolls_house_ibsen	incumbent_current_path	A Doll's House	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_dolls_house_ibsen	incumbent_current_path	A Doll's House	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_canon_brothers_karamazov	incumbent_current_path	The Brothers Karamazov	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
 work_candidate_southasia_lit_prathapa_mudaliar_charithram	incumbent_current_path	Prathapa Mudaliar Charithram	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_nana	incumbent_current_path	Nana	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1070,7 +1070,7 @@ work_candidate_bloom_reviewed_death_ivan_ilyich	incumbent_current_path	The Death
 work_candidate_mandatory_rosmersholm	incumbent_current_path	Rosmersholm	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_mayor_casterbridge	incumbent_current_path	The Mayor of Casterbridge	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave004_zoshchenko_sentimental_tales	incumbent_current_path	Sentimental Tales	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_noli_me_tangere	incumbent_current_path	Noli Me Tangere	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_noli_me_tangere	incumbent_current_path	Noli Me Tangere	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_scale_lit_saraswatichandra	incumbent_current_path	Saraswatichandra	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_drifting_cloud	incumbent_current_path	The Drifting Cloud	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_strindberg_father	incumbent_current_path	The Father	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1108,7 +1108,7 @@ work_candidate_southasia_lit_kanyasulkam	incumbent_current_path	Kanyasulkam	0	0	
 work_candidate_scale5_lit_sherlock_holmes	incumbent_current_path	The Adventures of Sherlock Holmes	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_master_builder	incumbent_current_path	The Master Builder	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_sing_song_girls	incumbent_current_path	The Sing-song Girls of Shanghai	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_genre_lit_yellow_wallpaper	incumbent_current_path	The Yellow Wallpaper	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_genre_lit_yellow_wallpaper	incumbent_current_path	The Yellow Wallpaper	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_southasia_lit_sarada	incumbent_current_path	Sarada	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_iola_leroy	incumbent_current_path	Iola Leroy	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_host_guest	incumbent_current_path	Host and Guest	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1145,7 +1145,7 @@ work_candidate_bloom_reviewed_senilita	incumbent_current_path	Senilita	0	0	0	0	0
 work_candidate_genre_lit_turn_screw	incumbent_current_path	The Turn of the Screw	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_war_of_worlds	incumbent_current_path	The War of the Worlds	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave004_pontoppidan_lucky_per	incumbent_current_path	Lucky Per	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_conrad_heart_darkness	incumbent_current_path	Heart of Darkness	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_bloom_conrad_heart_darkness	incumbent_current_path	Heart of Darkness	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_uncle_vanya	incumbent_current_path	Uncle Vanya	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_dom_casmurro	incumbent_current_path	Dom Casmurro	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_kate_chopin_awakening	incumbent_current_path	The Awakening	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1285,7 +1285,7 @@ work_candidate_gitanjali_tagore	incumbent_current_path	Gitanjali	0	0	0	0	0	0	0	0
 work_candidate_southasia_lit_gora	incumbent_current_path	Gora	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_audit_replacement_howards_end	incumbent_current_path	Howards End	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0937_oiseaux	incumbent_current_path	Oiseaux	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_global_lit_rashomon_stories	incumbent_current_path	Rashomon and Other Stories	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_global_lit_rashomon_stories	incumbent_current_path	Rashomon and Other Stories	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_wave005_yosano_midaregami	incumbent_current_path	Midaregami / Tangled Hair	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_notebooks_malte	incumbent_current_path	The Notebooks of Malte Laurids Brigge	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0936_anabase	incumbent_current_path	Anabase	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1336,7 +1336,7 @@ work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0972_locus_s
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0974_the_umbilicus_of_limbo	incumbent_current_path	The Umbilicus of Limbo	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0978_tristes_tropiques	incumbent_current_path	Tristes Tropiques	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0975_van_gogh_le_suicide_de_la_societe	incumbent_current_path	Van Gogh le Suicide de la Societe	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_dubliners	incumbent_current_path	Dubliners	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_reviewed_dubliners	incumbent_current_path	Dubliners	2	0	2	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0991_four_novels_by_marguerite_duras	incumbent_current_path	Four Novels by Marguerite Duras	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_kokoro_natsume_soseki	incumbent_current_path	Kokoro	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave003_cendrars_transsiberian	incumbent_current_path	Prose of the Trans-Siberian and of Little Jehanne of France	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1355,7 +1355,7 @@ work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0988_le_vent
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0993_moderato_cantabile	incumbent_current_path	Moderato Cantabile	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0984_projet_pour_une_revolution_a_new_york	incumbent_current_path	Projet pour une Revolution a New York	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_good_soldier	incumbent_current_path	The Good Soldier	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_metamorphosis_kafka	incumbent_current_path	The Metamorphosis	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_metamorphosis_kafka	incumbent_current_path	The Metamorphosis	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_cloud_trousers	incumbent_current_path	A Cloud in Trousers	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_genre_lit_herland	incumbent_current_path	Herland	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_spoon_river	incumbent_current_path	Spoon River Anthology	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1380,7 +1380,7 @@ work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_1004_words_i
 work_candidate_bloom_reviewed_portrait_artist	incumbent_current_path	A Portrait of the Artist as a Young Man	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_home_and_world	incumbent_current_path	The Home and the World	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_growth_soil	incumbent_current_path	Growth of the Soil	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_prufrock	incumbent_current_path	Prufrock and Other Observations	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_bloom_reviewed_prufrock	incumbent_current_path	Prufrock and Other Observations	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_eastasia_lit_heartless	incumbent_current_path	The Heartless	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_my_antonia	incumbent_current_path	My Antonia	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_selected_poems_cesar_vallejo	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1404,7 +1404,7 @@ work_candidate_eastasia_lit_dark_nights_passing	incumbent_current_path	A Dark Ni
 work_candidate_global_lit_american_indian_stories	incumbent_current_path	American Indian Stories	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_true_story_of_ah_q	incumbent_current_path	The True Story of Ah Q	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_genre_lit_we_zamyatin	incumbent_current_path	We	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_waste_land_eliot	incumbent_current_path	The Waste Land	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_waste_land_eliot	incumbent_current_path	The Waste Land	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_global_lit_trilce	incumbent_current_path	Trilce	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_ulysses	incumbent_current_path	Ulysses	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
 work_candidate_scale2_lit_babbitt	incumbent_current_path	Babbitt	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1417,7 +1417,7 @@ work_candidate_scale2_lit_sonnets_to_orpheus	incumbent_current_path	Sonnets to O
 work_candidate_wave002_stevens_harmonium	incumbent_current_path	Harmonium	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave002_cummings_tulips_chimneys	incumbent_current_path	Tulips and Chimneys	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave004_adalbert_stifter_rock_crystal	incumbent_current_path	Rock Crystal	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_global_lit_call_to_arms_lu_xun	incumbent_current_path	Call to Arms	3	0	1	0	1	2	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_global_lit_call_to_arms_lu_xun	incumbent_current_path	Call to Arms	4	0	2	0	2	2	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_completion_lit_cane	incumbent_current_path	Cane	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale2_lit_rilke_duino_elegies	incumbent_current_path	Duino Elegies	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_conscience_zeno	incumbent_current_path	Zeno's Conscience	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1432,7 +1432,7 @@ work_candidate_eastasia_lit_naomi	incumbent_current_path	Naomi	0	0	0	0	0	0	0	0	o
 work_candidate_scale2_lit_parades_end	incumbent_current_path	Parade's End	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave005_iqbal_bang_e_dara	incumbent_current_path	Bang-e-Dara / The Call of the Marching Bell	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_rangbhoomi	incumbent_current_path	Rangbhoomi	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_wave002_moore_observations	incumbent_current_path	Observations	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_wave002_moore_observations	incumbent_current_path	Observations	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale2_lit_vortex	incumbent_current_path	The Vortex	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_neruda_twenty_love_poems	incumbent_current_path	Twenty Love Poems and a Song of Despair	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_woolf_mrs_dalloway	incumbent_current_path	Mrs Dalloway	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1477,7 +1477,7 @@ work_candidate_master_and_margarita	incumbent_current_path	The Master and Margar
 work_candidate_audit_backfill_the_silent_don	incumbent_current_path	The Silent Don	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_threepenny_opera	incumbent_current_path	The Threepenny Opera	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_lady_chatterley	incumbent_current_path	Lady Chatterley's Lover	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_room_of_ones_own	incumbent_current_path	A Room of One's Own	2	0	0	0	0	1	1	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_canon_room_of_ones_own	incumbent_current_path	A Room of One's Own	3	0	0	0	0	2	1	1	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_bloom_faulkner_sound_fury	incumbent_current_path	The Sound and the Fury	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_hemingway_farewell_arms	incumbent_current_path	A Farewell to Arms	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_doblin_berlin_alexanderplatz	incumbent_current_path	Berlin Alexanderplatz	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1511,7 +1511,7 @@ work_candidate_mandatory_buck_good_earth	incumbent_current_path	The Good Earth	0
 work_candidate_completion_lit_radetzky_march	incumbent_current_path	The Radetzky March	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_angarey	incumbent_current_path	Angarey	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_aparajito	incumbent_current_path	Aparajito	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_indig_lit_black_elk_speaks	incumbent_current_path	Black Elk Speaks	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_indig_lit_black_elk_speaks	incumbent_current_path	Black Elk Speaks	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_completion_lit_brave_new_world	incumbent_current_path	Brave New World	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_celine_journey	incumbent_current_path	Journey to the End of the Night	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_light_august	incumbent_current_path	Light in August	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1524,7 +1524,7 @@ work_candidate_euro_under_lit_cheese	incumbent_current_path	Cheese	0	0	0	0	0	0	0
 work_candidate_southasia_lit_chomana_dudi	incumbent_current_path	Chomana Dudi	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_coyote_stories_mourning_dove	incumbent_current_path	Coyote Stories	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave004_arthur_schnitzler_dream_story	incumbent_current_path	Dream Story	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_scale_lit_midnight_mao_dun	incumbent_current_path	Midnight	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_scale_lit_midnight_mao_dun	incumbent_current_path	Midnight	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_audit_backfill_miss_lonelyhearts	incumbent_current_path	Miss Lonelyhearts	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_residence_on_earth_neruda	incumbent_current_path	Residence on Earth	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_return_spirit	incumbent_current_path	Return of the Spirit	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1603,20 +1603,20 @@ work_candidate_latcarib_lit_shrouded_woman	incumbent_current_path	The Shrouded W
 work_candidate_indig_lit_son_old_man_hat	incumbent_current_path	Son of Old Man Hat	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave005_xunzi	incumbent_current_path	Xunzi	1	0	0	0	0	0	1	0	open_non_scoring_only	identity_or_access_only	Only non-scoring corpus, bibliographic, metadata, or access evidence exists.	seek_canon_support_source
 work_candidate_mandatory_rebecca_du_maurier	incumbent_current_path	Rebecca	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_mother_courage_and_her_children	incumbent_current_path	Mother Courage and Her Children	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_mother_courage_and_her_children	incumbent_current_path	Mother Courage and Her Children	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_completion_lit_guest_for_night	incumbent_current_path	A Guest for the Night	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_aranyak	incumbent_current_path	Aranyak	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_at_swim_two_birds	incumbent_current_path	At Swim-Two-Birds	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_finnegans_wake	incumbent_current_path	Finnegans Wake	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_good_morning_midnight	incumbent_current_path	Good Morning, Midnight	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_le_occasioni	incumbent_current_path	Le Occasioni	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_notebook_return_native_land	incumbent_current_path	Notebook of a Return to the Native Land	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_notebook_return_native_land	incumbent_current_path	Notebook of a Return to the Native Land	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_reviewed_spain_take_cup	incumbent_current_path	Spain, Take This Cup from Me	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_big_sleep	incumbent_current_path	The Big Sleep	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_audit_backfill_the_day_of_the_locust	incumbent_current_path	The Day of the Locust	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_steinbeck_grapes_wrath	incumbent_current_path	The Grapes of Wrath	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_third_policeman	incumbent_current_path	The Third Policeman	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_wave004_arne_garborg_peace	incumbent_current_path	Peace	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_wave004_arne_garborg_peace	incumbent_current_path	Peace	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_wave005_takuboku_handful_sand	incumbent_current_path	A Handful of Sand	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_pit_onetti	incumbent_current_path	The Pit	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_kallocain	incumbent_current_path	Kallocain	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1648,7 +1648,7 @@ work_candidate_bloom_hesse_glass_bead_game	incumbent_current_path	The Glass Bead
 work_candidate_scale_lit_golden_cangue	incumbent_current_path	The Golden Cangue	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave004_nelly_sachs_in_the_habitations_of_death	incumbent_current_path	In the Habitations of Death	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_makioka_sisters	incumbent_current_path	The Makioka Sisters	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_ficciones	incumbent_current_path	Ficciones	4	0	2	0	1	1	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_canon_ficciones	incumbent_current_path	Ficciones	7	0	5	0	2	1	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_southasia_lit_balyakalasakhi	incumbent_current_path	Balyakalasakhi	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_gamperaliya	incumbent_current_path	Gamperaliya	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_masters_of_dew	incumbent_current_path	Masters of the Dew	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1677,7 +1677,7 @@ work_candidate_africa_lit_mine_boy	incumbent_current_path	Mine Boy	1	0	0	0	0	1	0
 work_candidate_bloom_reviewed_paterson	incumbent_current_path	Paterson	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_iceman_cometh	incumbent_current_path	The Iceman Cometh	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_president_asturias	incumbent_current_path	The President	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_completion_lit_street_petry	incumbent_current_path	The Street	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_completion_lit_street_petry	incumbent_current_path	The Street	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_global_lit_this_way_for_gas	incumbent_current_path	This Way for the Gas, Ladies and Gentlemen	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_reviewed_titus_groan	incumbent_current_path	Titus Groan	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_zorba	incumbent_current_path	Zorba the Greek	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1719,7 +1719,7 @@ work_candidate_eastasia_lit_sound_mountain	incumbent_current_path	The Sound of t
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0961_la_cantatrice_chauve	incumbent_current_path	La Cantatrice Chauve	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_neruda_canto_general	incumbent_current_path	Canto General	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_pessoa_selected_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_yeats_poems	incumbent_current_path	Selected Poems	4	0	4	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_bloom_yeats_poems	incumbent_current_path	Selected Poems	8	0	8	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_bloom_kafka_stories	incumbent_current_path	Stories	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_brief_life	incumbent_current_path	A Brief Life	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_barabbas	incumbent_current_path	Barabbas	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1732,7 +1732,7 @@ work_candidate_southasia_lit_mahaprasthanam	incumbent_current_path	Mahaprasthana
 work_candidate_southasia_lit_pinjar	incumbent_current_path	Pinjar	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_mandelstam_poems	incumbent_current_path	Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_celan_poems	incumbent_current_path	Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_akhmatova_poems	incumbent_current_path	Requiem and Selected Poems	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_bloom_akhmatova_poems	incumbent_current_path	Requiem and Selected Poems	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_southasia_lit_ponniyin_selvan	incumbent_current_path	Ponniyin Selvan	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_sayyid_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_senghor_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1871,7 +1871,7 @@ work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0980_la_jalo
 work_candidate_latcarib_lit_balun_canan	incumbent_current_path	Balun Canan	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_basain	incumbent_current_path	Basain	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_doctor_zhivago	incumbent_current_path	Doctor Zhivago	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_endgame	incumbent_current_path	Endgame	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_reviewed_endgame	incumbent_current_path	Endgame	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_euro_under_lit_forest_gods	incumbent_current_path	Forest of the Gods	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale4_lit_mission_to_kala	incumbent_current_path	Mission to Kala	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_teahouse_lao_she	incumbent_current_path	Teahouse	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1883,7 +1883,7 @@ work_candidate_eastasia_lit_waiting_years	incumbent_current_path	The Waiting Yea
 work_candidate_wave004_jonas_lie_family_at_gilje	incumbent_current_path	The Family at Gilje	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_kerouac_on_the_road	incumbent_current_path	On the Road	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_homo_faber	incumbent_current_path	Homo Faber	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_canon_things_fall_apart	incumbent_current_path	Things Fall Apart	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
+work_canon_things_fall_apart	incumbent_current_path	Things Fall Apart	2	0	1	0	1	0	1	1	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_southasia_lit_ashadh_ka_ek_din	incumbent_current_path	Ashadh Ka Ek Din	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_deep_rivers	incumbent_current_path	Deep Rivers	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_extravagaria	incumbent_current_path	Extravagaria	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2005,7 +2005,7 @@ work_candidate_global_lit_passion_gh	incumbent_current_path	The Passion Accordin
 work_candidate_africa_lit_voice_okara	incumbent_current_path	The Voice	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_week_colors	incumbent_current_path	The Week of Colors	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_whitsun_weddings	incumbent_current_path	The Whitsun Weddings	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_global_lit_we_are_going	incumbent_current_path	We Are Going	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_global_lit_we_are_going	incumbent_current_path	We Are Going	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_global_lit_weep_not_child	incumbent_current_path	Weep Not, Child	1	0	0	0	0	0	0	0	open_needs_review	none	Evidence exists but does not satisfy debt-closure rules.	manual_source_debt_review
 work_candidate_mandatory_tughlaq	incumbent_current_path	Tughlaq	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_ariel	incumbent_current_path	Ariel	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2037,7 +2037,7 @@ work_candidate_africa_lit_efuru	incumbent_current_path	Efuru	1	0	0	0	0	0	0	0	ope
 work_candidate_completion_lit_five_hours_with_mario	incumbent_current_path	Five Hours with Mario	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_genre_lit_in_cold_blood	incumbent_current_path	In Cold Blood	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_mitro_marjani	incumbent_current_path	Mitro Marjani	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_paradiso	incumbent_current_path	Paradiso	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_reviewed_paradiso	incumbent_current_path	Paradiso	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_scale_lit_silence_endo	incumbent_current_path	Silence	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_concubine	incumbent_current_path	The Concubine	1	0	0	0	0	0	0	0	open_needs_review	none	Evidence exists but does not satisfy debt-closure rules.	manual_source_debt_review
 work_candidate_bloom_malamud_fixer	incumbent_current_path	The Fixer	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2087,7 +2087,7 @@ work_candidate_me_lit_prince_ehtejab	incumbent_current_path	Prince Ehtejab	0	0	0
 work_candidate_completion_lit_returning_to_haifa	incumbent_current_path	Returning to Haifa	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_savushun_daneshvar	incumbent_current_path	Savushun	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_le_guin_left_hand_darkness	incumbent_current_path	The Left Hand of Darkness	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_global_lit_way_to_rainy_mountain	incumbent_current_path	The Way to Rainy Mountain	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_global_lit_way_to_rainy_mountain	incumbent_current_path	The Way to Rainy Mountain	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_scale5_lit_ubik	incumbent_current_path	Ubik	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_ampasayya	incumbent_current_path	Ampasayya	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_fowles_french_lieutenant	incumbent_current_path	The French Lieutenant's Woman	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2128,7 +2128,7 @@ work_candidate_me_lit_legend_thousand_bulls	incumbent_current_path	The Legend of
 work_candidate_genre_lit_tombs_atuan	incumbent_current_path	The Tombs of Atuan	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_this_earth_brother	incumbent_current_path	This Earth, My Brother	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave005_bessie_head_collector_treasures	incumbent_current_path	The Collector of Treasures	1	0	0	0	0	0	0	0	open_needs_review	none	Evidence exists but does not satisfy debt-closure rules.	manual_source_debt_review
-work_candidate_completion_lit_invisible_cities	incumbent_current_path	Invisible Cities	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_completion_lit_invisible_cities	incumbent_current_path	Invisible Cities	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_me_lit_man_going_road	incumbent_current_path	A Man Was Going Down the Road	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_hourglass_kis	incumbent_current_path	Hourglass	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_fog_seasons_end	incumbent_current_path	In the Fog of the Seasons' End	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2184,7 +2184,7 @@ work_candidate_genre_lit_carrie	incumbent_current_path	Carrie	0	0	0	0	0	0	0	0	op
 work_candidate_mandatory_morante_history	incumbent_current_path	History: A Novel	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_mamet_american_buffalo	incumbent_current_path	American Buffalo	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_nassar_ancient_tillage	incumbent_current_path	Ancient Tillage	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_death_and_kings_horseman	incumbent_current_path	Death and the King's Horseman	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_death_and_kings_horseman	incumbent_current_path	Death and the King's Horseman	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_genre_lit_dhalgren	incumbent_current_path	Dhalgren	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_dunia_uwanja_fujo	incumbent_current_path	Dunia Uwanja wa Fujo	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_fatelessness	incumbent_current_path	Fatelessness	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2352,7 +2352,7 @@ work_candidate_mandatory_cassandra_wolf	incumbent_current_path	Cassandra	0	0	0	0
 work_candidate_latcarib_lit_abeng	incumbent_current_path	Abeng	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_akkarmashi	incumbent_current_path	Akkarmashi	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_berji_kristin	incumbent_current_path	Berji Kristin: Tales from the Garbage Hills	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_cities_of_salt	incumbent_current_path	Cities of Salt	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_cities_of_salt	incumbent_current_path	Cities of Salt	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_southasia_lit_in_custody	incumbent_current_path	In Custody	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_love_medicine	incumbent_current_path	Love Medicine	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_mindblast	incumbent_current_path	Mindblast	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2471,7 +2471,7 @@ work_candidate_completion_lit_touba_meaning_night	incumbent_current_path	Touba a
 work_candidate_globalcon_lit_woman_sand_myrrh	incumbent_current_path	Women of Sand and Myrrh	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_women_without_men	incumbent_current_path	Women Without Men	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_like_water_chocolate	incumbent_current_path	Like Water for Chocolate	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_global_lit_walcott_omeros	incumbent_current_path	Omeros	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_global_lit_walcott_omeros	incumbent_current_path	Omeros	2	0	1	0	1	1	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_africa_lit_and_they_didnt_die	incumbent_current_path	And They Didn't Die	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_ballad_love_wind	incumbent_current_path	Balada de Amor ao Vento	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_genre_lit_devil_blue_dress	incumbent_current_path	Devil in a Blue Dress	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2922,7 +2922,7 @@ work_candidate_globalcon_lit_lullaby_slimani	incumbent_current_path	Lullaby	0	0	
 work_candidate_globalcon_lit_night_sky_exit	incumbent_current_path	Night Sky with Exit Wounds	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_genre_lit_ballad_black_tom	incumbent_current_path	The Ballad of Black Tom	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_the_break	incumbent_current_path	The Break	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_globalcon_lit_return_matar	incumbent_current_path	The Return	1	0	1	0	1	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
+work_candidate_globalcon_lit_return_matar	incumbent_current_path	The Return	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
 work_candidate_globalcon_lit_underground_railroad	incumbent_current_path	The Underground Railroad	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_woman_next_door	incumbent_current_path	The Woman Next Door	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_things_lost_fire	incumbent_current_path	Things We Lost in the Fire	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items

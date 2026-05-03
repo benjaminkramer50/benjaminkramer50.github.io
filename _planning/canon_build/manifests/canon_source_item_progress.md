@@ -2,8 +2,8 @@
 
 - generated_on: 2026-05-03
 - registered_sources: 72
-- source_item_rows: 4298
-- evidence_rows: 356
+- source_item_rows: 5942
+- evidence_rows: 468
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -65,7 +65,7 @@
 | `library_of_america_catalog` | E011 | in_progress | 5 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
 | `longman_brit_lit_middle_ages_1a_4e` | E009 | public_toc_ready | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `longman_british_lit_period_volumes_2009_2017` | E010 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `longman_world_lit_2e_2009` | E005 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `longman_world_lit_2e_2009` | E005;X027 | extracted | 1644 | 112 | 68 | 0 | 44 | 1532 | 0 | 0 |
 | `mgh_medieval_latin_sources` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `minnereden_lovesongs_digital` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `murty_classical_library_india` | E015 | metadata_ready | 19 | 0 | 0 | 0 | 0 | 19 | 0 | 0 |
@@ -102,7 +102,6 @@
 - `heath_american_lit_7e_2014` (E011; in_progress)
 - `lancelot_grail_lacy_5vol` (E009; metadata_ready)
 - `longman_british_lit_period_volumes_2009_2017` (E010; ready_public_toc)
-- `longman_world_lit_2e_2009` (E005; in_progress)
 - `mgh_medieval_latin_sources` (E009; metadata_ready)
 - `minnereden_lovesongs_digital` (E009; metadata_ready)
 - `norton_american_lit_10e_post1865` (E011; in_progress)
