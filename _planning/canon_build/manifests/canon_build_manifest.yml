@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x029_red_cell_triage_generated
+status: source_item_batch_x030_title_route_review_recorded
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -51,6 +51,7 @@ artifacts:
   gap_diagnostics: generated_x028
   red_cell_audit_queue: generated_x028
   red_cell_triage: generated_x029
+  red_cell_review_decisions: generated_x030
 bootstrap_counts:
   work_candidates: 3000
   creators: 2000
@@ -276,4 +277,25 @@ red_cell_triage_x029:
   confidence_counts:
     high: 1
     medium: 119
+  direct_replacements: 0
+red_cell_review_x030:
+  decision_rows: 25
+  decision_counts:
+    contained_in_current_collection: 9
+    contained_in_current_work: 5
+    existing_current_match_needs_creator_disambiguation: 1
+    new_omission_candidate_boundary_review: 1
+    new_omission_candidate_short_story_review: 2
+    new_or_collection_candidate_review: 1
+    orthographic_alias_to_current_work: 1
+    variant_alias_to_current_work: 5
+  next_action_counts:
+    add_alias_or_match_review_decision: 6
+    create_candidate_after_boundary_policy_review: 1
+    record_contained_work_scope_not_new_omission: 1
+    record_selection_or_alias_relation_to_current_collection: 2
+    record_selection_scope_not_new_work: 11
+    review_collection_boundary_and_existing_donne_coverage: 1
+    review_short_story_granularity_and_create_candidate_if_policy_allows: 2
+    split_by_creator_then_match_joyce_rows_to_dubliners: 1
   direct_replacements: 0
