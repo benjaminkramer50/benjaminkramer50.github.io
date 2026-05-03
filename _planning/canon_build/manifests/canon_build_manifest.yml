@@ -1,0 +1,39 @@
+---
+generated_on: '2026-05-03'
+status: incumbent_path_bootstrapped
+baseline:
+  label: wave_005_incumbent_path
+  commit: 64600ddb264839d57a173438490f36eeed4c31b3
+  public_path: _data/canon_quick_path.yml
+  target_count: 3000
+current_blockers:
+  source_debt_rows: 2939
+  manual_only_rows: 2938
+  needs_sources_rows: 2939
+  duplicate_candidate_keys: 39
+  chronology_inversion_rows: 138
+  generic_title_rows: 267
+  boundary_case_rows: 444
+gates:
+  direct_replacements_paused: true
+  no_new_manual_only_rows: true
+  source_crosswalk_required_before_integration: true
+  boundary_policy_required_before_boundary_lock: true
+  first_class_taxonomy_required_before_ui_precision: true
+artifacts:
+  source_registry: initialized_empty
+  source_items: initialized_empty
+  work_candidates: bootstrapped_from_current_path
+  aliases: bootstrapped_from_current_path
+  relations: initialized_empty
+  evidence: initialized_empty
+  scores: initialized_empty
+  replacement_candidates: initialized_empty
+  path_selection: bootstrapped_from_current_path
+  creators: bootstrapped_from_current_path
+bootstrap_counts:
+  work_candidates: 3000
+  creators: 2000
+  work_creators: 3007
+  aliases: 443
+  path_selection_rows: 3000

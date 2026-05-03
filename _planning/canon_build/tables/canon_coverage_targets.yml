@@ -1,0 +1,17 @@
+---
+generated_on: '2026-05-03'
+status: initialized_empty
+target_count: 3000
+coverage_axes:
+  - period_bucket
+  - macro_region
+  - subregion
+  - original_language
+  - literary_tradition
+  - form_bucket
+  - boundary_policy_id
+targets: []
+known_current_limitations:
+  - current_region_and_form_reports_are_keyword_inferred
+  - current_path_is_overweighted_toward_1900_present
+  - source_debt_prevents_locked_coverage_claims

@@ -1,0 +1,12 @@
+---
+generated_on: '2026-05-03'
+status: initialized_empty
+decisions: []
+waivers: []
+open_questions:
+  - source_debt_rows_currently_2939
+  - manual_only_rows_currently_2938
+  - duplicate_candidate_keys_currently_39
+  - chronology_inversion_rows_currently_138
+  - generic_title_rows_currently_267
+  - boundary_case_rows_currently_444

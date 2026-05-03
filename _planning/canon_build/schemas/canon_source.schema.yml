@@ -1,0 +1,73 @@
+---
+schema_id: canon_source
+version: 1
+description: Source registry and extracted source-item schema for the source-backed canon build.
+source_registry_required:
+  - source_id
+  - source_title
+  - source_type
+  - source_scope
+  - source_date
+  - source_citation
+  - extraction_status
+source_registry_optional:
+  - edition
+  - editors_or_authors
+  - publisher
+  - coverage_limits
+  - extraction_method
+  - packet_ids
+  - notes
+source_items_required:
+  - source_id
+  - source_item_id
+  - raw_title
+  - evidence_type
+  - supports
+  - match_status
+source_items_optional:
+  - raw_creator
+  - raw_date
+  - source_rank
+  - source_section
+  - source_url
+  - source_citation
+  - matched_work_id
+  - match_method
+  - match_confidence
+  - evidence_weight
+  - notes
+controlled_values:
+  source_type:
+    - accepted_site_record
+    - world_literature_anthology
+    - region_literary_history
+    - language_literary_history
+    - syllabus_or_reading_list
+    - translation_series
+    - scholarly_edition_series
+    - prize_or_reception_layer
+    - specialist_source
+    - legacy_canon_list
+    - packet_audit_output
+  extraction_status:
+    - not_started
+    - in_progress
+    - extracted
+    - reviewed
+    - rejected
+  evidence_type:
+    - inclusion
+    - omission
+    - representative_selection
+    - duplicate_variant
+    - boundary_context
+    - exclusion
+  match_status:
+    - unmatched
+    - matched_current_path
+    - matched_candidate
+    - represented_by_selection
+    - duplicate_or_variant
+    - out_of_scope
+    - unresolved

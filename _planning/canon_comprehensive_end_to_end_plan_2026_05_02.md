@@ -1,14 +1,38 @@
 ---
 title: Comprehensive End-to-End Literature Canon Audit Plan
 date: 2026-05-02
-status: in_progress_wave_001_integrated
+status: source_backed_pivot_in_progress
 scope: literature_only_global_lifetime_path
 target: 3000 public works
 ---
 
 # Comprehensive End-to-End Literature Canon Audit Plan
 
-This document is the forward plan for making the 3,000-item literature canon defensible. It is also the packet registry that execution logs point back to. Wave 001 has now been run and integrated; detailed outputs live under `_planning/canon_audit_outputs/`.
+This document is the forward plan for making the 3,000-item literature canon defensible. It is also the packet registry that execution logs point back to. Waves 001-005 have been run and integrated as provisional sentinel repairs; detailed outputs live under `_planning/canon_audit_outputs/`.
+
+## 2026-05-03 Workflow Pivot
+
+The workflow is being changed before Wave 006. The first five waves improved obvious omissions, but they did not solve the actual scholarly blocker: most rows remain source-debt rows and the list still relies on inferred categories rather than first-class evidence, taxonomy, and boundary metadata.
+
+Direct content replacement is paused. F031-F034 and all later B/C/D/F packets may still run, but their default role is evidence harvesting and gap discovery, not immediate add/cut integration. Integration resumes only after the source universe, candidate universe, evidence ledger, scoring layer, and boundary policies exist enough to compare current rows and omissions on the same evidence scale.
+
+The new source of truth is four-layered:
+
+1. Source universe: source registry, source items, source scope, and citation/provenance metadata.
+2. Candidate universe: one canonical work cluster per literary work, with aliases, relations, creators, dates, traditions, forms, and review state.
+3. Scoring and adjudication: derived evidence scores, coverage targets, duplicate decisions, boundary decisions, and human review decisions.
+4. Published paths: generated 3,000-item path data for the public site.
+
+`_data/canon_quick_path.yml` is therefore a provisional published path and incumbent snapshot, not the final master scholarly dataset.
+
+## Immediate Freeze Rules
+
+- No new work may be added as `manual_only`.
+- No further replacement wave may merge unless both the added row and displaced row have evidence records or an explicit waiver.
+- Bloom, a syllabus, a prize list, or any single source layer cannot be sole support for a locked inclusion.
+- Wave 006 is recast as harvest-only unless the user explicitly authorizes an exception after source evidence is present.
+- A replacement batch must not increase source debt, unwaived duplicate debt, unwaived chronology debt, or generic-title debt.
+- UI/category redesign waits until first-class taxonomy fields exist; presentation filters must not imply precision from keyword-inferred buckets.
 
 ## Core Correction
 
@@ -72,7 +96,42 @@ Evidence tiers:
 
 ## Data And Tooling To Build Before Auditing
 
-The first real execution step is to create a local audit harness. This should be committed before content replacement begins.
+The first real execution step was to create a local audit harness. That first pass exists. The next real execution step is to build a source-backed canon build layer before more content replacement begins.
+
+Required build-layer artifacts under `_planning/canon_build/`:
+
+- `schemas/canon_source.schema.yml`: source registry and source-item schema.
+- `schemas/canon_work.schema.yml`: candidate-work schema.
+- `schemas/canon_evidence.schema.yml`: evidence, scoring, and review-decision schema.
+- `tables/canon_source_registry.tsv`: one row per source layer with scope and limitations.
+- `tables/canon_source_items.tsv`: extracted works from source layers.
+- `tables/canon_work_candidates.tsv`: one candidate work cluster per literary work.
+- `tables/canon_creators.tsv`: normalized creator authority rows.
+- `tables/canon_work_creators.tsv`: work-to-creator join rows.
+- `tables/canon_aliases.tsv`: aliases, original titles, translated titles, contained titles, and transliteration variants.
+- `tables/canon_relations.tsv`: duplicate, contained-work, series, selection, and supersession relations.
+- `tables/canon_evidence.tsv`: work-level source evidence.
+- `tables/canon_review_decisions.yml`: human decisions and waivers.
+- `tables/canon_scores.tsv`: derived scores and penalties.
+- `tables/canon_coverage_targets.yml`: period, region, language/tradition, form, and boundary targets.
+- `tables/canon_path_selection.tsv`: selected works for the generated 3,000-item path.
+- `tables/canon_replacement_candidates.tsv`: proposed add/cut transactions with evidence.
+- `manifests/canon_build_manifest.yml`: build provenance, gates, and artifact status.
+
+Required source-backed build scripts or script modes:
+
+- Validate schemas and required columns.
+- Import source registry and source item rows.
+- Normalize titles, original titles, translated titles, and creator labels.
+- Build alias and relation indexes.
+- Match source items to candidate works.
+- Resolve duplicates and collection-contained cases.
+- Score current items and omissions together.
+- Optimize a capped 3,000-item path under coverage and evidence constraints.
+- Generate `_data/canon_quick_path.yml` from selected path rows.
+- Extend the existing audit harness so it can validate derived tables, not only the published path YAML.
+
+The existing harness outputs remain required until the generated-path workflow replaces them:
 
 Required generated artifacts:
 
@@ -620,44 +679,63 @@ These are not automatic inclusion lists. They are "must check" sentinels because
 
 The packet registry is large by design. The execution order should be staged so errors are caught early.
 
-Phase 0: Freeze and inventory.
+Phase S0: Freeze current baseline and claims.
 
-- Run A001-A028 locally.
-- Add missing metadata fields if feasible.
-- Generate baseline coverage reports.
+- Treat commit `64600ddb264839d57a173438490f36eeed4c31b3` as the Wave 005 incumbent baseline unless superseded by a later committed baseline.
+- Keep the public claim provisional: "3,000-work literature path under source audit," not "complete global canon."
 - Do not change canon content except to fix structural invalidity.
 
-Phase 1: High-risk obvious-omission sweep.
+Phase S1: Source and candidate universe scaffolding.
 
-- Run F001-F034 in waves of six.
-- Focus on omissions that would embarrass the list if absent.
-- Integrate only high-confidence misses and alias repairs.
+- Build `_planning/canon_build/` schemas, tables, manifest, and gates.
+- Freeze source classes and extraction rules.
+- Make path membership separate from work identity.
 
-Phase 2: Source-crosswalk sweep.
+Phase S2: Source-crosswalk ingestion.
 
 - Run E001-E030 in waves of six.
-- Convert source debt where possible.
-- Flag source conflicts and overrepresentation.
+- Each E packet outputs structured source items: present, absent, represented-by-selection, duplicate/variant, out-of-scope, rejected, unresolved.
+- Convert source debt only when evidence records support the change.
+- Do not use E packets as immediate replacement engines.
 
-Phase 3: Period and region sweep.
+Phase S3: Normalize, dedupe, and first-class taxonomy.
+
+- Build aliases, relations, and duplicate decisions.
+- Add or derive candidate-level `macro_region`, `subregion`, `original_language`, `literary_tradition`, `period_bucket`, `form_bucket`, `selection_basis`, `included_as_literature`, and `boundary_policy_id`.
+- Close or explicitly waive generic-title, duplicate, and major chronology debt before large integration resumes.
+
+Phase S4: Score and coverage matrix.
+
+- Score every current item and every source-backed omission with the same rubric.
+- Build period x region x language/tradition x form x source-class coverage matrices.
+- Create replacement candidates from score deltas and coverage constraints, not from ad hoc preference.
+
+Phase S5: Boundary and policy adjudication.
+
+- Run G001-G025 before large replacement batches.
+- Lock policies for scripture, oral tradition, Indigenous/public material, philosophy/theology/history leakage, memoir/testimonio, children/YA, genre fiction, graphic narrative, anthology selections, and series.
+- Boundary-sensitive rows must carry an inclusion rationale before being treated as locked.
+
+Phase S6: Period, region, and form sweeps as validation.
 
 - Run B001-B034 and C001-C196 in waves of six.
-- Each packet must produce a ranked omission list and a ranked cut list.
-- Integrate only after reviewing adjacent packets so one region does not consume all replacement slots.
+- Run D001-D046 as form-validation packets.
+- Use these packets to challenge the scored universe, find source blind spots, and identify weak coverage cells.
+- Do not integrate directly unless gates in S2-S5 are satisfied.
 
-Phase 4: Form and boundary sweep.
+Phase S7: Source-backed integration.
 
-- Run D001-D046 and G001-G025.
-- Resolve scripture/oral/philosophy/memoir/YA/genre/graphic boundary cases.
-- Repair generic selected entries.
+- Apply add/cut transactions only from `canon_replacement_candidates.tsv`.
+- Every addition names a displacement and every displacement has a source-reviewed rationale.
+- Each integration batch regenerates validation outputs, replacement log, omission queue, source debt report, duplicate report, chronology report, and build status.
 
-Phase 5: Integration and stabilization.
+Phase S8: Public UI and generated path.
 
-- Run H001-H012 repeatedly until no high-confidence omissions remain unresolved.
-- Rebuild the public site after each content batch.
-- Keep a running replacement log.
+- Generate `_data/canon_quick_path.yml` from selected path rows once build-layer tables are stable.
+- Update UI filters to use first-class period, region, language/tradition, form, tier, source status, and review status fields.
+- Keep source/review status visible until locked-canon thresholds are actually met.
 
-Phase 6: Final adversarial review.
+Phase S9: Final adversarial review.
 
 - Assign agents to attack the finished list by trying to find missing essentials, duplicates, weak overrepresented clusters, and unjustified boundary decisions.
 - Any found omission opens a new packet rather than an ad hoc fix.
@@ -677,18 +755,12 @@ After each wave of up to six packets, the coordinator should produce:
 
 ## Immediate Next Steps
 
-1. Commit this plan file.
-2. Build the local audit harness and baseline inventory reports.
-3. Run A001-A028 locally.
-4. Start the first agent wave with six sentinel packets, not broad domains:
-   - F001 Early US.
-   - F002 US transcendentalism.
-   - F003 US nineteenth-century fiction.
-   - F009 British medieval/Renaissance.
-   - F023 Greek/Roman.
-   - F024 Sanskrit/South Asian classical.
-5. Integrate only findings that survive local verification.
-6. Repeat through the packet registry.
+1. Commit the source-backed pivot plan and tracker update.
+2. Add `_planning/canon_build/` schemas, empty tables, and manifest.
+3. Recast F031-F034 as harvest-only if run before source scoring.
+4. Start E001-E006 as structured source-crosswalk ingestion, not replacement integration.
+5. Populate source and candidate rows from E packet outputs.
+6. Build scoring, coverage, duplicate, chronology, and boundary gates before the next content-replacement batch.
 
 ## Current Known Red Flags To Seed The Queue
 

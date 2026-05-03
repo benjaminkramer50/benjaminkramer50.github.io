@@ -9,6 +9,10 @@ scope: literature_only_global_lifetime_path
 
 Verdict: the site now has a usable 3,000-item literature checklist, but it is not a locked academic canon yet. The structure is real and the list is followable, but the scholarly status is provisional until source review, Bloom cleanup, chronology repair, and alias-aware dedupe are completed.
 
+## 2026-05-03 Source-Backed Pivot
+
+After workflow review, direct replacement waves are paused. The current path is mechanically valid but not replacement-ready as a locked canon because source debt and inferred taxonomy dominate the dataset. The next phase is to build the `_planning/canon_build/` source universe, candidate universe, evidence ledger, scoring layer, and policy gates. Future content changes should come from source-backed replacement transactions, not packet-by-packet taste corrections.
+
 ## Current Verified State
 
 - Public checklist target: 3,000 texts.

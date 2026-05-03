@@ -1,0 +1,58 @@
+---
+schema_id: canon_work
+version: 1
+description: Candidate work schema. One work_id represents one canonical work cluster, independent of path rank.
+required:
+  - work_id
+  - candidate_status
+  - canonical_title
+  - creator_display
+  - date_label
+  - sort_year
+  - date_precision
+  - macro_region
+  - literary_tradition
+  - form_bucket
+  - source_status
+  - review_status
+optional:
+  - incumbent_path_id
+  - incumbent_rank
+  - sort_title
+  - original_title
+  - original_language
+  - language_family
+  - subregion
+  - period_bucket
+  - unit_type
+  - boundary_flags
+  - included_as_literature
+  - boundary_policy_id
+  - boundary_note
+  - selection_basis
+  - edition_basis
+  - completion_unit
+  - confidence
+  - provisional_until
+  - notes
+controlled_values:
+  candidate_status:
+    - incumbent_current_path
+    - source_backed_candidate
+    - packet_candidate
+    - rejected
+    - deferred
+  date_precision:
+    - exact_year
+    - approximate_year
+    - range
+    - century
+    - traditional_or_oral
+    - unknown
+  review_status:
+    - needs_sources
+    - source_reviewed
+    - accepted
+    - rejected
+    - deferred
+    - provisional

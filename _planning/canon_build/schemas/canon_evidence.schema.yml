@@ -1,0 +1,53 @@
+---
+schema_id: canon_evidence
+version: 1
+description: Evidence, score, replacement, and review-decision schema for source-backed adjudication.
+evidence_required:
+  - evidence_id
+  - work_id
+  - source_id
+  - evidence_type
+  - evidence_strength
+  - reviewer_status
+evidence_optional:
+  - source_item_id
+  - page_or_section
+  - quote_or_note
+  - packet_id
+  - supports_tier
+  - supports_boundary_policy_id
+  - notes
+score_required:
+  - work_id
+  - source_weighted_score
+  - source_diversity_score
+  - coverage_scarcity_bonus
+  - boundary_penalty
+  - duplicate_overlap_penalty
+  - source_debt_penalty
+  - final_score
+  - must_include
+  - must_exclude
+replacement_required:
+  - transaction_id
+  - add_work_id
+  - cut_work_id
+  - evidence_refs
+  - rationale
+  - gate_status
+controlled_values:
+  evidence_strength:
+    - strong
+    - moderate
+    - weak
+    - conflicting
+  reviewer_status:
+    - unreviewed
+    - accepted
+    - rejected
+    - needs_followup
+  gate_status:
+    - blocked
+    - ready_for_review
+    - approved
+    - integrated

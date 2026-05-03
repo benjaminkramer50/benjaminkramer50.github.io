@@ -6,13 +6,16 @@ Last updated: 2026-05-03
 
 | Phase | Scope | Status | Output |
 |---|---|---|---|
-| Phase 0 | Freeze, harness, A001-A031 controls | Complete for first pass | `control_packets_A001_A031.md`, `canon_validation_report.md` |
-| Phase 1 | Sentinel author/title packets F001-F034 | In progress | Waves 001-005 integrated; Wave 006 audit intake pending |
-| Phase 2 | Source crosswalk packets E001-E030 | Pending | Not started |
-| Phase 3 | Period and region packets B001-B034, C001-C196 | Pending | Not started |
-| Phase 4 | Form and boundary packets D001-D046, G001-G025 | Pending | Not started |
-| Phase 5 | Integration and stabilization H001-H012 | In progress as needed | Replacement log active |
-| Phase 6 | Final adversarial review | Pending | Not started |
+| Phase S0 | Freeze current baseline and claims | Complete for Wave 005 baseline | Commit `64600ddb264839d57a173438490f36eeed4c31b3`; validation outputs current |
+| Phase S1 | Source/candidate universe scaffolding | In progress | `_planning/canon_build/` schemas and tables being created |
+| Phase S2 | Source crosswalk ingestion E001-E030 | Pending | Next execution lane; evidence rows only |
+| Phase S3 | Normalize, dedupe, and first-class taxonomy | Pending | Alias/relation/taxonomy tables required before broad integration |
+| Phase S4 | Scoring and coverage matrix | Pending | Current items and omissions scored together |
+| Phase S5 | Boundary and policy adjudication G001-G025 | Pending | Required before boundary-sensitive rows are locked |
+| Phase S6 | Period, region, and form validation B/C/D packets | Pending | Used to challenge scored universe, not direct replacement |
+| Phase S7 | Source-backed integration H packets | Paused | No further content replacements until S1-S5 gates exist |
+| Phase S8 | Public UI and generated path | Pending | UI filters wait for first-class taxonomy fields |
+| Phase S9 | Final adversarial review | Pending | Not started |
 
 ## Completed Waves
 
@@ -24,26 +27,40 @@ Last updated: 2026-05-03
 | Wave 004 | F017, F018, F019, F020, F021, F022 | Integrated | 54 replacement-log entries plus metadata repairs across Spanish/Iberian, Portuguese/Lusophone, Italian, German-language, Russian, and Scandinavian packets |
 | Wave 005 | F025, F026, F027, F028, F029, F030 | Integrated | 28 replacements plus title/category repairs across South Asian modern, Chinese/Sinophone, Japanese, Korean, Arabic/Persian/Turkic, and African packets |
 
-## Queued Wave
+## Deferred/Recoded Wave
 
 | Wave | Packets | Purpose |
 |---|---|---|
-| Wave 006 | F031, F032, F033, F034 | Audit and integrate Latin American, Caribbean, Indigenous Americas, and Oceania/Arctic sentinel findings; prioritize missing language-tradition anchors, oral/textual boundary cases, and overrepresented contemporary clusters |
+| Wave 006 | F031, F032, F033, F034 | Deferred as direct integration. If run before source scoring, these packets are harvest-only: identify source-backed gaps, alias issues, boundary cases, and duplicate risks without add/cut merges |
+
+## Next Source-Crosswalk Batches
+
+| Batch | Packets | Output Contract |
+|---|---|---|
+| E Batch 1 | E001, E002, E003, E004, E005, E006 | Source registry rows, source item rows, matched/unmatched current works, unresolved omissions |
+| E Batch 2 | E007, E008, E009, E010, E011, E012 | Same structured evidence output |
+| E Batch 3 | E013, E014, E015, E016, E017, E018 | Same structured evidence output |
+| E Batch 4 | E019, E020, E021, E022, E023, E024 | Same structured evidence output |
+| E Batch 5 | E025, E026, E027, E028, E029, E030 | Same structured evidence output |
 
 ## Active Structural Debt
 
-- A029-A031/H013: replacement-induced chronology inversions must be repaired or explicitly waived after each integration wave.
-- H014: duplicate-like clusters remain in Dickens, Yeats, Duras, Henry James, Ibsen, Kafka/Mann/Brecht, Russian realist clusters, Italian modernist duplicates, East Asian modern clusters, African author overclusters, and generic `Selected Poems` rows.
-- A030: placeholder date labels remain especially in Bloom late-age French/British rows and Victorian/modernist clusters.
+- Source gate: 2,939 source-debt rows and 2,938 `manual_only` rows remain; no new row should enter as `manual_only`.
+- Taxonomy gate: public category reports are still keyword-inferred; first-class region, language/tradition, form, selection, and boundary fields are required.
+- A029-A031/H013: replacement-induced chronology inversions must be repaired or explicitly waived before the path is locked.
+- H014: duplicate-like clusters and collection/selection overlaps remain; these now move into alias/relation/decision tables.
+- A009-A011: generic `Selected Poems`, `Selected Stories`, and anthology rows need selection bases.
+- G001-G025: boundary-sensitive rows need explicit literature-inclusion rationales.
 
 ## Operating Rule
 
-Each wave must end with:
+Direct replacement waves are paused. Each source-crosswalk or harvest wave must end with:
 
 - a written wave report,
 - an omission queue update,
-- a replacement log update,
+- source registry/source item evidence updates when applicable,
+- a replacement log update only if no content changed or if a later gated integration batch merges changes,
 - regenerated validation outputs,
 - duplicate and chronology warning review,
-- a build check,
+- a build check when public data changes,
 - and a commit before the next integrated batch.

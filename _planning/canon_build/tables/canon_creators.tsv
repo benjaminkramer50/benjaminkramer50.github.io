@@ -1,0 +1,2001 @@
+creator_id	creator_display	normalized_name	name_variants	life_dates	culture_or_tradition	notes
+creator_00001	Ancient Egyptian priestly and scribal tradition	ancient egyptian priestly and scribal tradition	""	""	""	Bootstrapped from incumbent path
+creator_00002	Ancient Egyptian wisdom tradition	ancient egyptian wisdom tradition	""	""	""	Bootstrapped from incumbent path
+creator_00003	Enheduanna tradition	enheduanna tradition	""	""	""	Bootstrapped from incumbent path
+creator_00004	Mesopotamian scribal tradition	mesopotamian scribal tradition	""	""	""	Bootstrapped from incumbent path
+creator_00005	Sumerian lamentation tradition	sumerian lamentation tradition	""	""	""	Bootstrapped from incumbent path
+creator_00006	Ancient Egyptian funerary and scribal tradition	ancient egyptian funerary and scribal tradition	""	""	""	Bootstrapped from incumbent path
+creator_00007	Ancient Egyptian literary tradition	ancient egyptian literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00008	Middle Egyptian literary tradition	middle egyptian literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00009	Akkadian scribal tradition	akkadian scribal tradition	""	""	""	Bootstrapped from incumbent path
+creator_00010	Vedic tradition	vedic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00011	Babylonian scribal tradition	babylonian scribal tradition	""	""	""	Bootstrapped from incumbent path
+creator_00012	Akkadian mythological-literary tradition	akkadian mythological literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00013	Sumerian epic tradition	sumerian epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00014	Akkadian epic tradition	akkadian epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00015	Sumerian mythological-literary tradition	sumerian mythological literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00016	Sumerian wisdom-literary tradition	sumerian wisdom literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00017	Hurrian and Hittite mythological tradition	hurrian and hittite mythological tradition	""	""	""	Bootstrapped from incumbent path
+creator_00018	Sumerian literary tradition	sumerian literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00019	Sumerian scribal tradition	sumerian scribal tradition	""	""	""	Bootstrapped from incumbent path
+creator_00020	Sumerian disputation tradition	sumerian disputation tradition	""	""	""	Bootstrapped from incumbent path
+creator_00021	Ugaritic literary tradition	ugaritic literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00022	Zoroastrian priestly and liturgical tradition	zoroastrian priestly and liturgical tradition	""	""	""	Bootstrapped from incumbent path
+creator_00023	Zarathustra; Zoroastrian liturgical tradition	zarathustra zoroastrian liturgical tradition	""	""	""	Bootstrapped from incumbent path
+creator_00024	Vedic and early Hindu philosophical traditions	vedic and early hindu philosophical traditions	""	""	""	Bootstrapped from incumbent path
+creator_00025	Homeric epic tradition	homeric epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00026	Hebrew Bible / Tanakh prophetic tradition	hebrew bible tanakh prophetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00027	Hebrew Bible / Tanakh wisdom-poetic tradition	hebrew bible tanakh wisdom poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00028	Hebrew Bible / Tanakh narrative tradition	hebrew bible tanakh narrative tradition	""	""	""	Bootstrapped from incumbent path
+creator_00029	Hebrew Bible / Tanakh wisdom tradition	hebrew bible tanakh wisdom tradition	""	""	""	Bootstrapped from incumbent path
+creator_00030	Hebrew Bible / Tanakh poetic tradition	hebrew bible tanakh poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00031	Hesiod	hesiod	""	""	""	Bootstrapped from incumbent path
+creator_00032	Classical Chinese poetic tradition	classical chinese poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00033	Archilochus	archilochus	""	""	""	Bootstrapped from incumbent path
+creator_00034	Archaic Greek hymn tradition	archaic greek hymn tradition	""	""	""	Bootstrapped from incumbent path
+creator_00035	Aesopic beast-fable tradition	aesopic beast fable tradition	""	""	""	Bootstrapped from incumbent path
+creator_00036	Sappho	sappho	""	""	""	Bootstrapped from incumbent path
+creator_00037	Alcman	alcman	""	""	""	Bootstrapped from incumbent path
+creator_00038	Sanskrit epic tradition	sanskrit epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00039	Akkadian wisdom-dialogue tradition	akkadian wisdom dialogue tradition	""	""	""	Bootstrapped from incumbent path
+creator_00040	Akkadian wisdom-literary tradition	akkadian wisdom literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00041	Akkadian wisdom-poetic tradition	akkadian wisdom poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00042	Confucius and early Confucian tradition	confucius and early confucian tradition	""	""	""	Bootstrapped from incumbent path
+creator_00043	Aeschylus	aeschylus	""	""	""	Bootstrapped from incumbent path
+creator_00044	Sophocles	sophocles	""	""	""	Bootstrapped from incumbent path
+creator_00045	Euripides	euripides	""	""	""	Bootstrapped from incumbent path
+creator_00046	Pindar	pindar	""	""	""	Bootstrapped from incumbent path
+creator_00047	Thucydides	thucydides	""	""	""	Bootstrapped from incumbent path
+creator_00048	Herodotus	herodotus	""	""	""	Bootstrapped from incumbent path
+creator_00049	Aristophanes	aristophanes	""	""	""	Bootstrapped from incumbent path
+creator_00050	Plato	plato	""	""	""	Bootstrapped from incumbent path
+creator_00051	Daoist textual tradition	daoist textual tradition	""	""	""	Bootstrapped from incumbent path
+creator_00052	Menander	menander	""	""	""	Bootstrapped from incumbent path
+creator_00053	Aristotle	aristotle	""	""	""	Bootstrapped from incumbent path
+creator_00054	Zhuangzi and Daoist textual tradition	zhuangzi and daoist textual tradition	""	""	""	Bootstrapped from incumbent path
+creator_00055	Confucian textual tradition	confucian textual tradition	""	""	""	Bootstrapped from incumbent path
+creator_00056	Theravada Buddhist canonical tradition	theravada buddhist canonical tradition	""	""	""	Bootstrapped from incumbent path
+creator_00057	Jain canonical tradition	jain canonical tradition	""	""	""	Bootstrapped from incumbent path
+creator_00058	Jain canonical and ritual tradition	jain canonical and ritual tradition	""	""	""	Bootstrapped from incumbent path
+creator_00059	Kundakunda; Digambara Jain tradition	kundakunda digambara jain tradition	""	""	""	Bootstrapped from incumbent path
+creator_00060	Jain Prakrit tradition	jain prakrit tradition	""	""	""	Bootstrapped from incumbent path
+creator_00061	Pali Buddhist narrative tradition	pali buddhist narrative tradition	""	""	""	Bootstrapped from incumbent path
+creator_00062	Classical Chinese historical prose tradition	classical chinese historical prose tradition	""	""	""	Bootstrapped from incumbent path
+creator_00063	Early Chinese mythographic tradition	early chinese mythographic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00064	Sanskrit fable tradition	sanskrit fable tradition	""	""	""	Bootstrapped from incumbent path
+creator_00065	Apollonius of Rhodes	apollonius of rhodes	""	""	""	Bootstrapped from incumbent path
+creator_00066	Callimachus	callimachus	""	""	""	Bootstrapped from incumbent path
+creator_00067	Theocritus	theocritus	""	""	""	Bootstrapped from incumbent path
+creator_00068	Early Buddhist women poets	early buddhist women poets	""	""	""	Bootstrapped from incumbent path
+creator_00069	Mahabharata and Hindu philosophical tradition	mahabharata and hindu philosophical tradition	""	""	""	Bootstrapped from incumbent path
+creator_00070	Greek epigram anthology tradition	greek epigram anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_00071	Early Buddhist monk-poets	early buddhist monk poets	""	""	""	Bootstrapped from incumbent path
+creator_00072	Plautus	plautus	""	""	""	Bootstrapped from incumbent path
+creator_00073	Terence	terence	""	""	""	Bootstrapped from incumbent path
+creator_00074	Qu Yuan and the Classical Chinese poetic tradition	qu yuan and classical chinese poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00075	Jesus ben Sira	jesus ben sira	""	""	""	Bootstrapped from incumbent path
+creator_00076	Jewish apocalyptic and court-tale tradition	jewish apocalyptic and court tale tradition	""	""	""	Bootstrapped from incumbent path
+creator_00077	Han and post-Han poetic tradition	han and post han poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00078	Bharata and Sanskrit dramaturgical tradition	bharata and sanskrit dramaturgical tradition	""	""	""	Bootstrapped from incumbent path
+creator_00079	Marcus Tullius Cicero	marcus tullius cicero	""	""	""	Bootstrapped from incumbent path
+creator_00080	Titus Lucretius Carus	titus lucretius carus	""	""	""	Bootstrapped from incumbent path
+creator_00081	Sima Qian	sima qian	""	""	""	Bootstrapped from incumbent path
+creator_00082	Tiruvalluvar	tiruvalluvar	""	""	""	Bootstrapped from incumbent path
+creator_00083	Jewish apocalyptic literary tradition	jewish apocalyptic literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00084	Horace	horace	""	""	""	Bootstrapped from incumbent path
+creator_00085	Catullus	catullus	""	""	""	Bootstrapped from incumbent path
+creator_00086	Hellenistic Jewish literary tradition	hellenistic jewish literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00087	Virgil	virgil	""	""	""	Bootstrapped from incumbent path
+creator_00088	Ovid	ovid	""	""	""	Bootstrapped from incumbent path
+creator_00089	Old Norse poetic and manuscript tradition	old norse poetic and manuscript tradition	""	""	""	Bootstrapped from incumbent path
+creator_00090	Early Christian textual tradition	early christian textual tradition	""	""	""	Bootstrapped from incumbent path
+creator_00091	Martial	martial	""	""	""	Bootstrapped from incumbent path
+creator_00092	Lucius Annaeus Seneca	lucius annaeus seneca	""	""	""	Bootstrapped from incumbent path
+creator_00093	Lucan	lucan	""	""	""	Bootstrapped from incumbent path
+creator_00094	Persius	persius	""	""	""	Bootstrapped from incumbent path
+creator_00095	Petronius	petronius	""	""	""	Bootstrapped from incumbent path
+creator_00096	Statius	statius	""	""	""	Bootstrapped from incumbent path
+creator_00097	Early Christian sayings tradition	early christian sayings tradition	""	""	""	Bootstrapped from incumbent path
+creator_00098	Aramaic and Syriac wisdom-story tradition	aramaic and syriac wisdom story tradition	""	""	""	Bootstrapped from incumbent path
+creator_00099	Buddhist Sanskrit narrative tradition	buddhist sanskrit narrative tradition	""	""	""	Bootstrapped from incumbent path
+creator_00100	Ashvaghosha	ashvaghosha	""	""	""	Bootstrapped from incumbent path
+creator_00101	Prakrit lyric tradition	prakrit lyric tradition	""	""	""	Bootstrapped from incumbent path
+creator_00102	Mahayana Buddhist textual tradition	mahayana buddhist textual tradition	""	""	""	Bootstrapped from incumbent path
+creator_00103	Han poetic tradition	han poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00104	Early Syriac Christian poetic tradition	early syriac christian poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00105	Juvenal	juvenal	""	""	""	Bootstrapped from incumbent path
+creator_00106	Apuleius	apuleius	""	""	""	Bootstrapped from incumbent path
+creator_00107	Longus	longus	""	""	""	Bootstrapped from incumbent path
+creator_00108	Classical Tamil Sangam poets	classical tamil sangam poets	""	""	""	Bootstrapped from incumbent path
+creator_00109	Syriac Christian poetic tradition	syriac christian poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00110	Buddhist Sanskrit tradition	buddhist sanskrit tradition	""	""	""	Bootstrapped from incumbent path
+creator_00111	Rabbinic tradition	rabbinic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00112	Cao Cao	cao cao	""	""	""	Bootstrapped from incumbent path
+creator_00113	Cao Zhi	cao zhi	""	""	""	Bootstrapped from incumbent path
+creator_00114	Ruan Ji	ruan ji	""	""	""	Bootstrapped from incumbent path
+creator_00115	Sudraka	sudraka	""	""	""	Bootstrapped from incumbent path
+creator_00116	Bhasa	bhasa	""	""	""	Bootstrapped from incumbent path
+creator_00117	Heliodorus of Emesa	heliodorus of emesa	""	""	""	Bootstrapped from incumbent path
+creator_00118	Ephrem the Syrian	ephrem syrian	""	""	""	Bootstrapped from incumbent path
+creator_00119	Gan Bao; Chinese anomaly-tale tradition	gan bao chinese anomaly tale tradition	""	""	""	Bootstrapped from incumbent path
+creator_00120	Arya Shura	arya shura	""	""	""	Bootstrapped from incumbent path
+creator_00121	Augustine of Hippo	augustine of hippo	""	""	""	Bootstrapped from incumbent path
+creator_00122	Kalidasa	kalidasa	""	""	""	Bootstrapped from incumbent path
+creator_00123	Prudentius	prudentius	""	""	""	Bootstrapped from incumbent path
+creator_00124	Tao Yuanming	tao yuanming	""	""	""	Bootstrapped from incumbent path
+creator_00125	Rabbinic aggadic tradition	rabbinic aggadic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00126	Tamil didactic poetic tradition	tamil didactic poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00127	Classical Tamil poets	classical tamil poets	""	""	""	Bootstrapped from incumbent path
+creator_00128	Vimalasuri	vimalasuri	""	""	""	Bootstrapped from incumbent path
+creator_00129	Bao Zhao	bao zhao	""	""	""	Bootstrapped from incumbent path
+creator_00130	Xie Lingyun	xie lingyun	""	""	""	Bootstrapped from incumbent path
+creator_00131	Pravarasena II	pravarasena ii	""	""	""	Bootstrapped from incumbent path
+creator_00132	Nonnus	nonnus	""	""	""	Bootstrapped from incumbent path
+creator_00133	Syriac Christian literary tradition	syriac christian literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00134	Boethius	boethius	""	""	""	Bootstrapped from incumbent path
+creator_00135	Bharavi	bharavi	""	""	""	Bootstrapped from incumbent path
+creator_00136	Sattanar; Tamil literary tradition	sattanar tamil literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00137	Xu Ling and Six Dynasties anthology tradition	xu ling and six dynasties anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_00138	Imru' al-Qays	imru al qays	""	""	""	Bootstrapped from incumbent path
+creator_00139	Yu Xin	yu xin	""	""	""	Bootstrapped from incumbent path
+creator_00140	Ilango Adigal; Tamil literary tradition	ilango adigal tamil literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00141	Xiao Tong and Liang anthology tradition	xiao tong and liang anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_00142	Islamic scripture	islamic scripture	""	""	""	Bootstrapped from incumbent path
+creator_00143	Pre-Islamic Arabic poetic tradition	pre islamic arabic poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00144	Amaru	amaru	""	""	""	Bootstrapped from incumbent path
+creator_00145	Banabhatta	banabhatta	""	""	""	Bootstrapped from incumbent path
+creator_00146	Harsha	harsha	""	""	""	Bootstrapped from incumbent path
+creator_00147	Bhartrihari	bhartrihari	""	""	""	Bootstrapped from incumbent path
+creator_00148	Magha	magha	""	""	""	Bootstrapped from incumbent path
+creator_00149	Bhatti	bhatti	""	""	""	Bootstrapped from incumbent path
+creator_00150	Subandhu	subandhu	""	""	""	Bootstrapped from incumbent path
+creator_00151	Shakta Hindu tradition	shakta hindu tradition	""	""	""	Bootstrapped from incumbent path
+creator_00152	Mahayana Buddhist Prajnaparamita tradition	mahayana buddhist prajnaparamita tradition	""	""	""	Bootstrapped from incumbent path
+creator_00153	Mahayana Buddhist tradition	mahayana buddhist tradition	""	""	""	Bootstrapped from incumbent path
+creator_00154	Tamil poetic tradition	tamil poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00155	Japanese mythic and literary tradition	japanese mythic and literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00156	Japanese court historiographic and mythological tradition	japanese court historiographic and mythological tradition	""	""	""	Bootstrapped from incumbent path
+creator_00157	al-Mufaddal al-Dabbi and Arabic anthology tradition	al mufaddal al dabbi and arabic anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_00158	Hanshan	hanshan	""	""	""	Bootstrapped from incumbent path
+creator_00159	Dandin	dandin	""	""	""	Bootstrapped from incumbent path
+creator_00160	Ibn al-Muqaffa and fable tradition	ibn al muqaffa and fable tradition	""	""	""	Bootstrapped from incumbent path
+creator_00161	Bhavabhuti	bhavabhuti	""	""	""	Bootstrapped from incumbent path
+creator_00162	Vishakhadatta	vishakhadatta	""	""	""	Bootstrapped from incumbent path
+creator_00163	Wang Wei	wang wei	""	""	""	Bootstrapped from incumbent path
+creator_00164	Du Fu	du fu	""	""	""	Bootstrapped from incumbent path
+creator_00165	Li Bai	li bai	""	""	""	Bootstrapped from incumbent path
+creator_00166	Tamil Shaiva bhakti poets	tamil shaiva bhakti poets	""	""	""	Bootstrapped from incumbent path
+creator_00167	Kouhala	kouhala	""	""	""	Bootstrapped from incumbent path
+creator_00168	Shantideva	shantideva	""	""	""	Bootstrapped from incumbent path
+creator_00169	Classical Japanese poetic tradition	classical japanese poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00170	Old English poetic tradition	old english poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00171	Old English Christian poetic tradition	old english christian poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00172	Bai Juyi	bai juyi	""	""	""	Bootstrapped from incumbent path
+creator_00173	Kyokai	kyokai	""	""	""	Bootstrapped from incumbent path
+creator_00174	Muhammad ibn Isma'il al-Bukhari; Sunni hadith tradition	muhammad ibn ismail al bukhari sunni hadith tradition	""	""	""	Bootstrapped from incumbent path
+creator_00175	Abu Tammam and Arabic anthology tradition	abu tammam and arabic anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_00176	Tamil Alvar poets	tamil alvar poets	""	""	""	Bootstrapped from incumbent path
+creator_00177	Muslim ibn al-Hajjaj; Sunni hadith tradition	muslim ibn al hajjaj sunni hadith tradition	""	""	""	Bootstrapped from incumbent path
+creator_00178	Andal	andal	""	""	""	Bootstrapped from incumbent path
+creator_00179	Abu Nuwas	abu nuwas	""	""	""	Bootstrapped from incumbent path
+creator_00180	al-Khansa	al khansa	""	""	""	Bootstrapped from incumbent path
+creator_00181	Abu Tammam	abu tammam	""	""	""	Bootstrapped from incumbent path
+creator_00182	Classical Tamil grammatical and poetic tradition	classical tamil grammatical and poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00183	Du Mu	du mu	""	""	""	Bootstrapped from incumbent path
+creator_00184	Li Shangyin	li shangyin	""	""	""	Bootstrapped from incumbent path
+creator_00185	Tang chuanqi tradition	tang chuanqi tradition	""	""	""	Bootstrapped from incumbent path
+creator_00186	al-Jahiz	al jahiz	""	""	""	Bootstrapped from incumbent path
+creator_00187	Yuan Zhen	yuan zhen	""	""	""	Bootstrapped from incumbent path
+creator_00188	Bai Xingjian	bai xingjian	""	""	""	Bootstrapped from incumbent path
+creator_00189	Manikkavacakar; Tamil Shaiva devotional tradition	manikkavacakar tamil shaiva devotional tradition	""	""	""	Bootstrapped from incumbent path
+creator_00190	Amoghavarsha and Srivijaya	amoghavarsha and srivijaya	""	""	""	Bootstrapped from incumbent path
+creator_00191	Ki no Tsurayuki and Japanese court compilers	ki no tsurayuki and japanese court compilers	""	""	""	Bootstrapped from incumbent path
+creator_00192	Ki no Tsurayuki	ki no tsurayuki	""	""	""	Bootstrapped from incumbent path
+creator_00193	Pampa	pampa	""	""	""	Bootstrapped from incumbent path
+creator_00194	al-Mutanabbi	al mutanabbi	""	""	""	Bootstrapped from incumbent path
+creator_00195	Anonymous	anonymous	""	""	""	Bootstrapped from incumbent path
+creator_00196	Sanskrit Puranic tradition	sanskrit puranic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00197	Old Javanese literary tradition	old javanese literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00198	Badi' al-Zaman al-Hamadhani	badi al zaman al hamadhani	""	""	""	Bootstrapped from incumbent path
+creator_00199	Rudaki	rudaki	""	""	""	Bootstrapped from incumbent path
+creator_00200	Michitsuna's Mother	michitsunas mother	""	""	""	Bootstrapped from incumbent path
+creator_00201	Heian court narrative tradition	heian court narrative tradition	""	""	""	Bootstrapped from incumbent path
+creator_00202	Shivakotiacharya	shivakotiacharya	""	""	""	Bootstrapped from incumbent path
+creator_00203	Daqiqi	daqiqi	""	""	""	Bootstrapped from incumbent path
+creator_00204	Abu al-Faraj al-Isfahani	abu al faraj al isfahani	""	""	""	Bootstrapped from incumbent path
+creator_00205	Sei Shonagon	sei shonagon	""	""	""	Bootstrapped from incumbent path
+creator_00206	Gregory of Narek	gregory of narek	""	""	""	Bootstrapped from incumbent path
+creator_00207	Murasaki Shikibu	murasaki shikibu	""	""	""	Bootstrapped from incumbent path
+creator_00208	Ferdowsi	ferdowsi	""	""	""	Bootstrapped from incumbent path
+creator_00209	Ibn Hazm	ibn hazm	""	""	""	Bootstrapped from incumbent path
+creator_00210	Old French epic tradition	old french epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00211	Asadi Tusi	asadi tusi	""	""	""	Bootstrapped from incumbent path
+creator_00212	Somadeva	somadeva	""	""	""	Bootstrapped from incumbent path
+creator_00213	Solomon ibn Gabirol	solomon ibn gabirol	""	""	""	Bootstrapped from incumbent path
+creator_00214	al-Ma'arri	al maarri	""	""	""	Bootstrapped from incumbent path
+creator_00215	Baba Taher	baba taher	""	""	""	Bootstrapped from incumbent path
+creator_00216	Abu al-Ala al-Maarri	abu al ala al maarri	""	""	""	Bootstrapped from incumbent path
+creator_00217	Nasir Khusraw	nasir khusraw	""	""	""	Bootstrapped from incumbent path
+creator_00218	Su Shi	su shi	""	""	""	Bootstrapped from incumbent path
+creator_00219	Ibn Zaydun	ibn zaydun	""	""	""	Bootstrapped from incumbent path
+creator_00220	Samuel ha-Nagid	samuel ha nagid	""	""	""	Bootstrapped from incumbent path
+creator_00221	Fakhr al-Din Gurgani	fakhr al din gurgani	""	""	""	Bootstrapped from incumbent path
+creator_00222	Bilhana	bilhana	""	""	""	Bootstrapped from incumbent path
+creator_00223	Izumi Shikibu	izumi shikibu	""	""	""	Bootstrapped from incumbent path
+creator_00224	Sugawara no Takasue's Daughter	sugawara no takasues daughter	""	""	""	Bootstrapped from incumbent path
+creator_00225	Yusuf Khass Hajib	yusuf khass hajib	""	""	""	Bootstrapped from incumbent path
+creator_00226	Byzantine Greek epic tradition	byzantine greek epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00227	Nizami Ganjavi	nizami ganjavi	""	""	""	Bootstrapped from incumbent path
+creator_00228	Farid ud-Din Attar	farid ud din attar	""	""	""	Bootstrapped from incumbent path
+creator_00229	Shota Rustaveli	shota rustaveli	""	""	""	Bootstrapped from incumbent path
+creator_00230	Buddhist tantric poets	buddhist tantric poets	""	""	""	Bootstrapped from incumbent path
+creator_00231	Jayadeva	jayadeva	""	""	""	Bootstrapped from incumbent path
+creator_00232	Ibn Tufayl	ibn tufayl	""	""	""	Bootstrapped from incumbent path
+creator_00233	Abu Hayyan al-Tawhidi	abu hayyan al tawhidi	""	""	""	Bootstrapped from incumbent path
+creator_00234	Japanese setsuwa compilation tradition	japanese setsuwa compilation tradition	""	""	""	Bootstrapped from incumbent path
+creator_00235	Marie de France	marie de france	""	""	""	Bootstrapped from incumbent path
+creator_00236	al-Hariri of Basra	al hariri of basra	""	""	""	Bootstrapped from incumbent path
+creator_00237	Sriharsha	sriharsha	""	""	""	Bootstrapped from incumbent path
+creator_00238	Sekkizhar	sekkizhar	""	""	""	Bootstrapped from incumbent path
+creator_00239	Kalhana	kalhana	""	""	""	Bootstrapped from incumbent path
+creator_00240	Kamban	kamban	""	""	""	Bootstrapped from incumbent path
+creator_00241	Omar Khayyam	omar khayyam	""	""	""	Bootstrapped from incumbent path
+creator_00242	Xin Qiji	xin qiji	""	""	""	Bootstrapped from incumbent path
+creator_00243	Li Qingzhao	li qingzhao	""	""	""	Bootstrapped from incumbent path
+creator_00244	Lu You	lu you	""	""	""	Bootstrapped from incumbent path
+creator_00245	Yehuda Halevi	yehuda halevi	""	""	""	Bootstrapped from incumbent path
+creator_00246	Usama ibn Munqidh	usama ibn munqidh	""	""	""	Bootstrapped from incumbent path
+creator_00247	Ibn Jubayr	ibn jubayr	""	""	""	Bootstrapped from incumbent path
+creator_00248	Sanai	sanai	""	""	""	Bootstrapped from incumbent path
+creator_00249	Heian court tale tradition	heian court tale tradition	""	""	""	Bootstrapped from incumbent path
+creator_00250	Basavanna, Akka Mahadevi, Allama Prabhu, and Virashaiva poets	basavanna akka mahadevi allama prabhu and virashaiva poets	""	""	""	Bootstrapped from incumbent path
+creator_00251	Old French beast-epic tradition	old french beast epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00252	Chretien de Troyes	chretien de troyes	""	""	""	Bootstrapped from incumbent path
+creator_00253	East Slavic epic tradition	east slavic epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00254	Tibetan oral epic tradition	tibetan oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00255	Medieval Welsh narrative tradition	medieval welsh narrative tradition	""	""	""	Bootstrapped from incumbent path
+creator_00256	Medieval Irish heroic narrative tradition	medieval irish heroic narrative tradition	""	""	""	Bootstrapped from incumbent path
+creator_00257	Arabic and transregional story-cycle tradition	arabic and transregional story cycle tradition	""	""	""	Bootstrapped from incumbent path
+creator_00258	Turkic oral epic tradition	turkic oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00259	Oghuz Turkic oral and manuscript tradition	oghuz turkic oral and manuscript tradition	""	""	""	Bootstrapped from incumbent path
+creator_00260	Armenian oral epic tradition	armenian oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00261	Oirat oral epic tradition	oirat oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00262	Buddhist narrative tradition	buddhist narrative tradition	""	""	""	Bootstrapped from incumbent path
+creator_00263	Wolfram von Eschenbach	wolfram von eschenbach	""	""	""	Bootstrapped from incumbent path
+creator_00264	Arabic popular epic tradition	arabic popular epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00265	Arabic oral epic tradition	arabic oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00266	Milarepa tradition	milarepa tradition	""	""	""	Bootstrapped from incumbent path
+creator_00267	Sanskrit story-cycle tradition	sanskrit story cycle tradition	""	""	""	Bootstrapped from incumbent path
+creator_00268	Japanese imperial anthology tradition	japanese imperial anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_00269	Gottfried von Strassburg and Tristan tradition	gottfried von strassburg and tristan tradition	""	""	""	Bootstrapped from incumbent path
+creator_00270	Kamo no Chomei	kamo no chomei	""	""	""	Bootstrapped from incumbent path
+creator_00271	Ibn Arabi	ibn arabi	""	""	""	Bootstrapped from incumbent path
+creator_00272	Snorri Sturluson	snorri sturluson	""	""	""	Bootstrapped from incumbent path
+creator_00273	Medieval Latin and Goliardic lyric tradition	medieval latin and goliardic lyric tradition	""	""	""	Bootstrapped from incumbent path
+creator_00274	Jalal al-Din Rumi	jalal al din rumi	""	""	""	Bootstrapped from incumbent path
+creator_00275	Icelandic saga tradition	icelandic saga tradition	""	""	""	Bootstrapped from incumbent path
+creator_00276	Mande oral epic tradition	mande oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00277	Mongolian court literary tradition	mongolian court literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00278	Snorri Sturluson; Old Norse historiographic tradition	snorri sturluson old norse historiographic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00279	Fujiwara no Teika and waka anthology tradition	fujiwara no teika and waka anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_00280	Parakramabahu II attribution	parakramabahu ii attribution	""	""	""	Bootstrapped from incumbent path
+creator_00281	Guillaume de Lorris and Jean de Meun	guillaume de lorris and jean de meun	""	""	""	Bootstrapped from incumbent path
+creator_00282	Wang Shifu	wang shifu	""	""	""	Bootstrapped from incumbent path
+creator_00283	Ibn al-Farid	ibn al farid	""	""	""	Bootstrapped from incumbent path
+creator_00284	Guan Hanqing	guan hanqing	""	""	""	Bootstrapped from incumbent path
+creator_00285	Ji Junxiang	ji junxiang	""	""	""	Bootstrapped from incumbent path
+creator_00286	Old French Arthurian prose tradition	old french arthurian prose tradition	""	""	""	Bootstrapped from incumbent path
+creator_00287	Occitan troubadour poets	occitan troubadour poets	""	""	""	Bootstrapped from incumbent path
+creator_00288	Old Norse legendary saga tradition	old norse legendary saga tradition	""	""	""	Bootstrapped from incumbent path
+creator_00289	Medieval Jewish mystical-literary tradition	medieval jewish mystical literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00290	Saadi	saadi	""	""	""	Bootstrapped from incumbent path
+creator_00291	Korean prose, myth, and legend tradition	korean prose myth and legend tradition	""	""	""	Bootstrapped from incumbent path
+creator_00292	Jnaneshwar	jnaneshwar	""	""	""	Bootstrapped from incumbent path
+creator_00293	Dante Alighieri	dante alighieri	""	""	""	Bootstrapped from incumbent path
+creator_00294	Marco Polo and Rustichello da Pisa tradition	marco polo and rustichello da pisa tradition	""	""	""	Bootstrapped from incumbent path
+creator_00295	Juan Ruiz	juan ruiz	""	""	""	Bootstrapped from incumbent path
+creator_00296	Yoshida Kenko	yoshida kenko	""	""	""	Bootstrapped from incumbent path
+creator_00297	Don Juan Manuel	don juan manuel	""	""	""	Bootstrapped from incumbent path
+creator_00298	Giovanni Boccaccio	giovanni boccaccio	""	""	""	Bootstrapped from incumbent path
+creator_00299	Francesco Petrarca	francesco petrarca	""	""	""	Bootstrapped from incumbent path
+creator_00300	Hafez	hafez	""	""	""	Bootstrapped from incumbent path
+creator_00301	Luo Guanzhong; Chinese historical fiction tradition	luo guanzhong chinese historical fiction tradition	""	""	""	Bootstrapped from incumbent path
+creator_00302	Japanese medieval narrative tradition	japanese medieval narrative tradition	""	""	""	Bootstrapped from incumbent path
+creator_00303	Shi Nai'an; Chinese vernacular fiction tradition	shi naian chinese vernacular fiction tradition	""	""	""	Bootstrapped from incumbent path
+creator_00304	Tibetan Buddhist literary tradition	tibetan buddhist literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00305	Ethiopian Ge'ez literary tradition	ethiopian geez literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00306	Obeyd Zakani	obeyd zakani	""	""	""	Bootstrapped from incumbent path
+creator_00307	Pearl poet	pearl poet	""	""	""	Bootstrapped from incumbent path
+creator_00308	Yunus Emre	yunus emre	""	""	""	Bootstrapped from incumbent path
+creator_00309	Japanese medieval warrior-tale tradition	japanese medieval warrior tale tradition	""	""	""	Bootstrapped from incumbent path
+creator_00310	Japanese medieval war chronicle tradition	japanese medieval war chronicle tradition	""	""	""	Bootstrapped from incumbent path
+creator_00311	Ibn Battuta	ibn battuta	""	""	""	Bootstrapped from incumbent path
+creator_00312	Gao Ming	gao ming	""	""	""	Bootstrapped from incumbent path
+creator_00313	Immanuel of Rome	immanuel of rome	""	""	""	Bootstrapped from incumbent path
+creator_00314	Thai Buddhist courtly tradition	thai buddhist courtly tradition	""	""	""	Bootstrapped from incumbent path
+creator_00315	Mpu Prapanca	mpu prapanca	""	""	""	Bootstrapped from incumbent path
+creator_00316	William Langland	william langland	""	""	""	Bootstrapped from incumbent path
+creator_00317	Anonymous Pearl Poet	anonymous pearl poet	""	""	""	Bootstrapped from incumbent path
+creator_00318	Geoffrey Chaucer	geoffrey chaucer	""	""	""	Bootstrapped from incumbent path
+creator_00319	Julian of Norwich	julian of norwich	""	""	""	Bootstrapped from incumbent path
+creator_00320	Christine de Pizan	christine de pizan	""	""	""	Bootstrapped from incumbent path
+creator_00321	Suleyman Celebi	suleyman celebi	""	""	""	Bootstrapped from incumbent path
+creator_00322	Margery Kempe	margery kempe	""	""	""	Bootstrapped from incumbent path
+creator_00323	Early Joseon court poetic tradition	early joseon court poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00324	Achi Maya dramatic tradition	achi maya dramatic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00325	Noh theater tradition	noh theater tradition	""	""	""	Bootstrapped from incumbent path
+creator_00326	English morality play tradition	english morality play tradition	""	""	""	Bootstrapped from incumbent path
+creator_00327	Classical Sinhala poetic tradition	classical sinhala poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00328	Jami	jami	""	""	""	Bootstrapped from incumbent path
+creator_00329	Zeami tradition	zeami tradition	""	""	""	Bootstrapped from incumbent path
+creator_00330	Sarala Dasa	sarala dasa	""	""	""	Bootstrapped from incumbent path
+creator_00331	Ali-Shir Nava'i	ali shir navai	""	""	""	Bootstrapped from incumbent path
+creator_00332	Francois Villon	francois villon	""	""	""	Bootstrapped from incumbent path
+creator_00333	Zeami	zeami	""	""	""	Bootstrapped from incumbent path
+creator_00334	Boru Chandidas	boru chandidas	""	""	""	Bootstrapped from incumbent path
+creator_00335	Vallabhadeva and Sanskrit anthology tradition	vallabhadeva and sanskrit anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_00336	Wakefield Master tradition	wakefield master tradition	""	""	""	Bootstrapped from incumbent path
+creator_00337	Matteo Maria Boiardo	matteo maria boiardo	""	""	""	Bootstrapped from incumbent path
+creator_00338	Thomas Malory	thomas malory	""	""	""	Bootstrapped from incumbent path
+creator_00339	Joanot Martorell	joanot martorell	""	""	""	Bootstrapped from incumbent path
+creator_00340	Diego de San Pedro	diego de san pedro	""	""	""	Bootstrapped from incumbent path
+creator_00341	Fernando de Rojas	fernando de rojas	""	""	""	Bootstrapped from incumbent path
+creator_00342	Kyrgyz oral epic tradition	kyrgyz oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00343	Swahili oral and written epic tradition	swahili oral and written epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00344	Molla	molla	""	""	""	Bootstrapped from incumbent path
+creator_00345	Iberian romance tradition	iberian romance tradition	""	""	""	Bootstrapped from incumbent path
+creator_00346	Erasmus	erasmus	""	""	""	Bootstrapped from incumbent path
+creator_00347	Ludovico Ariosto	ludovico ariosto	""	""	""	Bootstrapped from incumbent path
+creator_00348	Thomas More	thomas more	""	""	""	Bootstrapped from incumbent path
+creator_00349	Niccolo Machiavelli	niccolo machiavelli	""	""	""	Bootstrapped from incumbent path
+creator_00350	Baldassare Castiglione	baldassare castiglione	""	""	""	Bootstrapped from incumbent path
+creator_00351	Francois Rabelais	francois rabelais	""	""	""	Bootstrapped from incumbent path
+creator_00352	Fuzuli	fuzuli	""	""	""	Bootstrapped from incumbent path
+creator_00353	Malik Muhammad Jayasi	malik muhammad jayasi	""	""	""	Bootstrapped from incumbent path
+creator_00354	Alvar Nunez Cabeza de Vaca	alvar nunez cabeza de vaca	""	""	""	Bootstrapped from incumbent path
+creator_00355	Maurice Sceve	maurice sceve	""	""	""	Bootstrapped from incumbent path
+creator_00356	Church of England liturgical tradition	church of england liturgical tradition	""	""	""	Bootstrapped from incumbent path
+creator_00357	Thomas Cranmer	thomas cranmer	""	""	""	Bootstrapped from incumbent path
+creator_00358	Wu Cheng'en attribution; Chinese vernacular mythic tradition	wu chengen attribution chinese vernacular mythic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00359	Tulsidas	tulsidas	""	""	""	Bootstrapped from incumbent path
+creator_00360	Krishnadevaraya	krishnadevaraya	""	""	""	Bootstrapped from incumbent path
+creator_00361	Kaqchikel Maya manuscript tradition	kaqchikel maya manuscript tradition	""	""	""	Bootstrapped from incumbent path
+creator_00362	Philip Sidney	philip sidney	""	""	""	Bootstrapped from incumbent path
+creator_00363	Babur	babur	""	""	""	Bootstrapped from incumbent path
+creator_00364	Nahua song-poetry manuscript tradition	nahua song poetry manuscript tradition	""	""	""	Bootstrapped from incumbent path
+creator_00365	Nahua oral and manuscript tradition	nahua oral and manuscript tradition	""	""	""	Bootstrapped from incumbent path
+creator_00366	Lanling Xiaoxiao Sheng	lanling xiaoxiao sheng	""	""	""	Bootstrapped from incumbent path
+creator_00367	Sankardev	sankardev	""	""	""	Bootstrapped from incumbent path
+creator_00368	Allasani Peddana	allasani peddana	""	""	""	Bootstrapped from incumbent path
+creator_00369	Baki	baki	""	""	""	Bootstrapped from incumbent path
+creator_00370	Mihri Hatun	mihri hatun	""	""	""	Bootstrapped from incumbent path
+creator_00371	Hwang Jini	hwang jini	""	""	""	Bootstrapped from incumbent path
+creator_00372	Surdas	surdas	""	""	""	Bootstrapped from incumbent path
+creator_00373	Ming gods-and-demons novel tradition	ming gods and demons novel tradition	""	""	""	Bootstrapped from incumbent path
+creator_00374	K'iche' Maya textual tradition	kiche maya textual tradition	""	""	""	Bootstrapped from incumbent path
+creator_00375	Joachim du Bellay	joachim du bellay	""	""	""	Bootstrapped from incumbent path
+creator_00376	Marguerite de Navarre	marguerite de navarre	""	""	""	Bootstrapped from incumbent path
+creator_00377	Louise Labe	louise labe	""	""	""	Bootstrapped from incumbent path
+creator_00378	Benvenuto Cellini	benvenuto cellini	""	""	""	Bootstrapped from incumbent path
+creator_00379	Pierre de Ronsard	pierre de ronsard	""	""	""	Bootstrapped from incumbent path
+creator_00380	Gil Vicente	gil vicente	""	""	""	Bootstrapped from incumbent path
+creator_00381	Bernal Diaz del Castillo	bernal diaz del castillo	""	""	""	Bootstrapped from incumbent path
+creator_00382	Alonso de Ercilla	alonso de ercilla	""	""	""	Bootstrapped from incumbent path
+creator_00383	Luis de Camoes	luis de camoes	""	""	""	Bootstrapped from incumbent path
+creator_00384	Ezhuthachan	ezhuthachan	""	""	""	Bootstrapped from incumbent path
+creator_00385	Michel de Montaigne	michel de montaigne	""	""	""	Bootstrapped from incumbent path
+creator_00386	Jan Kochanowski	jan kochanowski	""	""	""	Bootstrapped from incumbent path
+creator_00387	Torquato Tasso	torquato tasso	""	""	""	Bootstrapped from incumbent path
+creator_00388	Christopher Marlowe	christopher marlowe	""	""	""	Bootstrapped from incumbent path
+creator_00389	Thomas Kyd	thomas kyd	""	""	""	Bootstrapped from incumbent path
+creator_00390	Edmund Spenser	edmund spenser	""	""	""	Bootstrapped from incumbent path
+creator_00391	William Shakespeare	william shakespeare	""	""	""	Bootstrapped from incumbent path
+creator_00392	Tang Xianzu	tang xianzu	""	""	""	Bootstrapped from incumbent path
+creator_00393	Korean pansori and fiction tradition	korean pansori and fiction tradition	""	""	""	Bootstrapped from incumbent path
+creator_00394	Francisco de Quevedo	francisco de quevedo	""	""	""	Bootstrapped from incumbent path
+creator_00395	Malay court and manuscript tradition	malay court and manuscript tradition	""	""	""	Bootstrapped from incumbent path
+creator_00396	Thai royal and literary tradition	thai royal and literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00397	Khmer literary and performance tradition	khmer literary and performance tradition	""	""	""	Bootstrapped from incumbent path
+creator_00398	Malay court chronicle tradition	malay court chronicle tradition	""	""	""	Bootstrapped from incumbent path
+creator_00399	Quechua dramatic tradition	quechua dramatic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00400	Thomas Nashe	thomas nashe	""	""	""	Bootstrapped from incumbent path
+creator_00401	Teresa of Avila	teresa of avila	""	""	""	Bootstrapped from incumbent path
+creator_00402	Sikh narrative and hagiographic tradition	sikh narrative and hagiographic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00403	San Juan de la Cruz (Saint John of the Cross)	san juan de la cruz saint john of cross	""	""	""	Bootstrapped from incumbent path
+creator_00404	Fray Luis de Leon	fray luis de leon	""	""	""	Bootstrapped from incumbent path
+creator_00405	Sikh Gurus and Sikh scriptural tradition	sikh gurus and sikh scriptural tradition	""	""	""	Bootstrapped from incumbent path
+creator_00406	Miguel de Cervantes	miguel de cervantes	""	""	""	Bootstrapped from incumbent path
+creator_00407	Ben Jonson	ben jonson	""	""	""	Bootstrapped from incumbent path
+creator_00408	Inca Garcilaso de la Vega	inca garcilaso de la vega	""	""	""	Bootstrapped from incumbent path
+creator_00409	Hebrew Bible and Christian biblical traditions	hebrew bible and christian biblical traditions	""	""	""	Bootstrapped from incumbent path
+creator_00410	Jewish and Christian scriptural traditions	jewish and christian scriptural traditions	""	""	""	Bootstrapped from incumbent path
+creator_00411	Lope de Vega	lope de vega	""	""	""	Bootstrapped from incumbent path
+creator_00412	John Webster	john webster	""	""	""	Bootstrapped from incumbent path
+creator_00413	Luis de Gongora	luis de gongora	""	""	""	Bootstrapped from incumbent path
+creator_00414	Felipe Guaman Poma de Ayala	felipe guaman poma de ayala	""	""	""	Bootstrapped from incumbent path
+creator_00415	Agrippa d'Aubigne	agrippa daubigne	""	""	""	Bootstrapped from incumbent path
+creator_00416	Tirso de Molina	tirso de molina	""	""	""	Bootstrapped from incumbent path
+creator_00417	John Ford	john ford	""	""	""	Bootstrapped from incumbent path
+creator_00418	Cyril Tourneur	cyril tourneur	""	""	""	Bootstrapped from incumbent path
+creator_00419	Feng Menglong	feng menglong	""	""	""	Bootstrapped from incumbent path
+creator_00420	Robert Burton	robert burton	""	""	""	Bootstrapped from incumbent path
+creator_00421	Thomas Middleton and William Rowley	thomas middleton and william rowley	""	""	""	Bootstrapped from incumbent path
+creator_00422	John Amos Comenius	john amos comenius	""	""	""	Bootstrapped from incumbent path
+creator_00423	George Herbert	george herbert	""	""	""	Bootstrapped from incumbent path
+creator_00424	Giambattista Basile	giambattista basile	""	""	""	Bootstrapped from incumbent path
+creator_00425	Pedro Calderon de la Barca	pedro calderon de la barca	""	""	""	Bootstrapped from incumbent path
+creator_00426	Pierre Corneille	pierre corneille	""	""	""	Bootstrapped from incumbent path
+creator_00427	Maria de Zayas	maria de zayas	""	""	""	Bootstrapped from incumbent path
+creator_00428	Alaol	alaol	""	""	""	Bootstrapped from incumbent path
+creator_00429	Quechua Andean religious narrative tradition; colonial-era compilation	quechua andean religious narrative tradition colonial era compilation	""	""	""	Bootstrapped from incumbent path
+creator_00430	Matsuo Basho	matsuo basho	""	""	""	Bootstrapped from incumbent path
+creator_00431	Evliya Celebi	evliya celebi	""	""	""	Bootstrapped from incumbent path
+creator_00432	Vitsentzos Kornaros	vitsentzos kornaros	""	""	""	Bootstrapped from incumbent path
+creator_00433	Andrew Marvell	andrew marvell	""	""	""	Bootstrapped from incumbent path
+creator_00434	Tukaram	tukaram	""	""	""	Bootstrapped from incumbent path
+creator_00435	John Donne	john donne	""	""	""	Bootstrapped from incumbent path
+creator_00436	Sor Juana Ines de la Cruz	sor juana ines de la cruz	""	""	""	Bootstrapped from incumbent path
+creator_00437	Kim Man-jung	kim man jung	""	""	""	Bootstrapped from incumbent path
+creator_00438	Heo Gyun; Korean fiction tradition	heo gyun korean fiction tradition	""	""	""	Bootstrapped from incumbent path
+creator_00439	Guillaume de Machaut	guillaume de machaut	""	""	""	Bootstrapped from incumbent path
+creator_00440	Francois de La Rochefoucauld	francois de la rochefoucauld	""	""	""	Bootstrapped from incumbent path
+creator_00441	Charles Perrault	charles perrault	""	""	""	Bootstrapped from incumbent path
+creator_00442	Anne Bradstreet	anne bradstreet	""	""	""	Bootstrapped from incumbent path
+creator_00443	Vemana	vemana	""	""	""	Bootstrapped from incumbent path
+creator_00444	Saib Tabrizi	saib tabrizi	""	""	""	Bootstrapped from incumbent path
+creator_00445	Lao literary tradition	lao literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00446	Joost van den Vondel	joost van den vondel	""	""	""	Bootstrapped from incumbent path
+creator_00447	Angelus Silesius	angelus silesius	""	""	""	Bootstrapped from incumbent path
+creator_00448	John Milton	john milton	""	""	""	Bootstrapped from incumbent path
+creator_00449	Samuel Butler	samuel butler	""	""	""	Bootstrapped from incumbent path
+creator_00450	Moliere	moliere	""	""	""	Bootstrapped from incumbent path
+creator_00451	Bihari Lal	bihari lal	""	""	""	Bootstrapped from incumbent path
+creator_00452	Margaret Cavendish	margaret cavendish	""	""	""	Bootstrapped from incumbent path
+creator_00453	Jean Racine	jean racine	""	""	""	Bootstrapped from incumbent path
+creator_00454	Jean de La Fontaine	jean de la fontaine	""	""	""	Bootstrapped from incumbent path
+creator_00455	Hans Jakob Christoffel von Grimmelshausen	hans jakob christoffel von grimmelshausen	""	""	""	Bootstrapped from incumbent path
+creator_00456	Cyrano de Bergerac	cyrano de bergerac	""	""	""	Bootstrapped from incumbent path
+creator_00457	Blaise Pascal	blaise pascal	""	""	""	Bootstrapped from incumbent path
+creator_00458	Avvakum Petrov	avvakum petrov	""	""	""	Bootstrapped from incumbent path
+creator_00459	Aphra Behn	aphra behn	""	""	""	Bootstrapped from incumbent path
+creator_00460	John Bunyan	john bunyan	""	""	""	Bootstrapped from incumbent path
+creator_00461	Madame de La Fayette	madame de la fayette	""	""	""	Bootstrapped from incumbent path
+creator_00462	John Dryden	john dryden	""	""	""	Bootstrapped from incumbent path
+creator_00463	Mary Rowlandson	mary rowlandson	""	""	""	Bootstrapped from incumbent path
+creator_00464	Ihara Saikaku	ihara saikaku	""	""	""	Bootstrapped from incumbent path
+creator_00465	Kim Pu-sik and Goryeo historiographic tradition	kim pu sik and goryeo historiographic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00466	Carlos de Siguenza y Gongora	carlos de siguenza y gongora	""	""	""	Bootstrapped from incumbent path
+creator_00467	Ahmad Khani	ahmad khani	""	""	""	Bootstrapped from incumbent path
+creator_00468	Kong Shangren	kong shangren	""	""	""	Bootstrapped from incumbent path
+creator_00469	Abdul-Qadir Bedil	abdul qadir bedil	""	""	""	Bootstrapped from incumbent path
+creator_00470	Chikamatsu Monzaemon	chikamatsu monzaemon	""	""	""	Bootstrapped from incumbent path
+creator_00471	Jonathan Swift	jonathan swift	""	""	""	Bootstrapped from incumbent path
+creator_00472	John Gay	john gay	""	""	""	Bootstrapped from incumbent path
+creator_00473	William Congreve	william congreve	""	""	""	Bootstrapped from incumbent path
+creator_00474	Thomas Otway	thomas otway	""	""	""	Bootstrapped from incumbent path
+creator_00475	Alexander Pope	alexander pope	""	""	""	Bootstrapped from incumbent path
+creator_00476	Alain-Rene Lesage	alain rene lesage	""	""	""	Bootstrapped from incumbent path
+creator_00477	Daniel Defoe	daniel defoe	""	""	""	Bootstrapped from incumbent path
+creator_00478	Ludvig Holberg	ludvig holberg	""	""	""	Bootstrapped from incumbent path
+creator_00479	Swahili epic tradition	swahili epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00480	Abbe Prevost	abbe prevost	""	""	""	Bootstrapped from incumbent path
+creator_00481	Samuel Richardson	samuel richardson	""	""	""	Bootstrapped from incumbent path
+creator_00482	Pu Songling	pu songling	""	""	""	Bootstrapped from incumbent path
+creator_00483	Henry Fielding	henry fielding	""	""	""	Bootstrapped from incumbent path
+creator_00484	Carlo Goldoni	carlo goldoni	""	""	""	Bootstrapped from incumbent path
+creator_00485	Voltaire	voltaire	""	""	""	Bootstrapped from incumbent path
+creator_00486	Takeda Izumo II, Miyoshi Shoraku, and Namiki Senryu	takeda izumo ii miyoshi shoraku and namiki senryu	""	""	""	Bootstrapped from incumbent path
+creator_00487	Yucatec Maya manuscript tradition	yucatec maya manuscript tradition	""	""	""	Bootstrapped from incumbent path
+creator_00488	Mir Taqi Mir	mir taqi mir	""	""	""	Bootstrapped from incumbent path
+creator_00489	Dang Tran Con and Doan Thi Diem tradition	dang tran con and doan thi diem tradition	""	""	""	Bootstrapped from incumbent path
+creator_00490	Yosa Buson	yosa buson	""	""	""	Bootstrapped from incumbent path
+creator_00491	Bulleh Shah	bulleh shah	""	""	""	Bootstrapped from incumbent path
+creator_00492	Sayat-Nova	sayat nova	""	""	""	Bootstrapped from incumbent path
+creator_00493	Nedim	nedim	""	""	""	Bootstrapped from incumbent path
+creator_00494	Shah Abdul Latif Bhittai	shah abdul latif bhittai	""	""	""	Bootstrapped from incumbent path
+creator_00495	Yucatec Maya poetic manuscript tradition	yucatec maya poetic manuscript tradition	""	""	""	Bootstrapped from incumbent path
+creator_00496	Charlotte Lennox	charlotte lennox	""	""	""	Bootstrapped from incumbent path
+creator_00497	Sulkhan-Saba Orbeliani	sulkhan saba orbeliani	""	""	""	Bootstrapped from incumbent path
+creator_00498	Tobias Smollett	tobias smollett	""	""	""	Bootstrapped from incumbent path
+creator_00499	Wu Jingzi	wu jingzi	""	""	""	Bootstrapped from incumbent path
+creator_00500	Kristijonas Donelaitis	kristijonas donelaitis	""	""	""	Bootstrapped from incumbent path
+creator_00501	Tibetan literary tradition	tibetan literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00502	Maya manuscript and testimony traditions	maya manuscript and testimony traditions	""	""	""	Bootstrapped from incumbent path
+creator_00503	Samuel Johnson	samuel johnson	""	""	""	Bootstrapped from incumbent path
+creator_00504	Laurence Sterne	laurence sterne	""	""	""	Bootstrapped from incumbent path
+creator_00505	Richard Brinsley Sheridan	richard brinsley sheridan	""	""	""	Bootstrapped from incumbent path
+creator_00506	Oliver Goldsmith	oliver goldsmith	""	""	""	Bootstrapped from incumbent path
+creator_00507	George Farquhar	george farquhar	""	""	""	Bootstrapped from incumbent path
+creator_00508	William Wycherley	william wycherley	""	""	""	Bootstrapped from incumbent path
+creator_00509	George Etherege	george etherege	""	""	""	Bootstrapped from incumbent path
+creator_00510	John Vanbrugh	john vanbrugh	""	""	""	Bootstrapped from incumbent path
+creator_00511	Thomas Gray	thomas gray	""	""	""	Bootstrapped from incumbent path
+creator_00512	John Wilmot, Earl of Rochester	john wilmot earl of rochester	""	""	""	Bootstrapped from incumbent path
+creator_00513	James Thomson	james thomson	""	""	""	Bootstrapped from incumbent path
+creator_00514	Lady Mary Wortley Montagu	lady mary wortley montagu	""	""	""	Bootstrapped from incumbent path
+creator_00515	Jean-Jacques Rousseau	jean jacques rousseau	""	""	""	Bootstrapped from incumbent path
+creator_00516	Denis Diderot	denis diderot	""	""	""	Bootstrapped from incumbent path
+creator_00517	Tang poetry anthology tradition	tang poetry anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_00518	Horace Walpole	horace walpole	""	""	""	Bootstrapped from incumbent path
+creator_00519	Waris Shah	waris shah	""	""	""	Bootstrapped from incumbent path
+creator_00520	Gotthold Ephraim Lessing	gotthold ephraim lessing	""	""	""	Bootstrapped from incumbent path
+creator_00521	Phillis Wheatley	phillis wheatley	""	""	""	Bootstrapped from incumbent path
+creator_00522	Johann Wolfgang von Goethe	johann wolfgang von goethe	""	""	""	Bootstrapped from incumbent path
+creator_00523	Ueda Akinari	ueda akinari	""	""	""	Bootstrapped from incumbent path
+creator_00524	Frances Burney	frances burney	""	""	""	Bootstrapped from incumbent path
+creator_00525	David Hume	david hume	""	""	""	Bootstrapped from incumbent path
+creator_00526	Nguyen Gia Thieu	nguyen gia thieu	""	""	""	Bootstrapped from incumbent path
+creator_00527	Pak Chi-won	pak chi won	""	""	""	Bootstrapped from incumbent path
+creator_00528	Friedrich Schiller	friedrich schiller	""	""	""	Bootstrapped from incumbent path
+creator_00529	Choderlos de Laclos	choderlos de laclos	""	""	""	Bootstrapped from incumbent path
+creator_00530	Vittorio Alfieri	vittorio alfieri	""	""	""	Bootstrapped from incumbent path
+creator_00531	Sheikh Galib	sheikh galib	""	""	""	Bootstrapped from incumbent path
+creator_00532	Pierre Beaumarchais	pierre beaumarchais	""	""	""	Bootstrapped from incumbent path
+creator_00533	Robert Burns	robert burns	""	""	""	Bootstrapped from incumbent path
+creator_00534	William Blake	william blake	""	""	""	Bootstrapped from incumbent path
+creator_00535	Olaudah Equiano	olaudah equiano	""	""	""	Bootstrapped from incumbent path
+creator_00536	Cao Xueqin	cao xueqin	""	""	""	Bootstrapped from incumbent path
+creator_00537	Gao E	gao e	""	""	""	Bootstrapped from incumbent path
+creator_00538	James Boswell	james boswell	""	""	""	Bootstrapped from incumbent path
+creator_00539	Ann Radcliffe	ann radcliffe	""	""	""	Bootstrapped from incumbent path
+creator_00540	Lady Hyegyeong	lady hyegyeong	""	""	""	Bootstrapped from incumbent path
+creator_00541	Matthew Lewis	matthew lewis	""	""	""	Bootstrapped from incumbent path
+creator_00542	Walther von der Vogelweide	walther von der vogelweide	""	""	""	Bootstrapped from incumbent path
+creator_00543	Friedrich Holderlin	friedrich holderlin	""	""	""	Bootstrapped from incumbent path
+creator_00544	William Wordsworth	william wordsworth	""	""	""	Bootstrapped from incumbent path
+creator_00545	Samuel Taylor Coleridge	samuel taylor coleridge	""	""	""	Bootstrapped from incumbent path
+creator_00546	Charles Brockden Brown	charles brockden brown	""	""	""	Bootstrapped from incumbent path
+creator_00547	Yoruba Ifa divination and priestly tradition	yoruba ifa divination and priestly tradition	""	""	""	Bootstrapped from incumbent path
+creator_00548	Ahmad Yasawi	ahmad yasawi	""	""	""	Bootstrapped from incumbent path
+creator_00549	Akan, Asante, Caribbean, and African diasporic storytelling traditions	akan asante caribbean and african diasporic storytelling traditions	""	""	""	Bootstrapped from incumbent path
+creator_00550	Maria Edgeworth	maria edgeworth	""	""	""	Bootstrapped from incumbent path
+creator_00551	Soninke oral epic tradition	soninke oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00552	Navajo (Dine) oral and ceremonial traditions	navajo dine oral and ceremonial traditions	""	""	""	Bootstrapped from incumbent path
+creator_00553	Songhay oral epic tradition	songhay oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00554	Tibetan and Inner Asian oral epic traditions	tibetan and inner asian oral epic traditions	""	""	""	Bootstrapped from incumbent path
+creator_00555	Pulaar oral epic tradition	pulaar oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00556	Soninke/Wagadu oral epic tradition	soninke wagadu oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00557	Haudenosaunee oral, political, and ceremonial traditions	haudenosaunee oral political and ceremonial traditions	""	""	""	Bootstrapped from incumbent path
+creator_00558	Yoruba oral poetic tradition	yoruba oral poetic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00559	Duala oral epic tradition	duala oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00560	Kanaka Maoli chant and genealogical tradition	kanaka maoli chant and genealogical tradition	""	""	""	Bootstrapped from incumbent path
+creator_00561	Mongo oral epic tradition	mongo oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00562	Romanian pastoral ballad tradition	romanian pastoral ballad tradition	""	""	""	Bootstrapped from incumbent path
+creator_00563	Fang-Beti oral epic tradition	fang beti oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00564	Nyanga oral epic tradition	nyanga oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00565	Yoruba praise-poetry traditions	yoruba praise poetry traditions	""	""	""	Bootstrapped from incumbent path
+creator_00566	Hausa storytelling tradition	hausa storytelling tradition	""	""	""	Bootstrapped from incumbent path
+creator_00567	Ugo Foscolo	ugo foscolo	""	""	""	Bootstrapped from incumbent path
+creator_00568	Great Lakes oral epic tradition	great lakes oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00569	Inuit and Arctic oral traditions	inuit and arctic oral traditions	""	""	""	Bootstrapped from incumbent path
+creator_00570	Novalis	novalis	""	""	""	Bootstrapped from incumbent path
+creator_00571	Guido Cavalcanti	guido cavalcanti	""	""	""	Bootstrapped from incumbent path
+creator_00572	Mir Amman	mir amman	""	""	""	Bootstrapped from incumbent path
+creator_00573	Giovanni Verga	giovanni verga	""	""	""	Bootstrapped from incumbent path
+creator_00574	Giosue Carducci	giosue carducci	""	""	""	Bootstrapped from incumbent path
+creator_00575	Jan Potocki	jan potocki	""	""	""	Bootstrapped from incumbent path
+creator_00576	Emilia Pardo Bazan	emilia pardo bazan	""	""	""	Bootstrapped from incumbent path
+creator_00577	Alfred de Vigny	alfred de vigny	""	""	""	Bootstrapped from incumbent path
+creator_00578	Alphonse de Lamartine	alphonse de lamartine	""	""	""	Bootstrapped from incumbent path
+creator_00579	Montesquieu	montesquieu	""	""	""	Bootstrapped from incumbent path
+creator_00580	Germaine de Stael	germaine de stael	""	""	""	Bootstrapped from incumbent path
+creator_00581	Alfred de Musset	alfred de musset	""	""	""	Bootstrapped from incumbent path
+creator_00582	Heinrich von Kleist	heinrich von kleist	""	""	""	Bootstrapped from incumbent path
+creator_00583	Shen Fu	shen fu	""	""	""	Bootstrapped from incumbent path
+creator_00584	Theophile Gautier	theophile gautier	""	""	""	Bootstrapped from incumbent path
+creator_00585	Francois-Rene de Chateaubriand	francois rene de chateaubriand	""	""	""	Bootstrapped from incumbent path
+creator_00586	Percy Bysshe Shelley	percy bysshe shelley	""	""	""	Bootstrapped from incumbent path
+creator_00587	Annette von Droste-Hulshoff	annette von droste hulshoff	""	""	""	Bootstrapped from incumbent path
+creator_00588	George Sand	george sand	""	""	""	Bootstrapped from incumbent path
+creator_00589	Pierre de Marivaux	pierre de marivaux	""	""	""	Bootstrapped from incumbent path
+creator_00590	Jane Austen	jane austen	""	""	""	Bootstrapped from incumbent path
+creator_00591	Jacob Grimm; Wilhelm Grimm; German folktale informants and editors	jacob grimm wilhelm grimm german folktale informants and editors	""	""	""	Bootstrapped from incumbent path
+creator_00592	Walter Scott	walter scott	""	""	""	Bootstrapped from incumbent path
+creator_00593	Paul Verlaine	paul verlaine	""	""	""	Bootstrapped from incumbent path
+creator_00594	Kyokutei Bakin	kyokutei bakin	""	""	""	Bootstrapped from incumbent path
+creator_00595	Gottfried Keller	gottfried keller	""	""	""	Bootstrapped from incumbent path
+creator_00596	Tristan Corbiere	tristan corbiere	""	""	""	Bootstrapped from incumbent path
+creator_00597	John Keats	john keats	""	""	""	Bootstrapped from incumbent path
+creator_00598	Benjamin Constant	benjamin constant	""	""	""	Bootstrapped from incumbent path
+creator_00599	Jose Joaquin Fernandez de Lizardi	jose joaquin fernandez de lizardi	""	""	""	Bootstrapped from incumbent path
+creator_00600	E. T. A. Hoffmann	e t hoffmann	""	""	""	Bootstrapped from incumbent path
+creator_00601	Carl Michael Bellman	carl michael bellman	""	""	""	Bootstrapped from incumbent path
+creator_00602	Mary Shelley	mary shelley	""	""	""	Bootstrapped from incumbent path
+creator_00603	Giacomo Leopardi	giacomo leopardi	""	""	""	Bootstrapped from incumbent path
+creator_00604	Mary Wollstonecraft	mary wollstonecraft	""	""	""	Bootstrapped from incumbent path
+creator_00605	Lord Byron	lord byron	""	""	""	Bootstrapped from incumbent path
+creator_00606	Charles Maturin	charles maturin	""	""	""	Bootstrapped from incumbent path
+creator_00607	Washington Irving	washington irving	""	""	""	Bootstrapped from incumbent path
+creator_00608	Benjamin Franklin	benjamin franklin	""	""	""	Bootstrapped from incumbent path
+creator_00609	Thomas De Quincey	thomas de quincey	""	""	""	Bootstrapped from incumbent path
+creator_00610	Sunthorn Phu	sunthorn phu	""	""	""	Bootstrapped from incumbent path
+creator_00611	Adam Mickiewicz	adam mickiewicz	""	""	""	Bootstrapped from incumbent path
+creator_00612	James Hogg	james hogg	""	""	""	Bootstrapped from incumbent path
+creator_00613	Charlotte Smith	charlotte smith	""	""	""	Bootstrapped from incumbent path
+creator_00614	Alexander Pushkin	alexander pushkin	""	""	""	Bootstrapped from incumbent path
+creator_00615	James Fenimore Cooper	james fenimore cooper	""	""	""	Bootstrapped from incumbent path
+creator_00616	Heinrich Heine	heinrich heine	""	""	""	Bootstrapped from incumbent path
+creator_00617	Li Ruzhen	li ruzhen	""	""	""	Bootstrapped from incumbent path
+creator_00618	Alessandro Manzoni	alessandro manzoni	""	""	""	Bootstrapped from incumbent path
+creator_00619	Burmese court chronicle tradition	burmese court chronicle tradition	""	""	""	Bootstrapped from incumbent path
+creator_00620	John Galt	john galt	""	""	""	Bootstrapped from incumbent path
+creator_00621	Elizabeth Gaskell	elizabeth gaskell	""	""	""	Bootstrapped from incumbent path
+creator_00622	Edgar Allan Poe	edgar allan poe	""	""	""	Bootstrapped from incumbent path
+creator_00623	Stendhal	stendhal	""	""	""	Bootstrapped from incumbent path
+creator_00624	Victor Hugo	victor hugo	""	""	""	Bootstrapped from incumbent path
+creator_00625	William Apess	william apess	""	""	""	Bootstrapped from incumbent path
+creator_00626	Honore de Balzac	honore de balzac	""	""	""	Bootstrapped from incumbent path
+creator_00627	Charles Dickens	charles dickens	""	""	""	Bootstrapped from incumbent path
+creator_00628	Elias Lonnrot; Finnish-Karelian oral poetry tradition	elias lonnrot finnish karelian oral poetry tradition	""	""	""	Bootstrapped from incumbent path
+creator_00629	Georg Buchner	georg buchner	""	""	""	Bootstrapped from incumbent path
+creator_00630	Karel Hynek Macha	karel hynek macha	""	""	""	Bootstrapped from incumbent path
+creator_00631	Nikolai Gogol	nikolai gogol	""	""	""	Bootstrapped from incumbent path
+creator_00632	Ralph Waldo Emerson	ralph waldo emerson	""	""	""	Bootstrapped from incumbent path
+creator_00633	Matthew Arnold	matthew arnold	""	""	""	Bootstrapped from incumbent path
+creator_00634	Algernon Charles Swinburne	algernon charles swinburne	""	""	""	Bootstrapped from incumbent path
+creator_00635	Francisco Balagtas	francisco balagtas	""	""	""	Bootstrapped from incumbent path
+creator_00636	Dante Gabriel Rossetti	dante gabriel rossetti	""	""	""	Bootstrapped from incumbent path
+creator_00637	Mikhail Lermontov	mikhail lermontov	""	""	""	Bootstrapped from incumbent path
+creator_00638	Taras Shevchenko	taras shevchenko	""	""	""	Bootstrapped from incumbent path
+creator_00639	Gertrudis Gomez de Avellaneda	gertrudis gomez de avellaneda	""	""	""	Bootstrapped from incumbent path
+creator_00640	Margaret Fuller	margaret fuller	""	""	""	Bootstrapped from incumbent path
+creator_00641	Anthony Trollope	anthony trollope	""	""	""	Bootstrapped from incumbent path
+creator_00642	Alexandre Dumas	alexandre dumas	""	""	""	Bootstrapped from incumbent path
+creator_00643	Domingo Faustino Sarmiento	domingo faustino sarmiento	""	""	""	Bootstrapped from incumbent path
+creator_00644	Gerard Manley Hopkins	gerard manley hopkins	""	""	""	Bootstrapped from incumbent path
+creator_00645	Frederick Douglass	frederick douglass	""	""	""	Bootstrapped from incumbent path
+creator_00646	Harriet Martineau	harriet martineau	""	""	""	Bootstrapped from incumbent path
+creator_00647	Edward Lear	edward lear	""	""	""	Bootstrapped from incumbent path
+creator_00648	Alexander Griboyedov	alexander griboyedov	""	""	""	Bootstrapped from incumbent path
+creator_00649	Charlotte Bronte	charlotte bronte	""	""	""	Bootstrapped from incumbent path
+creator_00650	Emily Bronte	emily bronte	""	""	""	Bootstrapped from incumbent path
+creator_00651	Petar II Petrovic-Njegos	petar ii petrovic njegos	""	""	""	Bootstrapped from incumbent path
+creator_00652	William Makepeace Thackeray	william makepeace thackeray	""	""	""	Bootstrapped from incumbent path
+creator_00653	Anne Bronte	anne bronte	""	""	""	Bootstrapped from incumbent path
+creator_00654	John Greenleaf Whittier	john greenleaf whittier	""	""	""	Bootstrapped from incumbent path
+creator_00655	Henry Wadsworth Longfellow	henry wadsworth longfellow	""	""	""	Bootstrapped from incumbent path
+creator_00656	William Cullen Bryant	william cullen bryant	""	""	""	Bootstrapped from incumbent path
+creator_00657	Paul Laurence Dunbar	paul laurence dunbar	""	""	""	Bootstrapped from incumbent path
+creator_00658	Munshi Abdullah	munshi abdullah	""	""	""	Bootstrapped from incumbent path
+creator_00659	Emily Dickinson	emily dickinson	""	""	""	Bootstrapped from incumbent path
+creator_00660	Thai oral and court literary tradition	thai oral and court literary tradition	""	""	""	Bootstrapped from incumbent path
+creator_00661	Mirza Ghalib	mirza ghalib	""	""	""	Bootstrapped from incumbent path
+creator_00662	Anton Chekhov	anton chekhov	""	""	""	Bootstrapped from incumbent path
+creator_00663	Sayyid Abdallah bin Ali bin Nasir	sayyid abdallah bin ali bin nasir	""	""	""	Bootstrapped from incumbent path
+creator_00664	Hans Christian Andersen	hans christian andersen	""	""	""	Bootstrapped from incumbent path
+creator_00665	Korean pansori and prose tradition	korean pansori and prose tradition	""	""	""	Bootstrapped from incumbent path
+creator_00666	Nguyen Dinh Chieu	nguyen dinh chieu	""	""	""	Bootstrapped from incumbent path
+creator_00667	Ioannis Makriyannis	ioannis makriyannis	""	""	""	Bootstrapped from incumbent path
+creator_00668	George Gissing	george gissing	""	""	""	Bootstrapped from incumbent path
+creator_00669	Gustavo Adolfo Becquer	gustavo adolfo becquer	""	""	""	Bootstrapped from incumbent path
+creator_00670	Kobayashi Issa	kobayashi issa	""	""	""	Bootstrapped from incumbent path
+creator_00671	Masaoka Shiki	masaoka shiki	""	""	""	Bootstrapped from incumbent path
+creator_00672	Juliusz Slowacki	juliusz slowacki	""	""	""	Bootstrapped from incumbent path
+creator_00673	Cyprian Norwid	cyprian norwid	""	""	""	Bootstrapped from incumbent path
+creator_00674	Robert Browning	robert browning	""	""	""	Bootstrapped from incumbent path
+creator_00675	Mihai Eminescu	mihai eminescu	""	""	""	Bootstrapped from incumbent path
+creator_00676	Alfred Tennyson	alfred tennyson	""	""	""	Bootstrapped from incumbent path
+creator_00677	Abai Qunanbaiuly	abai qunanbaiuly	""	""	""	Bootstrapped from incumbent path
+creator_00678	Stephane Mallarme	stephane mallarme	""	""	""	Bootstrapped from incumbent path
+creator_00679	Guy de Maupassant	guy de maupassant	""	""	""	Bootstrapped from incumbent path
+creator_00680	Ho Xuan Huong	ho xuan huong	""	""	""	Bootstrapped from incumbent path
+creator_00681	Shabkar Tsokdruk Rangdrol	shabkar tsokdruk rangdrol	""	""	""	Bootstrapped from incumbent path
+creator_00682	Giuseppe Gioachino Belli	giuseppe gioachino belli	""	""	""	Bootstrapped from incumbent path
+creator_00683	Nathaniel Hawthorne	nathaniel hawthorne	""	""	""	Bootstrapped from incumbent path
+creator_00684	Nguyen Du	nguyen du	""	""	""	Bootstrapped from incumbent path
+creator_00685	Khmer narrative tradition	khmer narrative tradition	""	""	""	Bootstrapped from incumbent path
+creator_00686	Herman Melville	herman melville	""	""	""	Bootstrapped from incumbent path
+creator_00687	Jose Marmol	jose marmol	""	""	""	Bootstrapped from incumbent path
+creator_00688	Ivan Turgenev	ivan turgenev	""	""	""	Bootstrapped from incumbent path
+creator_00689	George Meredith	george meredith	""	""	""	Bootstrapped from incumbent path
+creator_00690	Harriet Beecher Stowe	harriet beecher stowe	""	""	""	Bootstrapped from incumbent path
+creator_00691	Gerard de Nerval	gerard de nerval	""	""	""	Bootstrapped from incumbent path
+creator_00692	William Wells Brown	william wells brown	""	""	""	Bootstrapped from incumbent path
+creator_00693	Henry David Thoreau	henry david thoreau	""	""	""	Bootstrapped from incumbent path
+creator_00694	Walt Whitman	walt whitman	""	""	""	Bootstrapped from incumbent path
+creator_00695	Nikolai Chernyshevsky	nikolai chernyshevsky	""	""	""	Bootstrapped from incumbent path
+creator_00696	Ahmad Faris al-Shidyaq	ahmad faris al shidyaq	""	""	""	Bootstrapped from incumbent path
+creator_00697	Gustave Flaubert	gustave flaubert	""	""	""	Bootstrapped from incumbent path
+creator_00698	Elizabeth Barrett Browning	elizabeth barrett browning	""	""	""	Bootstrapped from incumbent path
+creator_00699	Charles Baudelaire	charles baudelaire	""	""	""	Bootstrapped from incumbent path
+creator_00700	Estonian epic tradition	estonian epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_00701	Jose de Alencar	jose de alencar	""	""	""	Bootstrapped from incumbent path
+creator_00702	Walter Pater	walter pater	""	""	""	Bootstrapped from incumbent path
+creator_00703	Mwana Kupona binti Msham	mwana kupona binti msham	""	""	""	Bootstrapped from incumbent path
+creator_00704	Khachatur Abovian	khachatur abovian	""	""	""	Bootstrapped from incumbent path
+creator_00705	Ivan Goncharov	ivan goncharov	""	""	""	Bootstrapped from incumbent path
+creator_00706	Wilkie Collins	wilkie collins	""	""	""	Bootstrapped from incumbent path
+creator_00707	Harriet E. Wilson	harriet e wilson	""	""	""	Bootstrapped from incumbent path
+creator_00708	Alexander Ostrovsky	alexander ostrovsky	""	""	""	Bootstrapped from incumbent path
+creator_00709	George Eliot	george eliot	""	""	""	Bootstrapped from incumbent path
+creator_00710	Leo Tolstoy	leo tolstoy	""	""	""	Bootstrapped from incumbent path
+creator_00711	Multatuli	multatuli	""	""	""	Bootstrapped from incumbent path
+creator_00712	Michael Madhusudan Dutt	michael madhusudan dutt	""	""	""	Bootstrapped from incumbent path
+creator_00713	Imre Madach	imre madach	""	""	""	Bootstrapped from incumbent path
+creator_00714	Harriet Jacobs	harriet jacobs	""	""	""	Bootstrapped from incumbent path
+creator_00715	Christina Rossetti	christina rossetti	""	""	""	Bootstrapped from incumbent path
+creator_00716	Rosalia de Castro	rosalia de castro	""	""	""	Bootstrapped from incumbent path
+creator_00717	Vladimir Nabokov	vladimir nabokov	""	""	""	Bootstrapped from incumbent path
+creator_00718	Jules Verne	jules verne	""	""	""	Bootstrapped from incumbent path
+creator_00719	Fyodor Dostoevsky	fyodor dostoevsky	""	""	""	Bootstrapped from incumbent path
+creator_00720	Bankim Chandra Chatterjee	bankim chandra chatterjee	""	""	""	Bootstrapped from incumbent path
+creator_00721	Lewis Carroll	lewis carroll	""	""	""	Bootstrapped from incumbent path
+creator_00722	Nikolai Leskov	nikolai leskov	""	""	""	Bootstrapped from incumbent path
+creator_00723	Henrik Ibsen	henrik ibsen	""	""	""	Bootstrapped from incumbent path
+creator_00724	Bankim Chandra Chattopadhyay	bankim chandra chattopadhyay	""	""	""	Bootstrapped from incumbent path
+creator_00725	Fyodor Sologub	fyodor sologub	""	""	""	Bootstrapped from incumbent path
+creator_00726	Jorge Isaacs	jorge isaacs	""	""	""	Bootstrapped from incumbent path
+creator_00727	Louisa May Alcott	louisa may alcott	""	""	""	Bootstrapped from incumbent path
+creator_00728	Lautreamont	lautreamont	""	""	""	Bootstrapped from incumbent path
+creator_00729	Deputy Nazir Ahmad	deputy nazir ahmad	""	""	""	Bootstrapped from incumbent path
+creator_00730	Aleksis Kivi	aleksis kivi	""	""	""	Bootstrapped from incumbent path
+creator_00731	Ivan Bunin	ivan bunin	""	""	""	Bootstrapped from incumbent path
+creator_00732	George MacDonald	george macdonald	""	""	""	Bootstrapped from incumbent path
+creator_00733	Arthur Rimbaud	arthur rimbaud	""	""	""	Bootstrapped from incumbent path
+creator_00734	Sheridan Le Fanu	sheridan le fanu	""	""	""	Bootstrapped from incumbent path
+creator_00735	Jose Hernandez	jose hernandez	""	""	""	Bootstrapped from incumbent path
+creator_00736	Ricardo Palma	ricardo palma	""	""	""	Bootstrapped from incumbent path
+creator_00737	Visconde de Taunay	visconde de taunay	""	""	""	Bootstrapped from incumbent path
+creator_00738	Juan Valera	juan valera	""	""	""	Bootstrapped from incumbent path
+creator_00739	Eca de Queiros	eca de queiros	""	""	""	Bootstrapped from incumbent path
+creator_00740	Namik Kemal	namik kemal	""	""	""	Bootstrapped from incumbent path
+creator_00741	Anna Sewell	anna sewell	""	""	""	Bootstrapped from incumbent path
+creator_00742	Emile Zola	emile zola	""	""	""	Bootstrapped from incumbent path
+creator_00743	Ratan Nath Sarshar	ratan nath sarshar	""	""	""	Bootstrapped from incumbent path
+creator_00744	Mendele Mocher Sforim	mendele mocher sforim	""	""	""	Bootstrapped from incumbent path
+creator_00745	Henry James	henry james	""	""	""	Bootstrapped from incumbent path
+creator_00746	Fyodor Dostoyevsky	fyodor dostoyevsky	""	""	""	Bootstrapped from incumbent path
+creator_00747	Mayuram Vedanayagam Pillai	mayuram vedanayagam pillai	""	""	""	Bootstrapped from incumbent path
+creator_00748	Jens Peter Jacobsen	jens peter jacobsen	""	""	""	Bootstrapped from incumbent path
+creator_00749	Raffi	raffi	""	""	""	Bootstrapped from incumbent path
+creator_00750	Mikhail Saltykov-Shchedrin	mikhail saltykov shchedrin	""	""	""	Bootstrapped from incumbent path
+creator_00751	William Dean Howells	william dean howells	""	""	""	Bootstrapped from incumbent path
+creator_00752	Johanna Spyri	johanna spyri	""	""	""	Bootstrapped from incumbent path
+creator_00753	Machado de Assis	machado de assis	""	""	""	Bootstrapped from incumbent path
+creator_00754	Bharatendu Harishchandra	bharatendu harishchandra	""	""	""	Bootstrapped from incumbent path
+creator_00755	Cirilo Villaverde	cirilo villaverde	""	""	""	Bootstrapped from incumbent path
+creator_00756	Jose Marti	jose marti	""	""	""	Bootstrapped from incumbent path
+creator_00757	Sarah Winnemucca Hopkins	sarah winnemucca hopkins	""	""	""	Bootstrapped from incumbent path
+creator_00758	Carlo Collodi	carlo collodi	""	""	""	Bootstrapped from incumbent path
+creator_00759	Robert Louis Stevenson	robert louis stevenson	""	""	""	Bootstrapped from incumbent path
+creator_00760	Olive Schreiner	olive schreiner	""	""	""	Bootstrapped from incumbent path
+creator_00761	Mark Twain	mark twain	""	""	""	Bootstrapped from incumbent path
+creator_00762	Edwin A. Abbott	edwin abbott	""	""	""	Bootstrapped from incumbent path
+creator_00763	Leopoldo Alas	leopoldo alas	""	""	""	Bootstrapped from incumbent path
+creator_00764	J.-K. Huysmans	j k huysmans	""	""	""	Bootstrapped from incumbent path
+creator_00765	H. Rider Haggard	h rider haggard	""	""	""	Bootstrapped from incumbent path
+creator_00766	Benito Perez Galdos	benito perez galdos	""	""	""	Bootstrapped from incumbent path
+creator_00767	Thomas Hardy	thomas hardy	""	""	""	Bootstrapped from incumbent path
+creator_00768	Mikhail Zoshchenko	mikhail zoshchenko	""	""	""	Bootstrapped from incumbent path
+creator_00769	Jose Rizal	jose rizal	""	""	""	Bootstrapped from incumbent path
+creator_00770	Govardhanram Tripathi	govardhanram tripathi	""	""	""	Bootstrapped from incumbent path
+creator_00771	Futabatei Shimei	futabatei shimei	""	""	""	Bootstrapped from incumbent path
+creator_00772	August Strindberg	august strindberg	""	""	""	Bootstrapped from incumbent path
+creator_00773	Vazha-Pshavela	vazha pshavela	""	""	""	Bootstrapped from incumbent path
+creator_00774	Ruben Dario	ruben dario	""	""	""	Bootstrapped from incumbent path
+creator_00775	Devaki Nandan Khatri	devaki nandan khatri	""	""	""	Bootstrapped from incumbent path
+creator_00776	Andrejs Pumpurs	andrejs pumpurs	""	""	""	Bootstrapped from incumbent path
+creator_00777	Edward Bellamy	edward bellamy	""	""	""	Bootstrapped from incumbent path
+creator_00778	Camilla Collett	camilla collett	""	""	""	Bootstrapped from incumbent path
+creator_00779	Ambrose Bierce	ambrose bierce	""	""	""	Bootstrapped from incumbent path
+creator_00780	Clorinda Matto de Turner	clorinda matto de turner	""	""	""	Bootstrapped from incumbent path
+creator_00781	O. Chandu Menon	o chandu menon	""	""	""	Bootstrapped from incumbent path
+creator_00782	Herman Bang	herman bang	""	""	""	Bootstrapped from incumbent path
+creator_00783	Knut Hamsun	knut hamsun	""	""	""	Bootstrapped from incumbent path
+creator_00784	William Morris	william morris	""	""	""	Bootstrapped from incumbent path
+creator_00785	Mori Ogai	mori ogai	""	""	""	Bootstrapped from incumbent path
+creator_00786	Boleslaw Prus	boleslaw prus	""	""	""	Bootstrapped from incumbent path
+creator_00787	Oscar Wilde	oscar wilde	""	""	""	Bootstrapped from incumbent path
+creator_00788	Aluisio Azevedo	aluisio azevedo	""	""	""	Bootstrapped from incumbent path
+creator_00789	Selma Lagerlof	selma lagerlof	""	""	""	Bootstrapped from incumbent path
+creator_00790	Sophia Alice Callahan	sophia alice callahan	""	""	""	Bootstrapped from incumbent path
+creator_00791	Gurajada Apparao	gurajada apparao	""	""	""	Bootstrapped from incumbent path
+creator_00792	Arthur Conan Doyle	arthur conan doyle	""	""	""	Bootstrapped from incumbent path
+creator_00793	Han Bangqing	han bangqing	""	""	""	Bootstrapped from incumbent path
+creator_00794	Charlotte Perkins Gilman	charlotte perkins gilman	""	""	""	Bootstrapped from incumbent path
+creator_00795	Frances E. W. Harper	frances e w harper	""	""	""	Bootstrapped from incumbent path
+creator_00796	B. R. Rajam Iyer	b r rajam iyer	""	""	""	Bootstrapped from incumbent path
+creator_00797	Joseph Nicolar	joseph nicolar	""	""	""	Bootstrapped from incumbent path
+creator_00798	Rajanikanta Bordoloi	rajanikanta bordoloi	""	""	""	Bootstrapped from incumbent path
+creator_00799	Sholem Aleichem	sholem aleichem	""	""	""	Bootstrapped from incumbent path
+creator_00800	Rudyard Kipling	rudyard kipling	""	""	""	Bootstrapped from incumbent path
+creator_00801	Ivan Vazov	ivan vazov	""	""	""	Bootstrapped from incumbent path
+creator_00802	Anthony Hope	anthony hope	""	""	""	Bootstrapped from incumbent path
+creator_00803	Aleko Konstantinov	aleko konstantinov	""	""	""	Bootstrapped from incumbent path
+creator_00804	Adolfo Caminha	adolfo caminha	""	""	""	Bootstrapped from incumbent path
+creator_00805	Theodor Fontane	theodor fontane	""	""	""	Bootstrapped from incumbent path
+creator_00806	Higuchi Ichiyo	higuchi ichiyo	""	""	""	Bootstrapped from incumbent path
+creator_00807	Stephen Crane	stephen crane	""	""	""	Bootstrapped from incumbent path
+creator_00808	H. G. Wells	h g wells	""	""	""	Bootstrapped from incumbent path
+creator_00809	Sarah Orne Jewett	sarah orne jewett	""	""	""	Bootstrapped from incumbent path
+creator_00810	Alfred Jarry	alfred jarry	""	""	""	Bootstrapped from incumbent path
+creator_00811	Bram Stoker	bram stoker	""	""	""	Bootstrapped from incumbent path
+creator_00812	Fakir Mohan Senapati	fakir mohan senapati	""	""	""	Bootstrapped from incumbent path
+creator_00813	Italo Svevo	italo svevo	""	""	""	Bootstrapped from incumbent path
+creator_00814	Henrik Pontoppidan	henrik pontoppidan	""	""	""	Bootstrapped from incumbent path
+creator_00815	Joseph Conrad	joseph conrad	""	""	""	Bootstrapped from incumbent path
+creator_00816	Kate Chopin	kate chopin	""	""	""	Bootstrapped from incumbent path
+creator_00817	Mirza Hadi Ruswa	mirza hadi ruswa	""	""	""	Bootstrapped from incumbent path
+creator_00818	Bjornstjerne Bjornson	bjornstjerne bjornson	""	""	""	Bootstrapped from incumbent path
+creator_00819	Simon Pokagon	simon pokagon	""	""	""	Bootstrapped from incumbent path
+creator_00820	Charles W. Chesnutt	charles w chesnutt	""	""	""	Bootstrapped from incumbent path
+creator_00821	Jose Enrique Rodo	jose enrique rodo	""	""	""	Bootstrapped from incumbent path
+creator_00822	Luigi Pirandello	luigi pirandello	""	""	""	Bootstrapped from incumbent path
+creator_00823	Theodore Dreiser	theodore dreiser	""	""	""	Bootstrapped from incumbent path
+creator_00824	Alexander Kielland	alexander kielland	""	""	""	Bootstrapped from incumbent path
+creator_00825	L. Frank Baum	l frank baum	""	""	""	Bootstrapped from incumbent path
+creator_00826	Giovanni Pascoli	giovanni pascoli	""	""	""	Bootstrapped from incumbent path
+creator_00827	Thomas Mann	thomas mann	""	""	""	Bootstrapped from incumbent path
+creator_00828	Dino Campana	dino campana	""	""	""	Bootstrapped from incumbent path
+creator_00829	Tommaso Landolfi	tommaso landolfi	""	""	""	Bootstrapped from incumbent path
+creator_00830	Zitkala-Sa	zitkala sa	""	""	""	Bootstrapped from incumbent path
+creator_00831	Umberto Saba	umberto saba	""	""	""	Bootstrapped from incumbent path
+creator_00832	Grazia Deledda	grazia deledda	""	""	""	Bootstrapped from incumbent path
+creator_00833	Eugenio Montale	eugenio montale	""	""	""	Bootstrapped from incumbent path
+creator_00834	Giuseppe Ungaretti	giuseppe ungaretti	""	""	""	Bootstrapped from incumbent path
+creator_00835	Camilo Castelo Branco	camilo castelo branco	""	""	""	Bootstrapped from incumbent path
+creator_00836	Sibilla Aleramo	sibilla aleramo	""	""	""	Bootstrapped from incumbent path
+creator_00837	Antonio Tabucchi	antonio tabucchi	""	""	""	Bootstrapped from incumbent path
+creator_00838	Euclides da Cunha	euclides da cunha	""	""	""	Bootstrapped from incumbent path
+creator_00839	Leonardo Sciascia	leonardo sciascia	""	""	""	Bootstrapped from incumbent path
+creator_00840	Primo Levi	primo levi	""	""	""	Bootstrapped from incumbent path
+creator_00841	Cesare Parese	cesare parese	""	""	""	Bootstrapped from incumbent path
+creator_00842	E. Nesbit	e nesbit	""	""	""	Bootstrapped from incumbent path
+creator_00843	Dario Fo	dario fo	""	""	""	Bootstrapped from incumbent path
+creator_00844	Frank Norris	frank norris	""	""	""	Bootstrapped from incumbent path
+creator_00845	W. E. B. Du Bois	w e b du bois	""	""	""	Bootstrapped from incumbent path
+creator_00846	Rabindranath Tagore	rabindranath tagore	""	""	""	Bootstrapped from incumbent path
+creator_00847	Alexandros Papadiamantis	alexandros papadiamantis	""	""	""	Bootstrapped from incumbent path
+creator_00848	Liu E	liu e	""	""	""	Bootstrapped from incumbent path
+creator_00849	Miguel de Unamuno	miguel de unamuno	""	""	""	Bootstrapped from incumbent path
+creator_00850	Alberto Moravia	alberto moravia	""	""	""	Bootstrapped from incumbent path
+creator_00851	Natalia Ginzburg	natalia ginzburg	""	""	""	Bootstrapped from incumbent path
+creator_00852	Antonio Porta	antonio porta	""	""	""	Bootstrapped from incumbent path
+creator_00853	Elio Vittorini	elio vittorini	""	""	""	Bootstrapped from incumbent path
+creator_00854	Antonio Machado	antonio machado	""	""	""	Bootstrapped from incumbent path
+creator_00855	Andrea Zanzotto	andrea zanzotto	""	""	""	Bootstrapped from incumbent path
+creator_00856	Italo Calvino	italo calvino	""	""	""	Bootstrapped from incumbent path
+creator_00857	Giorgio Bassani	giorgio bassani	""	""	""	Bootstrapped from incumbent path
+creator_00858	M. R. James	m r james	""	""	""	Bootstrapped from incumbent path
+creator_00859	James Hla Kyaw	james hla kyaw	""	""	""	Bootstrapped from incumbent path
+creator_00860	J. M. Barrie	j m barrie	""	""	""	Bootstrapped from incumbent path
+creator_00861	J. M. Synge	j m synge	""	""	""	Bootstrapped from incumbent path
+creator_00862	Vicente Aleixandre	vicente aleixandre	""	""	""	Bootstrapped from incumbent path
+creator_00863	Ramon del Valle-Inclan	ramon del valle inclan	""	""	""	Bootstrapped from incumbent path
+creator_00864	Juan Ramon Jimenez	juan ramon jimenez	""	""	""	Bootstrapped from incumbent path
+creator_00865	Ana Maria Matute	ana maria matute	""	""	""	Bootstrapped from incumbent path
+creator_00866	Pedro Salinas	pedro salinas	""	""	""	Bootstrapped from incumbent path
+creator_00867	Luis Cernuda	luis cernuda	""	""	""	Bootstrapped from incumbent path
+creator_00868	Rafael Alberti	rafael alberti	""	""	""	Bootstrapped from incumbent path
+creator_00869	Miguel Hernandez	miguel hernandez	""	""	""	Bootstrapped from incumbent path
+creator_00870	Jack London	jack london	""	""	""	Bootstrapped from incumbent path
+creator_00871	Natsume Soseki	natsume soseki	""	""	""	Bootstrapped from incumbent path
+creator_00872	Victor Catala	victor catala	""	""	""	Bootstrapped from incumbent path
+creator_00873	Hawaiian Pele and Hiiaka tradition	hawaiian pele and hiiaka tradition	""	""	""	Bootstrapped from incumbent path
+creator_00874	Edith Wharton	edith wharton	""	""	""	Bootstrapped from incumbent path
+creator_00875	Salvador Espriu	salvador espriu	""	""	""	Bootstrapped from incumbent path
+creator_00876	Juan Goytisolo	juan goytisolo	""	""	""	Bootstrapped from incumbent path
+creator_00877	J V Foix	j v foix	""	""	""	Bootstrapped from incumbent path
+creator_00878	Lope K. Santos	lope k santos	""	""	""	Bootstrapped from incumbent path
+creator_00879	Shimazaki Toson	shimazaki toson	""	""	""	Bootstrapped from incumbent path
+creator_00880	Colette	colette	""	""	""	Bootstrapped from incumbent path
+creator_00881	Robert Musil	robert musil	""	""	""	Bootstrapped from incumbent path
+creator_00882	Almeida Garrett	almeida garrett	""	""	""	Bootstrapped from incumbent path
+creator_00883	Andre Gide	andre gide	""	""	""	Bootstrapped from incumbent path
+creator_00884	Anatole France	anatole france	""	""	""	Bootstrapped from incumbent path
+creator_00885	Alain-Fournier	alain fournier	""	""	""	Bootstrapped from incumbent path
+creator_00886	Amalie Skram	amalie skram	""	""	""	Bootstrapped from incumbent path
+creator_00887	Upton Sinclair	upton sinclair	""	""	""	Bootstrapped from incumbent path
+creator_00888	Maxim Gorky	maxim gorky	""	""	""	Bootstrapped from incumbent path
+creator_00889	Rene Daumal	rene daumal	""	""	""	Bootstrapped from incumbent path
+creator_00890	Algernon Blackwood	algernon blackwood	""	""	""	Bootstrapped from incumbent path
+creator_00891	Georges Bataille	georges bataille	""	""	""	Bootstrapped from incumbent path
+creator_00892	Jean Genet	jean genet	""	""	""	Bootstrapped from incumbent path
+creator_00893	L. M. Montgomery	l m montgomery	""	""	""	Bootstrapped from incumbent path
+creator_00894	Andre Breton	andre breton	""	""	""	Bootstrapped from incumbent path
+creator_00895	William Hope Hodgson	william hope hodgson	""	""	""	Bootstrapped from incumbent path
+creator_00896	G. K. Chesterton	g k chesterton	""	""	""	Bootstrapped from incumbent path
+creator_00897	Kenneth Grahame	kenneth grahame	""	""	""	Bootstrapped from incumbent path
+creator_00898	Guillaume Apollinaire	guillaume apollinaire	""	""	""	Bootstrapped from incumbent path
+creator_00899	Paul Valery	paul valery	""	""	""	Bootstrapped from incumbent path
+creator_00900	Rene Char	rene char	""	""	""	Bootstrapped from incumbent path
+creator_00901	Jalil Mammadguluzadeh	jalil mammadguluzadeh	""	""	""	Bootstrapped from incumbent path
+creator_00902	Jean Giono	jean giono	""	""	""	Bootstrapped from incumbent path
+creator_00903	Gertrude Stein	gertrude stein	""	""	""	Bootstrapped from incumbent path
+creator_00904	Raymond Radiguet	raymond radiguet	""	""	""	Bootstrapped from incumbent path
+creator_00905	Michel Leiris	michel leiris	""	""	""	Bootstrapped from incumbent path
+creator_00906	Jean-Paul Sartre	jean paul sartre	""	""	""	Bootstrapped from incumbent path
+creator_00907	Fernando Pessoa	fernando pessoa	""	""	""	Bootstrapped from incumbent path
+creator_00908	E. M. Forster	e m forster	""	""	""	Bootstrapped from incumbent path
+creator_00909	Saint-John Perse	saint john perse	""	""	""	Bootstrapped from incumbent path
+creator_00910	Ryunosuke Akutagawa	ryunosuke akutagawa	""	""	""	Bootstrapped from incumbent path
+creator_00911	Yosano Akiko	yosano akiko	""	""	""	Bootstrapped from incumbent path
+creator_00912	Rainer Maria Rilke	rainer maria rilke	""	""	""	Bootstrapped from incumbent path
+creator_00913	Edmond Jabes	edmond jabes	""	""	""	Bootstrapped from incumbent path
+creator_00914	Albert Camus	albert camus	""	""	""	Bootstrapped from incumbent path
+creator_00915	Martin Andersen Nexo	martin andersen nexo	""	""	""	Bootstrapped from incumbent path
+creator_00916	Zabel Yessayan	zabel yessayan	""	""	""	Bootstrapped from incumbent path
+creator_00917	Andre Malraux	andre malraux	""	""	""	Bootstrapped from incumbent path
+creator_00918	Lesya Ukrainka	lesya ukrainka	""	""	""	Bootstrapped from incumbent path
+creator_00919	Frances Hodgson Burnett	frances hodgson burnett	""	""	""	Bootstrapped from incumbent path
+creator_00920	Jean Anouilh	jean anouilh	""	""	""	Bootstrapped from incumbent path
+creator_00921	Francois Mauriac	francois mauriac	""	""	""	Bootstrapped from incumbent path
+creator_00922	Charles Peguy	charles peguy	""	""	""	Bootstrapped from incumbent path
+creator_00923	Jacques Prevert	jacques prevert	""	""	""	Bootstrapped from incumbent path
+creator_00924	J. E. Casely Hayford	j e casely hayford	""	""	""	Bootstrapped from incumbent path
+creator_00925	Edgar Rice Burroughs	edgar rice burroughs	""	""	""	Bootstrapped from incumbent path
+creator_00926	Eugene Ionesco	eugene ionesco	""	""	""	Bootstrapped from incumbent path
+creator_00927	Pierre Klossowski	pierre klossowski	""	""	""	Bootstrapped from incumbent path
+creator_00928	Maurice Blanchot	maurice blanchot	""	""	""	Bootstrapped from incumbent path
+creator_00929	Marcel Proust	marcel proust	""	""	""	Bootstrapped from incumbent path
+creator_00930	Andrey Bely	andrey bely	""	""	""	Bootstrapped from incumbent path
+creator_00931	Raymond Queneau	raymond queneau	""	""	""	Bootstrapped from incumbent path
+creator_00932	D. H. Lawrence	d h lawrence	""	""	""	Bootstrapped from incumbent path
+creator_00933	Muhammad Husayn Haykal	muhammad husayn haykal	""	""	""	Bootstrapped from incumbent path
+creator_00934	Antonin Artaud	antonin artaud	""	""	""	Bootstrapped from incumbent path
+creator_00935	Francis Ponge	francis ponge	""	""	""	Bootstrapped from incumbent path
+creator_00936	Raymond Roussel	raymond roussel	""	""	""	Bootstrapped from incumbent path
+creator_00937	Claude Levi-Strauss	claude levi strauss	""	""	""	Bootstrapped from incumbent path
+creator_00938	James Joyce	james joyce	""	""	""	Bootstrapped from incumbent path
+creator_00939	Marguerite Duras	marguerite duras	""	""	""	Bootstrapped from incumbent path
+creator_00940	Blaise Cendrars	blaise cendrars	""	""	""	Bootstrapped from incumbent path
+creator_00941	Robert Pinget	robert pinget	""	""	""	Bootstrapped from incumbent path
+creator_00942	Claude Simon	claude simon	""	""	""	Bootstrapped from incumbent path
+creator_00943	Nathalie Sarraute	nathalie sarraute	""	""	""	Bootstrapped from incumbent path
+creator_00944	Alain Robbe-Grillet	alain robbe grillet	""	""	""	Bootstrapped from incumbent path
+creator_00945	Ford Madox Ford	ford madox ford	""	""	""	Bootstrapped from incumbent path
+creator_00946	Franz Kafka	franz kafka	""	""	""	Bootstrapped from incumbent path
+creator_00947	Vladimir Mayakovsky	vladimir mayakovsky	""	""	""	Bootstrapped from incumbent path
+creator_00948	Edgar Lee Masters	edgar lee masters	""	""	""	Bootstrapped from incumbent path
+creator_00949	Kobina Sekyi	kobina sekyi	""	""	""	Bootstrapped from incumbent path
+creator_00950	Ezra Pound	ezra pound	""	""	""	Bootstrapped from incumbent path
+creator_00951	Lima Barreto	lima barreto	""	""	""	Bootstrapped from incumbent path
+creator_00952	John Buchan	john buchan	""	""	""	Bootstrapped from incumbent path
+creator_00953	Mariano Azuela	mariano azuela	""	""	""	Bootstrapped from incumbent path
+creator_00954	Michel Tournier	michel tournier	""	""	""	Bootstrapped from incumbent path
+creator_00955	Marguerite Yourcenar	marguerite yourcenar	""	""	""	Bootstrapped from incumbent path
+creator_00956	W. H. Auden	w h auden	""	""	""	Bootstrapped from incumbent path
+creator_00957	Katherine Mansfield	katherine mansfield	""	""	""	Bootstrapped from incumbent path
+creator_00958	William Butler Yeats	william butler yeats	""	""	""	Bootstrapped from incumbent path
+creator_00959	Jean Follain	jean follain	""	""	""	Bootstrapped from incumbent path
+creator_00960	Yves Bonnefoy	yves bonnefoy	""	""	""	Bootstrapped from incumbent path
+creator_00961	T. S. Eliot	t s eliot	""	""	""	Bootstrapped from incumbent path
+creator_00962	Yi Kwang-su	yi kwang su	""	""	""	Bootstrapped from incumbent path
+creator_00963	Willa Cather	willa cather	""	""	""	Bootstrapped from incumbent path
+creator_00964	Cesar Vallejo	cesar vallejo	""	""	""	Bootstrapped from incumbent path
+creator_00965	Alexander Blok	alexander blok	""	""	""	Bootstrapped from incumbent path
+creator_00966	Sherwood Anderson	sherwood anderson	""	""	""	Bootstrapped from incumbent path
+creator_00967	Robert Walser	robert walser	""	""	""	Bootstrapped from incumbent path
+creator_00968	Alcides Arguedas	alcides arguedas	""	""	""	Bootstrapped from incumbent path
+creator_00969	Premchand	premchand	""	""	""	Bootstrapped from incumbent path
+creator_00970	David Lindsay	david lindsay	""	""	""	Bootstrapped from incumbent path
+creator_00971	Liviu Rebreanu	liviu rebreanu	""	""	""	Bootstrapped from incumbent path
+creator_00972	Sigrid Undset	sigrid undset	""	""	""	Bootstrapped from incumbent path
+creator_00973	Sinclair Lewis	sinclair lewis	""	""	""	Bootstrapped from incumbent path
+creator_00974	Karel Capek	karel capek	""	""	""	Bootstrapped from incumbent path
+creator_00975	Hugh Lofting	hugh lofting	""	""	""	Bootstrapped from incumbent path
+creator_00976	Jaroslav Hasek	jaroslav hasek	""	""	""	Bootstrapped from incumbent path
+creator_00977	Shiga Naoya	shiga naoya	""	""	""	Bootstrapped from incumbent path
+creator_00978	Lu Xun	lu xun	""	""	""	Bootstrapped from incumbent path
+creator_00979	Yevgeny Zamyatin	yevgeny zamyatin	""	""	""	Bootstrapped from incumbent path
+creator_00980	Gabriela Mistral	gabriela mistral	""	""	""	Bootstrapped from incumbent path
+creator_00981	Mario de Andrade	mario de andrade	""	""	""	Bootstrapped from incumbent path
+creator_00982	Marah Rusli	marah rusli	""	""	""	Bootstrapped from incumbent path
+creator_00983	Wallace Stevens	wallace stevens	""	""	""	Bootstrapped from incumbent path
+creator_00984	E. E. Cummings	e e cummings	""	""	""	Bootstrapped from incumbent path
+creator_00985	Adalbert Stifter	adalbert stifter	""	""	""	Bootstrapped from incumbent path
+creator_00986	Jean Toomer	jean toomer	""	""	""	Bootstrapped from incumbent path
+creator_00987	Yakub Kolas	yakub kolas	""	""	""	Bootstrapped from incumbent path
+creator_00988	William Carlos Williams	william carlos williams	""	""	""	Bootstrapped from incumbent path
+creator_00989	Pablo Neruda	pablo neruda	""	""	""	Bootstrapped from incumbent path
+creator_00990	Kahlil Gibran	kahlil gibran	""	""	""	Bootstrapped from incumbent path
+creator_00991	Sean O'Casey	sean ocasey	""	""	""	Bootstrapped from incumbent path
+creator_00992	Tanizaki Junichiro	tanizaki junichiro	""	""	""	Bootstrapped from incumbent path
+creator_00993	Muhammad Iqbal	muhammad iqbal	""	""	""	Bootstrapped from incumbent path
+creator_00994	Marianne Moore	marianne moore	""	""	""	Bootstrapped from incumbent path
+creator_00995	Jose Eustasio Rivera	jose eustasio rivera	""	""	""	Bootstrapped from incumbent path
+creator_00996	Virginia Woolf	virginia woolf	""	""	""	Bootstrapped from incumbent path
+creator_00997	Thomas Mofolo	thomas mofolo	""	""	""	Bootstrapped from incumbent path
+creator_00998	Ernest Hemingway	ernest hemingway	""	""	""	Bootstrapped from incumbent path
+creator_00999	John Dos Passos	john dos passos	""	""	""	Bootstrapped from incumbent path
+creator_01000	Oswald de Andrade	oswald de andrade	""	""	""	Bootstrapped from incumbent path
+creator_01001	Kim Dong-in	kim dong in	""	""	""	Bootstrapped from incumbent path
+creator_01002	F. Scott Fitzgerald	f scott fitzgerald	""	""	""	Bootstrapped from incumbent path
+creator_01003	Mikhail Bulgakov	mikhail bulgakov	""	""	""	Bootstrapped from incumbent path
+creator_01004	Sam Blowsnake and Paul Radin	sam blowsnake and paul radin	""	""	""	Bootstrapped from incumbent path
+creator_01005	Abdulla Qodiriy	abdulla qodiriy	""	""	""	Bootstrapped from incumbent path
+creator_01006	Isaac Babel	isaac babel	""	""	""	Bootstrapped from incumbent path
+creator_01007	Taha Hussein	taha hussein	""	""	""	Bootstrapped from incumbent path
+creator_01008	Agatha Christie	agatha christie	""	""	""	Bootstrapped from incumbent path
+creator_01009	A. H. Tammsaare	h tammsaare	""	""	""	Bootstrapped from incumbent path
+creator_01010	A. A. Milne	milne	""	""	""	Bootstrapped from incumbent path
+creator_01011	Erich Maria Remarque	erich maria remarque	""	""	""	Bootstrapped from incumbent path
+creator_01012	Mourning Dove	mourning dove	""	""	""	Bootstrapped from incumbent path
+creator_01013	Yuri Olesha	yuri olesha	""	""	""	Bootstrapped from incumbent path
+creator_01014	Hermann Hesse	hermann hesse	""	""	""	Bootstrapped from incumbent path
+creator_01015	Gebreyesus Hailu	gebreyesus hailu	""	""	""	Bootstrapped from incumbent path
+creator_01016	Federico Garcia Lorca	federico garcia lorca	""	""	""	Bootstrapped from incumbent path
+creator_01017	Claude McKay	claude mckay	""	""	""	Bootstrapped from incumbent path
+creator_01018	Nella Larsen	nella larsen	""	""	""	Bootstrapped from incumbent path
+creator_01019	H. P. Lovecraft	h p lovecraft	""	""	""	Bootstrapped from incumbent path
+creator_01020	Valerian Pidmohylny	valerian pidmohylny	""	""	""	Bootstrapped from incumbent path
+creator_01021	Mikhail Sholokhov	mikhail sholokhov	""	""	""	Bootstrapped from incumbent path
+creator_01022	Bertolt Brecht	bertolt brecht	""	""	""	Bootstrapped from incumbent path
+creator_01023	William Faulkner	william faulkner	""	""	""	Bootstrapped from incumbent path
+creator_01024	Alfred Doblin	alfred doblin	""	""	""	Bootstrapped from incumbent path
+creator_01025	Romulo Gallegos	romulo gallegos	""	""	""	Bootstrapped from incumbent path
+creator_01026	Miroslav Krleza	miroslav krleza	""	""	""	Bootstrapped from incumbent path
+creator_01027	Bibhutibhushan Bandyopadhyay	bibhutibhushan bandyopadhyay	""	""	""	Bootstrapped from incumbent path
+creator_01028	Jean Cocteau	jean cocteau	""	""	""	Bootstrapped from incumbent path
+creator_01029	Olaf Stapledon	olaf stapledon	""	""	""	Bootstrapped from incumbent path
+creator_01030	Sol Plaatje	sol plaatje	""	""	""	Bootstrapped from incumbent path
+creator_01031	Hart Crane	hart crane	""	""	""	Bootstrapped from incumbent path
+creator_01032	Rachel de Queiroz	rachel de queiroz	""	""	""	Bootstrapped from incumbent path
+creator_01033	Andrei Platonov	andrei platonov	""	""	""	Bootstrapped from incumbent path
+creator_01034	Dashiell Hammett	dashiell hammett	""	""	""	Bootstrapped from incumbent path
+creator_01035	Vicente Huidobro	vicente huidobro	""	""	""	Bootstrapped from incumbent path
+creator_01036	Ba Jin	ba jin	""	""	""	Bootstrapped from incumbent path
+creator_01037	Kalindi Charan Panigrahi	kalindi charan panigrahi	""	""	""	Bootstrapped from incumbent path
+creator_01038	Nicolas Guillen	nicolas guillen	""	""	""	Bootstrapped from incumbent path
+creator_01039	S. Y. Agnon	s y agnon	""	""	""	Bootstrapped from incumbent path
+creator_01040	Hermann Broch	hermann broch	""	""	""	Bootstrapped from incumbent path
+creator_01041	Yom Sang-seop	yom sang seop	""	""	""	Bootstrapped from incumbent path
+creator_01042	Pearl S. Buck	pearl s buck	""	""	""	Bootstrapped from incumbent path
+creator_01043	Joseph Roth	joseph roth	""	""	""	Bootstrapped from incumbent path
+creator_01044	Sajjad Zaheer, Rashid Jahan, Ahmed Ali, and Mahmuduzzafar	sajjad zaheer rashid jahan ahmed ali and mahmuduzzafar	""	""	""	Bootstrapped from incumbent path
+creator_01045	Black Elk and John G. Neihardt	black elk and john g neihardt	""	""	""	Bootstrapped from incumbent path
+creator_01046	Aldous Huxley	aldous huxley	""	""	""	Bootstrapped from incumbent path
+creator_01047	Louis-Ferdinand Celine	louis ferdinand celine	""	""	""	Bootstrapped from incumbent path
+creator_01048	Lewis Grassic Gibbon	lewis grassic gibbon	""	""	""	Bootstrapped from incumbent path
+creator_01049	Robert E. Howard	robert e howard	""	""	""	Bootstrapped from incumbent path
+creator_01050	Willem Elsschot	willem elsschot	""	""	""	Bootstrapped from incumbent path
+creator_01051	K. Shivaram Karanth	k shivaram karanth	""	""	""	Bootstrapped from incumbent path
+creator_01052	Arthur Schnitzler	arthur schnitzler	""	""	""	Bootstrapped from incumbent path
+creator_01053	Mao Dun	mao dun	""	""	""	Bootstrapped from incumbent path
+creator_01054	Nathanael West	nathanael west	""	""	""	Bootstrapped from incumbent path
+creator_01055	Tawfiq al-Hakim	tawfiq al hakim	""	""	""	Bootstrapped from incumbent path
+creator_01056	Shen Congwen	shen congwen	""	""	""	Bootstrapped from incumbent path
+creator_01057	George Orwell	george orwell	""	""	""	Bootstrapped from incumbent path
+creator_01058	Jorge Icaza	jorge icaza	""	""	""	Bootstrapped from incumbent path
+creator_01059	Halldor Laxness	halldor laxness	""	""	""	Bootstrapped from incumbent path
+creator_01060	P. L. Travers	p l travers	""	""	""	Bootstrapped from incumbent path
+creator_01061	Karen Blixen	karen blixen	""	""	""	Bootstrapped from incumbent path
+creator_01062	Abubakar Tafawa Balewa	abubakar tafawa balewa	""	""	""	Bootstrapped from incumbent path
+creator_01063	Lakshmibai Tilak	lakshmibai tilak	""	""	""	Bootstrapped from incumbent path
+creator_01064	John Joseph Mathews	john joseph mathews	""	""	""	Bootstrapped from incumbent path
+creator_01065	Maria Luisa Bombal	maria luisa bombal	""	""	""	Bootstrapped from incumbent path
+creator_01066	Bruno Schulz	bruno schulz	""	""	""	Bootstrapped from incumbent path
+creator_01067	Viswanatha Satyanarayana	viswanatha satyanarayana	""	""	""	Bootstrapped from incumbent path
+creator_01068	Jean Rhys	jean rhys	""	""	""	Bootstrapped from incumbent path
+creator_01069	Antonio Buero Vallejo	antonio buero vallejo	""	""	""	Bootstrapped from incumbent path
+creator_01070	Sarat Chandra Chattopadhyay	sarat chandra chattopadhyay	""	""	""	Bootstrapped from incumbent path
+creator_01071	Dorothy L. Sayers	dorothy l sayers	""	""	""	Bootstrapped from incumbent path
+creator_01072	Cao Yu	cao yu	""	""	""	Bootstrapped from incumbent path
+creator_01073	Elias Canetti	elias canetti	""	""	""	Bootstrapped from incumbent path
+creator_01074	Harivansh Rai Bachchan	harivansh rai bachchan	""	""	""	Bootstrapped from incumbent path
+creator_01075	Chu Yo-sup	chu yo sup	""	""	""	Bootstrapped from incumbent path
+creator_01076	Elizabeth Bowen	elizabeth bowen	""	""	""	Bootstrapped from incumbent path
+creator_01077	Isaac Bashevis Singer	isaac bashevis singer	""	""	""	Bootstrapped from incumbent path
+creator_01078	Kawabata Yasunari	kawabata yasunari	""	""	""	Bootstrapped from incumbent path
+creator_01079	R. K. Narayan	r k narayan	""	""	""	Bootstrapped from incumbent path
+creator_01080	Xiao Hong	xiao hong	""	""	""	Bootstrapped from incumbent path
+creator_01081	Mulk Raj Anand	mulk raj anand	""	""	""	Bootstrapped from incumbent path
+creator_01082	Graciliano Ramos	graciliano ramos	""	""	""	Bootstrapped from incumbent path
+creator_01083	Vu Trong Phung	vu trong phung	""	""	""	Bootstrapped from incumbent path
+creator_01084	Laxmi Prasad Devkota	laxmi prasad devkota	""	""	""	Bootstrapped from incumbent path
+creator_01085	Djuna Barnes	djuna barnes	""	""	""	Bootstrapped from incumbent path
+creator_01086	Manik Bandopadhyay	manik bandopadhyay	""	""	""	Bootstrapped from incumbent path
+creator_01087	Kim Tongni	kim tongni	""	""	""	Bootstrapped from incumbent path
+creator_01088	D'Arcy McNickle	darcy mcnickle	""	""	""	Bootstrapped from incumbent path
+creator_01089	Yi Sang	yi sang	""	""	""	Bootstrapped from incumbent path
+creator_01090	Zora Neale Hurston	zora neale hurston	""	""	""	Bootstrapped from incumbent path
+creator_01091	Kurban Said	kurban said	""	""	""	Bootstrapped from incumbent path
+creator_01092	Jorge Amado	jorge amado	""	""	""	Bootstrapped from incumbent path
+creator_01093	Witold Gombrowicz	witold gombrowicz	""	""	""	Bootstrapped from incumbent path
+creator_01094	Antal Szerb	antal szerb	""	""	""	Bootstrapped from incumbent path
+creator_01095	Abubakar Imam	abubakar imam	""	""	""	Bootstrapped from incumbent path
+creator_01096	Lao She	lao she	""	""	""	Bootstrapped from incumbent path
+creator_01097	Sadegh Hedayat	sadegh hedayat	""	""	""	Bootstrapped from incumbent path
+creator_01098	J. R. R. Tolkien	j r r tolkien	""	""	""	Bootstrapped from incumbent path
+creator_01099	John Steinbeck	john steinbeck	""	""	""	Bootstrapped from incumbent path
+creator_01100	Siburapha	siburapha	""	""	""	Bootstrapped from incumbent path
+creator_01101	Vladimir Bartol	vladimir bartol	""	""	""	Bootstrapped from incumbent path
+creator_01102	Raja Rao	raja rao	""	""	""	Bootstrapped from incumbent path
+creator_01103	Thornton Wilder	thornton wilder	""	""	""	Bootstrapped from incumbent path
+creator_01104	Chae Man-sik	chae man sik	""	""	""	Bootstrapped from incumbent path
+creator_01105	D. O. Fagunwa	d o fagunwa	""	""	""	Bootstrapped from incumbent path
+creator_01106	Left Handed and Walter Dyk	left handed and walter dyk	""	""	""	Bootstrapped from incumbent path
+creator_01107	Xunzi and early Confucian textual tradition	xunzi and early confucian textual tradition	""	""	""	Bootstrapped from incumbent path
+creator_01108	Daphne du Maurier	daphne du maurier	""	""	""	Bootstrapped from incumbent path
+creator_01109	Margarete Steffin	margarete steffin	""	""	""	Bootstrapped from incumbent path
+creator_01110	Flann O'Brien	flann obrien	""	""	""	Bootstrapped from incumbent path
+creator_01111	Aime Cesaire	aime cesaire	""	""	""	Bootstrapped from incumbent path
+creator_01112	Raymond Chandler	raymond chandler	""	""	""	Bootstrapped from incumbent path
+creator_01113	Arne Garborg	arne garborg	""	""	""	Bootstrapped from incumbent path
+creator_01114	Ishikawa Takuboku	ishikawa takuboku	""	""	""	Bootstrapped from incumbent path
+creator_01115	Juan Carlos Onetti	juan carlos onetti	""	""	""	Bootstrapped from incumbent path
+creator_01116	Karin Boye	karin boye	""	""	""	Bootstrapped from incumbent path
+creator_01117	Richard Wright	richard wright	""	""	""	Bootstrapped from incumbent path
+creator_01118	Carson McCullers	carson mccullers	""	""	""	Bootstrapped from incumbent path
+creator_01119	Adolfo Bioy Casares	adolfo bioy casares	""	""	""	Bootstrapped from incumbent path
+creator_01120	Graham Greene	graham greene	""	""	""	Bootstrapped from incumbent path
+creator_01121	Han Fei and Legalist textual tradition	han fei and legalist textual tradition	""	""	""	Bootstrapped from incumbent path
+creator_01122	Dino Buzzati	dino buzzati	""	""	""	Bootstrapped from incumbent path
+creator_01123	Ciro Alegria	ciro alegria	""	""	""	Bootstrapped from incumbent path
+creator_01124	Stefan Zweig	stefan zweig	""	""	""	Bootstrapped from incumbent path
+creator_01125	Eugene O'Neill	eugene oneill	""	""	""	Bootstrapped from incumbent path
+creator_01126	Sandor Marai	sandor marai	""	""	""	Bootstrapped from incumbent path
+creator_01127	Ismat Chughtai	ismat chughtai	""	""	""	Bootstrapped from incumbent path
+creator_01128	Ho Chi Minh	ho chi minh	""	""	""	Bootstrapped from incumbent path
+creator_01129	Camilo Jose Cela	camilo jose cela	""	""	""	Bootstrapped from incumbent path
+creator_01130	Mukhtar Auezov	mukhtar auezov	""	""	""	Bootstrapped from incumbent path
+creator_01131	Antoine de Saint-Exupery	antoine de saint exupery	""	""	""	Bootstrapped from incumbent path
+creator_01132	Eileen Chang	eileen chang	""	""	""	Bootstrapped from incumbent path
+creator_01133	Sabahattin Ali	sabahattin ali	""	""	""	Bootstrapped from incumbent path
+creator_01134	Clarice Lispector	clarice lispector	""	""	""	Bootstrapped from incumbent path
+creator_01135	Nelly Sachs	nelly sachs	""	""	""	Bootstrapped from incumbent path
+creator_01136	Jorge Luis Borges	jorge luis borges	""	""	""	Bootstrapped from incumbent path
+creator_01137	Vaikom Muhammad Basheer	vaikom muhammad basheer	""	""	""	Bootstrapped from incumbent path
+creator_01138	Martin Wickramasinghe	martin wickramasinghe	""	""	""	Bootstrapped from incumbent path
+creator_01139	Jacques Roumain	jacques roumain	""	""	""	Bootstrapped from incumbent path
+creator_01140	Ingeborg Bachmann	ingeborg bachmann	""	""	""	Bootstrapped from incumbent path
+creator_01141	Par Lagerkvist	par lagerkvist	""	""	""	Bootstrapped from incumbent path
+creator_01142	Tennessee Williams	tennessee williams	""	""	""	Bootstrapped from incumbent path
+creator_01143	Anna Seghers	anna seghers	""	""	""	Bootstrapped from incumbent path
+creator_01144	Jean Giraudoux	jean giraudoux	""	""	""	Bootstrapped from incumbent path
+creator_01145	Aniceti Kitereza	aniceti kitereza	""	""	""	Bootstrapped from incumbent path
+creator_01146	Carlo Levi	carlo levi	""	""	""	Bootstrapped from incumbent path
+creator_01147	Carmen Laforet	carmen laforet	""	""	""	Bootstrapped from incumbent path
+creator_01148	Astrid Lindgren	astrid lindgren	""	""	""	Bootstrapped from incumbent path
+creator_01149	Ivo Andric	ivo andric	""	""	""	Bootstrapped from incumbent path
+creator_01150	Wu Zhuoliu	wu zhuoliu	""	""	""	Bootstrapped from incumbent path
+creator_01151	Evelyn Waugh	evelyn waugh	""	""	""	Bootstrapped from incumbent path
+creator_01152	Christopher Isherwood	christopher isherwood	""	""	""	Bootstrapped from incumbent path
+creator_01153	Robert Penn Warren	robert penn warren	""	""	""	Bootstrapped from incumbent path
+creator_01154	Buchi Babu	buchi babu	""	""	""	Bootstrapped from incumbent path
+creator_01155	Peter Abrahams	peter abrahams	""	""	""	Bootstrapped from incumbent path
+creator_01156	Miguel Angel Asturias	miguel angel asturias	""	""	""	Bootstrapped from incumbent path
+creator_01157	Ann Petry	ann petry	""	""	""	Bootstrapped from incumbent path
+creator_01158	Tadeusz Borowski	tadeusz borowski	""	""	""	Bootstrapped from incumbent path
+creator_01159	Mervyn Peake	mervyn peake	""	""	""	Bootstrapped from incumbent path
+creator_01160	Nikos Kazantzakis	nikos kazantzakis	""	""	""	Bootstrapped from incumbent path
+creator_01161	Carlos Bulosan	carlos bulosan	""	""	""	Bootstrapped from incumbent path
+creator_01162	Baltasar Lopes	baltasar lopes	""	""	""	Bootstrapped from incumbent path
+creator_01163	Qian Zhongshu	qian zhongshu	""	""	""	Bootstrapped from incumbent path
+creator_01164	Tarashankar Bandyopadhyay	tarashankar bandyopadhyay	""	""	""	Bootstrapped from incumbent path
+creator_01165	Naguib Mahfouz	naguib mahfouz	""	""	""	Bootstrapped from incumbent path
+creator_01166	Gerard Reve	gerard reve	""	""	""	Bootstrapped from incumbent path
+creator_01167	Dazai Osamu	dazai osamu	""	""	""	Bootstrapped from incumbent path
+creator_01168	Malcolm Lowry	malcolm lowry	""	""	""	Bootstrapped from incumbent path
+creator_01169	Leopoldo Marechal	leopoldo marechal	""	""	""	Bootstrapped from incumbent path
+creator_01170	Amrita Pritam	amrita pritam	""	""	""	Bootstrapped from incumbent path
+creator_01171	Jerzy Andrzejewski	jerzy andrzejewski	""	""	""	Bootstrapped from incumbent path
+creator_01172	Alan Paton	alan paton	""	""	""	Bootstrapped from incumbent path
+creator_01173	Saadat Hasan Manto	saadat hasan manto	""	""	""	Bootstrapped from incumbent path
+creator_01174	Syed Waliullah	syed waliullah	""	""	""	Bootstrapped from incumbent path
+creator_01175	Tove Jansson	tove jansson	""	""	""	Bootstrapped from incumbent path
+creator_01176	Arthur Miller	arthur miller	""	""	""	Bootstrapped from incumbent path
+creator_01177	Ahmet Hamdi Tanpinar	ahmet hamdi tanpinar	""	""	""	Bootstrapped from incumbent path
+creator_01178	Mishima Yukio	mishima yukio	""	""	""	Bootstrapped from incumbent path
+creator_01179	S. Yizhar	s yizhar	""	""	""	Bootstrapped from incumbent path
+creator_01180	Alejo Carpentier	alejo carpentier	""	""	""	Bootstrapped from incumbent path
+creator_01181	Shirley Jackson	shirley jackson	""	""	""	Bootstrapped from incumbent path
+creator_01182	W. B. Yeats	w b yeats	""	""	""	Bootstrapped from incumbent path
+creator_01183	C. P. Cavafy	c p cavafy	""	""	""	Bootstrapped from incumbent path
+creator_01184	Flannery O'Connor	flannery oconnor	""	""	""	Bootstrapped from incumbent path
+creator_01185	Yoruba performance-poetry tradition	yoruba performance poetry tradition	""	""	""	Bootstrapped from incumbent path
+creator_01186	Sri Sri	sri sri	""	""	""	Bootstrapped from incumbent path
+creator_01187	Osip Mandelstam	osip mandelstam	""	""	""	Bootstrapped from incumbent path
+creator_01188	Paul Celan	paul celan	""	""	""	Bootstrapped from incumbent path
+creator_01189	Anna Akhmatova	anna akhmatova	""	""	""	Bootstrapped from incumbent path
+creator_01190	Kalki Krishnamurthy	kalki krishnamurthy	""	""	""	Bootstrapped from incumbent path
+creator_01191	Sayyid Mohammed Abdullah Hassan	sayyid mohammed abdullah hassan	""	""	""	Bootstrapped from incumbent path
+creator_01192	Leopold Sedar Senghor	leopold sedar senghor	""	""	""	Bootstrapped from incumbent path
+creator_01193	Tomas Transtromer	tomas transtromer	""	""	""	Bootstrapped from incumbent path
+creator_01194	Hayim Nahman Bialik	hayim nahman bialik	""	""	""	Bootstrapped from incumbent path
+creator_01195	Galaktion Tabidze	galaktion tabidze	""	""	""	Bootstrapped from incumbent path
+creator_01196	Hadrawi	hadrawi	""	""	""	Bootstrapped from incumbent path
+creator_01197	Cigerxwin	cigerxwin	""	""	""	Bootstrapped from incumbent path
+creator_01198	Robert Hayden	robert hayden	""	""	""	Bootstrapped from incumbent path
+creator_01199	Elizabeth Bishop	elizabeth bishop	""	""	""	Bootstrapped from incumbent path
+creator_01200	Langston Hughes	langston hughes	""	""	""	Bootstrapped from incumbent path
+creator_01201	Mehdi Akhavan Sales	mehdi akhavan sales	""	""	""	Bootstrapped from incumbent path
+creator_01202	John Ashbery	john ashbery	""	""	""	Bootstrapped from incumbent path
+creator_01203	Ahmad Shamlu	ahmad shamlu	""	""	""	Bootstrapped from incumbent path
+creator_01204	Nima Yushij	nima yushij	""	""	""	Bootstrapped from incumbent path
+creator_01205	Faiz Ahmed Faiz	faiz ahmed faiz	""	""	""	Bootstrapped from incumbent path
+creator_01206	Noemia de Sousa	noemia de sousa	""	""	""	Bootstrapped from incumbent path
+creator_01207	Jose Craveirinha	jose craveirinha	""	""	""	Bootstrapped from incumbent path
+creator_01208	Giorgos Seferis	giorgos seferis	""	""	""	Bootstrapped from incumbent path
+creator_01209	Czeslaw Milosz	czeslaw milosz	""	""	""	Bootstrapped from incumbent path
+creator_01210	Wislawa Szymborska	wislawa szymborska	""	""	""	Bootstrapped from incumbent path
+creator_01211	Dennis Brutus	dennis brutus	""	""	""	Bootstrapped from incumbent path
+creator_01212	Ingrid Jonker	ingrid jonker	""	""	""	Bootstrapped from incumbent path
+creator_01213	Mongane Wally Serote	mongane wally serote	""	""	""	Bootstrapped from incumbent path
+creator_01214	Keorapetse Kgositsile	keorapetse kgositsile	""	""	""	Bootstrapped from incumbent path
+creator_01215	Waldo Williams	waldo williams	""	""	""	Bootstrapped from incumbent path
+creator_01216	Rainis	rainis	""	""	""	Bootstrapped from incumbent path
+creator_01217	David Diop	david diop	""	""	""	Bootstrapped from incumbent path
+creator_01218	Sorley MacLean	sorley maclean	""	""	""	Bootstrapped from incumbent path
+creator_01219	Avrom Sutzkever	avrom sutzkever	""	""	""	Bootstrapped from incumbent path
+creator_01220	Nazim Hikmet	nazim hikmet	""	""	""	Bootstrapped from incumbent path
+creator_01221	Marina Tsvetaeva	marina tsvetaeva	""	""	""	Bootstrapped from incumbent path
+creator_01222	Seamus Heaney	seamus heaney	""	""	""	Bootstrapped from incumbent path
+creator_01223	Mahmoud Darwish	mahmoud darwish	""	""	""	Bootstrapped from incumbent path
+creator_01224	Siamanto	siamanto	""	""	""	Bootstrapped from incumbent path
+creator_01225	Daniel Varoujan	daniel varoujan	""	""	""	Bootstrapped from incumbent path
+creator_01226	Carlos Drummond de Andrade	carlos drummond de andrade	""	""	""	Bootstrapped from incumbent path
+creator_01227	I. L. Peretz	i l peretz	""	""	""	Bootstrapped from incumbent path
+creator_01228	Silvina Ocampo	silvina ocampo	""	""	""	Bootstrapped from incumbent path
+creator_01229	Eudora Welty	eudora welty	""	""	""	Bootstrapped from incumbent path
+creator_01230	Pudhumaipithan	pudhumaipithan	""	""	""	Bootstrapped from incumbent path
+creator_01231	Felisberto Hernandez	felisberto hernandez	""	""	""	Bootstrapped from incumbent path
+creator_01232	Julio Cortazar	julio cortazar	""	""	""	Bootstrapped from incumbent path
+creator_01233	Patricia Highsmith	patricia highsmith	""	""	""	Bootstrapped from incumbent path
+creator_01234	C. S. Lewis	c s lewis	""	""	""	Bootstrapped from incumbent path
+creator_01235	Octavio Paz	octavio paz	""	""	""	Bootstrapped from incumbent path
+creator_01236	Pramoedya Ananta Toer	pramoedya ananta toer	""	""	""	Bootstrapped from incumbent path
+creator_01237	Ray Bradbury	ray bradbury	""	""	""	Bootstrapped from incumbent path
+creator_01238	Ijaw oral epic tradition	ijaw oral epic tradition	""	""	""	Bootstrapped from incumbent path
+creator_01239	Guillermo Cabrera Infante	guillermo cabrera infante	""	""	""	Bootstrapped from incumbent path
+creator_01240	Cesare Pavese	cesare pavese	""	""	""	Bootstrapped from incumbent path
+creator_01241	Isaac Asimov	isaac asimov	""	""	""	Bootstrapped from incumbent path
+creator_01242	Shaaban Robert	shaaban robert	""	""	""	Bootstrapped from incumbent path
+creator_01243	J. D. Salinger	j d salinger	""	""	""	Bootstrapped from incumbent path
+creator_01244	Josephine Tey	josephine tey	""	""	""	Bootstrapped from incumbent path
+creator_01245	Samuel Beckett	samuel beckett	""	""	""	Bootstrapped from incumbent path
+creator_01246	Anthony Powell	anthony powell	""	""	""	Bootstrapped from incumbent path
+creator_01247	Ralph Ellison	ralph ellison	""	""	""	Bootstrapped from incumbent path
+creator_01248	E. B. White	e b white	""	""	""	Bootstrapped from incumbent path
+creator_01249	Clifford D. Simak	clifford d simak	""	""	""	Bootstrapped from incumbent path
+creator_01250	Amos Tutuola	amos tutuola	""	""	""	Bootstrapped from incumbent path
+creator_01251	Arthur C. Clarke	arthur c clarke	""	""	""	Bootstrapped from incumbent path
+creator_01252	Hwang Sun-won	hwang sun won	""	""	""	Bootstrapped from incumbent path
+creator_01253	Kukrit Pramoj	kukrit pramoj	""	""	""	Bootstrapped from incumbent path
+creator_01254	James Baldwin	james baldwin	""	""	""	Bootstrapped from incumbent path
+creator_01255	George Lamming	george lamming	""	""	""	Bootstrapped from incumbent path
+creator_01256	Norman Mailer	norman mailer	""	""	""	Bootstrapped from incumbent path
+creator_01257	Saul Bellow	saul bellow	""	""	""	Bootstrapped from incumbent path
+creator_01258	Juan Rulfo	juan rulfo	""	""	""	Bootstrapped from incumbent path
+creator_01259	Camara Laye	camara laye	""	""	""	Bootstrapped from incumbent path
+creator_01260	Alfred Bester	alfred bester	""	""	""	Bootstrapped from incumbent path
+creator_01261	Ramon J. Sender	ramon j sender	""	""	""	Bootstrapped from incumbent path
+creator_01262	Richard Matheson	richard matheson	""	""	""	Bootstrapped from incumbent path
+creator_01263	William Golding	william golding	""	""	""	Bootstrapped from incumbent path
+creator_01264	Phanishwar Nath Renu	phanishwar nath renu	""	""	""	Bootstrapped from incumbent path
+creator_01265	Driss Chraibi	driss chraibi	""	""	""	Bootstrapped from incumbent path
+creator_01266	Varlam Shalamov	varlam shalamov	""	""	""	Bootstrapped from incumbent path
+creator_01267	Joao Cabral de Melo Neto	joao cabral de melo neto	""	""	""	Bootstrapped from incumbent path
+creator_01268	Yashar Kemal	yashar kemal	""	""	""	Bootstrapped from incumbent path
+creator_01269	Journal Kyaw Ma Ma Lay	journal kyaw ma ma lay	""	""	""	Bootstrapped from incumbent path
+creator_01270	John Wyndham	john wyndham	""	""	""	Bootstrapped from incumbent path
+creator_01271	Mircea Eliade	mircea eliade	""	""	""	Bootstrapped from incumbent path
+creator_01272	William Gaddis	william gaddis	""	""	""	Bootstrapped from incumbent path
+creator_01273	Pier Paolo Pasolini	pier paolo pasolini	""	""	""	Bootstrapped from incumbent path
+creator_01274	Joao Guimaraes Rosa	joao guimaraes rosa	""	""	""	Bootstrapped from incumbent path
+creator_01275	Harry Martinson	harry martinson	""	""	""	Bootstrapped from incumbent path
+creator_01276	Thakazhi Sivasankara Pillai	thakazhi sivasankara pillai	""	""	""	Bootstrapped from incumbent path
+creator_01277	Ferdinand Oyono	ferdinand oyono	""	""	""	Bootstrapped from incumbent path
+creator_01278	Allen Ginsberg	allen ginsberg	""	""	""	Bootstrapped from incumbent path
+creator_01279	Yannis Ritsos	yannis ritsos	""	""	""	Bootstrapped from incumbent path
+creator_01280	Kateb Yacine	kateb yacine	""	""	""	Bootstrapped from incumbent path
+creator_01281	Sam Selvon	sam selvon	""	""	""	Bootstrapped from incumbent path
+creator_01282	Mongo Beti	mongo beti	""	""	""	Bootstrapped from incumbent path
+creator_01283	Friedrich Durrenmatt	friedrich durrenmatt	""	""	""	Bootstrapped from incumbent path
+creator_01284	Khushwant Singh	khushwant singh	""	""	""	Bootstrapped from incumbent path
+creator_01285	Antonio Di Benedetto	antonio di benedetto	""	""	""	Bootstrapped from incumbent path
+creator_01286	S. E. K. Mqhayi	s e k mqhayi	""	""	""	Bootstrapped from incumbent path
+creator_01287	Advaita Mallabarman	advaita mallabarman	""	""	""	Bootstrapped from incumbent path
+creator_01288	Rosario Castellanos	rosario castellanos	""	""	""	Bootstrapped from incumbent path
+creator_01289	Lil Bahadur Chettri	lil bahadur chettri	""	""	""	Bootstrapped from incumbent path
+creator_01290	Boris Pasternak	boris pasternak	""	""	""	Bootstrapped from incumbent path
+creator_01291	Balys Sruoga	balys sruoga	""	""	""	Bootstrapped from incumbent path
+creator_01292	Carlo Emilio Gadda	carlo emilio gadda	""	""	""	Bootstrapped from incumbent path
+creator_01293	Tarjei Vesaas	tarjei vesaas	""	""	""	Bootstrapped from incumbent path
+creator_01294	Enchi Fumiko	enchi fumiko	""	""	""	Bootstrapped from incumbent path
+creator_01295	Jonas Lie	jonas lie	""	""	""	Bootstrapped from incumbent path
+creator_01296	Jack Kerouac	jack kerouac	""	""	""	Bootstrapped from incumbent path
+creator_01297	Max Frisch	max frisch	""	""	""	Bootstrapped from incumbent path
+creator_01298	Chinua Achebe	chinua achebe	""	""	""	Bootstrapped from incumbent path
+creator_01299	Mohan Rakesh	mohan rakesh	""	""	""	Bootstrapped from incumbent path
+creator_01300	Jose Maria Arguedas	jose maria arguedas	""	""	""	Bootstrapped from incumbent path
+creator_01301	Shaukat Siddiqui	shaukat siddiqui	""	""	""	Bootstrapped from incumbent path
+creator_01302	M. T. Vasudevan Nair	m t vasudevan nair	""	""	""	Bootstrapped from incumbent path
+creator_01303	Oe Kenzaburo	oe kenzaburo	""	""	""	Bootstrapped from incumbent path
+creator_01304	Willem Frederik Hermans	willem frederik hermans	""	""	""	Bootstrapped from incumbent path
+creator_01305	Giuseppe Tomasi di Lampedusa	giuseppe tomasi di lampedusa	""	""	""	Bootstrapped from incumbent path
+creator_01306	T. H. White	t h white	""	""	""	Bootstrapped from incumbent path
+creator_01307	Carlos Fuentes	carlos fuentes	""	""	""	Bootstrapped from incumbent path
+creator_01308	Antanas Skema	antanas skema	""	""	""	Bootstrapped from incumbent path
+creator_01309	Chingiz Aitmatov	chingiz aitmatov	""	""	""	Bootstrapped from incumbent path
+creator_01310	Lorraine Hansberry	lorraine hansberry	""	""	""	Bootstrapped from incumbent path
+creator_01311	Vasily Grossman	vasily grossman	""	""	""	Bootstrapped from incumbent path
+creator_01312	Walter M. Miller Jr.	walter m miller jr	""	""	""	Bootstrapped from incumbent path
+creator_01313	Paule Marshall	paule marshall	""	""	""	Bootstrapped from incumbent path
+creator_01314	Ezekiel Mphahlele	ezekiel mphahlele	""	""	""	Bootstrapped from incumbent path
+creator_01315	V. S. Naipaul	v s naipaul	""	""	""	Bootstrapped from incumbent path
+creator_01316	Qurratulain Hyder	qurratulain hyder	""	""	""	Bootstrapped from incumbent path
+creator_01317	Geza Ottlik	geza ottlik	""	""	""	Bootstrapped from incumbent path
+creator_01318	Odysseas Elytis	odysseas elytis	""	""	""	Bootstrapped from incumbent path
+creator_01319	Wole Soyinka	wole soyinka	""	""	""	Bootstrapped from incumbent path
+creator_01320	Ariyoshi Sawako	ariyoshi sawako	""	""	""	Bootstrapped from incumbent path
+creator_01321	Gunter Grass	gunter grass	""	""	""	Bootstrapped from incumbent path
+creator_01322	Vaino Linna	vaino linna	""	""	""	Bootstrapped from incumbent path
+creator_01323	V. S. Khandekar	v s khandekar	""	""	""	Bootstrapped from incumbent path
+creator_01324	Robert Lowell	robert lowell	""	""	""	Bootstrapped from incumbent path
+creator_01325	William S. Burroughs	william s burroughs	""	""	""	Bootstrapped from incumbent path
+creator_01326	Carolina Maria de Jesus	carolina maria de jesus	""	""	""	Bootstrapped from incumbent path
+creator_01327	Ousmane Sembene	ousmane sembene	""	""	""	Bootstrapped from incumbent path
+creator_01328	Wilson Harris	wilson harris	""	""	""	Bootstrapped from incumbent path
+creator_01329	Edna O'Brien	edna obrien	""	""	""	Bootstrapped from incumbent path
+creator_01330	Latifa al-Zayyat	latifa al zayyat	""	""	""	Bootstrapped from incumbent path
+creator_01331	John Barth	john barth	""	""	""	Bootstrapped from incumbent path
+creator_01332	Choi In-hun	choi in hun	""	""	""	Bootstrapped from incumbent path
+creator_01333	John Updike	john updike	""	""	""	Bootstrapped from incumbent path
+creator_01334	Lawrence Durrell	lawrence durrell	""	""	""	Bootstrapped from incumbent path
+creator_01335	Cheikh Hamidou Kane	cheikh hamidou kane	""	""	""	Bootstrapped from incumbent path
+creator_01336	Xose Neira Vilas	xose neira vilas	""	""	""	Bootstrapped from incumbent path
+creator_01337	Gabriel Garcia Marquez	gabriel garcia marquez	""	""	""	Bootstrapped from incumbent path
+creator_01338	Stanislaw Lem	stanislaw lem	""	""	""	Bootstrapped from incumbent path
+creator_01339	Walker Percy	walker percy	""	""	""	Bootstrapped from incumbent path
+creator_01340	Norton Juster	norton juster	""	""	""	Bootstrapped from incumbent path
+creator_01341	Muriel Spark	muriel spark	""	""	""	Bootstrapped from incumbent path
+creator_01342	Nick Joaquin	nick joaquin	""	""	""	Bootstrapped from incumbent path
+creator_01343	Joseph Heller	joseph heller	""	""	""	Bootstrapped from incumbent path
+creator_01344	Adonis	adonis	""	""	""	Bootstrapped from incumbent path
+creator_01345	Alex La Guma	alex la guma	""	""	""	Bootstrapped from incumbent path
+creator_01346	Madeleine L'Engle	madeleine lengle	""	""	""	Bootstrapped from incumbent path
+creator_01347	Khadija Mastur	khadija mastur	""	""	""	Bootstrapped from incumbent path
+creator_01348	Ghassan Kanafani	ghassan kanafani	""	""	""	Bootstrapped from incumbent path
+creator_01349	Aleksandr Solzhenitsyn	aleksandr solzhenitsyn	""	""	""	Bootstrapped from incumbent path
+creator_01350	Chadraabalyn Lodoidamba	chadraabalyn lodoidamba	""	""	""	Bootstrapped from incumbent path
+creator_01351	J. G. Ballard	j g ballard	""	""	""	Bootstrapped from incumbent path
+creator_01352	Doris Lessing	doris lessing	""	""	""	Bootstrapped from incumbent path
+creator_01353	Philip K. Dick	philip k dick	""	""	""	Bootstrapped from incumbent path
+creator_01354	Miyazawa Kenji	miyazawa kenji	""	""	""	Bootstrapped from incumbent path
+creator_01355	Merce Rodoreda	merce rodoreda	""	""	""	Bootstrapped from incumbent path
+creator_01356	Abe Kobo	abe kobo	""	""	""	Bootstrapped from incumbent path
+creator_01357	Luis Martin-Santos	luis martin santos	""	""	""	Bootstrapped from incumbent path
+creator_01358	Edward Albee	edward albee	""	""	""	Bootstrapped from incumbent path
+creator_01359	Anthony Burgess	anthony burgess	""	""	""	Bootstrapped from incumbent path
+creator_01360	Ken Kesey	ken kesey	""	""	""	Bootstrapped from incumbent path
+creator_01361	Kurt Vonnegut	kurt vonnegut	""	""	""	Bootstrapped from incumbent path
+creator_01362	Bhalchandra Nemade	bhalchandra nemade	""	""	""	Bootstrapped from incumbent path
+creator_01363	Jose Luandino Vieira	jose luandino vieira	""	""	""	Bootstrapped from incumbent path
+creator_01364	Elena Garro	elena garro	""	""	""	Bootstrapped from incumbent path
+creator_01365	Heinrich Boll	heinrich boll	""	""	""	Bootstrapped from incumbent path
+creator_01366	Vaclav Havel	vaclav havel	""	""	""	Bootstrapped from incumbent path
+creator_01367	Ismail Kadare	ismail kadare	""	""	""	Bootstrapped from incumbent path
+creator_01368	John le Carre	john le carre	""	""	""	Bootstrapped from incumbent path
+creator_01369	Mario Vargas Llosa	mario vargas llosa	""	""	""	Bootstrapped from incumbent path
+creator_01370	Abdullah Hussein	abdullah hussein	""	""	""	Bootstrapped from incumbent path
+creator_01371	Maurice Sendak	maurice sendak	""	""	""	Bootstrapped from incumbent path
+creator_01372	Sylvia Plath	sylvia plath	""	""	""	Bootstrapped from incumbent path
+creator_01373	Forugh Farrokhzad	forugh farrokhzad	""	""	""	Bootstrapped from incumbent path
+creator_01374	Waguih Ghali	waguih ghali	""	""	""	Bootstrapped from incumbent path
+creator_01375	Amiri Baraka	amiri baraka	""	""	""	Bootstrapped from incumbent path
+creator_01376	Frank O'Hara	frank ohara	""	""	""	Bootstrapped from incumbent path
+creator_01377	Gurdial Singh	gurdial singh	""	""	""	Bootstrapped from incumbent path
+creator_01378	Hone Tuwhare	hone tuwhare	""	""	""	Bootstrapped from incumbent path
+creator_01379	Parijat	parijat	""	""	""	Bootstrapped from incumbent path
+creator_01380	John Berryman	john berryman	""	""	""	Bootstrapped from incumbent path
+creator_01381	Gabriel Okara	gabriel okara	""	""	""	Bootstrapped from incumbent path
+creator_01382	Philip Larkin	philip larkin	""	""	""	Bootstrapped from incumbent path
+creator_01383	Oodgeroo Noonuccal	oodgeroo noonuccal	""	""	""	Bootstrapped from incumbent path
+creator_01384	Ngugi wa Thiong'o	ngugi wa thiongo	""	""	""	Bootstrapped from incumbent path
+creator_01385	Girish Karnad	girish karnad	""	""	""	Bootstrapped from incumbent path
+creator_01386	Ibuse Masuji	ibuse masuji	""	""	""	Bootstrapped from incumbent path
+creator_01387	Bohumil Hrabal	bohumil hrabal	""	""	""	Bootstrapped from incumbent path
+creator_01388	Ranko Marinkovic	ranko marinkovic	""	""	""	Bootstrapped from incumbent path
+creator_01389	Frank Herbert	frank herbert	""	""	""	Bootstrapped from incumbent path
+creator_01390	Danilo Kis	danilo kis	""	""	""	Bootstrapped from incumbent path
+creator_01391	U. R. Ananthamurthy	u r ananthamurthy	""	""	""	Bootstrapped from incumbent path
+creator_01392	Harold Pinter	harold pinter	""	""	""	Bootstrapped from incumbent path
+creator_01393	Dalton Trevisan	dalton trevisan	""	""	""	Bootstrapped from incumbent path
+creator_01394	Sohrab Sepehri	sohrab sepehri	""	""	""	Bootstrapped from incumbent path
+creator_01395	Ama Ata Aidoo	ama ata aidoo	""	""	""	Bootstrapped from incumbent path
+creator_01396	Tayeb Salih	tayeb salih	""	""	""	Bootstrapped from incumbent path
+creator_01397	Okot p'Bitek	okot pbitek	""	""	""	Bootstrapped from incumbent path
+creator_01398	Thomas Pynchon	thomas pynchon	""	""	""	Bootstrapped from incumbent path
+creator_01399	Rahi Masoom Raza	rahi masoom raza	""	""	""	Bootstrapped from incumbent path
+creator_01400	Mesa Selimovic	mesa selimovic	""	""	""	Bootstrapped from incumbent path
+creator_01401	Flora Nwapa	flora nwapa	""	""	""	Bootstrapped from incumbent path
+creator_01402	Miguel Delibes	miguel delibes	""	""	""	Bootstrapped from incumbent path
+creator_01403	Truman Capote	truman capote	""	""	""	Bootstrapped from incumbent path
+creator_01404	Krishna Sobti	krishna sobti	""	""	""	Bootstrapped from incumbent path
+creator_01405	Jose Lezama Lima	jose lezama lima	""	""	""	Bootstrapped from incumbent path
+creator_01406	Endo Shusaku	endo shusaku	""	""	""	Bootstrapped from incumbent path
+creator_01407	Elechi Amadi	elechi amadi	""	""	""	Bootstrapped from incumbent path
+creator_01408	Bernard Malamud	bernard malamud	""	""	""	Bootstrapped from incumbent path
+creator_01409	Nadine Gordimer	nadine gordimer	""	""	""	Bootstrapped from incumbent path
+creator_01410	Grace Ogot	grace ogot	""	""	""	Bootstrapped from incumbent path
+creator_01411	Tom Stoppard	tom stoppard	""	""	""	Bootstrapped from incumbent path
+creator_01412	Shivaji Sawant	shivaji sawant	""	""	""	Bootstrapped from incumbent path
+creator_01413	Boris Pahor	boris pahor	""	""	""	Bootstrapped from incumbent path
+creator_01414	Ira Levin	ira levin	""	""	""	Bootstrapped from incumbent path
+creator_01415	Ashapurna Devi	ashapurna devi	""	""	""	Bootstrapped from incumbent path
+creator_01416	Kamau Brathwaite	kamau brathwaite	""	""	""	Bootstrapped from incumbent path
+creator_01417	Ursula K. Le Guin	ursula k le guin	""	""	""	Bootstrapped from incumbent path
+creator_01418	Yambo Ouologuem	yambo ouologuem	""	""	""	Bootstrapped from incumbent path
+creator_01419	Haddis Alemayehu	haddis alemayehu	""	""	""	Bootstrapped from incumbent path
+creator_01420	N. Scott Momaday	n scott momaday	""	""	""	Bootstrapped from incumbent path
+creator_01421	Amos Oz	amos oz	""	""	""	Bootstrapped from incumbent path
+creator_01422	Shrilal Shukla	shrilal shukla	""	""	""	Bootstrapped from incumbent path
+creator_01423	John Brunner	john brunner	""	""	""	Bootstrapped from incumbent path
+creator_01424	Ayi Kwei Armah	ayi kwei armah	""	""	""	Bootstrapped from incumbent path
+creator_01425	Peter S. Beagle	peter s beagle	""	""	""	Bootstrapped from incumbent path
+creator_01426	Ahmadou Kourouma	ahmadou kourouma	""	""	""	Bootstrapped from incumbent path
+creator_01427	Bessie Head	bessie head	""	""	""	Bootstrapped from incumbent path
+creator_01428	Park Kyong-ni	park kyong ni	""	""	""	Bootstrapped from incumbent path
+creator_01429	Athol Fugard	athol fugard	""	""	""	Bootstrapped from incumbent path
+creator_01430	Elena Poniatowska	elena poniatowska	""	""	""	Bootstrapped from incumbent path
+creator_01431	O. V. Vijayan	o v vijayan	""	""	""	Bootstrapped from incumbent path
+creator_01432	Monique Wittig	monique wittig	""	""	""	Bootstrapped from incumbent path
+creator_01433	Philip Roth	philip roth	""	""	""	Bootstrapped from incumbent path
+creator_01434	Hushang Golshiri	hushang golshiri	""	""	""	Bootstrapped from incumbent path
+creator_01435	Simin Daneshvar	simin daneshvar	""	""	""	Bootstrapped from incumbent path
+creator_01436	N. Scott Momaday and Kiowa tradition	n scott momaday and kiowa tradition	""	""	""	Bootstrapped from incumbent path
+creator_01437	Naveen	naveen	""	""	""	Bootstrapped from incumbent path
+creator_01438	John Fowles	john fowles	""	""	""	Bootstrapped from incumbent path
+creator_01439	Ebrahim Hussein	ebrahim hussein	""	""	""	Bootstrapped from incumbent path
+creator_01440	Merle Hodge	merle hodge	""	""	""	Bootstrapped from incumbent path
+creator_01441	Derek Walcott	derek walcott	""	""	""	Bootstrapped from incumbent path
+creator_01442	Nuruddin Farah	nuruddin farah	""	""	""	Bootstrapped from incumbent path
+creator_01443	Markoosie Patsauq	markoosie patsauq	""	""	""	Bootstrapped from incumbent path
+creator_01444	Birendra Kumar Bhattacharya	birendra kumar bhattacharya	""	""	""	Bootstrapped from incumbent path
+creator_01445	Jayakanthan	jayakanthan	""	""	""	Bootstrapped from incumbent path
+creator_01446	Toni Morrison	toni morrison	""	""	""	Bootstrapped from incumbent path
+creator_01447	Vincent Eri	vincent eri	""	""	""	Bootstrapped from incumbent path
+creator_01448	Yun Dong-ju	yun dong ju	""	""	""	Bootstrapped from incumbent path
+creator_01449	Jose Donoso	jose donoso	""	""	""	Bootstrapped from incumbent path
+creator_01450	Magda Szabo	magda szabo	""	""	""	Bootstrapped from incumbent path
+creator_01451	John Gardner	john gardner	""	""	""	Bootstrapped from incumbent path
+creator_01452	Christopher Okigbo	christopher okigbo	""	""	""	Bootstrapped from incumbent path
+creator_01453	Robert C. O'Brien	robert c obrien	""	""	""	Bootstrapped from incumbent path
+creator_01454	Euphrase Kezilahabi	euphrase kezilahabi	""	""	""	Bootstrapped from incumbent path
+creator_01455	Pai Hsien-yung	pai hsien yung	""	""	""	Bootstrapped from incumbent path
+creator_01456	E. L. Doctorow	e l doctorow	""	""	""	Bootstrapped from incumbent path
+creator_01457	Oguz Atay	oguz atay	""	""	""	Bootstrapped from incumbent path
+creator_01458	William Peter Blatty	william peter blatty	""	""	""	Bootstrapped from incumbent path
+creator_01459	Kofi Awoonor	kofi awoonor	""	""	""	Bootstrapped from incumbent path
+creator_01460	Otar Chiladze	otar chiladze	""	""	""	Bootstrapped from incumbent path
+creator_01461	Mohamed Said Abdulla	mohamed said abdulla	""	""	""	Bootstrapped from incumbent path
+creator_01462	Ishmael Reed	ishmael reed	""	""	""	Bootstrapped from incumbent path
+creator_01463	Witi Ihimaera	witi ihimaera	""	""	""	Bootstrapped from incumbent path
+creator_01464	Arkady and Boris Strugatsky	arkady and boris strugatsky	""	""	""	Bootstrapped from incumbent path
+creator_01465	Athol Fugard, John Kani, and Winston Ntshona	athol fugard john kani and winston ntshona	""	""	""	Bootstrapped from incumbent path
+creator_01466	John Ruganda	john ruganda	""	""	""	Bootstrapped from incumbent path
+creator_01467	Richard Adams	richard adams	""	""	""	Bootstrapped from incumbent path
+creator_01468	Michael Moorcock	michael moorcock	""	""	""	Bootstrapped from incumbent path
+creator_01469	Adrienne Rich	adrienne rich	""	""	""	Bootstrapped from incumbent path
+creator_01470	Mohamed Choukri	mohamed choukri	""	""	""	Bootstrapped from incumbent path
+creator_01471	Maria Campbell	maria campbell	""	""	""	Bootstrapped from incumbent path
+creator_01472	Meja Mwangi	meja mwangi	""	""	""	Bootstrapped from incumbent path
+creator_01473	Yusuf Atilgan	yusuf atilgan	""	""	""	Bootstrapped from incumbent path
+creator_01474	Iraj Pezeshkzad	iraj pezeshkzad	""	""	""	Bootstrapped from incumbent path
+creator_01475	Diamond Shumsher Rana	diamond shumsher rana	""	""	""	Bootstrapped from incumbent path
+creator_01476	Albert Wendt	albert wendt	""	""	""	Bootstrapped from incumbent path
+creator_01477	Susan Cooper	susan cooper	""	""	""	Bootstrapped from incumbent path
+creator_01478	Amadou Hampate Ba	amadou hampate ba	""	""	""	Bootstrapped from incumbent path
+creator_01479	Lygia Fagundes Telles	lygia fagundes telles	""	""	""	Bootstrapped from incumbent path
+creator_01480	Daniachew Worku	daniachew worku	""	""	""	Bootstrapped from incumbent path
+creator_01481	Mahasweta Devi	mahasweta devi	""	""	""	Bootstrapped from incumbent path
+creator_01482	Augusto Roa Bastos	augusto roa bastos	""	""	""	Bootstrapped from incumbent path
+creator_01483	Simin Behbahani	simin behbahani	""	""	""	Bootstrapped from incumbent path
+creator_01484	Bhisham Sahni	bhisham sahni	""	""	""	Bootstrapped from incumbent path
+creator_01485	Joe Haldeman	joe haldeman	""	""	""	Bootstrapped from incumbent path
+creator_01486	Leonora Carrington	leonora carrington	""	""	""	Bootstrapped from incumbent path
+creator_01487	Emile Habibi	emile habibi	""	""	""	Bootstrapped from incumbent path
+creator_01488	James Welch	james welch	""	""	""	Bootstrapped from incumbent path
+creator_01489	Stephen King	stephen king	""	""	""	Bootstrapped from incumbent path
+creator_01490	Elsa Morante	elsa morante	""	""	""	Bootstrapped from incumbent path
+creator_01491	David Mamet	david mamet	""	""	""	Bootstrapped from incumbent path
+creator_01492	Raduan Nassar	raduan nassar	""	""	""	Bootstrapped from incumbent path
+creator_01493	Samuel R. Delany	samuel r delany	""	""	""	Bootstrapped from incumbent path
+creator_01494	Imre Kertesz	imre kertesz	""	""	""	Bootstrapped from incumbent path
+creator_01495	Robert J. Merritt	robert j merritt	""	""	""	Bootstrapped from incumbent path
+creator_01496	Joanna Russ	joanna russ	""	""	""	Bootstrapped from incumbent path
+creator_01497	Efua Sutherland	efua sutherland	""	""	""	Bootstrapped from incumbent path
+creator_01498	Natalie Babbitt	natalie babbitt	""	""	""	Bootstrapped from incumbent path
+creator_01499	Nawal El Saadawi	nawal el saadawi	""	""	""	Bootstrapped from incumbent path
+creator_01500	Edith Sodergran	edith sodergran	""	""	""	Bootstrapped from incumbent path
+creator_01501	Thomas Bernhard	thomas bernhard	""	""	""	Bootstrapped from incumbent path
+creator_01502	Lalithambika Antharjanam	lalithambika antharjanam	""	""	""	Bootstrapped from incumbent path
+creator_01503	Ghada al-Samman	ghada al samman	""	""	""	Bootstrapped from incumbent path
+creator_01504	Ntozake Shange	ntozake shange	""	""	""	Bootstrapped from incumbent path
+creator_01505	Micere Githae Mugo	micere githae mugo	""	""	""	Bootstrapped from incumbent path
+creator_01506	Anne Rice	anne rice	""	""	""	Bootstrapped from incumbent path
+creator_01507	Manuel Puig	manuel puig	""	""	""	Bootstrapped from incumbent path
+creator_01508	Mildred D. Taylor	mildred d taylor	""	""	""	Bootstrapped from incumbent path
+creator_01509	Maxine Hong Kingston	maxine hong kingston	""	""	""	Bootstrapped from incumbent path
+creator_01510	Sahar Khalifeh	sahar khalifeh	""	""	""	Bootstrapped from incumbent path
+creator_01511	Marge Piercy	marge piercy	""	""	""	Bootstrapped from incumbent path
+creator_01512	Michael Ondaatje	michael ondaatje	""	""	""	Bootstrapped from incumbent path
+creator_01513	Francis D. Imbuga	francis d imbuga	""	""	""	Bootstrapped from incumbent path
+creator_01514	Kampoon Boontawee	kampoon boontawee	""	""	""	Bootstrapped from incumbent path
+creator_01515	Katherine Paterson	katherine paterson	""	""	""	Bootstrapped from incumbent path
+creator_01516	Leslie Marmon Silko	leslie marmon silko	""	""	""	Bootstrapped from incumbent path
+creator_01517	Frederik Pohl	frederik pohl	""	""	""	Bootstrapped from incumbent path
+creator_01518	Ngugi wa Thiong'o and Ngugi wa Mirii	ngugi wa thiongo and ngugi wa mirii	""	""	""	Bootstrapped from incumbent path
+creator_01519	Domitila Barrios de Chungara and Moema Viezzer	domitila barrios de chungara and moema viezzer	""	""	""	Bootstrapped from incumbent path
+creator_01520	Robert Coover	robert coover	""	""	""	Bootstrapped from incumbent path
+creator_01521	J. R. R. Tolkien and Christopher Tolkien	j r r tolkien and christopher tolkien	""	""	""	Bootstrapped from incumbent path
+creator_01522	Will Eisner	will eisner	""	""	""	Bootstrapped from incumbent path
+creator_01523	Daya Pawar	daya pawar	""	""	""	Bootstrapped from incumbent path
+creator_01524	Gerald Vizenor	gerald vizenor	""	""	""	Bootstrapped from incumbent path
+creator_01525	Sam Shepard	sam shepard	""	""	""	Bootstrapped from incumbent path
+creator_01526	Jabra Ibrahim Jabra	jabra ibrahim jabra	""	""	""	Bootstrapped from incumbent path
+creator_01527	Mahmoud Dowlatabadi	mahmoud dowlatabadi	""	""	""	Bootstrapped from incumbent path
+creator_01528	Mini Aodla Freeman	mini aodla freeman	""	""	""	Bootstrapped from incumbent path
+creator_01529	Patricia Grace	patricia grace	""	""	""	Bootstrapped from incumbent path
+creator_01530	Etel Adnan	etel adnan	""	""	""	Bootstrapped from incumbent path
+creator_01531	Jaan Kross	jaan kross	""	""	""	Bootstrapped from incumbent path
+creator_01532	Cho Se-hui	cho se hui	""	""	""	Bootstrapped from incumbent path
+creator_01533	Dambudzo Marechera	dambudzo marechera	""	""	""	Bootstrapped from incumbent path
+creator_01534	Iris Murdoch	iris murdoch	""	""	""	Bootstrapped from incumbent path
+creator_01535	John Cheever	john cheever	""	""	""	Bootstrapped from incumbent path
+creator_01536	Ellen Raskin	ellen raskin	""	""	""	Bootstrapped from incumbent path
+creator_01537	Georges Perec	georges perec	""	""	""	Bootstrapped from incumbent path
+creator_01538	Octavia E. Butler	octavia e butler	""	""	""	Bootstrapped from incumbent path
+creator_01539	Intizar Husain	intizar husain	""	""	""	Bootstrapped from incumbent path
+creator_01540	Caryl Churchill	caryl churchill	""	""	""	Bootstrapped from incumbent path
+creator_01541	Sony Labou Tansi	sony labou tansi	""	""	""	Bootstrapped from incumbent path
+creator_01542	S. L. Bhyrappa	s l bhyrappa	""	""	""	Bootstrapped from incumbent path
+creator_01543	Mariama Ba	mariama ba	""	""	""	Bootstrapped from incumbent path
+creator_01544	Cormac McCarthy	cormac mccarthy	""	""	""	Bootstrapped from incumbent path
+creator_01545	Aminata Sow Fall	aminata sow fall	""	""	""	Bootstrapped from incumbent path
+creator_01546	Angela Carter	angela carter	""	""	""	Bootstrapped from incumbent path
+creator_01547	Milan Kundera	milan kundera	""	""	""	Bootstrapped from incumbent path
+creator_01548	Earl Lovelace	earl lovelace	""	""	""	Bootstrapped from incumbent path
+creator_01549	Buchi Emecheta	buchi emecheta	""	""	""	Bootstrapped from incumbent path
+creator_01550	Michael Ende	michael ende	""	""	""	Bootstrapped from incumbent path
+creator_01551	Rubem Fonseca	rubem fonseca	""	""	""	Bootstrapped from incumbent path
+creator_01552	Mazisi Kunene	mazisi kunene	""	""	""	Bootstrapped from incumbent path
+creator_01553	Anita Desai	anita desai	""	""	""	Bootstrapped from incumbent path
+creator_01554	Marilynne Robinson	marilynne robinson	""	""	""	Bootstrapped from incumbent path
+creator_01555	Pacific writing anthology tradition	pacific writing anthology tradition	""	""	""	Bootstrapped from incumbent path
+creator_01556	Art Spiegelman	art spiegelman	""	""	""	Bootstrapped from incumbent path
+creator_01557	Pepetela	pepetela	""	""	""	Bootstrapped from incumbent path
+creator_01558	Gene Wolfe	gene wolfe	""	""	""	Bootstrapped from incumbent path
+creator_01559	Umberto Eco	umberto eco	""	""	""	Bootstrapped from incumbent path
+creator_01560	Hanan al-Shaykh	hanan al shaykh	""	""	""	Bootstrapped from incumbent path
+creator_01561	Laxman Mane	laxman mane	""	""	""	Bootstrapped from incumbent path
+creator_01562	J. M. Coetzee	j m coetzee	""	""	""	Bootstrapped from incumbent path
+creator_01563	Assia Djebar	assia djebar	""	""	""	Bootstrapped from incumbent path
+creator_01564	Moacyr Scliar	moacyr scliar	""	""	""	Bootstrapped from incumbent path
+creator_01565	Salman Rushdie	salman rushdie	""	""	""	Bootstrapped from incumbent path
+creator_01566	Inger Christensen	inger christensen	""	""	""	Bootstrapped from incumbent path
+creator_01567	Simon J. Ortiz	simon j ortiz	""	""	""	Bootstrapped from incumbent path
+creator_01568	Gilbert Hernandez and Jaime Hernandez	gilbert hernandez and jaime hernandez	""	""	""	Bootstrapped from incumbent path
+creator_01569	Donald Barthelme	donald barthelme	""	""	""	Bootstrapped from incumbent path
+creator_01570	Sonallah Ibrahim	sonallah ibrahim	""	""	""	Bootstrapped from incumbent path
+creator_01571	Y. B. Mangunwijaya	y b mangunwijaya	""	""	""	Bootstrapped from incumbent path
+creator_01572	Alasdair Gray	alasdair gray	""	""	""	Bootstrapped from incumbent path
+creator_01573	Chart Korbjitti	chart korbjitti	""	""	""	Bootstrapped from incumbent path
+creator_01574	Jose Saramago	jose saramago	""	""	""	Bootstrapped from incumbent path
+creator_01575	Theresa Hak Kyung Cha	theresa hak kyung cha	""	""	""	Bootstrapped from incumbent path
+creator_01576	Ken Bugul	ken bugul	""	""	""	Bootstrapped from incumbent path
+creator_01577	Harry Mulisch	harry mulisch	""	""	""	Bootstrapped from incumbent path
+creator_01578	Alice Walker	alice walker	""	""	""	Bootstrapped from incumbent path
+creator_01579	Ahmad Tohari	ahmad tohari	""	""	""	Bootstrapped from incumbent path
+creator_01580	Jack Davis	jack davis	""	""	""	Bootstrapped from incumbent path
+creator_01581	Isabel Allende	isabel allende	""	""	""	Bootstrapped from incumbent path
+creator_01582	Hilda Hilst	hilda hilst	""	""	""	Bootstrapped from incumbent path
+creator_01583	Gloria Naylor	gloria naylor	""	""	""	Bootstrapped from incumbent path
+creator_01584	Alan Moore and David Lloyd	alan moore and david lloyd	""	""	""	Bootstrapped from incumbent path
+creator_01585	Audre Lorde	audre lorde	""	""	""	Bootstrapped from incumbent path
+creator_01586	Jean-Joseph Rabearivelo	jean joseph rabearivelo	""	""	""	Bootstrapped from incumbent path
+creator_01587	Latife Tekin	latife tekin	""	""	""	Bootstrapped from incumbent path
+creator_01588	Lualhati Bautista	lualhati bautista	""	""	""	Bootstrapped from incumbent path
+creator_01589	Beatrice Culleton Mosionier	beatrice culleton mosionier	""	""	""	Bootstrapped from incumbent path
+creator_01590	Diamela Eltit	diamela eltit	""	""	""	Bootstrapped from incumbent path
+creator_01591	Baalu Girma	baalu girma	""	""	""	Bootstrapped from incumbent path
+creator_01592	Joy Harjo	joy harjo	""	""	""	Bootstrapped from incumbent path
+creator_01593	Epeli Hau'ofa	epeli hauofa	""	""	""	Bootstrapped from incumbent path
+creator_01594	Luisa Valenzuela	luisa valenzuela	""	""	""	Bootstrapped from incumbent path
+creator_01595	Hugo Claus	hugo claus	""	""	""	Bootstrapped from incumbent path
+creator_01596	Susan Hill	susan hill	""	""	""	Bootstrapped from incumbent path
+creator_01597	Paula Gunn Allen	paula gunn allen	""	""	""	Bootstrapped from incumbent path
+creator_01598	Rigoberta Menchu; Elisabeth Burgos-Debray	rigoberta menchu elisabeth burgos debray	""	""	""	Bootstrapped from incumbent path
+creator_01599	Elfriede Jelinek	elfriede jelinek	""	""	""	Bootstrapped from incumbent path
+creator_01600	Li Ang	li ang	""	""	""	Bootstrapped from incumbent path
+creator_01601	Christa Wolf	christa wolf	""	""	""	Bootstrapped from incumbent path
+creator_01602	Michelle Cliff	michelle cliff	""	""	""	Bootstrapped from incumbent path
+creator_01603	Sharankumar Limbale	sharankumar limbale	""	""	""	Bootstrapped from incumbent path
+creator_01604	Abdul Rahman Munif	abdul rahman munif	""	""	""	Bootstrapped from incumbent path
+creator_01605	Louise Erdrich	louise erdrich	""	""	""	Bootstrapped from incumbent path
+creator_01606	William Gibson	william gibson	""	""	""	Bootstrapped from incumbent path
+creator_01607	Mitiarjuk Nappaaluk	mitiarjuk nappaaluk	""	""	""	Bootstrapped from incumbent path
+creator_01608	Maryse Conde	maryse conde	""	""	""	Bootstrapped from incumbent path
+creator_01609	Keri Hulme	keri hulme	""	""	""	Bootstrapped from incumbent path
+creator_01610	Ah Cheng	ah cheng	""	""	""	Bootstrapped from incumbent path
+creator_01611	Sandra Cisneros	sandra cisneros	""	""	""	Bootstrapped from incumbent path
+creator_01612	Nelida Pinon	nelida pinon	""	""	""	Bootstrapped from incumbent path
+creator_01613	Cristina Peri Rossi	cristina peri rossi	""	""	""	Bootstrapped from incumbent path
+creator_01614	Pratibha Ray	pratibha ray	""	""	""	Bootstrapped from incumbent path
+creator_01615	Milorad Pavic	milorad pavic	""	""	""	Bootstrapped from incumbent path
+creator_01616	August Wilson	august wilson	""	""	""	Bootstrapped from incumbent path
+creator_01617	Jamaica Kincaid	jamaica kincaid	""	""	""	Bootstrapped from incumbent path
+creator_01618	Zhang Xianliang	zhang xianliang	""	""	""	Bootstrapped from incumbent path
+creator_01619	Jeanette Winterson	jeanette winterson	""	""	""	Bootstrapped from incumbent path
+creator_01620	Laszlo Krasznahorkai	laszlo krasznahorkai	""	""	""	Bootstrapped from incumbent path
+creator_01621	Margaret Atwood	margaret atwood	""	""	""	Bootstrapped from incumbent path
+creator_01622	Tahar Ben Jelloun	tahar ben jelloun	""	""	""	Bootstrapped from incumbent path
+creator_01623	Don DeLillo	don delillo	""	""	""	Bootstrapped from incumbent path
+creator_01624	Caryl Phillips	caryl phillips	""	""	""	Bootstrapped from incumbent path
+creator_01625	Kazuo Ishiguro	kazuo ishiguro	""	""	""	Bootstrapped from incumbent path
+creator_01626	Mo Yan	mo yan	""	""	""	Bootstrapped from incumbent path
+creator_01627	B. Kojo Laing	b kojo laing	""	""	""	Bootstrapped from incumbent path
+creator_01628	David Grossman	david grossman	""	""	""	Bootstrapped from incumbent path
+creator_01629	Olive Senior	olive senior	""	""	""	Bootstrapped from incumbent path
+creator_01630	Frank Miller and Klaus Janson	frank miller and klaus janson	""	""	""	Bootstrapped from incumbent path
+creator_01631	Vikram Seth	vikram seth	""	""	""	Bootstrapped from incumbent path
+creator_01632	Alicia Partnoy	alicia partnoy	""	""	""	Bootstrapped from incumbent path
+creator_01633	Tomson Highway	tomson highway	""	""	""	Bootstrapped from incumbent path
+creator_01634	Rita Dove	rita dove	""	""	""	Bootstrapped from incumbent path
+creator_01635	Mia Couto	mia couto	""	""	""	Bootstrapped from incumbent path
+creator_01636	Alan Moore and Dave Gibbons	alan moore and dave gibbons	""	""	""	Bootstrapped from incumbent path
+creator_01637	Annie Ernaux	annie ernaux	""	""	""	Bootstrapped from incumbent path
+creator_01638	Gloria Anzaldua	gloria anzaldua	""	""	""	Bootstrapped from incumbent path
+creator_01639	Sally Morgan	sally morgan	""	""	""	Bootstrapped from incumbent path
+creator_01640	Haruki Murakami	haruki murakami	""	""	""	Bootstrapped from incumbent path
+creator_01641	Yi Mun-yol	yi mun yol	""	""	""	Bootstrapped from incumbent path
+creator_01642	James Ellroy	james ellroy	""	""	""	Bootstrapped from incumbent path
+creator_01643	Nguyen Huy Thiep	nguyen huy thiep	""	""	""	Bootstrapped from incumbent path
+creator_01644	Zoe Wicomb	zoe wicomb	""	""	""	Bootstrapped from incumbent path
+creator_01645	Chenjerai Hove	chenjerai hove	""	""	""	Bootstrapped from incumbent path
+creator_01646	Ruby Langford Ginibi	ruby langford ginibi	""	""	""	Bootstrapped from incumbent path
+creator_01647	Bapsi Sidhwa	bapsi sidhwa	""	""	""	Bootstrapped from incumbent path
+creator_01648	Banana Yoshimoto	banana yoshimoto	""	""	""	Bootstrapped from incumbent path
+creator_01649	Devanur Mahadeva	devanur mahadeva	""	""	""	Bootstrapped from incumbent path
+creator_01650	Tsitsi Dangarembga	tsitsi dangarembga	""	""	""	Bootstrapped from incumbent path
+creator_01651	Bernardo Atxaga	bernardo atxaga	""	""	""	Bootstrapped from incumbent path
+creator_01652	Duong Thu Huong	duong thu huong	""	""	""	Bootstrapped from incumbent path
+creator_01653	Patrick Chamoiseau	patrick chamoiseau	""	""	""	Bootstrapped from incumbent path
+creator_01654	Amitav Ghosh	amitav ghosh	""	""	""	Bootstrapped from incumbent path
+creator_01655	Nils-Aslak Valkeapaa	nils aslak valkeapaa	""	""	""	Bootstrapped from incumbent path
+creator_01656	Raymond Carver	raymond carver	""	""	""	Bootstrapped from incumbent path
+creator_01657	Subramani	subramani	""	""	""	Bootstrapped from incumbent path
+creator_01658	Alan Moore and Eddie Campbell	alan moore and eddie campbell	""	""	""	Bootstrapped from incumbent path
+creator_01659	Dan Simmons	dan simmons	""	""	""	Bootstrapped from incumbent path
+creator_01660	Thomas King	thomas king	""	""	""	Bootstrapped from incumbent path
+creator_01661	Mircea Cartarescu	mircea cartarescu	""	""	""	Bootstrapped from incumbent path
+creator_01662	Fleur Jaeggy	fleur jaeggy	""	""	""	Bootstrapped from incumbent path
+creator_01663	Leonel Lienlaf	leonel lienlaf	""	""	""	Bootstrapped from incumbent path
+creator_01664	P. Sivakami	p sivakami	""	""	""	Bootstrapped from incumbent path
+creator_01665	Amy Tan	amy tan	""	""	""	Bootstrapped from incumbent path
+creator_01666	Germano Almeida	germano almeida	""	""	""	Bootstrapped from incumbent path
+creator_01667	Neil Gaiman and collaborators	neil gaiman and collaborators	""	""	""	Bootstrapped from incumbent path
+creator_01668	Milton Hatoum	milton hatoum	""	""	""	Bootstrapped from incumbent path
+creator_01669	Shahrnush Parsipur	shahrnush parsipur	""	""	""	Bootstrapped from incumbent path
+creator_01670	Laura Esquivel	laura esquivel	""	""	""	Bootstrapped from incumbent path
+creator_01671	Lauretta Ngcobo	lauretta ngcobo	""	""	""	Bootstrapped from incumbent path
+creator_01672	Paulina Chiziane	paulina chiziane	""	""	""	Bootstrapped from incumbent path
+creator_01673	Walter Mosley	walter mosley	""	""	""	Bootstrapped from incumbent path
+creator_01674	Jessica Hagedorn	jessica hagedorn	""	""	""	Bootstrapped from incumbent path
+creator_01675	Linda Hogan	linda hogan	""	""	""	Bootstrapped from incumbent path
+creator_01676	A. B. Yehoshua	b yehoshua	""	""	""	Bootstrapped from incumbent path
+creator_01677	Alan Duff	alan duff	""	""	""	Bootstrapped from incumbent path
+creator_01678	A. S. Byatt	s byatt	""	""	""	Bootstrapped from incumbent path
+creator_01679	Gao Xingjian	gao xingjian	""	""	""	Bootstrapped from incumbent path
+creator_01680	Yakup Kadri Karaosmanoglu	yakup kadri karaosmanoglu	""	""	""	Bootstrapped from incumbent path
+creator_01681	Hanif Kureishi	hanif kureishi	""	""	""	Bootstrapped from incumbent path
+creator_01682	Bao Ninh	bao ninh	""	""	""	Bootstrapped from incumbent path
+creator_01683	Hoda Barakat	hoda barakat	""	""	""	Bootstrapped from incumbent path
+creator_01684	Drew Hayden Taylor	drew hayden taylor	""	""	""	Bootstrapped from incumbent path
+creator_01685	Tim O'Brien	tim obrien	""	""	""	Bootstrapped from incumbent path
+creator_01686	Tony Kushner	tony kushner	""	""	""	Bootstrapped from incumbent path
+creator_01687	Jeff Smith	jeff smith	""	""	""	Bootstrapped from incumbent path
+creator_01688	Pat Barker	pat barker	""	""	""	Bootstrapped from incumbent path
+creator_01689	Rohinton Mistry	rohinton mistry	""	""	""	Bootstrapped from incumbent path
+creator_01690	Ben Okri	ben okri	""	""	""	Bootstrapped from incumbent path
+creator_01691	Han Yong-un	han yong un	""	""	""	Bootstrapped from incumbent path
+creator_01692	Doris Pilkington Garimara	doris pilkington garimara	""	""	""	Bootstrapped from incumbent path
+creator_01693	Peter Pist'anek	peter pistanek	""	""	""	Bootstrapped from incumbent path
+creator_01694	Javier Marias	javier marias	""	""	""	Bootstrapped from incumbent path
+creator_01695	Orly Castel-Bloom	orly castel bloom	""	""	""	Bootstrapped from incumbent path
+creator_01696	Bama	bama	""	""	""	Bootstrapped from incumbent path
+creator_01697	Kim Stanley Robinson	kim stanley robinson	""	""	""	Bootstrapped from incumbent path
+creator_01698	Johannes V. Jensen	johannes v jensen	""	""	""	Bootstrapped from incumbent path
+creator_01699	Neal Stephenson	neal stephenson	""	""	""	Bootstrapped from incumbent path
+creator_01700	Irmgard Keun	irmgard keun	""	""	""	Bootstrapped from incumbent path
+creator_01701	Louis Owens	louis owens	""	""	""	Bootstrapped from incumbent path
+creator_01702	Park Wan-suh	park wan suh	""	""	""	Bootstrapped from incumbent path
+creator_01703	Terry Pratchett	terry pratchett	""	""	""	Bootstrapped from incumbent path
+creator_01704	Cristina Garcia	cristina garcia	""	""	""	Bootstrapped from incumbent path
+creator_01705	Alootook Ipellie	alootook ipellie	""	""	""	Bootstrapped from incumbent path
+creator_01706	Kerstin Ekman	kerstin ekman	""	""	""	Bootstrapped from incumbent path
+creator_01707	Konai Helu Thaman	konai helu thaman	""	""	""	Bootstrapped from incumbent path
+creator_01708	Taslima Nasrin	taslima nasrin	""	""	""	Bootstrapped from incumbent path
+creator_01709	Joe Sacco	joe sacco	""	""	""	Bootstrapped from incumbent path
+creator_01710	Lee Maracle	lee maracle	""	""	""	Bootstrapped from incumbent path
+creator_01711	Leslie Feinberg	leslie feinberg	""	""	""	Bootstrapped from incumbent path
+creator_01712	Lois Lowry	lois lowry	""	""	""	Bootstrapped from incumbent path
+creator_01713	Sherman Alexie	sherman alexie	""	""	""	Bootstrapped from incumbent path
+creator_01714	Yu Hua	yu hua	""	""	""	Bootstrapped from incumbent path
+creator_01715	Edwidge Danticat	edwidge danticat	""	""	""	Bootstrapped from incumbent path
+creator_01716	Shyam Selvadurai	shyam selvadurai	""	""	""	Bootstrapped from incumbent path
+creator_01717	Radwa Ashour	radwa ashour	""	""	""	Bootstrapped from incumbent path
+creator_01718	Haunani-Kay Trask	haunani kay trask	""	""	""	Bootstrapped from incumbent path
+creator_01719	Qiu Miaojin	qiu miaojin	""	""	""	Bootstrapped from incumbent path
+creator_01720	Chu Tien-wen	chu tien wen	""	""	""	Bootstrapped from incumbent path
+creator_01721	Abdulrazak Gurnah	abdulrazak gurnah	""	""	""	Bootstrapped from incumbent path
+creator_01722	Kiana Davenport	kiana davenport	""	""	""	Bootstrapped from incumbent path
+creator_01723	Dag Solstad	dag solstad	""	""	""	Bootstrapped from incumbent path
+creator_01724	Nu Nu Yi	nu nu yi	""	""	""	Bootstrapped from incumbent path
+creator_01725	Susan Power	susan power	""	""	""	Bootstrapped from incumbent path
+creator_01726	Herta Muller	herta muller	""	""	""	Bootstrapped from incumbent path
+creator_01727	Ogawa Yoko	ogawa yoko	""	""	""	Bootstrapped from incumbent path
+creator_01728	Yvonne Vera	yvonne vera	""	""	""	Bootstrapped from incumbent path
+creator_01729	Richard Wagamese	richard wagamese	""	""	""	Bootstrapped from incumbent path
+creator_01730	Galsan Tschinag	galsan tschinag	""	""	""	Bootstrapped from incumbent path
+creator_01731	Julia Alvarez	julia alvarez	""	""	""	Bootstrapped from incumbent path
+creator_01732	Gaspar Pedro Gonzalez	gaspar pedro gonzalez	""	""	""	Bootstrapped from incumbent path
+creator_01733	Sarah Kane	sarah kane	""	""	""	Bootstrapped from incumbent path
+creator_01734	Philip Pullman	philip pullman	""	""	""	Bootstrapped from incumbent path
+creator_01735	Chang-rae Lee	chang rae lee	""	""	""	Bootstrapped from incumbent path
+creator_01736	W. G. Sebald	w g sebald	""	""	""	Bootstrapped from incumbent path
+creator_01737	Mark Behr	mark behr	""	""	""	Bootstrapped from incumbent path
+creator_01738	Wang Anyi	wang anyi	""	""	""	Bootstrapped from incumbent path
+creator_01739	Zakes Mda	zakes mda	""	""	""	Bootstrapped from incumbent path
+creator_01740	Vilsoni Hereniko	vilsoni hereniko	""	""	""	Bootstrapped from incumbent path
+creator_01741	Jason Lutes	jason lutes	""	""	""	Bootstrapped from incumbent path
+creator_01742	Shani Mootoo	shani mootoo	""	""	""	Bootstrapped from incumbent path
+creator_01743	Roberto Bolano	roberto bolano	""	""	""	Bootstrapped from incumbent path
+creator_01744	Oksana Zabuzhko	oksana zabuzhko	""	""	""	Bootstrapped from incumbent path
+creator_01745	Kim Young-ha	kim young ha	""	""	""	Bootstrapped from incumbent path
+creator_01746	David Foster Wallace	david foster wallace	""	""	""	Bootstrapped from incumbent path
+creator_01747	Akhtaruzzaman Elias	akhtaruzzaman elias	""	""	""	Bootstrapped from incumbent path
+creator_01748	Diane Glancy	diane glancy	""	""	""	Bootstrapped from incumbent path
+creator_01749	Richard Van Camp	richard van camp	""	""	""	Bootstrapped from incumbent path
+creator_01750	Mary Doria Russell	mary doria russell	""	""	""	Bootstrapped from incumbent path
+creator_01751	Sophia de Mello Breyner Andresen	sophia de mello breyner andresen	""	""	""	Bootstrapped from incumbent path
+creator_01752	Sia Figiel	sia figiel	""	""	""	Bootstrapped from incumbent path
+creator_01753	Olga Tokarczuk	olga tokarczuk	""	""	""	Bootstrapped from incumbent path
+creator_01754	Antonio Lobo Antunes	antonio lobo antunes	""	""	""	Bootstrapped from incumbent path
+creator_01755	Paulo Lins	paulo lins	""	""	""	Bootstrapped from incumbent path
+creator_01756	J. K. Rowling	j k rowling	""	""	""	Bootstrapped from incumbent path
+creator_01757	Mourid Barghouti	mourid barghouti	""	""	""	Bootstrapped from incumbent path
+creator_01758	Omprakash Valmiki	omprakash valmiki	""	""	""	Bootstrapped from incumbent path
+creator_01759	Dionne Brand	dionne brand	""	""	""	Bootstrapped from incumbent path
+creator_01760	Arundhati Roy	arundhati roy	""	""	""	Bootstrapped from incumbent path
+creator_01761	Volga	volga	""	""	""	Bootstrapped from incumbent path
+creator_01762	Dubravka Ugresic	dubravka ugresic	""	""	""	Bootstrapped from incumbent path
+creator_01763	Hamid Ismailov	hamid ismailov	""	""	""	Bootstrapped from incumbent path
+creator_01764	Svetlana Alexievich	svetlana alexievich	""	""	""	Bootstrapped from incumbent path
+creator_01765	Alexis Wright	alexis wright	""	""	""	Bootstrapped from incumbent path
+creator_01766	Anne Carson	anne carson	""	""	""	Bootstrapped from incumbent path
+creator_01767	Nalo Hopkinson	nalo hopkinson	""	""	""	Bootstrapped from incumbent path
+creator_01768	Elias Khoury	elias khoury	""	""	""	Bootstrapped from incumbent path
+creator_01769	Louis Sachar	louis sachar	""	""	""	Bootstrapped from incumbent path
+creator_01770	Orhan Pamuk	orhan pamuk	""	""	""	Bootstrapped from incumbent path
+creator_01771	Ayu Utami	ayu utami	""	""	""	Bootstrapped from incumbent path
+creator_01772	Giannina Braschi	giannina braschi	""	""	""	Bootstrapped from incumbent path
+creator_01773	Kim Scott	kim scott	""	""	""	Bootstrapped from incumbent path
+creator_01774	Jhumpa Lahiri	jhumpa lahiri	""	""	""	Bootstrapped from incumbent path
+creator_01775	Walter Dean Myers	walter dean myers	""	""	""	Bootstrapped from incumbent path
+creator_01776	Georgi Gospodinov	georgi gospodinov	""	""	""	Bootstrapped from incumbent path
+creator_01777	Laurie Halse Anderson	laurie halse anderson	""	""	""	Bootstrapped from incumbent path
+creator_01778	Robert Sullivan	robert sullivan	""	""	""	Bootstrapped from incumbent path
+creator_01779	Tahar Djaout	tahar djaout	""	""	""	Bootstrapped from incumbent path
+creator_01780	Leila Aboulela	leila aboulela	""	""	""	Bootstrapped from incumbent path
+creator_01781	Dai Sijie	dai sijie	""	""	""	Bootstrapped from incumbent path
+creator_01782	Enrique Vila-Matas	enrique vila matas	""	""	""	Bootstrapped from incumbent path
+creator_01783	Peter Esterhazy	peter esterhazy	""	""	""	Bootstrapped from incumbent path
+creator_01784	Loung Ung	loung ung	""	""	""	Bootstrapped from incumbent path
+creator_01785	Mark Z. Danielewski	mark z danielewski	""	""	""	Bootstrapped from incumbent path
+creator_01786	Chris Ware	chris ware	""	""	""	Bootstrapped from incumbent path
+creator_01787	Kamleshwar	kamleshwar	""	""	""	Bootstrapped from incumbent path
+creator_01788	Eden Robinson	eden robinson	""	""	""	Bootstrapped from incumbent path
+creator_01789	Jon Fosse	jon fosse	""	""	""	Bootstrapped from incumbent path
+creator_01790	Mohsin Hamid	mohsin hamid	""	""	""	Bootstrapped from incumbent path
+creator_01791	Boubacar Boris Diop	boubacar boris diop	""	""	""	Bootstrapped from incumbent path
+creator_01792	Marjane Satrapi	marjane satrapi	""	""	""	Bootstrapped from incumbent path
+creator_01793	Ch'aska Anka Ninawaman	chaska anka ninawaman	""	""	""	Bootstrapped from incumbent path
+creator_01794	Elicura Chihuailaf	elicura chihuailaf	""	""	""	Bootstrapped from incumbent path
+creator_01795	Odi Gonzales	odi gonzales	""	""	""	Bootstrapped from incumbent path
+creator_01796	Natalia Toledo	natalia toledo	""	""	""	Bootstrapped from incumbent path
+creator_01797	Irma Pineda	irma pineda	""	""	""	Bootstrapped from incumbent path
+creator_01798	Natalio Hernandez	natalio hernandez	""	""	""	Bootstrapped from incumbent path
+creator_01799	Ariruma Kowii	ariruma kowii	""	""	""	Bootstrapped from incumbent path
+creator_01800	Briceida Cuevas Cob	briceida cuevas cob	""	""	""	Bootstrapped from incumbent path
+creator_01801	Humberto Ak'abal	humberto akabal	""	""	""	Bootstrapped from incumbent path
+creator_01802	Mayra Santos-Febres	mayra santos febres	""	""	""	Bootstrapped from incumbent path
+creator_01803	Hwang Sok-yong	hwang sok yong	""	""	""	Bootstrapped from incumbent path
+creator_01804	Zadie Smith	zadie smith	""	""	""	Bootstrapped from incumbent path
+creator_01805	Hubert Matiuwaa	hubert matiuwaa	""	""	""	Bootstrapped from incumbent path
+creator_01806	Michael Chabon	michael chabon	""	""	""	Bootstrapped from incumbent path
+creator_01807	Ian McEwan	ian mcewan	""	""	""	Bootstrapped from incumbent path
+creator_01808	Percival Everett	percival everett	""	""	""	Bootstrapped from incumbent path
+creator_01809	Ondjaki	ondjaki	""	""	""	Bootstrapped from incumbent path
+creator_01810	LeAnne Howe	leanne howe	""	""	""	Bootstrapped from incumbent path
+creator_01811	Javier Cercas	javier cercas	""	""	""	Bootstrapped from incumbent path
+creator_01812	Neshani Andreas	neshani andreas	""	""	""	Bootstrapped from incumbent path
+creator_01813	Jonathan Franzen	jonathan franzen	""	""	""	Bootstrapped from incumbent path
+creator_01814	Yann Martel	yann martel	""	""	""	Bootstrapped from incumbent path
+creator_01815	Eka Kurniawan	eka kurniawan	""	""	""	Bootstrapped from incumbent path
+creator_01816	Neil Gaiman	neil gaiman	""	""	""	Bootstrapped from incumbent path
+creator_01817	Sarah Waters	sarah waters	""	""	""	Bootstrapped from incumbent path
+creator_01818	Jeffrey Eugenides	jeffrey eugenides	""	""	""	Bootstrapped from incumbent path
+creator_01819	F. H. Batacan	f h batacan	""	""	""	Bootstrapped from incumbent path
+creator_01820	Ted Chiang	ted chiang	""	""	""	Bootstrapped from incumbent path
+creator_01821	Elena Ferrante	elena ferrante	""	""	""	Bootstrapped from incumbent path
+creator_01822	Bachtyar Ali	bachtyar ali	""	""	""	Bootstrapped from incumbent path
+creator_01823	Alaa Al Aswany	alaa al aswany	""	""	""	Bootstrapped from incumbent path
+creator_01824	Helon Habila	helon habila	""	""	""	Bootstrapped from incumbent path
+creator_01825	Urmila Pawar	urmila pawar	""	""	""	Bootstrapped from incumbent path
+creator_01826	Alain Mabanckou	alain mabanckou	""	""	""	Bootstrapped from incumbent path
+creator_01827	Monica Ali	monica ali	""	""	""	Bootstrapped from incumbent path
+creator_01828	Conceicao Evaristo	conceicao evaristo	""	""	""	Bootstrapped from incumbent path
+creator_01829	Chimamanda Ngozi Adichie	chimamanda ngozi adichie	""	""	""	Bootstrapped from incumbent path
+creator_01830	Azar Nafisi	azar nafisi	""	""	""	Bootstrapped from incumbent path
+creator_01831	Carmen Martin Gaite	carmen martin gaite	""	""	""	Bootstrapped from incumbent path
+creator_01832	Njabulo Ndebele	njabulo ndebele	""	""	""	Bootstrapped from incumbent path
+creator_01833	Yoko Ogawa	yoko ogawa	""	""	""	Bootstrapped from incumbent path
+creator_01834	Edward P. Jones	edward p jones	""	""	""	Bootstrapped from incumbent path
+creator_01835	Marlene van Niekerk	marlene van niekerk	""	""	""	Bootstrapped from incumbent path
+creator_01836	Chris Abani	chris abani	""	""	""	Bootstrapped from incumbent path
+creator_01837	Susanna Clarke	susanna clarke	""	""	""	Bootstrapped from incumbent path
+creator_01838	Nadeem Aslam	nadeem aslam	""	""	""	Bootstrapped from incumbent path
+creator_01839	Andrea Levy	andrea levy	""	""	""	Bootstrapped from incumbent path
+creator_01840	Maria Isabel Barreno	maria isabel barreno	""	""	""	Bootstrapped from incumbent path
+creator_01841	Maria Teresa Horta	maria teresa horta	""	""	""	Bootstrapped from incumbent path
+creator_01842	Maria Velho da Costa	maria velho da costa	""	""	""	Bootstrapped from incumbent path
+creator_01843	Cheon Myeong-kwan	cheon myeong kwan	""	""	""	Bootstrapped from incumbent path
+creator_01844	Tusiata Avia	tusiata avia	""	""	""	Bootstrapped from incumbent path
+creator_01845	Liu Yiqing attribution and Six Dynasties anecdote tradition	liu yiqing attribution and six dynasties anecdote tradition	""	""	""	Bootstrapped from incumbent path
+creator_01846	David Mitchell	david mitchell	""	""	""	Bootstrapped from incumbent path
+creator_01847	Thuan	thuan	""	""	""	Bootstrapped from incumbent path
+creator_01848	Sefi Atta	sefi atta	""	""	""	Bootstrapped from incumbent path
+creator_01849	Narayan Wagle	narayan wagle	""	""	""	Bootstrapped from incumbent path
+creator_01850	Etienne Leroux	etienne leroux	""	""	""	Bootstrapped from incumbent path
+creator_01851	Ana Maria Goncalves	ana maria goncalves	""	""	""	Bootstrapped from incumbent path
+creator_01852	Gene Luen Yang	gene luen yang	""	""	""	Bootstrapped from incumbent path
+creator_01853	Aminatta Forna	aminatta forna	""	""	""	Bootstrapped from incumbent path
+creator_01854	Alejandro Zambra	alejandro zambra	""	""	""	Bootstrapped from incumbent path
+creator_01855	Alison Bechdel	alison bechdel	""	""	""	Bootstrapped from incumbent path
+creator_01856	Hisham Matar	hisham matar	""	""	""	Bootstrapped from incumbent path
+creator_01857	Tara June Winch	tara june winch	""	""	""	Bootstrapped from incumbent path
+creator_01858	Shaun Tan	shaun tan	""	""	""	Bootstrapped from incumbent path
+creator_01859	Elif Shafak	elif shafak	""	""	""	Bootstrapped from incumbent path
+creator_01860	Kiran Desai	kiran desai	""	""	""	Bootstrapped from incumbent path
+creator_01861	Tahmima Anam	tahmima anam	""	""	""	Bootstrapped from incumbent path
+creator_01862	Kopano Matlwa	kopano matlwa	""	""	""	Bootstrapped from incumbent path
+creator_01863	Dinaw Mengestu	dinaw mengestu	""	""	""	Bootstrapped from incumbent path
+creator_01864	Junot Diaz	junot diaz	""	""	""	Bootstrapped from incumbent path
+creator_01865	Han Kang	han kang	""	""	""	Bootstrapped from incumbent path
+creator_01866	Denis Johnson	denis johnson	""	""	""	Bootstrapped from incumbent path
+creator_01867	Dasa Drndic	dasa drndic	""	""	""	Bootstrapped from incumbent path
+creator_01868	Biyi Bandele	biyi bandele	""	""	""	Bootstrapped from incumbent path
+creator_01869	Mohammed Hanif	mohammed hanif	""	""	""	Bootstrapped from incumbent path
+creator_01870	Benyamin	benyamin	""	""	""	Bootstrapped from incumbent path
+creator_01871	Mieko Kawakami	mieko kawakami	""	""	""	Bootstrapped from incumbent path
+creator_01872	Craig Santos Perez	craig santos perez	""	""	""	Bootstrapped from incumbent path
+creator_01873	Miguel Syjuco	miguel syjuco	""	""	""	Bootstrapped from incumbent path
+creator_01874	Shin Kyung-sook	shin kyung sook	""	""	""	Bootstrapped from incumbent path
+creator_01875	Sofi Oksanen	sofi oksanen	""	""	""	Bootstrapped from incumbent path
+creator_01876	Halide Edib Adivar	halide edib adivar	""	""	""	Bootstrapped from incumbent path
+creator_01877	Chitra Banerjee Divakaruni	chitra banerjee divakaruni	""	""	""	Bootstrapped from incumbent path
+creator_01878	Brandy Nalani McDougall	brandy nalani mcdougall	""	""	""	Bootstrapped from incumbent path
+creator_01879	Liu Cixin	liu cixin	""	""	""	Bootstrapped from incumbent path
+creator_01880	Aravind Adiga	aravind adiga	""	""	""	Bootstrapped from incumbent path
+creator_01881	Jenny Erpenbeck	jenny erpenbeck	""	""	""	Bootstrapped from incumbent path
+creator_01882	Marisol Ceh Moo	marisol ceh moo	""	""	""	Bootstrapped from incumbent path
+creator_01883	M. NourbeSe Philip	m nourbese philip	""	""	""	Bootstrapped from incumbent path
+creator_01884	Kamila Shamsie	kamila shamsie	""	""	""	Bootstrapped from incumbent path
+creator_01885	Samanta Schweblin	samanta schweblin	""	""	""	Bootstrapped from incumbent path
+creator_01886	Karl Ove Knausgaard	karl ove knausgaard	""	""	""	Bootstrapped from incumbent path
+creator_01887	Yuri Herrera	yuri herrera	""	""	""	Bootstrapped from incumbent path
+creator_01888	Nii Ayikwei Parkes	nii ayikwei parkes	""	""	""	Bootstrapped from incumbent path
+creator_01889	Marlon James	marlon james	""	""	""	Bootstrapped from incumbent path
+creator_01890	Hassan Blasim	hassan blasim	""	""	""	Bootstrapped from incumbent path
+creator_01891	Marie NDiaye	marie ndiaye	""	""	""	Bootstrapped from incumbent path
+creator_01892	Hilary Mantel	hilary mantel	""	""	""	Bootstrapped from incumbent path
+creator_01893	Jennifer Egan	jennifer egan	""	""	""	Bootstrapped from incumbent path
+creator_01894	Maaza Mengiste	maaza mengiste	""	""	""	Bootstrapped from incumbent path
+creator_01895	Jokha al-Harthi	jokha al harthi	""	""	""	Bootstrapped from incumbent path
+creator_01896	Buddhisagar	buddhisagar	""	""	""	Bootstrapped from incumbent path
+creator_01897	Perumal Murugan	perumal murugan	""	""	""	Bootstrapped from incumbent path
+creator_01898	Sinan Antoon	sinan antoon	""	""	""	Bootstrapped from incumbent path
+creator_01899	Lola Shoneyin	lola shoneyin	""	""	""	Bootstrapped from incumbent path
+creator_01900	Serhiy Zhadan	serhiy zhadan	""	""	""	Bootstrapped from incumbent path
+creator_01901	Kim Sowol	kim sowol	""	""	""	Bootstrapped from incumbent path
+creator_01902	Ruta Sepetys	ruta sepetys	""	""	""	Bootstrapped from incumbent path
+creator_01903	China Mieville	china mieville	""	""	""	Bootstrapped from incumbent path
+creator_01904	Valeria Luiselli	valeria luiselli	""	""	""	Bootstrapped from incumbent path
+creator_01905	Tracy K. Smith	tracy k smith	""	""	""	Bootstrapped from incumbent path
+creator_01906	Alice Oswald	alice oswald	""	""	""	Bootstrapped from incumbent path
+creator_01907	Teju Cole	teju cole	""	""	""	Bootstrapped from incumbent path
+creator_01908	Jesmyn Ward	jesmyn ward	""	""	""	Bootstrapped from incumbent path
+creator_01909	Tony Birch	tony birch	""	""	""	Bootstrapped from incumbent path
+creator_01910	Guadalupe Nettel	guadalupe nettel	""	""	""	Bootstrapped from incumbent path
+creator_01911	Jose Eduardo Agualusa	jose eduardo agualusa	""	""	""	Bootstrapped from incumbent path
+creator_01912	Scholastique Mukasonga	scholastique mukasonga	""	""	""	Bootstrapped from incumbent path
+creator_01913	Pergentino Jose	pergentino jose	""	""	""	Bootstrapped from incumbent path
+creator_01914	Jaime Luis Huenun	jaime luis huenun	""	""	""	Bootstrapped from incumbent path
+creator_01915	Lina Meruane	lina meruane	""	""	""	Bootstrapped from incumbent path
+creator_01916	Saud al-Sanousi	saud al sanousi	""	""	""	Bootstrapped from incumbent path
+creator_01917	Natalie Diaz	natalie diaz	""	""	""	Bootstrapped from incumbent path
+creator_01918	Vaddey Ratner	vaddey ratner	""	""	""	Bootstrapped from incumbent path
+creator_01919	Ann Leckie	ann leckie	""	""	""	Bootstrapped from incumbent path
+creator_01920	Ahmed Saadawi	ahmed saadawi	""	""	""	Bootstrapped from incumbent path
+creator_01921	Taiye Selasi	taiye selasi	""	""	""	Bootstrapped from incumbent path
+creator_01922	Can Xue	can xue	""	""	""	Bootstrapped from incumbent path
+creator_01923	John Lewis, Andrew Aydin, and Nate Powell	john lewis andrew aydin and nate powell	""	""	""	Bootstrapped from incumbent path
+creator_01924	Melissa Lucashenko	melissa lucashenko	""	""	""	Bootstrapped from incumbent path
+creator_01925	Nona Fernandez	nona fernandez	""	""	""	Bootstrapped from incumbent path
+creator_01926	Basma Abdel Aziz	basma abdel aziz	""	""	""	Bootstrapped from incumbent path
+creator_01927	NoViolet Bulawayo	noviolet bulawayo	""	""	""	Bootstrapped from incumbent path
+creator_01928	Liu Xie	liu xie	""	""	""	Bootstrapped from incumbent path
+creator_01929	Jeff VanderMeer	jeff vandermeer	""	""	""	Bootstrapped from incumbent path
+creator_01930	Jacqueline Woodson	jacqueline woodson	""	""	""	Bootstrapped from incumbent path
+creator_01931	Claudia Rankine	claudia rankine	""	""	""	Bootstrapped from incumbent path
+creator_01932	Niviaq Korneliussen	niviaq korneliussen	""	""	""	Bootstrapped from incumbent path
+creator_01933	Yvonne Adhiambo Owuor	yvonne adhiambo owuor	""	""	""	Bootstrapped from incumbent path
+creator_01934	Ellen van Neerven	ellen van neerven	""	""	""	Bootstrapped from incumbent path
+creator_01935	Ali Smith	ali smith	""	""	""	Bootstrapped from incumbent path
+creator_01936	Jennifer Nansubuga Makumbi	jennifer nansubuga makumbi	""	""	""	Bootstrapped from incumbent path
+creator_01937	Rachel Cusk	rachel cusk	""	""	""	Bootstrapped from incumbent path
+creator_01938	Tawada Yoko	tawada yoko	""	""	""	Bootstrapped from incumbent path
+creator_01939	Laila Lalami	laila lalami	""	""	""	Bootstrapped from incumbent path
+creator_01940	Fiston Mwanza Mujila	fiston mwanza mujila	""	""	""	Bootstrapped from incumbent path
+creator_01941	Hanya Yanagihara	hanya yanagihara	""	""	""	Bootstrapped from incumbent path
+creator_01942	Nnedi Okorafor	nnedi okorafor	""	""	""	Bootstrapped from incumbent path
+creator_01943	Maggie Nelson	maggie nelson	""	""	""	Bootstrapped from incumbent path
+creator_01944	N. K. Jemisin	n k jemisin	""	""	""	Bootstrapped from incumbent path
+creator_01945	Chigozie Obioma	chigozie obioma	""	""	""	Bootstrapped from incumbent path
+creator_01946	Viet Thanh Nguyen	viet thanh nguyen	""	""	""	Bootstrapped from incumbent path
+creator_01947	Paul Beatty	paul beatty	""	""	""	Bootstrapped from incumbent path
+creator_01948	Kei Miller	kei miller	""	""	""	Bootstrapped from incumbent path
+creator_01949	Imbolo Mbue	imbolo mbue	""	""	""	Bootstrapped from incumbent path
+creator_01950	Murata Sayaka	murata sayaka	""	""	""	Bootstrapped from incumbent path
+creator_01951	Yaa Gyasi	yaa gyasi	""	""	""	Bootstrapped from incumbent path
+creator_01952	Cho Nam-joo	cho nam joo	""	""	""	Bootstrapped from incumbent path
+creator_01953	Solmaz Sharif	solmaz sharif	""	""	""	Bootstrapped from incumbent path
+creator_01954	Leila Slimani	leila slimani	""	""	""	Bootstrapped from incumbent path
+creator_01955	Ocean Vuong	ocean vuong	""	""	""	Bootstrapped from incumbent path
+creator_01956	Victor LaValle	victor lavalle	""	""	""	Bootstrapped from incumbent path
+creator_01957	Katherena Vermette	katherena vermette	""	""	""	Bootstrapped from incumbent path
+creator_01958	Colson Whitehead	colson whitehead	""	""	""	Bootstrapped from incumbent path
+creator_01959	Yewande Omotoso	yewande omotoso	""	""	""	Bootstrapped from incumbent path
+creator_01960	Mariana Enriquez	mariana enriquez	""	""	""	Bootstrapped from incumbent path
+creator_01961	Tommy Pico	tommy pico	""	""	""	Bootstrapped from incumbent path
+creator_01962	Bora Chung	bora chung	""	""	""	Bootstrapped from incumbent path
+creator_01963	Danez Smith	danez smith	""	""	""	Bootstrapped from incumbent path
+creator_01964	Carmen Maria Machado	carmen maria machado	""	""	""	Bootstrapped from incumbent path
+creator_01965	Fernanda Melchor	fernanda melchor	""	""	""	Bootstrapped from incumbent path
+creator_01966	Kathy Jetnil-Kijiner	kathy jetnil kijiner	""	""	""	Bootstrapped from incumbent path
+creator_01967	George Saunders	george saunders	""	""	""	Bootstrapped from incumbent path
+creator_01968	Adania Shibli	adania shibli	""	""	""	Bootstrapped from incumbent path
+creator_01969	Min Jin Lee	min jin lee	""	""	""	Bootstrapped from incumbent path
+creator_01970	Ayobami Adebayo	ayobami adebayo	""	""	""	Bootstrapped from incumbent path
+creator_01971	Claire G. Coleman	claire g coleman	""	""	""	Bootstrapped from incumbent path
+creator_01972	Angie Thomas	angie thomas	""	""	""	Bootstrapped from incumbent path
+creator_01973	Cherie Dimaline	cherie dimaline	""	""	""	Bootstrapped from incumbent path
+creator_01974	Billy-Ray Belcourt	billy ray belcourt	""	""	""	Bootstrapped from incumbent path
+creator_01975	Layli Long Soldier	layli long soldier	""	""	""	Bootstrapped from incumbent path
+creator_01976	Terrance Hayes	terrance hayes	""	""	""	Bootstrapped from incumbent path
+creator_01977	Akwaeke Emezi	akwaeke emezi	""	""	""	Bootstrapped from incumbent path
+creator_01978	Waubgeshig Rice	waubgeshig rice	""	""	""	Bootstrapped from incumbent path
+creator_01979	Tayi Tibble	tayi tibble	""	""	""	Bootstrapped from incumbent path
+creator_01980	Tanya Tagaq	tanya tagaq	""	""	""	Bootstrapped from incumbent path
+creator_01981	Olga Ravn	olga ravn	""	""	""	Bootstrapped from incumbent path
+creator_01982	Tommy Orange	tommy orange	""	""	""	Bootstrapped from incumbent path
+creator_01983	Geetanjali Shree	geetanjali shree	""	""	""	Bootstrapped from incumbent path
+creator_01984	Anna Burns	anna burns	""	""	""	Bootstrapped from incumbent path
+creator_01985	Richard Powers	richard powers	""	""	""	Bootstrapped from incumbent path
+creator_01986	Becky Manawatu	becky manawatu	""	""	""	Bootstrapped from incumbent path
+creator_01987	Itamar Vieira Junior	itamar vieira junior	""	""	""	Bootstrapped from incumbent path
+creator_01988	Bernardine Evaristo	bernardine evaristo	""	""	""	Bootstrapped from incumbent path
+creator_01989	Namwali Serpell	namwali serpell	""	""	""	Bootstrapped from incumbent path
+creator_01990	Douglas Stuart	douglas stuart	""	""	""	Bootstrapped from incumbent path
+creator_01991	Nardi Simpson	nardi simpson	""	""	""	Bootstrapped from incumbent path
+creator_01992	Nguyen Phan Que Mai	nguyen phan que mai	""	""	""	Bootstrapped from incumbent path
+creator_01993	Stephen Graham Jones	stephen graham jones	""	""	""	Bootstrapped from incumbent path
+creator_01994	Torrey Peters	torrey peters	""	""	""	Bootstrapped from incumbent path
+creator_01995	Evelyn Araluen	evelyn araluen	""	""	""	Bootstrapped from incumbent path
+creator_01996	Theodor Storm	theodor storm	""	""	""	Bootstrapped from incumbent path
+creator_01997	Whiti Hereaka	whiti hereaka	""	""	""	Bootstrapped from incumbent path
+creator_01998	Damon Galgut	damon galgut	""	""	""	Bootstrapped from incumbent path
+creator_01999	Brandon Hobson	brandon hobson	""	""	""	Bootstrapped from incumbent path
+creator_02000	No'u Revilla	nou revilla	""	""	""	Bootstrapped from incumbent path

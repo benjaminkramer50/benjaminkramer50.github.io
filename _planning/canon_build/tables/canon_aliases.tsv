@@ -1,0 +1,444 @@
+alias_id	work_id	alias	normalized_alias	alias_type	language	script	source_id	confidence	notes
+alias_00001	work_candidate_egyptian_book_of_the_dead	Book of Going Forth by Day	book of going forth by day	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00002	work_candidate_egyptian_book_of_the_dead	Book of Coming Forth by Day	book of coming forth by day	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00003	work_candidate_scale4_lit_baal_cycle	Ugaritic Baal Cycle	ugaritic baal cycle	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00004	work_candidate_book_of_songs	Classic of Poetry	classic of poetry	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00005	work_candidate_book_of_songs	Shijing	shijing	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00006	work_candidate_bloom_reviewed_trachiniae	The Women of Trachis	women of trachis	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00007	work_canon_oedipus_tyrannus	Oedipus Rex	oedipus rex	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00008	work_canon_oedipus_tyrannus	Oedipus the King	oedipus king	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00009	work_candidate_mandatory_euripides_trojan_women	Trojan Women	trojan women	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00010	work_canon_dao_de_jing	Tao Te Ching	tao te ching	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00011	work_canon_dao_de_jing	Laozi	laozi	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00012	work_canon_dao_de_jing	Lao-tzu	lao tzu	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00013	work_canon_dao_de_jing	Daodejing	daodejing	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00014	work_candidate_mandatory_shanhaijing	Shanhaijing	shanhaijing	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00015	work_candidate_mandatory_shanhaijing	Shan Hai Jing	shan hai jing	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00016	work_candidate_chu_ci	Chu Ci	chu ci	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00017	work_candidate_chu_ci	Songs of Chu	songs of chu	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00018	work_candidate_chu_ci	Li Sao	li sao	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00019	work_candidate_chu_ci	Encountering Sorrow	encountering sorrow	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00020	work_candidate_wave001_cicero_selected_orations_letters	Selected Speeches	selected speeches	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00021	work_candidate_wave001_cicero_selected_orations_letters	Selected Letters	selected letters	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00022	work_candidate_wave001_cicero_selected_orations_letters	Pro Archia	pro archia	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00023	work_candidate_wave001_cicero_selected_orations_letters	Pro Caelio	pro caelio	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00024	work_candidate_bloom_gap_031_0070_on_the_nature_of_things	De rerum natura	de rerum natura	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00025	work_candidate_bloom_gap_031_0070_on_the_nature_of_things	The Way Things Are	way things are	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00026	work_candidate_poetic_edda	The Poetic Edda	poetic edda	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00027	work_candidate_poetic_edda	Elder Edda	elder edda	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00028	work_candidate_wave001_seneca_letters_to_lucilius	Moral Letters to Lucilius	moral letters to lucilius	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00029	work_candidate_wave001_seneca_letters_to_lucilius	Epistulae Morales ad Lucilium	epistulae morales ad lucilium	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00030	work_canon_satyricon_petronius	The Satyricon	satyricon	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00031	work_candidate_golden_ass_apuleius	Metamorphoses	metamorphoses	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00032	work_candidate_golden_ass_apuleius	Metamorphoses of Apuleius	metamorphoses of apuleius	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00033	work_candidate_golden_ass_apuleius	Asinus Aureus	asinus aureus	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00034	work_candidate_mricchakatika_sanskrit_theater	The Little Clay Cart	little clay cart	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00035	work_candidate_mricchakatika_sanskrit_theater	Mrcchakatika	mrcchakatika	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00036	work_candidate_scale_lit_aethiopica	An Ethiopian Story	ethiopian story	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00037	work_candidate_scale_lit_aethiopica	Ethiopian Romance	ethiopian romance	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00038	work_candidate_scale_lit_aethiopica	Theagenes and Chariclea	theagenes and chariclea	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00039	work_canon_recognition_of_shakuntala	Shakuntala	shakuntala	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00040	work_canon_recognition_of_shakuntala	The Recognition of Shakuntala	recognition of shakuntala	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00041	work_canon_recognition_of_shakuntala	Abhijnanasakuntalam	abhijnanasakuntalam	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00042	work_canon_recognition_of_shakuntala	Sakuntala	sakuntala	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00043	work_canon_recognition_of_shakuntala	Abhijnana Shakuntalam	abhijnana shakuntalam	incumbent_alias	""	""	""	incumbent	Alias index 5 from incumbent path
+alias_00044	work_canon_recognition_of_shakuntala	Abhijnana Sakuntalam	abhijnana sakuntalam	incumbent_alias	""	""	""	incumbent	Alias index 6 from incumbent path
+alias_00045	work_canon_quran	Quran	quran	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00046	work_canon_quran	Koran	koran	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00047	work_canon_quran	Qur’an	qur	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00048	work_candidate_muallaqat	Muallaqat	muallaqat	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00049	work_candidate_muallaqat	The Suspended Odes	suspended odes	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00050	work_candidate_muallaqat	The Hanging Odes	hanging odes	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00051	work_candidate_muallaqat	The Seven Odes	seven odes	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00052	work_candidate_global_lit_tevaram	Tevaram Hymns	tevaram hymns	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00053	work_candidate_global_lit_tevaram	Tevaram Hymns: Selected Poems	tevaram hymns selected poems	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00054	work_candidate_mandatory_bodhicaryavatara	The Way of the Bodhisattva	way of bodhisattva	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00055	work_candidate_manyoshu	Manyoshu	manyoshu	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00056	work_candidate_manyoshu	Man’yoshu	man yoshu	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00057	work_candidate_manyoshu	Collection of Ten Thousand Leaves	collection of ten thousand leaves	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00058	work_candidate_wave005_al_khansa_elegies	Selected Elegies	selected elegies	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00059	work_candidate_wave001_tolkappiyam	Tolkappiyam Porulatikaram	tolkappiyam porulatikaram	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00060	work_candidate_tiruvacakam	Tiruvasagam	tiruvasagam	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00061	work_candidate_kokinshu	Kokinwakashu	kokinwakashu	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00062	work_candidate_kokinshu	Collection of Japanese Poems Ancient and Modern	collection of japanese poems ancient and modern	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00063	work_candidate_scale_lit_tosa_diary	Tosa Nikki	tosa nikki	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00064	work_candidate_tale_of_bamboo_cutter	Taketori Monogatari	taketori monogatari	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00065	work_candidate_maqamat_al_hamadhani	Maqamat	maqamat	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00066	work_candidate_scale_lit_kagero_diary	Kagero Nikki	kagero nikki	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00067	work_candidate_global_lit_ise_monogatari	Ise Monogatari	ise monogatari	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00068	work_candidate_mandatory_kitab_al_aghani	Book of Songs	book of songs	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00069	work_canon_pillow_book_sei_shonagon	Makura no Soshi	makura no soshi	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00070	work_canon_tale_of_genji	Genji Monogatari	genji monogatari	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00071	work_candidate_shahnameh	Shahnama	shahnama	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00072	work_candidate_shahnameh	Shahname	shahname	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00073	work_candidate_shahnameh	Book of Kings	book of kings	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00074	work_candidate_global_lit_kathasaritsagara	Ocean of Story	ocean of story	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00075	work_candidate_global_lit_kathasaritsagara	Katha Sarit Sagara	katha sarit sagara	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00076	work_candidate_risalat_al_ghufran	The Epistle of Forgiveness	epistle of forgiveness	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00077	work_candidate_wave005_tawhidi_delight_conviviality	Kitab al-Imta wa'l-Mu'anasa	kitab al imta wal muanasa	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00078	work_candidate_lais_marie_de_france	The Lais of Marie de France	lais of marie de france	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00079	work_candidate_lais_marie_de_france	Lais of Marie de France	lais of marie de france	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00080	work_candidate_maqamat_al_hariri	Maqamat	maqamat	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00081	work_candidate_rubaiyat_omar_khayyam	The Rubaiyat of Omar Khayyam	rubaiyat of omar khayyam	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00082	work_candidate_rubaiyat_omar_khayyam	Rubaiyat of Omar Khayyam	rubaiyat of omar khayyam	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00083	work_candidate_mandatory_roman_de_renart	Reynard the Fox	reynard fox	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00084	work_candidate_mandatory_perceval_grail	Perceval	perceval	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00085	work_candidate_mandatory_perceval_grail	The Story of the Grail	story of grail	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00086	work_candidate_tain_bo_cuailnge	Tain Bo Cuailnge	tain bo cuailnge	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00087	work_candidate_tain_bo_cuailnge	The Cattle Raid of Cooley	cattle raid of cooley	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00088	work_candidate_one_thousand_and_one_nights	Arabian Nights	arabian nights	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00089	work_candidate_one_thousand_and_one_nights	The Arabian Nights	arabian nights	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00090	work_candidate_one_thousand_and_one_nights	Thousand and One Nights	thousand and one nights	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00091	work_candidate_book_of_dede_korkut	Dede Korkut	dede korkut	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00092	work_candidate_book_of_dede_korkut	The Book of Dede Korkut	book of dede korkut	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00093	work_canon_cantar_de_mio_cid	Poem of the Cid	poem of cid	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00094	work_canon_cantar_de_mio_cid	The Poem of the Cid	poem of cid	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00095	work_canon_nibelungenlied	The Song of the Nibelungs	song of nibelungs	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00096	work_candidate_mandatory_tristan_gottfried	Tristan and Isolde	tristan and isolde	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00097	work_candidate_masnavi_rumi	Mathnawi	mathnawi	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00098	work_candidate_masnavi_rumi	Masnavi-ye Ma'navi	masnavi ye manavi	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00099	work_candidate_masnavi_rumi	Spiritual Couplets	spiritual couplets	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00100	work_candidate_sunjata_epic	Sundiata	sundiata	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00101	work_candidate_sunjata_epic	Sunjata	sunjata	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00102	work_candidate_romance_western_chamber	The Story of the Western Wing	story of western wing	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00103	work_candidate_romance_western_chamber	Xixiang Ji	xixiang ji	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00104	work_candidate_romance_western_chamber	Western Chamber	western chamber	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00105	work_candidate_mandatory_travels_marco_polo	Il Milione	il milione	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00106	work_candidate_tsurezuregusa	Essays in Idleness	essays in idleness	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00107	work_candidate_divan_hafez	Divan	divan	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00108	work_candidate_divan_hafez	Divan-e Hafez	divan e hafez	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00109	work_candidate_divan_hafez	Divan of Hafiz	divan of hafiz	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00110	work_candidate_romance_three_kingdoms	Sanguo Yanyi	sanguo yanyi	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00111	work_candidate_romance_three_kingdoms	Three Kingdoms	three kingdoms	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00112	work_candidate_water_margin	Outlaws of the Marsh	outlaws of marsh	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00113	work_candidate_water_margin	All Men Are Brothers	all men are brothers	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00114	work_candidate_bloom_reviewed_morte_darthur	Morte Darthur	morte darthur	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00115	work_candidate_bloom_reviewed_morte_darthur	Morte d'Arthur	morte darthur	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00116	work_candidate_bloom_reviewed_morte_darthur	The Death of Arthur	death of arthur	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00117	work_candidate_manas_epic	Manas	manas	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00118	work_candidate_mandatory_praise_of_folly	Moriae Encomium	moriae encomium	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00119	work_candidate_audit_replacement_la_mandragola	The Mandrake	mandrake	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00120	work_candidate_mandatory_book_of_courtier	Il Cortegiano	il cortegiano	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00121	work_candidate_me_lit_fuzuli_layla_majnun	Leyli and Mejnun	leyli and mejnun	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00122	work_candidate_bloom_reviewed_delie	Delie, Objet de Plus Haulte Vertu	delie objet de plus haulte vertu	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00123	work_candidate_journey_to_the_west	Xiyouji	xiyouji	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00124	work_candidate_journey_to_the_west	Xi You Ji	xi you ji	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00125	work_candidate_journey_to_the_west	Monkey	monkey	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00126	work_candidate_journey_to_the_west	Monkey King	monkey king	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00127	work_candidate_jin_ping_mei	The Plum in the Golden Vase	plum in golden vase	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00128	work_candidate_mandatory_fengshen_yanyi	Fengshen Yanyi	fengshen yanyi	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00129	work_candidate_mandatory_true_history_new_spain	Historia verdadera de la conquista de la Nueva Espana	historia verdadera de la conquista de la nueva espana	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00130	work_candidate_bloom_lusiads	Os Lusiadas	os lusiadas	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00131	work_candidate_mandatory_kochanowski_laments	Treny	treny	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00132	work_candidate_bloom_shakespeare_midsummer	A Midsummer Nights Dream	midsummer nights dream	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00133	work_candidate_peony_pavilion	Mudan Ting	mudan ting	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00134	work_candidate_chunhyangjeon	The Tale of Chunhyang	tale of chunhyang	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00135	work_candidate_indig_lit_tragedy_atahualpa	Tragedy of Atahualpa	tragedy of atahualpa	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00136	work_candidate_mandatory_guaman_poma_nueva_coronica	The First New Chronicle and Good Government	first new chronicle and good government	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00137	work_candidate_mandatory_feng_menglong_stories	Stories to Awaken the World	stories to awaken world	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00138	work_candidate_mandatory_tale_of_tales	Pentamerone	pentamerone	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00139	work_candidate_mandatory_tale_of_tales	Lo cunto de li cunti	lo cunto de li cunti	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00140	work_candidate_mandatory_mayor_zalamea	El alcalde de Zalamea	el alcalde de zalamea	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00141	work_candidate_mandatory_enchantments_love_zayas	Novelas amorosas y ejemplares	novelas amorosas y ejemplares	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00142	work_candidate_mandatory_alaol_padmavati	Padmavati	padmavati	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00143	work_candidate_southasia_lit_tukaram_abhangas	Selected Abhangs	selected abhangs	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00144	work_candidate_cloud_dream_nine	The Nine Cloud Dream	nine cloud dream	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00145	work_candidate_mandatory_bradstreet_tenth_muse	Selected Poems	selected poems	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00146	work_candidate_mandatory_cherubinic_wanderer	Cherubinischer Wandersmann	cherubinischer wandersmann	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00147	work_canon_pilgrims_progress	Pilgrims Progress	pilgrims progress	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00148	work_candidate_narrow_road_deep_north	Oku no Hosomichi	oku no hosomichi	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00149	work_candidate_first_dream_sor_juana	Primero sueno	primero sueno	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00150	work_candidate_global_lit_mem_and_zin	Mem u Zin	mem u zin	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00151	work_candidate_bloom_reviewed_pope_poems	The Rape of the Lock	rape of lock	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00152	work_candidate_bloom_reviewed_pope_poems	Selected Poems (Alexander Pope)	selected poems alexander pope	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00153	work_candidate_mandatory_battles_coxinga	Kokusenya Kassen	kokusenya kassen	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00154	work_candidate_mandatory_roxana_defoe	The Fortunate Mistress	fortunate mistress	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00155	work_candidate_bloom_gap_031_0226_gulliver_s_travels	Gullivers Travels	gullivers travels	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00156	work_candidate_scale4_lit_utendi_wa_tambuka	The Story of Tambuka	story of tambuka	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00157	work_candidate_mandatory_modest_proposal	A Modest Proposal for Preventing the Children of Poor People from Being a Burthen	modest proposal for preventing children of poor people from being burthen	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00158	work_candidate_strange_tales_liaozhai	Liaozhai zhiyi	liaozhai zhiyi	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00159	work_candidate_strange_tales_liaozhai	Liao Zhai	liao zhai	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00160	work_candidate_strange_tales_liaozhai	Selected Tales from Liaozhai	selected tales from liaozhai	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00161	work_candidate_global_lit_chushingura	Kanadehon Chushingura	kanadehon chushingura	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00162	work_candidate_global_lit_chushingura	The Treasury of Loyal Retainers	treasury of loyal retainers	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00163	work_canon_tristram_shandy	The Life and Opinions of Tristram Shandy, Gentleman	life and opinions of tristram shandy gentleman	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00164	work_candidate_bloom_gap_031_0251_school_for_scandal	The School for Scandal	school for scandal	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00165	work_candidate_wave002_rochester_selected_poems	A Satyr Against Reason and Mankind	satyr against reason and mankind	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00166	work_candidate_wave002_montagu_turkish_embassy_letters	The Turkish Embassy Letters	turkish embassy letters	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00167	work_candidate_wave002_montagu_turkish_embassy_letters	Letters from Turkey	letters from turkey	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00168	work_candidate_sorrows_young_werther	Werther	werther	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00169	work_candidate_mandatory_lament_royal_concubine	Cung oan ngam khuc	cung oan ngam khuc	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00170	work_candidate_mandatory_jehol_diary	Yeonha ilgi	yeonha ilgi	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00171	work_candidate_mandatory_jehol_diary	Yorha ilgi	yorha ilgi	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00172	work_candidate_mandatory_marriage_figaro	La folle journee, ou le Mariage de Figaro	la folle journee ou le mariage de figaro	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00173	work_candidate_mandatory_burns_poems_chiefly	Selected Poems	selected poems	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00174	work_candidate_mandatory_equiano_interesting_narrative	The Interesting Narrative of the Life of Olaudah Equiano	interesting narrative of life of olaudah equiano	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00175	work_candidate_mandatory_life_samuel_johnson	The Life of Samuel Johnson	life of samuel johnson	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00176	work_candidate_memoirs_lady_hyegyeong	The Memoirs of Lady Hyegyong	memoirs of lady hyegyong	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00177	work_candidate_mandatory_diderot_jacques_fatalist	Jacques le fataliste	jacques le fataliste	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00178	work_candidate_mandatory_wordsworth_coleridge_lyrical_ballads	Lyrical Ballads, with a Few Other Poems	lyrical ballads with few other poems	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00179	work_candidate_bloom_reviewed_adolphe	Adolphe, Anecdote Trouvee dans les Papiers d'un Inconnu	adolphe anecdote trouvee dans les papiers dun inconnu	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00180	work_candidate_bloom_leopardi_poems	Canti	canti	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00181	work_candidate_mandatory_irving_sketch_book	The Sketch Book	sketch book	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00182	work_candidate_mandatory_irving_sketch_book	Rip Van Winkle	rip van winkle	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00183	work_candidate_mandatory_irving_sketch_book	The Legend of Sleepy Hollow	legend of sleepy hollow	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00184	work_candidate_wave001_franklin_autobiography	Autobiography	autobiography	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00185	work_candidate_bloom_poe_tales	The Fall of the House of Usher	fall of house of usher	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00186	work_candidate_bloom_poe_tales	The Tell-Tale Heart	tell tale heart	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00187	work_candidate_bloom_poe_tales	The Cask of Amontillado	cask of amontillado	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00188	work_candidate_bloom_poe_tales	The Purloined Letter	purloined letter	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00189	work_candidate_bloom_poe_tales	The Murders in the Rue Morgue	murders in rue morgue	incumbent_alias	""	""	""	incumbent	Alias index 5 from incumbent path
+alias_00190	work_candidate_bloom_reviewed_notre_dame_paris	The Hunchback of Notre Dame	hunchback of notre dame	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00191	work_candidate_bloom_reviewed_notre_dame_paris	The Hunchback of Notre-Dame	hunchback of notre dame	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00192	work_candidate_wave001_apess_son_of_the_forest	A Son of the Forest and Other Writings	son of forest and other writings	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00193	work_candidate_bloom_balzac_pere_goriot	Father Goriot	father goriot	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00194	work_candidate_bloom_balzac_pere_goriot	Le Pere Goriot	le pere goriot	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00195	work_candidate_scale_lit_inspector_general	The Government Inspector	government inspector	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00196	work_candidate_scale_lit_inspector_general	Revizor	revizor	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00197	work_candidate_wave001_emerson_nature_selected_essays	Nature	nature	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00198	work_candidate_wave001_emerson_nature_selected_essays	Self-Reliance	self reliance	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00199	work_candidate_wave001_emerson_nature_selected_essays	The American Scholar	american scholar	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00200	work_candidate_wave001_emerson_nature_selected_essays	Essays: First Series	essays first series	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00201	work_candidate_wave001_fuller_woman_nineteenth_century	The Great Lawsuit	great lawsuit	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00202	work_candidate_scale2_lit_cousin_bette	La Cousine Bette	la cousine bette	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00203	work_candidate_wave002_whittier_snow_bound_selected_poems	Snow-Bound	snow bound	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00204	work_candidate_wave002_whittier_snow_bound_selected_poems	"{""Snow-Bound""=>""A Winter Idyl""}"	snow bound winter idyl	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00205	work_candidate_wave002_whittier_snow_bound_selected_poems	Barbara Frietchie	barbara frietchie	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00206	work_candidate_wave002_whittier_snow_bound_selected_poems	Ichabod	ichabod	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00207	work_candidate_wave002_longfellow_selected_poems	The Song of Hiawatha	song of hiawatha	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00208	work_candidate_wave002_longfellow_selected_poems	Evangeline	evangeline	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00209	work_candidate_wave002_longfellow_selected_poems	Paul Revere's Ride	paul reveres ride	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00210	work_candidate_wave002_longfellow_selected_poems	The Courtship of Miles Standish	courtship of miles standish	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00211	work_candidate_bloom_reviewed_david_copperfield	The Personal History, Adventures, Experience and Observation of David Copperfield the Younger	personal history adventures experience and observation of david copperfield younger	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00212	work_candidate_wave002_bryant_thanatopsis_selected_poems	Thanatopsis	thanatopsis	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00213	work_candidate_wave002_bryant_thanatopsis_selected_poems	To a Waterfowl	to waterfowl	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00214	work_candidate_wave002_bryant_thanatopsis_selected_poems	The Prairies	prairies	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00215	work_candidate_wave002_dunbar_lyrics_lowly_life	Selected Poems	selected poems	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00216	work_candidate_wave002_dunbar_lyrics_lowly_life	We Wear the Mask	we wear mask	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00217	work_candidate_wave002_dunbar_lyrics_lowly_life	Sympathy	sympathy	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00218	work_candidate_ghalib_selected_ghazals	Selected Ghazals	selected ghazals	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00219	work_candidate_bloom_chekhov_tales	The Lady with the Dog	lady with dog	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00220	work_candidate_bloom_chekhov_tales	Ward No. 6	ward no 6	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00221	work_candidate_bloom_chekhov_tales	The Darling	darling	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00222	work_candidate_bloom_chekhov_tales	Gooseberries	gooseberries	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00223	work_candidate_moby_dick	Moby Dick	moby dick	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00224	work_candidate_mandatory_stowe_uncle_tom	Uncle Toms Cabin	uncle toms cabin	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00225	work_candidate_wave002_poe_raven_selected_poems	The Raven	raven	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00226	work_candidate_wave002_poe_raven_selected_poems	The Bells	bells	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00227	work_candidate_wave002_poe_raven_selected_poems	Annabel Lee	annabel lee	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00228	work_candidate_wave002_poe_raven_selected_poems	Ulalume	ulalume	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00229	work_candidate_mandatory_clotel	Clotel; or, The President's Daughter	clotel or presidents daughter	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00230	work_candidate_mandatory_thoreau_walden	Walden; or, Life in the Woods	walden or life in woods	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00231	work_candidate_leaves_of_grass	Song of Myself	song of myself	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00232	work_candidate_leaves_of_grass	I Sing the Body Electric	i sing body electric	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00233	work_candidate_leaves_of_grass	When Lilacs Last in the Dooryard Bloom'd	when lilacs last in dooryard bloomd	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00234	work_candidate_bloom_reviewed_aurelia	Aurelia ou le Reve et la Vie	aurelia ou le reve et la vie	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00235	work_candidate_bloom_reviewed_piazza_tales	Bartleby, the Scrivener	bartleby scrivener	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00236	work_candidate_bloom_reviewed_piazza_tales	Bartleby	bartleby	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00237	work_candidate_bloom_reviewed_piazza_tales	Benito Cereno	benito cereno	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00238	work_candidate_fleurs_du_mal	The Flowers of Evil	flowers of evil	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00239	work_candidate_fleurs_du_mal	Flowers of Evil	flowers of evil	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00240	work_candidate_global_lit_ollantay	Apu Ollantay	apu ollantay	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00241	work_candidate_mandatory_ostrovsky_storm	Groza	groza	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00242	work_candidate_les_miserables	Les Mis	les mis	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00243	work_candidate_scale5_lit_alice_wonderland	Alices Adventures in Wonderland	alices adventures in wonderland	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00244	work_candidate_mandatory_maldoror	Maldoror	maldoror	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00245	work_candidate_scale2_lit_sentimental_education	L'Education Sentimentale	leducation sentimentale	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00246	work_candidate_genre_lit_twenty_thousand_leagues	20,000 Leagues Under the Sea	20 000 leagues under sea	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00247	work_candidate_genre_lit_twenty_thousand_leagues	Twenty Thousand Leagues Under the Sea	twenty thousand leagues under sea	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00248	work_candidate_scale5_lit_through_looking_glass	Through the Looking-Glass, and What Alice Found There	through looking glass and what alice found there	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00249	work_candidate_scale5_lit_through_looking_glass	Through the Looking Glass	through looking glass	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00250	work_candidate_bloom_dostoevsky_devils	The Devils	devils	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00251	work_candidate_bloom_dostoevsky_devils	The Possessed	possessed	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00252	work_candidate_scale2_lit_simple_heart	Un Coeur Simple	un coeur simple	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00253	work_candidate_scale2_lit_lassommoir	L Assommoir	l assommoir	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00254	work_candidate_scale2_lit_lassommoir	The Dram Shop	dram shop	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00255	work_candidate_dolls_house_ibsen	A Dolls House	dolls house	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00256	work_candidate_dolls_house_ibsen	Doll's House	dolls house	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00257	work_candidate_huckleberry_finn	Huckleberry Finn	huckleberry finn	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00258	work_candidate_mandatory_against_nature	A rebours	rebours	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00259	work_candidate_bloom_reviewed_illuminations	Les Illuminations	les illuminations	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00260	work_candidate_genre_lit_jekyll_hyde	Jekyll and Hyde	jekyll and hyde	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00261	work_candidate_mandatory_mayor_casterbridge	The Life and Death of the Mayor of Casterbridge	life and death of mayor of casterbridge	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00262	work_candidate_completion_lit_maias	Os Maias	os maias	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00263	work_candidate_completion_lit_maias	Os Maias: Episodios da Vida Romantica	os maias episodios da vida romantica	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00264	work_candidate_wave001_bierce_in_midst_of_life	Tales of Soldiers and Civilians	tales of soldiers and civilians	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00265	work_candidate_wave001_bierce_in_midst_of_life	An Occurrence at Owl Creek Bridge	occurrence at owl creek bridge	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00266	work_candidate_wave001_bierce_in_midst_of_life	Chickamauga	chickamauga	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00267	work_candidate_scale2_lit_the_slum	O Cortico	o cortico	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00268	work_candidate_scale2_lit_the_slum	O Cortico / The Slum	o cortico slum	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00269	work_candidate_genre_lit_yellow_wallpaper	The Yellow Wall-Paper	yellow wall paper	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00270	work_candidate_eastasia_lit_takekurabe	Growing Up	growing up	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00271	work_candidate_wave002_crane_maggie	Maggie	maggie	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00272	work_candidate_bloom_reviewed_faustroll	Gestes et Opinions du Docteur Faustroll, Pataphysicien	gestes et opinions du docteur faustroll pataphysicien	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00273	work_candidate_bloom_chesnutt_short_fiction	The Conjure Woman	conjure woman	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00274	work_candidate_os_sertoes	Os Sertoes	os sertoes	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00275	work_candidate_os_sertoes	Rebellion in the Backlands	rebellion in backlands	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00276	work_candidate_wave002_norris_mcteague	McTeague: A Story of San Francisco	mcteague story of san francisco	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00277	work_candidate_me_lit_dead_mammadguluzadeh	Olular	olular	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00278	work_candidate_mandatory_strait_gate	La Porte etroite	la porte etroite	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00279	work_candidate_global_lit_rashomon_stories	Rashomon	rashomon	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00280	work_candidate_global_lit_rashomon_stories	In a Grove	in grove	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00281	work_candidate_bloom_proust_search_lost_time	A la recherche du temps perdu	la recherche du temps perdu	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00282	work_candidate_bloom_proust_search_lost_time	Remembrance of Things Past	remembrance of things past	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00283	work_candidate_bloom_proust_search_lost_time	Swann's Way	swanns way	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00284	work_candidate_bloom_reviewed_dubliners	The Dead	dead	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00285	work_candidate_bloom_reviewed_dubliners	Araby	araby	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00286	work_candidate_bloom_reviewed_dubliners	Eveline	eveline	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00287	work_candidate_bloom_reviewed_keeper_sheep	O Guardador de Rebanhos	o guardador de rebanhos	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00288	work_candidate_bloom_reviewed_prufrock	The Love Song of J. Alfred Prufrock	love song of j alfred prufrock	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00289	work_candidate_completion_lit_good_soldier_svejk	The Good Soldier Svejk	good soldier svejk	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00290	work_candidate_completion_lit_good_soldier_svejk	Svejk	svejk	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00291	work_candidate_global_lit_sitti_nurbaya	Siti Nurbaya	siti nurbaya	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00292	work_candidate_wave002_stevens_harmonium	Sunday Morning	sunday morning	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00293	work_candidate_wave002_stevens_harmonium	Thirteen Ways of Looking at a Blackbird	thirteen ways of looking at blackbird	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00294	work_candidate_wave002_stevens_harmonium	The Snow Man	snow man	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00295	work_candidate_wave002_cummings_tulips_chimneys	Selected Poems	selected poems	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00296	work_candidate_global_lit_call_to_arms_lu_xun	Diary of a Madman	diary of madman	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00297	work_candidate_global_lit_call_to_arms_lu_xun	A Madman's Diary	madmans diary	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00298	work_candidate_global_lit_call_to_arms_lu_xun	The True Story of Ah Q	true story of ah q	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00299	work_candidate_scale2_lit_rilke_duino_elegies	Duino Elegies	duino elegies	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00300	work_candidate_scale2_lit_rilke_duino_elegies	The Duino Elegies	duino elegies	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00301	work_candidate_scale2_lit_rilke_duino_elegies	Duineser Elegien	duineser elegien	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00302	work_candidate_wave002_moore_observations	Poetry	poetry	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00303	work_candidate_scale2_lit_vortex	La voragine	la voragine	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00304	work_candidate_bloom_reviewed_counterfeiters	Les Faux-Monnayeurs	les faux monnayeurs	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00305	work_canon_room_of_ones_own	A Room of Ones Own	room of ones own	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00306	work_candidate_mandatory_les_enfants_terribles	The Holy Terrors	holy terrors	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00307	work_candidate_wave002_mckay_harlem_shadows	If We Must Die	if we must die	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00308	work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0909_la_machine_infernale	The Infernal Machine	infernal machine	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00309	work_candidate_mandatory_thunderstorm_cao_yu	Leiyu	leiyu	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00310	work_candidate_godaan_premchand	Godan	godan	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00311	work_candidate_mandatory_tartar_steppe	Il deserto dei Tartari	il deserto dei tartari	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00312	work_canon_ficciones	The Garden of Forking Paths	garden of forking paths	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00313	work_canon_ficciones	The Library of Babel	library of babel	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00314	work_canon_ficciones	Tlon, Uqbar, Orbis Tertius	tlon uqbar orbis tertius	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00315	work_canon_ficciones	Pierre Menard, Author of the Quixote	pierre menard author of quixote	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00316	work_candidate_bridge_on_the_drina	Na Drini cuprija	na drini cuprija	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00317	work_candidate_global_lit_president_asturias	El Senor Presidente	el senor presidente	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00318	work_candidate_global_lit_this_way_for_gas	This Way for the Gas	this way for gas	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00319	work_candidate_global_lit_this_way_for_gas	Ladies and Gentlemen	ladies and gentlemen	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00320	work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0977_radio_play	Pour en finir avec le jugement de dieu	pour en finir avec le jugement de dieu	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00321	work_candidate_fortress_besieged	Wei Cheng	wei cheng	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00322	work_candidate_fortress_besieged	Besieged City	besieged city	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00323	work_candidate_global_lit_if_this_is_man	Survival in Auschwitz	survival in auschwitz	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00324	work_candidate_global_lit_if_this_is_man	Se questo e un uomo	se questo e un uomo	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00325	work_candidate_mandatory_finn_family_moomintroll	Trollkarlens hatt	trollkarlens hatt	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00326	work_candidate_bloom_borges_aleph	The Aleph	aleph	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00327	work_candidate_bloom_borges_aleph	The Zahir	zahir	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00328	work_candidate_bloom_borges_aleph	The Writing of the God	writing of god	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00329	work_candidate_bloom_borges_aleph	The Immortal	immortal	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00330	work_candidate_global_lit_maize_men	Hombres de maiz	hombres de maiz	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00331	work_candidate_bloom_orwell_1984	1984	1984	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00332	work_candidate_bloom_orwell_1984	Nineteen Eighty Four	nineteen eighty four	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00333	work_candidate_global_lit_kingdom_this_world	El reino de este mundo	el reino de este mundo	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00334	work_candidate_scale5_lit_lottery_stories	The Lottery	lottery	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00335	work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0961_la_cantatrice_chauve	The Bald Soprano	bald soprano	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00336	work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0961_la_cantatrice_chauve	The Bald Prima Donna	bald prima donna	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00337	work_candidate_bloom_yeats_poems	The Second Coming	second coming	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00338	work_candidate_bloom_yeats_poems	Sailing to Byzantium	sailing to byzantium	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00339	work_candidate_bloom_yeats_poems	Easter 1916	easter 1916	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00340	work_candidate_bloom_yeats_poems	Leda and the Swan	leda and swan	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00341	work_candidate_bloom_kafka_stories	The Judgment	judgment	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00342	work_candidate_bloom_kafka_stories	A Hunger Artist	hunger artist	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00343	work_candidate_bloom_kafka_stories	A Country Doctor	country doctor	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00344	work_candidate_bloom_oconnor_complete_stories	A Good Man Is Hard to Find	good man is hard to find	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00345	work_candidate_bloom_oconnor_complete_stories	Good Country People	good country people	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00346	work_candidate_bloom_oconnor_complete_stories	Everything That Rises Must Converge	everything that rises must converge	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00347	work_candidate_bloom_akhmatova_poems	Requiem	requiem	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00348	work_candidate_bloom_reviewed_hughes_poems	Selected Poems	selected poems	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00349	work_candidate_bloom_reviewed_hughes_poems	The Weary Blues	weary blues	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00350	work_candidate_bloom_reviewed_hughes_poems	Fine Clothes to the Jew	fine clothes to jew	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00351	work_candidate_bloom_reviewed_hughes_poems	Montage of a Dream Deferred	montage of dream deferred	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00352	work_candidate_bloom_reviewed_hughes_poems	Harlem	harlem	incumbent_alias	""	""	""	incumbent	Alias index 5 from incumbent path
+alias_00353	work_candidate_bloom_reviewed_hughes_poems	The Negro Speaks of Rivers	negro speaks of rivers	incumbent_alias	""	""	""	incumbent	Alias index 6 from incumbent path
+alias_00354	work_candidate_bloom_reviewed_hughes_poems	I, Too	i too	incumbent_alias	""	""	""	incumbent	Alias index 7 from incumbent path
+alias_00355	work_candidate_genre_lit_narnia_series	The Lion, the Witch and the Wardrobe	lion witch and wardrobe	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00356	work_candidate_mandatory_pavese_moon_bonfires	La luna e i falo	la luna e i falo	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00357	work_candidate_bloom_beckett_trilogy	Molloy	molloy	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00358	work_candidate_bloom_beckett_trilogy	Malone Dies	malone dies	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00359	work_candidate_bloom_beckett_trilogy	The Unnamable	unnamable	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00360	work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0962_les_chaises	The Chairs	chairs	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00361	work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0982_les_gommes	The Erasers	erasers	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00362	work_candidate_bloom_carpentier_lost_steps	Los pasos perdidos	los pasos perdidos	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00363	work_candidate_latcarib_lit_death_life_severina	Morte e Vida Severina	morte e vida severina	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00364	work_candidate_latcarib_lit_death_life_severina	Death and Life of a Severino	death and life of severino	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00365	work_candidate_global_lit_cairo_trilogy	Palace Walk	palace walk	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00366	work_candidate_global_lit_cairo_trilogy	Palace of Desire	palace of desire	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00367	work_candidate_global_lit_cairo_trilogy	Sugar Street	sugar street	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00368	work_candidate_global_lit_devil_to_pay_backlands	Grande Sertao: Veredas	grande sertao veredas	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00369	work_candidate_global_lit_devil_to_pay_backlands	Grande Sertao Veredas	grande sertao veredas	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00370	work_candidate_completion_lit_howl	Howl	howl	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00371	work_candidate_mandatory_river_called_titash	Titas Ekti Nadir Naam	titas ekti nadir naam	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00372	work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0980_la_jalousie	Jealousy	jealousy	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00373	work_candidate_mandatory_jamilia	Jamila	jamila	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00374	work_candidate_latcarib_lit_dreamtigers	El hacedor	el hacedor	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00375	work_candidate_latcarib_lit_dreamtigers	The Maker	maker	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00376	work_candidate_scale2_lit_explosion_cathedral	The Century of Lights	century of lights	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00377	work_candidate_scale2_lit_explosion_cathedral	El siglo de las luces	el siglo de las luces	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00378	work_candidate_bloom_reviewed_time_doves	La placa del Diamant	la placa del diamant	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00379	work_candidate_bloom_reviewed_time_doves	The Diamond Square	diamond square	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00380	work_candidate_bloom_reviewed_time_doves	The Pigeon Girl	pigeon girl	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00381	work_candidate_mandatory_oficio_tinieblas	The Book of Lamentations	book of lamentations	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00382	work_candidate_mandatory_ginzburg_family_lexicon	Lessico famigliare	lessico famigliare	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00383	work_candidate_eastasia_lit_sea_fertility	Spring Snow	spring snow	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00384	work_candidate_eastasia_lit_sea_fertility	Runaway Horses	runaway horses	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00385	work_candidate_eastasia_lit_sea_fertility	The Temple of Dawn	temple of dawn	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00386	work_candidate_eastasia_lit_sea_fertility	The Decay of the Angel	decay of angel	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00387	work_candidate_southasia_lit_khasakkinte_itihasam	The Legends of Khasak	legends of khasak	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00388	work_candidate_mandatory_slaughterhouse_five	Slaughterhouse Five	slaughterhouse five	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00389	work_candidate_global_lit_obscene_bird_night	El obsceno pajaro de la noche	el obsceno pajaro de la noche	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00390	work_candidate_scale2_lit_gravitys_rainbow	Gravitys Rainbow	gravitys rainbow	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00391	work_candidate_southasia_lit_hajar_churashir_maa	Mother of 1084	mother of 1084	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00392	work_candidate_wave005_simin_behbahani_cup_sin	A Cup of Sin: Selected Poems	cup of sin selected poems	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00393	work_candidate_me_lit_pessoptimist	The Pessoptimist	pessoptimist	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00394	work_candidate_me_lit_pessoptimist	Saeed the Pessoptimist	saeed pessoptimist	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00395	work_candidate_mandatory_morante_history	La Storia	la storia	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00396	work_candidate_scale2_lit_sea_the_sea	The Sea, the Sea	sea sea	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00397	work_candidate_mandatory_life_users_manual	La Vie mode d'emploi	la vie mode demploi	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00398	work_candidate_global_lit_maus	Maus I	maus i	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00399	work_candidate_global_lit_maus	My Father Bleeds History	my father bleeds history	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00400	work_candidate_global_lit_maus	Maus II	maus ii	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00401	work_candidate_global_lit_maus	And Here My Troubles Began	and here my troubles began	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00402	work_candidate_genre_lit_book_new_sun	The Shadow of the Torturer	shadow of torturer	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00403	work_candidate_genre_lit_book_new_sun	The Claw of the Conciliator	claw of conciliator	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00404	work_candidate_genre_lit_book_new_sun	The Sword of the Lictor	sword of lictor	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00405	work_candidate_genre_lit_book_new_sun	The Citadel of the Autarch	citadel of autarch	incumbent_alias	""	""	""	incumbent	Alias index 4 from incumbent path
+alias_00406	work_candidate_global_lit_midnights_children	Midnights Children	midnights children	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00407	work_candidate_global_lit_ronggeng_dukuh_paruk	Ronggeng Dukuh Paruk	ronggeng dukuh paruk	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00408	work_candidate_latcarib_lit_lumperica	E. Luminata	e luminata	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00409	work_candidate_mandatory_piano_teacher	Die Klavierspielerin	die klavierspielerin	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00410	work_candidate_global_lit_handmaids_tale	Handmaids Tale	handmaids tale	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00411	work_candidate_global_lit_handmaids_tale	The Handmaids Tale	handmaids tale	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00412	work_candidate_genre_lit_liliths_brood	Dawn	dawn	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00413	work_candidate_genre_lit_liliths_brood	Adulthood Rites	adulthood rites	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00414	work_candidate_genre_lit_liliths_brood	Imago	imago	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00415	work_candidate_completion_lit_ice_candy_man	Cracking India	cracking india	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00416	work_candidate_genre_lit_sandman	The Sandman comics	sandman comics	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00417	work_candidate_genre_lit_sandman	Neil Gaiman Sandman	neil gaiman sandman	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00418	work_candidate_genre_lit_sandman	Preludes & Nocturnes	preludes nocturnes	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00419	work_candidate_genre_lit_mars_trilogy	Red Mars	red mars	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00420	work_candidate_genre_lit_mars_trilogy	Green Mars	green mars	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00421	work_candidate_genre_lit_mars_trilogy	Blue Mars	blue mars	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00422	work_candidate_genre_lit_small_gods	Discworld	discworld	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00423	work_candidate_scale5_lit_dark_materials	Northern Lights	northern lights	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00424	work_candidate_scale5_lit_dark_materials	The Golden Compass	golden compass	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00425	work_candidate_scale5_lit_dark_materials	The Amber Spyglass	amber spyglass	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00426	work_candidate_genre_lit_harry_potter	Harry Potter and the Philosopher's Stone	harry potter and philosophers stone	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00427	work_candidate_genre_lit_harry_potter	Harry Potter and the Sorcerer's Stone	harry potter and sorcerers stone	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00428	work_candidate_genre_lit_stories_life	Story of Your Life	story of your life	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00429	work_candidate_genre_lit_stories_life	Arrival	arrival	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00430	work_candidate_southasia_lit_aadujeevitham	Goat Days	goat days	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00431	work_candidate_scale5_lit_three_body_problem	Three Body Problem	three body problem	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00432	work_candidate_scale5_lit_three_body_problem	The Three Body Problem	three body problem	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00433	work_candidate_scale_lit_cambodian_new_people	The New People	new people	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00434	work_candidate_wave005_wenxin_diaolong	Wenxin Diaolong	wenxin diaolong	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00435	work_candidate_completion_lit_books_of_jacob	Ksiegi Jakubowe	ksiegi jakubowe	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00436	work_candidate_eastasia_lit_emissary	The Last Children of Tokyo	last children of tokyo	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00437	work_candidate_global_lit_broken_earth_trilogy	The Fifth Season	fifth season	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00438	work_candidate_global_lit_broken_earth_trilogy	The Obelisk Gate	obelisk gate	incumbent_alias	""	""	""	incumbent	Alias index 2 from incumbent path
+alias_00439	work_candidate_global_lit_broken_earth_trilogy	The Stone Sky	stone sky	incumbent_alias	""	""	""	incumbent	Alias index 3 from incumbent path
+alias_00440	work_candidate_eastasia_lit_convenience_store_woman	Konbini Ningen	konbini ningen	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00441	work_candidate_completion_lit_kim_jiyoung	Kim Ji-young, Born 1982	kim ji young born 1982	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00442	work_candidate_completion_lit_tomb_of_sand	Ret Samadhi	ret samadhi	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
+alias_00443	work_candidate_latcarib_lit_crooked_plow	Torto Arado	torto arado	incumbent_alias	""	""	""	incumbent	Alias index 1 from incumbent path
