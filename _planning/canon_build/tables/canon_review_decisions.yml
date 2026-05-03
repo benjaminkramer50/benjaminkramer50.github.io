@@ -255,6 +255,22 @@ decisions:
       - resolve_generic_duplicate_cluster_review_before_any_cut
       - keep_all_pairs_blocked_until_checks_are_resolved
     public_path_effect: none
+  - decision_id: x049_pair_review_queue_001
+    decision_type: pair_review_queue_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_replacement_pair_review_queue.tsv
+    decision: generate_balanced_blocked_pair_review_queue
+    rationale: >
+      The 1,215 blocked pair rows are too broad for immediate review and are
+      heavily concentrated in generic-title duplicate clusters. X049 selects a
+      bounded 75-row queue with all five add candidates represented and repeated
+      cut-title clusters capped, while keeping every row blocked.
+    scoring_effect: none
+    required_followup:
+      - manually_review_the_75_pair_queue_or_generate_cut_side_scores
+      - keep_all_review_queue_rows_blocked_until_cut_basis_is_resolved
+      - do_not_apply_public_replacements_from_queue_rows
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002

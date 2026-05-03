@@ -43,6 +43,7 @@ TABLE_FILES = {
   "path_selection" => File.join(BUILD_DIR, "tables", "canon_path_selection.tsv"),
   "omission_queue" => File.join(BUILD_DIR, "tables", "canon_omission_queue.tsv"),
   "replacement_candidates" => File.join(BUILD_DIR, "tables", "canon_replacement_candidates.tsv"),
+  "replacement_pair_review_queue" => File.join(BUILD_DIR, "tables", "canon_replacement_pair_review_queue.tsv"),
   "packet_status" => File.join(BUILD_DIR, "tables", "canon_packet_status.tsv")
 }.freeze
 
@@ -64,6 +65,7 @@ HEADER_REQUIREMENTS = {
   "scores" => ["work_id", "source_weighted_score", "source_diversity_score", "coverage_scarcity_bonus", "boundary_penalty", "duplicate_overlap_penalty", "source_debt_penalty", "final_score", "must_include", "must_exclude"],
   "omission_queue" => ["omission_id", "work_id", "source_debt_status", "evidence_refs", "readiness_status", "blocking_reason", "next_action"],
   "replacement_candidates" => ["transaction_id", "add_work_id", "cut_work_id", "evidence_refs", "rationale", "gate_status"],
+  "replacement_pair_review_queue" => ["queue_id", "transaction_id", "add_work_id", "cut_work_id", "pair_review_priority", "review_bucket", "next_action"],
   "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
 }.freeze
 

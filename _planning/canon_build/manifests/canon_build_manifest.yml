@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: replacement_pair_checks_x048_annotated
+status: replacement_pair_review_queue_x049_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -77,6 +77,7 @@ current_counts:
   score_rows: 5
   coverage_target_rows: 72
   replacement_candidate_rows: 1215
+  replacement_pair_review_queue_rows: 75
   cut_candidate_rows: 3000
   source_items_matched_current_path: 282
   source_items_matched_candidate: 24
@@ -526,4 +527,14 @@ replacement_pair_checks_x048:
   cut_chronology_issue_review_required: 170
   cut_boundary_flag_review_required: 55
   ready_for_review_rows: 0
+  direct_replacements: 0
+replacement_pair_review_queue_x049:
+  status: balanced_pair_review_queue_generated
+  queue_rows: 75
+  rows_per_add_candidate: 15
+  review_bucket_counts:
+    generic_duplicate_cluster_first: 50
+    source_debt_first: 17
+    chronology_first: 6
+    duplicate_cluster_first: 2
   direct_replacements: 0

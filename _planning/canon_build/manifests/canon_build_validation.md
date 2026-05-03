@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 29
+- checked_files: 30
 - failures: 0
 
 ## Checks
@@ -36,6 +36,7 @@
 | table:path_selection | PASS | `_planning/canon_build/tables/canon_path_selection.tsv (8 columns)` |
 | table:omission_queue | PASS | `_planning/canon_build/tables/canon_omission_queue.tsv (14 columns)` |
 | table:replacement_candidates | PASS | `_planning/canon_build/tables/canon_replacement_candidates.tsv (18 columns)` |
+| table:replacement_pair_review_queue | PASS | `_planning/canon_build/tables/canon_replacement_pair_review_queue.tsv (17 columns)` |
 | table:packet_status | PASS | `_planning/canon_build/tables/canon_packet_status.tsv (8 columns)` |
 | policy:source_weights.source_type_mapping | PASS | `42 source types mapped` |
 | policy:source_debt_rules.source_class_rules | PASS | `10 source classes covered` |
