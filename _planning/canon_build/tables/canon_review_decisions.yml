@@ -320,6 +320,22 @@ decisions:
       - preserve_selection_scope_distinctions_for_poem_level_source_items
       - keep_public_path_unchanged_until_cut_side_scores_are_computed
     public_path_effect: none
+  - decision_id: x053_cut_review_resolution_lanes_001
+    decision_type: cut_review_resolution_lane_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_cut_review_resolution_lanes.tsv
+    decision: split_cut_review_rows_into_existing_source_and_external_source_lanes
+    rationale: >
+      After X052, cut-side review has two distinct workflows: rescue source
+      items already present in the build layer, and externally source rows with
+      no local support. X053 orders those lanes so available source evidence is
+      processed before new source acquisition.
+    scoring_effect: none
+    required_followup:
+      - process_existing_source_item_rescue_review_rows_first
+      - then_acquire_external_sources_for_no_local_support_rows
+      - do_not_promote_replacement_pairs_until_cut_side_source_status_is_resolved
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
