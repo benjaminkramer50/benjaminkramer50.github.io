@@ -28,6 +28,7 @@ TABLE_FILES = {
   "evidence" => File.join(BUILD_DIR, "tables", "canon_evidence.tsv"),
   "review_decisions" => File.join(BUILD_DIR, "tables", "canon_review_decisions.yml"),
   "scores" => File.join(BUILD_DIR, "tables", "canon_scores.tsv"),
+  "source_weights" => File.join(BUILD_DIR, "tables", "canon_source_weights.yml"),
   "coverage_targets" => File.join(BUILD_DIR, "tables", "canon_coverage_targets.yml"),
   "path_selection" => File.join(BUILD_DIR, "tables", "canon_path_selection.tsv"),
   "replacement_candidates" => File.join(BUILD_DIR, "tables", "canon_replacement_candidates.tsv"),
@@ -154,6 +155,19 @@ if failures.empty?
   source_ids = registry_rows.map { |row| row["source_id"] }.to_set
   source_item_ids = source_item_rows.map { |row| row["source_item_id"] }.to_set
   work_ids = work_rows.map { |row| row["work_id"] }.to_set
+
+  source_weights = YAML.load_file(TABLE_FILES["source_weights"])
+  source_classes = source_weights.fetch("source_classes", {}).keys.to_set
+  source_type_mapping = source_weights.fetch("source_type_mapping", {})
+  unmapped_source_types = registry_rows.map { |row| row["source_type"] }.uniq.reject { |source_type| source_type_mapping.key?(source_type) }
+  unknown_mapped_classes = source_type_mapping.reject { |_source_type, source_class| source_classes.include?(source_class) }
+  if unmapped_source_types.empty? && unknown_mapped_classes.empty?
+    checks << ["policy:source_weights.source_type_mapping", "PASS", "#{source_type_mapping.size} source types mapped"]
+  else
+    failures << "source weight policy has unmapped source types: #{unmapped_source_types.join(", ")}" unless unmapped_source_types.empty?
+    failures << "source weight policy maps to unknown classes: #{unknown_mapped_classes.keys.join(", ")}" unless unknown_mapped_classes.empty?
+    checks << ["policy:source_weights.source_type_mapping", "FAIL", "#{unmapped_source_types.size} unmapped source types; #{unknown_mapped_classes.size} unknown classes"]
+  end
 
   CONTROLLED_FIELD_CHECKS.each do |table, config|
     schema = schemas.fetch(config.fetch("schema"))

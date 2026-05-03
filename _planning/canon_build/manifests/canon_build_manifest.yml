@@ -30,6 +30,7 @@ artifacts:
   aliases: bootstrapped_from_current_path
   relations: initialized_empty
   evidence: e001_ingested_x001_x006_pilot_ingested
+  source_weights: draft_policy_created
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path

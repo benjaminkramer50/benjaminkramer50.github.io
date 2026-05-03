@@ -47,7 +47,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X013 | All extracted source items | Title/creator normalization and incumbent path matching; run continuously after each extraction batch |
 | X014 | All extracted source items | Alias, contained-work, series, selection, variant, adaptation, and duplicate relation creation |
 | X015 | All source and work tables | Hardening pass: controlled-value validation, status coherence, source-fetch/extraction denominators, and packet status table |
-| X016 | All source types | Evidence weighting policy by anthology, syllabus, edition, reference, corpus, access metadata, award, national canon, and internal record |
+| X016 | All source types | Draft created: evidence weighting policy by anthology, syllabus, edition, reference, corpus, access metadata, award, national canon, and internal record |
 | X017 | All matched source items | Evidence-row generation and source-debt closure rules after X016 policy is encoded |
 | X018 | All unresolved source items | Omission queue creation with duplicate, boundary, chronology, source-family, and item-scope checks |
 | X019 | Current path plus omissions | Scored replacement transaction candidates only after coverage targets and quality issues exist |

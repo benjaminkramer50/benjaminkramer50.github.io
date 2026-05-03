@@ -1,0 +1,131 @@
+---
+generated_on: '2026-05-03'
+status: draft_policy
+purpose: >
+  Central source-class policy for deriving canon evidence scores. Source-item
+  rows are observations; scoring scripts must use this policy rather than
+  treating row-level evidence_weight values as final adjudication.
+default_rules:
+  minimum_independent_canon_support_families_for_non_obvious_addition: 2
+  internal_records_count_for_external_canon_score: false
+  access_metadata_counts_for_canon_score: false
+  corpus_catalog_rows_count_for_standalone_inclusion: false
+  anthology_excerpts_count_as_complete_work: false
+  recent_awards_require_corroboration: true
+  private_or_gated_evidence_requires_public_or_independent_corroboration_for_contested_add_cut: true
+source_classes:
+  curated_teaching_anthology_complete_work:
+    evidence_role: canon_support
+    default_weight: 0.80
+    minimum_weight: 0.75
+    maximum_weight: 0.90
+    counts_for_canon_score: true
+    notes: Complete-work inclusion in a major teaching anthology.
+  university_core_required_reading:
+    evidence_role: pedagogical_canon_support
+    default_weight: 0.75
+    minimum_weight: 0.65
+    maximum_weight: 0.90
+    counts_for_canon_score: true
+    notes: Required or long-running core reading; record institutional bias.
+  field_or_national_anthology:
+    evidence_role: field_or_region_support
+    default_weight: 0.70
+    minimum_weight: 0.60
+    maximum_weight: 0.85
+    counts_for_canon_score: true
+    notes: Strong evidence within a language, region, field, or tradition.
+  national_canon_exam_or_academy_list:
+    evidence_role: region_specific_support
+    default_weight: 0.65
+    minimum_weight: 0.55
+    maximum_weight: 0.80
+    counts_for_canon_score: true
+    global_score_cap: true
+    notes: Supports regional/tradition priority; needs corroboration for global rank.
+  scholarly_literary_history_or_reference:
+    evidence_role: contextual_or_boundary_support
+    default_weight: 0.55
+    minimum_weight: 0.45
+    maximum_weight: 0.75
+    counts_for_canon_score: true
+    notes: Work-specific reference/literary-history evidence; author-only context is weaker.
+  authoritative_edition_or_translation_series:
+    evidence_role: reception_or_provenance_support
+    default_weight: 0.35
+    minimum_weight: 0.25
+    maximum_weight: 0.60
+    counts_for_canon_score: limited
+    notes: Supports edition/reception/provenance; not a canon vote alone.
+  prize_or_reception_layer:
+    evidence_role: reception_or_discovery_support
+    default_weight: 0.35
+    minimum_weight: 0.20
+    maximum_weight: 0.60
+    counts_for_canon_score: limited
+    recency_penalty: true
+    notes: Useful discovery signal; recent works require corroboration.
+  specialist_corpus_or_bibliographic_database:
+    evidence_role: identity_access_alias_support
+    default_weight: 0.20
+    minimum_weight: 0.10
+    maximum_weight: 0.35
+    counts_for_canon_score: false
+    notes: Supports identity, witness, alias, edition, and access evidence only.
+  access_metadata:
+    evidence_role: provenance_or_access_only
+    default_weight: 0.00
+    minimum_weight: 0.00
+    maximum_weight: 0.00
+    counts_for_canon_score: false
+    notes: ISBN/OCLC/catalog/public-domain availability is not canon support.
+  internal_record_or_packet_output:
+    evidence_role: workflow_state_only
+    default_weight: 0.00
+    minimum_weight: 0.00
+    maximum_weight: 0.00
+    counts_for_canon_score: false
+    notes: Accepted site rows and audit packet outputs guide workflow but are not external evidence.
+source_type_mapping:
+  accepted_site_record: internal_record_or_packet_output
+  american_literature_anthology: field_or_national_anthology
+  arthurian_cycle_translation: authoritative_edition_or_translation_series
+  authoritative_collection: authoritative_edition_or_translation_series
+  authoritative_edition_series: authoritative_edition_or_translation_series
+  bibliographic_database: specialist_corpus_or_bibliographic_database
+  commentary_text_series: authoritative_edition_or_translation_series
+  critical_edition_series: authoritative_edition_or_translation_series
+  critical_source_series: authoritative_edition_or_translation_series
+  digital_primary_text_series: specialist_corpus_or_bibliographic_database
+  digital_text_collection: specialist_corpus_or_bibliographic_database
+  drama_anthology: field_or_national_anthology
+  edited_text_series: authoritative_edition_or_translation_series
+  english_literature_anthology: field_or_national_anthology
+  field_anthology: field_or_national_anthology
+  ibero_romance_bibliographic_database: specialist_corpus_or_bibliographic_database
+  language_literary_history: scholarly_literary_history_or_reference
+  latin_text_corpus: specialist_corpus_or_bibliographic_database
+  legacy_canon_list: scholarly_literary_history_or_reference
+  linguistic_corpus: specialist_corpus_or_bibliographic_database
+  metadata_catalog: access_metadata
+  packet_audit_output: internal_record_or_packet_output
+  period_anthology: field_or_national_anthology
+  poetry_anthology: field_or_national_anthology
+  primary_anthology: field_or_national_anthology
+  prize_or_reception_layer: prize_or_reception_layer
+  publisher_reference_series: scholarly_literary_history_or_reference
+  reference_encyclopedia: scholarly_literary_history_or_reference
+  region_literary_history: scholarly_literary_history_or_reference
+  scholarly_edition_series: authoritative_edition_or_translation_series
+  specialist_digital_corpus: specialist_corpus_or_bibliographic_database
+  specialist_digital_project: specialist_corpus_or_bibliographic_database
+  specialist_source: specialist_corpus_or_bibliographic_database
+  syllabus_or_reading_list: university_core_required_reading
+  teaching_anthology: field_or_national_anthology
+  translation_series: authoritative_edition_or_translation_series
+  university_core_historical_reading_list: university_core_required_reading
+  university_core_reading_list: university_core_required_reading
+  university_course_catalog: access_metadata
+  university_sequence_selected_readings: university_core_required_reading
+  world_literature_anthology: curated_teaching_anthology_complete_work
+  world_literature_reference_method: scholarly_literary_history_or_reference

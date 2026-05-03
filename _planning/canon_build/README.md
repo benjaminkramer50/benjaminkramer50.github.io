@@ -12,10 +12,11 @@ The public YAML path remains the incumbent display artifact. The scholarly build
 4. `tables/canon_aliases.tsv` and `tables/canon_relations.tsv`: title variants, translations, contained works, series, duplicates, and selection relations.
 5. `tables/canon_evidence.tsv`: work-level evidence records.
 6. `tables/canon_review_decisions.yml`: human adjudication, waivers, and policy decisions.
-7. `tables/canon_scores.tsv`: derived scores and penalties.
-8. `tables/canon_replacement_candidates.tsv`: proposed add/cut transactions.
-9. `tables/canon_path_selection.tsv`: selected rows for generated public paths.
-10. `tables/canon_packet_status.tsv`: machine-readable packet status and next-action tracking.
+7. `tables/canon_source_weights.yml`: central source-class policy used before scores are derived.
+8. `tables/canon_scores.tsv`: derived scores and penalties.
+9. `tables/canon_replacement_candidates.tsv`: proposed add/cut transactions.
+10. `tables/canon_path_selection.tsv`: selected rows for generated public paths.
+11. `tables/canon_packet_status.tsv`: machine-readable packet status and next-action tracking.
 
 ## Gate
 
