@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x036_boundary_candidates_materialized
+status: source_item_batch_x037_boundary_candidate_metadata_added
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -238,6 +238,15 @@ x036_boundary_candidate_materialization:
   total_omission_queue_rows: 12
   scoring_ready_rows: 0
   scoring_blocked_rows: 3012
+  direct_replacements: 0
+x037_boundary_candidate_metadata:
+  status: metadata_added_and_scoring_inputs_regenerated
+  report: _planning/canon_build/source_crosswalk_reports/x_batch_021_x037_boundary_candidate_metadata.md
+  work_candidate_rows_updated: 4
+  omission_rows_regenerated: 12
+  scoring_input_rows_regenerated: 3012
+  x036_candidate_chronology_risk_rows_after_update: 0
+  x036_candidate_score_ready_rows: 0
   direct_replacements: 0
 source_crosswalk_batch_e013_e018:
   source_registry_rows_added_or_updated: 25
