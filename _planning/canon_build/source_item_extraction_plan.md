@@ -16,7 +16,7 @@ Direct public-list replacements remain paused until these packets produce source
 |---|---|---|---|
 | E Batch 1 | E001-E006 | Registered; E001 extracted; E004-E006 extraction pending | `source_crosswalk_reports/e_batch_001_e001_e006.md` |
 | E Batch 2 | E007-E012 | Registered; X001-X006 pilot rows ingested; full extraction pending | `source_crosswalk_reports/e_batch_002_e007_e012.md` |
-| E Batch 3 | E013-E018 | Registered; X020-X024 generated/updated 2,413 E013/E014/E015/E016/E017/E018 source-item observations; current table has 2435 total source-item rows; X013/X014/X017 queues rerun after X024; remaining source debt is explicit for blocked Traditional Chinese CPL TOC and official Oxford modern Indian poem-level reconciliation | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
+| E Batch 3 | E013-E018 | Registered; X020-X025 generated/updated 2,690 E013/E014/E015/E016/E017/E018 source-item observations; current table has 2,712 total source-item rows; X013/X014/X017 queues rerun after X025; remaining source debt is explicit for blocked full Traditional Chinese CPL TOC and official Oxford modern Indian poem-level reconciliation | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
 
 ## Extraction Contract
 
@@ -51,19 +51,20 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X021 | `e013_oxford_latin_american_short_stories_1997`; `e013_oxford_latin_american_poetry_2009`; `e013_fsg_20c_latin_american_poetry_2011`; `columbia_modern_chinese_lit_2e_2007`; `columbia_traditional_chinese_lit_1996`; `e017_columbia_modern_japanese_lit_v1_2005` | Source items ingested, X013/X014 queued | 238 E013/E016/E017 source-item observations; 2 complete public TOCs and 4 partial pilots; no evidence rows or public path changes |
 | X022 | `e013_fsg_20c_latin_american_poetry_2011`; `e013_oxford_latin_american_poetry_2009`; `e014_rienner_anthology_african_lit_2007`; `oxford_modern_indian_poetry_1998`; `clay_sanskrit_library_56vol`; `murty_classical_library_india`; `e017_columbia_modern_japanese_lit_v2_2007`; `e018_columbia_traditional_korean_poetry_2003`; `e018_lti_korea_digital_library_classics` | Source items ingested, X013/X014 queued | 697 parser-backed E013/E014/E015/E017/E018 source-item observations generated/updated across public TOCs, series lists, and metadata endpoints; no evidence rows or public path changes |
 | X023 | `brians_modern_south_asian_lit_english_2003`; `e014_penguin_modern_african_poetry_4e_2007`; `e014_african_writers_series_heinemann_penguin`; `e017_columbia_traditional_japanese_lit_2007`; `e017_columbia_early_modern_japanese_lit_2002` | Source items ingested, X013/X014/X017 rerun | 334 additional rows: 239 Penguin African poem-level rows, 48 African Writers Series metadata rows, 15 Brians chapter-context rows, and 32 audited Japanese major-work rows; 55 new evidence rows after matching; no public path changes |
+| X024 | `columbia_modern_chinese_lit_2e_2007`; `e017_columbia_traditional_japanese_lit_2007`; `e017_columbia_early_modern_japanese_lit_2002`; `e014_cambridge_history_african_caribbean_lit_2000`; `e013_cambridge_history_latin_american_lit_1996`; `chinese_text_project_premodern` | Source items ingested, X013/X014/X017 rerun | 1,059 generated rows from LOC Modern Chinese, LOC/Dandelon Japanese, Cambridge African/Caribbean and Latin American chapter-context rows, and Chinese Text Project metadata; full Columbia Traditional Chinese and Oxford modern Indian poem-level official-copy debt retained explicitly |
+| X025 | `shorter_columbia_traditional_chinese_lit_2000`; `cambridge_history_chinese_lit_2010`; `columbia_traditional_chinese_lit_1996`; `oxford_modern_indian_poetry_1998` | Source items ingested, X013/X014/X017 rerun | 277 generated rows: 262 Shorter Columbia Traditional Chinese public TOC rows and 15 Cambridge Chinese chapter-context rows; full Columbia CPL and Oxford Indian poem-level official-copy debts remain unresolved and explicit |
 
 ## Planned Extraction Packets
 
 | Packet | Source layers | Purpose |
 |---|---|---|
-| X013 | All extracted source items | Generated after X024: 255 title/creator normalization candidates and 2,209 explicit match-review decisions |
-| X014 | All extracted source items | Generated after X024: 3,362 alias, contained-work, series, selection, variant, adaptation, and duplicate relation-scope rows; 0 final relations ready |
+| X013 | All extracted source items | Generated after X025: 271 title/creator normalization candidates and 2,472 explicit match-review decisions |
+| X014 | All extracted source items | Generated after X025: 3,901 alias, contained-work, series, selection, variant, adaptation, and duplicate relation-scope rows; 0 final relations ready |
 | X015 | All source and work tables | Hardening pass: controlled-value validation, status coherence, source-fetch/extraction denominators, and packet status table |
 | X016 | All source types | Draft created: evidence weighting policy by anthology, syllabus, edition, reference, corpus, access metadata, award, national canon, and internal record |
 | X017 | All matched source items | Evidence-row generation and source-debt closure rules after X016 policy is encoded |
 | X018 | All unresolved source items | Omission queue creation with duplicate, boundary, chronology, source-family, and item-scope checks |
 | X019 | Current path plus omissions | Scored replacement transaction candidates only after coverage targets and quality issues exist |
-| X024 | Full-line TOC and context cleanup | Source items ingested; 1,059 generated rows from LOC Modern Chinese, LOC/Dandelon Japanese, Cambridge African/Caribbean and Latin American chapter-context rows, and Chinese Text Project metadata; Traditional Chinese CPL and Oxford modern Indian poem-level official-copy debt retained explicitly |
 
 ## Integration Gate
 

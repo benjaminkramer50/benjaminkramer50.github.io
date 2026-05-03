@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x024_full_toc_context_cleanup_ingested
+status: source_item_batch_x025_chinese_indian_remaining_cleanup_ingested
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -25,23 +25,23 @@ gates:
   metadata_access_rows_do_not_close_canon_support_debt: true
 artifacts:
   source_registry: e001_e018_registered_source_items_pending
-  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_x023_x024_source_items
+  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_x023_x024_x025_source_items
   work_candidates: bootstrapped_from_current_path_plus_x013_source_candidates
   aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases
   relations: initialized_empty
-  match_candidates: generated_x013_expanded_after_x022
-  match_review_queue: generated_x013
-  match_review_decisions: generated_x013_reviewed
-  relation_review_queue: generated_x014_expanded_after_x022
-  relation_review_decisions: generated_x014_explicit_decisions_after_x022
+  match_candidates: generated_x013_expanded_after_x025
+  match_review_queue: generated_x013_after_x025
+  match_review_decisions: generated_x013_reviewed_after_x025
+  relation_review_queue: generated_x014_expanded_after_x025
+  relation_review_decisions: generated_x014_explicit_decisions_after_x025
   relation_scope_rules: draft_policy_created
-  relation_scope_status: generated_x014_expanded_after_x022
-  evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows
+  relation_scope_status: generated_x014_expanded_after_x025
+  evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows_after_x025
   source_weights: draft_policy_created
   source_debt_rules: draft_policy_created
-  source_debt_status: generated_x017
-  omission_queue: generated_x018
-  scoring_inputs: generated_x019
+  source_debt_status: generated_x017_after_x025
+  omission_queue: generated_x018_after_x025
+  scoring_inputs: generated_x019_after_x025
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
@@ -58,9 +58,9 @@ current_counts:
   creators: 2006
   work_creators: 3015
   aliases: 445
-  source_items: 2435
-  evidence_rows: 226
-  relation_scope_status_rows: 3362
+  source_items: 2712
+  evidence_rows: 240
+  relation_scope_status_rows: 3901
   source_debt_status_rows: 3008
   omission_queue_rows: 8
   scoring_input_rows: 3008
@@ -68,10 +68,10 @@ current_counts:
   scoring_blocked_rows: 3008
   source_items_matched_current_path: 146
   source_items_matched_candidate: 8
-  source_items_represented_by_selection: 72
+  source_items_represented_by_selection: 86
   source_items_out_of_scope: 1
-  source_items_unmatched: 2208
-  source_registry_rows: 71
+  source_items_unmatched: 2471
+  source_registry_rows: 72
 source_crosswalk_batch_e001_e006:
   source_registry_rows: 9
   e001_source_items: 61
@@ -112,20 +112,20 @@ next_hardening_steps:
 - derive_evidence_weights_centrally_before_scoring
 - populate_quality_issues_and_coverage_targets_before_replacements
 source_item_matching_phase_x013_x014:
-  match_candidate_rows: 236
-  match_review_queue_rows: 1210
-  match_review_decision_rows: 1210
+  match_candidate_rows: 271
+  match_review_queue_rows: 2472
+  match_review_decision_rows: 2472
   match_review_decision_summary:
-    unresolved_no_candidate_match: 1185
-    candidate_match_requires_manual_confirmation: 24
+    unresolved_no_candidate_match: 2440
+    candidate_match_requires_manual_confirmation: 31
     out_of_scope_media_boundary: 1
   source_backed_candidate_rows_created: 8
   source_items_updated_from_review_decisions: 9
-  policy_aware_evidence_rows_generated: 212
+  policy_aware_evidence_rows_generated: 132
   source_debt_status_summary:
-    open_no_evidence: 2829
+    open_no_evidence: 2825
     open_internal_only: 37
-    open_non_scoring_only: 22
+    open_non_scoring_only: 26
     open_provisional_external_support: 25
     open_selection_only: 70
     open_needs_review: 25
@@ -133,15 +133,15 @@ source_item_matching_phase_x013_x014:
     total_rows: 8
     ready_for_scoring_review: 0
     not_ready_for_scoring: 8
-  relation_review_queue_rows: 1633
-  relation_review_decision_rows: 1633
+  relation_review_queue_rows: 3901
+  relation_review_decision_rows: 3901
   relation_scope_status_summary:
-    not_writable_policy_blocked: 1621
+    not_writable_policy_blocked: 3889
     scope_review_required: 12
     ready_to_write_relation: 0
   relation_scope_blockers:
-    source_container_only: 1177
-    selection_scope_pending: 444
+    source_container_only: 2359
+    selection_scope_pending: 1530
     alias_or_variant_review_required: 8
     represented_by_existing_selection_review_required: 2
     cycle_container_required: 2
@@ -151,13 +151,13 @@ source_item_matching_phase_x013_x014:
     blocked_from_score_computation: 3008
     gate_interpretation: scores_not_generated_until_source_debt_and_scope_blockers_are_resolved
   match_decision_summary:
-    represented_by_existing_selection: 1
-    create_source_backed_candidate_actions: 8
+    candidate_match_requires_manual_confirmation: 31
     out_of_scope_media_boundary: 1
+    unresolved_no_candidate_match: 2440
   status: source_debt_and_scoring_inputs_generated
   direct_replacements: 0
 source_crosswalk_batch_e013_e018:
-  source_registry_rows_added_or_updated: 24
+  source_registry_rows_added_or_updated: 25
   e013_status: registered_needs_latin_american_toc_extraction
   e014_status: registered_needs_african_literature_toc_extraction
   e015_status: registered_needs_south_asian_metadata_and_toc_extraction
@@ -211,4 +211,14 @@ source_item_extraction_batch_x024:
   ctext_metadata_rows: 108
   evidence_rows_added: 0
   status: source_items_ingested_matching_required
+  direct_replacements: 0
+source_item_extraction_batch_x025:
+  source_items_added_or_updated: 277
+  shorter_columbia_traditional_chinese_rows: 262
+  cambridge_chinese_context_rows: 15
+  full_columbia_traditional_chinese_status: blocked_at_cpl_wrong_toc_rejected_elsewhere
+  oxford_modern_indian_poetry_status: official_denominator_confirmed_poem_level_toc_unreconciled
+  evidence_rows_added: 0
+  evidence_rows_after_x013_x014_x017_rerun: 14
+  status: source_items_ingested_evidence_scope_review_required
   direct_replacements: 0
