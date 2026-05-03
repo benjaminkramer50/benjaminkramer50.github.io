@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 25
+- checked_files: 26
 - failures: 0
 
 ## Checks
@@ -31,6 +31,7 @@
 | table:source_debt_status | PASS | `_planning/canon_build/tables/canon_source_debt_status.tsv (15 columns)` |
 | table:coverage_targets | PASS | `_planning/canon_build/tables/canon_coverage_targets.yml` |
 | table:path_selection | PASS | `_planning/canon_build/tables/canon_path_selection.tsv (8 columns)` |
+| table:omission_queue | PASS | `_planning/canon_build/tables/canon_omission_queue.tsv (14 columns)` |
 | table:replacement_candidates | PASS | `_planning/canon_build/tables/canon_replacement_candidates.tsv (18 columns)` |
 | table:packet_status | PASS | `_planning/canon_build/tables/canon_packet_status.tsv (8 columns)` |
 | policy:source_weights.source_type_mapping | PASS | `42 source types mapped` |
@@ -49,6 +50,7 @@
 | integrity:unique:source_items.source_item_id | PASS | `0 duplicates` |
 | integrity:unique:work_candidates.work_id | PASS | `0 duplicates` |
 | integrity:unique:creators.creator_id | PASS | `0 duplicates` |
+| integrity:unique:omission_queue.omission_id | PASS | `0 duplicates` |
 | integrity:unique:evidence.evidence_id | PASS | `0 duplicates` |
 | integrity:source_items.source_id | PASS | `all source IDs registered` |
 | integrity:source_items.matched_work_id | PASS | `all nonblank matched work IDs exist` |
@@ -65,4 +67,5 @@
 | integrity:relation_review_decisions.refs | PASS | `all relation decisions cover queued rows and valid existing/proposed targets` |
 | integrity:path_selection.work_id | PASS | `all selected work IDs exist` |
 | integrity:source_debt_status.work_id | PASS | `one source-debt status row per work candidate` |
+| integrity:omission_queue.refs | PASS | `all omission queue work/evidence refs exist` |
 | integrity:path_selection.selected_rank_continuity | PASS | `3000 selected rows` |

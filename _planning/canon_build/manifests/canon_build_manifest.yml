@@ -38,6 +38,7 @@ artifacts:
   source_weights: draft_policy_created
   source_debt_rules: draft_policy_created
   source_debt_status: generated_x017
+  omission_queue: generated_x018
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
@@ -57,6 +58,7 @@ current_counts:
   source_items: 118
   evidence_rows: 117
   source_debt_status_rows: 3008
+  omission_queue_rows: 8
   source_items_matched_candidate: 8
   source_items_represented_by_selection: 8
   source_items_out_of_scope: 1
@@ -113,6 +115,10 @@ source_item_matching_phase_x013_x014:
     open_provisional_external_support: 18
     open_selection_only: 9
     open_needs_review: 1
+  omission_queue_summary:
+    total_rows: 8
+    ready_for_scoring_review: 0
+    not_ready_for_scoring: 8
   relation_review_queue_rows: 41
   relation_review_decision_rows: 41
   match_decision_summary:

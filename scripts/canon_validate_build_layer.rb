@@ -38,6 +38,7 @@ TABLE_FILES = {
   "source_debt_status" => File.join(BUILD_DIR, "tables", "canon_source_debt_status.tsv"),
   "coverage_targets" => File.join(BUILD_DIR, "tables", "canon_coverage_targets.yml"),
   "path_selection" => File.join(BUILD_DIR, "tables", "canon_path_selection.tsv"),
+  "omission_queue" => File.join(BUILD_DIR, "tables", "canon_omission_queue.tsv"),
   "replacement_candidates" => File.join(BUILD_DIR, "tables", "canon_replacement_candidates.tsv"),
   "packet_status" => File.join(BUILD_DIR, "tables", "canon_packet_status.tsv")
 }.freeze
@@ -56,6 +57,7 @@ HEADER_REQUIREMENTS = {
   "evidence" => ["evidence_id", "work_id", "source_id", "evidence_type", "evidence_strength", "reviewer_status"],
   "source_debt_status" => ["work_id", "evidence_count", "source_debt_status", "closure_scope", "blocking_reason", "next_action"],
   "scores" => ["work_id", "source_weighted_score", "source_diversity_score", "coverage_scarcity_bonus", "boundary_penalty", "duplicate_overlap_penalty", "source_debt_penalty", "final_score", "must_include", "must_exclude"],
+  "omission_queue" => ["omission_id", "work_id", "source_debt_status", "evidence_refs", "readiness_status", "blocking_reason", "next_action"],
   "replacement_candidates" => ["transaction_id", "add_work_id", "cut_work_id", "evidence_refs", "rationale", "gate_status"],
   "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
 }.freeze
@@ -164,6 +166,7 @@ if failures.empty?
   relation_decision_rows = read_tsv(TABLE_FILES["relation_review_decisions"])
   path_selection_rows = read_tsv(TABLE_FILES["path_selection"])
   source_debt_status_rows = read_tsv(TABLE_FILES["source_debt_status"])
+  omission_queue_rows = read_tsv(TABLE_FILES["omission_queue"])
   replacement_rows = read_tsv(TABLE_FILES["replacement_candidates"])
 
   table_rows = {
@@ -180,6 +183,7 @@ if failures.empty?
     "relation_review_decisions" => relation_decision_rows,
     "evidence" => evidence_rows,
     "source_debt_status" => source_debt_status_rows,
+    "omission_queue" => omission_queue_rows,
     "replacement_candidates" => replacement_rows
   }
 
@@ -246,6 +250,7 @@ if failures.empty?
     "source_items.source_item_id" => duplicate_values(source_item_rows, "source_item_id"),
     "work_candidates.work_id" => duplicate_values(work_rows, "work_id"),
     "creators.creator_id" => duplicate_values(creator_rows, "creator_id"),
+    "omission_queue.omission_id" => duplicate_values(omission_queue_rows, "omission_id"),
     "evidence.evidence_id" => duplicate_values(evidence_rows, "evidence_id")
   }.each do |label, duplicates|
     if duplicates.empty?
@@ -442,6 +447,19 @@ if failures.empty?
     failures << "source_debt_status missing work IDs: #{missing_source_debt_status.first(10).join(", ")}" unless missing_source_debt_status.empty?
     failures << "source_debt_status has duplicate work IDs: #{duplicate_source_debt_status.keys.first(10).join(", ")}" unless duplicate_source_debt_status.empty?
     checks << ["integrity:source_debt_status.work_id", "FAIL", "#{source_debt_status_work_refs.size} unknown refs; #{missing_source_debt_status.size} missing; #{duplicate_source_debt_status.size} duplicates"]
+  end
+
+  evidence_ids = evidence_rows.map { |row| row["evidence_id"] }.to_set
+  omission_queue_work_refs = omission_queue_rows.reject { |row| work_ids.include?(row["work_id"]) }
+  omission_queue_unknown_evidence_refs = omission_queue_rows.flat_map do |row|
+    row["evidence_refs"].to_s.split(";").reject(&:empty?).reject { |evidence_id| evidence_ids.include?(evidence_id) }.map { |evidence_id| "#{row["omission_id"]}:#{evidence_id}" }
+  end
+  if omission_queue_work_refs.empty? && omission_queue_unknown_evidence_refs.empty?
+    checks << ["integrity:omission_queue.refs", "PASS", "all omission queue work/evidence refs exist"]
+  else
+    failures << "omission_queue references unknown work IDs: #{omission_queue_work_refs.first(10).map { |row| row["work_id"] }.join(", ")}" unless omission_queue_work_refs.empty?
+    failures << "omission_queue references unknown evidence IDs: #{omission_queue_unknown_evidence_refs.first(10).join(", ")}" unless omission_queue_unknown_evidence_refs.empty?
+    checks << ["integrity:omission_queue.refs", "FAIL", "#{omission_queue_work_refs.size} unknown works; #{omission_queue_unknown_evidence_refs.size} unknown evidence refs"]
   end
 
   selected_path_rows = path_selection_rows.select { |row| row["selected"].to_s == "true" }

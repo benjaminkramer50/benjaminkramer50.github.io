@@ -83,7 +83,7 @@ Done when:
 - Boundary policies exist for scripture, philosophy, theology, history, oral tradition, Indigenous/public material, memoir/testimonio, children's/YA, genre fiction, graphic narrative, series, and anthology excerpts.
 - Quality reports cover duplicates, generic titles, chronology/date-basis issues, and boundary cases from build tables.
 
-Current status: not started.
+Current status: started for the X018 pilot queue only; 8 source-backed omissions are queued, and 0 are ready for scoring.
 
 ## Phase 6: Coverage Targets And Scoring
 

@@ -51,7 +51,7 @@ Last updated: 2026-05-03
 |---|---|---|---|
 | X Batch 1 | X001, X002, X003, X004, X005, X006 | Pilot ingested | 57 pilot source items and 47 pilot evidence rows; full extraction/matching pending |
 | X Batch 2 | X007, X008, X009, X010, X011, X012 | Feasibility complete; rows held | Classical editions/reference, world/American anthologies, medieval metadata, and Bloom recovery/blocker decisions |
-| X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Started | X013 candidate rows and X017 provisional evidence/source-debt status created; remaining work is source-container policy, omission queue, scoring, and replacement candidates |
+| X Batch 3 | X013, X014, X015, X016, X017, X018, X019 | Started | X013 candidates, X017 source-debt status, and X018 draft omission queue created; remaining work is source-container policy, scoring, and replacement candidates |
 
 ## Active Structural Debt
 
@@ -65,6 +65,7 @@ Last updated: 2026-05-03
 - Evidence gate: access metadata, corpus records, bibliographic databases, internal accepted records, and packet outputs cannot count as external canon support until source-class weighting and source-debt rules are integrated into scoring. X017 source-debt status has 0 closed rows; this is expected because accepted independent external support has not been adjudicated.
 - Matching gate: source rows must pass exact/normalized/creator-aware/alias/contained-work/selection/series matching before being called true omissions. X013 has 8 provisional source-backed candidate rows, 1 existing-selection representation, and 1 out-of-scope media boundary; none are public-path additions.
 - Relation gate: selection, contained-work, series, variant, duplicate, and adaptation decisions must be reviewed before final relation rows are written. X014 has 41 reviewed relation decisions; final relation rows remain blocked until source-container and selection-scope policy exists.
+- Omission gate: X018 currently has 8 source-backed omission rows and 0 ready-for-scoring rows; every gap still has source-debt, selection/scope, chronology, or corroboration blockers.
 - Taxonomy gate: public category reports are still keyword-inferred; first-class region, language/tradition, form, selection, and boundary fields are required.
 - A029-A031/H013: replacement-induced chronology inversions must be repaired or explicitly waived before the path is locked.
 - H014: duplicate-like clusters and collection/selection overlaps remain; these now move into alias/relation/decision tables.

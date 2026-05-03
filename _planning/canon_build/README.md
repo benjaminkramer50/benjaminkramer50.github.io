@@ -41,3 +41,5 @@ Match/relation review decisions are routing records. A `create_source_backed_can
 `tables/canon_source_debt_rules.yml` defines when evidence can close source debt. These rules are stricter than evidence generation: internal records, access metadata, bibliographic rows, excerpts, and representative selections can remain useful while still failing to close complete-work source debt.
 
 `scripts/canon_report_source_debt_status.rb` applies the debt rules to every work candidate and writes `tables/canon_source_debt_status.tsv`. A closed status requires accepted independent external support; provisional evidence remains open.
+
+`scripts/canon_generate_omission_queue.rb` writes `tables/canon_omission_queue.tsv` from provisional source-backed candidates. It records duplicate, boundary, chronology, scope, and source-debt blockers before any candidate can be scored or proposed as a public-path addition.
