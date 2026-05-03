@@ -174,6 +174,23 @@ decisions:
       - populate_coverage_targets_before_replacement_candidates
       - continue_targeted_corroboration_for_remaining_source_backed_candidates
     public_path_effect: none
+  - decision_id: x044_coverage_targets_001
+    decision_type: coverage_target_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_coverage_targets.yml
+      - _planning/canon_build/tables/canon_scores.tsv
+    decision: generate_review_targets_not_quotas
+    rationale: >
+      The X028 coverage matrix is useful enough to prioritize review cells, but
+      many incumbent rows still depend on inferred taxonomy. X044 therefore uses
+      coverage targets only as conservative score priors, capped at 0.40 total,
+      and does not authorize public add/cut replacement transactions.
+    scoring_effect: capped_coverage_scarcity_bonus_added_to_ready_scores
+    required_followup:
+      - harden_incumbent_taxonomy_before_treating_targets_as_quota_claims
+      - generate_replacement_candidate_prefilter_without_integration_authority
+      - continue_source_corroboration_for_remaining_blocked_candidates
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002

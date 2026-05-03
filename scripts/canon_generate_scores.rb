@@ -15,7 +15,9 @@ SOURCE_ITEMS_PATH = File.join(TABLE_DIR, "canon_source_items.tsv")
 EVIDENCE_PATH = File.join(TABLE_DIR, "canon_evidence.tsv")
 SCORING_INPUTS_PATH = File.join(TABLE_DIR, "canon_scoring_inputs.tsv")
 SOURCE_WEIGHTS_PATH = File.join(TABLE_DIR, "canon_source_weights.yml")
+COVERAGE_TARGETS_PATH = File.join(TABLE_DIR, "canon_coverage_targets.yml")
 SCORES_PATH = File.join(TABLE_DIR, "canon_scores.tsv")
+MAX_COVERAGE_SCARCITY_BONUS = 0.40
 
 HEADERS = %w[
   work_id source_weighted_score source_diversity_score region_specific_score
@@ -47,12 +49,72 @@ def support_family(evidence, source_class_key)
   [source_class_key, evidence.fetch("source_id")].join(":")
 end
 
+def coverage_region(work)
+  case work.fetch("macro_region", "")
+  when "north_america", "latin_america", "caribbean", "atlantic_world"
+    "americas"
+  when "middle_east_north_africa"
+    "middle_east_central_asia"
+  when "sub_saharan_africa"
+    "africa"
+  when "east_asia", "south_asia", "southeast_asia", "europe", "africa", "oceania_arctic", "middle_east_central_asia"
+    work.fetch("macro_region")
+  else
+    "unknown"
+  end
+end
+
+def coverage_form(work)
+  case work.fetch("form_bucket", "")
+  when "drama", "theater", "classical_drama"
+    "drama_performance"
+  when "novel", "short_story", "chivalric_romance", "fiction", "prose_fiction"
+    "fiction_narrative_prose"
+  when "slave_narrative", "confession_narrative", "political_philosophical_prose", "memoir", "autobiography", "essay"
+    "essays_memoir_testimony"
+  when "poetry", "poetry_collection", "poem"
+    "poetry"
+  when "epic", "oral_epic", "saga", "fable"
+    "epic_oral_folk"
+  when "scripture", "mythology", "ritual_text"
+    "sacred_myth_ritual"
+  when "graphic_narrative"
+    "graphic_visual_narrative"
+  when "science_fiction", "fantasy", "horror", "crime"
+    "speculative_genre"
+  when "children_young_adult"
+    "children_young_adult"
+  else
+    work.fetch("form_bucket", "").empty? ? "unknown" : work.fetch("form_bucket")
+  end
+end
+
+def coverage_cells(work)
+  region = coverage_region(work)
+  form = coverage_form(work)
+  period = work.fetch("period_bucket", "")
+
+  [
+    ["macro_region", region],
+    ["form_bucket", form],
+    ["region_form", [region, form].join("|")],
+    ["period", period]
+  ].reject { |_axis, cell| cell.to_s.empty? }
+end
+
+def coverage_bonus(work, target_bonus_by_cell)
+  coverage_cells(work).sum do |axis, cell|
+    target_bonus_by_cell.fetch([axis, cell], 0.0)
+  end.then { |bonus| [bonus, MAX_COVERAGE_SCARCITY_BONUS].min }
+end
+
 work_rows = read_tsv(WORK_CANDIDATES_PATH)
 source_rows = read_tsv(SOURCE_REGISTRY_PATH)
 source_item_rows = read_tsv(SOURCE_ITEMS_PATH)
 evidence_rows = read_tsv(EVIDENCE_PATH)
 scoring_inputs = read_tsv(SCORING_INPUTS_PATH)
 source_weights = YAML.load_file(SOURCE_WEIGHTS_PATH)
+coverage_targets = File.exist?(COVERAGE_TARGETS_PATH) ? YAML.load_file(COVERAGE_TARGETS_PATH) : { "targets" => [] }
 
 works_by_id = work_rows.to_h { |row| [row.fetch("work_id"), row] }
 sources_by_id = source_rows.to_h { |row| [row.fetch("source_id"), row] }
@@ -60,6 +122,9 @@ source_items_by_id = source_item_rows.to_h { |row| [row.fetch("source_item_id"),
 source_type_mapping = source_weights.fetch("source_type_mapping")
 source_classes = source_weights.fetch("source_classes")
 evidence_by_work = evidence_rows.group_by { |row| row.fetch("work_id") }
+target_bonus_by_cell = coverage_targets.fetch("targets", []).to_h do |target|
+  [[target.fetch("axis"), target.fetch("cell_key")], target.fetch("bonus_if_add_matches").to_f]
+end
 
 ready_inputs = scoring_inputs.select { |row| row.fetch("scoring_readiness") == "ready_for_score_computation" }
 
@@ -98,6 +163,7 @@ score_rows = ready_inputs.map do |input|
   end
 
   source_diversity_score = [accepted_families.size * 0.25, 1.0].min
+  coverage_scarcity_bonus = coverage_bonus(work, target_bonus_by_cell)
   packet_priority_score = work.fetch("candidate_status") == "source_backed_candidate" ? 0.25 : 0.0
   incumbent_bonus = work.fetch("candidate_status") == "incumbent_current_path" ? 0.5 : 0.0
   boundary_penalty = input.fetch("boundary_scope_penalty_input") == "1" ? 0.75 : 0.0
@@ -108,7 +174,8 @@ score_rows = ready_inputs.map do |input|
   recent_work_penalty = work.fetch("sort_year").to_i >= 2000 ? 0.2 : 0.0
 
   positive = source_weighted_score + source_diversity_score + anthology_score + syllabus_score +
-             translation_edition_score + reception_prize_score + packet_priority_score + incumbent_bonus
+             translation_edition_score + reception_prize_score + coverage_scarcity_bonus +
+             packet_priority_score + incumbent_bonus
   negative = boundary_penalty + date_uncertainty_penalty + source_debt_penalty + duplicate_overlap_penalty +
              author_cluster_penalty + recent_work_penalty
   final_score = positive - negative
@@ -125,7 +192,7 @@ score_rows = ready_inputs.map do |input|
     "reception_prize_score" => number(reception_prize_score),
     "accepted_record_bonus" => number(0),
     "packet_priority_score" => number(packet_priority_score),
-    "coverage_scarcity_bonus" => number(0),
+    "coverage_scarcity_bonus" => number(coverage_scarcity_bonus),
     "period_balance_bonus" => number(0),
     "language_region_balance_bonus" => number(0),
     "form_balance_bonus" => number(0),
