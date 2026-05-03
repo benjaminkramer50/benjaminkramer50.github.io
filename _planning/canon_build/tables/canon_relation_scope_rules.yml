@@ -1,0 +1,56 @@
+---
+generated_on: '2026-05-03'
+status: draft_active
+purpose: >
+  Policy for turning relation-review decisions into writable relation rows.
+  Source table-of-contents containment is not automatically a canon-work
+  relation. Complete-work, selection, alias, and cycle scope must be explicit.
+global_rules:
+  source_container_rows_are_not_final_relations: true
+  selection_rows_do_not_close_complete_work_scope: true
+  variant_rows_do_not_merge_without_alias_review: true
+  cycle_member_rows_require_cycle_container_candidate: true
+  final_relation_requires_existing_work_refs: true
+  final_relation_requires_reviewed_scope_status: ready_to_write_relation
+decision_rules:
+  source_container_evidence_only:
+    writable_relation: false
+    scope_status: source_container_only
+    blocker: Source presentation/TOC containment is evidence context, not a work-to-work relation.
+  blocked_until_candidate_created:
+    writable_relation: conditional
+    scope_status: target_exists_scope_review_required
+    blocker: Candidate target exists only after X013 materialization; complete/selection/variant scope still needs review.
+  link_to_existing_selection_candidate:
+    writable_relation: conditional
+    scope_status: represented_by_existing_selection_review_required
+    blocker: Existing selection candidate can be linked only after selection policy review.
+  keep_selection_scope_pending:
+    writable_relation: false
+    scope_status: selection_scope_pending
+    blocker: Selection/excerpt scope must be verified before complete-work scoring or relation writes.
+  accept_cycle_member_review_needed:
+    writable_relation: conditional
+    scope_status: cycle_container_required
+    blocker: Cycle-member relation needs an explicit cycle/container candidate.
+  alias_or_variant_review_needed:
+    writable_relation: conditional
+    scope_status: alias_or_variant_review_required
+    blocker: Variant/alias rows require manual alias review before merge or relation write.
+  reject_relation_out_of_scope:
+    writable_relation: false
+    scope_status: out_of_scope
+    blocker: Source item is outside literature-path scope.
+relation_type_rules:
+  contained_in:
+    final_relation_type: contained_in
+    notes: Writable only for true work/container relationships, not source TOC presentation.
+  selection_from:
+    final_relation_type: selection_from
+    notes: Writable only when selection basis and complete-work scope are explicit.
+  variant_of:
+    final_relation_type: variant_of
+    notes: Writable only after alias/variant review confirms distinct-work versus title-variant handling.
+  cycle_member:
+    final_relation_type: cycle_member
+    notes: Writable only when a cycle/container candidate exists.

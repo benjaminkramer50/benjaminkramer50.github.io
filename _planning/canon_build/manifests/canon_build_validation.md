@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 26
+- checked_files: 28
 - failures: 0
 
 ## Checks
@@ -23,6 +23,8 @@
 | table:match_review_decisions | PASS | `_planning/canon_build/tables/canon_match_review_decisions.tsv (14 columns)` |
 | table:relation_review_queue | PASS | `_planning/canon_build/tables/canon_relation_review_queue.tsv (9 columns)` |
 | table:relation_review_decisions | PASS | `_planning/canon_build/tables/canon_relation_review_decisions.tsv (13 columns)` |
+| table:relation_scope_rules | PASS | `_planning/canon_build/tables/canon_relation_scope_rules.yml` |
+| table:relation_scope_status | PASS | `_planning/canon_build/tables/canon_relation_scope_status.tsv (15 columns)` |
 | table:evidence | PASS | `_planning/canon_build/tables/canon_evidence.tsv (13 columns)` |
 | table:review_decisions | PASS | `_planning/canon_build/tables/canon_review_decisions.yml` |
 | table:scores | PASS | `_planning/canon_build/tables/canon_scores.tsv (27 columns)` |
@@ -36,6 +38,7 @@
 | table:packet_status | PASS | `_planning/canon_build/tables/canon_packet_status.tsv (8 columns)` |
 | policy:source_weights.source_type_mapping | PASS | `42 source types mapped` |
 | policy:source_debt_rules.source_class_rules | PASS | `10 source classes covered` |
+| policy:relation_scope_rules.decision_rules | PASS | `7 decision rules declared` |
 | controlled:source_registry.source_type | PASS | `42 allowed values` |
 | controlled:source_registry.extraction_status | PASS | `16 allowed values` |
 | controlled:source_items.evidence_type | PASS | `6 allowed values` |
@@ -50,6 +53,7 @@
 | integrity:unique:source_items.source_item_id | PASS | `0 duplicates` |
 | integrity:unique:work_candidates.work_id | PASS | `0 duplicates` |
 | integrity:unique:creators.creator_id | PASS | `0 duplicates` |
+| integrity:unique:relation_scope_status.relation_scope_id | PASS | `0 duplicates` |
 | integrity:unique:omission_queue.omission_id | PASS | `0 duplicates` |
 | integrity:unique:evidence.evidence_id | PASS | `0 duplicates` |
 | integrity:source_items.source_id | PASS | `all source IDs registered` |
@@ -65,6 +69,7 @@
 | integrity:match_review_decisions.refs | PASS | `all match decisions cover queued source items and existing work refs` |
 | integrity:relation_review_queue.refs | PASS | `all relation review refs exist` |
 | integrity:relation_review_decisions.refs | PASS | `all relation decisions cover queued rows and valid existing/proposed targets` |
+| integrity:relation_scope_status.refs | PASS | `all relation scope statuses cover decisions and valid refs` |
 | integrity:path_selection.work_id | PASS | `all selected work IDs exist` |
 | integrity:source_debt_status.work_id | PASS | `one source-debt status row per work candidate` |
 | integrity:omission_queue.refs | PASS | `all omission queue work/evidence refs exist` |

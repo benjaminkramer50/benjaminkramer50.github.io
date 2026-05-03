@@ -30,6 +30,8 @@ TABLE_FILES = {
   "match_review_decisions" => File.join(BUILD_DIR, "tables", "canon_match_review_decisions.tsv"),
   "relation_review_queue" => File.join(BUILD_DIR, "tables", "canon_relation_review_queue.tsv"),
   "relation_review_decisions" => File.join(BUILD_DIR, "tables", "canon_relation_review_decisions.tsv"),
+  "relation_scope_rules" => File.join(BUILD_DIR, "tables", "canon_relation_scope_rules.yml"),
+  "relation_scope_status" => File.join(BUILD_DIR, "tables", "canon_relation_scope_status.tsv"),
   "evidence" => File.join(BUILD_DIR, "tables", "canon_evidence.tsv"),
   "review_decisions" => File.join(BUILD_DIR, "tables", "canon_review_decisions.yml"),
   "scores" => File.join(BUILD_DIR, "tables", "canon_scores.tsv"),
@@ -54,6 +56,7 @@ HEADER_REQUIREMENTS = {
   "match_review_decisions" => ["source_item_id", "source_id", "raw_title", "decision", "next_action", "reviewer_status"],
   "relation_review_queue" => ["source_item_id", "source_id", "raw_title", "proposed_relation_type", "issue_type", "recommendation"],
   "relation_review_decisions" => ["source_item_id", "source_id", "raw_title", "proposed_relation_type", "decision", "next_action", "reviewer_status"],
+  "relation_scope_status" => ["relation_scope_id", "source_item_id", "proposed_relation_type", "decision", "target_work_id", "scope_status", "readiness_status"],
   "evidence" => ["evidence_id", "work_id", "source_id", "evidence_type", "evidence_strength", "reviewer_status"],
   "source_debt_status" => ["work_id", "evidence_count", "source_debt_status", "closure_scope", "blocking_reason", "next_action"],
   "scores" => ["work_id", "source_weighted_score", "source_diversity_score", "coverage_scarcity_bonus", "boundary_penalty", "duplicate_overlap_penalty", "source_debt_penalty", "final_score", "must_include", "must_exclude"],
@@ -164,6 +167,7 @@ if failures.empty?
   match_decision_rows = read_tsv(TABLE_FILES["match_review_decisions"])
   relation_review_rows = read_tsv(TABLE_FILES["relation_review_queue"])
   relation_decision_rows = read_tsv(TABLE_FILES["relation_review_decisions"])
+  relation_scope_status_rows = read_tsv(TABLE_FILES["relation_scope_status"])
   path_selection_rows = read_tsv(TABLE_FILES["path_selection"])
   source_debt_status_rows = read_tsv(TABLE_FILES["source_debt_status"])
   omission_queue_rows = read_tsv(TABLE_FILES["omission_queue"])
@@ -181,6 +185,7 @@ if failures.empty?
     "match_review_decisions" => match_decision_rows,
     "relation_review_queue" => relation_review_rows,
     "relation_review_decisions" => relation_decision_rows,
+    "relation_scope_status" => relation_scope_status_rows,
     "evidence" => evidence_rows,
     "source_debt_status" => source_debt_status_rows,
     "omission_queue" => omission_queue_rows,
@@ -218,6 +223,17 @@ if failures.empty?
     checks << ["policy:source_debt_rules.source_class_rules", "FAIL", "#{missing_source_debt_rule_classes.size} missing; #{unknown_source_debt_rule_classes.size} unknown"]
   end
 
+  relation_scope_rules = YAML.load_file(TABLE_FILES["relation_scope_rules"])
+  relation_scope_decisions = relation_scope_rules.fetch("decision_rules", {}).keys.to_set
+  observed_relation_decisions = relation_decision_rows.map { |row| row["decision"] }.to_set
+  missing_relation_scope_decisions = observed_relation_decisions - relation_scope_decisions
+  if missing_relation_scope_decisions.empty?
+    checks << ["policy:relation_scope_rules.decision_rules", "PASS", "#{relation_scope_decisions.size} decision rules declared"]
+  else
+    failures << "relation scope rules missing decisions: #{missing_relation_scope_decisions.to_a.join(", ")}"
+    checks << ["policy:relation_scope_rules.decision_rules", "FAIL", "#{missing_relation_scope_decisions.size} missing decisions"]
+  end
+
   CONTROLLED_FIELD_CHECKS.each do |table, config|
     schema = schemas.fetch(config.fetch("schema"))
     controlled_values = schema.fetch("controlled_values", {})
@@ -250,6 +266,7 @@ if failures.empty?
     "source_items.source_item_id" => duplicate_values(source_item_rows, "source_item_id"),
     "work_candidates.work_id" => duplicate_values(work_rows, "work_id"),
     "creators.creator_id" => duplicate_values(creator_rows, "creator_id"),
+    "relation_scope_status.relation_scope_id" => duplicate_values(relation_scope_status_rows, "relation_scope_id"),
     "omission_queue.omission_id" => duplicate_values(omission_queue_rows, "omission_id"),
     "evidence.evidence_id" => duplicate_values(evidence_rows, "evidence_id")
   }.each do |label, duplicates|
@@ -425,6 +442,34 @@ if failures.empty?
     failures << "relation_review_decisions references unknown matched works: #{unknown_relation_decision_matched_works.first(10).map { |row| row["matched_work_id"] }.join(", ")}" unless unknown_relation_decision_matched_works.empty?
     failures << "relation_review_decisions references unknown target works/proposals: #{unknown_relation_decision_targets.first(10).map { |row| row["target_work_id"] }.join(", ")}" unless unknown_relation_decision_targets.empty?
     checks << ["integrity:relation_review_decisions.refs", "FAIL", "#{missing_relation_decisions.size} missing; #{extra_relation_decisions.size} extra; #{unknown_relation_decision_sources.size} unknown sources; #{unknown_relation_decision_items.size} unknown source items; #{unknown_relation_decision_matched_works.size} unknown matched works; #{unknown_relation_decision_targets.size} unknown targets"]
+  end
+
+  relation_decision_scope_keys = relation_decision_rows.map do |row|
+    [row["source_item_id"], row["matched_work_id"], row["proposed_relation_type"], row["decision"]]
+  end.to_set
+  relation_scope_status_keys = relation_scope_status_rows.map do |row|
+    [row["source_item_id"], row["matched_work_id"], row["proposed_relation_type"], row["decision"]]
+  end.to_set
+  missing_relation_scope_status = relation_decision_scope_keys - relation_scope_status_keys
+  extra_relation_scope_status = relation_scope_status_keys - relation_decision_scope_keys
+  unknown_relation_scope_sources = relation_scope_status_rows.reject { |row| source_ids.include?(row["source_id"]) }
+  unknown_relation_scope_items = relation_scope_status_rows.reject { |row| source_item_ids.include?(row["source_item_id"]) }
+  unknown_relation_scope_targets = relation_scope_status_rows.reject do |row|
+    row["target_work_id"].to_s.empty? || work_ids.include?(row["target_work_id"])
+  end
+  unknown_relation_scope_matched = relation_scope_status_rows.reject do |row|
+    row["matched_work_id"].to_s.empty? || work_ids.include?(row["matched_work_id"])
+  end
+  if missing_relation_scope_status.empty? && extra_relation_scope_status.empty? && unknown_relation_scope_sources.empty? && unknown_relation_scope_items.empty? && unknown_relation_scope_targets.empty? && unknown_relation_scope_matched.empty?
+    checks << ["integrity:relation_scope_status.refs", "PASS", "all relation scope statuses cover decisions and valid refs"]
+  else
+    failures << "relation_scope_status missing decisions: #{missing_relation_scope_status.first(10).map { |key| key.join(":") }.join(", ")}" unless missing_relation_scope_status.empty?
+    failures << "relation_scope_status has extra decisions: #{extra_relation_scope_status.first(10).map { |key| key.join(":") }.join(", ")}" unless extra_relation_scope_status.empty?
+    failures << "relation_scope_status references unknown sources: #{unknown_relation_scope_sources.first(10).map { |row| row["source_id"] }.join(", ")}" unless unknown_relation_scope_sources.empty?
+    failures << "relation_scope_status references unknown source items: #{unknown_relation_scope_items.first(10).map { |row| row["source_item_id"] }.join(", ")}" unless unknown_relation_scope_items.empty?
+    failures << "relation_scope_status references unknown target works: #{unknown_relation_scope_targets.first(10).map { |row| row["target_work_id"] }.join(", ")}" unless unknown_relation_scope_targets.empty?
+    failures << "relation_scope_status references unknown matched works: #{unknown_relation_scope_matched.first(10).map { |row| row["matched_work_id"] }.join(", ")}" unless unknown_relation_scope_matched.empty?
+    checks << ["integrity:relation_scope_status.refs", "FAIL", "#{missing_relation_scope_status.size} missing; #{extra_relation_scope_status.size} extra; #{unknown_relation_scope_sources.size} unknown sources; #{unknown_relation_scope_items.size} unknown items; #{unknown_relation_scope_targets.size} unknown targets; #{unknown_relation_scope_matched.size} unknown matched"]
   end
 
   path_selection_work_refs = path_selection_rows.reject { |row| work_ids.include?(row["work_id"]) }

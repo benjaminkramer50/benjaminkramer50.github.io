@@ -13,7 +13,7 @@ The phase plan and lock criteria live in `canon_phase_plan.md`.
 3. `tables/canon_work_candidates.tsv`: normalized work clusters, including current path rows and source-backed omissions.
 4. `tables/canon_aliases.tsv` and `tables/canon_relations.tsv`: title variants, translations, contained works, series, duplicates, and selection relations.
 5. `tables/canon_match_candidates.tsv`, `tables/canon_match_review_queue.tsv`, and `tables/canon_match_review_decisions.tsv`: generated source-item match candidates, unresolved review rows, and reviewed next actions.
-6. `tables/canon_relation_review_queue.tsv` and `tables/canon_relation_review_decisions.tsv`: candidate selection, contained-work, series, variant, duplicate, and adaptation decisions that should not yet be written as final relations.
+6. `tables/canon_relation_review_queue.tsv`, `tables/canon_relation_review_decisions.tsv`, `tables/canon_relation_scope_rules.yml`, and `tables/canon_relation_scope_status.tsv`: candidate selection, contained-work, series, variant, duplicate, and adaptation decisions that should not yet be written as final relations.
 7. `tables/canon_evidence.tsv`: work-level evidence records.
 8. `tables/canon_review_decisions.yml`: human adjudication, waivers, and policy decisions.
 9. `tables/canon_source_weights.yml`: central source-class policy used before scores are derived.
@@ -43,3 +43,5 @@ Match/relation review decisions are routing records. A `create_source_backed_can
 `scripts/canon_report_source_debt_status.rb` applies the debt rules to every work candidate and writes `tables/canon_source_debt_status.tsv`. A closed status requires accepted independent external support; provisional evidence remains open.
 
 `scripts/canon_generate_omission_queue.rb` writes `tables/canon_omission_queue.tsv` from provisional source-backed candidates. It records duplicate, boundary, chronology, scope, and source-debt blockers before any candidate can be scored or proposed as a public-path addition.
+
+`scripts/canon_generate_relation_scope_status.rb` applies `tables/canon_relation_scope_rules.yml` to X014 decisions. It keeps source-container, selection, variant, and cycle rows blocked until relation scope is explicit; it does not write final relation rows.

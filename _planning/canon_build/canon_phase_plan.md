@@ -45,7 +45,7 @@ Done when:
 - Unmatched source items are classified as candidate gaps, possible aliases, represented-by-selection, boundary cases, or no-current-work candidates.
 - No source row is promoted to a true omission before matching/relation review.
 
-Current status: active next phase.
+Current status: started; X013/X014 match, relation, and scope status tables exist, with 0 final relation rows ready to write.
 
 ## Phase 3: Source Extraction At Scale
 
