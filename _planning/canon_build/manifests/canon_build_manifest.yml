@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_item_batch_x022_public_toc_expansion_ingested
+status: x013_x014_rerun_after_x022_source_item_expansion
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -29,13 +29,13 @@ artifacts:
   work_candidates: bootstrapped_from_current_path_plus_x013_source_candidates
   aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases
   relations: initialized_empty
-  match_candidates: generated_x013
+  match_candidates: generated_x013_expanded_after_x022
   match_review_queue: generated_x013
   match_review_decisions: generated_x013_reviewed
-  relation_review_queue: generated_x014
-  relation_review_decisions: generated_x014_reviewed
+  relation_review_queue: generated_x014_expanded_after_x022
+  relation_review_decisions: generated_x014_explicit_decisions_after_x022
   relation_scope_rules: draft_policy_created
-  relation_scope_status: generated_x014
+  relation_scope_status: generated_x014_expanded_after_x022
   evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows
   source_weights: draft_policy_created
   source_debt_rules: draft_policy_created
@@ -60,7 +60,7 @@ current_counts:
   aliases: 445
   source_items: 1088
   evidence_rows: 117
-  relation_scope_status_rows: 41
+  relation_scope_status_rows: 1315
   source_debt_status_rows: 3008
   omission_queue_rows: 8
   scoring_input_rows: 3008
@@ -110,9 +110,13 @@ next_hardening_steps:
 - derive_evidence_weights_centrally_before_scoring
 - populate_quality_issues_and_coverage_targets_before_replacements
 source_item_matching_phase_x013_x014:
-  match_candidate_rows: 108
-  match_review_queue_rows: 10
-  match_review_decision_rows: 10
+  match_candidate_rows: 175
+  match_review_queue_rows: 931
+  match_review_decision_rows: 931
+  match_review_decision_summary:
+    unresolved_no_candidate_match: 912
+    candidate_match_requires_manual_confirmation: 18
+    out_of_scope_media_boundary: 1
   source_backed_candidate_rows_created: 8
   source_items_updated_from_review_decisions: 9
   policy_aware_evidence_rows_generated: 9
@@ -127,19 +131,18 @@ source_item_matching_phase_x013_x014:
     total_rows: 8
     ready_for_scoring_review: 0
     not_ready_for_scoring: 8
-  relation_review_queue_rows: 41
-  relation_review_decision_rows: 41
+  relation_review_queue_rows: 1315
+  relation_review_decision_rows: 1315
   relation_scope_status_summary:
-    not_writable_policy_blocked: 24
-    scope_review_required: 17
+    not_writable_policy_blocked: 1303
+    scope_review_required: 12
     ready_to_write_relation: 0
   relation_scope_blockers:
-    source_container_only: 16
-    selection_scope_pending: 8
-    target_exists_scope_review_required: 10
-    alias_or_variant_review_required: 4
+    source_container_only: 891
+    selection_scope_pending: 412
+    alias_or_variant_review_required: 8
     represented_by_existing_selection_review_required: 2
-    cycle_container_required: 1
+    cycle_container_required: 2
   scoring_input_summary:
     total_rows: 3008
     ready_for_score_computation: 0

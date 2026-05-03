@@ -45,7 +45,7 @@ Done when:
 - Unmatched source items are classified as candidate gaps, possible aliases, represented-by-selection, boundary cases, or no-current-work candidates.
 - No source row is promoted to a true omission before matching/relation review.
 
-Current status: started; X013/X014 match, relation, and scope status tables exist, with 0 final relation rows ready to write.
+Current status: started; X013/X014 were rerun after X022. The build now has 175 match candidates, 931 match-review decisions, and 1,315 relation-scope status rows. No final relation rows are ready to write.
 
 ## Phase 3: Source Extraction At Scale
 
@@ -58,7 +58,7 @@ Done when:
 - Source fetch/access logs identify exact pages, files, APIs, and access limits.
 - Extracted rows pass matching and relation review queues.
 
-Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; X020-X022 generated/updated 1,020 E013/E014/E015/E016/E017/E018 source-item observations, leaving `canon_source_items.tsv` at 1,088 total rows. Matching, relation review, source-weighted evidence generation, and partial-source cleanup remain pending.
+Current status: E001-E018 source layers registered; X001-X006 pilot source items ingested; X007-X012 feasibility complete with rows held; X020-X022 generated/updated 1,020 E013/E014/E015/E016/E017/E018 source-item observations, leaving `canon_source_items.tsv` at 1,088 total rows. Expanded matching/relation queues now exist; source-weighted evidence generation and partial-source cleanup remain pending.
 
 ## Phase 4: Evidence Ledger And Source-Debt Rules
 

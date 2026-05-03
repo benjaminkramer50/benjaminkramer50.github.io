@@ -133,7 +133,31 @@ match_overrides = {
 }.freeze
 
 match_decisions = read_tsv(MATCH_REVIEW_PATH).map do |row|
-  override = match_overrides.fetch(row.fetch("source_item_id"))
+  override = match_overrides[row.fetch("source_item_id")]
+  unless override
+    candidate_work_ids = row.fetch("candidate_work_ids", "").split(";").reject(&:empty?)
+    issue_type = row.fetch("issue_type", "")
+    matched_work_id = candidate_work_ids.size == 1 ? candidate_work_ids.first : ""
+    decision =
+      if issue_type == "no_candidate_match"
+        "unresolved_no_candidate_match"
+      elsif matched_work_id.empty?
+        "unresolved_ambiguous_candidate_match"
+      else
+        "candidate_match_requires_manual_confirmation"
+      end
+
+    override = {
+      decision: decision,
+      matched_work_id: matched_work_id,
+      item_scope: "scope_pending",
+      evidence_role: "pending_match_review",
+      next_action: "manual_match_review_before_materialization",
+      reviewer_status: "pending_manual_review",
+      rationale: "Generated default decision for expanded X013 queue; no hardcoded review override exists yet."
+    }
+  end
+
   {
     "source_item_id" => row.fetch("source_item_id"),
     "source_id" => row.fetch("source_id"),
@@ -147,7 +171,7 @@ match_decisions = read_tsv(MATCH_REVIEW_PATH).map do |row|
     "item_scope" => override.fetch(:item_scope),
     "evidence_role" => override.fetch(:evidence_role),
     "next_action" => override.fetch(:next_action),
-    "reviewer_status" => "reviewed_not_integrated",
+    "reviewer_status" => override.fetch(:reviewer_status, "reviewed_not_integrated"),
     "rationale" => override.fetch(:rationale)
   }
 end

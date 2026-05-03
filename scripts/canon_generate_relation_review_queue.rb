@@ -28,6 +28,10 @@ def write_tsv(path, headers, rows)
   end
 end
 
+def note_with_context(prefix, notes)
+  [prefix, notes.to_s].map(&:strip).reject(&:empty?).join(" ")
+end
+
 rows = []
 
 read_tsv(SOURCE_ITEMS_PATH).each do |item|
@@ -52,7 +56,7 @@ read_tsv(SOURCE_ITEMS_PATH).each do |item|
       "proposed_relation_type" => "selection_from",
       "issue_type" => "selection_or_excerpt",
       "recommendation" => "confirm whether source item is excerpt, poem/story component, or representative selection",
-      "notes" => "Do not score as complete-work inclusion until relation is reviewed. #{notes}"
+      "notes" => note_with_context("Do not score as complete-work inclusion until relation is reviewed.", notes)
     }
   end
 
@@ -66,7 +70,7 @@ read_tsv(SOURCE_ITEMS_PATH).each do |item|
       "proposed_relation_type" => notes_lc.include?("cycle") ? "cycle_member" : "contained_in",
       "issue_type" => "contained_or_collection_case",
       "recommendation" => "review whether a work-level relation or separate candidate is needed",
-      "notes" => "Generated from source item notes/supports. #{notes}"
+      "notes" => note_with_context("Generated from source item notes/supports.", notes)
     }
   end
 
@@ -80,7 +84,7 @@ read_tsv(SOURCE_ITEMS_PATH).each do |item|
       "proposed_relation_type" => notes_lc.include?("adaptation") ? "adaptation_of" : "variant_of",
       "issue_type" => "variant_duplicate_or_alias_risk",
       "recommendation" => "review before merging, rejecting, or creating a separate candidate",
-      "notes" => "Generated from match status or notes. #{notes}"
+      "notes" => note_with_context("Generated from match status or notes.", notes)
     }
   end
 end

@@ -16,7 +16,7 @@ Direct public-list replacements remain paused until these packets produce source
 |---|---|---|---|
 | E Batch 1 | E001-E006 | Registered; E001 extracted; E004-E006 extraction pending | `source_crosswalk_reports/e_batch_001_e001_e006.md` |
 | E Batch 2 | E007-E012 | Registered; X001-X006 pilot rows ingested; full extraction pending | `source_crosswalk_reports/e_batch_002_e007_e012.md` |
-| E Batch 3 | E013-E018 | Registered; X020-X022 generated/updated 1,020 E013/E014/E015/E016/E017/E018 source-item observations; current table has 1,088 total source-item rows; matching and partial-source cleanup pending | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
+| E Batch 3 | E013-E018 | Registered; X020-X022 generated/updated 1,020 E013/E014/E015/E016/E017/E018 source-item observations; current table has 1,088 total source-item rows; X013/X014 queues rerun; evidence generation and partial-source cleanup pending | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
 
 ## Extraction Contract
 
@@ -47,16 +47,16 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X010 | `norton_american_lit_10e_pre1865`; `norton_american_lit_10e_post1865`; `heath_american_lit_7e_2014` | Feasibility complete, pilot rows held | American anthology TOCs; Heath Vol. A item-level gap remains |
 | X011 | `bloom_curated_seed_layer` | Blocked | Exact 200-row seed cannot be recovered from target repo or current path annotations |
 | X012 | `bloom_full_appendix_1994`; `bloom_full_appendix_review_batches` | Recoverable but policy-gated | Local untracked Bloom artifacts found outside target worktree; do not publish or score full appendix blindly |
-| X020 | `e018_columbia_modern_korean_fiction_2005`; `e018_columbia_premodern_korean_prose_2018`; `e014_rienner_anthology_african_lit_2007` | Source items ingested, matching required | 85 E014/E018 source-item observations; no evidence rows or public path changes |
-| X021 | `e013_oxford_latin_american_short_stories_1997`; `e013_oxford_latin_american_poetry_2009`; `e013_fsg_20c_latin_american_poetry_2011`; `columbia_modern_chinese_lit_2e_2007`; `columbia_traditional_chinese_lit_1996`; `e017_columbia_modern_japanese_lit_v1_2005` | Source items ingested, matching required | 238 E013/E016/E017 source-item observations; 2 complete public TOCs and 4 partial pilots; no evidence rows or public path changes |
-| X022 | `e013_fsg_20c_latin_american_poetry_2011`; `e013_oxford_latin_american_poetry_2009`; `e014_rienner_anthology_african_lit_2007`; `oxford_modern_indian_poetry_1998`; `clay_sanskrit_library_56vol`; `murty_classical_library_india`; `e017_columbia_modern_japanese_lit_v2_2007`; `e018_columbia_traditional_korean_poetry_2003`; `e018_lti_korea_digital_library_classics` | Source items ingested, matching required | 697 parser-backed E013/E014/E015/E017/E018 source-item observations generated/updated across public TOCs, series lists, and metadata endpoints; no evidence rows or public path changes |
+| X020 | `e018_columbia_modern_korean_fiction_2005`; `e018_columbia_premodern_korean_prose_2018`; `e014_rienner_anthology_african_lit_2007` | Source items ingested, X013/X014 queued | 85 E014/E018 source-item observations; no evidence rows or public path changes |
+| X021 | `e013_oxford_latin_american_short_stories_1997`; `e013_oxford_latin_american_poetry_2009`; `e013_fsg_20c_latin_american_poetry_2011`; `columbia_modern_chinese_lit_2e_2007`; `columbia_traditional_chinese_lit_1996`; `e017_columbia_modern_japanese_lit_v1_2005` | Source items ingested, X013/X014 queued | 238 E013/E016/E017 source-item observations; 2 complete public TOCs and 4 partial pilots; no evidence rows or public path changes |
+| X022 | `e013_fsg_20c_latin_american_poetry_2011`; `e013_oxford_latin_american_poetry_2009`; `e014_rienner_anthology_african_lit_2007`; `oxford_modern_indian_poetry_1998`; `clay_sanskrit_library_56vol`; `murty_classical_library_india`; `e017_columbia_modern_japanese_lit_v2_2007`; `e018_columbia_traditional_korean_poetry_2003`; `e018_lti_korea_digital_library_classics` | Source items ingested, X013/X014 queued | 697 parser-backed E013/E014/E015/E017/E018 source-item observations generated/updated across public TOCs, series lists, and metadata endpoints; no evidence rows or public path changes |
 
 ## Planned Extraction Packets
 
 | Packet | Source layers | Purpose |
 |---|---|---|
-| X013 | All extracted source items | Generated: title/creator normalization and incumbent path matching review tables |
-| X014 | All extracted source items | Generated: alias, contained-work, series, selection, variant, adaptation, and duplicate relation review queue |
+| X013 | All extracted source items | Generated after X022: 175 title/creator normalization candidates and 931 explicit match-review decisions |
+| X014 | All extracted source items | Generated after X022: 1,315 alias, contained-work, series, selection, variant, adaptation, and duplicate relation-scope rows; 0 final relations ready |
 | X015 | All source and work tables | Hardening pass: controlled-value validation, status coherence, source-fetch/extraction denominators, and packet status table |
 | X016 | All source types | Draft created: evidence weighting policy by anthology, syllabus, edition, reference, corpus, access metadata, award, national canon, and internal record |
 | X017 | All matched source items | Evidence-row generation and source-debt closure rules after X016 policy is encoded |

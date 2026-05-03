@@ -41,6 +41,10 @@ decision_rules:
     writable_relation: false
     scope_status: out_of_scope
     blocker: Source item is outside literature-path scope.
+  needs_manual_review:
+    writable_relation: false
+    scope_status: manual_review_required
+    blocker: Relation issue has no automatic scope decision; manual review is required before writing any relation.
 relation_type_rules:
   contained_in:
     final_relation_type: contained_in

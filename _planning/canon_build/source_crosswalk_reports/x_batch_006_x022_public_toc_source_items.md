@@ -1,6 +1,6 @@
 # X022 Public TOC Source-Item Expansion
 
-- status: source_items_ingested_matching_required
+- status: source_items_ingested_x013_x014_rerun_evidence_pending
 - generated_rows: 697
 - replaced_sources: 9
 - direct_public_path_changes: 0
