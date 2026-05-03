@@ -29,6 +29,9 @@ artifacts:
   work_candidates: bootstrapped_from_current_path
   aliases: bootstrapped_from_current_path
   relations: initialized_empty
+  match_candidates: generated_x013
+  match_review_queue: generated_x013
+  relation_review_queue: generated_x014
   evidence: e001_ingested_x001_x006_pilot_ingested
   source_weights: draft_policy_created
   scores: initialized_empty
@@ -77,6 +80,12 @@ next_hardening_steps:
   - enforce_controlled_values_and_status_coherence
   - add_source_class_and_evidence_role_policy
   - convert_ingestion_scripts_to_idempotent_upserts
-  - run_continuous_matching_and_relation_generation
+  - review_match_and_relation_queues
   - derive_evidence_weights_centrally_before_scoring
   - populate_quality_issues_and_coverage_targets_before_replacements
+source_item_matching_phase_x013_x014:
+  match_candidate_rows: 108
+  match_review_queue_rows: 10
+  relation_review_queue_rows: 41
+  status: generated_review_required
+  direct_replacements: 0

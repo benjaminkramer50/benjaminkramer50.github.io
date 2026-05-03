@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 18
+- checked_files: 21
 - failures: 0
 
 ## Checks
@@ -18,6 +18,9 @@
 | table:work_creators | PASS | `_planning/canon_build/tables/canon_work_creators.tsv (5 columns)` |
 | table:aliases | PASS | `_planning/canon_build/tables/canon_aliases.tsv (10 columns)` |
 | table:relations | PASS | `_planning/canon_build/tables/canon_relations.tsv (7 columns)` |
+| table:match_candidates | PASS | `_planning/canon_build/tables/canon_match_candidates.tsv (13 columns)` |
+| table:match_review_queue | PASS | `_planning/canon_build/tables/canon_match_review_queue.tsv (8 columns)` |
+| table:relation_review_queue | PASS | `_planning/canon_build/tables/canon_relation_review_queue.tsv (9 columns)` |
 | table:evidence | PASS | `_planning/canon_build/tables/canon_evidence.tsv (13 columns)` |
 | table:review_decisions | PASS | `_planning/canon_build/tables/canon_review_decisions.yml` |
 | table:scores | PASS | `_planning/canon_build/tables/canon_scores.tsv (27 columns)` |
@@ -48,5 +51,8 @@
 | integrity:evidence.work_id | PASS | `all work IDs exist` |
 | integrity:evidence.supported_source_item_status | PASS | `no evidence from unmatched/out-of-scope source items` |
 | integrity:relations.work_refs | PASS | `all relation work refs exist` |
+| integrity:match_candidates.refs | PASS | `all match candidate refs exist` |
+| integrity:match_review_queue.source_item_id | PASS | `all review queue source items exist` |
+| integrity:relation_review_queue.refs | PASS | `all relation review refs exist` |
 | integrity:path_selection.work_id | PASS | `all selected work IDs exist` |
 | integrity:path_selection.selected_rank_continuity | PASS | `3000 selected rows` |
