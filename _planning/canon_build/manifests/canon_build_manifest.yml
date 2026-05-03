@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: x017_evidence_refresh_after_x022_matching
+status: x017_evidence_refresh_after_x023_matching
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -25,7 +25,7 @@ gates:
   metadata_access_rows_do_not_close_canon_support_debt: true
 artifacts:
   source_registry: e001_e018_registered_source_items_pending
-  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_source_items
+  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_x023_source_items
   work_candidates: bootstrapped_from_current_path_plus_x013_source_candidates
   aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases
   relations: initialized_empty
@@ -58,17 +58,19 @@ current_counts:
   creators: 2006
   work_creators: 3015
   aliases: 445
-  source_items: 1088
-  evidence_rows: 157
-  relation_scope_status_rows: 1315
+  source_items: 1422
+  evidence_rows: 212
+  relation_scope_status_rows: 1633
   source_debt_status_rows: 3008
   omission_queue_rows: 8
   scoring_input_rows: 3008
   scoring_ready_rows: 0
   scoring_blocked_rows: 3008
+  source_items_matched_current_path: 133
   source_items_matched_candidate: 8
-  source_items_represented_by_selection: 41
+  source_items_represented_by_selection: 71
   source_items_out_of_scope: 1
+  source_items_unmatched: 1209
   source_registry_rows: 71
 source_crosswalk_batch_e001_e006:
   source_registry_rows: 9
@@ -110,36 +112,36 @@ next_hardening_steps:
 - derive_evidence_weights_centrally_before_scoring
 - populate_quality_issues_and_coverage_targets_before_replacements
 source_item_matching_phase_x013_x014:
-  match_candidate_rows: 175
-  match_review_queue_rows: 931
-  match_review_decision_rows: 931
+  match_candidate_rows: 236
+  match_review_queue_rows: 1210
+  match_review_decision_rows: 1210
   match_review_decision_summary:
-    unresolved_no_candidate_match: 912
-    candidate_match_requires_manual_confirmation: 18
+    unresolved_no_candidate_match: 1185
+    candidate_match_requires_manual_confirmation: 24
     out_of_scope_media_boundary: 1
   source_backed_candidate_rows_created: 8
   source_items_updated_from_review_decisions: 9
-  policy_aware_evidence_rows_generated: 49
+  policy_aware_evidence_rows_generated: 212
   source_debt_status_summary:
-    open_no_evidence: 2880
-    open_internal_only: 39
+    open_no_evidence: 2829
+    open_internal_only: 37
     open_non_scoring_only: 22
     open_provisional_external_support: 25
-    open_selection_only: 40
-    open_needs_review: 2
+    open_selection_only: 70
+    open_needs_review: 25
   omission_queue_summary:
     total_rows: 8
     ready_for_scoring_review: 0
     not_ready_for_scoring: 8
-  relation_review_queue_rows: 1315
-  relation_review_decision_rows: 1315
+  relation_review_queue_rows: 1633
+  relation_review_decision_rows: 1633
   relation_scope_status_summary:
-    not_writable_policy_blocked: 1303
+    not_writable_policy_blocked: 1621
     scope_review_required: 12
     ready_to_write_relation: 0
   relation_scope_blockers:
-    source_container_only: 891
-    selection_scope_pending: 412
+    source_container_only: 1177
+    selection_scope_pending: 444
     alias_or_variant_review_required: 8
     represented_by_existing_selection_review_required: 2
     cycle_container_required: 2
@@ -185,5 +187,16 @@ source_item_extraction_batch_x022:
   complete_public_toc_or_index_sources: 6
   metadata_or_partial_sources: 3
   evidence_rows_added: 0
+  status: source_items_ingested_matching_required
+  direct_replacements: 0
+source_item_extraction_batch_x023:
+  source_items_added_or_updated: 334
+  sources_replaced_or_expanded: 5
+  poem_level_rows: 239
+  edition_series_metadata_rows: 48
+  literary_history_context_rows: 15
+  japanese_major_work_rows: 32
+  evidence_rows_added: 0
+  evidence_rows_after_x013_x014_x017_rerun: 55
   status: source_items_ingested_matching_required
   direct_replacements: 0

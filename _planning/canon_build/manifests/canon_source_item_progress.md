@@ -2,8 +2,8 @@
 
 - generated_on: 2026-05-03
 - registered_sources: 71
-- source_item_rows: 1088
-- evidence_rows: 157
+- source_item_rows: 1422
+- evidence_rows: 212
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -18,7 +18,7 @@
 | `bloom_curated_seed_layer` | E002 | rejected | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `bloom_full_appendix_1994` | E003 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `bloom_full_appendix_review_batches` | E003 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `brians_modern_south_asian_lit_english_2003` | E015 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `brians_modern_south_asian_lit_english_2003` | E015;X023 | extracted | 15 | 9 | 9 | 0 | 0 | 6 | 0 | 0 |
 | `broadview_brit_lit_medieval_r3_2023` | E009 | public_toc_ready | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 0 |
 | `broadview_british_lit_concise_a_b_2019_2024` | E010 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `broadview_medieval_drama_2012` | E009 | public_toc_ready | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
@@ -47,14 +47,14 @@
 | `e013_fsg_20c_latin_american_poetry_2011` | E013 | extracted | 84 | 0 | 0 | 0 | 0 | 84 | 0 | 0 |
 | `e013_oxford_latin_american_poetry_2009` | E013 | extracted | 137 | 3 | 0 | 0 | 3 | 134 | 0 | 0 |
 | `e013_oxford_latin_american_short_stories_1997` | E013 | extracted | 53 | 1 | 0 | 0 | 1 | 52 | 0 | 0 |
-| `e014_african_writers_series_heinemann_penguin` | E014 | public_index_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `e014_african_writers_series_heinemann_penguin` | E014;X023 | metadata_ready | 48 | 16 | 16 | 0 | 0 | 32 | 0 | 0 |
 | `e014_cambridge_history_african_caribbean_lit_2000` | E014 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `e014_penguin_modern_african_poetry_4e_2007` | E014 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `e014_penguin_modern_african_poetry_4e_2007` | E014;X023 | extracted | 239 | 0 | 0 | 0 | 0 | 239 | 0 | 0 |
 | `e014_rienner_anthology_african_lit_2007` | E014 | extracted | 146 | 4 | 0 | 0 | 4 | 142 | 0 | 0 |
-| `e017_columbia_early_modern_japanese_lit_2002` | E017 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `e017_columbia_early_modern_japanese_lit_2002` | E017;X023 | in_progress | 12 | 10 | 0 | 0 | 10 | 2 | 0 | 0 |
 | `e017_columbia_modern_japanese_lit_v1_2005` | E017 | extracted | 119 | 1 | 1 | 0 | 0 | 118 | 0 | 0 |
 | `e017_columbia_modern_japanese_lit_v2_2007` | E017 | extracted | 96 | 0 | 0 | 0 | 0 | 96 | 0 | 0 |
-| `e017_columbia_traditional_japanese_lit_2007` | E017 | ready_partial_public | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `e017_columbia_traditional_japanese_lit_2007` | E017;X023 | in_progress | 20 | 20 | 0 | 0 | 20 | 0 | 0 | 0 |
 | `e018_columbia_modern_korean_fiction_2005` | E018 | extracted | 22 | 3 | 3 | 0 | 0 | 19 | 0 | 0 |
 | `e018_columbia_premodern_korean_prose_2018` | E018 | extracted | 43 | 3 | 0 | 0 | 3 | 40 | 0 | 0 |
 | `e018_columbia_traditional_korean_poetry_2003` | E018 | metadata_ready | 9 | 1 | 1 | 0 | 0 | 8 | 0 | 0 |
@@ -91,7 +91,6 @@
 - `bloom_curated_seed_layer` (E002; rejected)
 - `bloom_full_appendix_1994` (E003; in_progress)
 - `bloom_full_appendix_review_batches` (E003; in_progress)
-- `brians_modern_south_asian_lit_english_2003` (E015; ready_public_toc)
 - `broadview_british_lit_concise_a_b_2019_2024` (E010; ready_public_toc)
 - `cambridge_history_chinese_lit_2010` (E016; ready_partial_public)
 - `chinese_text_project_premodern` (E016; public_index_ready)
@@ -102,11 +101,7 @@
 - `e008_oxford_scholarly_editions_oct` (E008; partial_public_metadata)
 - `e012_locke_new_negro_1925` (E012; not_started)
 - `e013_cambridge_history_latin_american_lit_1996` (E013; ready_partial_public)
-- `e014_african_writers_series_heinemann_penguin` (E014; public_index_ready)
 - `e014_cambridge_history_african_caribbean_lit_2000` (E014; ready_partial_public)
-- `e014_penguin_modern_african_poetry_4e_2007` (E014; ready_partial_public)
-- `e017_columbia_early_modern_japanese_lit_2002` (E017; ready_partial_public)
-- `e017_columbia_traditional_japanese_lit_2007` (E017; ready_partial_public)
 - `heath_american_lit_7e_2014` (E011; in_progress)
 - `lancelot_grail_lacy_5vol` (E009; metadata_ready)
 - `longman_british_lit_period_volumes_2009_2017` (E010; ready_public_toc)
