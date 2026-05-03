@@ -34,6 +34,7 @@ TABLE_FILES = {
   "review_decisions" => File.join(BUILD_DIR, "tables", "canon_review_decisions.yml"),
   "scores" => File.join(BUILD_DIR, "tables", "canon_scores.tsv"),
   "source_weights" => File.join(BUILD_DIR, "tables", "canon_source_weights.yml"),
+  "source_debt_rules" => File.join(BUILD_DIR, "tables", "canon_source_debt_rules.yml"),
   "coverage_targets" => File.join(BUILD_DIR, "tables", "canon_coverage_targets.yml"),
   "path_selection" => File.join(BUILD_DIR, "tables", "canon_path_selection.tsv"),
   "replacement_candidates" => File.join(BUILD_DIR, "tables", "canon_replacement_candidates.tsv"),
@@ -195,6 +196,18 @@ if failures.empty?
     failures << "source weight policy has unmapped source types: #{unmapped_source_types.join(", ")}" unless unmapped_source_types.empty?
     failures << "source weight policy maps to unknown classes: #{unknown_mapped_classes.keys.join(", ")}" unless unknown_mapped_classes.empty?
     checks << ["policy:source_weights.source_type_mapping", "FAIL", "#{unmapped_source_types.size} unmapped source types; #{unknown_mapped_classes.size} unknown classes"]
+  end
+
+  source_debt_rules = YAML.load_file(TABLE_FILES["source_debt_rules"])
+  source_debt_rule_classes = source_debt_rules.fetch("source_class_rules", {}).keys.to_set
+  missing_source_debt_rule_classes = source_classes - source_debt_rule_classes
+  unknown_source_debt_rule_classes = source_debt_rule_classes - source_classes
+  if missing_source_debt_rule_classes.empty? && unknown_source_debt_rule_classes.empty?
+    checks << ["policy:source_debt_rules.source_class_rules", "PASS", "#{source_debt_rule_classes.size} source classes covered"]
+  else
+    failures << "source debt rules missing source classes: #{missing_source_debt_rule_classes.to_a.join(", ")}" unless missing_source_debt_rule_classes.empty?
+    failures << "source debt rules reference unknown source classes: #{unknown_source_debt_rule_classes.to_a.join(", ")}" unless unknown_source_debt_rule_classes.empty?
+    checks << ["policy:source_debt_rules.source_class_rules", "FAIL", "#{missing_source_debt_rule_classes.size} missing; #{unknown_source_debt_rule_classes.size} unknown"]
   end
 
   CONTROLLED_FIELD_CHECKS.each do |table, config|

@@ -1,0 +1,113 @@
+---
+generated_on: '2026-05-03'
+status: draft_active
+purpose: >
+  Rules for deciding when a candidate work's source debt can close. These rules
+  are intentionally stricter than evidence-row creation: an evidence row can
+  exist while source debt remains open.
+global_rules:
+  evidence_row_alone_closes_source_debt: false
+  internal_records_close_external_source_debt: false
+  access_or_metadata_rows_close_source_debt: false
+  bibliographic_database_rows_close_source_debt: false
+  representative_selection_closes_complete_work_debt: false
+  anthology_excerpt_closes_complete_work_debt: false
+  source_debt_closure_requires_reviewer_status: accepted
+  non_obvious_addition_min_independent_canon_support_families: 2
+  independence_basis:
+    - source_class
+    - source_id
+    - publisher_or_institution
+    - tradition_or_field_scope
+match_status_rules:
+  eligible_for_evidence:
+    - matched_current_path
+    - matched_candidate
+    - represented_by_selection
+    - duplicate_or_variant
+  blocked_from_source_debt_closure:
+    - unmatched
+    - unresolved
+    - out_of_scope
+evidence_type_rules:
+  inclusion:
+    can_close_complete_work_debt: conditional
+    notes: Requires eligible source class, accepted reviewer status, and enough independent support.
+  representative_selection:
+    can_close_complete_work_debt: false
+    can_close_selection_identity_debt: conditional
+    notes: Supports selection/anthology representation only unless complete-work scope is separately verified.
+  boundary_context:
+    can_close_complete_work_debt: false
+    notes: Boundary/context evidence can support inclusion rationale but not source support by itself.
+  duplicate_variant:
+    can_close_complete_work_debt: false
+    notes: Supports alias, duplicate, or relation review.
+  omission:
+    can_close_complete_work_debt: false
+    notes: Omission evidence opens review; it is not support.
+  exclusion:
+    can_close_complete_work_debt: false
+    notes: Exclusion evidence supports rejection or waiver records.
+source_class_rules:
+  curated_teaching_anthology_complete_work:
+    closes_external_source_debt: conditional
+    max_closure_scope: complete_work
+    counts_as_independent_support: true
+    requires_complete_work_scope: true
+  university_core_required_reading:
+    closes_external_source_debt: conditional
+    max_closure_scope: assigned_reading
+    counts_as_independent_support: true
+    requires_assignment_scope: true
+  field_or_national_anthology:
+    closes_external_source_debt: conditional
+    max_closure_scope: source_item_scope
+    counts_as_independent_support: true
+    requires_complete_work_scope_for_complete_work_debt: true
+  national_canon_exam_or_academy_list:
+    closes_external_source_debt: conditional
+    max_closure_scope: regional_or_tradition_support
+    counts_as_independent_support: true
+    requires_global_corroboration: true
+  scholarly_literary_history_or_reference:
+    closes_external_source_debt: conditional
+    max_closure_scope: contextual_work_support
+    counts_as_independent_support: true
+    requires_work_specific_entry: true
+  authoritative_edition_or_translation_series:
+    closes_external_source_debt: limited
+    max_closure_scope: edition_or_reception_support
+    counts_as_independent_support: limited
+    requires_additional_canon_support_for_new_additions: true
+  prize_or_reception_layer:
+    closes_external_source_debt: limited
+    max_closure_scope: reception_support
+    counts_as_independent_support: limited
+    requires_recent_work_corroboration: true
+  specialist_corpus_or_bibliographic_database:
+    closes_external_source_debt: false
+    max_closure_scope: identity_access_alias_support
+    counts_as_independent_support: false
+  access_metadata:
+    closes_external_source_debt: false
+    max_closure_scope: provenance_or_access_only
+    counts_as_independent_support: false
+  internal_record_or_packet_output:
+    closes_external_source_debt: false
+    max_closure_scope: workflow_state_only
+    counts_as_independent_support: false
+candidate_status_rules:
+  incumbent_current_path:
+    debt_can_close_after_rules_pass: true
+    notes: Incumbent bonus is allowed only in scoring, not debt closure.
+  source_backed_candidate:
+    debt_can_close_after_rules_pass: true
+    notes: Candidate must still pass duplicate, boundary, scope, taxonomy, and scoring gates before public integration.
+  packet_candidate:
+    debt_can_close_after_rules_pass: false
+    notes: Packet-only candidates require external source evidence.
+  deferred:
+    debt_can_close_after_rules_pass: false
+  rejected:
+    debt_can_close_after_rules_pass: false

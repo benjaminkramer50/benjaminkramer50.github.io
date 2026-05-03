@@ -37,3 +37,5 @@ Match/relation review decisions are routing records. A `create_source_backed_can
 `scripts/canon_materialize_reviewed_candidates.rb` turns reviewed match decisions into provisional candidate rows and updates source-item, creator, work-creator, and alias tables. It does not generate evidence rows, write final relation rows, or change the public path.
 
 `scripts/canon_generate_policy_aware_evidence.rb` creates missing provisional evidence rows only for source items with valid matched work IDs and supported match statuses. It reads `canon_source_weights.yml`, caps representative selections and non-scoring bibliographic sources, and leaves generated rows as `needs_followup`.
+
+`tables/canon_source_debt_rules.yml` defines when evidence can close source debt. These rules are stricter than evidence generation: internal records, access metadata, bibliographic rows, excerpts, and representative selections can remain useful while still failing to close complete-work source debt.

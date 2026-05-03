@@ -36,6 +36,7 @@ artifacts:
   relation_review_decisions: generated_x014_reviewed
   evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows
   source_weights: draft_policy_created
+  source_debt_rules: draft_policy_created
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path

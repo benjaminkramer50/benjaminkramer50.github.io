@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 23
+- checked_files: 24
 - failures: 0
 
 ## Checks
@@ -27,11 +27,13 @@
 | table:review_decisions | PASS | `_planning/canon_build/tables/canon_review_decisions.yml` |
 | table:scores | PASS | `_planning/canon_build/tables/canon_scores.tsv (27 columns)` |
 | table:source_weights | PASS | `_planning/canon_build/tables/canon_source_weights.yml` |
+| table:source_debt_rules | PASS | `_planning/canon_build/tables/canon_source_debt_rules.yml` |
 | table:coverage_targets | PASS | `_planning/canon_build/tables/canon_coverage_targets.yml` |
 | table:path_selection | PASS | `_planning/canon_build/tables/canon_path_selection.tsv (8 columns)` |
 | table:replacement_candidates | PASS | `_planning/canon_build/tables/canon_replacement_candidates.tsv (18 columns)` |
 | table:packet_status | PASS | `_planning/canon_build/tables/canon_packet_status.tsv (8 columns)` |
 | policy:source_weights.source_type_mapping | PASS | `42 source types mapped` |
+| policy:source_debt_rules.source_class_rules | PASS | `10 source classes covered` |
 | controlled:source_registry.source_type | PASS | `42 allowed values` |
 | controlled:source_registry.extraction_status | PASS | `16 allowed values` |
 | controlled:source_items.evidence_type | PASS | `6 allowed values` |
