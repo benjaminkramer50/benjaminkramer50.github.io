@@ -72,6 +72,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X042 | Score-ready rows | First score generated | Added `scripts/canon_generate_scores.rb` and generated one provisional score row for Harper's `Bury Me in a Free Land`; no replacement transaction generated; public path unchanged |
 | X043 | Public reference/literary-history corroboration | Targeted corroboration added and scores regenerated | 6 public reference/literary-history source rows added for Hrotsvitha, William Wells Brown, Gronniosaw, Nat Turner, and `Curial e Guelfa`; 6 evidence rows accepted; 5 source-backed candidates now score-ready and scored; Curial remains boundary/completion-gated; public path unchanged |
 | X044 | X028 diagnostic coverage matrix | Coverage targets generated | 72 medium/high-risk coverage review targets generated and scores regenerated with a capped coverage-scarcity bonus; no replacement transaction generated; public path unchanged |
+| X045 | Score-ready add candidates | Blocked replacement prefilter generated | 5 score-ready source-backed add candidates written to `canon_replacement_candidates.tsv` with `gate_status=blocked` and intentionally blank cut fields; public path unchanged |
 
 ## Planned Extraction Packets
 

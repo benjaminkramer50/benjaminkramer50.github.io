@@ -95,7 +95,7 @@ Done when:
 - `canon_scores.tsv` is generated for current works and source-backed omissions.
 - Scores include source support, source diversity, coverage scarcity, boundary penalty, duplicate penalty, source debt penalty, generic-title penalty, date uncertainty, recency, and incumbent bonus.
 
-Current status: started; `canon_scoring_inputs.tsv` now covers all 3,012 work candidates, 5 rows are ready for score computation, and `canon_scores.tsv` contains 5 provisional score rows. X044 generated 72 coverage review targets from the X028 diagnostic matrix and added a conservative capped coverage-scarcity bonus to scores. Replacement candidates are not generated yet.
+Current status: started; `canon_scoring_inputs.tsv` now covers all 3,012 work candidates, 5 rows are ready for score computation, and `canon_scores.tsv` contains 5 provisional score rows. X044 generated 72 coverage review targets from the X028 diagnostic matrix and added a conservative capped coverage-scarcity bonus to scores. X045 generated 5 blocked add-candidate prefilter rows; cut candidates are not generated yet.
 
 ## Phase 7: Diagnostic-First Validation Sweeps
 
@@ -110,7 +110,7 @@ Done when:
 - Period packets B001-B034, region/tradition packets C001-C196, form packets D001-D046, sentinel packets F001-F034, and intersection packets I001-I030 are complete, waived, or represented by generated diagnostics with no red-cell flag.
 - All high-priority gaps are added to the omission queue, rejected with rationale, or deferred with source-gap rationale.
 
-Current status: first X028-X044 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, applies 39 reviewed X030 scope routes to match/relation decisions, materializes 4 provisional boundary-review candidates, adds metadata for those 4 candidates, records 3 conditional boundary-policy routes, accepts 8 exact-title anthology evidence rows for those 4 candidates, triages the original 8 source-backed candidates, adds official Norton African American Literature 4e Volume 1 corroboration, adds X043 public reference/literary-history corroboration, closes source debt for 10 candidates total, generates 5 provisional score rows, and derives 72 X044 coverage review targets.
+Current status: first X028-X045 diagnostic pass generated. The old 340-packet sweep remains the coverage namespace, but execution now starts with automated diagnostics and red-cell triage. The initial pass checks 57 sentinel targets, finds 0 sentinel failures, produces a 120-row red-cell queue, routes all 120 rows into manual review classes, records 25 title-route decisions, writes 7 safe title-variant aliases for already selected works, reruns matching with the `from`-prefix rule, adds reviewed Tao Yuanming/Bai Juyi creator romanization variants, applies 39 reviewed X030 scope routes to match/relation decisions, materializes 4 provisional boundary-review candidates, adds metadata for those 4 candidates, records 3 conditional boundary-policy routes, accepts 8 exact-title anthology evidence rows for those 4 candidates, triages the original 8 source-backed candidates, adds official Norton African American Literature 4e Volume 1 corroboration, adds X043 public reference/literary-history corroboration, closes source debt for 10 candidates total, generates 5 provisional score rows, derives 72 X044 coverage review targets, and writes 5 blocked X045 add-candidate prefilter rows.
 
 ## Phase 8: Source-Backed Integration
 
@@ -123,7 +123,7 @@ Done when:
 - No batch increases source debt, duplicate debt, chronology debt, generic-title debt, or unresolved boundary debt.
 - Validation and site build pass after every integration batch.
 
-Current status: paused.
+Current status: started but blocked; X045 wrote 5 add-candidate prefilter rows with `gate_status=blocked`. Cut-candidate generation, score-delta comparison, duplicate/chronology checks, and path-count-preserving transactions are still pending.
 
 ## Phase 9: Public UI Regeneration
 

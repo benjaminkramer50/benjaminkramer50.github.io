@@ -191,6 +191,22 @@ decisions:
       - generate_replacement_candidate_prefilter_without_integration_authority
       - continue_source_corroboration_for_remaining_blocked_candidates
     public_path_effect: none
+  - decision_id: x045_replacement_prefilter_001
+    decision_type: replacement_prefilter_gate
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_replacement_candidates.tsv
+    decision: generate_blocked_add_candidate_prefilter
+    rationale: >
+      Score-ready source-backed candidates should be visible in the replacement
+      table, but a public add/cut transaction cannot be proposed until a specific
+      cut candidate is named and checked. X045 therefore writes blocked rows with
+      blank cut fields as an explicit prefilter state.
+    scoring_effect: none_beyond_existing_scores
+    required_followup:
+      - generate_cut_candidate_pool
+      - compare_add_scores_to_cut_scores
+      - validate_duplicate_author_cluster_chronology_and_path_count_before_any_ready_for_review_transaction
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
