@@ -20,6 +20,8 @@ Execution update: E001-E012 are registered in the source universe. Only E001 cur
 
 Source-item extraction is tracked separately in `_planning/canon_build/source_item_extraction_plan.md`. The first active extraction batch is X001-X006: classical open metadata, Library of America, medieval public corpora, English/British anthology TOCs, university/reference lists, and African American anthology layers.
 
+Execution update: X001-X006 produced feasibility reports and a conservative pilot ingestion: 57 source-item rows and 47 evidence rows. This is not a content integration wave. Source debt remains open until full extraction, normalized matching, alias/contained-work relations, and evidence weights are applied.
+
 The new source of truth is four-layered:
 
 1. Source universe: source registry, source items, source scope, and citation/provenance metadata.

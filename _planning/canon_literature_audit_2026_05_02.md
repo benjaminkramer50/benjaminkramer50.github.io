@@ -17,6 +17,8 @@ First source-crosswalk batch status: E001-E006 are registered in the build layer
 
 Second source-crosswalk batch status: E007-E012 are registered as source layers for university core/reference lists, Greek/Roman classics, medieval Europe, English/British literature, American literature, and African American literature. These registry rows do not yet close source debt; source-item extraction and evidence matching are still required.
 
+First source-item extraction status: X001-X006 produced feasibility findings and a conservative pilot ingestion of 57 source-item rows and 47 evidence rows. These rows are marked for follow-up and do not yet close source debt or authorize public list replacements.
+
 ## Current Verified State
 
 - Public checklist target: 3,000 texts.

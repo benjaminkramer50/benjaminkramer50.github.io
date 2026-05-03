@@ -140,6 +140,15 @@ if failures.empty?
     checks << ["integrity:source_items.source_id", "FAIL", "#{unknown_source_items.size} unknown references"]
   end
 
+  unknown_source_item_works = source_item_rows.reject { |row| row["matched_work_id"].to_s.empty? || work_ids.include?(row["matched_work_id"]) }
+  if unknown_source_item_works.empty?
+    checks << ["integrity:source_items.matched_work_id", "PASS", "all nonblank matched work IDs exist"]
+  else
+    examples = unknown_source_item_works.first(10).map { |row| "#{row["source_item_id"]}:#{row["matched_work_id"]}" }
+    failures << "source_items rows reference unknown matched work IDs: #{examples.join(", ")}"
+    checks << ["integrity:source_items.matched_work_id", "FAIL", "#{unknown_source_item_works.size} unknown references"]
+  end
+
   unknown_evidence_sources = evidence_rows.reject { |row| source_ids.include?(row["source_id"]) }
   if unknown_evidence_sources.empty?
     checks << ["integrity:evidence.source_id", "PASS", "all source IDs registered"]

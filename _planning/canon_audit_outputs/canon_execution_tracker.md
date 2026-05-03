@@ -47,7 +47,7 @@ Last updated: 2026-05-03
 
 | Batch | Packets | Status | Output Contract |
 |---|---|---|---|
-| X Batch 1 | X001, X002, X003, X004, X005, X006 | Running | Source-item feasibility, pilot rows, blockers, and alias/containment risks |
+| X Batch 1 | X001, X002, X003, X004, X005, X006 | Pilot ingested | 57 pilot source items and 47 pilot evidence rows; full extraction/matching pending |
 | X Batch 2 | X007, X008, X009, X010, X011, X012 | Planned | Remaining registered source layers and Bloom recovery/blocker decisions |
 | X Batch 3 | X013, X014, X015, X016, X017, X018 | Planned | Matching, relation creation, evidence generation, weighting, omission queue, and replacement candidates |
 

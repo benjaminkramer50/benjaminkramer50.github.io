@@ -27,12 +27,12 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 
 | Packet | Source layers | Status | Output target |
 |---|---|---|---|
-| X001 | `e008_perseus_catalog_greek_latin_works`; `e008_phi_classical_latin_texts` | Running | Classical open metadata pilot rows |
-| X002 | `library_of_america_catalog`; `e012_loa_slave_narratives`; `e012_loa_african_american_poetry_2020` | Running | LOA catalog and contained-work pilot rows |
-| X003 | `icelandic_saga_database`; `philobiblon_iberian_romance`; `arlima_medieval_literature`; `lancelot_grail_lacy_5vol`; `dante_digital_anchor_layer` | Running | Medieval corpus/catalog pilot rows |
-| X004 | `norton_english_lit_11e_full_2024`; `longman_british_lit_period_volumes_2009_2017`; `broadview_british_lit_concise_a_b_2019_2024`; `longman_brit_lit_middle_ages_1a_4e`; `broadview_brit_lit_medieval_r3_2023`; `broadview_medieval_drama_2012` | Running | English/British and medieval anthology TOC feasibility and pilot rows |
-| X005 | `columbia_lithum_current_2026`; `columbia_lithum_historical_1937_present`; `princeton_humanities_sequences_2024`; `oxford_worlds_classics_online`; `princeton_damrosch_world_literature_2003` | Running | University/reference list pilot rows |
-| X006 | `e012_norton_african_american_lit_4e_v1_2025`; `e012_norton_african_american_lit_4e_v2_2025`; `e012_locke_new_negro_1925` | Running | African American anthology pilot rows |
+| X001 | `e008_perseus_catalog_greek_latin_works`; `e008_phi_classical_latin_texts` | Pilot ingested | Classical open metadata pilot rows |
+| X002 | `library_of_america_catalog`; `e012_loa_slave_narratives`; `e012_loa_african_american_poetry_2020` | Pilot ingested | LOA catalog and contained-work pilot rows |
+| X003 | `icelandic_saga_database`; `philobiblon_iberian_romance`; `arlima_medieval_literature`; `lancelot_grail_lacy_5vol`; `dante_digital_anchor_layer` | Pilot ingested | Medieval corpus/catalog pilot rows |
+| X004 | `norton_english_lit_11e_full_2024`; `longman_british_lit_period_volumes_2009_2017`; `broadview_british_lit_concise_a_b_2019_2024`; `longman_brit_lit_middle_ages_1a_4e`; `broadview_brit_lit_medieval_r3_2023`; `broadview_medieval_drama_2012` | Pilot ingested | English/British and medieval anthology TOC feasibility and pilot rows |
+| X005 | `columbia_lithum_current_2026`; `columbia_lithum_historical_1937_present`; `princeton_humanities_sequences_2024`; `oxford_worlds_classics_online`; `princeton_damrosch_world_literature_2003` | Pilot ingested | University/reference list pilot rows |
+| X006 | `e012_norton_african_american_lit_4e_v1_2025`; `e012_norton_african_american_lit_4e_v2_2025`; `e012_locke_new_negro_1925` | Pilot ingested | African American anthology pilot rows |
 
 ## Planned Extraction Packets
 

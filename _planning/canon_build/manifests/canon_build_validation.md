@@ -29,6 +29,7 @@
 | integrity:unique:work_candidates.work_id | PASS | `0 duplicates` |
 | integrity:unique:evidence.evidence_id | PASS | `0 duplicates` |
 | integrity:source_items.source_id | PASS | `all source IDs registered` |
+| integrity:source_items.matched_work_id | PASS | `all nonblank matched work IDs exist` |
 | integrity:evidence.source_id | PASS | `all source IDs registered` |
 | integrity:evidence.source_item_id | PASS | `all nonblank source item IDs exist` |
 | integrity:evidence.work_id | PASS | `all work IDs exist` |

@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-03'
-status: source_crosswalk_batch_e007_e012_registered
+status: source_item_pilot_x001_x006_ingested
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -21,12 +21,12 @@ gates:
   boundary_policy_required_before_boundary_lock: true
   first_class_taxonomy_required_before_ui_precision: true
 artifacts:
-  source_registry: e001_e012_registered_source_items_pending
-  source_items: e001_accepted_records_ingested
+  source_registry: e001_e012_registered
+  source_items: e001_ingested_x001_x006_pilot_ingested
   work_candidates: bootstrapped_from_current_path
   aliases: bootstrapped_from_current_path
   relations: initialized_empty
-  evidence: e001_accepted_records_ingested
+  evidence: e001_ingested_x001_x006_pilot_ingested
   scores: initialized_empty
   replacement_candidates: initialized_empty
   path_selection: bootstrapped_from_current_path
@@ -54,3 +54,8 @@ source_crosswalk_batch_e007_e012:
   e010_status: registered_needs_english_toc_extraction
   e011_status: registered_needs_american_toc_extraction
   e012_status: registered_needs_african_american_toc_extraction
+source_item_extraction_batch_x001_x006:
+  pilot_source_items_added_or_updated: 57
+  pilot_evidence_rows_added_or_updated: 47
+  status: pilot_ingested_needs_full_extraction_and_matching
+  direct_replacements: 0
