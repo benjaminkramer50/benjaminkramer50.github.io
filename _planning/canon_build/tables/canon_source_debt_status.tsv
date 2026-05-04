@@ -1743,7 +1743,7 @@ work_candidate_africa_lit_hadrawi_poems	incumbent_current_path	Selected Poems	0	
 work_candidate_me_lit_cigerxwin_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_hayden_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_bishop_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_hughes_poems	incumbent_current_path	The Weary Blues and Selected Poems	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
+work_candidate_bloom_reviewed_hughes_poems	incumbent_current_path	The Weary Blues	5	4	0	4	0	1	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_me_lit_akhavan_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_ashbery_selected_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_shamlu_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items

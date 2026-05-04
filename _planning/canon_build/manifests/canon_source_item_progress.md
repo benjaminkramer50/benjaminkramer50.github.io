@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 98
-- source_item_rows: 5970
-- evidence_rows: 566
+- registered_sources: 102
+- source_item_rows: 5974
+- evidence_rows: 570
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -109,6 +109,10 @@
 | `x071_britannica_family_ties_reference` | X071 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x071_ebsco_family_ties_research_starter` | X071 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x071_encyclopedia_com_lispector_reference` | X071 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x072_britannica_hughes_biography_reference` | X072 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x072_britannica_weary_blues_reference` | X072 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x072_poets_org_weary_blues_book_page` | X072 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x072_poets_org_weary_blues_essay` | X072 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 
