@@ -2470,10 +2470,15 @@ textarea:focus-visible,
 
 .canon-row {
   border: 1px solid var(--color-border);
+  border-left: 3px solid transparent;
   border-radius: 6px;
   background: var(--color-surface);
   padding: 0.8rem 0.9rem;
   transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.canon-row-reviewed {
+  border-left-color: var(--color-accent);
 }
 
 .canon-row:hover {
@@ -2546,10 +2551,14 @@ textarea:focus-visible,
 .canon-row-checkbox {
   display: inline-block;
   margin-right: 0.45rem;
-  color: var(--color-accent);
+  color: var(--color-muted);
   font-size: 0.92rem;
   line-height: 1;
   transform: translateY(-0.03em);
+}
+
+.canon-row-reviewed .canon-row-checkbox {
+  color: var(--color-accent);
 }
 
 .canon-pill-reviewed {
@@ -2563,12 +2572,22 @@ textarea:focus-visible,
 }
 
 .canon-row-review {
+  display: none;
   margin-top: 0.65rem;
   padding-top: 0.55rem;
   border-top: 1px solid var(--color-border);
   font-size: 0.84rem;
   color: var(--color-muted);
   line-height: 1.55;
+}
+
+.canon-row-open .canon-row-review,
+.canon-row.expanded .canon-row-review {
+  display: block;
+}
+
+.canon-row-review p {
+  margin: 0;
 }
 
 /* ── Travel Stamps ── */

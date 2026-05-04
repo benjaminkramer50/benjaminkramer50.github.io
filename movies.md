@@ -156,7 +156,7 @@ title: Movie Log
       <option value="">All Statuses</option>
       <option value="reviewed">Reviewed</option>
       <option value="favorite">Favorites</option>
-      <option value="unreviewed">Unreviewed</option>
+      <option value="not-reviewed">Not reviewed</option>
     </select>
     <select id="canon-sort" aria-label="Sort canon titles">
       <option value="year" selected>Year</option>
@@ -382,6 +382,7 @@ title: Movie Log
   var noResults = document.getElementById('canon-no-results');
   var pageSize = 36;
   var currentPage = 1;
+  var canonOpenSlugs = {};
 
   function slugify(text) {
     return String(text || '')
@@ -398,10 +399,6 @@ title: Movie Log
     if (!value) return null;
     var date = new Date(value);
     return isNaN(date.getTime()) ? null : date;
-  }
-
-  function cleanReview(text) {
-    return String(text || '').replace(/\s+/g, ' ').trim();
   }
 
   function escapeHtml(text) {
@@ -476,7 +473,7 @@ title: Movie Log
       ['Films', canonItems.length],
       ['Reviewed', reviewed],
       ['Favorites', favorites],
-      ['Unreviewed', canonItems.length - reviewed]
+      ['Not reviewed', canonItems.length - reviewed]
     ];
 
     stats.forEach(function (stat) {
@@ -510,22 +507,9 @@ title: Movie Log
 
     if (filters.status === 'reviewed' && !item.reviewed) return false;
     if (filters.status === 'favorite' && !item.favorite) return false;
-    if (filters.status === 'unreviewed' && item.reviewed) return false;
+    if (filters.status === 'not-reviewed' && item.reviewed) return false;
 
     return true;
-  }
-
-  function statusLabel(item) {
-    if (item.reviewed && item.favorite) return 'Reviewed · Favorite';
-    if (item.reviewed) return 'Reviewed';
-    if (item.favorite) return 'Favorite';
-    return 'Unreviewed';
-  }
-
-  function reviewExcerpt(review) {
-    var text = cleanReview(review);
-    if (!text) return '';
-    return text.length > 220 ? text.slice(0, 217) + '...' : text;
   }
 
   function render() {
@@ -546,15 +530,30 @@ title: Movie Log
 
     filtered.slice(start, end).forEach(function (item) {
       var row = document.createElement('div');
-      row.className = 'canon-row';
+      var isOpen = !!canonOpenSlugs[item.slug];
+      row.className = 'canon-row' +
+        (item.reviewed ? ' canon-row-reviewed canon-row-has-review' : '') +
+        (item.favorite ? ' canon-row-favorite' : '') +
+        (isOpen ? ' canon-row-open expanded' : '');
       row.setAttribute('data-title', item.title);
+      row.setAttribute('data-slug', item.slug);
       row.setAttribute('data-year', String(item.year));
       row.setAttribute('data-director', item.director);
       row.setAttribute('data-reviewed', item.reviewed ? 'true' : 'false');
       row.setAttribute('data-favorite', item.favorite ? 'true' : 'false');
+      if (item.reviewed) {
+        row.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      }
 
-      var excerpt = reviewExcerpt(item.review);
       var checkbox = item.reviewed ? '&#x2611;' : '&#x2610;';
+      var statusPills = '';
+      if (item.reviewed) {
+        statusPills += '<span class="canon-pill canon-pill-status canon-pill-reviewed">Reviewed</span>';
+      }
+      if (item.favorite) {
+        statusPills += '<span class="canon-pill canon-pill-favorite">Favorite</span>';
+      }
+      var reviewHtml = item.reviewed ? '<div class="canon-row-review"><p>' + escapeHtml(item.review).replace(/\n/g, '<br>') + '</p></div>' : '';
 
       row.innerHTML =
         '<div class="canon-row-main">' +
@@ -563,11 +562,33 @@ title: Movie Log
             '<div class="canon-row-director">' + escapeHtml(item.director) + '</div>' +
           '</div>' +
           '<div class="canon-row-actions">' +
-            '<span class="canon-pill canon-pill-status">' + escapeHtml(statusLabel(item)) + '</span>' +
-            (item.favorite ? '<span class="canon-pill canon-pill-favorite">Favorite</span>' : '') +
+            statusPills +
           '</div>' +
         '</div>' +
-        (excerpt ? '<div class="canon-row-review">' + escapeHtml(excerpt) + '</div>' : '');
+        reviewHtml;
+
+      if (item.reviewed) {
+        var main = row.querySelector('.canon-row-main');
+        if (main) {
+          main.setAttribute('role', 'button');
+          main.setAttribute('tabindex', '0');
+          main.style.cursor = 'pointer';
+          main.addEventListener('click', function (e) {
+            e.preventDefault();
+            var openNow = !row.classList.contains('canon-row-open');
+            canonOpenSlugs[item.slug] = openNow;
+            row.classList.toggle('canon-row-open', openNow);
+            row.classList.toggle('expanded', openNow);
+            main.setAttribute('aria-expanded', openNow ? 'true' : 'false');
+          });
+          main.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              main.click();
+            }
+          });
+        }
+      }
 
       canonList.appendChild(row);
     });
