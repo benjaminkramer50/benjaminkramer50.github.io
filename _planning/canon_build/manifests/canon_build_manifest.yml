@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-04'
-status: selection_only_complete_work_support_x064_generated
+status: current_rescue_scope_refresh_x065_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -55,9 +55,9 @@ artifacts:
   cut_evidence_applied_rows: generated_x058_from_x057_write_plan
   cut_side_post_x058_action_queue: refreshed_after_x064_from_current_x051
   existing_selection_evidence_reviews: generated_x060_from_x059_needs_followup_rows
-  current_rescue_scope_review: generated_x061_from_x059_existing_source_rescue_lane
+  current_rescue_scope_review: refreshed_x065_from_current_x059_existing_source_rescue_lane
   medium_risk_rescue_evidence_applied: generated_x062_from_x061_medium_risk_rows
-  high_risk_rescue_residue: refreshed_x063_from_x061_high_risk_rows_and_current_x064_queue
+  high_risk_rescue_residue: refreshed_x063_from_current_x065_high_risk_rows
   selection_only_complete_work_support_review: generated_x064_from_current_selection_only_rows
   path_selection: bootstrapped_from_current_path
   creators: bootstrapped_from_current_path_plus_x013_candidate_creators_plus_x034_variants
@@ -103,9 +103,9 @@ current_counts:
   cut_evidence_applied_rows: 21
   cut_side_post_x058_action_queue_rows: 45
   existing_selection_evidence_review_rows: 2
-  current_rescue_scope_review_rows: 23
+  current_rescue_scope_review_rows: 17
   medium_risk_rescue_evidence_applied_rows: 3
-  high_risk_rescue_residue_rows: 20
+  high_risk_rescue_residue_rows: 16
   cut_candidate_rows: 3000
   source_items_matched_current_path: 284
   source_items_matched_candidate: 24
@@ -671,7 +671,7 @@ existing_selection_evidence_review_x060:
   complete_work_source_debt_closed: 0
   direct_replacements: 0
 current_rescue_scope_review_x061:
-  status: generated_from_current_existing_source_rescue_lane
+  status: superseded_by_x065_current_rescue_scope_refresh
   scope_review_rows: 23
   medium_scope_risk_rows: 3
   high_scope_risk_rows: 20
@@ -690,10 +690,10 @@ medium_risk_rescue_evidence_apply_x062:
   complete_work_source_debt_closed: 0
   direct_replacements: 0
 high_risk_rescue_residue_x063:
-  status: refreshed_against_current_x064_action_queue
-  residue_rows: 20
-  current_high_risk_scope_blocker_rows: 18
-  stale_after_current_queue_refresh_rows: 2
+  status: refreshed_against_current_x065_scope_and_action_queue
+  residue_rows: 16
+  current_high_risk_scope_blocker_rows: 16
+  stale_after_current_queue_refresh_rows: 0
   evidence_rows_added: 0
   complete_work_source_debt_closed: 0
   direct_replacements: 0
@@ -711,4 +711,15 @@ selection_only_complete_work_support_x064:
     accepted_selection_only_complete_work_source_needed: 1
     existing_source_item_rescue_review: 7
     external_source_acquisition: 37
+  direct_replacements: 0
+current_rescue_scope_refresh_x065:
+  status: refreshed_from_current_x059_action_queue_after_x064
+  scope_review_rows: 17
+  medium_scope_risk_rows: 1
+  high_scope_risk_rows: 16
+  scope_class_counts:
+    representative_poetry_selection_review: 1
+    named_collection_membership_unverified: 11
+    creator_exact_component_form_unverified: 5
+  current_existing_source_rescue_works: 7
   direct_replacements: 0

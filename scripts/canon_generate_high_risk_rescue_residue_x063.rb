@@ -63,13 +63,13 @@ def write_report(path, rows)
     file.puts
     file.puts "## Purpose"
     file.puts
-    file.puts "X063 reconciles the high-risk X061 source-scope rows against the current cut-side action queue. This prevents stale high-risk rows from being processed after refreshes remove their work rows from the current queue."
+    file.puts "X063 reconciles high-risk current rescue-scope rows against the current cut-side action queue. This prevents stale high-risk rows from being processed after refreshes remove their work rows from the current queue."
     file.puts
     file.puts "## Output"
     file.puts
     file.puts "- Added `scripts/canon_generate_high_risk_rescue_residue_x063.rb`."
     file.puts "- Added `canon_high_risk_rescue_residue.tsv`."
-    file.puts "- Reconciled #{rows.size} high-risk X061 rows."
+    file.puts "- Reconciled #{rows.size} high-risk current rescue-scope rows."
     file.puts "- #{current_rows.size} high-risk rows still map to current existing-source rescue actions."
     file.puts
     file.puts "Residue status summary:"

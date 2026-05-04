@@ -498,15 +498,16 @@ decisions:
     decision_type: high_risk_rescue_residue_reconciliation
     applies_to_artifacts:
       - _planning/canon_build/tables/canon_high_risk_rescue_residue.tsv
-    decision: reconcile_high_risk_x061_rows_against_current_x062_action_queue
+    decision: reconcile_current_high_risk_scope_rows_against_current_action_queue
     rationale: >
-      X061 high-risk rows are a scope-review snapshot, not the current execution
-      queue after X062. X063 separates active high-risk scope blockers from rows
-      that became stale after the current action queue refresh. Stale rows should
-      not be processed unless their work rows re-enter the current queue.
+      High-risk scope rows are generated from a current rescue-scope table, but
+      action-queue refreshes can remove or reprioritize their work rows. X063
+      separates active high-risk scope blockers from rows that became stale after
+      the current action queue refresh. Stale rows should not be processed unless
+      their work rows re-enter the current queue.
     scoring_effect: none
     required_followup:
-      - resolve_18_current_high_risk_scope_blockers_before_evidence_generation
+      - resolve_16_current_high_risk_scope_blockers_before_evidence_generation
       - do_not_process_stale_high_risk_rows_until_they_reappear_in_current_queue
       - continue_external_source_acquisition_for_no_local_support_rows
       - keep_public_replacement_pairs_blocked
@@ -534,6 +535,23 @@ decisions:
     required_followup:
       - decide_whether_hughes_row_should_be_retitled_to_the_weary_blues_or_supported_as_a_selected_poems_scope
       - continue_high_risk_scope_resolution_for_current_existing_source_rescue_rows
+      - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
+    public_path_effect: none
+  - decision_id: x065_current_rescue_scope_refresh_001
+    decision_type: current_rescue_scope_refresh
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_current_rescue_scope_review.tsv
+      - _planning/canon_build/source_crosswalk_reports/x_batch_049_x065_current_rescue_scope_refresh.md
+    decision: refresh_existing_source_rescue_scope_after_x064
+    rationale: >
+      X064 removed Dunbar from the current cut-side action queue and surfaced Odi
+      Gonzales as a local creator-exact source-item rescue row. X065 refreshes
+      the current rescue-scope table from the current action queue rather than
+      continuing to process the superseded X061 snapshot.
+    scoring_effect: none
+    required_followup:
+      - accept_or_reject_odi_gonzales_medium_risk_representative_selection_row
+      - resolve_16_high_risk_collection_or_form_scope_blockers
       - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
     public_path_effect: none
 waivers: []
