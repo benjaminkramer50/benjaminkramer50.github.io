@@ -86,6 +86,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X056 | X054/X055 rescue rows | Cut evidence item decisions generated | 48 source-item rescue rows adjudicated at item level: 21 ready for representative-selection evidence review and 27 blocked/held for high-risk scope, named-collection exact support, existing evidence, or form review; public path unchanged |
 | X057 | X056 ready item rows | Cut evidence write plan generated | 21 review-gated evidence write-plan rows staged for possible future `canon_evidence.tsv` updates; no evidence ledger rows changed; public path unchanged |
 | X058 | X057 write plan plus evidence/source-item ledgers | Cut evidence apply generated | 21 accepted representative-selection evidence rows applied to `canon_evidence.tsv`, 21 source items linked as `represented_by_selection`, and source-debt/scoring/cut queues refreshed; X052-X057 remain the pre-apply staging audit and should be regenerated in the next cut-side packet; public path unchanged |
+| X059 | Post-X058 X051 cut-side queue | Current action queue generated | 48 current cut-side rows classified into 2 needs-followup selection-evidence reviews, 9 existing-source rescue reviews, and 37 external-source acquisition rows; public path unchanged |
 
 ## Planned Extraction Packets
 

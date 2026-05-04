@@ -421,6 +421,24 @@ decisions:
       - compute_cut_side_scores_only_after_regenerated_scope_gates_are_clear
       - keep_public_replacement_pairs_blocked
     public_path_effect: none
+  - decision_id: x059_cut_side_action_queue_001
+    decision_type: post_apply_cut_side_queue_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_cut_side_post_x058_action_queue.tsv
+    decision: classify_current_cut_side_rows_after_x058
+    rationale: >
+      After X058, the X052-X057 staging audit should not be treated as the current
+      queue. X059 reads the refreshed X051 cut-side rows, current source items,
+      and current evidence rows, then classifies each row into the next required
+      lane: existing selection evidence review, existing source-item rescue review,
+      or external source acquisition.
+    scoring_effect: none
+    required_followup:
+      - review_dunbar_and_hughes_needs_followup_selection_evidence_first
+      - scope_review_creator_exact_rescue_rows_before_evidence_generation
+      - register_or_reject_external_source_queries_for_no_local_support_rows
+      - keep_public_replacement_pairs_blocked
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
