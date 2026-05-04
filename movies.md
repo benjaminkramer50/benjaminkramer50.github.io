@@ -6,7 +6,7 @@ title: Movie Log
 <p class="page-intro">Films I have watched and what I thought.</p>
 
 {% assign sorted_movies = site.data.movies | reverse | sort: "date_watched" | reverse %}
-{% assign fav_movies = sorted_movies | sort: "rating" | reverse %}
+{% assign fav_movies = sorted_movies | sort: "date_watched" | reverse %}
 {% assign canon_movies = site.data.movie_canon %}
 
 {% if sorted_movies.size > 0 or canon_movies.size > 0 %}
@@ -20,14 +20,14 @@ title: Movie Log
   <div class="shelf-section" id="shelf-favorites" data-shelf-view-panel="favorites">
     {% assign favorite_count = 0 %}
     {% for item in fav_movies %}
-      {% if item.favorite or item.rating >= 4 %}
+      {% if item.favorite %}
         {% assign favorite_count = favorite_count | plus: 1 %}
       {% endif %}
     {% endfor %}
     {% if favorite_count > 0 %}
     <div class="favorite-poster-grid">
       {% for item in fav_movies %}
-      {% if item.favorite or item.rating >= 4 %}
+      {% if item.favorite %}
       {% assign movie_key = item.title | slugify | append: '-' | append: item.year %}
       {% assign poster = site.data.movie_posters[movie_key] %}
       <article class="favorite-poster-card">
