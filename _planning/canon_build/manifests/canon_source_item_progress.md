@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 293
-- source_item_rows: 6165
-- evidence_rows: 761
+- registered_sources: 297
+- source_item_rows: 6169
+- evidence_rows: 765
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -304,6 +304,10 @@
 | `x082_google_books_labe_sonnets_elegies` | X082 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x082_larousse_ronsard_odes` | X082 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x082_poetry_foundation_swinburne_poems_ballads` | X082 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x083_britannica_mansfield_garden_party` | X083 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x083_britannica_pushkin_tales_belkin` | X083 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x083_penguin_mansfield_garden_party` | X083 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x083_prh_pushkin_tales_belkin` | X083 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 

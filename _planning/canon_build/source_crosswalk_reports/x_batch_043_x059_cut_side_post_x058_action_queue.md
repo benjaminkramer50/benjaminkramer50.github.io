@@ -16,9 +16,10 @@ Lane summary:
 
 | Lane | Rows |
 |---|---:|
+| `accepted_selection_only_complete_work_source_needed` | 1 |
 | `cut_side_source_debt_closed_review` | 3 |
 | `existing_source_item_rescue_review` | 3 |
-| `external_source_acquisition` | 44 |
+| `external_source_acquisition` | 43 |
 
 Highest-priority rows:
 
@@ -27,15 +28,15 @@ Highest-priority rows:
 | `x059_cut_action_0001` | The Weary Blues | Langston Hughes | `cut_side_source_debt_closed_review` | `compute_or_review_cut_side_score_inputs` |
 | `x059_cut_action_0002` | Lyrics of Lowly Life | Paul Laurence Dunbar | `cut_side_source_debt_closed_review` | `compute_or_review_cut_side_score_inputs` |
 | `x059_cut_action_0003` | Poems, Chiefly in the Scottish Dialect | Robert Burns | `cut_side_source_debt_closed_review` | `compute_or_review_cut_side_score_inputs` |
-| `x059_cut_action_0004` | Selected Abhangas | Tukaram | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0005` | Rime | Guido Cavalcanti | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0006` | A Throw of the Dice and Selected Poems | Stephane Mallarme | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0007` | Poems | Alcman | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0008` | Selected Yuefu Songs | Han and post-Han poetic tradition | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0009` | Quatrains | Baba Taher | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0010` | Selected Poems | Samuel ha-Nagid | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0011` | Selected Ci Poems | Xin Qiji | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0012` | Selected Ci Poems | Li Qingzhao | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0004` | Poems | Paul Celan | `accepted_selection_only_complete_work_source_needed` | `search_for_complete_work_source_support` |
+| `x059_cut_action_0005` | Selected Abhangas | Tukaram | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
+| `x059_cut_action_0006` | Rime | Guido Cavalcanti | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
+| `x059_cut_action_0007` | A Throw of the Dice and Selected Poems | Stephane Mallarme | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
+| `x059_cut_action_0008` | Poems | Alcman | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0009` | Selected Yuefu Songs | Han and post-Han poetic tradition | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0010` | Quatrains | Baba Taher | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0011` | Selected Poems | Samuel ha-Nagid | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0012` | Selected Ci Poems | Xin Qiji | `external_source_acquisition` | `create_source_acquisition_query` |
 
 ## Interpretation
 
