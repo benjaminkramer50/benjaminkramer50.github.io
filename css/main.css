@@ -2388,38 +2388,6 @@ textarea:focus-visible,
   color: var(--color-muted);
 }
 
-.canon-browser-summary {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.5rem;
-  min-width: min(100%, 380px);
-}
-
-.canon-summary-stat {
-  padding: 0.6rem 0.7rem;
-  border: 1px solid var(--color-border);
-  border-radius: 6px;
-  background: var(--color-surface);
-}
-
-.canon-summary-stat strong {
-  display: block;
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  line-height: 1.1;
-  color: var(--color-text);
-}
-
-.canon-summary-stat span {
-  display: block;
-  margin-top: 0.2rem;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--color-muted);
-}
-
 .canon-filters {
   margin-bottom: 0.9rem;
 }
@@ -2814,11 +2782,6 @@ textarea:focus-visible,
 
   .canon-browser-topline {
     flex-direction: column;
-  }
-
-  .canon-browser-summary {
-    min-width: 0;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .canon-pagination {

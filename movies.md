@@ -147,7 +147,6 @@ title: Movie Log
       <h2 class="canon-browser-title">Canon</h2>
       <p class="canon-browser-note">A searchable catalog of the combined-editions canon, with watched films marked where they overlap.</p>
     </div>
-    <div class="canon-browser-summary" id="canon-summary"></div>
   </div>
 
   <div class="diary-filters canon-filters">
@@ -378,7 +377,6 @@ title: Movie Log
   var prevBtn = document.getElementById('canon-prev');
   var nextBtn = document.getElementById('canon-next');
   var pageStatus = document.getElementById('canon-page-status');
-  var summary = document.getElementById('canon-summary');
   var noResults = document.getElementById('canon-no-results');
   var pageSize = 36;
   var currentPage = 1;
@@ -457,32 +455,6 @@ title: Movie Log
       date_watched: summaryEntry ? summaryEntry.date_watched : ''
     };
   });
-
-  function buildSummary() {
-    if (!summary) return;
-    var reviewed = 0;
-    var favorites = 0;
-    canonItems.forEach(function (item) {
-      if (item.reviewed) reviewed++;
-      if (item.favorite) favorites++;
-    });
-
-    summary.innerHTML = '';
-
-    var stats = [
-      ['Films', canonItems.length],
-      ['Reviewed', reviewed],
-      ['Favorites', favorites],
-      ['Not reviewed', canonItems.length - reviewed]
-    ];
-
-    stats.forEach(function (stat) {
-      var node = document.createElement('div');
-      node.className = 'canon-summary-stat';
-      node.innerHTML = '<strong>' + stat[1] + '</strong><span>' + stat[0] + '</span>';
-      summary.appendChild(node);
-    });
-  }
 
   function currentFilterValue() {
     return {
@@ -609,7 +581,6 @@ title: Movie Log
       noResults.style.display = filtered.length === 0 ? '' : 'none';
     }
 
-    if (summary) buildSummary();
   }
 
   function resetPage() {
@@ -635,7 +606,6 @@ title: Movie Log
     });
   }
 
-  buildSummary();
   render();
 })();
 </script>
