@@ -385,6 +385,22 @@ decisions:
       - keep_named_collection_rows_source_debt_open_until_exact_collection_support_exists
       - do_not_recompute_cut_scores_until_evidence_rows_are_reviewed
     public_path_effect: none
+  - decision_id: x057_cut_evidence_write_plan_001
+    decision_type: cut_evidence_write_plan_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_cut_evidence_write_plan.tsv
+    decision: stage_review_gated_evidence_writes_without_modifying_evidence_ledger
+    rationale: >
+      X056 identified source items that may support representative-selection
+      evidence. X057 converts those ready item rows into proposed evidence writes,
+      but keeps every row gated so `canon_evidence.tsv` is unchanged until explicit
+      review acceptance.
+    scoring_effect: none
+    required_followup:
+      - accept_or_reject_write_plan_rows_before_evidence_ledger_update
+      - update_source_debt_and_scoring_inputs_only_after_evidence_changes
+      - keep_public_replacement_pairs_blocked
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002

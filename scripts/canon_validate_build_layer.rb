@@ -51,6 +51,7 @@ TABLE_FILES = {
   "cut_rescue_scope_review" => File.join(BUILD_DIR, "tables", "canon_cut_rescue_scope_review.tsv"),
   "cut_evidence_proposals" => File.join(BUILD_DIR, "tables", "canon_cut_evidence_proposals.tsv"),
   "cut_evidence_item_decisions" => File.join(BUILD_DIR, "tables", "canon_cut_evidence_item_decisions.tsv"),
+  "cut_evidence_write_plan" => File.join(BUILD_DIR, "tables", "canon_cut_evidence_write_plan.tsv"),
   "packet_status" => File.join(BUILD_DIR, "tables", "canon_packet_status.tsv")
 }.freeze
 
@@ -80,6 +81,7 @@ HEADER_REQUIREMENTS = {
   "cut_rescue_scope_review" => ["scope_review_id", "rescue_id", "cut_work_id", "scope_review_class", "scope_risk", "evidence_generation_gate", "next_action"],
   "cut_evidence_proposals" => ["proposal_id", "cut_work_id", "source_id", "proposed_evidence_type", "proposal_gate", "reviewer_status", "next_action"],
   "cut_evidence_item_decisions" => ["item_decision_id", "scope_review_id", "cut_work_id", "source_item_id", "item_decision", "evidence_effect", "next_action"],
+  "cut_evidence_write_plan" => ["write_plan_id", "item_decision_id", "target_action", "work_id", "source_item_id", "write_gate", "next_action"],
   "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
 }.freeze
 
