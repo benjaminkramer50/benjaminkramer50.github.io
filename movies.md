@@ -359,6 +359,7 @@ title: Movie Log
 
 <script type="application/json" id="canon-movies-data">{{ canon_movies | jsonify }}</script>
 <script type="application/json" id="watched-movies-data">{{ sorted_movies | jsonify }}</script>
+<script type="application/json" id="movie-posters-data">{{ site.data.movie_posters | jsonify }}</script>
 
 <script>
 (function () {
@@ -368,8 +369,10 @@ title: Movie Log
 
   var canonDataEl = document.getElementById('canon-movies-data');
   var watchedDataEl = document.getElementById('watched-movies-data');
+  var moviePostersEl = document.getElementById('movie-posters-data');
   var canonData = canonDataEl ? JSON.parse(canonDataEl.textContent || '[]') : [];
   var watchedData = watchedDataEl ? JSON.parse(watchedDataEl.textContent || '[]') : [];
+  var moviePosters = moviePostersEl ? JSON.parse(moviePostersEl.textContent || '{}') : {};
 
   var searchInput = document.getElementById('canon-search');
   var statusSelect = document.getElementById('canon-status');
@@ -391,6 +394,11 @@ title: Movie Log
 
   function movieKey(title, year) {
     return slugify(title) + '-' + String(year || '');
+  }
+
+  function posterForMovie(item) {
+    var key = item.slug || movieKey(item.title, item.year);
+    return moviePosters[key] && moviePosters[key].poster_url ? moviePosters[key].poster_url : '';
   }
 
   function parseDate(value) {
@@ -525,7 +533,17 @@ title: Movie Log
       if (item.favorite) {
         statusPills += '<span class="canon-pill canon-pill-favorite">Favorite</span>';
       }
-      var reviewHtml = item.reviewed ? '<div class="canon-row-review"><p>' + escapeHtml(item.review).replace(/\n/g, '<br>') + '</p></div>' : '';
+      var posterUrl = posterForMovie(item);
+      var reviewHtml = item.reviewed ? (
+        '<div class="canon-row-review">' +
+          '<div class="canon-row-review-poster">' +
+            (posterUrl
+              ? '<img src="' + escapeHtml(posterUrl) + '" alt="' + escapeHtml(item.title) + ' poster" loading="lazy">'
+              : '<div class="canon-row-review-placeholder"><span>' + escapeHtml(item.title) + '</span><span>(' + escapeHtml(item.year) + ')</span></div>') +
+          '</div>' +
+          '<div class="canon-row-review-copy"><p>' + escapeHtml(item.review).replace(/\n/g, '<br>') + '</p></div>' +
+        '</div>'
+      ) : '';
 
       row.innerHTML =
         '<div class="canon-row-main">' +

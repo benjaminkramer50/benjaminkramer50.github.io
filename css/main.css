@@ -2438,7 +2438,7 @@ textarea:focus-visible,
 
 .canon-row {
   border: 1px solid var(--color-border);
-  border-left: 3px solid transparent;
+  border-left: 3px solid var(--color-border);
   border-radius: 6px;
   background: var(--color-surface);
   padding: 0.8rem 0.9rem;
@@ -2544,17 +2544,61 @@ textarea:focus-visible,
   margin-top: 0.65rem;
   padding-top: 0.55rem;
   border-top: 1px solid var(--color-border);
+}
+
+.canon-row-open .canon-row-review,
+.canon-row.expanded .canon-row-review {
+  display: grid;
+  grid-template-columns: minmax(96px, 132px) minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.canon-row-review-poster {
+  aspect-ratio: 2 / 3;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.canon-row-review-poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.canon-row-review-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 100%);
+  color: var(--color-muted);
+}
+
+.canon-row-review-placeholder span:first-child {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+
+.canon-row-review-placeholder span:last-child {
+  margin-top: 0.2rem;
+  font-size: 0.72rem;
+}
+
+.canon-row-review-copy {
+  min-width: 0;
   font-size: 0.84rem;
   color: var(--color-muted);
   line-height: 1.55;
 }
 
-.canon-row-open .canon-row-review,
-.canon-row.expanded .canon-row-review {
-  display: block;
-}
-
-.canon-row-review p {
+.canon-row-review-copy p {
   margin: 0;
 }
 
