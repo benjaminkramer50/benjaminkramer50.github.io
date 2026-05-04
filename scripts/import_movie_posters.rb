@@ -52,6 +52,11 @@ def search_uri(query)
   URI("https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=#{encoded}&format=json&origin=*")
 end
 
+def pageimages_uri(page_title)
+  encoded = CGI.escape(page_title).gsub('+', '%20')
+  URI("https://en.wikipedia.org/w/api.php?action=query&titles=#{encoded}&prop=pageimages&piprop=thumbnail|original&pithumbsize=600&format=json&origin=*")
+end
+
 def fetch_summary(page_title)
   data = http_get_json(summary_uri(page_title))
   return nil unless data.is_a?(Hash)
@@ -67,6 +72,25 @@ def fetch_summary(page_title)
   end
 end
 
+def fetch_pageimage(page_title)
+  data = http_get_json(pageimages_uri(page_title))
+  pages = data && data.dig('query', 'pages')
+  return nil unless pages.is_a?(Hash)
+
+  pages.each_value do |page|
+    image = page['thumbnail'] && page['thumbnail']['source']
+    image ||= page['original'] && page['original']['source']
+    next unless image
+
+    return {
+      page_title: page['title'] || page_title,
+      poster_url: image
+    }
+  end
+
+  nil
+end
+
 def candidate_titles(title, year)
   slug_title = title.tr(' ', '_')
   [
@@ -79,7 +103,7 @@ end
 
 def poster_for_movie(title, year)
   candidate_titles(title, year).each do |candidate|
-    info = fetch_summary(candidate)
+    info = fetch_summary(candidate) || fetch_pageimage(candidate)
     return info if info
     sleep 1.5
   end
@@ -90,7 +114,7 @@ def poster_for_movie(title, year)
   return nil unless hits
 
   hits.first(5).each do |hit|
-    info = fetch_summary(hit['title'])
+    info = fetch_summary(hit['title']) || fetch_pageimage(hit['title'])
     return info if info
     sleep 1.5
   end
@@ -102,6 +126,11 @@ movies.each do |movie|
   next unless movie['title'] && movie['year']
 
   key = "#{movie['title'].downcase.gsub(/[^a-z0-9]+/, '-')}-#{movie['year']}"
+  existing = posters[key]
+  if existing && existing['poster_url']
+    next
+  end
+
   info = poster_for_movie(movie['title'], movie['year'])
 
   posters[key] = {
