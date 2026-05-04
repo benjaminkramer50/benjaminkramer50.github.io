@@ -91,7 +91,7 @@ title: Movie Log
           {% endif %}
           {% assign movie_key = item.title | slugify | append: '-' | append: item.year %}
           {% assign poster = site.data.movie_posters[movie_key] %}
-          <div class="diary-row"
+          <div class="diary-row{% if item.review %} diary-row-has-review{% endif %}"
                id="movie-{{ forloop.index }}"
                data-title="{{ item.title }}"
                data-year="{{ item.year }}"
@@ -100,7 +100,7 @@ title: Movie Log
                data-date="{{ item.date_watched }}"
                data-poster-url="{% if poster and poster.poster_url %}{{ poster.poster_url }}{% endif %}"
                data-month="{{ item.date_watched | date: '%B %Y' }}">
-            <div class="diary-row-main">
+            <div class="diary-row-main"{% if item.review %} role="button" tabindex="0" aria-expanded="false"{% endif %}>
               <span class="diary-date">{{ item.date_watched | date: "%b %d" }}</span>
               <span class="diary-title">{{ item.title }} <span class="diary-year">({{ item.year }})</span></span>
               <span class="diary-director">{{ item.director }}</span>
@@ -112,7 +112,21 @@ title: Movie Log
               </span>
             </div>
             {% if item.review %}
-            <div class="diary-review">{{ item.review }}</div>
+            <div class="diary-review" aria-hidden="true">
+              <div class="diary-review-poster">
+                {% if poster and poster.poster_url %}
+                <img src="{{ poster.poster_url }}" alt="{{ item.title }} poster" loading="lazy">
+                {% else %}
+                <div class="diary-review-placeholder">
+                  <span>{{ item.title }}</span>
+                  <span>{{ item.year }}</span>
+                </div>
+                {% endif %}
+              </div>
+              <div class="diary-review-copy">
+                <p>{{ item.review | newline_to_br }}</p>
+              </div>
+            </div>
             {% endif %}
           </div>
         {% endfor %}
@@ -122,20 +136,6 @@ title: Movie Log
 
       <button class="diary-show-more" id="diary-show-more" style="display:none;">Show more</button>
     </div>
-
-    <aside class="recent-browser-detail" id="recent-detail" aria-live="polite">
-      <div class="recent-detail-empty" id="recent-detail-empty">Select a recent movie.</div>
-      <div class="recent-detail-body" id="recent-detail-body" hidden>
-        <div class="recent-detail-poster">
-          <img id="recent-detail-image" alt="" loading="lazy">
-        </div>
-        <div class="recent-detail-copy">
-          <div class="recent-detail-title" id="recent-detail-title"></div>
-          <div class="recent-detail-meta" id="recent-detail-meta"></div>
-          <div class="recent-detail-review" id="recent-detail-review"></div>
-        </div>
-      </div>
-    </aside>
   </div>
   </div>
 
@@ -186,13 +186,6 @@ title: Movie Log
   var filterGenre = document.getElementById('filter-genre');
   var filterRating = document.getElementById('filter-rating');
   var filterSearch = document.getElementById('filter-search');
-  var recentDetailEmpty = document.getElementById('recent-detail-empty');
-  var recentDetailBody = document.getElementById('recent-detail-body');
-  var recentDetailImage = document.getElementById('recent-detail-image');
-  var recentDetailTitle = document.getElementById('recent-detail-title');
-  var recentDetailMeta = document.getElementById('recent-detail-meta');
-  var recentDetailReview = document.getElementById('recent-detail-review');
-  var selectedRecentKey = '';
 
   // Populate dropdown options from data
   var years = [], genres = [], ratings = [];
@@ -248,74 +241,16 @@ title: Movie Log
     });
   }
 
-  function rowKey(row) {
-    return [row.getAttribute('data-title'), row.getAttribute('data-date')].join('|');
-  }
-
-  function showRecentDetail(row) {
-    if (!row) return;
-
-    selectedRecentKey = rowKey(row);
-    rows.forEach(function (item) {
-      item.classList.toggle('diary-row-selected', item === row);
-    });
-
-    var title = row.getAttribute('data-title') || '';
-    var year = row.getAttribute('data-year') || '';
-    var director = row.querySelector('.diary-director') ? row.querySelector('.diary-director').textContent : '';
-    var posterUrl = row.getAttribute('data-poster-url') || '';
-    var reviewNode = row.querySelector('.diary-review');
-    var reviewHtml = reviewNode ? reviewNode.innerHTML : '';
-
-    if (recentDetailEmpty) recentDetailEmpty.hidden = true;
-    if (recentDetailBody) recentDetailBody.hidden = false;
-    if (recentDetailTitle) recentDetailTitle.textContent = title;
-    if (recentDetailMeta) recentDetailMeta.textContent = [year ? '(' + year + ')' : '', director].filter(Boolean).join(' · ');
-    if (recentDetailReview) {
-      recentDetailReview.innerHTML = reviewHtml ? reviewHtml : '<p class="recent-detail-missing">No review written yet.</p>';
-    }
-    if (recentDetailImage) {
-      if (posterUrl) {
-        recentDetailImage.src = posterUrl;
-        recentDetailImage.alt = title + ' poster';
-        recentDetailImage.hidden = false;
-      } else {
-        recentDetailImage.removeAttribute('src');
-        recentDetailImage.alt = '';
-        recentDetailImage.hidden = true;
-      }
-    }
-  }
-
-  function clearRecentDetail() {
-    selectedRecentKey = '';
-    rows.forEach(function (item) {
-      item.classList.remove('diary-row-selected');
-    });
-    if (recentDetailEmpty) recentDetailEmpty.hidden = false;
-    if (recentDetailBody) recentDetailBody.hidden = true;
-    if (recentDetailReview) recentDetailReview.innerHTML = '';
-    if (recentDetailImage) {
-      recentDetailImage.removeAttribute('src');
-      recentDetailImage.alt = '';
-      recentDetailImage.hidden = true;
-    }
-  }
-
   function render() {
     var filtered = getFilteredRows();
-    var visibleRows = [];
 
     // Hide all rows first
     rows.forEach(function(row) { row.style.display = 'none'; });
 
     // Show filtered rows up to visibleCount
-    var shown = 0;
     filtered.forEach(function(row, i) {
       if (i < visibleCount) {
         row.style.display = '';
-        visibleRows.push(row);
-        shown++;
       }
     });
 
@@ -337,24 +272,6 @@ title: Movie Log
 
     // No results message
     noResults.style.display = filtered.length === 0 ? '' : 'none';
-
-    if (!visibleRows.length) {
-      clearRecentDetail();
-      return;
-    }
-
-    var selectedRow = null;
-    if (selectedRecentKey) {
-      visibleRows.some(function (row) {
-        if (rowKey(row) === selectedRecentKey) {
-          selectedRow = row;
-          return true;
-        }
-        return false;
-      });
-    }
-    if (!selectedRow) selectedRow = visibleRows[0];
-    showRecentDetail(selectedRow);
   }
 
   // Reset visible count on filter change
@@ -373,17 +290,26 @@ title: Movie Log
     render();
   });
 
-  // Click to drive recent detail panel
+  // Click to toggle inline review cards.
   rows.forEach(function(row) {
     var main = row.querySelector('.diary-row-main');
     if (main) {
       main.addEventListener('click', function(e) {
         e.preventDefault();
-        showRecentDetail(row);
+        if (!row.querySelector('.diary-review')) return;
+        var isOpen = row.classList.toggle('diary-row-open');
+        row.classList.toggle('expanded', isOpen);
+        main.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
-      main.style.cursor = 'pointer';
-    } else if (main) {
-      main.style.cursor = 'default';
+      if (row.querySelector('.diary-review')) {
+        main.style.cursor = 'pointer';
+        main.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            main.click();
+          }
+        });
+      }
     }
   });
 
