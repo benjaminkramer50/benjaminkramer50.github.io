@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 169
-- source_item_rows: 6041
-- evidence_rows: 637
+- registered_sources: 191
+- source_item_rows: 6063
+- evidence_rows: 659
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -180,6 +180,28 @@
 | `x075_treccani_verga_novelle_rusticane` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x075_uhpress_flying_fox` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x075_uqp_heat_light` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_britannica_barthelme_sixty_stories` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_britannica_ihimaera_pounamu` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_britannica_nz_lit_pounamu` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_britannica_perse_exile_and_other_poems` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_consortium_red_ants` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_deep_vellum_red_ants` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_doaj_writers_of_angarey` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_enciclopedia_cat_la_pell_de_brau` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_encyclopedia_com_sanatorium_hourglass` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_escriptors_cat_la_pell_de_brau` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_google_books_kisses_from_another_dream` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_loa_barthelme_collected_stories` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_macmillan_sixty_stories` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_mexico_news_daily_red_ants` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_nobel_bibliography_perse_exile_and_other_poems` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_nobel_perse_exile_and_other_poems` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_oxford_academic_analysing_angarey` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_penguin_nz_pounamu` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_prh_reading_guide_sanatorium` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_prh_schulz_complete_fiction_sanatorium` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_tandfonline_angarey_censored_literature` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x076_uchicago_city_lights_kisses_from_another_dream` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 

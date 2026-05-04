@@ -11,7 +11,7 @@ X051 reviews the current X050 cut-side work orders as selection-basis and source
 - Added `scripts/canon_generate_generic_selection_basis_review.rb`.
 - Added `canon_generic_selection_basis_review.tsv`.
 - Generated 45 review rows from X050 work orders.
-- Rows with alias support: 2.
+- Rows with alias support: 3.
 - Rows with matched source items: 1.
 - Generic-title rows without accepted evidence: 44.
 
