@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 211
-- source_item_rows: 6083
-- evidence_rows: 679
+- registered_sources: 227
+- source_item_rows: 6099
+- evidence_rows: 695
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -222,6 +222,22 @@
 | `x077_uhpress_tales_tikongs` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x077_uw_press_stories_old_and_new` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x077_writers_trust_olive_senior_summer_lightning` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_britannica_book_of_sand` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_britannica_burning_plain` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_britannica_new_net` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_comma_madman_freedom_square` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_encyclopedia_new_net` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_english_pen_madman_freedom_square` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_google_books_collected_colette` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_google_books_encyclopedia_dead` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_google_books_lottery_stories` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_grove_lone_ranger_tonto` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_macmillan_collected_colette` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_macmillan_lottery_stories` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_nbf_sherman_alexie_lone_ranger_tonto` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_nup_encyclopedia_dead` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_prh_book_of_sand` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x078_utpress_burning_plain` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 

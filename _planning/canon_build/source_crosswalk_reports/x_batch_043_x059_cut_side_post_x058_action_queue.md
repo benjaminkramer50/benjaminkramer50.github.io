@@ -17,8 +17,8 @@ Lane summary:
 | Lane | Rows |
 |---|---:|
 | `cut_side_source_debt_closed_review` | 1 |
-| `existing_source_item_rescue_review` | 5 |
-| `external_source_acquisition` | 39 |
+| `existing_source_item_rescue_review` | 3 |
+| `external_source_acquisition` | 41 |
 
 Highest-priority rows:
 
@@ -26,16 +26,16 @@ Highest-priority rows:
 |---|---|---|---|---|
 | `x059_cut_action_0001` | Poems, Chiefly in the Scottish Dialect | Robert Burns | `cut_side_source_debt_closed_review` | `compute_or_review_cut_side_score_inputs` |
 | `x059_cut_action_0002` | Selected Abhangas | Tukaram | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0003` | The Book of Sand | Jorge Luis Borges | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0004` | Sonnets to Orpheus | Rainer Maria Rilke | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0005` | Selected Poems | Humberto Ak'abal | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0006` | The Burning Plain | Juan Rulfo | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0007` | Selected Poems | Archilochus | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0008` | Poems | Alcman | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0009` | Selected Yuefu Songs | Han and post-Han poetic tradition | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0010` | Selected Poems | Cao Cao | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0011` | Selected Poems | Cao Zhi | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0012` | Selected Poems | Ruan Ji | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0003` | Sonnets to Orpheus | Rainer Maria Rilke | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
+| `x059_cut_action_0004` | Selected Poems | Humberto Ak'abal | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
+| `x059_cut_action_0005` | Selected Poems | Archilochus | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0006` | Poems | Alcman | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0007` | Selected Yuefu Songs | Han and post-Han poetic tradition | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0008` | Selected Poems | Cao Cao | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0009` | Selected Poems | Cao Zhi | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0010` | Selected Poems | Ruan Ji | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0011` | Selected Poems | Bao Zhao | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0012` | Quatrains | Baba Taher | `external_source_acquisition` | `create_source_acquisition_query` |
 
 ## Interpretation
 
