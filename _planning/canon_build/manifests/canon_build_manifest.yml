@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-04'
-status: top_external_acquisition_rescue_x073_applied
+status: exact_title_external_rescue_x074_applied
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -25,7 +25,7 @@ gates:
   metadata_access_rows_do_not_close_canon_support_debt: true
 artifacts:
   source_registry: e001_e018_registered_source_items_pending
-  source_items: e001_ingested_x001_x006_pilot_x013_materialized_x020_x021_x022_x023_x024_x025_x026_x027_x036_x043_x064_x066_x067_x068_x070_x071_x072_and_x073_source_items
+  source_items: e001_ingested_through_x074_exact_title_source_items
   work_candidates: build_layer_hughes_title_scope_corrected_x072_public_path_unchanged
   aliases: bootstrapped_from_current_path_plus_x013_source_title_aliases_plus_x031
   relations: initialized_empty
@@ -36,16 +36,16 @@ artifacts:
   relation_review_decisions: generated_x014_explicit_decisions_after_x043_reference_corroboration
   relation_scope_rules: draft_policy_plus_x043_same_work_alias_scope
   relation_scope_status: generated_x014_expanded_after_x043_reference_corroboration
-  evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows_after_x043_plus_x058_x062_x066_x067_x068_representative_selection_x064_complete_work_support_x070_x071_x072_external_support_and_x073_top_queue_support
+  evidence: e001_ingested_policy_aware_rows_through_x074_exact_title_external_support
   source_weights: draft_policy_created
   source_debt_rules: draft_policy_created
-  source_debt_status: refreshed_after_x073_top_external_acquisition_rescue
+  source_debt_status: refreshed_after_x074_exact_title_external_rescue
   omission_queue: generated_x018_after_x043
-  scoring_inputs: refreshed_after_x073_top_external_acquisition_rescue
-  scores: regenerated_x073_provisional_ready_rows_only
-  replacement_candidates: regenerated_after_x073_blocked_add_cut_pairings
-  cut_candidates: regenerated_after_x073_all_incumbent_cut_risk_table
-  generic_selection_basis_review: regenerated_x051_after_x073_from_cut_review_work_orders
+  scoring_inputs: refreshed_after_x074_exact_title_external_rescue
+  scores: regenerated_x074_provisional_ready_rows_only
+  replacement_candidates: regenerated_after_x074_blocked_add_cut_pairings
+  cut_candidates: regenerated_after_x074_all_incumbent_cut_risk_table
+  generic_selection_basis_review: regenerated_x051_after_x074_from_cut_review_work_orders
   cut_source_item_rescue_candidates: generated_x052_from_x051_and_source_items
   cut_review_resolution_lanes: generated_x053_from_x051_x052
   cut_rescue_scope_review: generated_x054_from_x052_rescue_rows
@@ -53,12 +53,12 @@ artifacts:
   cut_evidence_item_decisions: generated_x056_from_x054_x055
   cut_evidence_write_plan: generated_x057_from_x056_ready_items
   cut_evidence_applied_rows: generated_x058_from_x057_write_plan
-  cut_side_post_x058_action_queue: refreshed_after_x073_from_current_x051
+  cut_side_post_x058_action_queue: refreshed_after_x074_from_current_x051
   existing_selection_evidence_reviews: generated_x060_from_x059_needs_followup_rows
-  current_rescue_scope_review: refreshed_x065_after_x073_from_current_x059_existing_source_rescue_lane
+  current_rescue_scope_review: refreshed_x065_after_x074_from_current_x059_existing_source_rescue_lane
   medium_risk_rescue_evidence_applied: generated_x062_from_x061_medium_risk_rows
   current_medium_risk_rescue_evidence_applied: generated_x066_x067_x068_from_current_x065_medium_risk_rows
-  high_risk_rescue_residue: refreshed_x063_after_x073_from_current_x065_high_risk_rows
+  high_risk_rescue_residue: refreshed_x063_after_x074_from_current_x065_high_risk_rows
   selection_only_complete_work_support_review: generated_x064_from_current_selection_only_rows
   path_selection: bootstrapped_from_current_path
   creators: bootstrapped_from_current_path_plus_x013_candidate_creators_plus_x034_variants
@@ -75,6 +75,7 @@ artifacts:
   external_source_rescue_evidence_applied_x071: generated_x071_for_family_ties_source_rescue
   title_scope_corrections_x072: generated_x072_hughes_composite_title_to_weary_blues
   external_source_rescue_evidence_applied_x073: generated_x073_for_top_external_acquisition_rows
+  external_source_rescue_evidence_applied_x074: generated_x074_for_exact_title_external_acquisition_rows
 bootstrap_counts:
   work_candidates: 3000
   creators: 2000
@@ -87,17 +88,17 @@ current_counts:
   creators: 2006
   work_creators: 3019
   aliases: 452
-  source_items: 5993
-  evidence_rows: 589
+  source_items: 6013
+  evidence_rows: 609
   relation_scope_status_rows: 7588
   source_debt_status_rows: 3012
   omission_queue_rows: 12
   scoring_input_rows: 3012
-  scoring_ready_rows: 22
-  scoring_blocked_rows: 2990
-  score_rows: 22
+  scoring_ready_rows: 30
+  scoring_blocked_rows: 2982
+  score_rows: 30
   coverage_target_rows: 72
-  replacement_candidate_rows: 1125
+  replacement_candidate_rows: 1085
   replacement_pair_review_queue_rows: 75
   cut_review_work_order_rows: 45
   generic_selection_basis_review_rows: 45
@@ -115,12 +116,12 @@ current_counts:
   current_medium_risk_rescue_evidence_applied_rows: 19
   high_risk_rescue_residue_rows: 0
   cut_candidate_rows: 3000
-  source_items_matched_current_path: 325
+  source_items_matched_current_path: 345
   source_items_matched_candidate: 24
   source_items_represented_by_selection: 240
   source_items_out_of_scope: 1
   source_items_unmatched: 5403
-  source_registry_rows: 121
+  source_registry_rows: 141
   current_high_risk_resolution_queue_rows: 17
   current_high_risk_work_resolution_rows: 7
   x070_external_source_rescue_rows: 14
@@ -136,6 +137,9 @@ current_counts:
   x073_external_source_rescue_rows: 19
   x073_target_works_closed: 7
   current_high_risk_residue_rows_after_x073: 0
+  x074_external_source_rescue_rows: 20
+  x074_target_works_closed: 8
+  current_high_risk_residue_rows_after_x074: 0
 source_crosswalk_batch_e001_e006:
   source_registry_rows: 9
   e001_source_items: 61
@@ -853,4 +857,16 @@ top_external_acquisition_rescue_x073:
     external_source_acquisition: 45
   current_high_risk_residue_rows_after_refresh: 0
   deferred_selected_or_fragmentary_rows: 4
+  direct_replacements: 0
+exact_title_external_rescue_x074:
+  status: applied_public_sources_for_exact_title_rows
+  target_work_rows: 8
+  source_registry_rows_added_or_updated: 20
+  source_item_rows_added_or_updated: 20
+  evidence_rows_added_or_updated: 20
+  target_source_debt_closed_after_refresh: 8
+  lane_counts_after_refresh:
+    external_source_acquisition: 45
+  current_high_risk_residue_rows_after_refresh: 0
+  deferred_selection_or_uncertain_rows: 5
   direct_replacements: 0

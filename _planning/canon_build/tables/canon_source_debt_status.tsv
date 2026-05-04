@@ -184,9 +184,9 @@ work_candidate_eastasia_lit_ruan_ji_poems	incumbent_current_path	Selected Poems	
 work_candidate_mricchakatika_sanskrit_theater	incumbent_current_path	Mricchakatika	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_svapnavasavadatta	incumbent_current_path	Svapnavasavadatta	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_aethiopica	incumbent_current_path	Aethiopica	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_scale4_lit_ephrem_hymns_paradise	incumbent_current_path	Hymns on Paradise	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_scale4_lit_ephrem_hymns_paradise	incumbent_current_path	Hymns on Paradise	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_soushen_ji	incumbent_current_path	In Search of the Supernatural / Soushen Ji	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
-work_candidate_southasia_lit_jatakamala	incumbent_current_path	Jatakamala	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_southasia_lit_jatakamala	incumbent_current_path	Jatakamala	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_confessions_augustine	incumbent_current_path	Confessions	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_canon_recognition_of_shakuntala	incumbent_current_path	Kalidasa: The Recognition of Shakuntala	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
 work_candidate_mandatory_psychomachia	incumbent_current_path	Psychomachia	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1439,7 +1439,7 @@ work_candidate_bloom_woolf_mrs_dalloway	incumbent_current_path	Mrs Dalloway	0	0	
 work_canon_trial_kafka	incumbent_current_path	The Trial	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
 work_candidate_scale2_lit_an_american_tragedy	incumbent_current_path	An American Tragedy	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_chaka_mofolo	incumbent_current_path	Chaka	2	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
-work_candidate_bloom_reviewed_in_our_time	incumbent_current_path	In Our Time	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_reviewed_in_our_time	incumbent_current_path	In Our Time	3	3	0	3	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_audit_backfill_manhattan_transfer	incumbent_current_path	Manhattan Transfer	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_ossi_di_seppia	incumbent_current_path	Ossi di Seppia	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_pau_brasil	incumbent_current_path	Pau-Brasil	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1724,9 +1724,9 @@ work_candidate_bloom_kafka_stories	incumbent_current_path	Stories	0	0	0	0	0	0	0	
 work_candidate_latcarib_lit_brief_life	incumbent_current_path	A Brief Life	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_barabbas	incumbent_current_path	Barabbas	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_cavafy_poems	incumbent_current_path	Collected Poems	2	0	2	0	2	0	0	0	open_provisional_external_support	none	External evidence exists but reviewer_status is not accepted.	review_evidence_scope_and_accept_or_reject
-work_candidate_bloom_oconnor_complete_stories	incumbent_current_path	Complete Stories	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_oconnor_complete_stories	incumbent_current_path	Complete Stories	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_africa_lit_ewi_poetry	incumbent_current_path	Ewi: Selected Yoruba Performance Poetry	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_completion_lit_gimpel_fool	incumbent_current_path	Gimpel the Fool and Other Stories	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_completion_lit_gimpel_fool	incumbent_current_path	Gimpel the Fool and Other Stories	3	3	0	3	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_completion_lit_gormenghast	incumbent_current_path	Gormenghast	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_mahaprasthanam	incumbent_current_path	Mahaprasthanam	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_pinjar	incumbent_current_path	Pinjar	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2577,7 +2577,7 @@ work_candidate_indig_lit_mayan_life	incumbent_current_path	A Mayan Life	0	0	0	0	
 work_candidate_completion_lit_blasted	incumbent_current_path	Blasted	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_chronicle_blood_merchant	incumbent_current_path	Chronicle of a Blood Merchant	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale5_lit_dark_materials	incumbent_current_path	His Dark Materials	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_global_lit_krik_krak	incumbent_current_path	Krik? Krak!	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_global_lit_krik_krak	incumbent_current_path	Krik? Krak!	3	3	0	3	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_audit_backfill_native_speaker	incumbent_current_path	Native Speaker	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_reservation_blues	incumbent_current_path	Reservation Blues	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_me_lit_so_vast_prison	incumbent_current_path	So Vast the Prison	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2927,10 +2927,10 @@ work_candidate_globalcon_lit_underground_railroad	incumbent_current_path	The Und
 work_candidate_africa_lit_woman_next_door	incumbent_current_path	The Woman Next Door	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_things_lost_fire	incumbent_current_path	Things We Lost in the Fire	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_irl_pico	incumbent_current_path	IRL	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_eastasia_lit_cursed_bunny	incumbent_current_path	Cursed Bunny	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_eastasia_lit_cursed_bunny	incumbent_current_path	Cursed Bunny	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_globalcon_lit_dont_call_dead	incumbent_current_path	Don't Call Us Dead	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_exit_west	incumbent_current_path	Exit West	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_globalcon_lit_her_body	incumbent_current_path	Her Body and Other Parties	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_globalcon_lit_her_body	incumbent_current_path	Her Body and Other Parties	3	3	0	3	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_southasia_lit_home_fire	incumbent_current_path	Home Fire	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_hurricane_season	incumbent_current_path	Hurricane Season	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_iep_jaltok	incumbent_current_path	Iep Jaltok: Poems from a Marshallese Daughter	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items

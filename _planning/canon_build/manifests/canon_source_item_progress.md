@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 121
-- source_item_rows: 5993
-- evidence_rows: 589
+- registered_sources: 141
+- source_item_rows: 6013
+- evidence_rows: 609
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -132,6 +132,26 @@
 | `x073_rae_count_lucanor_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x073_rae_novelas_ejemplares_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x073_ucpress_pindar_odes_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_booker_cursed_bunny` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_britannica_danticat_krik_krak` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_britannica_gimpel_work_reference` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_britannica_hemingway_in_our_time` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_britannica_oconnor_complete_stories` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_britannica_yiddish_lit_singer_gimpel` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_cambridge_ephrem_hymns_paradise_review` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_encyclopedia_com_gimpel_reference` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_graywolf_her_body` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_loa_hemingway_in_our_time` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_nbcc_her_body_john_leonard` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_nbf_cursed_bunny` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_nbf_danticat_krik_krak` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_nbf_her_body` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_nbf_oconnor_complete_stories` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_nyupress_jatakamala_clay` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_prh_hemingway_in_our_time` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_soho_krik_krak` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_svspress_ephrem_hymns_paradise` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x074_uchicago_jatakamala_reference` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 
