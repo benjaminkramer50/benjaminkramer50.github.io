@@ -11,7 +11,7 @@ Hello! My name is Benjamin Kramer, and I am a research assistant at the <a class
 
 My research interests lie in computational biology, epidemiology, and the medical sciences. My current work focuses on large-scale analysis of electronic health records, disease modeling, and phenome-wide association studies.
 
-My non-academic interests include playing golf, running, tennis, chess, and Go. I also enjoy reading philosophy, particularly relating to Aristotelianism and Kant and have an interest in Classical Greece, Rome and the Byzantine Empire.
+My non-academic interests include boxing and chess. I also enjoy reading philosophy, particularly relating to Aristotelianism and Kant and have an interest in Classical Greece, Rome and the Byzantine Empire.
 
 <div class="timeline">
   <div class="timeline-item timeline-current">
@@ -24,7 +24,7 @@ My non-academic interests include playing golf, running, tennis, chess, and Go. 
   <div class="timeline-item">
     <div class="timeline-date">2025</div>
     <div class="timeline-content">
-      <div class="timeline-title">MIT</div>
+      <div class="timeline-title">Massachusetts Institute of Technology</div>
       <div class="timeline-desc">Bryson Lab, Biological Engineering. Single-cell RNA-seq atlases, CellTypist, de novo protein design.</div>
     </div>
   </div>
@@ -38,14 +38,14 @@ My non-academic interests include playing golf, running, tennis, chess, and Go. 
   <div class="timeline-item">
     <div class="timeline-date">2024</div>
     <div class="timeline-content">
-      <div class="timeline-title">UC Berkeley</div>
+      <div class="timeline-title">University of California, Berkeley</div>
       <div class="timeline-desc">REU, School of Public Health. Air pollution analysis via satellite data in West Africa.</div>
     </div>
   </div>
   <div class="timeline-item">
     <div class="timeline-date">2022 &ndash; 25</div>
     <div class="timeline-content">
-      <div class="timeline-title">CWRU</div>
+      <div class="timeline-title">Case Western Reserve University</div>
       <div class="timeline-desc">B.A. Computer Science and Economics, Minor in Mathematics. Research in renal physiology and biophysics.</div>
     </div>
   </div>
