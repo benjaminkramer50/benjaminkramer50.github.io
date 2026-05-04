@@ -4,13 +4,6 @@
   rating: 1.5
   genre: "Sci-Fi"
   date_watched: "2026-05-03"
-  thesis: "A promising time-travel thriller that never fully convinces because the people inside it feel less real than the idea driving them."
-  verdict: "Interesting premise, messy execution."
-  lenses:
-    - time-travel
-    - characterization
-    - structure
-    - performance
   review: |-
     `Looper` had an interesting premise, but I found the movie pretty messy overall. The idea itself is strong enough, and I can see why the concept would be compelling, but the execution never really felt as coherent as it needed to be. A big issue for me was that the characters did not feel especially real or grounded. They were not exactly shallow or one-dimensional, but their motivations felt odd and not fully believable, so I had a hard time feeling invested in what was happening to them.
 
@@ -24,18 +17,6 @@
   rating: 5
   genre: "Mystery thriller"
   date_watched: "2026-05-02"
-  thesis: "An extremely stylized mystery that works because it commits completely to its own vocabulary and mood."
-  verdict: "Very strong and very controlled."
-  lenses:
-    - style
-    - dialogue
-    - mystery
-    - tone
-    - performance
-  review: |-
-    `Brick` is one of those movies that should not work as well as it does, but it ends up being really compelling because of how completely it commits to what it is doing. The language, the atmosphere, and the way the movie frames the mystery all make it feel like its own little world rather than a copy of anything else. I especially liked how deliberate it was. Even when the characters are speaking in a way that feels strange, it does not feel random. It feels designed.
-
-    What made it work for me is that the style is not just style for its own sake. It actually gives the movie shape. The characters feel contained by the world they are in, and the strange dialogue becomes part of the experience instead of a distraction. I thought the movie had a very strong sense of control, and that is what made it so effective.
 
 - title: "Under the Silver Lake"
   year: 2018
@@ -44,37 +25,13 @@
   genre: "Black comedy thriller"
   date_watched: "2026-05-02"
   favorite: true
-  thesis: "A paranoid, image-saturated movie that is more interesting as atmosphere and pattern than as a mystery with a clean solution."
-  verdict: "I liked it a lot."
-  lenses:
-    - mystery
-    - atmosphere
-    - symbolism
-    - structure
-    - paranoia
-  review: |-
-    `Under the Silver Lake` is the kind of movie that feels like it is operating on several levels at once, and I found that very compelling. I do not think the mystery itself needs to be solved in any neat way for the movie to work, because the real strength is in the atmosphere and the way it keeps expanding outward. It feels restless, skeptical, and a little obsessive, which fits the character and the world around him.
-
-    I also liked how the movie kept making me pay attention to details without ever making the details feel decorative. It is not just filling the frame with references; it is using that density to create a specific mood. I think the movie works best when you treat it as a long drift through obsession rather than as a puzzle with one answer. That is what makes it interesting to me.
 
 - title: "Creed III"
-  year: 2023
+  year: 2018
   director: "Michael B. Jordan"
   rating: 2
   genre: "Sports drama"
   date_watched: "2026-04-28"
-  thesis: "A sequel with some strong ideas and performances, but not enough depth or control to make the conflict feel fully earned."
-  verdict: "Interesting, but undercooked."
-  lenses:
-    - performance
-    - sequel
-    - conflict
-    - direction
-    - legacy
-  review: |-
-    `Creed III` is the weakest of the Creed films for me because it feels like it has the right ingredients without fully developing them. I could see what it wanted to do with the personal conflict, and I thought the movie had some decent energy, but I never felt like the emotional center was as strong as it needed to be. The story kept moving, but not always in a way that made the drama feel especially deep or convincing.
-
-    I also think the movie is less interesting when it leans on the idea of rivalry without giving the characters enough complexity around it. There are parts of it that work, and I do think some of the performances carry more weight than the script does, but overall it felt thinner than the earlier films. I did not think it was bad, just not as substantial as it should have been.
 
 - title: "Creed II"
   year: 2018
@@ -82,18 +39,6 @@
   rating: 3
   genre: "Sports drama"
   date_watched: "2026-04-29"
-  thesis: "A sequel that has real emotional material, but sometimes feels too dependent on the shape of the first film."
-  verdict: "Solid, but not as strong as it wants to be."
-  lenses:
-    - sequel
-    - family
-    - sports drama
-    - legacy
-    - emotion
-  review: |-
-    `Creed II` is a movie I respect more than I love. I think it has enough emotional continuity with the first film to justify itself, and I do think the family material gives it some weight. The problem is that it sometimes feels like it is borrowing too much from a familiar structure instead of finding a sharper identity of its own. As a result, some of the drama feels effective in the moment but less memorable once the movie is over.
-
-    That said, I still thought there was a lot in it that worked. The central relationships matter, and the movie understands that this kind of story depends on more than just the fights. It is at its best when it is thinking about inheritance, pressure, and the feeling of trying to live inside someone else's legacy. I do not think it reaches the level of the first Creed, but it is still a good movie.
 
 - title: "Creed"
   year: 2015
@@ -101,38 +46,14 @@
   rating: 4
   genre: "Sports drama"
   date_watched: "2026-04-28"
-  thesis: "A rare legacy sequel that finds its own emotional life and does not just survive off the franchise it came from."
-  verdict: "The best Creed film."
-  lenses:
-    - character
-    - legacy
-    - performance
-    - sports drama
-    - emotion
-  review: |-
-    `Creed` works because it understands that the movie is not really about copying the Rocky formula so much as revisiting it from a different place. The film gives Adonis his own energy and his own pressures, and that makes it feel like more than a continuation. I thought the character work was strong, and I also thought the movie did a very good job balancing the emotional inheritance of the franchise with something that felt fresh.
-
-    What stood out to me most was that the movie actually cares about how people carry themselves and what they are trying to prove. It does not just treat boxing as spectacle; it treats it as a way of making internal conflict visible. That is what gives it weight. I think it is a very good sports movie, and more importantly, a movie that knows why the sports part matters.
 
 - title: "Training Day"
-  year: 2001
+  year: 1990
   director: "Antoine Fuqua"
   rating: 5
   genre: "Crime thriller"
   date_watched: "2026-04-23"
   favorite: true
-  thesis: "A tense, performance-driven crime film that works because it keeps the moral pressure constant."
-  verdict: "Very effective."
-  lenses:
-    - performance
-    - crime
-    - tension
-    - morality
-    - power
-  review: |-
-    `Training Day` is a very effective movie because it understands exactly what kind of pressure it wants to create and then keeps applying it. The whole film depends on tension, charisma, and the feeling that the situation could tip at any moment, and I thought it handled that well. The performances are a big part of that, obviously, but the movie also knows how to keep the momentum tight so that the story never really relaxes.
-
-    What I liked most was the way the film makes the power dynamics feel unstable. It is not just about one character being good and another being bad. It is about how authority, fear, and self-interest all get mixed together until the whole thing feels morally compromised. That gives the movie more force than it would have otherwise. I think it is a strong crime film, and one that knows how to keep its edge.
 
 - title: "King of New York"
   year: 1990
@@ -140,18 +61,6 @@
   rating: 2
   genre: "Crime drama"
   date_watched: "2026-04-23"
-  thesis: "A stylish crime film with a strong central presence, but one that feels looser and less disciplined than the best movies in the genre."
-  verdict: "Good, but uneven."
-  lenses:
-    - crime
-    - style
-    - performance
-    - tone
-    - structure
-  review: |-
-    `King of New York` has a lot of personality, and I think that is the main reason it holds together. The movie is strongest when it is leaning on atmosphere and on the central performance, because that gives it a real sense of attitude. At the same time, I do think the film is a little looser than it wants to be. It has energy, but not always enough structure to make that energy feel fully organized.
-
-    I do not think that makes it bad. In some ways the looseness is part of its appeal, because it gives the movie a rougher and more unstable quality. But compared with the sharper crime films I like most, this one feels less controlled. I liked it, just not enough to call it one of the greats.
 
 - title: "Blood In Blood Out"
   year: 1991
@@ -159,19 +68,12 @@
   rating: 5
   genre: "Crime drama"
   date_watched: "2026-04-22"
-  favorite: true
-  thesis: "An unusually ambitious crime drama about identity, family, and social pressure, carried by the scale of its characters' relationships."
-  verdict: "One of the best films I have seen."
-  lenses:
-    - character
-    - family
-    - identity
-    - crime
-    - performance
-  review: |-
-    `Blood In Blood Out` is one of the best films I have ever seen. What makes it work is not just the story itself, but the way the movie treats growth as something complicated and often contradictory. It is a film about family, loyalty, resentment, and the way environment shapes what people think they are allowed to become. The character relationships are much more complex than they first appear, and I think the movie earns that complexity over time.
+  review: "Wow. This is one of the best films I have ever seen. It is a tale of growth, whether positive or negative, and the impact of society and relationships of personal development. The lineage of the characters and their impacts on each other, while ostensibly simple, are extremely, and I mean *extremely* complex. 
 
-    The thing I kept coming back to was how strongly the film understands the intertwined lives of Miklo, Paco, and Cruz. Their narratives do not just run side by side; they keep converging, diverging, and affecting each other in ways that feel meaningful. I also thought the acting was excellent, especially in those central roles, because the performances give the movie the raw emotion it needs. It is long, but I think it needs that length. The movie is doing a lot, and I think it does most of it very well.
+The multi-faceted nature of the development of each character is outstanding, and the film's length is necessary. Throughout the film, we see the convergence, divergence, and intertwining between Miklo, Paco, and Cruz. The acting, to me, is oustanding, particularly in these three main characters. 
+
+The raw emotion that is illustrated, including Miklo's desire to fit in and Paco's desire to stand out is so sharp. This emotion and illustration of the events in their lives provides multiple perspectives towards how their narratives develop and why they make the choices they make."
+  favorite: true
 
 - title: "Clockers"
   year: 1995
@@ -179,18 +81,7 @@
   rating: 3.5
   genre: "Crime drama"
   date_watched: "2026-04-21"
-  thesis: "A messy but serious film that is often more compelling in its concerns than in its construction."
-  verdict: "Frustrating, but worthwhile."
-  lenses:
-    - structure
-    - perspective
-    - social realism
-    - performance
-    - ambiguity
-  review: |-
-    `Clockers` is a movie I admire even though I do not think it fully comes together. The plot is convoluted in a way that may be intentional, but it also makes the movie harder to follow than it needs to be. At the same time, I thought the performances were strong and the film clearly has things it wants to say, so I never felt like it was empty. If anything, it sometimes feels like it has too much on its mind at once.
-
-    What I had the hardest time with was the amount of telling versus showing. I can accept that to a point, but here it makes the movie feel more explanatory than dramatic. There are also enough unanswered questions, especially around Strike and the broader narrative logic, that the film ends up feeling somewhat unstable. Still, I think the message and the atmosphere are powerful, and that keeps it interesting even when it is frustrating.
+  review: "The plot was quite convoluted (which may have been part of the point), however the movie was well-acted and the message and takeaways were incredibly impactful. I also believe the movie did a lot more \"telling\" than \"showing\", which I think is alright to an extent, however it disrupted the narrative of the characters. I do think that there were lots of unanswered questions, relating to Strike's condition. Also, there were lots relating to the narrative in general as there seemed to be many changes/assumptions as to what happened depending on the perspective of the character."
 
 - title: "Menace II Society"
   year: 1993
@@ -198,18 +89,7 @@
   rating: 4.5
   genre: "Crime drama"
   date_watched: "2026-04-21"
-  thesis: "A tightly controlled crime film that moves with purpose and never wastes a scene."
-  verdict: "Technically near-perfect."
-  lenses:
-    - structure
-    - pace
-    - performance
-    - crime
-    - dread
-  review: |-
-    `Menace II Society` is technically near-perfect. It is tightly directed, sharply acted, and paced so that nearly every scene feels like it matters to Caine's progression. What I appreciated most was how little waste there is in the movie. It does not linger when it does not need to, and that gives it a very specific kind of force. The film feels serious from the beginning and stays that way.
-
-    I also think the movie is effective because it does not just rely on one dramatic moment. It builds dread through accumulation. The characters, the surroundings, and the choices they make all feel connected, and the result is a movie that feels both immediate and inevitable. It is a very strong crime film and one that handles its material with a lot of control.
+  review: "Technically near-perfect: tightly directed, sharply acted, and paced so that nearly every scene carries weight in Caine's progression."
 
 - title: "Boyz n the Hood"
   year: 1991
@@ -217,18 +97,7 @@
   rating: 4
   genre: "Drama"
   date_watched: "2026-04-19"
-  thesis: "A grounded coming-of-age crime drama that gets its power from specificity and restraint."
-  verdict: "An incredibly well-made film."
-  lenses:
-    - coming-of-age
-    - community
-    - character
-    - crime
-    - restraint
-  review: |-
-    `Boyz n the Hood` is an incredibly well-made film. What I liked most was that it gives Tre a steady perspective without turning him into a blank audience surrogate. The people around him feel specific rather than symbolic, which makes the movie feel much more alive. It is about environment and pressure, but it never loses sight of the fact that these are actual people living inside those pressures.
-
-    The film also has a real sense of control. It does not oversell itself, and that restraint helps the emotional moments land harder. I thought the movie was very good at showing how different kinds of masculinity, ambition, and instability shape the world around these characters. It feels honest without being formless, which is not easy to do.
+  review: "An incredibly well-made film. Tre's perspective gives the story a steady center, while the characters around him feel specific rather than symbolic."
   
 - title: "The Godfather"
   year: 1972
@@ -236,17 +105,8 @@
   rating: 5
   genre: "Crime drama"
   date_watched: "2026-04-17"
-  thesis: "A masterfully controlled crime saga where every formal choice adds weight to the family drama."
-  verdict: "One of the great films."
-  lenses:
-    - cinematography
-    - soundtrack
-    - performance
-    - family
-    - legacy
-  review: |-
-    Credit where credit is due: the cinematography, soundtrack, and performances are remarkable across the board. Nearly every scene feels deliberate, building the story's weight without wasting motion. This is not my first time watching this movie, and I enjoyed it much more on second watch.
+  review: "Credit where credit is due: the cinematography, soundtrack, and performances are remarkable across the board. Nearly every scene feels deliberate, building the story's weight without wasting motion. This is not my first time watching this movie, and I enjoyed it much more on second watch. 
 
-    There is no definite "protagonist" (one could argue Vito, and then Michael in the latter half), however the emotional side emits a resonance from the Corleones as their personal lives are depicted at scale, as opposed to others. That is part of what makes the movie feel so complete. It is not just telling a crime story; it is building a whole social and emotional order around that story.
+There is no definite \"protagonist\" (one could argue Vito, and then Michael in the latter half), however the emotional side emits a resonance from the Corleone's as their personal lives are depicted at scale, as opposed to others. 
 
-    This is arguably the movie that defined and inspired the "Gangster" or more broad "Crime drama" genre, and lives up to its name. The main cast is incredibly multi-dimensional (credits of course to the actors) and you can see the range of feelings they display and how this range either widens or becomes concentrated as the movie progresses. It feels as controlled as it is expansive, which is a hard balance to strike.
+This is arguably the movie that defined and inspired the \"Gangster\" or more broad \"Crime drama\" genre, and lives up to its name. The main cast is incredibly multi-dimensional (credits of course to the actors) and you can see the range of feelings they display and how this range either widens or becomes concentrated as the movie progresses."

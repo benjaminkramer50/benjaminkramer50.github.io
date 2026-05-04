@@ -1145,21 +1145,6 @@ layout: null
             <textarea class="form-textarea form-textarea-short" id="movie-review" placeholder="Brief review..."></textarea>
           </div>
 
-          <div class="form-group">
-            <label class="form-label" for="movie-thesis">Thesis <span class="optional">(optional)</span></label>
-            <textarea class="form-textarea form-textarea-short" id="movie-thesis" placeholder="One-sentence critical thesis..."></textarea>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="movie-verdict">Verdict <span class="optional">(optional)</span></label>
-            <input class="form-input" type="text" id="movie-verdict" placeholder="Short verdict..." autocomplete="off">
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="movie-lenses">Lenses <span class="optional">(comma-separated)</span></label>
-            <input class="form-input" type="text" id="movie-lenses" placeholder="performance, structure, atmosphere" autocomplete="off">
-          </div>
-
           <div class="form-checkbox">
             <input type="checkbox" id="movie-favorite">
             <label for="movie-favorite">Favorite</label>
@@ -2510,9 +2495,6 @@ layout: null
         var rating = document.getElementById('movie-rating').value;
         var date = document.getElementById('movie-date').value;
         var review = document.getElementById('movie-review').value.trim();
-        var thesis = document.getElementById('movie-thesis').value.trim();
-        var verdict = document.getElementById('movie-verdict').value.trim();
-        var lenses = document.getElementById('movie-lenses').value.trim();
         var canonId = document.getElementById('movie-canon-id').value.trim();
         if (canonId) document.getElementById('movie-favorite').checked = true;
 
@@ -2525,14 +2507,6 @@ layout: null
         if (genre) lines.push('  genre: ' + yamlStr(genre));
         if (date) lines.push('  date_watched: "' + date + '"');
         if (review) lines.push('  review: ' + yamlStr(review));
-        if (thesis) lines.push('  thesis: ' + yamlStr(thesis));
-        if (verdict) lines.push('  verdict: ' + yamlStr(verdict));
-        if (lenses) {
-          lines.push('  lenses:');
-          lenses.split(',').map(function (lens) { return lens.trim(); }).filter(Boolean).forEach(function (lens) {
-            lines.push('    - ' + yamlStr(lens));
-          });
-        }
         if (document.getElementById('movie-favorite').checked) lines.push('  favorite: true');
 
         var yaml = lines.join('\n');
@@ -3123,9 +3097,6 @@ layout: null
         setFieldValue('movie-rating', entry.rating);
         setFieldValue('movie-date', entry.date_watched || todayStr);
         setFieldValue('movie-review', entry.review);
-        setFieldValue('movie-thesis', entry.thesis);
-        setFieldValue('movie-verdict', entry.verdict);
-        setFieldValue('movie-lenses', Array.isArray(entry.lenses) ? entry.lenses.join(', ') : entry.lenses);
         setFieldValue('movie-canon-id', entry.canon_id);
         setFieldChecked('movie-favorite', entry.favorite);
         updateMovieCanonMatch();
@@ -3146,9 +3117,6 @@ layout: null
         setFieldValue('movie-rating', '');
         setFieldValue('movie-date', todayStr);
         setFieldValue('movie-review', '');
-        setFieldValue('movie-thesis', '');
-        setFieldValue('movie-verdict', '');
-        setFieldValue('movie-lenses', '');
         setFieldValue('movie-canon-id', entry.slug);
         setFieldChecked('movie-favorite', true);
         updateSlugPreview();

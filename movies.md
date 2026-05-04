@@ -93,7 +93,7 @@ title: Movie Log
           {% endif %}
           {% assign movie_key = item.title | slugify | append: '-' | append: item.year %}
           {% assign poster = site.data.movie_posters[movie_key] %}
-          <div class="diary-row{% if item.review or item.thesis or item.verdict or item.lenses %} diary-row-has-review{% endif %}"
+          <div class="diary-row{% if item.review %} diary-row-has-review{% endif %}"
                id="movie-{{ movie_key }}"
                data-title="{{ item.title }}"
                data-year="{{ item.year }}"
@@ -102,7 +102,7 @@ title: Movie Log
                data-date="{{ item.date_watched }}"
                data-poster-url="{% if poster and poster.poster_url %}{{ poster.poster_url }}{% endif %}"
                data-month="{{ item.date_watched | date: '%B %Y' }}">
-            <div class="diary-row-main"{% if item.review or item.thesis or item.verdict or item.lenses %} role="button" tabindex="0" aria-expanded="false"{% endif %}>
+            <div class="diary-row-main"{% if item.review %} role="button" tabindex="0" aria-expanded="false"{% endif %}>
               <span class="diary-date">{{ item.date_watched | date: "%b %d" }}</span>
               <span class="diary-title">{{ item.title }} <span class="diary-year">({{ item.year }})</span></span>
               <span class="diary-director">{{ item.director }}</span>
@@ -113,7 +113,7 @@ title: Movie Log
                 {% for i in (1..5) %}{% if i <= full_stars %}<span class="star-full">&#9733;</span>{% elsif has_half != 0 and i == half_pos %}<span class="star-half">&#9733;</span>{% else %}<span class="star-empty">&#9734;</span>{% endif %}{% endfor %}
               </span>
             </div>
-            {% if item.review or item.thesis or item.verdict or item.lenses %}
+            {% if item.review %}
             <div class="diary-review" aria-hidden="true">
               <div class="diary-review-poster">
                 {% if poster and poster.poster_url %}
@@ -126,23 +126,6 @@ title: Movie Log
                 {% endif %}
               </div>
               <div class="diary-review-copy">
-                {% if item.thesis or item.verdict or item.lenses %}
-                <div class="diary-review-critical">
-                  {% if item.thesis %}
-                  <div class="diary-review-thesis">{{ item.thesis }}</div>
-                  {% endif %}
-                  {% if item.verdict %}
-                  <div class="diary-review-verdict">{{ item.verdict }}</div>
-                  {% endif %}
-                  {% if item.lenses %}
-                  <div class="diary-review-lenses">
-                    {% for lens in item.lenses %}
-                    <span class="diary-review-lens">{{ lens }}</span>
-                    {% endfor %}
-                  </div>
-                  {% endif %}
-                </div>
-                {% endif %}
                 <p>{{ item.review | newline_to_br }}</p>
               </div>
             </div>
@@ -433,26 +416,6 @@ title: Movie Log
       .replace(/'/g, '&#39;');
   }
 
-  function renderCriticalHtml(item) {
-    var parts = [];
-    if (item.thesis) {
-      parts.push('<div class="canon-row-thesis">' + escapeHtml(item.thesis) + '</div>');
-    }
-    if (item.verdict) {
-      parts.push('<div class="canon-row-verdict">' + escapeHtml(item.verdict) + '</div>');
-    }
-    if (item.lenses && item.lenses.length) {
-      parts.push(
-        '<div class="canon-row-lenses">' +
-          item.lenses.map(function (lens) {
-            return '<span class="canon-row-lens">' + escapeHtml(lens) + '</span>';
-          }).join('') +
-        '</div>'
-      );
-    }
-    return parts.length ? '<div class="canon-row-critical">' + parts.join('') + '</div>' : '';
-  }
-
   var watchedGroups = {};
   watchedData.forEach(function (entry) {
     var key = entry.canon_id || movieKey(entry.title, entry.year);
@@ -478,16 +441,13 @@ title: Movie Log
       review: summaryEntry.review || '',
       rating: summaryEntry.rating,
       favorite: favorite || !!summaryEntry.favorite,
-      date_watched: summaryEntry.date_watched || '',
-      thesis: summaryEntry.thesis || '',
-      verdict: summaryEntry.verdict || '',
-      lenses: Array.isArray(summaryEntry.lenses) ? summaryEntry.lenses : (summaryEntry.lenses ? [summaryEntry.lenses] : [])
+      date_watched: summaryEntry.date_watched || ''
     };
   }
 
   var canonItems = canonData.map(function (item) {
     var summaryEntry = summarize(watchedGroups[item.slug] || watchedGroups[movieKey(item.title, item.year)] || []);
-    var reviewed = !!(summaryEntry && (summaryEntry.review || summaryEntry.thesis || summaryEntry.verdict || (summaryEntry.lenses && summaryEntry.lenses.length)));
+    var reviewed = !!(summaryEntry && summaryEntry.review);
     var favorite = !!(summaryEntry && summaryEntry.favorite);
     return {
       slug: item.slug,
@@ -500,10 +460,7 @@ title: Movie Log
       favorite: favorite,
       review: summaryEntry ? summaryEntry.review : '',
       rating: summaryEntry ? summaryEntry.rating : '',
-      date_watched: summaryEntry ? summaryEntry.date_watched : '',
-      thesis: summaryEntry ? summaryEntry.thesis : '',
-      verdict: summaryEntry ? summaryEntry.verdict : '',
-      lenses: summaryEntry ? summaryEntry.lenses : []
+      date_watched: summaryEntry ? summaryEntry.date_watched : ''
     };
   });
 
@@ -524,7 +481,7 @@ title: Movie Log
 
   function matchesFilters(item, filters) {
     if (filters.search) {
-      var haystack = [item.title, item.year, item.director, item.review, item.thesis, item.verdict, (item.lenses || []).join(' ')].join(' ').toLowerCase();
+      var haystack = [item.title, item.year, item.director, item.review].join(' ').toLowerCase();
       if (haystack.indexOf(filters.search) === -1) return false;
     }
 
@@ -577,7 +534,6 @@ title: Movie Log
         statusPills += '<span class="canon-pill canon-pill-favorite">Favorite</span>';
       }
       var posterUrl = posterForMovie(item);
-      var criticalHtml = renderCriticalHtml(item);
       var reviewHtml = item.reviewed ? (
         '<div class="canon-row-review">' +
           '<div class="canon-row-review-poster">' +
@@ -585,7 +541,7 @@ title: Movie Log
               ? '<img src="' + escapeHtml(posterUrl) + '" alt="' + escapeHtml(item.title) + ' poster" loading="lazy">'
               : '<div class="canon-row-review-placeholder"><span>' + escapeHtml(item.title) + '</span><span>(' + escapeHtml(item.year) + ')</span></div>') +
           '</div>' +
-          '<div class="canon-row-review-copy">' + criticalHtml + '<p>' + escapeHtml(item.review).replace(/\n/g, '<br>') + '</p></div>' +
+          '<div class="canon-row-review-copy"><p>' + escapeHtml(item.review).replace(/\n/g, '<br>') + '</p></div>' +
         '</div>'
       ) : '';
 
