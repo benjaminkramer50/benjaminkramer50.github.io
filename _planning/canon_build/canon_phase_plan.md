@@ -23,7 +23,7 @@ The build is ship-ready when:
 - Users can filter by broad era, macro region/tradition, form, tier, and reading status.
 - The list can support more than 3,000 rows through `core`, `major`, `contextual`, `supplemental`, and `candidate` tiers, so obvious omissions do not require slow displacement debates.
 - The current 3,000-work path remains available as the curated reading path.
-- The Desktop humanities draft is used as a high-recall gap source, not as final proof.
+- High-throughput draft generation, broad reference checks, and existing audit outputs are used to find obvious gaps quickly; no ad hoc local draft is treated as a source of truth.
 - Obvious high-confidence omissions are added or queued with visible status.
 - Duplicate candidates, chronology inversions, generic-title rows, and missing metadata are reported and the highest-confidence fixes are applied.
 - Every row has an honest provenance/status label such as `source_backed`, `accepted_incumbent`, `needs_source_review`, `supplemental_candidate`, or `deferred`.
@@ -40,7 +40,6 @@ Target time: 0.5 day.
 Inputs:
 
 - `_data/canon_quick_path.yml`
-- `/Users/benjaminkramer/Desktop/complete_humanities_canon.md`
 - `_planning/canon_audit_outputs/`
 - `_planning/canon_build/tables/`
 
@@ -63,8 +62,8 @@ Target time: 0.5-1 day.
 
 Actions:
 
-- Parse the Desktop humanities canon as a high-recall comparison source.
-- Compare against the current literature path by normalized title, creator, and common aliases.
+- Generate and review broad candidate inventories quickly by period, region/tradition, form, and sentinel author/work class.
+- Compare generated candidates and existing audit outputs against the current literature path by normalized title, creator, and common aliases.
 - Classify unmatched items as `add_now`, `candidate`, `needs_review`, `out_of_scope`, or `already_represented`.
 - Add high-confidence literary omissions as supplemental/candidate rows instead of forcing immediate one-for-one cuts.
 - Keep disputed or field-boundary items in the backlog rather than blocking launch.

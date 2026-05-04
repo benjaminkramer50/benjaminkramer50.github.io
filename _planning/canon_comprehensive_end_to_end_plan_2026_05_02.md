@@ -18,7 +18,7 @@ The near-term goal is now a ship-ready working canon in a few days:
 
 - Keep the current 3,000-work path as the curated reading path.
 - Allow supplemental/candidate rows so obvious omissions do not require slow displacement debates.
-- Use `/Users/benjaminkramer/Desktop/complete_humanities_canon.md` as a high-recall comparison source for gap intake, not as final proof.
+- Use faster high-throughput candidate generation, broad reference checks, and existing audit outputs to find obvious gaps quickly; do not treat any ad hoc local draft as a source of truth.
 - Rebuild the public UI around broad categories, filters, tiers, and provenance/status labels.
 - Apply high-confidence duplicate, chronology, generic-title, and omission fixes.
 - Move exact-title source rescue and full replacement optimization into post-launch hardening.
