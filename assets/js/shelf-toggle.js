@@ -19,6 +19,9 @@
       var section = document.getElementById('shelf-' + mode);
       var button = this.container.querySelector('[data-mode="' + mode + '"]');
       var panels = Array.prototype.slice.call(document.querySelectorAll('[data-shelf-view-panel="' + mode + '"]'));
+      if (panels.length === 0 && section) {
+        panels = [section];
+      }
       if (!button || panels.length === 0) return;
       this.sections[mode] = section || null;
       this.panels[mode] = panels;
