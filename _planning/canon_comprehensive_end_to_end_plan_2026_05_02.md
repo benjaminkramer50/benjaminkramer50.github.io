@@ -1,7 +1,7 @@
 ---
 title: Comprehensive End-to-End Literature Canon Audit Plan
 date: 2026-05-02
-status: source_backed_pivot_in_progress
+status: fast_finish_pivot_active
 scope: literature_only_global_lifetime_path
 target: 3000 public works
 ---
@@ -9,6 +9,21 @@ target: 3000 public works
 # Comprehensive End-to-End Literature Canon Audit Plan
 
 This document is the forward plan for making the 3,000-item literature canon defensible. It is also the packet registry that execution logs point back to. Waves 001-005 have been run and integrated as provisional sentinel repairs; detailed outputs live under `_planning/canon_audit_outputs/`.
+
+## 2026-05-04 Fast-Finish Revision
+
+The active operating plan has changed. The prior source-backed plan remains the right standard for a locked scholarly dataset, but it is too slow for the current product goal. It spends weeks on the final 5 percent: exact-title evidence rescue, source-debt closure, replacement scoring, and fully audited packet completion.
+
+The near-term goal is now a ship-ready working canon in a few days:
+
+- Keep the current 3,000-work path as the curated reading path.
+- Allow supplemental/candidate rows so obvious omissions do not require slow displacement debates.
+- Use `/Users/benjaminkramer/Desktop/complete_humanities_canon.md` as a high-recall comparison source for gap intake, not as final proof.
+- Rebuild the public UI around broad categories, filters, tiers, and provenance/status labels.
+- Apply high-confidence duplicate, chronology, generic-title, and omission fixes.
+- Move exact-title source rescue and full replacement optimization into post-launch hardening.
+
+The new active phase plan is `_planning/canon_build/canon_phase_plan.md`. The long packet and evidence plan below is still useful, but it now defines lock criteria rather than launch criteria.
 
 ## 2026-05-03 Workflow Pivot
 
