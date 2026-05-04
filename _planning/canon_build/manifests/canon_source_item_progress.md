@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 247
-- source_item_rows: 6119
-- evidence_rows: 715
+- registered_sources: 267
+- source_item_rows: 6139
+- evidence_rows: 735
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -258,6 +258,26 @@
 | `x079_uchicago_poems_st_john_cross` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x079_ucpress_she_wolf_stories` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x079_wsu_chesnutt_bibliography` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_britannica_tradiciones_peruanas` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_britannica_vampire_curitiba` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_copper_follain_transparence` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_ebsco_catalan_poetry_foix` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_encyclopedia_couto_voices` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_encyclopedia_palma_tradiciones` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_encyclopedia_trevisan_vampire` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_google_books_cummings_tulips` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_google_books_foix_when_i_sleep` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_macmillan_sonnets_orpheus` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_mertinwitt_voices_made_night` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_poetry_foundation_cummings_tulips` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_prh_carver_where_calling` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_prh_enriquez_things_lost_fire` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_pw_carver_where_calling` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_pw_enriquez_things_lost_fire` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_pw_follain_transparence` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_pw_week_colors` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_two_lines_week_colors` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x080_wesleyan_sonnets_orpheus` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 

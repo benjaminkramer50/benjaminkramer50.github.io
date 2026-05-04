@@ -10,34 +10,31 @@ X065 refreshes the current existing-source rescue scope review from the live cut
 
 - Added `scripts/canon_generate_current_rescue_scope_refresh_x065.rb`.
 - Refreshed `canon_current_rescue_scope_review.tsv`.
-- Classified 16 current source-item rescue rows across 5 cut-side works.
+- Classified 12 current source-item rescue rows across 3 cut-side works.
 
 Scope class summary:
 
 | Scope class | Rows |
 |---|---:|
-| `creator_exact_scope_review` | 14 |
-| `representative_poetry_selection_review` | 2 |
+| `creator_exact_component_form_unverified` | 1 |
+| `creator_exact_scope_review` | 11 |
 
 Scope risk summary:
 
 | Risk | Rows |
 |---|---:|
-| `high` | 14 |
-| `medium` | 2 |
+| `high` | 12 |
 
 Current work-level source-row counts:
 
 | Work | Source rows |
 |---|---:|
-| `work_candidate_indig_lit_akabal_poems` | 2 |
-| `work_candidate_latcarib_lit_tradiciones_peruanas` | 2 |
-| `work_candidate_latcarib_lit_vampire_curitiba` | 1 |
-| `work_candidate_scale2_lit_sonnets_to_orpheus` | 2 |
+| `work_candidate_bloom_mallarme_poetry_prose` | 1 |
+| `work_candidate_completion_lit_women_algiers_apartment` | 2 |
 | `work_candidate_southasia_lit_tukaram_abhangas` | 9 |
 
 ## Interpretation
 
-The current rescue lane has 2 medium-risk representative-selection rows that can be reviewed for selection-only evidence: 2 rows for `work_candidate_indig_lit_akabal_poems`. The 14 high-risk rows still need collection-membership or component-form resolution.
+The current rescue lane has no medium-risk representative-selection rows. The 12 high-risk rows still need collection-membership or component-form resolution before evidence can be generated.
 
 Direct public replacements: 0.

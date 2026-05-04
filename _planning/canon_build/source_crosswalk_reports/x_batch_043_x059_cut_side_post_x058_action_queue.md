@@ -17,8 +17,8 @@ Lane summary:
 | Lane | Rows |
 |---|---:|
 | `cut_side_source_debt_closed_review` | 2 |
-| `existing_source_item_rescue_review` | 5 |
-| `external_source_acquisition` | 38 |
+| `existing_source_item_rescue_review` | 3 |
+| `external_source_acquisition` | 40 |
 
 Highest-priority rows:
 
@@ -27,15 +27,15 @@ Highest-priority rows:
 | `x059_cut_action_0001` | The Weary Blues | Langston Hughes | `cut_side_source_debt_closed_review` | `compute_or_review_cut_side_score_inputs` |
 | `x059_cut_action_0002` | Poems, Chiefly in the Scottish Dialect | Robert Burns | `cut_side_source_debt_closed_review` | `compute_or_review_cut_side_score_inputs` |
 | `x059_cut_action_0003` | Selected Abhangas | Tukaram | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0004` | Tradiciones peruanas | Ricardo Palma | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0005` | Sonnets to Orpheus | Rainer Maria Rilke | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0006` | Selected Poems | Humberto Ak'abal | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0007` | The Vampire of Curitiba | Dalton Trevisan | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0008` | Selected Poems | Archilochus | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0009` | Poems | Alcman | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0010` | Selected Yuefu Songs | Han and post-Han poetic tradition | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0011` | Selected Poems | Cao Cao | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0012` | Selected Poems | Cao Zhi | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0004` | Women of Algiers in Their Apartment | Assia Djebar | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
+| `x059_cut_action_0005` | A Throw of the Dice and Selected Poems | Stephane Mallarme | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
+| `x059_cut_action_0006` | Poems | Alcman | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0007` | Selected Yuefu Songs | Han and post-Han poetic tradition | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0008` | Quatrains | Baba Taher | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0009` | Selected Poems | Samuel ha-Nagid | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0010` | Selected Ci Poems | Xin Qiji | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0011` | Selected Ci Poems | Li Qingzhao | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0012` | Selected Ghazals | Ali-Shir Nava'i | `external_source_acquisition` | `create_source_acquisition_query` |
 
 ## Interpretation
 
