@@ -511,9 +511,34 @@ decisions:
       - continue_external_source_acquisition_for_no_local_support_rows
       - keep_public_replacement_pairs_blocked
     public_path_effect: none
+  - decision_id: x064_selection_only_complete_work_support_001
+    decision_type: selection_only_complete_work_support_review
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_selection_only_complete_work_support_review.tsv
+      - _planning/canon_build/tables/canon_source_registry.tsv
+      - _planning/canon_build/tables/canon_source_items.tsv
+      - _planning/canon_build/tables/canon_evidence.tsv
+    applies_to_work_ids:
+      - work_candidate_wave002_dunbar_lyrics_lowly_life
+      - work_candidate_bloom_reviewed_hughes_poems
+    decision: accept_dunbar_complete_work_support_and_hold_hughes_title_scope
+    rationale: >
+      X064 reviews the two selection-only rows that still needed complete-work
+      support after X060. Public reference sources support Dunbar's Lyrics of
+      Lowly Life as the current selected work and therefore receive accepted
+      inclusion evidence. Public sources found for Hughes support The Weary Blues
+      as a complete book, not the current composite label The Weary Blues and
+      Selected Poems, so no evidence is written until the title/scope is corrected
+      or separately supported.
+    scoring_effect: dunbar_source_debt_closes_after_refresh;hughes_remains_open_selection_only
+    required_followup:
+      - decide_whether_hughes_row_should_be_retitled_to_the_weary_blues_or_supported_as_a_selected_poems_scope
+      - continue_high_risk_scope_resolution_for_current_existing_source_rescue_rows
+      - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
+    public_path_effect: none
 waivers: []
 open_questions:
-  - source_debt_rows_currently_3002
+  - source_debt_rows_currently_3001
   - unmatched_source_items_currently_5422
   - duplicate_candidate_keys_currently_39
   - chronology_inversion_rows_currently_138

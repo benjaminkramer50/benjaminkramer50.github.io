@@ -4,7 +4,7 @@ Status: completed, build-layer only. Public canon path unchanged.
 
 ## Purpose
 
-X063 reconciles the high-risk X061 source-scope rows against the current post-X062 cut-side action queue. This prevents stale high-risk rows from being processed after X062 removed their work rows from the current queue.
+X063 reconciles the high-risk X061 source-scope rows against the current cut-side action queue. This prevents stale high-risk rows from being processed after refreshes remove their work rows from the current queue.
 
 ## Output
 
@@ -18,7 +18,7 @@ Residue status summary:
 | Status | Rows |
 |---|---:|
 | `current_high_risk_scope_blocker` | 18 |
-| `stale_after_x062_current_queue_refresh` | 2 |
+| `stale_after_current_queue_refresh` | 2 |
 
 Scope class summary:
 

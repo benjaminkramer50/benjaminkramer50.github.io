@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 44
+- checked_files: 45
 - failures: 0
 
 ## Checks
@@ -51,6 +51,7 @@
 | table:current_rescue_scope_review | PASS | `_planning/canon_build/tables/canon_current_rescue_scope_review.tsv (15 columns)` |
 | table:medium_risk_rescue_evidence_applied | PASS | `_planning/canon_build/tables/canon_medium_risk_rescue_evidence_applied.tsv (15 columns)` |
 | table:high_risk_rescue_residue | PASS | `_planning/canon_build/tables/canon_high_risk_rescue_residue.tsv (18 columns)` |
+| table:selection_only_complete_work_support_review | PASS | `_planning/canon_build/tables/canon_selection_only_complete_work_support_review.tsv (13 columns)` |
 | table:packet_status | PASS | `_planning/canon_build/tables/canon_packet_status.tsv (8 columns)` |
 | policy:source_weights.source_type_mapping | PASS | `42 source types mapped` |
 | policy:source_debt_rules.source_class_rules | PASS | `10 source classes covered` |

@@ -63,7 +63,7 @@ def write_report(path, rows)
     file.puts
     file.puts "## Purpose"
     file.puts
-    file.puts "X063 reconciles the high-risk X061 source-scope rows against the current post-X062 cut-side action queue. This prevents stale high-risk rows from being processed after X062 removed their work rows from the current queue."
+    file.puts "X063 reconciles the high-risk X061 source-scope rows against the current cut-side action queue. This prevents stale high-risk rows from being processed after refreshes remove their work rows from the current queue."
     file.puts
     file.puts "## Output"
     file.puts
@@ -111,7 +111,7 @@ rows = scope_rows.map.with_index(1) do |scope, index|
 
   residue_status =
     if current_action.nil?
-      "stale_after_x062_current_queue_refresh"
+      "stale_after_current_queue_refresh"
     elsif current_lane == "existing_source_item_rescue_review"
       "current_high_risk_scope_blocker"
     else
@@ -122,7 +122,7 @@ rows = scope_rows.map.with_index(1) do |scope, index|
     case residue_status
     when "current_high_risk_scope_blocker"
       "resolve_high_risk_scope_before_evidence_generation"
-    when "stale_after_x062_current_queue_refresh"
+    when "stale_after_current_queue_refresh"
       "do_not_process_until_work_reappears_in_current_queue"
     else
       "respect_current_action_queue_lane_before_scope_processing"

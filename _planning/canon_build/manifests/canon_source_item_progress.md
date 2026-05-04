@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
-- generated_on: 2026-05-03
-- registered_sources: 72
-- source_item_rows: 5942
-- evidence_rows: 468
+- generated_on: 2026-05-04
+- registered_sources: 80
+- source_item_rows: 5952
+- evidence_rows: 529
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -41,12 +41,12 @@
 | `e012_loa_african_american_poetry_2020` | E012 | in_progress | 4 | 4 | 0 | 1 | 3 | 0 | 0 | 0 |
 | `e012_loa_slave_narratives` | E012 | in_progress | 6 | 6 | 3 | 3 | 0 | 0 | 0 | 0 |
 | `e012_locke_new_negro_1925` | E012 | not_started | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `e012_norton_african_american_lit_4e_v1_2025` | E012 | in_progress | 3 | 3 | 1 | 0 | 2 | 0 | 0 | 0 |
+| `e012_norton_african_american_lit_4e_v1_2025` | E012 | in_progress | 5 | 5 | 1 | 2 | 2 | 0 | 0 | 0 |
 | `e012_norton_african_american_lit_4e_v2_2025` | E012 | in_progress | 3 | 3 | 0 | 2 | 1 | 0 | 0 | 0 |
 | `e013_cambridge_history_latin_american_lit_1996` | E013;X024 | context_only | 52 | 0 | 0 | 0 | 0 | 52 | 0 | 0 |
-| `e013_fsg_20c_latin_american_poetry_2011` | E013 | extracted | 84 | 0 | 0 | 0 | 0 | 84 | 0 | 0 |
-| `e013_oxford_latin_american_poetry_2009` | E013 | extracted | 137 | 3 | 0 | 0 | 3 | 134 | 0 | 0 |
-| `e013_oxford_latin_american_short_stories_1997` | E013 | extracted | 53 | 1 | 0 | 0 | 1 | 52 | 0 | 0 |
+| `e013_fsg_20c_latin_american_poetry_2011` | E013 | extracted | 84 | 2 | 0 | 0 | 2 | 82 | 0 | 0 |
+| `e013_oxford_latin_american_poetry_2009` | E013 | extracted | 137 | 4 | 0 | 0 | 4 | 133 | 0 | 0 |
+| `e013_oxford_latin_american_short_stories_1997` | E013 | extracted | 53 | 3 | 0 | 0 | 3 | 50 | 0 | 0 |
 | `e014_african_writers_series_heinemann_penguin` | E014;X023 | metadata_ready | 48 | 16 | 16 | 0 | 0 | 32 | 0 | 0 |
 | `e014_cambridge_history_african_caribbean_lit_2000` | E014;X024 | context_only | 40 | 0 | 0 | 0 | 0 | 40 | 0 | 0 |
 | `e014_penguin_modern_african_poetry_4e_2007` | E014;X023 | extracted | 239 | 0 | 0 | 0 | 0 | 239 | 0 | 0 |
@@ -65,15 +65,15 @@
 | `library_of_america_catalog` | E011 | in_progress | 5 | 5 | 5 | 0 | 0 | 0 | 0 | 0 |
 | `longman_brit_lit_middle_ages_1a_4e` | E009 | public_toc_ready | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `longman_british_lit_period_volumes_2009_2017` | E010 | ready_public_toc | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| `longman_world_lit_2e_2009` | E005;X027 | extracted | 1644 | 112 | 68 | 0 | 44 | 1532 | 0 | 0 |
+| `longman_world_lit_2e_2009` | E005;X027 | extracted | 1644 | 143 | 68 | 4 | 71 | 1501 | 0 | 0 |
 | `mgh_medieval_latin_sources` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `minnereden_lovesongs_digital` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `murty_classical_library_india` | E015 | metadata_ready | 19 | 0 | 0 | 0 | 0 | 19 | 0 | 0 |
 | `norton_american_lit_10e_post1865` | E011 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `norton_american_lit_10e_pre1865` | E011 | in_progress | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `norton_english_lit_11e_full_2024` | E010 | ready_public_toc | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
-| `norton_world_lit_5e_full_post1650` | E004;X026 | extracted | 533 | 54 | 40 | 0 | 14 | 479 | 0 | 0 |
-| `norton_world_lit_5e_full_pre1650` | E004;X026 | extracted | 1053 | 62 | 28 | 0 | 34 | 991 | 0 | 0 |
+| `norton_world_lit_5e_full_post1650` | E004;X026 | extracted | 533 | 63 | 40 | 2 | 21 | 470 | 0 | 0 |
+| `norton_world_lit_5e_full_pre1650` | E004;X026 | extracted | 1053 | 68 | 28 | 2 | 38 | 985 | 0 | 0 |
 | `osta_2_old_spanish_textual_archive` | E009 | metadata_ready | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | `oxford_modern_indian_poetry_1998` | E015;X024;X025 | in_progress | 124 | 0 | 0 | 0 | 0 | 124 | 0 | 0 |
 | `oxford_worlds_classics_online` | E007 | in_progress | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -83,6 +83,14 @@
 | `princeton_humanities_sequences_2024` | E007 | ready_for_extraction | 3 | 2 | 2 | 0 | 0 | 0 | 1 | 0 |
 | `shorter_columbia_traditional_chinese_lit_2000` | E016;X025 | extracted | 262 | 14 | 0 | 0 | 14 | 248 | 0 | 0 |
 | `wimmer_medieval_german_anthology` | E009 | metadata_only | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| `x043_britannica_abolitionist_texts_reference` | X043 | extracted | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| `x043_britannica_catalan_literature_reference` | X043 | extracted | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| `x043_britannica_nat_turner_confessions_reference` | X043 | extracted | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| `x043_enciclopedia_cat_curial_reference` | X043 | extracted | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| `x043_encyclopedia_com_hrotsvit_reference` | X043 | extracted | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| `x043_yale_british_art_gronniosaw_reference` | X043 | extracted | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| `x064_encyclopedia_com_lyrics_lowly_life_reference` | X064 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x064_poetry_foundation_dunbar_reference` | X064 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 
