@@ -37,14 +37,14 @@ Highest-priority unresolved rows:
 |---|---|---|---|---|
 | `x051_selection_basis_0001` | Selected Poems | Lu You | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0002` | Poems, Chiefly in the Scottish Dialect | Robert Burns | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0003` | Selected Poems | Avrom Sutzkever | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0004` | Selected Poems | Nazim Hikmet | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0005` | Selected Poems | Marina Tsvetaeva | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0006` | Selected Poems | Seamus Heaney | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0007` | Selected Poems | Siamanto | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0008` | Selected Poems | Daniel Varoujan | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0009` | Selected Poems | Ch'aska Anka Ninawaman | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0010` | Selected Poems | Joy Harjo | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0003` | Selected Poems | David Diop | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0004` | Selected Poems | Sorley MacLean | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0005` | Selected Poems | Avrom Sutzkever | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0006` | Selected Poems | Nazim Hikmet | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0007` | Selected Poems | Marina Tsvetaeva | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0008` | Selected Poems | Seamus Heaney | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0009` | Selected Poems | Siamanto | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0010` | Selected Poems | Daniel Varoujan | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 
 ## Interpretation
 

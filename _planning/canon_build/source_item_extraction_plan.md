@@ -16,7 +16,7 @@ Direct public-list replacements remain paused until these packets produce source
 |---|---|---|---|
 | E Batch 1 | E001-E006 | Registered; E001 extracted; E004 Norton World Literature 5e extracted by X026; E005 Longman World Literature 2e extracted by X027; E006 Bedford fragment extraction pending | `source_crosswalk_reports/e_batch_001_e001_e006.md` |
 | E Batch 2 | E007-E012 | Registered; X001-X006 pilot rows ingested; full extraction pending | `source_crosswalk_reports/e_batch_002_e007_e012.md` |
-| E Batch 3 | E013-E018 | Registered; X020-X025 generated/updated 2,690 E013/E014/E015/E016/E017/E018 source-item observations; current table has 5,952 total source-item rows after X064; X013/X014/X017 queues rerun after X043; remaining source debt is explicit for blocked full Traditional Chinese CPL TOC and official Oxford modern Indian poem-level reconciliation | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
+| E Batch 3 | E013-E018 | Registered; X020-X025 generated/updated 2,690 E013/E014/E015/E016/E017/E018 source-item observations; current table has 5,952 total source-item rows after X066; X013/X014/X017 queues rerun after X043; remaining source debt is explicit for blocked full Traditional Chinese CPL TOC and official Oxford modern Indian poem-level reconciliation | `source_crosswalk_reports/e_batch_003_e013_e018.md` |
 
 ## Extraction Contract
 
@@ -92,7 +92,8 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X062 | X061 medium-risk rescue rows plus evidence/source-item ledgers | Medium-risk rescue evidence applied | 3 medium-risk representative-selection evidence rows applied for reviewed local source items; complete-work source debt remains open, high-risk rows remain blocked, and public path unchanged |
 | X063 | Current high-risk rescue-scope rows plus current action queue | High-risk rescue residue reconciled | 16 high-risk current rescue-scope rows reconciled against the current X065 scope/action view: all 16 remain active blockers; no evidence rows or public path changes |
 | X064 | X059 selection-only complete-work support rows | Complete-work support reviewed | 2 selection-only rows reviewed: `Lyrics of Lowly Life` received 2 accepted independent public-reference evidence rows and closed source debt after refresh; `The Weary Blues and Selected Poems` is held for title/scope correction because public sources support `The Weary Blues`, not the composite label; public path unchanged |
-| X065 | Current X059 existing-source rescue lane after X064 | Current rescue scope refreshed | 17 current source-item rescue rows classified across 7 works: 1 medium-risk representative-poetry row for Odi Gonzales and 16 high-risk collection/form blockers; public path unchanged |
+| X065 | Current X059 existing-source rescue lane after X066 | Current rescue scope refreshed | 21 current source-item rescue rows classified across 7 works: 5 medium-risk David Diop representative-poetry rows and 16 high-risk collection/form blockers; public path unchanged |
+| X066 | Current X065 medium-risk rescue row plus evidence/source-item ledgers | Current medium-risk rescue evidence applied | 1 Odi Gonzales representative-selection evidence row applied from the live X065 table; complete-work source debt remains open, downstream queues were refreshed, and David Diop now surfaces as the next medium-risk local rescue cluster; public path unchanged |
 
 ## Planned Extraction Packets
 

@@ -2678,7 +2678,7 @@ work_candidate_global_lit_persepolis	incumbent_current_path	Persepolis	0	0	0	0	0
 work_candidate_indig_lit_chaska_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_elicura_poems	incumbent_current_path	Selected Poems	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_selected_poems_joy_harjo	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_indig_lit_odi_gonzales_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_indig_lit_odi_gonzales_poems	incumbent_current_path	Selected Poems	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_indig_lit_natalia_toledo_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_irma_pineda_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_natalio_hernandez_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items

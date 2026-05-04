@@ -4,13 +4,13 @@ Status: completed, build-layer only. Public canon path unchanged.
 
 ## Purpose
 
-X065 refreshes the current existing-source rescue scope review after X064 removed Dunbar from the cut-side queue and surfaced Odi Gonzales as a local source-item rescue row.
+X065 refreshes the current existing-source rescue scope review from the live cut-side action queue. The table is intentionally current-state, so downstream packets can remove one blocker and surface the next local rescue cluster.
 
 ## Output
 
 - Added `scripts/canon_generate_current_rescue_scope_refresh_x065.rb`.
 - Refreshed `canon_current_rescue_scope_review.tsv`.
-- Classified 17 current source-item rescue rows across 7 cut-side works.
+- Classified 21 current source-item rescue rows across 7 cut-side works.
 
 Scope class summary:
 
@@ -18,22 +18,22 @@ Scope class summary:
 |---|---:|
 | `creator_exact_component_form_unverified` | 5 |
 | `named_collection_membership_unverified` | 11 |
-| `representative_poetry_selection_review` | 1 |
+| `representative_poetry_selection_review` | 5 |
 
 Scope risk summary:
 
 | Risk | Rows |
 |---|---:|
 | `high` | 16 |
-| `medium` | 1 |
+| `medium` | 5 |
 
 Current work-level source-row counts:
 
 | Work | Source rows |
 |---|---:|
+| `work_candidate_africa_lit_david_diop_poems` | 5 |
 | `work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0835_collected_poems` | 1 |
 | `work_candidate_global_lit_nazim_hikmet_poems` | 1 |
-| `work_candidate_indig_lit_odi_gonzales_poems` | 1 |
 | `work_candidate_latcarib_lit_all_fires_fire` | 2 |
 | `work_candidate_latcarib_lit_blow_up` | 2 |
 | `work_candidate_latcarib_lit_walcott_collected_poems` | 3 |
@@ -41,6 +41,6 @@ Current work-level source-row counts:
 
 ## Interpretation
 
-The current rescue lane is smaller than the X061 snapshot. Only one medium-risk row, Odi Gonzales's poem `Umantuu`, can move toward representative-selection evidence; the remaining rows still need collection-membership or component-form resolution.
+The current rescue lane has 5 medium-risk representative-selection rows that can be reviewed for selection-only evidence: 5 rows for `work_candidate_africa_lit_david_diop_poems`. The 16 high-risk rows still need collection-membership or component-form resolution.
 
 Direct public replacements: 0.

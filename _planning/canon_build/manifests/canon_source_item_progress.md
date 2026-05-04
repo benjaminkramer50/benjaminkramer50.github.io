@@ -3,7 +3,7 @@
 - generated_on: 2026-05-04
 - registered_sources: 80
 - source_item_rows: 5952
-- evidence_rows: 529
+- evidence_rows: 530
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -44,7 +44,7 @@
 | `e012_norton_african_american_lit_4e_v1_2025` | E012 | in_progress | 5 | 5 | 1 | 2 | 2 | 0 | 0 | 0 |
 | `e012_norton_african_american_lit_4e_v2_2025` | E012 | in_progress | 3 | 3 | 0 | 2 | 1 | 0 | 0 | 0 |
 | `e013_cambridge_history_latin_american_lit_1996` | E013;X024 | context_only | 52 | 0 | 0 | 0 | 0 | 52 | 0 | 0 |
-| `e013_fsg_20c_latin_american_poetry_2011` | E013 | extracted | 84 | 2 | 0 | 0 | 2 | 82 | 0 | 0 |
+| `e013_fsg_20c_latin_american_poetry_2011` | E013 | extracted | 84 | 3 | 0 | 0 | 3 | 81 | 0 | 0 |
 | `e013_oxford_latin_american_poetry_2009` | E013 | extracted | 137 | 4 | 0 | 0 | 4 | 133 | 0 | 0 |
 | `e013_oxford_latin_american_short_stories_1997` | E013 | extracted | 53 | 3 | 0 | 0 | 3 | 50 | 0 | 0 |
 | `e014_african_writers_series_heinemann_penguin` | E014;X023 | metadata_ready | 48 | 16 | 16 | 0 | 0 | 32 | 0 | 0 |

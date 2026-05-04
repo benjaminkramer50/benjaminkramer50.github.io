@@ -542,22 +542,45 @@ decisions:
     applies_to_artifacts:
       - _planning/canon_build/tables/canon_current_rescue_scope_review.tsv
       - _planning/canon_build/source_crosswalk_reports/x_batch_049_x065_current_rescue_scope_refresh.md
-    decision: refresh_existing_source_rescue_scope_after_x064
+    decision: refresh_existing_source_rescue_scope_from_live_action_queue
     rationale: >
-      X064 removed Dunbar from the current cut-side action queue and surfaced Odi
-      Gonzales as a local creator-exact source-item rescue row. X065 refreshes
-      the current rescue-scope table from the current action queue rather than
-      continuing to process the superseded X061 snapshot.
+      X065 refreshes the current rescue-scope table from the live action queue
+      rather than continuing to process the superseded X061 snapshot. After X066
+      applied the Odi Gonzales representative-selection row, the refreshed table
+      now exposes five David Diop medium-risk representative-poetry rows while
+      retaining 16 high-risk collection/form blockers.
     scoring_effect: none
     required_followup:
-      - accept_or_reject_odi_gonzales_medium_risk_representative_selection_row
+      - accept_or_reject_david_diop_medium_risk_representative_selection_rows
       - resolve_16_high_risk_collection_or_form_scope_blockers
+      - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
+    public_path_effect: none
+  - decision_id: x066_current_medium_risk_rescue_evidence_apply_001
+    decision_type: current_medium_risk_rescue_evidence_apply
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_current_medium_risk_rescue_evidence_applied.tsv
+      - _planning/canon_build/tables/canon_evidence.tsv
+      - _planning/canon_build/tables/canon_source_items.tsv
+    applies_to_work_ids:
+      - work_candidate_indig_lit_odi_gonzales_poems
+    decision: accept_current_medium_risk_row_as_representative_selection_evidence_only
+    rationale: >
+      The current X065 medium-risk Odi Gonzales row is a reviewed source-item
+      match for a representative poem in the selected-poems work. X066 links the
+      source item and writes accepted representative-selection evidence only. It
+      does not establish complete-work support, close complete-work source debt,
+      approve a cut, or authorize a replacement transaction.
+    scoring_effect: refresh_source_debt_scoring_cut_and_pair_queues_without_public_path_change
+    required_followup:
+      - process_current_david_diop_medium_risk_representative_selection_rows
+      - find_complete_work_support_for_selection_only_rows_before_cut_scoring
+      - resolve_or_reject_16_current_high_risk_scope_blockers
       - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
     public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3001
-  - unmatched_source_items_currently_5422
+  - unmatched_source_items_currently_5421
   - duplicate_candidate_keys_currently_39
   - chronology_inversion_rows_currently_138
   - generic_title_rows_currently_267

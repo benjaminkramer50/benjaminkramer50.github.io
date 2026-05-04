@@ -49,6 +49,10 @@ def creator_key(value)
   GENERIC_CREATORS.include?(key) ? "" : key
 end
 
+def safe_id(value)
+  value.to_s.downcase.gsub(/[^a-z0-9]+/, "_").gsub(/\A_+|_+\z/, "")
+end
+
 def source_item_form(row)
   support = row.fetch("supports")
   source_id = row.fetch("source_id")
@@ -149,6 +153,8 @@ def write_report(path, rows)
   class_counts = count_by(rows, "scope_review_class")
   risk_counts = count_by(rows, "scope_risk")
   work_counts = count_by(rows, "cut_work_id")
+  medium_rows = rows.select { |row| row.fetch("scope_risk") == "medium" }
+  high_rows = rows.select { |row| row.fetch("scope_risk") == "high" }
 
   File.open(path, "w") do |file|
     file.puts "# X065 Current Rescue Scope Refresh"
@@ -157,7 +163,7 @@ def write_report(path, rows)
     file.puts
     file.puts "## Purpose"
     file.puts
-    file.puts "X065 refreshes the current existing-source rescue scope review after X064 removed Dunbar from the cut-side queue and surfaced Odi Gonzales as a local source-item rescue row."
+    file.puts "X065 refreshes the current existing-source rescue scope review from the live cut-side action queue. The table is intentionally current-state, so downstream packets can remove one blocker and surface the next local rescue cluster."
     file.puts
     file.puts "## Output"
     file.puts
@@ -187,7 +193,14 @@ def write_report(path, rows)
     file.puts
     file.puts "## Interpretation"
     file.puts
-    file.puts "The current rescue lane is smaller than the X061 snapshot. Only one medium-risk row, Odi Gonzales's poem `Umantuu`, can move toward representative-selection evidence; the remaining rows still need collection-membership or component-form resolution."
+    if medium_rows.empty?
+      file.puts "The current rescue lane has no medium-risk representative-selection rows. The #{high_rows.size} high-risk rows still need collection-membership or component-form resolution before evidence can be generated."
+    else
+      medium_work_summary = medium_rows.group_by { |row| row.fetch("cut_work_id") }.sort.map do |work_id, grouped|
+        "#{grouped.size} row#{grouped.size == 1 ? "" : "s"} for `#{work_id}`"
+      end.join("; ")
+      file.puts "The current rescue lane has #{medium_rows.size} medium-risk representative-selection row#{medium_rows.size == 1 ? "" : "s"} that can be reviewed for selection-only evidence: #{medium_work_summary}. The #{high_rows.size} high-risk rows still need collection-membership or component-form resolution."
+    end
     file.puts
     file.puts "Direct public replacements: 0."
   end
@@ -229,8 +242,8 @@ action_rows.each do |action|
   end
 end
 
-scope_rows = scope_rows.map.with_index(1) do |row, index|
-  row.merge("scope_review_id" => "x065_current_scope_#{index.to_s.rjust(4, "0")}")
+scope_rows = scope_rows.map do |row|
+  row.merge("scope_review_id" => "x065_current_scope_#{safe_id(row.fetch("action_id"))}_#{safe_id(row.fetch("source_item_id"))}")
 end
 
 write_tsv(SCOPE_REVIEW_PATH, HEADERS, scope_rows)
