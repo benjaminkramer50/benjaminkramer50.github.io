@@ -32,6 +32,7 @@ title: Movie Log
     {% endif %}
   </div>
 
+  <div data-shelf-view-panel="recents">
   <div class="shelf-section" id="shelf-recents">
     <div class="shelf-row">
       {% for item in sorted_movies limit:12 %}
@@ -43,6 +44,61 @@ title: Movie Log
     <div class="shelf-board"></div>
   </div>
 
+  <!-- Filter bar -->
+  <div class="diary-filters">
+    <select id="filter-year" aria-label="Filter by year">
+      <option value="">All Years</option>
+    </select>
+    <select id="filter-genre" aria-label="Filter by genre">
+      <option value="">All Genres</option>
+    </select>
+    <select id="filter-rating" aria-label="Filter by rating">
+      <option value="">All Ratings</option>
+    </select>
+    <input type="text" id="filter-search" placeholder="Search titles..." aria-label="Search titles">
+  </div>
+
+  <!-- Diary table -->
+  <div class="diary-table" id="diary-table">
+    {% assign current_month = "" %}
+    {% for item in sorted_movies %}
+      {% assign item_month = item.date_watched | date: "%B %Y" %}
+      {% if item_month != current_month %}
+        {% assign current_month = item_month %}
+        <div class="diary-month-header" data-month="{{ item_month }}">{{ item_month }}</div>
+      {% endif %}
+      <div class="diary-row"
+           id="movie-{{ forloop.index }}"
+           data-title="{{ item.title }}"
+           data-year="{{ item.year }}"
+           data-genre="{{ item.genre }}"
+           data-rating="{{ item.rating }}"
+           data-date="{{ item.date_watched }}"
+           data-month="{{ item.date_watched | date: '%B %Y' }}">
+        <div class="diary-row-main">
+          <span class="diary-date">{{ item.date_watched | date: "%b %d" }}</span>
+          <span class="diary-title">{{ item.title }} <span class="diary-year">({{ item.year }})</span></span>
+          <span class="diary-director">{{ item.director }}</span>
+          <span class="diary-rating">
+            {% assign full_stars = item.rating | floor %}
+            {% assign has_half = item.rating | modulo: 1 %}
+            {% assign half_pos = full_stars | plus: 1 %}
+            {% for i in (1..5) %}{% if i <= full_stars %}<span class="star-full">&#9733;</span>{% elsif has_half != 0 and i == half_pos %}<span class="star-half">&#9733;</span>{% else %}<span class="star-empty">&#9734;</span>{% endif %}{% endfor %}
+          </span>
+        </div>
+        {% if item.review %}
+        <div class="diary-review">{{ item.review }}</div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <div id="diary-no-results" class="diary-no-results" style="display:none;">No movies match your filters.</div>
+
+  <button class="diary-show-more" id="diary-show-more" style="display:none;">Show more</button>
+  </div>
+
+  <div data-shelf-view-panel="canon">
   <div class="shelf-section" id="shelf-canon">
     {% if canon_movies.size > 0 %}
     <div class="shelf-row">
@@ -57,63 +113,7 @@ title: Movie Log
     <p class="shelf-empty">Canon data is still loading.</p>
     {% endif %}
   </div>
-</div>
-{% endif %}
-
-<!-- Filter bar -->
-<div class="diary-filters">
-  <select id="filter-year" aria-label="Filter by year">
-    <option value="">All Years</option>
-  </select>
-  <select id="filter-genre" aria-label="Filter by genre">
-    <option value="">All Genres</option>
-  </select>
-  <select id="filter-rating" aria-label="Filter by rating">
-    <option value="">All Ratings</option>
-  </select>
-  <input type="text" id="filter-search" placeholder="Search titles..." aria-label="Search titles">
-</div>
-
-<!-- Diary table -->
-<div class="diary-table" id="diary-table">
-  {% assign current_month = "" %}
-  {% for item in sorted_movies %}
-    {% assign item_month = item.date_watched | date: "%B %Y" %}
-    {% if item_month != current_month %}
-      {% assign current_month = item_month %}
-      <div class="diary-month-header" data-month="{{ item_month }}">{{ item_month }}</div>
-    {% endif %}
-    <div class="diary-row"
-         id="movie-{{ forloop.index }}"
-         data-title="{{ item.title }}"
-         data-year="{{ item.year }}"
-         data-genre="{{ item.genre }}"
-         data-rating="{{ item.rating }}"
-         data-date="{{ item.date_watched }}"
-         data-month="{{ item.date_watched | date: '%B %Y' }}">
-      <div class="diary-row-main">
-        <span class="diary-date">{{ item.date_watched | date: "%b %d" }}</span>
-        <span class="diary-title">{{ item.title }} <span class="diary-year">({{ item.year }})</span></span>
-        <span class="diary-director">{{ item.director }}</span>
-        <span class="diary-rating">
-          {% assign full_stars = item.rating | floor %}
-          {% assign has_half = item.rating | modulo: 1 %}
-          {% assign half_pos = full_stars | plus: 1 %}
-          {% for i in (1..5) %}{% if i <= full_stars %}<span class="star-full">&#9733;</span>{% elsif has_half != 0 and i == half_pos %}<span class="star-half">&#9733;</span>{% else %}<span class="star-empty">&#9734;</span>{% endif %}{% endfor %}
-        </span>
-      </div>
-      {% if item.review %}
-      <div class="diary-review">{{ item.review }}</div>
-      {% endif %}
-    </div>
-  {% endfor %}
-</div>
-
-<div id="diary-no-results" class="diary-no-results" style="display:none;">No movies match your filters.</div>
-
-<button class="diary-show-more" id="diary-show-more" style="display:none;">Show more</button>
-
-<div class="canon-browser" id="canon-browser">
+  <div class="canon-browser" id="canon-browser">
   <div class="canon-browser-topline">
     <div>
       <h2 class="canon-browser-title">Canon</h2>
@@ -143,6 +143,9 @@ title: Movie Log
 
   <button class="diary-show-more canon-show-more" id="canon-show-more" style="display:none;">Show more</button>
 </div>
+  </div>
+</div>
+{% endif %}
 
 <script>
 (function() {

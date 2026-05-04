@@ -9,6 +9,7 @@
     this.modes = (opts.modes && opts.modes.length ? opts.modes : ['favorites', 'recents']).slice();
     this.defaultMode = opts.defaultMode || this.modes[this.modes.length - 1];
     this.sections = {};
+    this.panels = {};
     this.buttons = {};
 
     if (!this.container) return;
@@ -17,8 +18,10 @@
       var mode = this.modes[i];
       var section = document.getElementById('shelf-' + mode);
       var button = this.container.querySelector('[data-mode="' + mode + '"]');
+      var panels = Array.prototype.slice.call(document.querySelectorAll('[data-shelf-view-panel="' + mode + '"]'));
       if (!section || !button) return;
       this.sections[mode] = section;
+      this.panels[mode] = panels;
       this.buttons[mode] = button;
     }
 
@@ -38,6 +41,12 @@
       this.buttons[mode].classList.toggle('active', isActive);
       this.buttons[mode].setAttribute('aria-pressed', isActive);
       this.sections[mode].setAttribute('aria-hidden', !isActive);
+      if (this.panels[mode]) {
+        for (var j = 0; j < this.panels[mode].length; j++) {
+          this.panels[mode][j].hidden = !isActive;
+          this.panels[mode][j].setAttribute('aria-hidden', !isActive);
+        }
+      }
     }
   };
 
