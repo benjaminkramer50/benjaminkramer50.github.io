@@ -17,7 +17,7 @@ title: Movie Log
     <button class="shelf-toggle-btn" data-mode="canon" aria-pressed="false">Canon</button>
   </div>
 
-  <div class="shelf-section" id="shelf-favorites">
+  <div class="shelf-section" id="shelf-favorites" data-shelf-view-panel="favorites">
     {% if fav_movies.size > 0 %}
     <div class="shelf-row">
       {% for item in fav_movies limit:12 %}
@@ -98,22 +98,7 @@ title: Movie Log
   <button class="diary-show-more" id="diary-show-more" style="display:none;">Show more</button>
   </div>
 
-  <div data-shelf-view-panel="canon">
-  <div class="shelf-section" id="shelf-canon">
-    {% if canon_movies.size > 0 %}
-    <div class="shelf-row">
-      {% for item in canon_movies limit:12 %}
-      <span class="spine" style="--spine-hue: {{ item.title | size | times: 53 | modulo: 360 }}; --spine-width: {{ item.title | size | modulo: 18 | plus: 24 }}px;">
-        <span class="spine-title">{{ item.title }}</span>
-      </span>
-      {% endfor %}
-    </div>
-    <div class="shelf-board"></div>
-    {% else %}
-    <p class="shelf-empty">Canon data is still loading.</p>
-    {% endif %}
-  </div>
-  <div class="canon-browser" id="canon-browser">
+  <div class="canon-browser" id="canon-browser" data-shelf-view-panel="canon">
   <div class="canon-browser-topline">
     <div>
       <h2 class="canon-browser-title">Canon</h2>
@@ -142,7 +127,6 @@ title: Movie Log
   <div id="canon-no-results" class="diary-no-results" style="display:none;">No canon movies match your filters.</div>
 
   <button class="diary-show-more canon-show-more" id="canon-show-more" style="display:none;">Show more</button>
-</div>
   </div>
 </div>
 {% endif %}

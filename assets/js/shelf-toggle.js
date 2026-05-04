@@ -19,8 +19,8 @@
       var section = document.getElementById('shelf-' + mode);
       var button = this.container.querySelector('[data-mode="' + mode + '"]');
       var panels = Array.prototype.slice.call(document.querySelectorAll('[data-shelf-view-panel="' + mode + '"]'));
-      if (!section || !button) return;
-      this.sections[mode] = section;
+      if (!button || panels.length === 0) return;
+      this.sections[mode] = section || null;
       this.panels[mode] = panels;
       this.buttons[mode] = button;
     }
@@ -37,10 +37,12 @@
     for (var i = 0; i < this.modes.length; i++) {
       var mode = this.modes[i];
       var isActive = this.mode === mode;
-      this.sections[mode].classList.toggle('shelf-active', isActive);
+      if (this.sections[mode]) {
+        this.sections[mode].classList.toggle('shelf-active', isActive);
+        this.sections[mode].setAttribute('aria-hidden', !isActive);
+      }
       this.buttons[mode].classList.toggle('active', isActive);
       this.buttons[mode].setAttribute('aria-pressed', isActive);
-      this.sections[mode].setAttribute('aria-hidden', !isActive);
       if (this.panels[mode]) {
         for (var j = 0; j < this.panels[mode].length; j++) {
           this.panels[mode][j].hidden = !isActive;
