@@ -31,20 +31,22 @@ title: Movie Log
       {% assign movie_key = item.title | slugify | append: '-' | append: item.year %}
       {% assign poster = site.data.movie_posters[movie_key] %}
       <article class="favorite-poster-card">
-        <div class="favorite-poster-frame">
-          {% if poster and poster.poster_url %}
-          <img class="favorite-poster-image" src="{{ poster.poster_url }}" alt="{{ item.title }} poster" loading="lazy">
-          {% else %}
-          <div class="favorite-poster-placeholder">
-            <span>{{ item.title }}</span>
-            <span>{{ item.year }}</span>
+        <a class="favorite-poster-link" href="#movie-{{ movie_key }}" data-target-row="movie-{{ movie_key }}">
+          <div class="favorite-poster-frame">
+            {% if poster and poster.poster_url %}
+            <img class="favorite-poster-image" src="{{ poster.poster_url }}" alt="{{ item.title }} poster" loading="lazy">
+            {% else %}
+            <div class="favorite-poster-placeholder">
+              <span>{{ item.title }}</span>
+              <span>{{ item.year }}</span>
+            </div>
+            {% endif %}
           </div>
-          {% endif %}
-        </div>
-        <div class="favorite-poster-meta">
-          <div class="favorite-poster-title">{{ item.title }}</div>
-          <div class="favorite-poster-year">{{ item.year }}</div>
-        </div>
+          <div class="favorite-poster-meta">
+            <div class="favorite-poster-title">{{ item.title }}</div>
+            <div class="favorite-poster-year">{{ item.year }}</div>
+          </div>
+        </a>
       </article>
       {% endif %}
       {% endfor %}
@@ -92,7 +94,7 @@ title: Movie Log
           {% assign movie_key = item.title | slugify | append: '-' | append: item.year %}
           {% assign poster = site.data.movie_posters[movie_key] %}
           <div class="diary-row{% if item.review %} diary-row-has-review{% endif %}"
-               id="movie-{{ forloop.index }}"
+               id="movie-{{ movie_key }}"
                data-title="{{ item.title }}"
                data-year="{{ item.year }}"
                data-genre="{{ item.genre }}"
@@ -290,6 +292,20 @@ title: Movie Log
     render();
   });
 
+  function openRecentRow(targetId) {
+    var row = document.getElementById(targetId);
+    if (!row) return;
+
+    var main = row.querySelector('.diary-row-main');
+    if (main && row.classList.contains('diary-row-has-review') && !row.classList.contains('diary-row-open')) {
+      main.click();
+    }
+
+    if (row.scrollIntoView) {
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
   // Click to toggle inline review cards.
   rows.forEach(function(row) {
     var main = row.querySelector('.diary-row-main');
@@ -315,6 +331,27 @@ title: Movie Log
 
   // Initial render
   render();
+
+  var favoriteLinks = Array.prototype.slice.call(document.querySelectorAll('.favorite-poster-link'));
+  var recentsButton = document.querySelector('.shelf-toggle-btn[data-mode="recents"]');
+
+  favoriteLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var targetId = link.getAttribute('data-target-row');
+      if (!targetId) return;
+
+      e.preventDefault();
+
+      if (recentsButton && !recentsButton.classList.contains('active')) {
+        recentsButton.click();
+      }
+
+      window.location.hash = targetId;
+      setTimeout(function() {
+        openRecentRow(targetId);
+      }, 0);
+    });
+  });
 })();
 </script>
 
