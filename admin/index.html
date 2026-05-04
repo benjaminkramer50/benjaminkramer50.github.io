@@ -534,6 +534,162 @@ layout: null
         color: #ffffff;
       }
 
+      /* ── Canon audit dashboard ── */
+      .canon-audit-dashboard {
+        margin: 1.25rem 0 2rem;
+        padding: 1rem;
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        background: var(--color-surface);
+      }
+
+      .canon-audit-topline {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .canon-audit-title {
+        font-family: var(--font-heading);
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--color-text);
+        margin: 0 0 0.15rem;
+      }
+
+      .canon-audit-note {
+        font-size: 0.8rem;
+        color: var(--color-muted);
+        margin: 0;
+      }
+
+      .canon-audit-summary {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.65rem;
+        margin-bottom: 1rem;
+      }
+
+      .canon-audit-stat {
+        padding: 0.75rem;
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        background: var(--color-bg);
+      }
+
+      .canon-audit-stat strong {
+        display: block;
+        font-family: var(--font-heading);
+        font-size: 1.25rem;
+        line-height: 1.1;
+        color: var(--color-text);
+      }
+
+      .canon-audit-stat span {
+        display: block;
+        margin-top: 0.25rem;
+        font-size: 0.72rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--color-muted);
+      }
+
+      .canon-audit-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.9rem;
+      }
+
+      .canon-audit-card {
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        overflow: hidden;
+      }
+
+      .canon-audit-card-title {
+        padding: 0.7rem 0.8rem;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--color-muted);
+        background: var(--color-bg);
+      }
+
+      .canon-audit-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 0.75rem;
+        align-items: center;
+        padding: 0.55rem 0.8rem;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .canon-audit-row:last-child {
+        border-bottom: none;
+      }
+
+      .canon-audit-row-label {
+        min-width: 0;
+      }
+
+      .canon-audit-row-label strong {
+        display: block;
+        font-size: 0.84rem;
+        font-weight: 600;
+        color: var(--color-text);
+      }
+
+      .canon-audit-row-label span {
+        display: block;
+        margin-top: 0.12rem;
+        font-size: 0.73rem;
+        color: var(--color-muted);
+      }
+
+      .canon-audit-count {
+        min-width: 3.5rem;
+        text-align: right;
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--color-text-secondary);
+      }
+
+      .canon-audit-meter {
+        grid-column: 1 / -1;
+        height: 4px;
+        border-radius: 999px;
+        background: var(--color-border);
+        overflow: hidden;
+      }
+
+      .canon-audit-meter-fill {
+        display: block;
+        height: 100%;
+        width: var(--coverage-width, 0%);
+        background: var(--color-accent);
+      }
+
+      .canon-audit-row.is-empty .canon-audit-meter-fill {
+        background: #b91c1c;
+      }
+
+      .canon-audit-row.is-under-target .canon-audit-meter-fill {
+        background: #b7791f;
+      }
+
+      .canon-audit-row.is-empty .canon-audit-count {
+        color: #b91c1c;
+      }
+
+      .canon-audit-row.is-under-target .canon-audit-count {
+        color: #b7791f;
+      }
+
       /* ── Focus states ── */
       a:focus-visible,
       button:focus-visible {
@@ -574,6 +730,15 @@ layout: null
         .existing-post-row {
           align-items: flex-start;
           flex-direction: column;
+        }
+
+        .canon-audit-topline {
+          flex-direction: column;
+        }
+
+        .canon-audit-summary,
+        .canon-audit-grid {
+          grid-template-columns: 1fr;
         }
 
         .admin-title {
@@ -722,6 +887,7 @@ layout: null
         <button class="admin-tab" type="button" id="tab-book" data-tab-button="book" role="tab" aria-selected="false" aria-controls="panel-book" tabindex="-1">Books</button>
         <button class="admin-tab" type="button" id="tab-paper" data-tab-button="paper" role="tab" aria-selected="false" aria-controls="panel-paper" tabindex="-1">Papers</button>
         <button class="admin-tab" type="button" id="tab-tv" data-tab-button="tv" role="tab" aria-selected="false" aria-controls="panel-tv" tabindex="-1">TV</button>
+        <button class="admin-tab" type="button" id="tab-canon" data-tab-button="canon" role="tab" aria-selected="false" aria-controls="panel-canon" tabindex="-1">Canon</button>
         <button class="admin-tab" type="button" id="tab-travel" data-tab-button="travel" role="tab" aria-selected="false" aria-controls="panel-travel" tabindex="-1">Travel</button>
       </div>
 
@@ -931,6 +1097,8 @@ layout: null
           <div class="form-group">
             <label class="form-label" for="movie-title">Title</label>
             <input class="form-input" type="text" id="movie-title" placeholder="Movie title" required autocomplete="off">
+            <input type="hidden" id="movie-canon-id">
+            <div class="form-hint" id="movie-canon-hint">Enter a title to see whether it matches the combined canon list.</div>
           </div>
 
           <div class="form-row">
@@ -1329,6 +1497,397 @@ layout: null
 
       </section>
 
+      <section class="admin-panel" id="panel-canon" data-tab-panel="canon" role="tabpanel" aria-labelledby="tab-canon" hidden>
+      <!-- ═══════════════ Canon Tracker ═══════════════ -->
+      <div class="section-divider">
+        <h2 class="section-header">Track Academic Canon Progress</h2>
+        <p class="section-subtitle">Update your progress through accepted 2026 Academic Canon records. Canon membership is set in the source files, not created from this admin page.</p>
+
+        {% assign admin_canon_accepted = site.canon | where_exp: "item", "item.canon_review.status == 'accepted'" %}
+        {% assign admin_canon_caveat = site.canon | where_exp: "item", "item.canon_review.status == 'accepted_with_caveat'" %}
+        {% assign admin_canon_entries = admin_canon_accepted | concat: admin_canon_caveat | sort: "canonical_title" %}
+        <div class="canon-audit-dashboard" id="canon-audit-dashboard" hidden>
+          <div class="canon-audit-topline">
+            <div>
+              <h3 class="canon-audit-title">Academic Canon Coverage Audit</h3>
+              <p class="canon-audit-note">Coverage comes from <code>_data/canon_coverage.yml</code>. Empty and under-target cells are candidates for the next intake wave, not additions from this admin page.</p>
+            </div>
+            <a class="btn-edit" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_data/canon_coverage.yml" target="_blank">Edit Coverage</a>
+          </div>
+          <div class="canon-audit-summary" id="canon-audit-summary"></div>
+          <div class="canon-audit-grid" id="canon-audit-grid"></div>
+        </div>
+
+        {% capture canon_audit_records %}
+        [
+          {% for item in admin_canon_entries %}
+          {
+            "canon_id": {{ item.canon_id | jsonify }},
+            "canonical_title": {{ item.canonical_title | jsonify }},
+            "canon_section": {{ item.canon_section | jsonify }},
+            "medium": {{ item.medium | jsonify }},
+            "periods": {{ item.periods | jsonify }},
+            "domains": {{ item.domains | jsonify }},
+            "traditions": {{ item.traditions | jsonify }},
+            "canon_review": {{ item.canon_review | jsonify }},
+            "user_progress": {{ item.user_progress | jsonify }},
+            "evidence": {{ item.evidence | jsonify }},
+            "audit_flags": {{ item.audit_flags | jsonify }},
+            "sensitivity_flags": {{ item.sensitivity_flags | jsonify }}
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+        {% endcapture %}
+        <script type="application/json" id="canon-audit-data">{"coverage": {{ site.data.canon_coverage | jsonify }}, "records": {{ canon_audit_records | strip_newlines }}}</script>
+
+        {% if admin_canon_entries.size == 0 %}
+        <div class="existing-posts">
+          <div class="existing-posts-header">No Academic Canon Records Yet</div>
+          <p class="existing-posts-note">Once the 2026 Academic Canon is set and records are added to <code>_canon/</code>, they will appear here for progress updates.</p>
+        </div>
+        {% else %}
+        <div class="existing-posts">
+          <div class="existing-posts-header">Accepted Academic Canon Records</div>
+          <p class="existing-posts-note">Choose a record, update only your progress fields, then regenerate the corresponding <code>_canon/</code> file.</p>
+          {% for item in admin_canon_entries %}
+          <div class="existing-post-row">
+            <div>
+              <span class="existing-post-title existing-entry-title">{{ item.display_title | default: item.canonical_title }}</span>
+              {% if item.work_date.label %}<span class="existing-post-date">{{ item.work_date.label }}</span>{% endif %}
+              <div class="existing-entry-meta">
+                {{ item.canon_section | replace: "_", " " }}{% if item.medium %} · {{ item.medium | replace: "_", " " }}{% endif %}{% if item.work_type %} · {{ item.work_type | replace: "_", " " }}{% endif %}{% if item.path_membership.lifetime_path %} · lifetime path{% endif %}{% if item.user_progress.status %} · {{ item.user_progress.status | replace: "_", " " }}{% endif %}
+              </div>
+            </div>
+            <div class="existing-entry-actions">
+              {% capture canon_entry_json %}{"layout":"canon_item","canon_id":{{ item.canon_id | jsonify }},"title":{{ item.title | jsonify }},"canonical_title":{{ item.canonical_title | jsonify }},"display_title":{{ item.display_title | jsonify }},"sort_title":{{ item.sort_title | jsonify }},"original_title":{{ item.original_title | jsonify }},"creators":{{ item.creators | jsonify }},"work_type":{{ item.work_type | jsonify }},"medium":{{ item.medium | jsonify }},"canon_section":{{ item.canon_section | jsonify }},"form":{{ item.form | jsonify }},"domains":{{ item.domains | jsonify }},"periods":{{ item.periods | jsonify }},"traditions":{{ item.traditions | jsonify }},"languages_original":{{ item.languages_original | jsonify }},"work_date":{{ item.work_date | jsonify }},"canon_review":{{ item.canon_review | jsonify }},"user_progress":{{ item.user_progress | jsonify }},"path_membership":{{ item.path_membership | jsonify }},"versions":{{ item.versions | jsonify }},"evidence":{{ item.evidence | jsonify }},"relations":{{ item.relations | jsonify }},"aliases":{{ item.aliases | jsonify }},"audit_flags":{{ item.audit_flags | jsonify }},"sensitivity_flags":{{ item.sensitivity_flags | jsonify }},"admin":{{ item.admin | jsonify }},"content":{{ item.content | strip_html | strip | jsonify }}}{% endcapture %}
+              <button class="btn-edit" type="button" data-load-entry="canonProgress" data-entry='{{ canon_entry_json | strip_newlines | escape }}'>Track</button>
+              <a class="btn-edit" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_canon/{{ item.canon_id }}.md" target="_blank">Source</a>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <form id="canon-progress-form" onsubmit="return false;" hidden>
+          <div class="form-group">
+            <label class="form-label" for="canon-progress-selected-title">Selected Record</label>
+            <input class="form-input" type="text" id="canon-progress-selected-title" readonly>
+            <div class="slug-preview" id="canon-progress-file-preview"></div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-progress-only-status">Personal Progress</label>
+              <select class="form-select" id="canon-progress-only-status">
+                {% for value in site.data.canon_vocab.user_progress_status %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-progress-only-percent">Progress %</label>
+              <input class="form-input" type="number" id="canon-progress-only-percent" min="0" max="100" value="0">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-progress-only-started">Started</label>
+              <input class="form-input" type="date" id="canon-progress-only-started">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-progress-only-completed">Completed</label>
+              <input class="form-input" type="date" id="canon-progress-only-completed">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="canon-progress-only-notes">Private Notes <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="canon-progress-only-notes" placeholder="Private progress notes."></textarea>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" type="button" id="canon-progress-generate-btn">Generate Progress Update</button>
+            <a class="btn btn-secondary" id="canon-progress-source-link" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/tree/main/_canon" target="_blank">Open Source File</a>
+          </div>
+        </form>
+
+        <div class="yaml-output" id="canon-progress-yaml-output">
+          <div class="yaml-output-label">Generated progress update</div>
+          <div class="yaml-block">
+            <pre id="canon-progress-yaml-pre"></pre>
+          </div>
+          <div class="yaml-actions">
+            <button class="btn btn-secondary" type="button" id="canon-progress-copy-btn">Copy</button>
+            <a class="btn btn-primary" id="canon-progress-github-link" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/tree/main/_canon" target="_blank">Update file on GitHub</a>
+            <span class="copy-feedback" id="canon-progress-copy-feedback">Copied!</span>
+          </div>
+        </div>
+
+        <form id="canon-form" onsubmit="return false;" hidden>
+          <div class="form-group">
+            <label class="form-label" for="canon-title">Canonical Title</label>
+            <input class="form-input" type="text" id="canon-title" placeholder="Republic, Blade Runner, Sunjata epic tradition..." required autocomplete="off">
+            <div class="slug-preview" id="canon-id-preview"></div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-original-title">Original Title <span class="optional">(optional)</span></label>
+              <input class="form-input" type="text" id="canon-original-title" placeholder="Politeia, original-language title..." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-creators">Creators</label>
+              <input class="form-input" type="text" id="canon-creators" placeholder="Comma-separated names, traditions, workshops..." required autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-date-label">Date Label</label>
+              <input class="form-input" type="text" id="canon-date-label" placeholder="1962, c. 8th c. BCE, 5th century..." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-year">Sort Year</label>
+              <input class="form-input" type="number" id="canon-year" placeholder="-400, 1962, etc." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-date-precision">Precision</label>
+              <select class="form-select" id="canon-date-precision">
+                {% for value in site.data.canon_vocab.date_precision %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-work-type">Work Type</label>
+              <select class="form-select" id="canon-work-type">
+                {% for value in site.data.canon_vocab.work_type %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-medium">Medium</label>
+              <select class="form-select" id="canon-medium">
+                {% for value in site.data.canon_vocab.medium %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-section">Canon Section</label>
+              <select class="form-select" id="canon-section">
+                {% for value in site.data.canon_vocab.canon_section %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-form-field">Form <span class="optional">(optional)</span></label>
+              <input class="form-input" type="text" id="canon-form-field" placeholder="dialogue, feature film, theorem, site..." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-domains">Domains</label>
+              <input class="form-input" type="text" id="canon-domains" placeholder="Comma-separated: philosophy, political-theory..." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-periods">Periods</label>
+              <input class="form-input" type="text" id="canon-periods" placeholder="Comma-separated: ancient, modern..." autocomplete="off">
+              <div class="form-hint">Prefer controlled values from <code>_data/canon_vocab.yml</code>.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-traditions">Traditions</label>
+              <input class="form-input" type="text" id="canon-traditions" placeholder="Comma-separated: ancient-greek, modernist..." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-languages">Original Languages</label>
+              <input class="form-input" type="text" id="canon-languages" placeholder="ISO-like codes: grc, eng, fra..." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-review-status">Canon Review</label>
+              <select class="form-select" id="canon-review-status">
+                {% for value in site.data.canon_vocab.canon_status %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-tier">Tier</label>
+              <select class="form-select" id="canon-tier">
+                {% for value in site.data.canon_vocab.canon_tier %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-confidence">Confidence</label>
+              <select class="form-select" id="canon-confidence">
+                {% for value in site.data.canon_vocab.confidence %}
+                <option value="{{ value }}">{{ value | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-progress-status">Personal Progress</label>
+              <select class="form-select" id="canon-progress-status">
+                {% for value in site.data.canon_vocab.user_progress_status %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-engagement">Engagement Target</label>
+              <select class="form-select" id="canon-engagement">
+                {% for value in site.data.canon_vocab.engagement_target %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-progress-percent">Progress %</label>
+              <input class="form-input" type="number" id="canon-progress-percent" min="0" max="100" value="0">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-started">Started</label>
+              <input class="form-input" type="date" id="canon-started">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-completed">Completed</label>
+              <input class="form-input" type="date" id="canon-completed">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-visibility">Visibility</label>
+              <select class="form-select" id="canon-visibility">
+                {% for value in site.data.canon_vocab.visibility %}
+                <option value="{{ value }}">{{ value | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="canon-rationale">Canon Rationale</label>
+            <textarea class="form-textarea form-textarea-short" id="canon-rationale" placeholder="Why this belongs, with caveats if needed..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-evidence-type">Evidence Type</label>
+              <select class="form-select" id="canon-evidence-type">
+                {% for value in site.data.canon_vocab.evidence_type %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-evidence-weight">Evidence Weight</label>
+              <select class="form-select" id="canon-evidence-weight">
+                {% for value in site.data.canon_vocab.evidence_weight %}
+                <option value="{{ value }}">{{ value | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-evidence-source">Source Name</label>
+              <input class="form-input" type="text" id="canon-evidence-source" placeholder="Manual judgment, Norton, BFI, syllabus..." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="canon-evidence-citation">Evidence Citation / Note</label>
+            <textarea class="form-textarea form-textarea-short" id="canon-evidence-citation" placeholder="Citation, URL context, reason this source supports inclusion..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-version-title">Preferred Version Title <span class="optional">(optional)</span></label>
+              <input class="form-input" type="text" id="canon-version-title" placeholder="Edition, translation, cut, recording, release..." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-version-type">Version Type</label>
+              <select class="form-select" id="canon-version-type">
+                {% for value in site.data.canon_vocab.version_type %}
+                <option value="{{ value }}">{{ value | replace: "_", " " | capitalize }}</option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-version-year">Version Year</label>
+              <input class="form-input" type="number" id="canon-version-year" placeholder="1968, 2007..." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-version-language">Version Language</label>
+              <input class="form-input" type="text" id="canon-version-language" placeholder="eng, fra, jpn..." autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-version-translators">Translators / Editors</label>
+              <input class="form-input" type="text" id="canon-version-translators" placeholder="Comma-separated, if applicable..." autocomplete="off">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="canon-public-note">Public Note <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="canon-public-note" placeholder="Optional page body shown on the detail page..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="canon-private-notes">Private Notes <span class="optional">(optional)</span></label>
+            <textarea class="form-textarea form-textarea-short" id="canon-private-notes" placeholder="Personal progress notes. Keep blank for public records unless intentionally private."></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="canon-audit-flags">Audit Flags</label>
+              <input class="form-input" type="text" id="canon-audit-flags" placeholder="Comma-separated: source_review_required, translation_dependency..." autocomplete="off">
+              <div class="form-hint">Use controlled values from <code>_data/canon_vocab.yml</code>.</div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="canon-sensitivity-flags">Sensitivity Flags</label>
+              <input class="form-input" type="text" id="canon-sensitivity-flags" placeholder="Comma-separated: living_tradition, colonial_extraction..." autocomplete="off">
+              <div class="form-hint">Leave empty only after consciously checking that none apply.</div>
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn btn-primary" type="button" id="canon-generate-btn">Generate Record</button>
+          </div>
+        </form>
+
+        <div class="yaml-output" id="canon-yaml-output" hidden>
+          <div class="yaml-output-label">Generated _canon record</div>
+          <div class="yaml-block">
+            <pre id="canon-yaml-pre"></pre>
+          </div>
+          <div class="yaml-actions">
+            <button class="btn btn-secondary" type="button" id="canon-copy-btn">Copy</button>
+            <a class="btn btn-primary" id="canon-github-link" href="https://github.com/benjaminkramer50/benjaminkramer50.github.io/tree/main/_canon" target="_blank">Create file on GitHub</a>
+            <span class="copy-feedback" id="canon-copy-feedback">Copied!</span>
+          </div>
+        </div>
+
+      </div>
+
+      </section>
+
       <section class="admin-panel" id="panel-travel" data-tab-panel="travel" role="tabpanel" aria-labelledby="tab-travel" hidden>
       <!-- ═══════════════ Travel Log ═══════════════ -->
       <div class="section-divider">
@@ -1626,7 +2185,60 @@ layout: null
         submitBtn.disabled = !titleInput.value.trim();
       }
 
-      titleInput.addEventListener('input', updateSlugPreview);
+      var movieCanonData = {{ site.data.movie_canon | jsonify }};
+      var movieCanonIdInput = document.getElementById('movie-canon-id');
+      var movieCanonHint = document.getElementById('movie-canon-hint');
+      var movieCanonBySlug = {};
+      var movieCanonByTitle = {};
+
+      movieCanonData.forEach(function (item) {
+        movieCanonBySlug[item.slug] = item;
+        var key = toSlug(item.title);
+        if (!movieCanonByTitle[key]) movieCanonByTitle[key] = [];
+        movieCanonByTitle[key].push(item);
+      });
+
+      function findCanonMovie(title, year) {
+        var key = toSlug(title);
+        if (!key) return null;
+        var matches = movieCanonByTitle[key] || [];
+
+        if (year) {
+          for (var i = 0; i < matches.length; i++) {
+            if (String(matches[i].year) === String(year)) return matches[i];
+          }
+        }
+
+        return matches.length === 1 ? matches[0] : null;
+      }
+
+      function updateMovieCanonMatch() {
+        if (!movieCanonHint || !movieCanonIdInput) return;
+
+        var movieTitleEl = document.getElementById('movie-title');
+        var movieYearEl = document.getElementById('movie-year');
+        var movieDirectorEl = document.getElementById('movie-director');
+        if (!movieTitleEl || !movieYearEl || !movieDirectorEl) return;
+
+        var title = movieTitleEl.value.trim();
+        var year = movieYearEl.value.trim();
+        var match = findCanonMovie(title, year);
+
+        if (match) {
+          movieCanonIdInput.value = match.slug;
+          if (!year) movieYearEl.value = match.year;
+          if (!movieDirectorEl.value.trim()) movieDirectorEl.value = match.director;
+          movieCanonHint.textContent = 'Canon match: ' + match.title + ' (' + match.year + ') — ' + match.director + ' · saved as favorite';
+        } else {
+          movieCanonIdInput.value = '';
+          movieCanonHint.textContent = title ? 'No canon match found.' : 'Enter a title to see whether it matches the combined canon list.';
+        }
+      }
+
+      titleInput.addEventListener('input', function () {
+        updateSlugPreview();
+        updateMovieCanonMatch();
+      });
       dateInput.addEventListener('input', updateSlugPreview);
 
       function formatTimezoneOffset(date) {
@@ -1721,9 +2333,9 @@ layout: null
         if (!val) return '""';
         // Quote if it contains special chars
         if (/[:#\[\]{}&*!|>'"%@`,?]/.test(val) || val !== val.trim()) {
-          return '"' + val.replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '"';
+          return '"' + val.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\r?\n/g, '\\n') + '"';
         }
-        return '"' + val + '"';
+        return '"' + val.replace(/\r?\n/g, '\\n') + '"';
       }
 
       // ── Helper: copy to clipboard with feedback ──
@@ -1883,9 +2495,12 @@ layout: null
         var rating = document.getElementById('movie-rating').value;
         var date = document.getElementById('movie-date').value;
         var review = document.getElementById('movie-review').value.trim();
+        var canonId = document.getElementById('movie-canon-id').value.trim();
+        if (canonId) document.getElementById('movie-favorite').checked = true;
 
         var lines = [];
         lines.push('- title: ' + yamlStr(title));
+        if (canonId) lines.push('  canon_id: ' + yamlStr(canonId));
         if (year) lines.push('  year: ' + year);
         if (director) lines.push('  director: ' + yamlStr(director));
         if (rating) lines.push('  rating: ' + rating);
@@ -1905,6 +2520,9 @@ layout: null
         var yaml = document.getElementById('movie-yaml-pre').textContent;
         copyToClipboard(yaml, 'movie-copy-feedback');
       });
+
+      document.getElementById('movie-title').addEventListener('input', updateMovieCanonMatch);
+      document.getElementById('movie-year').addEventListener('input', updateMovieCanonMatch);
 
       // ═══════════════ Book Log ═══════════════
       document.getElementById('book-generate-btn').addEventListener('click', function () {
@@ -2006,6 +2624,413 @@ layout: null
         copyToClipboard(yaml, 'tv-copy-feedback');
       });
 
+      // ═══════════════ Canon Tracker ═══════════════
+      var currentCanonId = '';
+      var currentCanonProgressEntry = null;
+      var canonTitleInput = document.getElementById('canon-title');
+      var canonIdPreview = document.getElementById('canon-id-preview');
+
+      function updateCanonIdPreview() {
+        var title = canonTitleInput ? canonTitleInput.value.trim() : '';
+        var id = currentCanonId || (title ? toSlug(title) : '');
+        if (canonIdPreview) canonIdPreview.textContent = id ? '_canon/' + id + '.md' : '';
+      }
+
+      function splitCanonList(value) {
+        return value
+          ? value.split(',').map(function (part) { return part.trim(); }).filter(Boolean)
+          : [];
+      }
+
+      function yamlInlineArray(values) {
+        if (!values || values.length === 0) return '[]';
+        return '[' + values.map(yamlStr).join(', ') + ']';
+      }
+
+      function yamlNullOrString(value) {
+        return value ? yamlStr(value) : 'null';
+      }
+
+      function yamlNullOrNumber(value) {
+        return value ? value : 'null';
+      }
+
+      function yamlScalar(value) {
+        if (value === null || value === undefined || value === '') return 'null';
+        if (typeof value === 'number' || typeof value === 'boolean') return String(value);
+        return yamlStr(String(value));
+      }
+
+      function appendYamlNode(lines, key, value, indent) {
+        var prefix = new Array(indent + 1).join(' ');
+        if (Array.isArray(value)) {
+          if (value.length === 0) {
+            lines.push(prefix + key + ': []');
+            return;
+          }
+          if (value.every(function (item) { return item === null || typeof item !== 'object'; })) {
+            lines.push(prefix + key + ': ' + yamlInlineArray(value));
+            return;
+          }
+          lines.push(prefix + key + ':');
+          value.forEach(function (item) {
+            if (item && typeof item === 'object' && !Array.isArray(item)) {
+              lines.push(prefix + '  -');
+              Object.keys(item).forEach(function (childKey) {
+                appendYamlNode(lines, childKey, item[childKey], indent + 4);
+              });
+            } else {
+              lines.push(prefix + '  - ' + yamlScalar(item));
+            }
+          });
+          return;
+        }
+        if (value && typeof value === 'object') {
+          var keys = Object.keys(value);
+          if (keys.length === 0) {
+            lines.push(prefix + key + ': {}');
+            return;
+          }
+          lines.push(prefix + key + ':');
+          keys.forEach(function (childKey) {
+            appendYamlNode(lines, childKey, value[childKey], indent + 2);
+          });
+          return;
+        }
+        lines.push(prefix + key + ': ' + yamlScalar(value));
+      }
+
+      function canonProgressYaml(entry) {
+        var data = Object.assign({}, entry);
+        var content = data.content || '';
+        delete data.content;
+        data.layout = data.layout || 'canon_item';
+        data.user_progress = Object.assign({}, data.user_progress || {});
+        data.user_progress.status = document.getElementById('canon-progress-only-status').value;
+        data.user_progress.progress_percent = Number(document.getElementById('canon-progress-only-percent').value || 0);
+        data.user_progress.started_on = document.getElementById('canon-progress-only-started').value || null;
+        data.user_progress.completed_on = document.getElementById('canon-progress-only-completed').value || null;
+        data.user_progress.private_notes = document.getElementById('canon-progress-only-notes').value.trim();
+        if (data.user_progress.status === 'completed') data.user_progress.progress_percent = 100;
+        if (!data.user_progress.current_version_id) data.user_progress.current_version_id = null;
+        data.admin = Object.assign({}, data.admin || {});
+        data.admin.updated_on = todayStr;
+        data.admin.schema_version = data.admin.schema_version || 1;
+
+        var topLevelOrder = [
+          'layout', 'canon_id', 'title', 'canonical_title', 'display_title', 'sort_title',
+          'original_title', 'creators', 'work_type', 'medium', 'canon_section', 'form',
+          'domains', 'periods', 'traditions', 'languages_original', 'work_date',
+          'canon_review', 'user_progress', 'path_membership', 'versions', 'evidence', 'relations',
+          'aliases', 'audit_flags', 'sensitivity_flags', 'admin'
+        ];
+        var lines = ['---'];
+        topLevelOrder.forEach(function (key) {
+          if (Object.prototype.hasOwnProperty.call(data, key)) appendYamlNode(lines, key, data[key], 0);
+        });
+        Object.keys(data).forEach(function (key) {
+          if (topLevelOrder.indexOf(key) === -1) appendYamlNode(lines, key, data[key], 0);
+        });
+        lines.push('---');
+        lines.push('');
+        if (content) lines.push(content);
+        return lines.join('\n');
+      }
+
+      function arrayValue(value) {
+        if (!value) return [];
+        return Array.isArray(value) ? value : [value];
+      }
+
+      function getByPath(object, path) {
+        return String(path || '').split('.').reduce(function (value, key) {
+          return value && Object.prototype.hasOwnProperty.call(value, key) ? value[key] : undefined;
+        }, object);
+      }
+
+      function hasNonManualEvidence(record) {
+        return arrayValue(record.evidence).some(function (source) {
+          return source && source.type && source.type !== 'manual_judgment';
+        });
+      }
+
+      function isAccepted(record) {
+        var status = record.canon_review && record.canon_review.status;
+        return status === 'accepted' || status === 'accepted_with_caveat';
+      }
+
+      function isActiveCanonRecord(record) {
+        var status = record.canon_review && record.canon_review.status;
+        return status !== 'rejected' && status !== 'duplicate' && status !== 'retired';
+      }
+
+      function recordMatchesCoverage(record, dimension, item) {
+        var values = arrayValue(getByPath(record, dimension.field)).map(String);
+        var matchValues = arrayValue(item.match || item.values || item.id).map(String);
+        return matchValues.some(function (value) { return values.indexOf(value) !== -1; });
+      }
+
+      function labelFromId(value) {
+        return String(value || '').replace(/[-_]/g, ' ').replace(/\b\w/g, function (letter) {
+          return letter.toUpperCase();
+        });
+      }
+
+      function renderCanonAuditDashboard() {
+        var dataEl = document.getElementById('canon-audit-data');
+        var summaryEl = document.getElementById('canon-audit-summary');
+        var gridEl = document.getElementById('canon-audit-grid');
+        if (!dataEl || !summaryEl || !gridEl) return;
+
+        var data;
+        try {
+          data = JSON.parse(dataEl.textContent);
+        } catch (error) {
+          summaryEl.textContent = 'Coverage data could not be parsed.';
+          return;
+        }
+
+        var coverage = data.coverage || {};
+        var records = arrayValue(data.records).filter(isActiveCanonRecord);
+        var dimensions = arrayValue(coverage.dimensions);
+        var manualOnly = records.filter(function (record) {
+          var evidence = arrayValue(record.evidence);
+          return evidence.length > 0 && evidence.every(function (source) {
+            return source && source.type === 'manual_judgment';
+          });
+        }).length;
+        var withNonManual = records.filter(hasNonManualEvidence).length;
+        var accepted = records.filter(isAccepted).length;
+        var emptyCells = 0;
+        var underTargetCells = 0;
+
+        summaryEl.innerHTML = [
+          '<div class="canon-audit-stat"><strong>' + records.length + '</strong><span>Active Records</span></div>',
+          '<div class="canon-audit-stat"><strong>' + accepted + '</strong><span>Accepted</span></div>',
+          '<div class="canon-audit-stat"><strong>' + withNonManual + '</strong><span>Non-Manual Evidence</span></div>',
+          '<div class="canon-audit-stat"><strong>' + manualOnly + '</strong><span>Manual Only</span></div>'
+        ].join('');
+
+        gridEl.innerHTML = '';
+        dimensions.forEach(function (dimension) {
+          var card = document.createElement('div');
+          card.className = 'canon-audit-card';
+
+          var title = document.createElement('div');
+          title.className = 'canon-audit-card-title';
+          title.textContent = dimension.label || labelFromId(dimension.id);
+          card.appendChild(title);
+
+          arrayValue(dimension.items).forEach(function (item) {
+            var minCandidates = item.min_candidates !== undefined ? item.min_candidates : (dimension.min_candidates || 1);
+            var matched = records.filter(function (record) {
+              return recordMatchesCoverage(record, dimension, item);
+            });
+            var acceptedCount = matched.filter(isAccepted).length;
+            var nonManualCount = matched.filter(hasNonManualEvidence).length;
+            var percent = minCandidates > 0 ? Math.min(100, Math.round((matched.length / minCandidates) * 100)) : 100;
+            var stateClass = matched.length === 0 ? ' is-empty' : matched.length < minCandidates ? ' is-under-target' : ' is-ok';
+            if (matched.length === 0) emptyCells++;
+            else if (matched.length < minCandidates) underTargetCells++;
+
+            var row = document.createElement('div');
+            row.className = 'canon-audit-row' + stateClass;
+            row.style.setProperty('--coverage-width', percent + '%');
+            row.innerHTML = [
+              '<div class="canon-audit-row-label">',
+              '<strong>' + (item.label || labelFromId(item.id)) + '</strong>',
+              '<span>' + acceptedCount + ' accepted · ' + nonManualCount + ' sourced</span>',
+              '</div>',
+              '<div class="canon-audit-count">' + matched.length + '/' + minCandidates + '</div>',
+              '<div class="canon-audit-meter"><span class="canon-audit-meter-fill"></span></div>'
+            ].join('');
+            card.appendChild(row);
+          });
+
+          gridEl.appendChild(card);
+        });
+
+        var issueStat = document.createElement('div');
+        issueStat.className = 'canon-audit-stat';
+        issueStat.innerHTML = '<strong>' + (emptyCells + underTargetCells) + '</strong><span>Coverage Gaps</span>';
+        summaryEl.appendChild(issueStat);
+      }
+
+      renderCanonAuditDashboard();
+
+      if (canonTitleInput) {
+        canonTitleInput.addEventListener('input', function () {
+          currentCanonId = '';
+          updateCanonIdPreview();
+        });
+      }
+
+      document.getElementById('canon-generate-btn').addEventListener('click', function () {
+        var title = document.getElementById('canon-title').value.trim();
+        if (!title) { document.getElementById('canon-title').focus(); return; }
+
+        var id = currentCanonId || toSlug(title);
+        var originalTitle = document.getElementById('canon-original-title').value.trim();
+        var creators = splitCanonList(document.getElementById('canon-creators').value.trim());
+        if (creators.length === 0) { document.getElementById('canon-creators').focus(); return; }
+        var dateLabel = document.getElementById('canon-date-label').value.trim();
+        var year = document.getElementById('canon-year').value.trim();
+        var datePrecision = document.getElementById('canon-date-precision').value;
+        var workType = document.getElementById('canon-work-type').value;
+        var medium = document.getElementById('canon-medium').value;
+        var canonSection = document.getElementById('canon-section').value;
+        var form = document.getElementById('canon-form-field').value.trim();
+        var domains = splitCanonList(document.getElementById('canon-domains').value.trim());
+        var periods = splitCanonList(document.getElementById('canon-periods').value.trim());
+        var traditions = splitCanonList(document.getElementById('canon-traditions').value.trim());
+        var languages = splitCanonList(document.getElementById('canon-languages').value.trim());
+        var reviewStatus = document.getElementById('canon-review-status').value;
+        var tier = document.getElementById('canon-tier').value;
+        var confidence = document.getElementById('canon-confidence').value;
+        var progressStatus = document.getElementById('canon-progress-status').value;
+        var engagement = document.getElementById('canon-engagement').value;
+        var progressPercent = document.getElementById('canon-progress-percent').value || '0';
+        var started = document.getElementById('canon-started').value;
+        var completed = document.getElementById('canon-completed').value;
+        var visibility = document.getElementById('canon-visibility').value;
+        var rationale = document.getElementById('canon-rationale').value.trim();
+        var evidenceType = document.getElementById('canon-evidence-type').value;
+        var evidenceWeight = document.getElementById('canon-evidence-weight').value;
+        var evidenceSource = document.getElementById('canon-evidence-source').value.trim();
+        var evidenceCitation = document.getElementById('canon-evidence-citation').value.trim();
+        var versionTitle = document.getElementById('canon-version-title').value.trim();
+        var versionType = document.getElementById('canon-version-type').value;
+        var versionYear = document.getElementById('canon-version-year').value.trim();
+        var versionLanguage = document.getElementById('canon-version-language').value.trim();
+        var versionTranslators = splitCanonList(document.getElementById('canon-version-translators').value.trim());
+        var publicNote = document.getElementById('canon-public-note').value.trim();
+        var privateNotes = document.getElementById('canon-private-notes').value.trim();
+        var auditFlags = splitCanonList(document.getElementById('canon-audit-flags').value.trim());
+        var sensitivityFlags = splitCanonList(document.getElementById('canon-sensitivity-flags').value.trim());
+        var versionId = versionTitle ? toSlug(versionTitle) : '';
+
+        var lines = ['---'];
+        lines.push('layout: canon_item');
+        lines.push('canon_id: ' + yamlStr(id));
+        lines.push('title: ' + yamlStr(title));
+        lines.push('canonical_title: ' + yamlStr(title));
+        lines.push('display_title: ' + yamlStr(title));
+        lines.push('sort_title: ' + yamlStr(title.replace(/^(the|a|an)\s+/i, '')));
+        lines.push('original_title: ' + yamlNullOrString(originalTitle));
+        lines.push('creators:');
+        creators.forEach(function (name) {
+          lines.push('  - name: ' + yamlStr(name));
+          lines.push('    role: creator');
+          lines.push('    authority_id: null');
+        });
+        lines.push('work_type: ' + yamlStr(workType));
+        lines.push('medium: ' + yamlStr(medium));
+        lines.push('canon_section: ' + yamlStr(canonSection));
+        lines.push('form: ' + yamlNullOrString(form));
+        lines.push('domains: ' + yamlInlineArray(domains));
+        lines.push('periods: ' + yamlInlineArray(periods));
+        lines.push('traditions: ' + yamlInlineArray(traditions));
+        lines.push('languages_original: ' + yamlInlineArray(languages));
+        lines.push('work_date:');
+        lines.push('  label: ' + yamlNullOrString(dateLabel));
+        lines.push('  sort_year: ' + yamlNullOrNumber(year));
+        lines.push('  precision: ' + yamlStr(datePrecision));
+        lines.push('canon_review:');
+        lines.push('  status: ' + yamlStr(reviewStatus));
+        lines.push('  tier: ' + yamlStr(tier));
+        lines.push('  rationale: ' + yamlStr(rationale));
+        lines.push('  reviewed_on: "' + todayStr + '"');
+        lines.push('  reviewed_by: "Benjamin Kramer"');
+        lines.push('  confidence: ' + yamlStr(confidence));
+        lines.push('  visibility: ' + yamlStr(visibility));
+        lines.push('user_progress:');
+        lines.push('  status: ' + yamlStr(progressStatus));
+        lines.push('  engagement_target: ' + yamlStr(engagement));
+        lines.push('  current_version_id: ' + yamlNullOrString(versionId));
+        lines.push('  started_on: ' + yamlNullOrString(started));
+        lines.push('  completed_on: ' + yamlNullOrString(completed));
+        lines.push('  progress_percent: ' + progressPercent);
+        lines.push('  private_notes: ' + yamlStr(privateNotes));
+        if (versionTitle) {
+          lines.push('versions:');
+          lines.push('  - id: ' + yamlStr(versionId));
+          lines.push('    type: ' + yamlStr(versionType));
+          lines.push('    title: ' + yamlStr(versionTitle));
+          lines.push('    translators: ' + yamlInlineArray(versionTranslators));
+          lines.push('    publication_year: ' + yamlNullOrNumber(versionYear));
+          lines.push('    language: ' + yamlNullOrString(versionLanguage));
+          lines.push('    identifiers:');
+          lines.push('      isbn: null');
+          lines.push('      doi: null');
+          lines.push('      url: null');
+          lines.push('    preferred: true');
+        } else {
+          lines.push('versions: []');
+        }
+        lines.push('evidence:');
+        lines.push('  - type: ' + yamlStr(evidenceType));
+        lines.push('    citation: ' + yamlStr(evidenceCitation));
+        lines.push('    url: null');
+        lines.push('    source_name: ' + yamlStr(evidenceSource));
+        lines.push('    accessed_on: null');
+        lines.push('    weight: ' + yamlStr(evidenceWeight));
+        lines.push('    supports: inclusion');
+        lines.push('    note: ""');
+        lines.push('relations:');
+        lines.push('  duplicate_of: null');
+        lines.push('  contains: []');
+        lines.push('  part_of: null');
+        lines.push('  related: []');
+        lines.push('aliases: []');
+        lines.push('audit_flags: ' + yamlInlineArray(auditFlags));
+        lines.push('sensitivity_flags: ' + yamlInlineArray(sensitivityFlags));
+        lines.push('admin:');
+        lines.push('  created_on: "' + todayStr + '"');
+        lines.push('  updated_on: "' + todayStr + '"');
+        lines.push('  schema_version: 1');
+        lines.push('---');
+        lines.push('');
+        if (publicNote) lines.push(publicNote);
+
+        var yaml = lines.join('\n');
+        document.getElementById('canon-yaml-pre').textContent = yaml;
+        var githubLink = document.getElementById('canon-github-link');
+        if (githubLink) {
+          githubLink.href = 'https://github.com/benjaminkramer50/benjaminkramer50.github.io/new/main'
+            + '?filename=' + encodeURIComponent('_canon/' + id + '.md')
+            + '&value=' + encodeURIComponent(yaml);
+        }
+        var output = document.getElementById('canon-yaml-output');
+        output.classList.add('visible');
+        output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        currentCanonId = id;
+        updateCanonIdPreview();
+      });
+
+      document.getElementById('canon-copy-btn').addEventListener('click', function () {
+        var yaml = document.getElementById('canon-yaml-pre').textContent;
+        copyToClipboard(yaml, 'canon-copy-feedback');
+      });
+
+      document.getElementById('canon-progress-generate-btn').addEventListener('click', function () {
+        if (!currentCanonProgressEntry) return;
+        var yaml = canonProgressYaml(currentCanonProgressEntry);
+        document.getElementById('canon-progress-yaml-pre').textContent = yaml;
+        var id = currentCanonProgressEntry.canon_id || currentCanonProgressEntry.id || '';
+        var githubLink = document.getElementById('canon-progress-github-link');
+        if (githubLink && id) {
+          githubLink.href = 'https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_canon/' + encodeURIComponent(id + '.md');
+        }
+        var output = document.getElementById('canon-progress-yaml-output');
+        output.classList.add('visible');
+        output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      document.getElementById('canon-progress-copy-btn').addEventListener('click', function () {
+        var yaml = document.getElementById('canon-progress-yaml-pre').textContent;
+        copyToClipboard(yaml, 'canon-progress-copy-feedback');
+      });
+
       // ═══════════════ Travel Log ═══════════════
       // Enable/disable state dropdown based on country code
       document.getElementById('travel-country-code').addEventListener('change', function () {
@@ -2072,10 +3097,33 @@ layout: null
         setFieldValue('movie-rating', entry.rating);
         setFieldValue('movie-date', entry.date_watched || todayStr);
         setFieldValue('movie-review', entry.review);
+        setFieldValue('movie-canon-id', entry.canon_id);
         setFieldChecked('movie-favorite', entry.favorite);
+        updateMovieCanonMatch();
         hideYamlOutput('movie-yaml-output');
         scrollToPanelStart('movie');
         document.getElementById('movie-title').focus();
+      }
+
+      function loadCanonMovie(slug) {
+        var entry = movieCanonBySlug[slug];
+        if (!entry) return;
+
+        setActiveTab('movie');
+        setFieldValue('movie-title', entry.title);
+        setFieldValue('movie-year', entry.year);
+        setFieldValue('movie-director', entry.director);
+        setFieldValue('movie-genre', '');
+        setFieldValue('movie-rating', '');
+        setFieldValue('movie-date', todayStr);
+        setFieldValue('movie-review', '');
+        setFieldValue('movie-canon-id', entry.slug);
+        setFieldChecked('movie-favorite', true);
+        updateSlugPreview();
+        updateMovieCanonMatch();
+        hideYamlOutput('movie-yaml-output');
+        scrollToPanelStart('movie');
+        document.getElementById('movie-review').focus();
       }
 
       function loadBookEntry(entry) {
@@ -2119,6 +3167,85 @@ layout: null
         document.getElementById('tv-title').focus();
       }
 
+      function loadCanonEntry(entry) {
+        currentCanonId = entry.canon_id || entry.id || '';
+        var creators = entry.creators || [];
+        var creatorNames = creators.map(function (creator) {
+          return creator && creator.name ? creator.name : '';
+        }).filter(Boolean).join(', ');
+        var evidence = entry.evidence && entry.evidence.length ? entry.evidence[0] : {};
+        var version = entry.versions && entry.versions.length ? entry.versions[0] : {};
+        var review = entry.canon_review || {};
+        var progress = entry.user_progress || {};
+        var date = entry.work_date || {};
+
+        setFieldValue('canon-title', entry.canonical_title || entry.display_title || entry.title);
+        setFieldValue('canon-original-title', entry.original_title);
+        setFieldValue('canon-creators', creatorNames);
+        setFieldValue('canon-date-label', date.label);
+        setFieldValue('canon-year', date.sort_year);
+        setFieldValue('canon-date-precision', date.precision || 'unknown');
+        setFieldValue('canon-work-type', entry.work_type || 'book');
+        setFieldValue('canon-medium', entry.medium || 'text');
+        setFieldValue('canon-section', entry.canon_section || 'textual_humanities');
+        setFieldValue('canon-form-field', entry.form);
+        setFieldValue('canon-domains', (entry.domains || []).join(', '));
+        setFieldValue('canon-periods', (entry.periods || []).join(', '));
+        setFieldValue('canon-traditions', (entry.traditions || []).join(', '));
+        setFieldValue('canon-languages', (entry.languages_original || []).join(', '));
+        setFieldValue('canon-review-status', review.status || 'candidate');
+        setFieldValue('canon-tier', review.tier || 'contextual');
+        setFieldValue('canon-confidence', review.confidence || 'medium');
+        setFieldValue('canon-progress-status', progress.status || 'planned');
+        setFieldValue('canon-engagement', progress.engagement_target || 'full');
+        setFieldValue('canon-progress-percent', progress.progress_percent || 0);
+        setFieldValue('canon-started', progress.started_on);
+        setFieldValue('canon-completed', progress.completed_on);
+        setFieldValue('canon-visibility', review.visibility || 'public');
+        setFieldValue('canon-rationale', review.rationale);
+        setFieldValue('canon-evidence-type', evidence.type || 'manual_judgment');
+        setFieldValue('canon-evidence-weight', evidence.weight || 'medium');
+        setFieldValue('canon-evidence-source', evidence.source_name);
+        setFieldValue('canon-evidence-citation', evidence.citation);
+        setFieldValue('canon-version-title', version.title);
+        setFieldValue('canon-version-type', version.type || 'edition');
+        setFieldValue('canon-version-year', version.publication_year);
+        setFieldValue('canon-version-language', version.language);
+        setFieldValue('canon-version-translators', (version.translators || []).join(', '));
+        setFieldValue('canon-public-note', entry.content || '');
+        setFieldValue('canon-private-notes', progress.private_notes);
+        setFieldValue('canon-audit-flags', (entry.audit_flags || []).join(', '));
+        setFieldValue('canon-sensitivity-flags', (entry.sensitivity_flags || []).join(', '));
+        updateCanonIdPreview();
+        hideYamlOutput('canon-yaml-output');
+        scrollToPanelStart('canon');
+        document.getElementById('canon-title').focus();
+      }
+
+      function loadCanonProgressEntry(entry) {
+        currentCanonProgressEntry = entry;
+        var progress = entry.user_progress || {};
+        var id = entry.canon_id || entry.id || '';
+        var title = entry.display_title || entry.canonical_title || entry.title || id;
+        setFieldValue('canon-progress-selected-title', title);
+        setFieldValue('canon-progress-only-status', progress.status || 'planned');
+        setFieldValue('canon-progress-only-percent', progress.progress_percent || 0);
+        setFieldValue('canon-progress-only-started', progress.started_on);
+        setFieldValue('canon-progress-only-completed', progress.completed_on);
+        setFieldValue('canon-progress-only-notes', progress.private_notes);
+        var preview = document.getElementById('canon-progress-file-preview');
+        if (preview) preview.textContent = id ? '_canon/' + id + '.md' : '';
+        var sourceLink = document.getElementById('canon-progress-source-link');
+        if (sourceLink && id) {
+          sourceLink.href = 'https://github.com/benjaminkramer50/benjaminkramer50.github.io/edit/main/_canon/' + encodeURIComponent(id + '.md');
+        }
+        var form = document.getElementById('canon-progress-form');
+        if (form) form.hidden = false;
+        hideYamlOutput('canon-progress-yaml-output');
+        scrollToPanelStart('canon');
+        document.getElementById('canon-progress-only-status').focus();
+      }
+
       function syncTravelStateSelect(countryCode) {
         var stateSelect = document.getElementById('travel-state-code');
         stateSelect.disabled = countryCode !== 'US';
@@ -2147,6 +3274,8 @@ layout: null
         book: loadBookEntry,
         paper: loadPaperEntry,
         tv: loadTvEntry,
+        canon: loadCanonEntry,
+        canonProgress: loadCanonProgressEntry,
         travel: loadTravelEntry
       };
 
@@ -2162,6 +3291,12 @@ layout: null
           }
         });
       });
+
+      var movieQuery = new URLSearchParams(window.location.search);
+      var requestedMovie = movieQuery.get('movie') || movieQuery.get('canon');
+      if (requestedMovie && movieCanonBySlug[requestedMovie]) {
+        loadCanonMovie(requestedMovie);
+      }
 
       // ═══════════════ Past Travel (visited.yml) ═══════════════
       var pastCountries = [];

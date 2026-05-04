@@ -2274,6 +2274,187 @@ textarea:focus-visible,
   text-align: center;
 }
 
+/* ── Movie canon browser ── */
+.canon-browser {
+  margin: 0.5rem 0 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.canon-browser-topline {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.canon-browser-title {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.canon-browser-note {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.canon-browser-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+  min-width: min(100%, 380px);
+}
+
+.canon-summary-stat {
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-surface);
+}
+
+.canon-summary-stat strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  line-height: 1.1;
+  color: var(--color-text);
+}
+
+.canon-summary-stat span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.canon-filters {
+  margin-bottom: 0.9rem;
+}
+
+.canon-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.canon-row {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-surface);
+  padding: 0.8rem 0.9rem;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.canon-row:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .canon-row:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+.canon-row-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.canon-row-copy {
+  min-width: 0;
+}
+
+.canon-row-title {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.35;
+}
+
+.canon-row-year {
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.canon-row-director {
+  margin-top: 0.15rem;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.canon-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.35rem;
+}
+
+.canon-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.5rem;
+  padding: 0.2rem 0.45rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  background: var(--color-bg);
+}
+
+.canon-pill-reviewed {
+  color: var(--color-accent);
+  border-color: color-mix(in srgb, var(--color-accent) 40%, var(--color-border));
+}
+
+.canon-pill-favorite {
+  color: #b7791f;
+  border-color: color-mix(in srgb, #b7791f 35%, var(--color-border));
+}
+
+.canon-row-review-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.6rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.canon-row-review-link:hover {
+  transform: translateY(-1px);
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+.canon-row-review {
+  margin-top: 0.65rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.84rem;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
 /* ── Travel Stamps ── */
 .stamp-row {
   display: flex;
@@ -2494,6 +2675,24 @@ textarea:focus-visible,
   .food-map-list {
     grid-template-columns: 1fr;
     max-height: none;
+  }
+
+  .canon-browser-topline {
+    flex-direction: column;
+  }
+
+  .canon-browser-summary {
+    min-width: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .canon-row-main {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .canon-row-actions {
+    justify-content: flex-start;
   }
 }
 

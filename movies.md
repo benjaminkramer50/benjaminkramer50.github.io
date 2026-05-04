@@ -7,12 +7,14 @@ title: Movie Log
 
 {% assign sorted_movies = site.data.movies | reverse | sort: "date_watched" | reverse %}
 {% assign fav_movies = sorted_movies | where: "favorite", true | sort: "rating" | reverse %}
+{% assign canon_movies = site.data.movie_canon %}
 
-{% if sorted_movies.size > 0 %}
+{% if sorted_movies.size > 0 or canon_movies.size > 0 %}
 <div class="shelf">
   <div class="shelf-toggle" id="shelf-toggle" role="group" aria-label="Shelf view mode">
     <button class="shelf-toggle-btn" data-mode="favorites" aria-pressed="false">Favorites</button>
     <button class="shelf-toggle-btn" data-mode="recents" aria-pressed="true">Recents</button>
+    <button class="shelf-toggle-btn" data-mode="canon" aria-pressed="false">Canon</button>
   </div>
 
   <div class="shelf-section" id="shelf-favorites">
@@ -39,6 +41,21 @@ title: Movie Log
       {% endfor %}
     </div>
     <div class="shelf-board"></div>
+  </div>
+
+  <div class="shelf-section" id="shelf-canon">
+    {% if canon_movies.size > 0 %}
+    <div class="shelf-row">
+      {% for item in canon_movies limit:12 %}
+      <span class="spine" style="--spine-hue: {{ item.title | size | times: 53 | modulo: 360 }}; --spine-width: {{ item.title | size | modulo: 18 | plus: 24 }}px;">
+        <span class="spine-title">{{ item.title }}</span>
+      </span>
+      {% endfor %}
+    </div>
+    <div class="shelf-board"></div>
+    {% else %}
+    <p class="shelf-empty">Canon data is still loading.</p>
+    {% endif %}
   </div>
 </div>
 {% endif %}
@@ -95,6 +112,37 @@ title: Movie Log
 <div id="diary-no-results" class="diary-no-results" style="display:none;">No movies match your filters.</div>
 
 <button class="diary-show-more" id="diary-show-more" style="display:none;">Show more</button>
+
+<div class="canon-browser" id="canon-browser">
+  <div class="canon-browser-topline">
+    <div>
+      <h2 class="canon-browser-title">Canon</h2>
+      <p class="canon-browser-note">The combined-editions canon holds {{ canon_movies.size }} films. Review one in admin, and any favorite canon entry will surface in Favorites.</p>
+    </div>
+    <div class="canon-browser-summary" id="canon-summary"></div>
+  </div>
+
+  <div class="diary-filters canon-filters">
+    <input type="search" id="canon-search" placeholder="Search canon titles, directors, years..." aria-label="Search canon titles">
+    <select id="canon-status" aria-label="Filter canon status">
+      <option value="">All Statuses</option>
+      <option value="reviewed">Reviewed</option>
+      <option value="favorite">Favorites</option>
+      <option value="unreviewed">Unreviewed</option>
+    </select>
+    <select id="canon-sort" aria-label="Sort canon titles">
+      <option value="title">Title</option>
+      <option value="year">Year</option>
+      <option value="director">Director</option>
+      <option value="source">Source order</option>
+    </select>
+  </div>
+
+  <div class="canon-list" id="canon-list"></div>
+  <div id="canon-no-results" class="diary-no-results" style="display:none;">No canon movies match your filters.</div>
+
+  <button class="diary-show-more canon-show-more" id="canon-show-more" style="display:none;">Show more</button>
+</div>
 
 <script>
 (function() {
@@ -239,5 +287,250 @@ title: Movie Log
   render();
 })();
 </script>
+
+<script type="application/json" id="canon-movies-data">{{ canon_movies | jsonify }}</script>
+<script type="application/json" id="watched-movies-data">{{ sorted_movies | jsonify }}</script>
+
+<script>
+(function () {
+  var canonContainer = document.getElementById('canon-browser');
+  var canonList = document.getElementById('canon-list');
+  if (!canonContainer || !canonList) return;
+
+  var canonDataEl = document.getElementById('canon-movies-data');
+  var watchedDataEl = document.getElementById('watched-movies-data');
+  var canonData = canonDataEl ? JSON.parse(canonDataEl.textContent || '[]') : [];
+  var watchedData = watchedDataEl ? JSON.parse(watchedDataEl.textContent || '[]') : [];
+
+  var searchInput = document.getElementById('canon-search');
+  var statusSelect = document.getElementById('canon-status');
+  var sortSelect = document.getElementById('canon-sort');
+  var showMoreBtn = document.getElementById('canon-show-more');
+  var summary = document.getElementById('canon-summary');
+  var noResults = document.getElementById('canon-no-results');
+  var pageSize = 36;
+  var visibleCount = pageSize;
+
+  function slugify(text) {
+    return String(text || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function movieKey(title, year) {
+    return slugify(title) + '-' + String(year || '');
+  }
+
+  function parseDate(value) {
+    if (!value) return null;
+    var date = new Date(value);
+    return isNaN(date.getTime()) ? null : date;
+  }
+
+  function cleanReview(text) {
+    return String(text || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function escapeHtml(text) {
+    return String(text || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  var watchedGroups = {};
+  watchedData.forEach(function (entry) {
+    var key = entry.canon_id || movieKey(entry.title, entry.year);
+    if (!watchedGroups[key]) watchedGroups[key] = [];
+    watchedGroups[key].push(entry);
+  });
+
+  function summarize(entries) {
+    if (!entries || !entries.length) return null;
+    var summaryEntry = entries[0];
+    var favorite = false;
+
+    entries.forEach(function (entry) {
+      var entryDate = parseDate(entry.date_watched);
+      var summaryDate = parseDate(summaryEntry.date_watched);
+      if (entry.favorite) favorite = true;
+      if (entryDate && (!summaryDate || entryDate > summaryDate)) {
+        summaryEntry = entry;
+      }
+    });
+
+    return {
+      review: summaryEntry.review || '',
+      rating: summaryEntry.rating,
+      favorite: favorite || !!summaryEntry.favorite,
+      date_watched: summaryEntry.date_watched || ''
+    };
+  }
+
+  var canonItems = canonData.map(function (item) {
+    var summaryEntry = summarize(watchedGroups[item.slug] || watchedGroups[movieKey(item.title, item.year)] || []);
+    var reviewed = !!(summaryEntry && summaryEntry.review);
+    var favorite = !!(summaryEntry && summaryEntry.favorite);
+    return {
+      slug: item.slug,
+      title: item.title,
+      year: item.year,
+      director: item.director,
+      source_index: item.source_index,
+      source: item.source,
+      reviewed: reviewed,
+      favorite: favorite,
+      review: summaryEntry ? summaryEntry.review : '',
+      rating: summaryEntry ? summaryEntry.rating : '',
+      date_watched: summaryEntry ? summaryEntry.date_watched : ''
+    };
+  });
+
+  function buildSummary() {
+    if (!summary) return;
+    var reviewed = 0;
+    var favorites = 0;
+    canonItems.forEach(function (item) {
+      if (item.reviewed) reviewed++;
+      if (item.favorite) favorites++;
+    });
+
+    summary.innerHTML = '';
+
+    var stats = [
+      ['Films', canonItems.length],
+      ['Reviewed', reviewed],
+      ['Favorites', favorites],
+      ['Unreviewed', canonItems.length - reviewed]
+    ];
+
+    stats.forEach(function (stat) {
+      var node = document.createElement('div');
+      node.className = 'canon-summary-stat';
+      node.innerHTML = '<strong>' + stat[1] + '</strong><span>' + stat[0] + '</span>';
+      summary.appendChild(node);
+    });
+  }
+
+  function currentFilterValue() {
+    return {
+      search: (searchInput ? searchInput.value : '').toLowerCase().trim(),
+      status: statusSelect ? statusSelect.value : '',
+      sort: sortSelect ? sortSelect.value : 'title'
+    };
+  }
+
+  function compareBySort(a, b, sortKey) {
+    if (sortKey === 'year') return (a.year - b.year) || a.title.localeCompare(b.title);
+    if (sortKey === 'director') return a.director.localeCompare(b.director) || a.title.localeCompare(b.title);
+    if (sortKey === 'source') return (a.source_index - b.source_index) || a.title.localeCompare(b.title);
+    return a.title.localeCompare(b.title) || (a.year - b.year);
+  }
+
+  function matchesFilters(item, filters) {
+    if (filters.search) {
+      var haystack = [item.title, item.year, item.director, item.review].join(' ').toLowerCase();
+      if (haystack.indexOf(filters.search) === -1) return false;
+    }
+
+    if (filters.status === 'reviewed' && !item.reviewed) return false;
+    if (filters.status === 'favorite' && !item.favorite) return false;
+    if (filters.status === 'unreviewed' && item.reviewed) return false;
+
+    return true;
+  }
+
+  function statusPills(item) {
+    var pills = [];
+    if (item.reviewed) pills.push('<span class="canon-pill canon-pill-reviewed">Reviewed</span>');
+    if (item.favorite) pills.push('<span class="canon-pill canon-pill-favorite">Favorite</span>');
+    if (!item.reviewed) pills.push('<span class="canon-pill">Unreviewed</span>');
+    return pills.join(' ');
+  }
+
+  function reviewExcerpt(review) {
+    var text = cleanReview(review);
+    if (!text) return '';
+    return text.length > 220 ? text.slice(0, 217) + '...' : text;
+  }
+
+  function render() {
+    var filters = currentFilterValue();
+    var filtered = canonItems.filter(function (item) {
+      return matchesFilters(item, filters);
+    }).slice().sort(function (a, b) {
+      return compareBySort(a, b, filters.sort);
+    });
+
+    canonList.innerHTML = '';
+
+    filtered.forEach(function (item, index) {
+      if (index >= visibleCount) return;
+
+      var row = document.createElement('div');
+      row.className = 'canon-row';
+      row.setAttribute('data-title', item.title);
+      row.setAttribute('data-year', String(item.year));
+      row.setAttribute('data-director', item.director);
+      row.setAttribute('data-reviewed', item.reviewed ? 'true' : 'false');
+      row.setAttribute('data-favorite', item.favorite ? 'true' : 'false');
+
+      var reviewLink = '/admin/?movie=' + encodeURIComponent(item.slug) + '#movie';
+      var reviewLabel = item.reviewed ? 'Edit review' : 'Review';
+      var excerpt = reviewExcerpt(item.review);
+
+      row.innerHTML =
+        '<div class="canon-row-main">' +
+          '<div class="canon-row-copy">' +
+            '<div class="canon-row-title">' + escapeHtml(item.title) + ' <span class="canon-row-year">(' + escapeHtml(item.year) + ')</span></div>' +
+            '<div class="canon-row-director">' + escapeHtml(item.director) + '</div>' +
+          '</div>' +
+          '<div class="canon-row-actions">' +
+            statusPills(item) +
+            '<a class="canon-row-review-link" href="' + reviewLink + '">' + reviewLabel + '</a>' +
+          '</div>' +
+        '</div>' +
+        (excerpt ? '<div class="canon-row-review">' + escapeHtml(excerpt) + '</div>' : '');
+
+      canonList.appendChild(row);
+    });
+
+    if (showMoreBtn) {
+      showMoreBtn.style.display = filtered.length > visibleCount ? '' : 'none';
+    }
+
+    if (noResults) {
+      noResults.style.display = filtered.length === 0 ? '' : 'none';
+    }
+
+    if (filtered.length > visibleCount) {
+      showMoreBtn.style.display = '';
+    }
+
+    if (summary) buildSummary();
+  }
+
+  function resetVisibleCount() {
+    visibleCount = pageSize;
+    render();
+  }
+
+  if (searchInput) searchInput.addEventListener('input', resetVisibleCount);
+  if (statusSelect) statusSelect.addEventListener('change', resetVisibleCount);
+  if (sortSelect) sortSelect.addEventListener('change', resetVisibleCount);
+  if (showMoreBtn) {
+    showMoreBtn.addEventListener('click', function () {
+      visibleCount += pageSize;
+      render();
+    });
+  }
+
+  buildSummary();
+  render();
+})();
+</script>
 <script src="/assets/js/shelf-toggle.js"></script>
-<script>new ShelfToggle({ page: 'movies' });</script>
+<script>new ShelfToggle({ page: 'movies', modes: ['favorites', 'recents', 'canon'], defaultMode: 'recents' });</script>
