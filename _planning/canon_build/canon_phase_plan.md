@@ -140,6 +140,16 @@ Post-launch work:
 
 The old Phases 0-10 remain valid as lock criteria, but they are no longer launch criteria.
 
+## Parallel Quizbowl-Only Track
+
+The quizbowl-derived literature canon is a separate experiment, not a silent replacement for the current path. Its plan is `_planning/quizbowl_literature_canon_plan.md`.
+
+Core rule:
+
+- Inclusion and tier strength come from quizbowl clue-text mentions, not answerlines, Bloom, online lists, anthology tables of contents, or the existing canon.
+
+This track can ship as a separate page or mode after a feasibility slice validates title extraction, alias clustering, false-positive control, and clue-only scoring.
+
 ## Operating Rules
 
 - Do not run 340 manual packet audits sequentially before launch.
