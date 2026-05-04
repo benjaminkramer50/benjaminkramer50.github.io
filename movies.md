@@ -145,7 +145,7 @@ title: Movie Log
   <div class="canon-browser-topline">
     <div>
       <h2 class="canon-browser-title">Canon</h2>
-      <p class="canon-browser-note">The combined-editions canon holds {{ canon_movies.size }} films. This view is read-only; reviews live in admin and favorite canon entries surface in Favorites.</p>
+      <p class="canon-browser-note">A searchable catalog of the combined-editions canon, with watched films marked where they overlap.</p>
     </div>
     <div class="canon-browser-summary" id="canon-summary"></div>
   </div>
@@ -167,9 +167,12 @@ title: Movie Log
   </div>
 
   <div class="canon-list" id="canon-list"></div>
+  <div class="canon-pagination" id="canon-pagination" aria-label="Canon pagination">
+    <button type="button" class="canon-page-btn" id="canon-prev" aria-label="Previous canon page">Previous</button>
+    <div class="canon-page-status" id="canon-page-status">Page 1 of 1</div>
+    <button type="button" class="canon-page-btn" id="canon-next" aria-label="Next canon page">Next</button>
+  </div>
   <div id="canon-no-results" class="diary-no-results" style="display:none;">No canon movies match your filters.</div>
-
-  <button class="diary-show-more canon-show-more" id="canon-show-more" style="display:none;">Show more</button>
   </div>
 </div>
 {% endif %}
@@ -372,11 +375,13 @@ title: Movie Log
   var searchInput = document.getElementById('canon-search');
   var statusSelect = document.getElementById('canon-status');
   var sortSelect = document.getElementById('canon-sort');
-  var showMoreBtn = document.getElementById('canon-show-more');
+  var prevBtn = document.getElementById('canon-prev');
+  var nextBtn = document.getElementById('canon-next');
+  var pageStatus = document.getElementById('canon-page-status');
   var summary = document.getElementById('canon-summary');
   var noResults = document.getElementById('canon-no-results');
   var pageSize = 36;
-  var visibleCount = pageSize;
+  var currentPage = 1;
 
   function slugify(text) {
     return String(text || '')
@@ -531,11 +536,15 @@ title: Movie Log
       return compareBySort(a, b, filters.sort);
     });
 
+    var totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+    var start = (currentPage - 1) * pageSize;
+    var end = start + pageSize;
+
     canonList.innerHTML = '';
 
-    filtered.forEach(function (item, index) {
-      if (index >= visibleCount) return;
-
+    filtered.slice(start, end).forEach(function (item) {
       var row = document.createElement('div');
       row.className = 'canon-row';
       row.setAttribute('data-title', item.title);
@@ -563,32 +572,44 @@ title: Movie Log
       canonList.appendChild(row);
     });
 
-    if (showMoreBtn) {
-      showMoreBtn.style.display = filtered.length > visibleCount ? '' : 'none';
+    if (pageStatus) {
+      pageStatus.textContent = filtered.length === 0 ? 'Page 0 of 0' : 'Page ' + currentPage + ' of ' + totalPages;
+    }
+
+    if (prevBtn) {
+      prevBtn.disabled = filtered.length === 0 || currentPage <= 1;
+    }
+
+    if (nextBtn) {
+      nextBtn.disabled = filtered.length === 0 || currentPage >= totalPages;
     }
 
     if (noResults) {
       noResults.style.display = filtered.length === 0 ? '' : 'none';
     }
 
-    if (filtered.length > visibleCount) {
-      showMoreBtn.style.display = '';
-    }
-
     if (summary) buildSummary();
   }
 
-  function resetVisibleCount() {
-    visibleCount = pageSize;
+  function resetPage() {
+    currentPage = 1;
     render();
   }
 
-  if (searchInput) searchInput.addEventListener('input', resetVisibleCount);
-  if (statusSelect) statusSelect.addEventListener('change', resetVisibleCount);
-  if (sortSelect) sortSelect.addEventListener('change', resetVisibleCount);
-  if (showMoreBtn) {
-    showMoreBtn.addEventListener('click', function () {
-      visibleCount += pageSize;
+  if (searchInput) searchInput.addEventListener('input', resetPage);
+  if (statusSelect) statusSelect.addEventListener('change', resetPage);
+  if (sortSelect) sortSelect.addEventListener('change', resetPage);
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function () {
+      if (currentPage > 1) {
+        currentPage -= 1;
+        render();
+      }
+    });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function () {
+      currentPage += 1;
       render();
     });
   }
