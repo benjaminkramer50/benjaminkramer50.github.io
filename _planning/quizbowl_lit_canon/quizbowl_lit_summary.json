@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-05-04T19:17:02Z",
+  "db_path": "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db",
+  "track_id": "literature",
+  "threshold": 4,
+  "processed_rows": 104185,
+  "skipped_long_clue_rows": 4,
+  "skipped_answer_marker_rows": 258,
+  "answerline_seed_lexicon_enabled": true,
+  "answerline_seed_work_count": 405,
+  "answerline_seed_variant_count": 760,
+  "raw_candidate_count": 17357,
+  "threshold_candidate_count": 3086,
+  "mention_rows": 68561,
+  "tier_counts": {
+    "qb_core": 170,
+    "qb_candidate": 1239,
+    "qb_major": 233,
+    "qb_contextual": 1444
+  },
+  "review_status_counts": {
+    "accepted_likely_work": 1847,
+    "needs_review_common_or_short_title": 775,
+    "needs_review_possible_character_or_person": 444,
+    "needs_review_alias_dominated": 3,
+    "needs_review_short_title": 17
+  }
+}
