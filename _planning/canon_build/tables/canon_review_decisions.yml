@@ -457,6 +457,23 @@ decisions:
       - keep_source_debt_open_for_selection_only_rows
       - keep_public_replacement_pairs_blocked
     public_path_effect: none
+  - decision_id: x061_current_rescue_scope_review_001
+    decision_type: current_rescue_scope_review_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_current_rescue_scope_review.tsv
+    decision: classify_current_creator_exact_rescue_rows_before_evidence_generation
+    rationale: >
+      The current rescue lane contains creator-exact local source items, but
+      creator-exact is not enough to support a selected collection or named work.
+      X061 separates medium-risk representative-selection candidates from
+      high-risk named-collection membership, component-form-unverified, and
+      form-mismatch rows before any evidence is written.
+    scoring_effect: none
+    required_followup:
+      - review_medium_risk_representative_selection_rows_before_evidence_generation
+      - verify_named_collection_membership_or_find_better_sources_for_high_risk_rows
+      - keep_cut_side_scoring_blocked_until_scope_and_source_debt_gates_are_clear
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002

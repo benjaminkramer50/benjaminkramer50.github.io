@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-04'
-status: existing_selection_evidence_review_x060_generated
+status: current_rescue_scope_review_x061_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -55,6 +55,7 @@ artifacts:
   cut_evidence_applied_rows: generated_x058_from_x057_write_plan
   cut_side_post_x058_action_queue: refreshed_after_x060_from_current_x051
   existing_selection_evidence_reviews: generated_x060_from_x059_needs_followup_rows
+  current_rescue_scope_review: generated_x061_from_x059_existing_source_rescue_lane
   path_selection: bootstrapped_from_current_path
   creators: bootstrapped_from_current_path_plus_x013_candidate_creators_plus_x034_variants
   coverage_matrix: generated_x028
@@ -99,6 +100,7 @@ current_counts:
   cut_evidence_applied_rows: 21
   cut_side_post_x058_action_queue_rows: 48
   existing_selection_evidence_review_rows: 2
+  current_rescue_scope_review_rows: 23
   cut_candidate_rows: 3000
   source_items_matched_current_path: 282
   source_items_matched_candidate: 24
@@ -662,4 +664,16 @@ existing_selection_evidence_review_x060:
   reviewed_rows: 2
   accepted_rows: 2
   complete_work_source_debt_closed: 0
+  direct_replacements: 0
+current_rescue_scope_review_x061:
+  status: generated_from_current_existing_source_rescue_lane
+  scope_review_rows: 23
+  medium_scope_risk_rows: 3
+  high_scope_risk_rows: 20
+  scope_class_counts:
+    representative_story_selection_review: 2
+    representative_poetry_selection_review: 1
+    named_collection_membership_unverified: 13
+    creator_exact_component_form_unverified: 6
+    creator_exact_form_mismatch: 1
   direct_replacements: 0
