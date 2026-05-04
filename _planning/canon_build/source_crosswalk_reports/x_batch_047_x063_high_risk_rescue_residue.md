@@ -10,21 +10,21 @@ X063 reconciles high-risk current rescue-scope rows against the current cut-side
 
 - Added `scripts/canon_generate_high_risk_rescue_residue_x063.rb`.
 - Added `canon_high_risk_rescue_residue.tsv`.
-- Reconciled 16 high-risk current rescue-scope rows.
-- 16 high-risk rows still map to current existing-source rescue actions.
+- Reconciled 11 high-risk current rescue-scope rows.
+- 11 high-risk rows still map to current existing-source rescue actions.
 
 Residue status summary:
 
 | Status | Rows |
 |---|---:|
-| `current_high_risk_scope_blocker` | 16 |
+| `current_high_risk_scope_blocker` | 11 |
 
 Scope class summary:
 
 | Scope class | Rows |
 |---|---:|
 | `creator_exact_component_form_unverified` | 1 |
-| `creator_exact_scope_review` | 15 |
+| `creator_exact_scope_review` | 10 |
 
 Current work-level blockers:
 
@@ -32,7 +32,6 @@ Current work-level blockers:
 |---|---:|---|
 | `work_candidate_bloom_mallarme_poetry_prose` | 1 | verify_component_form_then_decide_representative_selection_or_named_membership_requirement |
 | `work_candidate_southasia_lit_tukaram_abhangas` | 9 | manual_scope_resolution_required |
-| `work_candidate_wave003_louise_labe_sonnets_elegies` | 5 | manual_scope_resolution_required |
 | `work_candidate_wave004_guido_cavalcanti_rime` | 1 | manual_scope_resolution_required |
 
 ## Interpretation
