@@ -117,7 +117,7 @@ title: Movie Log
   <div class="canon-browser-topline">
     <div>
       <h2 class="canon-browser-title">Canon</h2>
-      <p class="canon-browser-note">The combined-editions canon holds {{ canon_movies.size }} films. Review one in admin, and any favorite canon entry will surface in Favorites.</p>
+      <p class="canon-browser-note">The combined-editions canon holds {{ canon_movies.size }} films. This view is read-only; reviews live in admin and favorite canon entries surface in Favorites.</p>
     </div>
     <div class="canon-browser-summary" id="canon-summary"></div>
   </div>
@@ -446,12 +446,11 @@ title: Movie Log
     return true;
   }
 
-  function statusPills(item) {
-    var pills = [];
-    if (item.reviewed) pills.push('<span class="canon-pill canon-pill-reviewed">Reviewed</span>');
-    if (item.favorite) pills.push('<span class="canon-pill canon-pill-favorite">Favorite</span>');
-    if (!item.reviewed) pills.push('<span class="canon-pill">Unreviewed</span>');
-    return pills.join(' ');
+  function statusLabel(item) {
+    if (item.reviewed && item.favorite) return 'Reviewed · Favorite';
+    if (item.reviewed) return 'Reviewed';
+    if (item.favorite) return 'Favorite';
+    return 'Unreviewed';
   }
 
   function reviewExcerpt(review) {
@@ -481,19 +480,18 @@ title: Movie Log
       row.setAttribute('data-reviewed', item.reviewed ? 'true' : 'false');
       row.setAttribute('data-favorite', item.favorite ? 'true' : 'false');
 
-      var reviewLink = '/admin/?movie=' + encodeURIComponent(item.slug) + '#movie';
-      var reviewLabel = item.reviewed ? 'Edit review' : 'Review';
       var excerpt = reviewExcerpt(item.review);
+      var checkbox = item.reviewed ? '&#x2611;' : '&#x2610;';
 
       row.innerHTML =
         '<div class="canon-row-main">' +
           '<div class="canon-row-copy">' +
-            '<div class="canon-row-title">' + escapeHtml(item.title) + ' <span class="canon-row-year">(' + escapeHtml(item.year) + ')</span></div>' +
+            '<div class="canon-row-title"><span class="canon-row-checkbox" aria-hidden="true">' + checkbox + '</span>' + escapeHtml(item.title) + ' <span class="canon-row-year">(' + escapeHtml(item.year) + ')</span></div>' +
             '<div class="canon-row-director">' + escapeHtml(item.director) + '</div>' +
           '</div>' +
           '<div class="canon-row-actions">' +
-            statusPills(item) +
-            '<a class="canon-row-review-link" href="' + reviewLink + '">' + reviewLabel + '</a>' +
+            '<span class="canon-pill canon-pill-status">' + escapeHtml(statusLabel(item)) + '</span>' +
+            (item.favorite ? '<span class="canon-pill canon-pill-favorite">Favorite</span>' : '') +
           '</div>' +
         '</div>' +
         (excerpt ? '<div class="canon-row-review">' + escapeHtml(excerpt) + '</div>' : '');
