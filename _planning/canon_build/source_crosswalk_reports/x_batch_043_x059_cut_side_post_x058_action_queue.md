@@ -23,17 +23,17 @@ Highest-priority rows:
 | Action ID | Cut title | Creator | Lane | Next action |
 |---|---|---|---|---|
 | `x059_cut_action_0001` | Poems | Alcman | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0002` | Odes | Pindar | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0003` | Hymns and Epigrams | Callimachus | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0004` | Epigrams | Martial | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0005` | Cold Mountain Poems | Hanshan | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0006` | Selected Poems | Samuel ha-Nagid | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0007` | Selected Ci Poems | Xin Qiji | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0008` | Selected Ci Poems | Li Qingzhao | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0009` | Count Lucanor | Don Juan Manuel | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0010` | Selected Ghazals | Ali-Shir Nava'i | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0011` | Exemplary Stories | Miguel de Cervantes | `external_source_acquisition` | `create_source_acquisition_query` |
-| `x059_cut_action_0012` | Poems | Andrew Marvell | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0002` | Hymns on Paradise | Ephrem the Syrian | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0003` | Jatakamala | Arya Shura | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0004` | Selected Poems | Samuel ha-Nagid | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0005` | Selected Ci Poems | Xin Qiji | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0006` | Selected Ci Poems | Li Qingzhao | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0007` | Selected Ghazals | Ali-Shir Nava'i | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0008` | Poems | Andrew Marvell | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0009` | Selected Ghazals | Saib Tabrizi | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0010` | Selected Haiku | Yosa Buson | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0011` | "Odes" | Ugo Foscolo | `external_source_acquisition` | `create_source_acquisition_query` |
+| `x059_cut_action_0012` | Dover Beach and Selected Poems | Matthew Arnold | `external_source_acquisition` | `create_source_acquisition_query` |
 
 ## Interpretation
 

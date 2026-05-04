@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 102
-- source_item_rows: 5974
-- evidence_rows: 570
+- registered_sources: 121
+- source_item_rows: 5993
+- evidence_rows: 589
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -113,6 +113,25 @@
 | `x072_britannica_weary_blues_reference` | X072 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x072_poets_org_weary_blues_book_page` | X072 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x072_poets_org_weary_blues_essay` | X072 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_britannica_burns_biography_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_britannica_burns_poems_chiefly_work_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_britannica_callimachus_hymns_epigrams_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_britannica_callimachus_hymns_work_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_britannica_cervantes_biography_exemplary_stories` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_britannica_count_lucanor_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_britannica_exemplary_stories_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_britannica_martial_epigrams_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_britannica_pindar_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_columbia_cold_mountain_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_loeb_callimachus_hymns_epigrams_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_penguin_martial_epigrams_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_poetry_foundation_burns_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_poetry_foundation_cold_mountain_review` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_poetry_foundation_martial_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_poetry_foundation_pindar_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_rae_count_lucanor_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_rae_novelas_ejemplares_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x073_ucpress_pindar_odes_reference` | X073 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 
