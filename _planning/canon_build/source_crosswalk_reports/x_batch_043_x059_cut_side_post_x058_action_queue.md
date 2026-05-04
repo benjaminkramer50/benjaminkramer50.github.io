@@ -16,16 +16,16 @@ Lane summary:
 
 | Lane | Rows |
 |---|---:|
+| `accepted_selection_only_complete_work_source_needed` | 2 |
 | `existing_source_item_rescue_review` | 9 |
 | `external_source_acquisition` | 37 |
-| `needs_followup_selection_evidence_review` | 2 |
 
 Highest-priority rows:
 
 | Action ID | Cut title | Creator | Lane | Next action |
 |---|---|---|---|---|
-| `x059_cut_action_0001` | Lyrics of Lowly Life | Paul Laurence Dunbar | `needs_followup_selection_evidence_review` | `manual_review_existing_selection_evidence_status` |
-| `x059_cut_action_0002` | The Weary Blues and Selected Poems | Langston Hughes | `needs_followup_selection_evidence_review` | `manual_review_existing_selection_evidence_status` |
+| `x059_cut_action_0001` | Lyrics of Lowly Life | Paul Laurence Dunbar | `accepted_selection_only_complete_work_source_needed` | `search_for_complete_work_source_support` |
+| `x059_cut_action_0002` | The Weary Blues and Selected Poems | Langston Hughes | `accepted_selection_only_complete_work_source_needed` | `search_for_complete_work_source_support` |
 | `x059_cut_action_0003` | The Tenth Muse | Anne Bradstreet | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
 | `x059_cut_action_0004` | Selected Stories | Julio Cortazar | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
 | `x059_cut_action_0005` | All Fires the Fire | Julio Cortazar | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |

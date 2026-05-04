@@ -54,6 +54,7 @@ TABLE_FILES = {
   "cut_evidence_write_plan" => File.join(BUILD_DIR, "tables", "canon_cut_evidence_write_plan.tsv"),
   "cut_evidence_applied_rows" => File.join(BUILD_DIR, "tables", "canon_cut_evidence_applied_rows.tsv"),
   "cut_side_post_x058_action_queue" => File.join(BUILD_DIR, "tables", "canon_cut_side_post_x058_action_queue.tsv"),
+  "existing_selection_evidence_reviews" => File.join(BUILD_DIR, "tables", "canon_existing_selection_evidence_reviews.tsv"),
   "packet_status" => File.join(BUILD_DIR, "tables", "canon_packet_status.tsv")
 }.freeze
 
@@ -86,6 +87,7 @@ HEADER_REQUIREMENTS = {
   "cut_evidence_write_plan" => ["write_plan_id", "item_decision_id", "target_action", "work_id", "source_item_id", "write_gate", "next_action"],
   "cut_evidence_applied_rows" => ["applied_id", "write_plan_id", "evidence_id", "work_id", "source_item_id", "evidence_action", "source_item_action", "next_action"],
   "cut_side_post_x058_action_queue" => ["action_id", "review_id", "cut_work_id", "current_lane", "recommended_action", "next_action"],
+  "existing_selection_evidence_reviews" => ["review_id", "action_id", "evidence_id", "work_id", "source_item_id", "evidence_scope_decision", "source_debt_effect", "next_action"],
   "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
 }.freeze
 

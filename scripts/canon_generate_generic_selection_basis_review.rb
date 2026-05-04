@@ -55,7 +55,7 @@ def write_report(path, rows)
     file.puts
     file.puts "## Purpose"
     file.puts
-    file.puts "X051 reviews the 50 X050 cut-side work orders as selection-basis and source-support problems. The point is to avoid treating generic selected-work rows as easy cuts before their identity, edition/selection basis, and evidence state are checked."
+    file.puts "X051 reviews the current X050 cut-side work orders as selection-basis and source-support problems. The point is to avoid treating generic selected-work rows as easy cuts before their identity, edition/selection basis, and evidence state are checked."
     file.puts
     file.puts "## Output"
     file.puts

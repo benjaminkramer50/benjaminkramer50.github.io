@@ -439,6 +439,24 @@ decisions:
       - register_or_reject_external_source_queries_for_no_local_support_rows
       - keep_public_replacement_pairs_blocked
     public_path_effect: none
+  - decision_id: x060_existing_selection_evidence_review_001
+    decision_type: existing_selection_evidence_review
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_existing_selection_evidence_reviews.tsv
+      - _planning/canon_build/tables/canon_evidence.tsv
+    decision: accept_dunbar_and_hughes_existing_selection_evidence_as_selection_only
+    rationale: >
+      The Dunbar and Hughes rows are traceable LOA poem-level anthology entries
+      already linked to selected-work rows as representative selections. X060
+      accepts these existing evidence rows as representative-selection support
+      only. It does not treat a poem-level anthology row as complete-work support
+      for the selected collection.
+    scoring_effect: none
+    required_followup:
+      - find_complete_work_or_independent_inclusion_support_for_dunbar_and_hughes_before_cut_scoring
+      - keep_source_debt_open_for_selection_only_rows
+      - keep_public_replacement_pairs_blocked
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
