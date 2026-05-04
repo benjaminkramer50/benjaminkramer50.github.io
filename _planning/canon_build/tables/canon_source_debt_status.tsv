@@ -585,7 +585,7 @@ work_candidate_wave003_machaut_voir_dit	incumbent_current_path	Le Livre du Voir 
 work_candidate_wave003_larochefoucauld_maximes	incumbent_current_path	Maximes	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave003_perrault_tales	incumbent_current_path	Histoires ou contes du temps passe	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_gap_031_0286_polyeucte	incumbent_current_path	Polyeucte	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_mandatory_bradstreet_tenth_muse	incumbent_current_path	The Tenth Muse	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_mandatory_bradstreet_tenth_muse	incumbent_current_path	The Tenth Muse	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_mandatory_vemana_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_saib_tabrizi_ghazals	incumbent_current_path	Selected Ghazals	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_sang_sinxay	incumbent_current_path	Sang Sinxay	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1183,7 +1183,7 @@ work_candidate_os_sertoes	incumbent_current_path	Os Sertoes / Rebellion in the B
 work_candidate_genre_lit_hound_baskervilles	incumbent_current_path	The Hound of the Baskervilles	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0830_the_wine_dark_sea	incumbent_current_path	The Wine-Dark Sea	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0837_ad_ora_certa	incumbent_current_path	Ad Ora Certa	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0835_collected_poems	incumbent_current_path	Collected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0835_collected_poems	incumbent_current_path	Collected Poems	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0833_dialoghi_con_leuco	incumbent_current_path	Dialoghi con Leuco	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_genre_lit_five_children_it	incumbent_current_path	Five Children and It	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0832_hard_labor	incumbent_current_path	Hard Labor	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1753,7 +1753,7 @@ work_candidate_global_lit_faiz_selected_poems	incumbent_current_path	Selected Po
 work_candidate_africa_lit_noemia_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_craveirinha_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_seferis_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_completion_lit_selected_poems_milosz	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_completion_lit_selected_poems_milosz	incumbent_current_path	Selected Poems	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_completion_lit_szymborska_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_dennis_brutus_poems	incumbent_current_path	Selected Poems	4	0	0	0	0	4	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_africa_lit_ingrid_jonker_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1764,7 +1764,7 @@ work_candidate_completion_lit_selected_poems_rainis	incumbent_current_path	Selec
 work_candidate_africa_lit_david_diop_poems	incumbent_current_path	Selected Poems	5	0	0	0	0	5	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_euro_under_lit_selected_poems_sorley	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_sutzkever_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_global_lit_nazim_hikmet_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_global_lit_nazim_hikmet_poems	incumbent_current_path	Selected Poems	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_scale_lit_tsvetaeva_selected	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_reviewed_heaney_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_darwish_selected_poems	incumbent_current_path	Selected Poems	2	0	0	0	0	2	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
@@ -2029,7 +2029,7 @@ work_candidate_global_lit_songs_lawino	incumbent_current_path	Song of Lawino	0	0
 work_candidate_scale2_lit_crying_lot_49	incumbent_current_path	The Crying of Lot 49	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_man_people	incumbent_current_path	A Man of the People	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_aadha_gaon	incumbent_current_path	Aadha Gaon	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_latcarib_lit_all_fires_fire	incumbent_current_path	All Fires the Fire	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_latcarib_lit_all_fires_fire	incumbent_current_path	All Fires the Fire	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_bloom_reviewed_cancer_ward	incumbent_current_path	Cancer Ward	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_death_dervish	incumbent_current_path	Death and the Dervish	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_dona_flor	incumbent_current_path	Dona Flor and Her Two Husbands	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2050,7 +2050,7 @@ work_candidate_wide_sargasso_sea	incumbent_current_path	Wide Sargasso Sea	0	0	0	
 work_candidate_mandatory_rosencrantz_guildenstern	incumbent_current_path	Rosencrantz and Guildenstern Are Dead	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_grain_of_wheat_ngugi	incumbent_current_path	A Grain of Wheat	1	0	0	0	0	0	0	0	open_needs_review	none	Evidence exists but does not satisfy debt-closure rules.	manual_source_debt_review
 work_canon_one_hundred_years_of_solitude	incumbent_current_path	One Hundred Years of Solitude	1	0	0	0	0	0	1	1	open_internal_only	none	Only internal accepted-site or packet evidence exists.	add_external_source_support
-work_candidate_latcarib_lit_blow_up	incumbent_current_path	Blow-Up and Other Stories	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_latcarib_lit_blow_up	incumbent_current_path	Blow-Up and Other Stories	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_me_lit_miramar	incumbent_current_path	Miramar	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_mrityunjay	incumbent_current_path	Mrityunjay	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_necropolis	incumbent_current_path	Necropolis	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2391,7 +2391,7 @@ work_candidate_bloom_reviewed_white_noise	incumbent_current_path	White Noise	0	0
 work_candidate_globalcon_lit_final_passage	incumbent_current_path	The Final Passage	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_old_gringo	incumbent_current_path	The Old Gringo	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_artists_floating_world	incumbent_current_path	An Artist of the Floating World	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_latcarib_lit_walcott_collected_poems	incumbent_current_path	Collected Poems 1948-1984	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_latcarib_lit_walcott_collected_poems	incumbent_current_path	Collected Poems 1948-1984	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_bloom_reviewed_foe	incumbent_current_path	Foe	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_fools_crow	incumbent_current_path	Fools Crow	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_i_tituba	incumbent_current_path	I, Tituba, Black Witch of Salem	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items

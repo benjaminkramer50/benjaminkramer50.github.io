@@ -11,24 +11,22 @@ X051 reviews the current X050 cut-side work orders as selection-basis and source
 - Added `scripts/canon_generate_generic_selection_basis_review.rb`.
 - Added `canon_generic_selection_basis_review.tsv`.
 - Generated 45 review rows from X050 work orders.
-- Rows with alias support: 4.
+- Rows with alias support: 3.
 - Rows with matched source items: 1.
-- Generic-title rows without accepted evidence: 43.
+- Generic-title rows without accepted evidence: 44.
 
 Selection-basis status summary:
 
 | Status | Rows |
 |---|---:|
 | `generic_title_has_evidence_selection_basis_review_required` | 1 |
-| `generic_title_unresolved_no_source_support` | 43 |
-| `non_generic_source_support_unresolved` | 1 |
+| `generic_title_unresolved_no_source_support` | 44 |
 
 Recommended resolution summary:
 
 | Resolution | Rows |
 |---|---:|
-| `extract_or_accept_cut_side_source_support_before_cut_decision` | 1 |
-| `hold_cut_pairing_until_selection_basis_and_external_support_are_verified` | 43 |
+| `hold_cut_pairing_until_selection_basis_and_external_support_are_verified` | 44 |
 | `review_whether_row_is_collection_or_representative_selection` | 1 |
 
 Highest-priority unresolved rows:
@@ -37,14 +35,14 @@ Highest-priority unresolved rows:
 |---|---|---|---|---|
 | `x051_selection_basis_0001` | Selected Poems | Lu You | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0002` | Poems, Chiefly in the Scottish Dialect | Robert Burns | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0003` | Selected Poems | Czeslaw Milosz | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0003` | Selected Poems | Giorgos Seferis | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0004` | Selected Poems | Wislawa Szymborska | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0005` | Selected Poems | Ingrid Jonker | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0006` | Selected Poems | Waldo Williams | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0007` | Selected Poems | Rainis | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0008` | Selected Poems | Sorley MacLean | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0009` | Selected Poems | Avrom Sutzkever | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0010` | Selected Poems | Nazim Hikmet | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0010` | Selected Poems | Marina Tsvetaeva | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 
 ## Interpretation
 

@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 80
-- source_item_rows: 5952
-- evidence_rows: 548
+- registered_sources: 94
+- source_item_rows: 5966
+- evidence_rows: 562
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -91,6 +91,20 @@
 | `x043_yale_british_art_gronniosaw_reference` | X043 | extracted | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
 | `x064_encyclopedia_com_lyrics_lowly_life_reference` | X064 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x064_poetry_foundation_dunbar_reference` | X064 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_balcells_all_fires_fire_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_britannica_all_fires_fire_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_britannica_bradstreet_tenth_muse_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_encyclopedia_com_blow_up_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_encyclopedia_com_taner_baybars_hikmet_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_los_angeles_times_primo_levi_collected_poems_review` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_macmillan_walcott_collected_poems_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_nobel_milosz_bibliography_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_nobel_walcott_bibliography_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_penguin_random_house_blow_up_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_poetry_foundation_bradstreet_tenth_muse_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_poetry_foundation_hikmet_selected_poems_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_poetry_foundation_primo_levi_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x070_washington_post_milosz_selected_poems_review` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 
