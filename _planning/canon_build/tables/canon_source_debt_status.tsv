@@ -163,7 +163,7 @@ work_candidate_global_lit_buddhacarita	incumbent_current_path	Buddhacarita	0	0	0
 work_candidate_global_lit_gaha_sattasai	incumbent_current_path	Gaha Sattasai	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_lotus_sutra	incumbent_current_path	Lotus Sutra	1	0	0	0	0	1	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_global_lit_nineteen_old_poems	incumbent_current_path	Nineteen Old Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_global_lit_odes_solomon	incumbent_current_path	Odes of Solomon	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_global_lit_odes_solomon	incumbent_current_path	Odes of Solomon	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_bloom_juvenal_satires	incumbent_current_path	Satires	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_saundarananda	incumbent_current_path	Saundarananda	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_golden_ass_apuleius	incumbent_current_path	The Golden Ass	2	0	0	0	0	1	1	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
@@ -1050,7 +1050,7 @@ work_candidate_latcarib_lit_ismaelillo	incumbent_current_path	Ismaelillo	0	0	0	0
 work_candidate_latcarib_lit_alienist	incumbent_current_path	The Alienist	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_enemy_people_ibsen	incumbent_current_path	An Enemy of the People	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_indig_lit_life_among_piutes	incumbent_current_path	Life Among the Piutes	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_bloom_reviewed_novelle_rusticane	incumbent_current_path	Novelle Rusticane	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_bloom_reviewed_novelle_rusticane	incumbent_current_path	Novelle Rusticane	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_completion_lit_pinocchio	incumbent_current_path	The Adventures of Pinocchio	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale2_lit_treasure_island	incumbent_current_path	Treasure Island	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_story_african_farm	incumbent_current_path	The Story of an African Farm	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1168,7 +1168,7 @@ work_candidate_completion_lit_buddenbrooks	incumbent_current_path	Buddenbrooks	0
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0815_canti_orfici_die_tragodie_des_letzten_germanen_i	incumbent_current_path	Canti Orfici: Die Tragodie des Letzten Germanen in Italien	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0827_gogol_s_wife_and_other_stories	incumbent_current_path	Gogol's Wife and Other Stories	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_gosta_jerusalem	incumbent_current_path	Jerusalem	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_indig_lit_old_indian_legends	incumbent_current_path	Old Indian Legends	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_indig_lit_old_indian_legends	incumbent_current_path	Old Indian Legends	3	3	0	3	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_wave004_umberto_saba_il_canzoniere	incumbent_current_path	Il Canzoniere	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave004_grazia_deledda_reeds_in_the_wind	incumbent_current_path	Reeds in the Wind	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0824_l_opera_in_versi	incumbent_current_path	L'Opera in Versi	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1580,7 +1580,7 @@ work_candidate_me_lit_ali_nino	incumbent_current_path	Ali and Nino	0	0	0	0	0	0	0
 work_candidate_global_lit_captains_sand	incumbent_current_path	Captains of the Sands	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_ferdydurke	incumbent_current_path	Ferdydurke	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_journey_moonlight	incumbent_current_path	Journey by Moonlight	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_scale4_lit_magana_jari_ce	incumbent_current_path	Magana Jari Ce	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_scale4_lit_magana_jari_ce	incumbent_current_path	Magana Jari Ce	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_global_lit_rickshaw_boy	incumbent_current_path	Rickshaw Boy	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_sanatorium_hourglass	incumbent_current_path	Sanatorium Under the Sign of the Hourglass	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_genre_lit_star_maker	incumbent_current_path	Star Maker	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1640,9 +1640,9 @@ work_candidate_bloom_camus_stranger	incumbent_current_path	The Stranger	0	0	0	0	
 work_candidate_euro_under_lit_winters_tales	incumbent_current_path	Winter's Tales	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale5_lit_little_prince	incumbent_current_path	The Little Prince	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_eliot_four_quartets	incumbent_current_path	Four Quartets	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_completion_lit_love_fallen_city	incumbent_current_path	Love in a Fallen City	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_completion_lit_love_fallen_city	incumbent_current_path	Love in a Fallen City	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_global_lit_madonna_fur_coat	incumbent_current_path	Madonna in a Fur Coat	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_southasia_lit_malgudi_days	incumbent_current_path	Malgudi Days	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_southasia_lit_malgudi_days	incumbent_current_path	Malgudi Days	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_latcarib_lit_near_wild_heart	incumbent_current_path	Near to the Wild Heart	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_bloom_hesse_glass_bead_game	incumbent_current_path	The Glass Bead Game	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_scale_lit_golden_cangue	incumbent_current_path	The Golden Cangue	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -1975,7 +1975,7 @@ work_candidate_mandatory_oficio_tinieblas	incumbent_current_path	Oficio de tinie
 work_candidate_bloom_vonnegut_cats_cradle	incumbent_current_path	Cat's Cradle	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_hopscotch_cortazar	incumbent_current_path	Hopscotch	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_kosala	incumbent_current_path	Kosala	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_africa_lit_luuanda	incumbent_current_path	Luuanda	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_africa_lit_luuanda	incumbent_current_path	Luuanda	3	3	0	3	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_latcarib_lit_recollections_future	incumbent_current_path	Recollections of Things to Come	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_clown_boll	incumbent_current_path	The Clown	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_garden_party_havel	incumbent_current_path	The Garden Party	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2066,7 +2066,7 @@ work_candidate_africa_lit_bound_violence	incumbent_current_path	Bound to Violenc
 work_candidate_scale5_lit_androids_electric_sheep	incumbent_current_path	Do Androids Dream of Electric Sheep?	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_fikir_eske_mekabir	incumbent_current_path	Fikir Eske Mekabir	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_house_made_of_dawn	incumbent_current_path	House Made of Dawn	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_africa_lit_land_without_thunder	incumbent_current_path	Land Without Thunder	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_africa_lit_land_without_thunder	incumbent_current_path	Land Without Thunder	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_southasia_lit_mookajjiya_kanasugalu	incumbent_current_path	Mookajjiya Kanasugalu	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_my_michael	incumbent_current_path	My Michael	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_southasia_lit_raag_darbari	incumbent_current_path	Raag Darbari	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2168,7 +2168,7 @@ work_candidate_africa_lit_thirteenth_sun	incumbent_current_path	The Thirteenth S
 work_candidate_mandatory_gulag_archipelago	incumbent_current_path	The Gulag Archipelago	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_dispossessed	incumbent_current_path	The Dispossessed	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_broken_mirror	incumbent_current_path	Broken Mirror	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_indig_lit_flying_fox	incumbent_current_path	Flying Fox in a Freedom Tree	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_indig_lit_flying_fox	incumbent_current_path	Flying Fox in a Freedom Tree	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_southasia_lit_hajar_churashir_maa	incumbent_current_path	Hajar Churashir Maa	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_i_the_supreme	incumbent_current_path	I the Supreme	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_wave005_simin_behbahani_cup_sin	incumbent_current_path	A Cup of Sin	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2533,7 +2533,7 @@ work_candidate_southasia_lit_kaghazi_ghat	incumbent_current_path	Kaghazi Ghat	0	
 work_candidate_genre_lit_small_gods	incumbent_current_path	Small Gods	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_mandatory_dreaming_in_cuban	incumbent_current_path	Dreaming in Cuban	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_globalcon_lit_suitable_boy	incumbent_current_path	A Suitable Boy	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_indig_lit_arctic_dreams	incumbent_current_path	Arctic Dreams and Nightmares	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_indig_lit_arctic_dreams	incumbent_current_path	Arctic Dreams and Nightmares	2	2	0	2	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_euro_under_lit_blackwater	incumbent_current_path	Blackwater	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_globalcon_lit_crossing_river	incumbent_current_path	Crossing the River	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_green_grass_running_water	incumbent_current_path	Green Grass, Running Water	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2819,7 +2819,7 @@ work_candidate_latcarib_lit_zong	incumbent_current_path	Zong!	0	0	0	0	0	0	0	0	op
 work_candidate_completion_lit_burnt_shadows	incumbent_current_path	Burnt Shadows	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_dedupe_replacement_drive_your_plow	incumbent_current_path	Drive Your Plow Over the Bones of the Dead	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_eastasia_lit_frog_mo_yan	incumbent_current_path	Frog	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_latcarib_lit_mouthful_birds	incumbent_current_path	Mouthful of Birds	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_latcarib_lit_mouthful_birds	incumbent_current_path	Mouthful of Birds	3	3	0	3	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_globalcon_lit_my_struggle	incumbent_current_path	My Struggle	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_signs_end_world	incumbent_current_path	Signs Preceding the End of the World	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_tail_blue_bird	incumbent_current_path	Tail of the Blue Bird	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
@@ -2890,7 +2890,7 @@ work_candidate_completion_lit_citizen_rankine	incumbent_current_path	Citizen	0	0
 work_candidate_indig_lit_crimson_korneliussen	incumbent_current_path	Crimson	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_dust_owuor	incumbent_current_path	Dust	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_latcarib_lit_fever_dream	incumbent_current_path	Fever Dream	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_indig_lit_heat_light	incumbent_current_path	Heat and Light	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_indig_lit_heat_light	incumbent_current_path	Heat and Light	3	3	0	3	0	0	0	0	closed_by_independent_external_support	complete_work_candidate_scope_pending	Meets minimum accepted independent support-family count.	score_with_duplicate_boundary_and_taxonomy_gates
 work_candidate_globalcon_lit_how_be_both	incumbent_current_path	How to Be Both	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_human_acts_han_kang	incumbent_current_path	Human Acts	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_africa_lit_kintu	incumbent_current_path	Kintu	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items

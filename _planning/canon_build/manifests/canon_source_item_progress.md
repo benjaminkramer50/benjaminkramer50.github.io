@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 141
-- source_item_rows: 6013
-- evidence_rows: 609
+- registered_sources: 169
+- source_item_rows: 6041
+- evidence_rows: 637
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -152,6 +152,34 @@
 | `x074_soho_krik_krak` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x074_svspress_ephrem_hymns_paradise` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x074_uchicago_jatakamala_reference` | X074 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_booker_mouthful_birds` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_britannica_luandino_luuanda` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_britannica_malgudi_days` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_britannica_verga_novelle_rusticane` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_britannica_zitkala_old_indian_legends` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_cambridge_odes_solomon_early_christian_writings` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_cambridge_old_indian_legends_chapter` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_doaj_magana_jari_ce_reference` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_encyclopedia_com_grace_ogot_land_without_thunder` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_encyclopedia_com_odes_solomon_reference` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_encyclopedia_com_wendt_flying_fox` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_google_books_arctic_dreams` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_google_books_land_without_thunder` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_google_books_magana_jari_ce` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_inuit_art_foundation_arctic_dreams` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_mclc_love_in_a_fallen_city_review` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_nbf_schweblin_mouthful_birds` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_nebraska_press_old_indian_legends` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_prh_love_in_a_fallen_city` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_prh_malgudi_days` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_prh_mouthful_birds` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_rtp_ensina_luuanda` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_rtp_luuanda_prize_reference` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_sl_nsw_heat_light` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_stella_heat_light` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_treccani_verga_novelle_rusticane` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_uhpress_flying_fox` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x075_uqp_heat_light` | X075 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 
