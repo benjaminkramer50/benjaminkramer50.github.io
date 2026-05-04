@@ -26,19 +26,19 @@
   date_watched: "2026-05-02"
   favorite: true
 
-- title: "Creed III"
-  year: 2018
-  director: "Michael B. Jordan"
-  rating: 2
-  genre: "Sports drama"
-  date_watched: "2026-04-28"
-
 - title: "Creed II"
   year: 2018
   director: "Steven Caple Jr."
   rating: 3
   genre: "Sports drama"
   date_watched: "2026-04-29"
+
+- title: "Creed III"
+  year: 2018
+  director: "Michael B. Jordan"
+  rating: 2
+  genre: "Sports drama"
+  date_watched: "2026-04-28"
 
 - title: "Creed"
   year: 2015
