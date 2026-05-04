@@ -1,41 +1,49 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-04T19:17:02Z
+Generated: 2026-05-04T21:52:55Z
 
 ## Corpus
 
 - Database: `/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db`
-- Source tables: `archive_practice_questions` joined to `archive_parsed_questions`
-- Track filter: `literature`
-- Evidence field: `clue_text`
-- Answerline policy: answerlines are not counted as evidence.
-- Local answerline seed lexicon enabled: true
-- Local refined literature-work seeds: 405
-- Unambiguous seed title variants: 760
-- Processed rows: 104185
-- Skipped parser-artifact rows with long clue text: 4
-- Skipped rows with visible answer markers in clue text: 258
+- Source table: `archive_parsed_questions`
+- Rows processed: 2216999
+- Evidence fields: raw `answerline` and raw `clue_text`
+- Explicitly not used: `archive_practice_questions.track_id`, `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
+- Threshold: total distinct quizbowl questions >= 4
 
 ## Candidate Extraction
 
-- Raw normalized clue-title candidates: 17357
-- Candidates clearing threshold `distinct_question_count >= 4`: 3086
-- Accepted mention rows written: 68561
+- Raw answerline work candidates: 9543
+- Exact-match work-title seeds from answerlines and clues: 5271
+- Exact-match seed basis counts: `answerline`=740, `answerline_and_clue`=1023, `clue`=3508
+- Raw normalized candidates: 81872
+- Candidates clearing threshold: 14396
+- Evidence/example rows written: 68825
+
+## Review Routing
+
+- Accepted works require repeated quizbowl evidence and are strongest when raw answerline prompts identify the title as a literary form.
+- Non-literary context signals are counted across all observed snippets, not just displayed examples.
+- Strong raw answerline forms such as novel, play, poem, story, epic, saga, and collection can override noisy clue mentions from music, film, or other adaptation contexts.
+- Generic book/work/essay prompts do not override non-literary context dominance; those candidates are routed to review.
 
 ## Tier Counts
 
-- `qb_candidate`: 1239
-- `qb_contextual`: 1444
-- `qb_core`: 170
-- `qb_major`: 233
+- `qb_candidate`: 10050
+- `qb_contextual`: 2192
+- `qb_core`: 967
+- `qb_major`: 1187
 
 ## Review Status Counts
 
-- `accepted_likely_work`: 1847
-- `needs_review_alias_dominated`: 3
-- `needs_review_common_or_short_title`: 775
-- `needs_review_possible_character_or_person`: 444
-- `needs_review_short_title`: 17
+- `accepted_likely_work`: 4346
+- `needs_review_common_or_short_title`: 2207
+- `needs_review_fragment_title`: 1
+- `needs_review_low_evidence`: 1214
+- `needs_review_non_literary_context`: 3919
+- `needs_review_possible_character_or_person`: 1818
+- `needs_review_possible_combined_title`: 478
+- `needs_review_section_or_subwork_title`: 413
 
 ## Outputs
 
@@ -48,4 +56,4 @@ Generated: 2026-05-04T19:17:02Z
 
 ## Caveats
 
-This is a first automatic quizbowl-only build. It intentionally favors recall and routes ambiguous short titles, character/person-like strings, and context-only capitalized spans to review. Tiers should be treated as quizbowl-salience tiers, not a universal literature canon.
+This is an independent quizbowl-corpus build. It uses answerlines only when the raw question prompt asks for a literary work, then counts both answerline frequency and clue-text mentions. It does not inherit Loci literature-track labels or processed canon classifications.

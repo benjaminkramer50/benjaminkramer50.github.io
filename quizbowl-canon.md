@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Quizbowl Literature Canon
-description: A quizbowl-derived literature canon built from Loci clue text.
+description: A quizbowl-derived literature canon built from raw quizbowl answerlines and clue text.
 permalink: /quizbowl-canon/
 wide: true
 ---
@@ -14,14 +14,14 @@ wide: true
 {% assign qb_accepted = qb_items | where: "review_status", "accepted_likely_work" %}
 {% assign qb_needs_review = qb_items.size | minus: qb_accepted.size %}
 
-<p class="page-intro">A quizbowl-only literature canon built from the local Loci corpus. Counts come from question clue text, not answerlines; local answerline classifications are used only as title seeds for matching.</p>
+<p class="page-intro">A quizbowl-only literature canon built directly from the raw parsed quizbowl archive. Work candidates come from raw answerlines when the question asks for a literary work, plus repeated title mentions in clue text.</p>
 
 <p class="canon-status-note">This is evidence-first, not hand-curated. It is useful for finding what quizbowl repeatedly treats as canonical, measuring salience by recurrence, and separating strong automatic hits from review candidates.</p>
 
 <div class="canon-summary quizbowl-summary" aria-label="Quizbowl canon summary">
-  <div class="canon-stat">
-    <span class="canon-stat-number">{{ qb_items.size }}</span>
-    <span class="canon-stat-label">Titles</span>
+  <div class="canon-stat canon-stat-accepted">
+    <span class="canon-stat-number">{{ qb_accepted.size }}</span>
+    <span class="canon-stat-label">Accepted</span>
   </div>
   <div class="canon-stat canon-stat-accepted">
     <span class="canon-stat-number">{{ qb_core.size }}</span>
@@ -38,9 +38,9 @@ wide: true
 </div>
 
 <div class="quizbowl-method-strip" aria-label="Build method">
-  <span>Corpus: Loci literature track</span>
-  <span>Threshold: 4+ clue-text mentions</span>
-  <span>Evidence: clue text only</span>
+  <span>Corpus: full parsed quizbowl archive</span>
+  <span>Threshold: 4+ quizbowl questions</span>
+  <span>Evidence: raw answerlines and clue text</span>
   <span>Sort: quizbowl salience rank</span>
 </div>
 
@@ -59,20 +59,23 @@ wide: true
     <span>Review</span>
     <select id="qb-review-filter" aria-label="Filter by review status">
       <option value="">Any Review Status</option>
-      <option value="accepted">Accepted Likely Work</option>
+      <option value="accepted" selected>Accepted Likely Work</option>
       <option value="needs-review">Needs Review</option>
       <option value="needs_review_common_or_short_title">Common / Short Title</option>
       <option value="needs_review_possible_character_or_person">Possible Person / Character</option>
-      <option value="needs_review_alias_dominated">Alias-Dominated</option>
-      <option value="needs_review_short_title">Short Title</option>
+      <option value="needs_review_possible_combined_title">Possible Combined Title</option>
+      <option value="needs_review_fragment_title">Fragment Title</option>
+      <option value="needs_review_non_literary_context">Non-literary Context</option>
+      <option value="needs_review_section_or_subwork_title">Section / Subwork Title</option>
     </select>
   </label>
   <label class="canon-filter-field" for="qb-source-filter">
     <span>Source</span>
     <select id="qb-source-filter" aria-label="Filter by extraction source">
       <option value="">Any Source</option>
-      <option value="seeded">Seeded title match</option>
-      <option value="pattern">Clue-pattern extraction</option>
+      <option value="answerline+clue">Answerline + Clue</option>
+      <option value="answerline">Answerline Only</option>
+      <option value="clue">Clue Only</option>
     </select>
   </label>
   <label class="canon-filter-field" for="qb-sort">
@@ -100,10 +103,29 @@ wide: true
   {% if item.review_status == "accepted_likely_work" %}
     {% assign review_group = "accepted" %}
     {% assign review_label = "Accepted" %}
+  {% elsif item.review_status == "needs_review_common_or_short_title" %}
+    {% assign review_label = "Common / Short" %}
+  {% elsif item.review_status == "needs_review_possible_character_or_person" %}
+    {% assign review_label = "Person / Character" %}
+  {% elsif item.review_status == "needs_review_possible_combined_title" %}
+    {% assign review_label = "Combined Title" %}
+  {% elsif item.review_status == "needs_review_fragment_title" %}
+    {% assign review_label = "Fragment" %}
+  {% elsif item.review_status == "needs_review_non_literary_context" %}
+    {% assign review_label = "Non-literary" %}
+  {% elsif item.review_status == "needs_review_section_or_subwork_title" %}
+    {% assign review_label = "Section / Subwork" %}
+  {% elsif item.review_status == "needs_review_low_evidence" %}
+    {% assign review_label = "Low Evidence" %}
   {% endif %}
-  {% assign source_group = "pattern" %}
-  {% if item.form_hint == "seeded_literary_work" %}
-    {% assign source_group = "seeded" %}
+  {% assign source_group = "clue" %}
+  {% assign source_label = "Clue Only" %}
+  {% if item.answerline_question_count > 0 and item.clue_mention_question_count > 0 %}
+    {% assign source_group = "answerline+clue" %}
+    {% assign source_label = "Answerline + Clue" %}
+  {% elsif item.answerline_question_count > 0 %}
+    {% assign source_group = "answerline" %}
+    {% assign source_label = "Answerline Only" %}
   {% endif %}
   {% assign first_example = item.examples | first %}
   {% capture search_text %}{{ item.title }} {{ item.tier }} {{ item.review_status }} {{ item.form_hint }} {{ first_example.set_title }} {{ first_example.snippet }}{% endcapture %}
@@ -114,14 +136,16 @@ wide: true
            data-review="{{ item.review_status | escape }}"
            data-review-group="{{ review_group }}"
            data-source="{{ source_group }}"
-           data-question-count="{{ item.distinct_question_count }}"
+           data-question-count="{{ item.total_question_count }}"
            data-search="{{ search_text | strip_newlines | downcase | escape }}">
     <div class="canon-status-mark quizbowl-tier-mark" aria-hidden="true"></div>
     <div class="canon-item-body">
       <div class="canon-item-topline">
         <span class="canon-sequence-badge">#{{ item.rank }}</span>
         <span class="canon-era-badge">{{ tier_label }}</span>
-        <span class="canon-date">{{ item.distinct_question_count }} clues</span>
+        <span class="canon-date">{{ item.total_question_count }} questions</span>
+        <span class="canon-date">{{ item.answerline_question_count }} answers</span>
+        <span class="canon-date">{{ item.clue_mention_question_count }} clues</span>
         <span class="canon-date">{{ item.distinct_set_count }} sets</span>
         {% if item.first_year and item.last_year %}
         <span class="canon-date">{{ item.first_year }}-{{ item.last_year }}</span>
@@ -130,18 +154,22 @@ wide: true
       <h2 class="canon-title">{{ item.title }}</h2>
       <div class="canon-meta">
         <span class="canon-chip canon-level-chip">{{ review_label }}</span>
-        <span class="canon-chip">{{ source_group | capitalize }}</span>
+        <span class="canon-chip">{{ source_label }}</span>
         <span class="canon-chip">{{ item.tossup_count }} tossups</span>
         <span class="canon-chip">{{ item.bonus_count }} bonuses</span>
       </div>
       {% if first_example %}
-      <p class="quizbowl-evidence">
-        <span>{{ first_example.set_title }}{% if first_example.year %}, {{ first_example.year }}{% endif %}</span>
-        {{ first_example.snippet | truncate: 230 }}
-      </p>
+      <details class="quizbowl-evidence">
+        <summary>Evidence sample</summary>
+        <p>
+          <span>{{ first_example.set_title }}{% if first_example.year %}, {{ first_example.year }}{% endif %}</span>
+          {{ first_example.snippet | truncate: 230 }}
+        </p>
+      </details>
       {% endif %}
     </div>
     <div class="canon-item-actions quizbowl-score-block">
+      <span class="quizbowl-score-label">Score</span>
       <span class="canon-status-label">{{ item.quizbowl_salience_score }}</span>
     </div>
   </article>

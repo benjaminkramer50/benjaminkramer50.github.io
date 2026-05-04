@@ -17,7 +17,7 @@ wide: true
 {% assign canon_planned = canon_lifetime | where_exp: "item", "item.progress_status == 'planned'" %}
 {% assign canon_not_started_count = canon_planned.size %}
 
-<p class="canon-status-note">This is a provisional path, not a final claim of completeness. I am using it to track progress while continuing to audit omissions, chronology, duplicates, and over- or under-represented traditions. I am also building a separate <a href="/quizbowl-canon/">quizbowl-derived canon</a> from Loci clue text only.</p>
+<p class="canon-status-note">This is a provisional path, not a final claim of completeness. I am using it to track progress while continuing to audit omissions, chronology, duplicates, and over- or under-represented traditions. I am also building a separate <a href="/quizbowl-canon/">quizbowl-derived canon</a> from raw quizbowl answerlines and clue text.</p>
 
 <div class="canon-summary" aria-label="Canon progress summary">
   <div class="canon-stat">

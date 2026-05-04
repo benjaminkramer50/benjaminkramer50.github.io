@@ -1,28 +1,39 @@
 {
-  "generated_at": "2026-05-04T19:17:02Z",
+  "generated_at": "2026-05-04T21:52:55Z",
   "db_path": "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db",
-  "track_id": "literature",
+  "source_table": "archive_parsed_questions",
+  "excluded_loci_processed_inputs": [
+    "archive_practice_questions.track_id",
+    "archive_canon_refinement_runs",
+    "archive_canon_answerline_candidates"
+  ],
   "threshold": 4,
-  "processed_rows": 104185,
-  "skipped_long_clue_rows": 4,
-  "skipped_answer_marker_rows": 258,
-  "answerline_seed_lexicon_enabled": true,
-  "answerline_seed_work_count": 405,
-  "answerline_seed_variant_count": 760,
-  "raw_candidate_count": 17357,
-  "threshold_candidate_count": 3086,
-  "mention_rows": 68561,
+  "processed_rows": 2216999,
+  "skipped_long_clue_rows": 201,
+  "raw_answerline_candidate_count": 9543,
+  "exact_match_seed_count": 5271,
+  "exact_match_seed_basis_counts": {
+    "answerline": 740,
+    "answerline_and_clue": 1023,
+    "clue": 3508
+  },
+  "raw_candidate_count": 81872,
+  "threshold_candidate_count": 14396,
+  "mention_rows": 68825,
   "tier_counts": {
-    "qb_core": 170,
-    "qb_candidate": 1239,
-    "qb_major": 233,
-    "qb_contextual": 1444
+    "qb_core": 967,
+    "qb_candidate": 10050,
+    "qb_major": 1187,
+    "qb_contextual": 2192
   },
   "review_status_counts": {
-    "accepted_likely_work": 1847,
-    "needs_review_common_or_short_title": 775,
-    "needs_review_possible_character_or_person": 444,
-    "needs_review_alias_dominated": 3,
-    "needs_review_short_title": 17
+    "accepted_likely_work": 4346,
+    "needs_review_non_literary_context": 3919,
+    "needs_review_possible_combined_title": 478,
+    "needs_review_common_or_short_title": 2207,
+    "needs_review_section_or_subwork_title": 413,
+    "needs_review_possible_character_or_person": 1818,
+    "needs_review_low_evidence": 1214,
+    "needs_review_fragment_title": 1
   }
 }

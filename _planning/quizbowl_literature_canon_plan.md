@@ -1,18 +1,19 @@
-# Quizbowl-Only Literature Canon Plan
+# Quizbowl-Derived Literature Canon Plan
 
 Date: 2026-05-04
 
-Status: proposed_parallel_track
+Status: implemented_parallel_track
 
 ## Core Idea
 
-Build a literature canon from quizbowl question clues only. Do not use Bloom, online lists, anthology tables of contents, syllabi, or the existing canon as evidence. The current canon is preserved as-is; this becomes a separate experimental canon and comparison layer.
+Build a literature canon from the raw quizbowl corpus. Do not use Bloom, online lists, anthology tables of contents, syllabi, the existing canon, Loci literature-track labels, or Loci canon-refinement tables as evidence. The current canon is preserved as-is; this becomes a separate experimental canon and comparison layer.
 
 The inclusion signal is simple in principle:
 
-- A literary work becomes eligible when it is mentioned in quizbowl clue text more than three times.
-- Answerlines do not count as evidence.
-- Evidence is counted from `archive_parsed_questions.clue_text`, not `answerline`.
+- A literary work becomes eligible when it appears in at least four distinct raw quizbowl questions.
+- Evidence can come from raw answerlines when the raw question prompt asks for a literary work.
+- Evidence can also come from repeated title mentions in `archive_parsed_questions.clue_text`.
+- Answerlines are not a closed universe. Work titles discovered in clue text can independently enter the candidate pool.
 - Mentions are counted by distinct question rows, distinct sets, years, and circuits so repeated packet artifacts do not inflate status.
 
 Observed local corpus baseline:
@@ -31,13 +32,13 @@ Quizbowl is not a neutral world canon, but it is a real, measurable cultural-ped
 
 > This is a quizbowl-salience literature canon: works that recur as objects, references, clues, settings, titles, sources, and interpretive anchors across a large quizbowl corpus.
 
-This is more objective than hand-ranking because every inclusion can be traced to clue rows.
+This is more objective than hand-ranking because every inclusion can be traced to raw quizbowl rows.
 
 ## Key Methodological Rule
 
-Answerlines may be used only for optional title discovery or alias seeding, never as canon evidence. A work is included because it appears in clue text, not because it is an answer.
+Use raw quizbowl data only. The build reads `archive_parsed_questions.answerline` and `archive_parsed_questions.clue_text`; it explicitly does not read `archive_practice_questions.track_id`, `archive_canon_refinement_runs`, or `archive_canon_answerline_candidates`.
 
-If we want the strictest version, we do not use answerlines even for title discovery. Instead we discover titles from clue text by extraction and review. The faster practical version can use answerline-derived title candidates as a lexicon, but every score and threshold must come from clue mentions only.
+Answerlines count only when the raw prompt asks for a literary work. Clue-text title mentions count independently. Neither channel is allowed to define the whole canon by itself.
 
 ## Output Artifacts
 
@@ -62,28 +63,30 @@ One row per possible literary work title:
 - `candidate_id`
 - `canonical_title`
 - `normalized_title`
-- `creator_hint`
 - `form_hint`: novel, play, poem, epic, story, collection, scripture/literary text, unknown
-- `candidate_source`: clue_extraction, answerline_seed_no_evidence, existing_loci_node_no_evidence
-- `disambiguation_status`: unreviewed, accepted_work, rejected_nonwork, needs_split, needs_merge
+- `candidate_source`: raw answerline work prompt, clue extraction, answerline-seed clue mention, clue-derived seed clue mention
+- `form_counts_json`
+- `answerline_form_counts_json`
+- `disambiguation_status`: accepted likely work, common/short title, possible person/character, possible combined title, fragment title, non-literary context, section/subwork title, or low evidence
+- `total_question_count`
+- `answerline_question_count`
+- `clue_mention_question_count`
+- `distinct_set_count`
+- `distinct_year_count`
 - `notes`
 
 ### Mention Evidence
 
 One row per detected clue mention:
 
-- `mention_id`
-- `candidate_id`
-- `archive_parsed_question_id`
+- `work_id`
+- `canonical_title`
+- `question_id`
 - `set_title`
 - `year`
 - `question_type`
-- `mention_text`
-- `mention_start`
-- `mention_end`
-- `match_type`: exact, alias, quoted_title, pattern_extracted, adjudicated
-- `evidence_status`: accepted, rejected_answer_leak, rejected_non_title, ambiguous
-- `clue_snippet`
+- `match_type`
+- `snippet`
 
 ### Canon Score
 
@@ -91,32 +94,38 @@ One row per accepted work cluster:
 
 - `work_id`
 - `canonical_title`
-- `creator`
-- `accepted_mention_count`
-- `distinct_question_count`
+- `total_question_count`
+- `answerline_question_count`
+- `clue_mention_question_count`
 - `distinct_set_count`
 - `distinct_year_count`
 - `first_year`
 - `last_year`
 - `tossup_count`
 - `bonus_count`
-- `difficulty_weighted_count`
-- `circuit_diversity_count`
 - `quizbowl_salience_score`
 - `tier`
 - `review_status`
+- `source_counts_json`
+- `form_counts_json`
+- `answerline_form_counts_json`
+- `literary_signal_count`
+- `non_literary_signal_count`
+- `examples_json`
 
 ## Extraction Strategy
 
-### Pass 1: Clue-Only Title Discovery
+### Pass 1: Raw Candidate Discovery
 
-Extract likely work titles from `clue_text` using quizbowl-specific patterns:
+Extract likely work titles from two raw channels:
+
+- Raw answerline candidates when the clue prompt asks for a novel, play, poem, story, epic, collection, scripture, or related literary form.
+- Clue-text title candidates using quizbowl-specific patterns:
 
 - Quoted spans: `"Bartleby, the Scrivener"`, `"The Dead"`, `"The Waste Land"`.
 - Explicit form patterns: `novel X`, `play X`, `poem X`, `story X`, `collection X`, `epic X`.
 - Authorship patterns: `author of X`, `wrote X`, `in X`, `from X`, `title character of X`.
 - Capitalized title spans near literary verbs: wrote, published, translated, adapted, narrates, opens, ends.
-- Existing Loci clue/dossier fields if they were generated solely from quizbowl clue text.
 
 This pass should overgenerate. False positives are handled later.
 
@@ -136,19 +145,23 @@ Keep separate:
 - Whole collection vs individual poem/story when both are clueable.
 - Generic short titles unless creator/context disambiguates them.
 
-### Pass 3: Clue-Only Counting
+### Pass 3: Evidence Counting
 
-Count only accepted mentions in `clue_text`.
+Count accepted evidence from both raw channels:
+
+- raw work-answerline questions
+- clue-text title mentions
+- exact clue-text mentions for high-confidence answerline-derived and clue-derived title seeds
 
 Primary threshold:
 
-- `distinct_question_count >= 4`
+- `total_question_count >= 4`
 
 Secondary guards:
 
-- `distinct_set_count >= 2`, unless all mentions are from very different years in the same long-running source.
 - Exclude obvious answer-leak rows where clue text contains answer markers or parser failure artifacts.
-- Deduplicate repeated imports using existing Loci dedup keys where available.
+- Deduplicate by distinct raw question IDs.
+- Track distinct set and year spread for scoring and UI display.
 
 ### Pass 4: Literature-Only Filtering
 
@@ -169,6 +182,7 @@ Reject or route separately:
 - Countries, cities, schools, movements
 - Films, operas, paintings, albums, unless the quizbowl clue is explicitly for a literary source work
 - Philosophy/history/theory unless the product later asks for a humanities canon, not literature-only
+- Non-literary context-dominated works are routed to review unless the raw answerline channel repeatedly identifies the candidate as a strong literary form such as a novel, play, poem, story, epic, saga, or collection.
 
 ### Pass 5: Tiering By Quizbowl Salience
 
@@ -176,12 +190,12 @@ The frequency count gives canon strength, but raw count is not enough. Score sho
 
 ```text
 quizbowl_salience_score =
-  log1p(distinct_question_count)
+  log1p(total_question_count)
   + 0.8 * log1p(distinct_set_count)
   + 0.5 * log1p(distinct_year_count)
   + 0.3 * log1p(tossup_count)
-  + difficulty/circuit diversity bonuses
-  - duplicate/import/repeated-source penalties
+  + 0.7 * log1p(answerline_question_count)
+  + 0.2 * log1p(clue_mention_question_count)
 ```
 
 Initial tiers:
@@ -190,7 +204,6 @@ Initial tiers:
 - `qb_major`: strong recurring work.
 - `qb_contextual`: clears threshold but narrower circuit/time support.
 - `qb_candidate`: clears raw threshold but needs review for ambiguity, parser leakage, or non-literary status.
-- `qb_rejected`: false positive or out of literature scope.
 
 ## Validation
 
@@ -201,7 +214,8 @@ Run reviewer-style checks before trusting the output:
 - Answer-leak scan: reject clue rows containing `answer:`, `answers:`, `answerline:`, or visible answer blocks.
 - Same-set inflation scan: works whose mentions come mostly from one tournament or one packet family.
 - Year-span check: distinguish old quizbowl artifacts from persistent canon.
-- Answerline contamination check: prove that evidence counts do not use `answerline`.
+- Processed-Loci contamination check: prove that evidence counts do not use Loci track labels or canon-refinement tables.
+- Answerline-gating check: prove that clue-derived works can enter even without answerline support.
 
 ## Expected Biases
 
@@ -231,7 +245,7 @@ Target: 2-4 hours.
 
 Target: 0.5-1 day.
 
-- Run clue-only title extraction over all parsed question rows.
+- Run raw answerline and clue-text title extraction over all parsed question rows.
 - Store raw candidates and evidence snippets.
 - Generate candidate clusters.
 
@@ -264,7 +278,8 @@ Target: 0.5-1 day.
 
 After QL1, decide whether to continue with:
 
-- **Strict clue-only discovery:** slower, cleaner philosophically.
-- **Answerline-seeded clue-only evidence:** faster, still valid if answerlines are not counted.
+- **Strict clue-only discovery:** cleaner philosophically, but misses works that quizbowl mostly asks as answerlines.
+- **Answerline-only evidence:** faster, but too narrow and not acceptable for this project.
+- **Raw answerline plus raw clue-text evidence:** broader and transparent, while keeping source channels separate.
 
-The recommended practical route is answerline-seeded clue-only evidence with transparent labeling, because it greatly improves title recall while preserving the core evidentiary rule.
+The implemented route is raw answerline plus raw clue-text evidence with transparent labels, because it improves title recall without making answerlines the closed canon universe.
