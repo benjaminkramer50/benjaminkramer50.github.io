@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-04'
-status: medium_risk_rescue_evidence_apply_x062_generated
+status: high_risk_rescue_residue_x063_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -57,6 +57,7 @@ artifacts:
   existing_selection_evidence_reviews: generated_x060_from_x059_needs_followup_rows
   current_rescue_scope_review: generated_x061_from_x059_existing_source_rescue_lane
   medium_risk_rescue_evidence_applied: generated_x062_from_x061_medium_risk_rows
+  high_risk_rescue_residue: generated_x063_from_x061_high_risk_rows_and_current_x062_queue
   path_selection: bootstrapped_from_current_path
   creators: bootstrapped_from_current_path_plus_x013_candidate_creators_plus_x034_variants
   coverage_matrix: generated_x028
@@ -103,6 +104,7 @@ current_counts:
   existing_selection_evidence_review_rows: 2
   current_rescue_scope_review_rows: 23
   medium_risk_rescue_evidence_applied_rows: 3
+  high_risk_rescue_residue_rows: 20
   cut_candidate_rows: 3000
   source_items_matched_current_path: 282
   source_items_matched_candidate: 24
@@ -684,5 +686,13 @@ medium_risk_rescue_evidence_apply_x062:
   applied_rows: 3
   evidence_rows_added: 3
   source_items_linked_represented_by_selection: 3
+  complete_work_source_debt_closed: 0
+  direct_replacements: 0
+high_risk_rescue_residue_x063:
+  status: reconciled_against_current_x062_action_queue
+  residue_rows: 20
+  current_high_risk_scope_blocker_rows: 18
+  stale_after_x062_current_queue_refresh_rows: 2
+  evidence_rows_added: 0
   complete_work_source_debt_closed: 0
   direct_replacements: 0

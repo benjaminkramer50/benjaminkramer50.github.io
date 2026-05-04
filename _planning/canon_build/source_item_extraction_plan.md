@@ -90,6 +90,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X060 | X059 needs-followup selection-evidence rows | Existing selection evidence reviewed | 2 existing LOA representative-selection evidence rows accepted as selection-only support for Dunbar and Hughes; source debt remains open and public path unchanged |
 | X061 | X059 existing-source rescue lane | Current rescue scope review generated | 23 local creator-exact source-item rows classified: 3 medium-risk representative-selection candidates and 20 high-risk named-collection/form-unverified rows; public path unchanged |
 | X062 | X061 medium-risk rescue rows plus evidence/source-item ledgers | Medium-risk rescue evidence applied | 3 medium-risk representative-selection evidence rows applied for reviewed local source items; complete-work source debt remains open, high-risk rows remain blocked, and public path unchanged |
+| X063 | X061 high-risk rows plus current X062 action queue | High-risk rescue residue reconciled | 20 high-risk X061 rows reconciled against the current queue: 18 active high-risk scope blockers and 2 stale rows that should not be processed unless they reappear; no evidence rows or public path changes |
 
 ## Planned Extraction Packets
 
