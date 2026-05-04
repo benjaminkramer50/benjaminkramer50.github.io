@@ -10,17 +10,17 @@ X051 reviews the current X050 cut-side work orders as selection-basis and source
 
 - Added `scripts/canon_generate_generic_selection_basis_review.rb`.
 - Added `canon_generic_selection_basis_review.tsv`.
-- Generated 48 review rows from X050 work orders.
+- Generated 46 review rows from X050 work orders.
 - Rows with alias support: 5.
 - Rows with matched source items: 2.
-- Generic-title rows without accepted evidence: 45.
+- Generic-title rows without accepted evidence: 43.
 
 Selection-basis status summary:
 
 | Status | Rows |
 |---|---:|
 | `generic_title_has_evidence_selection_basis_review_required` | 2 |
-| `generic_title_unresolved_no_source_support` | 45 |
+| `generic_title_unresolved_no_source_support` | 43 |
 | `non_generic_source_support_unresolved` | 1 |
 
 Recommended resolution summary:
@@ -28,7 +28,7 @@ Recommended resolution summary:
 | Resolution | Rows |
 |---|---:|
 | `extract_or_accept_cut_side_source_support_before_cut_decision` | 1 |
-| `hold_cut_pairing_until_selection_basis_and_external_support_are_verified` | 45 |
+| `hold_cut_pairing_until_selection_basis_and_external_support_are_verified` | 43 |
 | `review_whether_row_is_collection_or_representative_selection` | 2 |
 
 Highest-priority unresolved rows:

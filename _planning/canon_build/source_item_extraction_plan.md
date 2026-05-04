@@ -1,6 +1,6 @@
 # Canon Source-Item Extraction Plan
 
-Generated on: 2026-05-03
+Generated on: 2026-05-04
 
 Status: active.
 
@@ -74,11 +74,11 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X044 | X028 diagnostic coverage matrix | Coverage targets generated | 72 medium/high-risk coverage review targets generated and scores regenerated with a capped coverage-scarcity bonus; no replacement transaction generated; public path unchanged |
 | X045 | Score-ready add candidates | Blocked replacement prefilter generated | 5 score-ready source-backed add candidates written to `canon_replacement_candidates.tsv` with `gate_status=blocked` and intentionally blank cut fields; public path unchanged |
 | X046 | Current selected incumbents | Cut-risk table generated | 3,000 incumbent rows ranked by source-debt, generic-title, duplicate-cluster, chronology, boundary, and tier signals; no cut approved; public path unchanged |
-| X047 | X045 add prefilter plus X046 cut-risk table | Blocked replacement pairings generated | 1,195 current add/cut pair rows after X058 refresh generated from 5 score-ready additions and 239 high-priority cut-review rows; all remain `blocked`; public path unchanged |
+| X047 | X045 add prefilter plus X046 cut-risk table | Blocked replacement pairings generated | 1,185 current add/cut pair rows after X062 refresh generated from 5 score-ready additions and 237 high-priority cut-review rows; all remain `blocked`; public path unchanged |
 | X048 | X047 blocked pair rows | Pair checks annotated | Current replacement pairs regenerated after X058 with explicit duplicate, chronology, boundary, source-debt, add-year, cut-year, and cut-risk signals; all remain `blocked`; public path unchanged |
 | X049 | X048 blocked pair rows | Pair review queue generated | 75 balanced pair-review rows generated, with 15 rows for each score-ready add candidate and capped repeated cut-title clusters; public path unchanged |
-| X050 | X049 pair-review queue | Cut-review work orders generated | 48 current cut-side work orders after X058 refresh so repeated add/cut pair rows can be reviewed by cut candidate and selection-basis issue; public path unchanged |
-| X051 | X050 cut-review work orders | Generic selection-basis review generated | 48 current cut-side rows after X058 refresh classified by generic-title status, alias/source-item/evidence support, source-debt state, and next resolution action; public path unchanged |
+| X050 | X049 pair-review queue | Cut-review work orders generated | 46 current cut-side work orders after X062 refresh so repeated add/cut pair rows can be reviewed by cut candidate and selection-basis issue; public path unchanged |
+| X051 | X050 cut-review work orders | Generic selection-basis review generated | 46 current cut-side rows after X062 refresh classified by generic-title status, alias/source-item/evidence support, source-debt state, and next resolution action; public path unchanged |
 | X052 | X051 generic selection-basis rows plus source items | Cut-side source-item rescue candidates generated | 48 existing source-item rows identified for cut-side match/scope/evidence review, after excluding generic-title creator mismatches and already-assigned different-work rows; public path unchanged |
 | X053 | X051/X052 cut-side review rows | Cut-review resolution lanes generated | 50 cut-side rows split into 17 existing-source rescue reviews and 33 external-source acquisition rows so the next work is ordered; public path unchanged |
 | X054 | X052 rescue rows | Cut rescue scope review generated | 48 rescue rows classified by representative-selection, named-collection, story-collection, ode-family, existing-evidence, and form-mismatch scope risk; public path unchanged |
@@ -86,9 +86,10 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X056 | X054/X055 rescue rows | Cut evidence item decisions generated | 48 source-item rescue rows adjudicated at item level: 21 ready for representative-selection evidence review and 27 blocked/held for high-risk scope, named-collection exact support, existing evidence, or form review; public path unchanged |
 | X057 | X056 ready item rows | Cut evidence write plan generated | 21 review-gated evidence write-plan rows staged for possible future `canon_evidence.tsv` updates; no evidence ledger rows changed; public path unchanged |
 | X058 | X057 write plan plus evidence/source-item ledgers | Cut evidence apply generated | 21 accepted representative-selection evidence rows applied to `canon_evidence.tsv`, 21 source items linked as `represented_by_selection`, and source-debt/scoring/cut queues refreshed; X052-X057 remain the pre-apply staging audit and should be regenerated in the next cut-side packet; public path unchanged |
-| X059 | Post-X058 X051 cut-side queue | Current action queue generated | 48 current cut-side rows refreshed after X060: 2 accepted selection-only rows still need complete-work support, 9 existing-source rescue reviews, and 37 external-source acquisition rows; public path unchanged |
+| X059 | Post-X058 X051 cut-side queue | Current action queue generated | 46 current cut-side rows refreshed after X062: 2 accepted selection-only rows still need complete-work support, 6 existing-source rescue reviews, and 38 external-source acquisition rows; public path unchanged |
 | X060 | X059 needs-followup selection-evidence rows | Existing selection evidence reviewed | 2 existing LOA representative-selection evidence rows accepted as selection-only support for Dunbar and Hughes; source debt remains open and public path unchanged |
 | X061 | X059 existing-source rescue lane | Current rescue scope review generated | 23 local creator-exact source-item rows classified: 3 medium-risk representative-selection candidates and 20 high-risk named-collection/form-unverified rows; public path unchanged |
+| X062 | X061 medium-risk rescue rows plus evidence/source-item ledgers | Medium-risk rescue evidence applied | 3 medium-risk representative-selection evidence rows applied for reviewed local source items; complete-work source debt remains open, high-risk rows remain blocked, and public path unchanged |
 
 ## Planned Extraction Packets
 

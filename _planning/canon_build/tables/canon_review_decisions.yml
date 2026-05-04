@@ -474,10 +474,30 @@ decisions:
       - verify_named_collection_membership_or_find_better_sources_for_high_risk_rows
       - keep_cut_side_scoring_blocked_until_scope_and_source_debt_gates_are_clear
     public_path_effect: none
+  - decision_id: x062_medium_risk_rescue_evidence_apply_001
+    decision_type: medium_risk_rescue_evidence_apply
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_medium_risk_rescue_evidence_applied.tsv
+      - _planning/canon_build/tables/canon_evidence.tsv
+      - _planning/canon_build/tables/canon_source_items.tsv
+    decision: accept_x061_medium_risk_rows_as_representative_selection_evidence_only
+    rationale: >
+      The 3 medium-risk X061 rows have reviewed local source-item support for
+      representative story or poetry selections. X062 links those source items
+      and writes moderate representative-selection evidence. This is not
+      complete-work support, does not approve a cut, and does not authorize
+      replacement transactions.
+    scoring_effect: none
+    required_followup:
+      - process_remaining_high_risk_x061_scope_rows_before_evidence_generation
+      - find_complete_work_support_for_selection_only_cut_rows_before_cut_scoring
+      - register_or_reject_external_source_acquisition_rows
+      - keep_public_replacement_pairs_blocked
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
-  - unmatched_source_items_currently_5425
+  - unmatched_source_items_currently_5422
   - duplicate_candidate_keys_currently_39
   - chronology_inversion_rows_currently_138
   - generic_title_rows_currently_267

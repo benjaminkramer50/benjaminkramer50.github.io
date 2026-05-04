@@ -17,8 +17,8 @@ Gate summary:
 
 | Gate status | Rows |
 |---|---:|
-| `high_cut_review_priority` | 239 |
-| `medium_cut_review_priority` | 2,421 |
+| `high_cut_review_priority` | 237 |
+| `medium_cut_review_priority` | 2,423 |
 | `low_cut_review_priority` | 122 |
 | `protected_core_review_required` | 218 |
 

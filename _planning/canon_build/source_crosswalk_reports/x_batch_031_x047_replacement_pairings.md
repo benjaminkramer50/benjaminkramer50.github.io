@@ -11,14 +11,14 @@ This is not an integration packet and not an approval to cut any incumbent.
 ## Output
 
 - Added `scripts/canon_generate_replacement_pairings.rb`.
-- Regenerated `canon_replacement_candidates.tsv` with 1,195 blocked pair rows.
-- Pairing universe: 5 score-ready add candidates x 239 high-priority cut-review candidates.
+- Regenerated `canon_replacement_candidates.tsv` with 1,185 blocked pair rows.
+- Pairing universe: 5 score-ready add candidates x 237 high-priority cut-review candidates.
 
 Gate summary:
 
 | Gate status | Rows |
 |---|---:|
-| `blocked` | 1,195 |
+| `blocked` | 1,185 |
 
 ## Pairing Rules
 
