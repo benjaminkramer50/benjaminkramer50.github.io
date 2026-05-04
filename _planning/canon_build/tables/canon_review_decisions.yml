@@ -507,7 +507,7 @@ decisions:
       their work rows re-enter the current queue.
     scoring_effect: none
     required_followup:
-      - resolve_16_current_high_risk_scope_blockers_before_evidence_generation
+      - resolve_current_high_risk_scope_blockers_before_evidence_generation
       - do_not_process_stale_high_risk_rows_until_they_reappear_in_current_queue
       - continue_external_source_acquisition_for_no_local_support_rows
       - keep_public_replacement_pairs_blocked
@@ -545,14 +545,12 @@ decisions:
     decision: refresh_existing_source_rescue_scope_from_live_action_queue
     rationale: >
       X065 refreshes the current rescue-scope table from the live action queue
-      rather than continuing to process the superseded X061 snapshot. After X067
-      applied the David Diop representative-selection rows, the refreshed table
-      now exposes five Keorapetse Kgositsile medium-risk representative-poetry
-      rows while retaining 16 high-risk collection/form blockers.
+      rather than continuing to process the superseded X061 snapshot. After X068
+      applied the remaining current medium-risk wave, the refreshed table exposes
+      no medium-risk rows and retains 17 high-risk collection/form blockers.
     scoring_effect: none
     required_followup:
-      - accept_or_reject_kgositsile_medium_risk_representative_selection_rows
-      - resolve_16_high_risk_collection_or_form_scope_blockers
+      - resolve_17_high_risk_collection_or_form_scope_blockers
       - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
     public_path_effect: none
   - decision_id: x066_current_medium_risk_rescue_evidence_apply_001
@@ -574,7 +572,7 @@ decisions:
     required_followup:
       - process_current_medium_risk_representative_selection_rows
       - find_complete_work_support_for_selection_only_rows_before_cut_scoring
-      - resolve_or_reject_16_current_high_risk_scope_blockers
+      - resolve_or_reject_current_high_risk_scope_blockers
       - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
     public_path_effect: none
   - decision_id: x067_current_medium_risk_rescue_evidence_apply_001
@@ -594,15 +592,38 @@ decisions:
       approve a cut, or authorize a replacement transaction.
     scoring_effect: refresh_source_debt_scoring_cut_and_pair_queues_without_public_path_change
     required_followup:
-      - process_current_kgositsile_medium_risk_representative_selection_rows
+      - process_current_medium_risk_wave_or_high_risk_scope_blockers
       - find_complete_work_support_for_selection_only_rows_before_cut_scoring
-      - resolve_or_reject_16_current_high_risk_scope_blockers
+      - resolve_or_reject_current_high_risk_scope_blockers
+      - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
+    public_path_effect: none
+  - decision_id: x068_current_medium_risk_rescue_wave_apply_001
+    decision_type: current_medium_risk_rescue_wave_apply
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_current_medium_risk_rescue_evidence_applied.tsv
+      - _planning/canon_build/tables/canon_evidence.tsv
+      - _planning/canon_build/tables/canon_source_items.tsv
+    applies_to_work_ids:
+      - work_candidate_africa_lit_kgositsile_poems
+      - work_candidate_africa_lit_dennis_brutus_poems
+      - work_candidate_africa_lit_serote_poems
+    decision: accept_current_medium_risk_wave_as_representative_selection_evidence_only
+    rationale: >
+      X068 processes the remaining current medium-risk representative-poetry
+      clusters as a bounded wave, applying rows for Keorapetse Kgositsile, Dennis
+      Brutus, and Mongane Wally Serote. These are selected-poems support rows only;
+      they do not establish complete-work support, close complete-work source debt,
+      approve cuts, or authorize replacement transactions.
+    scoring_effect: refresh_source_debt_scoring_cut_and_pair_queues_without_public_path_change
+    required_followup:
+      - resolve_or_reject_17_current_high_risk_scope_blockers
+      - find_complete_work_support_for_selection_only_rows_before_cut_scoring
       - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
     public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3001
-  - unmatched_source_items_currently_5416
+  - unmatched_source_items_currently_5403
   - duplicate_candidate_keys_currently_39
   - chronology_inversion_rows_currently_138
   - generic_title_rows_currently_267
