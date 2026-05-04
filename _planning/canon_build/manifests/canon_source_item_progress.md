@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 94
-- source_item_rows: 5966
-- evidence_rows: 562
+- registered_sources: 98
+- source_item_rows: 5970
+- evidence_rows: 566
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -105,6 +105,10 @@
 | `x070_poetry_foundation_hikmet_selected_poems_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x070_poetry_foundation_primo_levi_reference` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x070_washington_post_milosz_selected_poems_review` | X070 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x071_britannica_brazilian_literature_reference` | X071 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x071_britannica_family_ties_reference` | X071 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x071_ebsco_family_ties_research_starter` | X071 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x071_encyclopedia_com_lispector_reference` | X071 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 

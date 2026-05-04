@@ -62,6 +62,7 @@ TABLE_FILES = {
   "current_high_risk_resolution_queue" => File.join(BUILD_DIR, "tables", "canon_current_high_risk_resolution_queue.tsv"),
   "current_high_risk_work_resolution" => File.join(BUILD_DIR, "tables", "canon_current_high_risk_work_resolution.tsv"),
   "external_source_rescue_evidence_applied_x070" => File.join(BUILD_DIR, "tables", "canon_external_source_rescue_evidence_applied_x070.tsv"),
+  "external_source_rescue_evidence_applied_x071" => File.join(BUILD_DIR, "tables", "canon_external_source_rescue_evidence_applied_x071.tsv"),
   "selection_only_complete_work_support_review" => File.join(BUILD_DIR, "tables", "canon_selection_only_complete_work_support_review.tsv"),
   "packet_status" => File.join(BUILD_DIR, "tables", "canon_packet_status.tsv")
 }.freeze
@@ -103,6 +104,7 @@ HEADER_REQUIREMENTS = {
   "current_high_risk_resolution_queue" => ["resolution_id", "residue_id", "scope_review_id", "cut_work_id", "source_item_id", "resolution_decision", "evidence_generation_gate", "next_action"],
   "current_high_risk_work_resolution" => ["work_resolution_id", "cut_work_id", "high_risk_source_rows", "work_resolution_decision", "external_source_strategy", "next_action"],
   "external_source_rescue_evidence_applied_x070" => ["applied_id", "work_id", "source_id", "source_item_id", "evidence_id", "source_debt_status_after", "resolution_status", "next_action"],
+  "external_source_rescue_evidence_applied_x071" => ["applied_id", "work_id", "source_id", "source_item_id", "evidence_id", "source_debt_status_after", "resolution_status", "next_action"],
   "selection_only_complete_work_support_review" => ["review_id", "action_id", "work_id", "current_title", "review_decision", "source_debt_effect", "next_action"],
   "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
 }.freeze

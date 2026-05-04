@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 49
+- checked_files: 50
 - failures: 0
 
 ## Checks
@@ -55,6 +55,7 @@
 | table:current_high_risk_resolution_queue | PASS | `_planning/canon_build/tables/canon_current_high_risk_resolution_queue.tsv (22 columns)` |
 | table:current_high_risk_work_resolution | PASS | `_planning/canon_build/tables/canon_current_high_risk_work_resolution.tsv (12 columns)` |
 | table:external_source_rescue_evidence_applied_x070 | PASS | `_planning/canon_build/tables/canon_external_source_rescue_evidence_applied_x070.tsv (17 columns)` |
+| table:external_source_rescue_evidence_applied_x071 | PASS | `_planning/canon_build/tables/canon_external_source_rescue_evidence_applied_x071.tsv (17 columns)` |
 | table:selection_only_complete_work_support_review | PASS | `_planning/canon_build/tables/canon_selection_only_complete_work_support_review.tsv (13 columns)` |
 | table:packet_status | PASS | `_planning/canon_build/tables/canon_packet_status.tsv (8 columns)` |
 | policy:source_weights.source_type_mapping | PASS | `42 source types mapped` |
