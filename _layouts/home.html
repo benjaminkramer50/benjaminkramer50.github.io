@@ -178,17 +178,29 @@
 
       var NODE_COUNT = 60;
       var CONNECT_DIST = 120;
+      var LIGHT_CONNECT_DIST = 122;
       var MOUSE_RADIUS = 150;
       var MOUSE_FORCE = 0.015;
       var MAX_SPEED = 0.35;
+      var LIGHT_MOUSE_FORCE = 0.022;
+      var LIGHT_MAX_SPEED = 0.7;
       var nodes = [];
+      var lightNodes = [];
       var mouse = { x: -9999, y: -9999 };
       var w, h;
       var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var startTime = Date.now();
 
       function resize() {
-        w = canvas.width = window.innerWidth;
-        h = canvas.height = window.innerHeight;
+        var ratio = window.devicePixelRatio || 1;
+        w = window.innerWidth;
+        h = window.innerHeight;
+        canvas.width = Math.floor(w * ratio);
+        canvas.height = Math.floor(h * ratio);
+        canvas.style.width = w + 'px';
+        canvas.style.height = h + 'px';
+        ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+        createLightNodes();
       }
 
       function isDark() {
@@ -207,14 +219,45 @@
         }
       }
 
+      function createLightNodes() {
+        lightNodes = [];
+        var clusters = [
+          { x: w * 0.16, y: h * 0.22, rx: w * 0.18, ry: h * 0.15, count: 10 },
+          { x: w * 0.84, y: h * 0.26, rx: w * 0.16, ry: h * 0.16, count: 8 },
+          { x: w * 0.2, y: h * 0.78, rx: w * 0.16, ry: h * 0.14, count: 8 },
+          { x: w * 0.8, y: h * 0.76, rx: w * 0.18, ry: h * 0.16, count: 10 }
+        ];
+
+        for (var c = 0; c < clusters.length; c++) {
+          var cluster = clusters[c];
+          for (var i = 0; i < cluster.count; i++) {
+            var angle = (Math.PI * 2 * i) / cluster.count + c * 0.41;
+            var radius = 0.34 + Math.random() * 0.66;
+            lightNodes.push({
+              x: cluster.x + Math.cos(angle) * cluster.rx * radius + (Math.random() - 0.5) * 22,
+              y: cluster.y + Math.sin(angle) * cluster.ry * radius + (Math.random() - 0.5) * 22,
+              vx: (Math.random() - 0.5) * 0.5,
+              vy: (Math.random() - 0.5) * 0.5
+            });
+          }
+        }
+      }
+
       function draw() {
         ctx.clearRect(0, 0, w, h);
 
+        if (isDark()) {
+          drawDarkNetwork();
+        } else {
+          drawLightLandscape();
+        }
+      }
+
+      function drawDarkNetwork() {
         var nodeColor = 'rgba(255,255,255,0.15)';
         var lineBase = [255, 255, 255];
         var lineAlphaScale = 0.06;
 
-        // Draw lines
         for (var i = 0; i < NODE_COUNT; i++) {
           for (var j = i + 1; j < NODE_COUNT; j++) {
             var dx = nodes[i].x - nodes[j].x;
@@ -232,13 +275,65 @@
           }
         }
 
-        // Draw nodes
         ctx.fillStyle = nodeColor;
         for (var k = 0; k < NODE_COUNT; k++) {
           ctx.beginPath();
           ctx.arc(nodes[k].x, nodes[k].y, 1.75, 0, Math.PI * 2);
           ctx.fill();
         }
+      }
+
+      function centerFade(x, y) {
+        var cx = w * 0.5;
+        var cy = h * 0.47;
+        var clearRadius = Math.min(w, h) * 0.23;
+        var fadeRadius = Math.min(w, h) * 0.42;
+        var dx = x - cx;
+        var dy = y - cy;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist <= clearRadius) return 0;
+        if (dist >= fadeRadius) return 1;
+        return (dist - clearRadius) / Math.max(1, fadeRadius - clearRadius);
+      }
+
+      function drawLightLandscape() {
+        ctx.save();
+        ctx.lineWidth = 1;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+
+        var lineBase = [40, 78, 106];
+        for (var i = 0; i < lightNodes.length; i++) {
+          for (var j = i + 1; j < lightNodes.length; j++) {
+            var dx = lightNodes[i].x - lightNodes[j].x;
+            var dy = lightNodes[i].y - lightNodes[j].y;
+            var dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < LIGHT_CONNECT_DIST) {
+              var mx = (lightNodes[i].x + lightNodes[j].x) * 0.5;
+              var my = (lightNodes[i].y + lightNodes[j].y) * 0.5;
+              var alpha = 0.24 * (1 - dist / LIGHT_CONNECT_DIST) * centerFade(mx, my);
+              if (alpha > 0.018) {
+                ctx.beginPath();
+                ctx.moveTo(lightNodes[i].x, lightNodes[i].y);
+                ctx.lineTo(lightNodes[j].x, lightNodes[j].y);
+                ctx.strokeStyle = 'rgba(' + lineBase[0] + ',' + lineBase[1] + ',' + lineBase[2] + ',' + alpha + ')';
+                ctx.stroke();
+              }
+            }
+          }
+        }
+
+        for (var k = 0; k < lightNodes.length; k++) {
+          var nodeAlpha = 0.52 * centerFade(lightNodes[k].x, lightNodes[k].y);
+          if (nodeAlpha > 0.04) {
+            ctx.beginPath();
+            ctx.arc(lightNodes[k].x, lightNodes[k].y, 1.8, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(28, 70, 102, ' + nodeAlpha + ')';
+            ctx.fill();
+          }
+        }
+
+        ctx.restore();
       }
 
       function update() {
@@ -271,6 +366,34 @@
           if (n.y < -10) n.y = h + 10;
           else if (n.y > h + 10) n.y = -10;
         }
+
+        if (!isDark()) {
+          for (var k = 0; k < lightNodes.length; k++) {
+            var ln = lightNodes[k];
+
+            var ldx = mouse.x - ln.x;
+            var ldy = mouse.y - ln.y;
+            var ldist = Math.sqrt(ldx * ldx + ldy * ldy);
+            if (ldist < MOUSE_RADIUS && ldist > 0) {
+              ln.vx += (ldx / ldist) * LIGHT_MOUSE_FORCE;
+              ln.vy += (ldy / ldist) * LIGHT_MOUSE_FORCE;
+            }
+
+            var lspeed = Math.sqrt(ln.vx * ln.vx + ln.vy * ln.vy);
+            if (lspeed > LIGHT_MAX_SPEED) {
+              ln.vx = (ln.vx / lspeed) * LIGHT_MAX_SPEED;
+              ln.vy = (ln.vy / lspeed) * LIGHT_MAX_SPEED;
+            }
+
+            ln.x += ln.vx;
+            ln.y += ln.vy;
+
+            if (ln.x < -10) ln.x = w + 10;
+            else if (ln.x > w + 10) ln.x = -10;
+            if (ln.y < -10) ln.y = h + 10;
+            else if (ln.y > h + 10) ln.y = -10;
+          }
+        }
       }
 
       function loop() {
@@ -278,6 +401,10 @@
         draw();
         requestAnimationFrame(loop);
       }
+
+      new MutationObserver(function () {
+        if (reducedMotion) draw();
+      }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
       // Track mouse
       document.addEventListener('mousemove', function (e) {
@@ -293,6 +420,7 @@
       // Handle resize
       window.addEventListener('resize', function () {
         resize();
+        if (reducedMotion) draw();
       });
 
       // Initialize
