@@ -11,7 +11,7 @@ X051 reviews the current X050 cut-side work orders as selection-basis and source
 - Added `scripts/canon_generate_generic_selection_basis_review.rb`.
 - Added `canon_generic_selection_basis_review.tsv`.
 - Generated 45 review rows from X050 work orders.
-- Rows with alias support: 3.
+- Rows with alias support: 4.
 - Rows with matched source items: 1.
 - Generic-title rows without accepted evidence: 44.
 
@@ -33,16 +33,16 @@ Highest-priority unresolved rows:
 
 | Review ID | Cut title | Creator | Status | Next action |
 |---|---|---|---|---|
-| `x051_selection_basis_0001` | Selected Poems | Samuel ha-Nagid | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0002` | Selected Poems | Ingrid Jonker | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0003` | Selected Poems | Waldo Williams | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0004` | Selected Poems | Rainis | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0005` | Selected Poems | Sorley MacLean | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0006` | Selected Poems | Avrom Sutzkever | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0007` | Selected Poems | Marina Tsvetaeva | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0008` | Selected Poems | Seamus Heaney | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0009` | Selected Poems | Siamanto | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0010` | Selected Poems | Daniel Varoujan | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0001` | Selected Poems | Henry Wadsworth Longfellow | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0002` | Selected Poems | Archilochus | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0003` | Selected Poems | Cao Cao | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0004` | Selected Poems | Cao Zhi | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0005` | Selected Poems | Ruan Ji | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0006` | Selected Poems | Bao Zhao | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0007` | Selected Poems | Ariruma Kowii | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0008` | Selected Poems | Briceida Cuevas Cob | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0009` | Selected Poems | Humberto Ak'abal | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0010` | Selected Poems | Hubert Matiuwaa | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 
 ## Interpretation
 

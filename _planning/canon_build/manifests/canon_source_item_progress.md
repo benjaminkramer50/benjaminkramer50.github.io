@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 191
-- source_item_rows: 6063
-- evidence_rows: 659
+- registered_sources: 211
+- source_item_rows: 6083
+- evidence_rows: 679
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -202,6 +202,26 @@
 | `x076_prh_schulz_complete_fiction_sanatorium` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x076_tandfonline_angarey_censored_literature` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x076_uchicago_city_lights_kisses_from_another_dream` | X076 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_britannica_adventures_sherlock_holmes` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_britannica_angela_carter_bloody_chamber` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_britannica_dr_watson_sherlock_collection` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_cuhk_taipei_people_preface` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_cup_taipei_people` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_degruyter_stories_old_and_new` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_dublin_literary_olive_senior_summer_lightning` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_gdi_road_allowance` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_goodminds_road_allowance` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_google_books_gogols_wife` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_google_books_road_allowance` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_google_books_summer_lightning` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_google_books_tales_tikongs` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_lat_tales_tikongs_review` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_prh_horror_classics_bloody_chamber` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_random_house_bloody_chamber` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_time_gogols_wife_review` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_uhpress_tales_tikongs` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_uw_press_stories_old_and_new` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x077_writers_trust_olive_senior_summer_lightning` | X077 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 
