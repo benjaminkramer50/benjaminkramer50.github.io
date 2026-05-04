@@ -83,6 +83,7 @@ No packet may treat a corpus/database as a canon list. Corpus rows supply metada
 | X053 | X051/X052 cut-side review rows | Cut-review resolution lanes generated | 50 cut-side rows split into 17 existing-source rescue reviews and 33 external-source acquisition rows so the next work is ordered; public path unchanged |
 | X054 | X052 rescue rows | Cut rescue scope review generated | 48 rescue rows classified by representative-selection, named-collection, story-collection, ode-family, existing-evidence, and form-mismatch scope risk; public path unchanged |
 | X055 | X054 medium-risk rescue rows | Cut evidence proposals generated | 16 grouped representative-selection evidence proposals generated for manual scope review; high-risk collection-membership and form-mismatch rows remain blocked; public path unchanged |
+| X056 | X054/X055 rescue rows | Cut evidence item decisions generated | 48 source-item rescue rows adjudicated at item level: 21 ready for representative-selection evidence review and 27 blocked/held for high-risk scope, named-collection exact support, existing evidence, or form review; public path unchanged |
 
 ## Planned Extraction Packets
 

@@ -1,7 +1,7 @@
 # Canon Build Layer Validation
 
 - status: PASS
-- checked_files: 36
+- checked_files: 37
 - failures: 0
 
 ## Checks
@@ -43,6 +43,7 @@
 | table:cut_review_resolution_lanes | PASS | `_planning/canon_build/tables/canon_cut_review_resolution_lanes.tsv (17 columns)` |
 | table:cut_rescue_scope_review | PASS | `_planning/canon_build/tables/canon_cut_rescue_scope_review.tsv (19 columns)` |
 | table:cut_evidence_proposals | PASS | `_planning/canon_build/tables/canon_cut_evidence_proposals.tsv (16 columns)` |
+| table:cut_evidence_item_decisions | PASS | `_planning/canon_build/tables/canon_cut_evidence_item_decisions.tsv (17 columns)` |
 | table:packet_status | PASS | `_planning/canon_build/tables/canon_packet_status.tsv (8 columns)` |
 | policy:source_weights.source_type_mapping | PASS | `42 source types mapped` |
 | policy:source_debt_rules.source_class_rules | PASS | `10 source classes covered` |

@@ -369,6 +369,22 @@ decisions:
       - keep_high_risk_scope_rows_blocked
       - recompute_cut_side_source_debt_only_after_reviewed_evidence_changes
     public_path_effect: none
+  - decision_id: x056_cut_evidence_item_decisions_001
+    decision_type: cut_evidence_item_decision_generation
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_cut_evidence_item_decisions.tsv
+    decision: adjudicate_cut_side_rescue_source_items_before_evidence_writes
+    rationale: >
+      Grouped evidence proposals can hide mixed-quality source items. X056 classifies
+      each rescue item as ready for representative-selection evidence review, needing
+      existing-evidence review, blocked for named-collection exact support, blocked
+      for high scope risk, or needing form review.
+    scoring_effect: none
+    required_followup:
+      - generate_evidence_only_from_ready_item_rows_after_review_acceptance
+      - keep_named_collection_rows_source_debt_open_until_exact_collection_support_exists
+      - do_not_recompute_cut_scores_until_evidence_rows_are_reviewed
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
