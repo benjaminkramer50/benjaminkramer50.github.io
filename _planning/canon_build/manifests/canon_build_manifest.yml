@@ -1,6 +1,6 @@
 ---
 generated_on: '2026-05-04'
-status: current_medium_risk_rescue_wave_apply_x068_generated
+status: current_high_risk_resolution_queue_x069_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -69,6 +69,8 @@ artifacts:
   red_cell_audit_queue: generated_x028
   red_cell_triage: generated_x029
   red_cell_review_decisions: generated_x030
+  current_high_risk_resolution_queue: generated_x069_from_current_high_risk_scope_rows
+  current_high_risk_work_resolution: generated_x069_work_level_resolution_plan
 bootstrap_counts:
   work_candidates: 3000
   creators: 2000
@@ -115,6 +117,8 @@ current_counts:
   source_items_out_of_scope: 1
   source_items_unmatched: 5403
   source_registry_rows: 80
+  current_high_risk_resolution_queue_rows: 17
+  current_high_risk_work_resolution_rows: 7
 source_crosswalk_batch_e001_e006:
   source_registry_rows: 9
   e001_source_items: 61
@@ -769,4 +773,17 @@ current_medium_risk_rescue_wave_apply_x068:
   current_scope_rows_after_refresh: 17
   medium_scope_risk_rows_after_refresh: 0
   high_scope_risk_rows_after_refresh: 17
+  direct_replacements: 0
+current_high_risk_resolution_queue_x069:
+  status: generated_from_current_x065_high_risk_rows
+  resolution_rows: 17
+  work_resolution_rows: 7
+  decision_counts:
+    hold_for_exact_named_collection_membership_source: 7
+    needs_verified_poem_form_before_selection_evidence: 4
+    reject_wrong_form_for_story_collection_support: 2
+    hold_for_exact_story_collection_membership_source: 2
+    reject_or_hold_component_form_mismatch: 2
+  evidence_rows_added: 0
+  complete_work_source_debt_closed: 0
   direct_replacements: 0

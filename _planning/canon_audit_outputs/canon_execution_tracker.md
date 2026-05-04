@@ -1,6 +1,6 @@
 # Canon Audit Execution Tracker
 
-Last updated: 2026-05-03
+Last updated: 2026-05-04
 
 ## Phase Status
 
@@ -8,12 +8,12 @@ Last updated: 2026-05-03
 |---|---|---|---|
 | Phase S0 | Freeze current baseline and claims | Complete for Wave 005 baseline | Commit `64600ddb264839d57a173438490f36eeed4c31b3`; validation outputs current |
 | Phase S1 | Source/candidate universe scaffolding | Complete for first scaffold | `_planning/canon_build/` schemas, empty tables, validation, and incumbent bootstrap created |
-| Phase S1H | Hardening pass after workflow review | Active next | Controlled values, source-class policy, packet status, source-fetch logs, stronger validation, and idempotent upserts |
+| Phase S1H | Hardening pass after workflow review | Active | Controlled values, source-class policy, packet status, validation, idempotent source/evidence upserts, and current high-risk resolution queues through X069 |
 | Phase S2 | Source registry triage and prioritized extraction | In progress | E001-E018 registered; X001-X006 pilot ingested; X007-X012 feasibility complete but rows held pending hardening; X020-X023 generated/updated 1,354 E013/E014/E015/E016/E017/E018 source-item observations; source table now has 1,422 rows |
 | Phase S3 | Continuous normalize, dedupe, and relations | Started | X013/X014 rerun after X023: 236 match candidates, 1,210 match-review decisions, 1,633 relation-scope rows, and 8 provisional source-backed candidates |
-| Phase S4 | Evidence policy and source weighting | Started | Source weights, source-debt rules, 212 total evidence rows, a 3,008-row source-debt status table, and scoring-input blockers exist; 0 source-debt rows are closed |
+| Phase S4 | Evidence policy and source weighting | Started | Source weights, source-debt rules, 548 total evidence rows, a 3,012-row source-debt status table, and scoring-input blockers exist; 11 source-debt rows are closed |
 | Phase S5 | First-class taxonomy and boundary policy | Pending | Required before boundary-sensitive rows are locked |
-| Phase S6 | Coverage targets, scoring, and coverage matrix | Started | `canon_scoring_inputs.tsv` covers 3,008 candidates; 0 rows are ready for score computation, and coverage targets/scores are not generated |
+| Phase S6 | Coverage targets, scoring, and coverage matrix | Started | `canon_scoring_inputs.tsv` covers 3,012 candidates; 6 rows are ready for score computation, and blocked replacement/cut review tables exist |
 | Phase S7 | Period, region, form, sentinel, and intersection validation | Pending | B/C/D/F/I packets challenge scored universe, not direct replacement |
 | Phase S8 | Source-backed integration H packets | Paused | No further content replacements until S1H-S6 gates exist |
 | Phase S9 | Public UI and generated path | Pending | Conservative simplification allowed; precise filters wait for first-class taxonomy fields |
@@ -59,7 +59,7 @@ Last updated: 2026-05-03
 
 ## Active Structural Debt
 
-- Source gate: 3,008 source-debt rows remain open; no new row should enter as `manual_only`.
+- Source gate: 3,001 of 3,012 source-debt rows remain open; no new row should enter as `manual_only`.
 - Validation gate: current PASS means headers/foreign keys plus the current hardening checks. Controlled vocabularies, source-role semantics, extraction-status coherence, source-debt closure, scoring readiness, and replacement readiness still need further hardening before public integration.
 - E002: Bloom curated seed table is blocked; exact 200-row seed cannot be reconstructed from target repo or current path annotations without guessing.
 - E003: Bloom full appendix/review tables are recoverable from local untracked artifacts outside the target worktree, but publication/scoring is policy-gated.
@@ -67,11 +67,12 @@ Last updated: 2026-05-03
 - E007-E012: 38 additional source layers are registered for core curricula, classics, medieval Europe, English/British, American, and African American literature.
 - E013-E018: 24 additional source layers are registered for Latin American, African, South Asian, Chinese, Japanese, and Korean literature. X020-X023 generated/updated 1,354 E013/E014/E015/E016/E017/E018 source-item observations, and `canon_source_items.tsv` now has 1,422 total rows. X013/X014/X017 queues have been rerun, but source debt remains open until evidence acceptance and scoring gates run.
 - Source-item gate: source registry rows alone do not support additions. Each layer still needs extracted source items, creator-aware matching, accepted evidence rows, and source-scope review.
-- Evidence gate: access metadata, corpus records, bibliographic databases, internal accepted records, and packet outputs cannot count as external canon support until source-class weighting and source-debt rules are integrated into scoring. X017 now has 212 total evidence rows, but source-debt status still has 0 closed rows because accepted independent external support has not been adjudicated.
+- Evidence gate: access metadata, corpus records, bibliographic databases, internal accepted records, and packet outputs cannot count as external canon support. The build now has 548 total evidence rows and 11 source-debt closures after accepted independent external support; representative-selection rows still do not close complete-work debt.
 - Matching gate: source rows must pass exact/normalized/creator-aware/alias/contained-work/selection/series matching before being called true omissions. X013 now has 236 match candidates and 1,210 match-review decisions. None are public-path additions.
 - Relation gate: selection, contained-work, series, variant, duplicate, and adaptation decisions must be reviewed before final relation rows are written. X014 now has 1,633 relation-scope status rows; 1,621 are policy-blocked and 12 need scope review, so 0 are ready to write as final relations.
 - Omission gate: X018 currently has 8 source-backed omission rows and 0 ready-for-scoring rows; every gap still has source-debt, selection/scope, chronology, or corroboration blockers.
-- Scoring gate: X019 currently has 3,008 scoring input rows and 0 ready-for-score rows. This is expected until source debt is closed under the evidence rules and relation/date/boundary blockers are resolved.
+- Scoring gate: X019 currently has 3,012 scoring input rows, 6 ready-for-score rows, and 3,006 blocked rows. Most rows remain blocked until source debt, relation/date/boundary, duplicate, and completion-scope gates are resolved.
+- Current rescue gate: the X068 medium-risk lane is empty. X069 classified the remaining 17 high-risk source-item rows across 7 incumbent works and blocked evidence generation until exact collection membership, component form, or external work-level support is acquired.
 - Taxonomy gate: public category reports are still keyword-inferred; first-class region, language/tradition, form, selection, and boundary fields are required.
 - A029-A031/H013: replacement-induced chronology inversions must be repaired or explicitly waived before the path is locked.
 - H014: duplicate-like clusters and collection/selection overlaps remain; these now move into alias/relation/decision tables.

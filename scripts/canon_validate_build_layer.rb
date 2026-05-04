@@ -59,6 +59,8 @@ TABLE_FILES = {
   "medium_risk_rescue_evidence_applied" => File.join(BUILD_DIR, "tables", "canon_medium_risk_rescue_evidence_applied.tsv"),
   "current_medium_risk_rescue_evidence_applied" => File.join(BUILD_DIR, "tables", "canon_current_medium_risk_rescue_evidence_applied.tsv"),
   "high_risk_rescue_residue" => File.join(BUILD_DIR, "tables", "canon_high_risk_rescue_residue.tsv"),
+  "current_high_risk_resolution_queue" => File.join(BUILD_DIR, "tables", "canon_current_high_risk_resolution_queue.tsv"),
+  "current_high_risk_work_resolution" => File.join(BUILD_DIR, "tables", "canon_current_high_risk_work_resolution.tsv"),
   "selection_only_complete_work_support_review" => File.join(BUILD_DIR, "tables", "canon_selection_only_complete_work_support_review.tsv"),
   "packet_status" => File.join(BUILD_DIR, "tables", "canon_packet_status.tsv")
 }.freeze
@@ -97,6 +99,8 @@ HEADER_REQUIREMENTS = {
   "medium_risk_rescue_evidence_applied" => ["applied_id", "scope_review_id", "evidence_id", "work_id", "source_item_id", "evidence_action", "source_debt_effect", "next_action"],
   "current_medium_risk_rescue_evidence_applied" => ["applied_id", "scope_review_id", "evidence_id", "work_id", "source_item_id", "evidence_action", "source_debt_effect", "next_action"],
   "high_risk_rescue_residue" => ["residue_id", "scope_review_id", "cut_work_id", "source_item_id", "scope_review_class", "residue_status", "required_resolution", "next_action"],
+  "current_high_risk_resolution_queue" => ["resolution_id", "residue_id", "scope_review_id", "cut_work_id", "source_item_id", "resolution_decision", "evidence_generation_gate", "next_action"],
+  "current_high_risk_work_resolution" => ["work_resolution_id", "cut_work_id", "high_risk_source_rows", "work_resolution_decision", "external_source_strategy", "next_action"],
   "selection_only_complete_work_support_review" => ["review_id", "action_id", "work_id", "current_title", "review_decision", "source_debt_effect", "next_action"],
   "packet_status" => ["packet_id", "packet_family", "scope", "status", "gate", "output_artifact", "next_action"]
 }.freeze
