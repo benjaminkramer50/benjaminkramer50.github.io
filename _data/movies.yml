@@ -18,6 +18,7 @@
   rating: 5
   genre: "Black comedy thriller"
   date_watched: "2026-05-02"
+  favorite: true
 
 - title: "Creed III"
   year: 2018
@@ -66,6 +67,7 @@
 The multi-faceted nature of the development of each character is outstanding, and the film's length is necessary. Throughout the film, we see the convergence, divergence, and intertwining between Miklo, Paco, and Cruz. The acting, to me, is oustanding, particularly in these three main characters. 
 
 The raw emotion that is illustrated, including Miklo's desire to fit in and Paco's desire to stand out is so sharp. This emotion and illustration of the events in their lives provides multiple perspectives towards how their narratives develop and why they make the choices they make."
+  favorite: true
 
 - title: "Clockers"
   year: 1995

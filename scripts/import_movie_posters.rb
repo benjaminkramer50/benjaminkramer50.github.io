@@ -12,8 +12,9 @@ TARGET_FILE = File.expand_path('../_data/movie_posters.yml', __dir__)
 USER_AGENT = 'BenjaminsSiteBot/1.0 (benjamin-kramer.com)'
 
 movies = YAML.load_file(SOURCE_FILE)
+posters = File.exist?(TARGET_FILE) ? (YAML.load_file(TARGET_FILE) || {}) : {}
 
-def http_get_json(uri, retries: 4, delay: 2.0)
+def http_get_json(uri, retries: 4, delay: 3.0)
   attempts = 0
 
   begin
@@ -34,7 +35,7 @@ def http_get_json(uri, retries: 4, delay: 2.0)
       nil
     end
   rescue StandardError
-    raise if attempts > retries
+    return nil if attempts > retries
 
     sleep(delay * attempts)
     retry
@@ -97,8 +98,6 @@ def poster_for_movie(title, year)
   nil
 end
 
-posters = {}
-
 movies.each do |movie|
   next unless movie['title'] && movie['year']
 
@@ -115,7 +114,8 @@ movies.each do |movie|
     posters[key]['poster_url'] = info[:poster_url]
   end
 
-  sleep 1.0
+  File.write(TARGET_FILE, Psych.dump(posters, line_width: -1))
+  sleep 2.0
 end
 
 File.write(TARGET_FILE, Psych.dump(posters, line_width: -1))

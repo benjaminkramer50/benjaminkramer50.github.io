@@ -66,58 +66,77 @@ title: Movie Log
     <div class="shelf-board"></div>
   </div>
 
-  <!-- Filter bar -->
-  <div class="diary-filters">
-    <select id="filter-year" aria-label="Filter by year">
-      <option value="">All Years</option>
-    </select>
-    <select id="filter-genre" aria-label="Filter by genre">
-      <option value="">All Genres</option>
-    </select>
-    <select id="filter-rating" aria-label="Filter by rating">
-      <option value="">All Ratings</option>
-    </select>
-    <input type="text" id="filter-search" placeholder="Search titles..." aria-label="Search titles">
-  </div>
-
-  <!-- Diary table -->
-  <div class="diary-table" id="diary-table">
-    {% assign current_month = "" %}
-    {% for item in sorted_movies %}
-      {% assign item_month = item.date_watched | date: "%B %Y" %}
-      {% if item_month != current_month %}
-        {% assign current_month = item_month %}
-        <div class="diary-month-header" data-month="{{ item_month }}">{{ item_month }}</div>
-      {% endif %}
-      <div class="diary-row"
-           id="movie-{{ forloop.index }}"
-           data-title="{{ item.title }}"
-           data-year="{{ item.year }}"
-           data-genre="{{ item.genre }}"
-           data-rating="{{ item.rating }}"
-           data-date="{{ item.date_watched }}"
-           data-month="{{ item.date_watched | date: '%B %Y' }}">
-        <div class="diary-row-main">
-          <span class="diary-date">{{ item.date_watched | date: "%b %d" }}</span>
-          <span class="diary-title">{{ item.title }} <span class="diary-year">({{ item.year }})</span></span>
-          <span class="diary-director">{{ item.director }}</span>
-          <span class="diary-rating">
-            {% assign full_stars = item.rating | floor %}
-            {% assign has_half = item.rating | modulo: 1 %}
-            {% assign half_pos = full_stars | plus: 1 %}
-            {% for i in (1..5) %}{% if i <= full_stars %}<span class="star-full">&#9733;</span>{% elsif has_half != 0 and i == half_pos %}<span class="star-half">&#9733;</span>{% else %}<span class="star-empty">&#9734;</span>{% endif %}{% endfor %}
-          </span>
-        </div>
-        {% if item.review %}
-        <div class="diary-review">{{ item.review }}</div>
-        {% endif %}
+  <div class="recent-browser">
+    <div class="recent-browser-list">
+      <div class="diary-filters">
+        <select id="filter-year" aria-label="Filter by year">
+          <option value="">All Years</option>
+        </select>
+        <select id="filter-genre" aria-label="Filter by genre">
+          <option value="">All Genres</option>
+        </select>
+        <select id="filter-rating" aria-label="Filter by rating">
+          <option value="">All Ratings</option>
+        </select>
+        <input type="text" id="filter-search" placeholder="Search titles..." aria-label="Search titles">
       </div>
-    {% endfor %}
+
+      <div class="diary-table" id="diary-table">
+        {% assign current_month = "" %}
+        {% for item in sorted_movies %}
+          {% assign item_month = item.date_watched | date: "%B %Y" %}
+          {% if item_month != current_month %}
+            {% assign current_month = item_month %}
+            <div class="diary-month-header" data-month="{{ item_month }}">{{ item_month }}</div>
+          {% endif %}
+          {% assign movie_key = item.title | slugify | append: '-' | append: item.year %}
+          {% assign poster = site.data.movie_posters[movie_key] %}
+          <div class="diary-row"
+               id="movie-{{ forloop.index }}"
+               data-title="{{ item.title }}"
+               data-year="{{ item.year }}"
+               data-genre="{{ item.genre }}"
+               data-rating="{{ item.rating }}"
+               data-date="{{ item.date_watched }}"
+               data-poster-url="{% if poster and poster.poster_url %}{{ poster.poster_url }}{% endif %}"
+               data-month="{{ item.date_watched | date: '%B %Y' }}">
+            <div class="diary-row-main">
+              <span class="diary-date">{{ item.date_watched | date: "%b %d" }}</span>
+              <span class="diary-title">{{ item.title }} <span class="diary-year">({{ item.year }})</span></span>
+              <span class="diary-director">{{ item.director }}</span>
+              <span class="diary-rating">
+                {% assign full_stars = item.rating | floor %}
+                {% assign has_half = item.rating | modulo: 1 %}
+                {% assign half_pos = full_stars | plus: 1 %}
+                {% for i in (1..5) %}{% if i <= full_stars %}<span class="star-full">&#9733;</span>{% elsif has_half != 0 and i == half_pos %}<span class="star-half">&#9733;</span>{% else %}<span class="star-empty">&#9734;</span>{% endif %}{% endfor %}
+              </span>
+            </div>
+            {% if item.review %}
+            <div class="diary-review">{{ item.review }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+
+      <div id="diary-no-results" class="diary-no-results" style="display:none;">No movies match your filters.</div>
+
+      <button class="diary-show-more" id="diary-show-more" style="display:none;">Show more</button>
+    </div>
+
+    <aside class="recent-browser-detail" id="recent-detail" aria-live="polite">
+      <div class="recent-detail-empty" id="recent-detail-empty">Select a recent movie.</div>
+      <div class="recent-detail-body" id="recent-detail-body" hidden>
+        <div class="recent-detail-poster">
+          <img id="recent-detail-image" alt="" loading="lazy">
+        </div>
+        <div class="recent-detail-copy">
+          <div class="recent-detail-title" id="recent-detail-title"></div>
+          <div class="recent-detail-meta" id="recent-detail-meta"></div>
+          <div class="recent-detail-review" id="recent-detail-review"></div>
+        </div>
+      </div>
+    </aside>
   </div>
-
-  <div id="diary-no-results" class="diary-no-results" style="display:none;">No movies match your filters.</div>
-
-  <button class="diary-show-more" id="diary-show-more" style="display:none;">Show more</button>
   </div>
 
   <div class="canon-browser" id="canon-browser" data-shelf-view-panel="canon">
@@ -167,6 +186,13 @@ title: Movie Log
   var filterGenre = document.getElementById('filter-genre');
   var filterRating = document.getElementById('filter-rating');
   var filterSearch = document.getElementById('filter-search');
+  var recentDetailEmpty = document.getElementById('recent-detail-empty');
+  var recentDetailBody = document.getElementById('recent-detail-body');
+  var recentDetailImage = document.getElementById('recent-detail-image');
+  var recentDetailTitle = document.getElementById('recent-detail-title');
+  var recentDetailMeta = document.getElementById('recent-detail-meta');
+  var recentDetailReview = document.getElementById('recent-detail-review');
+  var selectedRecentKey = '';
 
   // Populate dropdown options from data
   var years = [], genres = [], ratings = [];
@@ -222,8 +248,63 @@ title: Movie Log
     });
   }
 
+  function rowKey(row) {
+    return [row.getAttribute('data-title'), row.getAttribute('data-date')].join('|');
+  }
+
+  function showRecentDetail(row) {
+    if (!row) return;
+
+    selectedRecentKey = rowKey(row);
+    rows.forEach(function (item) {
+      item.classList.toggle('diary-row-selected', item === row);
+    });
+
+    var title = row.getAttribute('data-title') || '';
+    var year = row.getAttribute('data-year') || '';
+    var director = row.querySelector('.diary-director') ? row.querySelector('.diary-director').textContent : '';
+    var posterUrl = row.getAttribute('data-poster-url') || '';
+    var reviewNode = row.querySelector('.diary-review');
+    var reviewHtml = reviewNode ? reviewNode.innerHTML : '';
+
+    if (recentDetailEmpty) recentDetailEmpty.hidden = true;
+    if (recentDetailBody) recentDetailBody.hidden = false;
+    if (recentDetailTitle) recentDetailTitle.textContent = title;
+    if (recentDetailMeta) recentDetailMeta.textContent = [year ? '(' + year + ')' : '', director].filter(Boolean).join(' · ');
+    if (recentDetailReview) {
+      recentDetailReview.innerHTML = reviewHtml ? reviewHtml : '<p class="recent-detail-missing">No review written yet.</p>';
+    }
+    if (recentDetailImage) {
+      if (posterUrl) {
+        recentDetailImage.src = posterUrl;
+        recentDetailImage.alt = title + ' poster';
+        recentDetailImage.hidden = false;
+      } else {
+        recentDetailImage.removeAttribute('src');
+        recentDetailImage.alt = '';
+        recentDetailImage.hidden = true;
+      }
+    }
+  }
+
+  function clearRecentDetail() {
+    selectedRecentKey = '';
+    rows.forEach(function (item) {
+      item.classList.remove('diary-row-selected');
+    });
+    if (recentDetailEmpty) recentDetailEmpty.hidden = false;
+    if (recentDetailBody) recentDetailBody.hidden = true;
+    if (recentDetailReview) recentDetailReview.innerHTML = '';
+    if (recentDetailImage) {
+      recentDetailImage.removeAttribute('src');
+      recentDetailImage.alt = '';
+      recentDetailImage.hidden = true;
+    }
+  }
+
   function render() {
     var filtered = getFilteredRows();
+    var visibleRows = [];
 
     // Hide all rows first
     rows.forEach(function(row) { row.style.display = 'none'; });
@@ -233,6 +314,7 @@ title: Movie Log
     filtered.forEach(function(row, i) {
       if (i < visibleCount) {
         row.style.display = '';
+        visibleRows.push(row);
         shown++;
       }
     });
@@ -255,6 +337,24 @@ title: Movie Log
 
     // No results message
     noResults.style.display = filtered.length === 0 ? '' : 'none';
+
+    if (!visibleRows.length) {
+      clearRecentDetail();
+      return;
+    }
+
+    var selectedRow = null;
+    if (selectedRecentKey) {
+      visibleRows.some(function (row) {
+        if (rowKey(row) === selectedRecentKey) {
+          selectedRow = row;
+          return true;
+        }
+        return false;
+      });
+    }
+    if (!selectedRow) selectedRow = visibleRows[0];
+    showRecentDetail(selectedRow);
   }
 
   // Reset visible count on filter change
@@ -273,20 +373,15 @@ title: Movie Log
     render();
   });
 
-  // Click to expand/collapse review
+  // Click to drive recent detail panel
   rows.forEach(function(row) {
     var main = row.querySelector('.diary-row-main');
-    var review = row.querySelector('.diary-review');
-    if (main && review) {
+    if (main) {
       main.addEventListener('click', function(e) {
         e.preventDefault();
-        var isOpen = row.classList.contains('diary-row-open');
-        // Close all others
-        rows.forEach(function(r) { r.classList.remove('diary-row-open'); });
-        if (!isOpen) {
-          row.classList.add('diary-row-open');
-        }
+        showRecentDetail(row);
       });
+      main.style.cursor = 'pointer';
     } else if (main) {
       main.style.cursor = 'default';
     }
