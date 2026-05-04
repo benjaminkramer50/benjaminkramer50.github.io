@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 267
-- source_item_rows: 6139
-- evidence_rows: 735
+- registered_sources: 281
+- source_item_rows: 6153
+- evidence_rows: 749
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -278,6 +278,20 @@
 | `x080_pw_week_colors` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x080_two_lines_week_colors` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x080_wesleyan_sonnets_orpheus` | X080 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_bloomsbury_bunin_dark_avenues` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_britannica_bunin_dark_avenues` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_britannica_hernandez_el_rayo` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_britannica_winters_tales` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_cervantes_el_rayo` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_ebsco_wicomb_cape_town` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_feminist_press_wicomb_cape_town` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_google_books_coyote_stories` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_google_books_poe_tales_1845` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_nebraska_coyote_stories` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_poe_society_tales_1845` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_prh_winters_tales` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_pw_women_algiers` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x081_uva_women_algiers` | X081 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 
