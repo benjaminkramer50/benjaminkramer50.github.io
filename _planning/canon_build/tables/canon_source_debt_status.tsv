@@ -1761,7 +1761,7 @@ work_candidate_africa_lit_serote_poems	incumbent_current_path	Selected Poems	0	0
 work_candidate_africa_lit_kgositsile_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_selected_poems_waldo	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_completion_lit_selected_poems_rainis	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
-work_candidate_africa_lit_david_diop_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
+work_candidate_africa_lit_david_diop_poems	incumbent_current_path	Selected Poems	5	0	0	0	0	5	0	0	open_selection_only	selection_identity	Evidence is selection/representation support, not complete-work support.	verify_complete_work_scope_or_record_selection_policy
 work_candidate_euro_under_lit_selected_poems_sorley	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_euro_under_lit_sutzkever_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items
 work_candidate_global_lit_nazim_hikmet_poems	incumbent_current_path	Selected Poems	0	0	0	0	0	0	0	0	open_no_evidence	none	No evidence rows exist for this work.	extract_or_match_source_items

@@ -26,7 +26,7 @@ Highest-priority rows:
 |---|---|---|---|---|
 | `x059_cut_action_0001` | The Weary Blues and Selected Poems | Langston Hughes | `accepted_selection_only_complete_work_source_needed` | `search_for_complete_work_source_support` |
 | `x059_cut_action_0002` | The Tenth Muse | Anne Bradstreet | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
-| `x059_cut_action_0003` | Selected Poems | David Diop | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
+| `x059_cut_action_0003` | Selected Poems | Keorapetse Kgositsile | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
 | `x059_cut_action_0004` | Collected Poems 1948-1984 | Derek Walcott | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
 | `x059_cut_action_0005` | All Fires the Fire | Julio Cortazar | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |
 | `x059_cut_action_0006` | Blow-Up and Other Stories | Julio Cortazar | `existing_source_item_rescue_review` | `route_source_items_to_scope_review_before_evidence_generation` |

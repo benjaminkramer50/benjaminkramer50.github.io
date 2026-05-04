@@ -3,7 +3,7 @@
 - generated_on: 2026-05-04
 - registered_sources: 80
 - source_item_rows: 5952
-- evidence_rows: 530
+- evidence_rows: 535
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -49,7 +49,7 @@
 | `e013_oxford_latin_american_short_stories_1997` | E013 | extracted | 53 | 3 | 0 | 0 | 3 | 50 | 0 | 0 |
 | `e014_african_writers_series_heinemann_penguin` | E014;X023 | metadata_ready | 48 | 16 | 16 | 0 | 0 | 32 | 0 | 0 |
 | `e014_cambridge_history_african_caribbean_lit_2000` | E014;X024 | context_only | 40 | 0 | 0 | 0 | 0 | 40 | 0 | 0 |
-| `e014_penguin_modern_african_poetry_4e_2007` | E014;X023 | extracted | 239 | 0 | 0 | 0 | 0 | 239 | 0 | 0 |
+| `e014_penguin_modern_african_poetry_4e_2007` | E014;X023 | extracted | 239 | 5 | 0 | 0 | 5 | 234 | 0 | 0 |
 | `e014_rienner_anthology_african_lit_2007` | E014 | extracted | 146 | 4 | 0 | 0 | 4 | 142 | 0 | 0 |
 | `e017_columbia_early_modern_japanese_lit_2002` | E017;X023;X024 | extracted | 282 | 12 | 0 | 0 | 12 | 270 | 0 | 0 |
 | `e017_columbia_modern_japanese_lit_v1_2005` | E017 | extracted | 119 | 1 | 1 | 0 | 0 | 118 | 0 | 0 |

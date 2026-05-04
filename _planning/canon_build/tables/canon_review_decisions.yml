@@ -545,13 +545,13 @@ decisions:
     decision: refresh_existing_source_rescue_scope_from_live_action_queue
     rationale: >
       X065 refreshes the current rescue-scope table from the live action queue
-      rather than continuing to process the superseded X061 snapshot. After X066
-      applied the Odi Gonzales representative-selection row, the refreshed table
-      now exposes five David Diop medium-risk representative-poetry rows while
-      retaining 16 high-risk collection/form blockers.
+      rather than continuing to process the superseded X061 snapshot. After X067
+      applied the David Diop representative-selection rows, the refreshed table
+      now exposes five Keorapetse Kgositsile medium-risk representative-poetry
+      rows while retaining 16 high-risk collection/form blockers.
     scoring_effect: none
     required_followup:
-      - accept_or_reject_david_diop_medium_risk_representative_selection_rows
+      - accept_or_reject_kgositsile_medium_risk_representative_selection_rows
       - resolve_16_high_risk_collection_or_form_scope_blockers
       - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
     public_path_effect: none
@@ -572,7 +572,29 @@ decisions:
       approve a cut, or authorize a replacement transaction.
     scoring_effect: refresh_source_debt_scoring_cut_and_pair_queues_without_public_path_change
     required_followup:
-      - process_current_david_diop_medium_risk_representative_selection_rows
+      - process_current_medium_risk_representative_selection_rows
+      - find_complete_work_support_for_selection_only_rows_before_cut_scoring
+      - resolve_or_reject_16_current_high_risk_scope_blockers
+      - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
+    public_path_effect: none
+  - decision_id: x067_current_medium_risk_rescue_evidence_apply_001
+    decision_type: current_medium_risk_rescue_evidence_apply
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_current_medium_risk_rescue_evidence_applied.tsv
+      - _planning/canon_build/tables/canon_evidence.tsv
+      - _planning/canon_build/tables/canon_source_items.tsv
+    applies_to_work_ids:
+      - work_candidate_africa_lit_david_diop_poems
+    decision: accept_current_medium_risk_rows_as_representative_selection_evidence_only
+    rationale: >
+      The current X065 medium-risk David Diop rows are reviewed source-item
+      matches for representative poems in the selected-poems work. X067 links the
+      source items and writes accepted representative-selection evidence only. It
+      does not establish complete-work support, close complete-work source debt,
+      approve a cut, or authorize a replacement transaction.
+    scoring_effect: refresh_source_debt_scoring_cut_and_pair_queues_without_public_path_change
+    required_followup:
+      - process_current_kgositsile_medium_risk_representative_selection_rows
       - find_complete_work_support_for_selection_only_rows_before_cut_scoring
       - resolve_or_reject_16_current_high_risk_scope_blockers
       - keep_public_replacement_pairs_blocked_until_cut_side_scoring_and_review_are_complete
@@ -580,7 +602,7 @@ decisions:
 waivers: []
 open_questions:
   - source_debt_rows_currently_3001
-  - unmatched_source_items_currently_5421
+  - unmatched_source_items_currently_5416
   - duplicate_candidate_keys_currently_39
   - chronology_inversion_rows_currently_138
   - generic_title_rows_currently_267

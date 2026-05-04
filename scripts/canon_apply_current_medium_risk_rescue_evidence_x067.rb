@@ -9,12 +9,13 @@ BUILD_DIR = File.join(ROOT, "_planning", "canon_build")
 TABLE_DIR = File.join(BUILD_DIR, "tables")
 REPORT_DIR = File.join(BUILD_DIR, "source_crosswalk_reports")
 
+PACKET_ID = "X067"
 WORK_CANDIDATES_PATH = File.join(TABLE_DIR, "canon_work_candidates.tsv")
 SOURCE_ITEMS_PATH = File.join(TABLE_DIR, "canon_source_items.tsv")
 EVIDENCE_PATH = File.join(TABLE_DIR, "canon_evidence.tsv")
 SCOPE_REVIEW_PATH = File.join(TABLE_DIR, "canon_current_rescue_scope_review.tsv")
 APPLIED_PATH = File.join(TABLE_DIR, "canon_current_medium_risk_rescue_evidence_applied.tsv")
-REPORT_PATH = File.join(REPORT_DIR, "x_batch_050_x066_current_medium_risk_rescue_evidence_apply.md")
+REPORT_PATH = File.join(REPORT_DIR, "x_batch_051_x067_current_medium_risk_rescue_evidence_apply.md")
 
 HEADERS = %w[
   applied_id scope_review_id evidence_id work_id source_id source_item_id raw_title raw_creator
@@ -22,7 +23,7 @@ HEADERS = %w[
   source_debt_effect next_action
 ].freeze
 
-NOTE = "X066 linked for reviewed representative-selection evidence; not complete-work support or cut approval."
+NOTE = "X067 linked for reviewed representative-selection evidence; not complete-work support or cut approval."
 
 def read_tsv(path)
   CSV.read(path, headers: true, col_sep: "\t").map(&:to_h)
@@ -54,34 +55,48 @@ end
 def evidence_strength(source_id)
   return "moderate" if source_id.include?("oxford") || source_id.include?("fsg")
   return "moderate" if source_id.include?("longman") || source_id.include?("norton")
+  return "moderate" if source_id.include?("penguin")
 
   "weak"
+end
+
+def packet_applied_rows
+  return [] unless File.exist?(APPLIED_PATH)
+
+  read_tsv(APPLIED_PATH).select { |row| row.fetch("applied_id").start_with?("x067_") }
 end
 
 def write_report(path, rows)
   FileUtils.mkdir_p(File.dirname(path))
   action_counts = rows.each_with_object(Hash.new(0)) { |row, counts| counts[row.fetch("evidence_action")] += 1 }
+  work_counts = rows.each_with_object(Hash.new(0)) { |row, counts| counts[row.fetch("work_id")] += 1 }
 
   File.open(path, "w") do |file|
-    file.puts "# X066 Current Medium-Risk Rescue Evidence Apply"
+    file.puts "# X067 Current Medium-Risk Rescue Evidence Apply"
     file.puts
     file.puts "Status: completed, build-layer only. Public canon path unchanged."
     file.puts
     file.puts "## Purpose"
     file.puts
-    file.puts "X066 applies only the current X065 medium-risk representative-selection rescue row. The row supports selected-poem representation only; it does not establish complete-work support."
+    file.puts "X067 applies the current medium-risk representative-selection rescue rows surfaced after X066. These rows support selected-poem representation only; they do not establish complete-work support."
     file.puts
     file.puts "## Output"
     file.puts
-    file.puts "- Added `scripts/canon_apply_current_medium_risk_rescue_evidence_x066.rb`."
-    file.puts "- Added `canon_current_medium_risk_rescue_evidence_applied.tsv`."
-    file.puts "- Confirmed #{rows.size} representative-selection evidence row present after apply."
+    file.puts "- Added `scripts/canon_apply_current_medium_risk_rescue_evidence_x067.rb`."
+    file.puts "- Appended X067 rows to `canon_current_medium_risk_rescue_evidence_applied.tsv`."
+    file.puts "- Confirmed #{rows.size} representative-selection evidence rows present after apply."
     file.puts
     file.puts "Evidence action summary:"
     file.puts
     file.puts "| Action | Rows |"
     file.puts "|---|---:|"
     action_counts.sort.each { |action, count| file.puts "| `#{action}` | #{count} |" }
+    file.puts
+    file.puts "Work summary:"
+    file.puts
+    file.puts "| Work | Rows |"
+    file.puts "|---|---:|"
+    work_counts.sort.each { |work_id, count| file.puts "| `#{work_id}` | #{count} |" }
     file.puts
     file.puts "Applied rows:"
     file.puts
@@ -93,10 +108,17 @@ def write_report(path, rows)
     file.puts
     file.puts "## Interpretation"
     file.puts
-    file.puts "This moves the Odi Gonzales source item out of the rescue lane into accepted representative-selection evidence. It still leaves the selected-poems work blocked until complete-work support and cut-side scoring gates are resolved. Later medium-risk rows surfaced by queue refreshes should be handled in later packets, not by rerunning X066."
+    file.puts "This moves the David Diop source items out of the rescue lane into accepted representative-selection evidence. The selected-poems work remains blocked until complete-work support and cut-side scoring gates are resolved."
     file.puts
     file.puts "Direct public replacements: 0."
   end
+end
+
+existing_packet_rows = packet_applied_rows
+unless existing_packet_rows.empty?
+  write_report(REPORT_PATH, existing_packet_rows)
+  puts "confirmed #{existing_packet_rows.size} previously applied X067 current medium-risk rescue evidence rows"
+  exit
 end
 
 works_by_id = read_tsv(WORK_CANDIDATES_PATH).to_h { |row| [row.fetch("work_id"), row] }
@@ -111,14 +133,7 @@ scope_rows = read_tsv(SCOPE_REVIEW_PATH).select do |row|
     row.fetch("evidence_generation_gate") == "manual_scope_acceptance_required_before_representative_selection_evidence"
 end
 
-if File.exist?(APPLIED_PATH)
-  applied_rows = read_tsv(APPLIED_PATH).select { |row| row.fetch("applied_id").start_with?("x066_") }
-  write_report(REPORT_PATH, applied_rows)
-  puts "confirmed #{applied_rows.size} previously applied current medium-risk rescue evidence rows"
-  exit
-end
-
-raise "Expected one current medium-risk scope row" unless scope_rows.size == 1
+raise "Expected current medium-risk scope rows" if scope_rows.empty?
 
 applied_rows = []
 
@@ -135,13 +150,13 @@ scope_rows.each do |scope|
 
   source_item_action = source_item.fetch("match_status") == "represented_by_selection" ? "represented_by_selection_confirmed" : "represented_by_selection_after_apply"
   source_item["matched_work_id"] = work_id
-  source_item["match_method"] = "x066_current_rescue_scope_review_representative_selection"
+  source_item["match_method"] = "x067_current_rescue_scope_review_representative_selection"
   source_item["match_confidence"] = "0.88"
   source_item["match_status"] = "represented_by_selection"
   source_item["notes"] = append_note(source_item["notes"], NOTE)
 
   existing_evidence = evidence_by_work_item[[work_id, source_item_id]]
-  evidence_id = existing_evidence ? existing_evidence.fetch("evidence_id") : "x066_ev_#{safe_id(source_item_id)}"
+  evidence_id = existing_evidence ? existing_evidence.fetch("evidence_id") : "x067_ev_#{safe_id(source_item_id)}"
   raise "Evidence ID collision: #{evidence_id}" if !existing_evidence && evidence_ids[evidence_id]
 
   unless existing_evidence
@@ -154,18 +169,18 @@ scope_rows.each do |scope|
       "evidence_strength" => evidence_strength(scope.fetch("source_id")),
       "page_or_section" => "source item: #{scope.fetch("raw_title")}",
       "quote_or_note" => "",
-      "packet_id" => "X066",
+      "packet_id" => PACKET_ID,
       "supports_tier" => "",
       "supports_boundary_policy_id" => work.fetch("boundary_policy_id"),
       "reviewer_status" => "accepted",
-      "notes" => "Applied from X065 medium-risk scope refresh. Representative-selection evidence only; does not establish complete-work support or approve cuts."
+      "notes" => "Applied from current medium-risk scope refresh. Representative-selection evidence only; does not establish complete-work support or approve cuts."
     }
     evidence_ids[evidence_id] = true
     evidence_by_work_item[[work_id, source_item_id]] = evidence_rows.last
   end
 
   applied_rows << {
-    "scope_review_id" => "x066_scope_snapshot_#{safe_id(source_item_id)}",
+    "scope_review_id" => "x067_scope_snapshot_#{safe_id(source_item_id)}",
     "evidence_id" => evidence_id,
     "work_id" => work_id,
     "source_id" => scope.fetch("source_id"),
@@ -183,12 +198,13 @@ scope_rows.each do |scope|
 end
 
 applied_rows = applied_rows.map.with_index(1) do |row, index|
-  row.merge("applied_id" => "x066_medium_risk_apply_#{index.to_s.rjust(4, "0")}")
+  row.merge("applied_id" => "x067_medium_risk_apply_#{index.to_s.rjust(4, "0")}")
 end
 
+existing_applied_rows = File.exist?(APPLIED_PATH) ? read_tsv(APPLIED_PATH) : []
 write_tsv(SOURCE_ITEMS_PATH, tsv_headers(SOURCE_ITEMS_PATH), source_items)
 write_tsv(EVIDENCE_PATH, tsv_headers(EVIDENCE_PATH), evidence_rows)
-write_tsv(APPLIED_PATH, HEADERS, applied_rows)
+write_tsv(APPLIED_PATH, HEADERS, existing_applied_rows + applied_rows)
 write_report(REPORT_PATH, applied_rows)
 
-puts "applied or confirmed #{applied_rows.size} current medium-risk rescue evidence row"
+puts "applied or confirmed #{applied_rows.size} X067 current medium-risk rescue evidence rows"

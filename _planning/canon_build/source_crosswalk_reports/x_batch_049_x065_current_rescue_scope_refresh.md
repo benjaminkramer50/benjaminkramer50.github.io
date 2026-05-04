@@ -31,7 +31,7 @@ Current work-level source-row counts:
 
 | Work | Source rows |
 |---|---:|
-| `work_candidate_africa_lit_david_diop_poems` | 5 |
+| `work_candidate_africa_lit_kgositsile_poems` | 5 |
 | `work_candidate_bloom_late_033_literature_bloom_chaotic_age_reviewed_0835_collected_poems` | 1 |
 | `work_candidate_global_lit_nazim_hikmet_poems` | 1 |
 | `work_candidate_latcarib_lit_all_fires_fire` | 2 |
@@ -41,6 +41,6 @@ Current work-level source-row counts:
 
 ## Interpretation
 
-The current rescue lane has 5 medium-risk representative-selection rows that can be reviewed for selection-only evidence: 5 rows for `work_candidate_africa_lit_david_diop_poems`. The 16 high-risk rows still need collection-membership or component-form resolution.
+The current rescue lane has 5 medium-risk representative-selection rows that can be reviewed for selection-only evidence: 5 rows for `work_candidate_africa_lit_kgositsile_poems`. The 16 high-risk rows still need collection-membership or component-form resolution.
 
 Direct public replacements: 0.
