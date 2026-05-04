@@ -6,7 +6,7 @@ title: Movie Log
 <p class="page-intro">Films I have watched and what I thought.</p>
 
 {% assign sorted_movies = site.data.movies | reverse | sort: "date_watched" | reverse %}
-{% assign fav_movies = sorted_movies | where: "favorite", true | sort: "rating" | reverse %}
+{% assign fav_movies = sorted_movies | sort: "rating" | reverse %}
 {% assign canon_movies = site.data.movie_canon %}
 
 {% if sorted_movies.size > 0 or canon_movies.size > 0 %}
@@ -18,15 +18,37 @@ title: Movie Log
   </div>
 
   <div class="shelf-section" id="shelf-favorites" data-shelf-view-panel="favorites">
-    {% if fav_movies.size > 0 %}
-    <div class="shelf-row">
-      {% for item in fav_movies limit:12 %}
-      <span class="spine" style="--spine-hue: {{ item.title | size | times: 53 | modulo: 360 }}; --spine-width: {{ item.rating | times: 6 | plus: 22 }}px;">
-        <span class="spine-title">{{ item.title }}</span>
-      </span>
+    {% assign favorite_count = 0 %}
+    {% for item in fav_movies %}
+      {% if item.favorite or item.rating >= 4 %}
+        {% assign favorite_count = favorite_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% if favorite_count > 0 %}
+    <div class="favorite-poster-grid">
+      {% for item in fav_movies %}
+      {% if item.favorite or item.rating >= 4 %}
+      {% assign movie_key = item.title | slugify | append: '-' | append: item.year %}
+      {% assign poster = site.data.movie_posters[movie_key] %}
+      <article class="favorite-poster-card">
+        <div class="favorite-poster-frame">
+          {% if poster and poster.poster_url %}
+          <img class="favorite-poster-image" src="{{ poster.poster_url }}" alt="{{ item.title }} poster" loading="lazy">
+          {% else %}
+          <div class="favorite-poster-placeholder">
+            <span>{{ item.title }}</span>
+            <span>{{ item.year }}</span>
+          </div>
+          {% endif %}
+        </div>
+        <div class="favorite-poster-meta">
+          <div class="favorite-poster-title">{{ item.title }}</div>
+          <div class="favorite-poster-year">{{ item.year }}</div>
+        </div>
+      </article>
+      {% endif %}
       {% endfor %}
     </div>
-    <div class="shelf-board"></div>
     {% else %}
     <p class="shelf-empty">No favorites yet.</p>
     {% endif %}
