@@ -4,7 +4,7 @@ Status: completed, build-layer only. Public canon path unchanged.
 
 ## Purpose
 
-X049 reduces the 1,215 blocked X047/X048 pair rows to a bounded review queue. This is a triage artifact, not a replacement approval.
+X049 reduces the 1,195 blocked X047/X048 pair rows to a bounded review queue. This is a triage artifact, not a replacement approval.
 
 The queue keeps all five score-ready add candidates represented while limiting repeated cut-title clusters.
 
@@ -19,9 +19,9 @@ Review bucket summary:
 
 | Review bucket | Rows |
 |---|---:|
-| `generic_duplicate_cluster_first` | 50 |
-| `source_debt_first` | 17 |
-| `chronology_first` | 6 |
+| `generic_duplicate_cluster_first` | 44 |
+| `source_debt_first` | 25 |
+| `chronology_first` | 4 |
 | `duplicate_cluster_first` | 2 |
 
 Add-candidate representation:

@@ -1,6 +1,6 @@
 ---
-generated_on: '2026-05-03'
-status: cut_evidence_write_plan_x057_generated
+generated_on: '2026-05-04'
+status: cut_evidence_apply_x058_generated
 baseline:
   label: wave_005_incumbent_path
   commit: 64600ddb264839d57a173438490f36eeed4c31b3
@@ -36,22 +36,23 @@ artifacts:
   relation_review_decisions: generated_x014_explicit_decisions_after_x043_reference_corroboration
   relation_scope_rules: draft_policy_plus_x043_same_work_alias_scope
   relation_scope_status: generated_x014_expanded_after_x043_reference_corroboration
-  evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows_after_x043
+  evidence: e001_ingested_x001_x006_pilot_plus_x017_policy_aware_rows_after_x043_plus_x058_representative_selection
   source_weights: draft_policy_created
   source_debt_rules: draft_policy_created
-  source_debt_status: generated_x017_after_x043
+  source_debt_status: refreshed_after_x058_representative_selection_apply
   omission_queue: generated_x018_after_x043
-  scoring_inputs: generated_x019_after_x043
-  scores: generated_x043_provisional_ready_rows_only
-  replacement_candidates: generated_x047_blocked_add_cut_pairings
-  cut_candidates: generated_x046_all_incumbent_cut_risk_table
-  generic_selection_basis_review: generated_x051_from_cut_review_work_orders
+  scoring_inputs: refreshed_after_x058_representative_selection_apply
+  scores: regenerated_x058_provisional_ready_rows_only
+  replacement_candidates: regenerated_after_x058_blocked_add_cut_pairings
+  cut_candidates: regenerated_after_x058_all_incumbent_cut_risk_table
+  generic_selection_basis_review: regenerated_x051_after_x058_from_cut_review_work_orders
   cut_source_item_rescue_candidates: generated_x052_from_x051_and_source_items
   cut_review_resolution_lanes: generated_x053_from_x051_x052
   cut_rescue_scope_review: generated_x054_from_x052_rescue_rows
   cut_evidence_proposals: generated_x055_from_medium_risk_x054_rows
   cut_evidence_item_decisions: generated_x056_from_x054_x055
   cut_evidence_write_plan: generated_x057_from_x056_ready_items
+  cut_evidence_applied_rows: generated_x058_from_x057_write_plan
   path_selection: bootstrapped_from_current_path
   creators: bootstrapped_from_current_path_plus_x013_candidate_creators_plus_x034_variants
   coverage_matrix: generated_x028
@@ -74,7 +75,7 @@ current_counts:
   work_creators: 3019
   aliases: 452
   source_items: 5950
-  evidence_rows: 503
+  evidence_rows: 524
   relation_scope_status_rows: 7588
   source_debt_status_rows: 3012
   omission_queue_rows: 12
@@ -83,22 +84,23 @@ current_counts:
   scoring_blocked_rows: 3007
   score_rows: 5
   coverage_target_rows: 72
-  replacement_candidate_rows: 1215
+  replacement_candidate_rows: 1195
   replacement_pair_review_queue_rows: 75
-  cut_review_work_order_rows: 50
-  generic_selection_basis_review_rows: 50
+  cut_review_work_order_rows: 48
+  generic_selection_basis_review_rows: 48
   cut_source_item_rescue_candidate_rows: 48
   cut_review_resolution_lane_rows: 50
   cut_rescue_scope_review_rows: 48
   cut_evidence_proposal_rows: 16
   cut_evidence_item_decision_rows: 48
   cut_evidence_write_plan_rows: 21
+  cut_evidence_applied_rows: 21
   cut_candidate_rows: 3000
   source_items_matched_current_path: 282
   source_items_matched_candidate: 24
-  source_items_represented_by_selection: 197
+  source_items_represented_by_selection: 218
   source_items_out_of_scope: 1
-  source_items_unmatched: 5446
+  source_items_unmatched: 5425
   source_registry_rows: 78
 source_crosswalk_batch_e001_e006:
   source_registry_rows: 9
@@ -153,14 +155,14 @@ source_item_matching_phase_x013_x014:
     unresolved_no_candidate_match: 5366
   source_backed_candidate_rows_created: 12
   source_items_updated_from_review_decisions: 36
-  policy_aware_evidence_rows_generated: 503
+  policy_aware_evidence_rows_generated: 524
   source_debt_status_summary:
     closed_by_independent_external_support: 10
-    open_no_evidence: 2715
+    open_no_evidence: 2708
     open_internal_only: 26
     open_non_scoring_only: 15
     open_provisional_external_support: 114
-    open_selection_only: 108
+    open_selection_only: 115
     open_needs_review: 24
   omission_queue_summary:
     total_rows: 12
@@ -518,25 +520,25 @@ replacement_prefilter_x045:
   cut_candidates_generated: 0
   direct_replacements: 0
 cut_candidates_x046:
-  status: all_incumbent_cut_risk_table_generated
+  status: all_incumbent_cut_risk_table_regenerated_after_x058
   cut_candidate_rows: 3000
-  high_cut_review_priority: 243
-  medium_cut_review_priority: 2417
+  high_cut_review_priority: 239
+  medium_cut_review_priority: 2421
   low_cut_review_priority: 122
   protected_core_review_required: 218
   direct_replacements: 0
 replacement_pairings_x047:
-  status: blocked_add_cut_pairings_generated
-  replacement_candidate_rows: 1215
-  blocked_rows: 1215
+  status: blocked_add_cut_pairings_regenerated_after_x058
+  replacement_candidate_rows: 1195
+  blocked_rows: 1195
   ready_for_review_rows: 0
   add_candidates_paired: 5
-  high_cut_review_candidates_paired: 243
+  high_cut_review_candidates_paired: 239
   direct_replacements: 0
 replacement_pair_checks_x048:
-  status: blocked_pair_checks_annotated
-  replacement_candidate_rows: 1215
-  duplicate_generic_cluster_review_required: 625
+  status: blocked_pair_checks_regenerated_after_x058
+  replacement_candidate_rows: 1195
+  duplicate_generic_cluster_review_required: 605
   duplicate_pending_or_author_cluster_review_required: 580
   duplicate_cluster_review_required: 10
   cut_chronology_issue_review_required: 170
@@ -544,33 +546,33 @@ replacement_pair_checks_x048:
   ready_for_review_rows: 0
   direct_replacements: 0
 replacement_pair_review_queue_x049:
-  status: balanced_pair_review_queue_generated
+  status: balanced_pair_review_queue_regenerated_after_x058
   queue_rows: 75
   rows_per_add_candidate: 15
   review_bucket_counts:
-    generic_duplicate_cluster_first: 50
-    source_debt_first: 17
-    chronology_first: 6
+    generic_duplicate_cluster_first: 44
+    source_debt_first: 25
+    chronology_first: 4
     duplicate_cluster_first: 2
   direct_replacements: 0
 cut_review_work_orders_x050:
-  status: cut_side_work_orders_generated
-  work_order_rows: 50
+  status: cut_side_work_orders_regenerated_after_x058
+  work_order_rows: 48
   review_focus_counts:
-    generic_title_selection_basis_duplicate_cluster_source_debt: 35
-    generic_title_selection_basis_source_debt: 11
-    generic_title_selection_basis_duplicate_cluster_chronology_source_debt: 2
+    generic_title_selection_basis_duplicate_cluster_source_debt: 31
+    generic_title_selection_basis_source_debt: 14
+    generic_title_selection_basis_duplicate_cluster_chronology_source_debt: 1
     duplicate_cluster_source_debt: 1
     generic_title_selection_basis_chronology_source_debt: 1
   direct_replacements: 0
 generic_selection_basis_review_x051:
-  status: generated_from_x050_cut_review_work_orders
-  review_rows: 50
-  rows_with_alias_support: 6
+  status: regenerated_from_x050_cut_review_work_orders_after_x058
+  review_rows: 48
+  rows_with_alias_support: 5
   rows_with_matched_source_items: 2
-  generic_title_rows_without_accepted_evidence: 49
+  generic_title_rows_without_accepted_evidence: 47
   selection_basis_status_counts:
-    generic_title_unresolved_no_source_support: 47
+    generic_title_unresolved_no_source_support: 45
     generic_title_source_items_need_evidence_review: 2
     non_generic_source_support_unresolved: 1
   direct_replacements: 0
@@ -630,4 +632,16 @@ cut_evidence_write_plan_x057:
   create_new_evidence_after_review_rows: 21
   update_existing_evidence_after_review_rows: 0
   evidence_ledger_rows_changed: 0
+  direct_replacements: 0
+cut_evidence_apply_x058:
+  status: applied_from_x057_write_plan
+  applied_rows: 21
+  evidence_rows_added: 21
+  source_items_linked_represented_by_selection: 21
+  evidence_ledger_rows_total: 524
+  source_debt_status_rows: 3012
+  open_selection_only_rows: 115
+  cut_review_work_order_rows_after_refresh: 48
+  generic_selection_basis_review_rows_after_refresh: 48
+  replacement_candidate_rows_after_refresh: 1195
   direct_replacements: 0

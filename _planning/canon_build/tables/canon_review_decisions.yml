@@ -401,10 +401,30 @@ decisions:
       - update_source_debt_and_scoring_inputs_only_after_evidence_changes
       - keep_public_replacement_pairs_blocked
     public_path_effect: none
+  - decision_id: x058_cut_evidence_apply_001
+    decision_type: cut_evidence_write_plan_apply
+    applies_to_artifacts:
+      - _planning/canon_build/tables/canon_evidence.tsv
+      - _planning/canon_build/tables/canon_source_items.tsv
+      - _planning/canon_build/tables/canon_cut_evidence_applied_rows.tsv
+    decision: apply_accepted_representative_selection_evidence_from_x057
+    rationale: >
+      X057 staged 21 ready item-level representative-selection evidence writes
+      after X056 review. X058 applies those rows as accepted representative-selection
+      evidence and links the source items to the cut-side work candidates, while
+      preserving the rule that representative-selection evidence does not close
+      complete-work source debt or approve cuts.
+    scoring_effect: refresh_source_debt_scoring_cut_and_pair_queues_without_public_path_change
+    required_followup:
+      - regenerate_cut_side_rescue_scope_and_write_lanes_after_x058
+      - keep_selection_only_rows_open_until_complete_work_or_closing_inclusion_support_exists
+      - compute_cut_side_scores_only_after_regenerated_scope_gates_are_clear
+      - keep_public_replacement_pairs_blocked
+    public_path_effect: none
 waivers: []
 open_questions:
   - source_debt_rows_currently_3002
-  - unmatched_source_items_currently_5446
+  - unmatched_source_items_currently_5425
   - duplicate_candidate_keys_currently_39
   - chronology_inversion_rows_currently_138
   - generic_title_rows_currently_267

@@ -11,15 +11,15 @@ X050 turns the 75-row X049 pair-review queue into cut-side work orders. The goal
 - Added `scripts/canon_generate_cut_review_work_orders.rb`.
 - Added `canon_cut_review_work_orders.tsv`.
 - Updated validation so the work-order table is structurally checked.
-- Generated 50 cut-review work orders.
+- Generated 48 cut-review work orders.
 
 Review focus summary:
 
 | Review focus | Rows |
 |---|---:|
-| `generic_title_selection_basis;duplicate_cluster;source_debt` | 35 |
-| `generic_title_selection_basis;source_debt` | 11 |
-| `generic_title_selection_basis;duplicate_cluster;chronology;source_debt` | 2 |
+| `generic_title_selection_basis;duplicate_cluster;source_debt` | 31 |
+| `generic_title_selection_basis;source_debt` | 14 |
+| `generic_title_selection_basis;duplicate_cluster;chronology;source_debt` | 1 |
 | `duplicate_cluster;source_debt` | 1 |
 | `generic_title_selection_basis;chronology;source_debt` | 1 |
 
@@ -29,11 +29,11 @@ Dominant cut-title clusters:
 |---|---:|
 | `Selected Poems` | 10 |
 | `Selected Stories` | 7 |
-| `Poems` | 6 |
 | `Selected Haiku` | 3 |
+| `Poems` | 2 |
 | `Selected Ci Poems` | 2 |
-| `Odes` | 2 |
 | `Selected Ghazals` | 2 |
+| `"Odes"` | 1 |
 
 ## Interpretation
 
