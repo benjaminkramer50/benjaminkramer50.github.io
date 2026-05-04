@@ -11,23 +11,25 @@ X051 reviews the current X050 cut-side work orders as selection-basis and source
 - Added `scripts/canon_generate_generic_selection_basis_review.rb`.
 - Added `canon_generic_selection_basis_review.tsv`.
 - Generated 45 review rows from X050 work orders.
-- Rows with alias support: 4.
-- Rows with matched source items: 1.
-- Generic-title rows without accepted evidence: 44.
+- Rows with alias support: 5.
+- Rows with matched source items: 2.
+- Generic-title rows without accepted evidence: 42.
 
 Selection-basis status summary:
 
 | Status | Rows |
 |---|---:|
-| `generic_title_has_evidence_selection_basis_review_required` | 1 |
-| `generic_title_unresolved_no_source_support` | 44 |
+| `generic_title_has_evidence_selection_basis_review_required` | 2 |
+| `generic_title_unresolved_no_source_support` | 42 |
+| `non_generic_source_support_unresolved` | 1 |
 
 Recommended resolution summary:
 
 | Resolution | Rows |
 |---|---:|
-| `hold_cut_pairing_until_selection_basis_and_external_support_are_verified` | 44 |
-| `review_whether_row_is_collection_or_representative_selection` | 1 |
+| `extract_or_accept_cut_side_source_support_before_cut_decision` | 1 |
+| `hold_cut_pairing_until_selection_basis_and_external_support_are_verified` | 42 |
+| `review_whether_row_is_collection_or_representative_selection` | 2 |
 
 Highest-priority unresolved rows:
 
@@ -39,7 +41,7 @@ Highest-priority unresolved rows:
 | `x051_selection_basis_0004` | Selected Poems | Cao Zhi | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0005` | Selected Poems | Ruan Ji | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0006` | Selected Poems | Bao Zhao | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
-| `x051_selection_basis_0007` | Selected Poems | Ariruma Kowii | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
+| `x051_selection_basis_0007` | Selected Poems | Tao Yuanming | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0008` | Selected Poems | Briceida Cuevas Cob | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0009` | Selected Poems | Humberto Ak'abal | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |
 | `x051_selection_basis_0010` | Selected Poems | Hubert Matiuwaa | `generic_title_unresolved_no_source_support` | `find_author_work_specific_source_or_mark_cut_basis_unresolved` |

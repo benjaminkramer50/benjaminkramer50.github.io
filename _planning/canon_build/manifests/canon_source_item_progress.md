@@ -1,9 +1,9 @@
 # Canon Source-Item Progress
 
 - generated_on: 2026-05-04
-- registered_sources: 227
-- source_item_rows: 6099
-- evidence_rows: 695
+- registered_sources: 247
+- source_item_rows: 6119
+- evidence_rows: 715
 - match_statuses: matched_candidate, matched_current_path, out_of_scope, represented_by_selection, unmatched
 - evidence_types: boundary_context, inclusion, representative_selection
 
@@ -238,6 +238,26 @@
 | `x078_nup_encyclopedia_dead` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x078_prh_book_of_sand` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 | `x078_utpress_burning_plain` | X078 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_bibliovault_poems_st_john_cross` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_copper_aleixandre_longing_light` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_ebsco_aleixandre_longing_light` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_google_books_cernuda_selected_poems` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_google_books_owl_insomnia` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_google_books_she_wolf_stories` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_google_books_unknown_light` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_grove_refugees_nguyen` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_jstor_chesnutt_short_fiction_review` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_nbf_refugees_nguyen` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_openletter_taker_stories` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_poetry_foundation_owl_insomnia` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_poets_barnstone_unknown_light` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_poets_cernuda_selected_poems` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_prh_cheever_stories` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_pulitzer_cheever_stories` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_pw_taker_stories` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_uchicago_poems_st_john_cross` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_ucpress_she_wolf_stories` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| `x079_wsu_chesnutt_bibliography` | X079 | extracted | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
 ## Empty Registered Sources
 
