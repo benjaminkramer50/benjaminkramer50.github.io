@@ -131,8 +131,8 @@ title: Movie Log
       <option value="unreviewed">Unreviewed</option>
     </select>
     <select id="canon-sort" aria-label="Sort canon titles">
+      <option value="year" selected>Year</option>
       <option value="title">Title</option>
-      <option value="year">Year</option>
       <option value="director">Director</option>
       <option value="source">Source order</option>
     </select>
@@ -422,7 +422,7 @@ title: Movie Log
     return {
       search: (searchInput ? searchInput.value : '').toLowerCase().trim(),
       status: statusSelect ? statusSelect.value : '',
-      sort: sortSelect ? sortSelect.value : 'title'
+      sort: sortSelect ? sortSelect.value : 'year'
     };
   }
 
