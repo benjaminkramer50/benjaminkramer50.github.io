@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T06:30:49Z",
+  "generated_at": "2026-05-05T07:00:02Z",
   "db_path": "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db",
   "source_table": "archive_parsed_questions",
   "evidence_fields": [
@@ -10,7 +10,9 @@
     "archive_practice_questions.track_id"
   ],
   "adjudications_path": "_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml",
-  "adjudication_count": 2008,
+  "adjudication_count": 2043,
+  "manual_alias_rule_count": 40,
+  "manual_aliases_applied_after_pass1": 39,
   "jobs": 4,
   "excluded_processed_inputs": [
     "archive_canon_refinement_runs",
@@ -19,29 +21,29 @@
   "threshold": 4,
   "processed_rows": 2216999,
   "skipped_long_clue_rows": 201,
-  "raw_answerline_candidate_count": 9543,
-  "exact_match_seed_count": 5523,
+  "raw_answerline_candidate_count": 9508,
+  "exact_match_seed_count": 5488,
   "exact_match_seed_basis_counts": {
-    "answerline": 721,
-    "answerline_and_clue": 1042,
-    "clue": 3760
+    "answerline": 714,
+    "answerline_and_clue": 1029,
+    "clue": 3745
   },
-  "raw_candidate_count": 81872,
-  "threshold_candidate_count": 14396,
-  "public_data_count": 5220,
+  "raw_candidate_count": 81833,
+  "threshold_candidate_count": 14357,
+  "public_data_count": 5180,
   "rejected_candidate_count": 2922,
-  "audit_queue_count": 12583,
+  "audit_queue_count": 12576,
   "llm_review_queue_count": 500,
-  "mention_rows": 68864,
+  "mention_rows": 68669,
   "tier_counts": {
-    "qb_core": 1096,
+    "qb_core": 1059,
     "qb_rejected": 2922,
-    "qb_candidate": 6254,
-    "qb_major": 1666,
+    "qb_candidate": 6255,
+    "qb_major": 1663,
     "qb_contextual": 2458
   },
   "review_status_counts": {
-    "accepted_likely_work": 5220,
+    "accepted_likely_work": 5180,
     "rejected_duplicate_title_variant": 28,
     "rejected_science_not_literature": 5,
     "rejected_place_not_work": 1,
@@ -69,6 +71,7 @@
     "rejected_language_or_period_label_not_work": 1,
     "rejected_sports_not_work": 1,
     "rejected_nickname_or_character_fragment": 1,
+    "merged_duplicate_title_variant": 1,
     "rejected_song_or_anthem_not_literature_reading_list": 1,
     "needs_review_ambiguous_history_or_modern_novel_title": 1,
     "rejected_philosophy_domain": 17,

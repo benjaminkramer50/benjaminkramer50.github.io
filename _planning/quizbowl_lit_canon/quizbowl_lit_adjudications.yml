@@ -16789,3 +16789,363 @@ decisions:
   source: codex_first_1000_public_purity_pass
   notes: 'First-1,000 public-row purity pass: characters from Waiting for Godot,
     not a standalone work.'
+- candidate_id: qb_lit_the_aeneid_c666e238
+  canonical_title: The Aeneid
+  normalized_title: the aeneid
+  decision: alias
+  alias_of: Aeneid
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Aeneid.'
+- candidate_id: qb_lit_canterbury_tales_d643082e
+  canonical_title: Canterbury Tales
+  normalized_title: canterbury tales
+  decision: alias
+  alias_of: The Canterbury Tales
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Canterbury Tales.'
+- candidate_id: qb_lit_second_coming_573c8089
+  canonical_title: Second Coming
+  normalized_title: second coming
+  decision: alias
+  alias_of: The Second Coming
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Second Coming.'
+- candidate_id: qb_lit_catcher_in_the_rye_c556277a
+  canonical_title: Catcher in the Rye
+  normalized_title: catcher in the rye
+  decision: alias
+  alias_of: The Catcher in the Rye
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Catcher in the Rye.'
+- candidate_id: qb_lit_satanic_verses_6457db73
+  canonical_title: Satanic Verses
+  normalized_title: satanic verses
+  decision: alias
+  alias_of: The Satanic Verses
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Satanic Verses.'
+- candidate_id: qb_lit_rime_of_the_ancient_mariner_06da9af8
+  canonical_title: Rime of the Ancient Mariner
+  normalized_title: rime of the ancient mariner
+  decision: alias
+  alias_of: The Rime of the Ancient Mariner
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Rime of the Ancient Mariner.'
+- candidate_id: qb_lit_love_song_of_j_alfred_prufrock_a8ad0647
+  canonical_title: Love Song of J. Alfred Prufrock
+  normalized_title: love song of j alfred prufrock
+  decision: alias
+  alias_of: The Love Song of J. Alfred Prufrock
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Love Song of J. Alfred Prufrock.'
+- candidate_id: qb_lit_master_and_margarita_26e6d723
+  canonical_title: Master and Margarita
+  normalized_title: master and margarita
+  decision: alias
+  alias_of: The Master and Margarita
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Master and Margarita.'
+- candidate_id: qb_lit_labyrinth_of_solitude_632679e0
+  canonical_title: Labyrinth of Solitude
+  normalized_title: labyrinth of solitude
+  decision: alias
+  alias_of: The Labyrinth of Solitude
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Labyrinth of Solitude.'
+- candidate_id: qb_lit_temple_of_the_golden_pavilion_7d68cab3
+  canonical_title: Temple of the Golden Pavilion
+  normalized_title: temple of the golden pavilion
+  decision: alias
+  alias_of: The Temple of the Golden Pavilion
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Temple of the Golden Pavilion.'
+- candidate_id: qb_lit_library_of_babel_eb09ce7d
+  canonical_title: Library of Babel
+  normalized_title: library of babel
+  decision: alias
+  alias_of: The Library of Babel
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Library of Babel.'
+- candidate_id: qb_lit_occurrence_at_owl_creek_bridge_b11fa773
+  canonical_title: Occurrence at Owl Creek Bridge
+  normalized_title: occurrence at owl creek bridge
+  decision: alias
+  alias_of: An Occurrence at Owl Creek Bridge
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into An Occurrence at Owl Creek Bridge.'
+- candidate_id: qb_lit_legend_of_sleepy_hollow_223222c1
+  canonical_title: Legend of Sleepy Hollow
+  normalized_title: legend of sleepy hollow
+  decision: alias
+  alias_of: The Legend of Sleepy Hollow
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Legend of Sleepy Hollow.'
+- candidate_id: qb_lit_the_cairo_trilogy_39415eaf
+  canonical_title: The Cairo Trilogy
+  normalized_title: the cairo trilogy
+  decision: alias
+  alias_of: Cairo Trilogy
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Cairo Trilogy.'
+- candidate_id: qb_lit_the_duino_elegies_0b5ffac4
+  canonical_title: The Duino Elegies
+  normalized_title: the duino elegies
+  decision: alias
+  alias_of: Duino Elegies
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Duino Elegies.'
+- candidate_id: qb_lit_flowers_of_evil_9f131dc9
+  canonical_title: Flowers of Evil
+  normalized_title: flowers of evil
+  decision: alias
+  alias_of: The Flowers of Evil
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Flowers of Evil.'
+- candidate_id: qb_lit_the_romance_of_the_three_kingdoms_64633718
+  canonical_title: The Romance of the Three Kingdoms
+  normalized_title: the romance of the three kingdoms
+  decision: alias
+  alias_of: Romance of the Three Kingdoms
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Romance of the Three Kingdoms.'
+- candidate_id: qb_lit_the_interpreter_of_maladies_dc6de105
+  canonical_title: The Interpreter of Maladies
+  normalized_title: the interpreter of maladies
+  decision: alias
+  alias_of: Interpreter of Maladies
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Interpreter of Maladies.'
+- candidate_id: qb_lit_the_naked_lunch_78e87cbf
+  canonical_title: The Naked Lunch
+  normalized_title: the naked lunch
+  decision: alias
+  alias_of: Naked Lunch
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Naked Lunch.'
+- candidate_id: qb_lit_the_three_sisters_4c68d411
+  canonical_title: The Three Sisters
+  normalized_title: the three sisters
+  decision: alias
+  alias_of: Three Sisters
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Three Sisters.'
+- candidate_id: qb_lit_sea_of_fertility_440f1127
+  canonical_title: Sea of Fertility
+  normalized_title: sea of fertility
+  decision: alias
+  alias_of: The Sea of Fertility
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Sea of Fertility.'
+- candidate_id: qb_lit_the_dream_of_the_red_chamber_edb97c9e
+  canonical_title: The Dream of the Red Chamber
+  normalized_title: the dream of the red chamber
+  decision: alias
+  alias_of: Dream of the Red Chamber
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Dream of the Red Chamber.'
+- candidate_id: qb_lit_zoo_story_fac0b08c
+  canonical_title: Zoo Story
+  normalized_title: zoo story
+  decision: alias
+  alias_of: The Zoo Story
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Zoo Story.'
+- candidate_id: qb_lit_trojan_women_44f7bdb5
+  canonical_title: Trojan Women
+  normalized_title: trojan women
+  decision: alias
+  alias_of: The Trojan Women
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Trojan Women.'
+- candidate_id: qb_lit_blood_knot_fe514d86
+  canonical_title: Blood Knot
+  normalized_title: blood knot
+  decision: alias
+  alias_of: The Blood Knot
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Blood Knot.'
+- candidate_id: qb_lit_bonfire_of_the_vanities_03adfb76
+  canonical_title: Bonfire of the Vanities
+  normalized_title: bonfire of the vanities
+  decision: alias
+  alias_of: The Bonfire of the Vanities
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Bonfire of the Vanities.'
+- candidate_id: qb_lit_the_kiss_of_the_spider_woman_255e8aa5
+  canonical_title: The Kiss of the Spider Woman
+  normalized_title: the kiss of the spider woman
+  decision: alias
+  alias_of: Kiss of the Spider Woman
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Kiss of the Spider Woman.'
+- candidate_id: qb_lit_the_rubaiyat_of_omar_khayyam_329f116e
+  canonical_title: The Rubaiyat of Omar Khayyam
+  normalized_title: the rubaiyat of omar khayyam
+  decision: alias
+  alias_of: Rubaiyat of Omar Khayyam
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Rubaiyat of Omar Khayyam.'
+- candidate_id: qb_lit_the_epic_of_gilgamesh_f87972dd
+  canonical_title: The Epic of Gilgamesh
+  normalized_title: the epic of gilgamesh
+  decision: alias
+  alias_of: Epic of Gilgamesh
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Epic of Gilgamesh.'
+- candidate_id: qb_lit_night_of_the_iguana_c5b0a9b9
+  canonical_title: Night of the Iguana
+  normalized_title: night of the iguana
+  decision: alias
+  alias_of: The Night of the Iguana
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Night of the Iguana.'
+- candidate_id: qb_lit_leatherstocking_tales_5cc0c947
+  canonical_title: Leatherstocking Tales
+  normalized_title: leatherstocking tales
+  decision: alias
+  alias_of: The Leatherstocking Tales
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Leatherstocking Tales.'
+- candidate_id: qb_lit_the_cancer_ward_559aa084
+  canonical_title: The Cancer Ward
+  normalized_title: the cancer ward
+  decision: alias
+  alias_of: Cancer Ward
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Cancer Ward.'
+- candidate_id: qb_lit_twenty_love_poems_9782b058
+  canonical_title: Twenty Love Poems
+  normalized_title: twenty love poems
+  decision: alias
+  alias_of: Twenty Love Poems and a Song of Despair
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Twenty Love Poems and a Song of Despair.'
+- candidate_id: qb_lit_the_tenth_muse_8f6090c5
+  canonical_title: The Tenth Muse
+  normalized_title: the tenth muse
+  decision: alias
+  alias_of: The Tenth Muse Lately Sprung Up in America
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Tenth Muse Lately Sprung Up in America.'
+- candidate_id: qb_lit_odyssey_a021c096
+  canonical_title: Odyssey
+  normalized_title: odyssey
+  decision: alias
+  alias_of: The Odyssey
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Odyssey.'
+- candidate_id: qb_lit_iliad_6a60b6cd
+  canonical_title: Iliad
+  normalized_title: iliad
+  decision: alias
+  alias_of: The Iliad
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Iliad.'
+- candidate_id: qb_lit_the_ramayana_70c33f08
+  canonical_title: The Ramayana
+  normalized_title: the ramayana
+  decision: alias
+  alias_of: Ramayana
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into Ramayana.'
+- candidate_id: qb_lit_a_winters_tale_2ea85633
+  canonical_title: A WINTER'S TALE
+  normalized_title: a winter s tale
+  decision: alias
+  alias_of: The Winter’s Tale
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Winter’s Tale.'
+- candidate_id: qb_lit_death_of_the_hired_man_862a19b2
+  canonical_title: Death of the Hired Man
+  normalized_title: death of the hired man
+  decision: alias
+  alias_of: The Death of the Hired Man
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into The Death of the Hired Man.'
+- candidate_id: qb_lit_essay_on_man_f8192a50
+  canonical_title: Essay on Man
+  normalized_title: essay on man
+  decision: alias
+  alias_of: An Essay on Man
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_top_duplicate_alias_pass
+  notes: 'Phase C duplicate consolidation: merge this title variant into An Essay on Man.'

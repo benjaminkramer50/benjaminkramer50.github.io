@@ -72,6 +72,7 @@ LOWER_CONNECTOR_WORDS = Set.new(%w[
 TITLE_PHRASE_RE = /#{CAP_WORD}(?:(?:\s+#{LOWER_CONNECTOR}|\s+#{CAP_WORD})){0,10}/
 
 HIGH_RISK_TITLE_EXEMPT_NORMALIZED = Set.new([
+  "aeneid", "iliad", "odyssey", "ramayana",
   "the aeneid", "the iliad", "the odyssey", "the ramayana"
 ]).freeze
 
@@ -94,6 +95,7 @@ CandidateStats = Struct.new(
   :examples,
   :literary_signal_count,
   :non_literary_signal_count,
+  :manual_canonical_title,
   keyword_init: true
 )
 
@@ -115,7 +117,8 @@ def new_stats(normalized_title)
     question_type_counts: Hash.new(0),
     examples: [],
     literary_signal_count: 0,
-    non_literary_signal_count: 0
+    non_literary_signal_count: 0,
+    manual_canonical_title: nil
   )
 end
 
@@ -535,6 +538,7 @@ def merge_stats!(target, source)
   merge_counter!(target.question_type_counts, source.question_type_counts)
   target.literary_signal_count += source.literary_signal_count
   target.non_literary_signal_count += source.non_literary_signal_count
+  target.manual_canonical_title ||= source.manual_canonical_title
   target.examples = (target.examples + source.examples)
     .sort_by { |example| [example["question_id"].to_i, example["match_type"].to_s, example["snippet"].to_s] }
     .first(5)
@@ -551,6 +555,8 @@ def merge_stats_by_key!(target, source)
 end
 
 def canonical_title(stats)
+  return stats.manual_canonical_title unless stats.manual_canonical_title.to_s.empty?
+
   stats.display_counts.max_by { |title, count| [count, title.length] }&.first || stats.normalized_title
 end
 
@@ -578,7 +584,7 @@ def build_seed_index(candidate_stats, min_count)
     end
 
     variants = Set.new([title])
-    stats.display_counts.each_key { |variant| variants << variant if normalize_title(variant) == normalized }
+    stats.display_counts.each_key { |variant| variants << variant unless variant.to_s.empty? }
     next unless exact_match_seed_eligible?(title)
 
     seeds[normalized] = Seed.new(canonical_title: title, normalized_title: normalized, variants: variants, seed_basis: seed_basis)
@@ -773,6 +779,74 @@ def load_adjudications(path)
     keys.each { |key| by_key[key] = entry }
   end
   by_key
+end
+
+def load_alias_rules(path)
+  return [{}, {}] unless File.exist?(path)
+
+  payload = YAML.load_file(path) || {}
+  decisions = payload["decisions"] || []
+  alias_map = {}
+  canonical_titles = {}
+
+  decisions.each do |entry|
+    next unless entry.is_a?(Hash)
+
+    target_title = entry["alias_of"] || entry["merge_into"]
+    next if target_title.to_s.strip.empty?
+
+    source_title = entry["canonical_title"] || entry["title"]
+    source_normalized = entry["normalized_title"].to_s
+    source_normalized = normalize_title(source_title) if source_normalized.empty? && source_title
+    target_normalized = normalize_title(target_title)
+    next if source_normalized.empty? || target_normalized.empty? || source_normalized == target_normalized
+
+    alias_map[source_normalized] = target_normalized
+    canonical_titles[target_normalized] = target_title.to_s
+  end
+
+  [alias_map, canonical_titles]
+end
+
+def resolved_alias_target(normalized, alias_map)
+  seen = {}
+  current = normalized
+
+  while alias_map.key?(current) && !seen[current]
+    seen[current] = true
+    current = alias_map[current]
+  end
+
+  current
+end
+
+def apply_alias_rules!(stats_by_key, alias_map, canonical_titles)
+  return 0 if alias_map.empty?
+
+  applied = 0
+  alias_map.keys.each do |source_normalized|
+    target_normalized = resolved_alias_target(source_normalized, alias_map)
+    next if source_normalized == target_normalized
+
+    source_stats = stats_by_key[source_normalized]
+    next unless source_stats
+
+    target_stats = stats_by_key[target_normalized] ||= new_stats(target_normalized)
+    target_stats.normalized_title = target_normalized
+    target_stats.manual_canonical_title ||= canonical_titles[target_normalized]
+    merge_stats!(target_stats, source_stats)
+    target_stats.manual_canonical_title ||= canonical_titles[target_normalized]
+    stats_by_key.delete(source_normalized)
+    applied += 1
+  end
+
+  canonical_titles.each do |normalized, title|
+    next unless stats_by_key[normalized]
+
+    stats_by_key[normalized].manual_canonical_title ||= title
+  end
+
+  applied
 end
 
 def adjudication_for(adjudications, title, work_id)
@@ -1348,7 +1422,9 @@ def main
   db.busy_timeout = 30_000
 
   adjudications = load_adjudications(options[:adjudications_path])
+  alias_map, alias_canonical_titles = load_alias_rules(options[:adjudications_path])
   warn "Loaded #{adjudications.values.uniq.length} adjudications from #{options[:adjudications_path]}"
+  warn "Loaded #{alias_map.length} manual alias rules from #{options[:adjudications_path]}" unless alias_map.empty?
   warn "Loading quizbowl category diagnostics from archive_practice_questions"
   track_by_question_id = load_track_id_map(db)
   warn "  loaded track labels for #{track_by_question_id.length} parsed questions"
@@ -1406,6 +1482,10 @@ def main
       end
     end
   end
+
+  applied_aliases = apply_alias_rules!(stats_by_key, alias_map, alias_canonical_titles)
+  apply_alias_rules!(answerline_seed_stats, alias_map, alias_canonical_titles)
+  warn "Applied #{applied_aliases} manual alias merges after pass 1" if applied_aliases.positive?
 
   seeds, seed_index, seed_basis_counts = build_seed_index(stats_by_key, options[:threshold])
 
@@ -1698,6 +1778,8 @@ def main
     ],
     "adjudications_path" => repo_relative_path(options[:adjudications_path]),
     "adjudication_count" => adjudications.values.uniq.length,
+    "manual_alias_rule_count" => alias_map.length,
+    "manual_aliases_applied_after_pass1" => applied_aliases,
     "jobs" => options[:jobs],
     "excluded_processed_inputs" => [
       "archive_canon_refinement_runs",
@@ -1734,6 +1816,7 @@ def main
     - Evidence fields: raw `answerline` and raw `clue_text`
     - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
     - Adjudication file: `#{repo_relative_path(options[:adjudications_path])}` (#{adjudications.values.uniq.length} decisions)
+    - Manual alias rules: #{alias_map.length} loaded, #{applied_aliases} applied after pass 1
     - Worker processes: #{options[:jobs]}
     - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
     - Threshold: total distinct quizbowl questions >= #{options[:threshold]}

@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-05T06:30:49Z
+Generated: 2026-05-05T07:00:02Z
 
 ## Corpus
 
@@ -9,23 +9,24 @@ Generated: 2026-05-05T06:30:49Z
 - Rows processed: 2216999
 - Evidence fields: raw `answerline` and raw `clue_text`
 - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
-- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2008 decisions)
+- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2043 decisions)
+- Manual alias rules: 40 loaded, 39 applied after pass 1
 - Worker processes: 4
 - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
 - Threshold: total distinct quizbowl questions >= 4
 
 ## Candidate Extraction
 
-- Raw answerline work candidates: 9543
-- Exact-match work-title seeds from answerlines and clues: 5523
-- Exact-match seed basis counts: `answerline`=721, `answerline_and_clue`=1042, `clue`=3760
-- Raw normalized candidates: 81872
-- Candidates clearing threshold: 14396
-- Public YAML rows after accepted-work filtering: 5220
+- Raw answerline work candidates: 9508
+- Exact-match work-title seeds from answerlines and clues: 5488
+- Exact-match seed basis counts: `answerline`=714, `answerline_and_clue`=1029, `clue`=3745
+- Raw normalized candidates: 81833
+- Candidates clearing threshold: 14357
+- Public YAML rows after accepted-work filtering: 5180
 - Rejected non-literature candidates: 2922
-- Audit queue rows: 12583
+- Audit queue rows: 12576
 - LLM review queue rows: 500
-- Evidence/example rows written: 68864
+- Evidence/example rows written: 68669
 
 ## Review Routing
 
@@ -36,15 +37,16 @@ Generated: 2026-05-05T06:30:49Z
 
 ## Tier Counts
 
-- `qb_candidate`: 6254
+- `qb_candidate`: 6255
 - `qb_contextual`: 2458
-- `qb_core`: 1096
-- `qb_major`: 1666
+- `qb_core`: 1059
+- `qb_major`: 1663
 - `qb_rejected`: 2922
 
 ## Review Status Counts
 
-- `accepted_likely_work`: 5220
+- `accepted_likely_work`: 5180
+- `merged_duplicate_title_variant`: 1
 - `needs_review_act_title_boundary`: 1
 - `needs_review_alternate_poem_title_boundary`: 1
 - `needs_review_ambiguous_collection_fragment_boundary`: 1
