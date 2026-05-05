@@ -20230,3 +20230,178 @@ decisions:
   reason: combined_title_author_prompt
   review_status: rejected_combined_title_author_prompt
   source: codex_phase_b_combined_title_batch3
+- canonical_title: Booker Prize-winning
+  decision: reject
+  reason: award_descriptor_fragment
+  review_status: rejected_descriptor_fragment
+  source: codex_v1_public_purity_batch1
+- canonical_title: Booker of Bookers
+  decision: reject
+  reason: award_descriptor_fragment
+  review_status: rejected_descriptor_fragment
+  source: codex_v1_public_purity_batch1
+- canonical_title: Critics Circle Award
+  decision: reject
+  reason: award_descriptor_fragment
+  review_status: rejected_descriptor_fragment
+  source: codex_v1_public_purity_batch1
+- canonical_title: Award for Poetry
+  decision: reject
+  reason: award_descriptor_fragment
+  review_status: rejected_descriptor_fragment
+  source: codex_v1_public_purity_batch1
+- canonical_title: Award for Fiction
+  decision: reject
+  reason: award_descriptor_fragment
+  review_status: rejected_descriptor_fragment
+  source: codex_v1_public_purity_batch1
+- canonical_title: Award in 1974
+  decision: reject
+  reason: award_descriptor_fragment
+  review_status: rejected_descriptor_fragment
+  source: codex_v1_public_purity_batch1
+- canonical_title: Award from the New York Drama Critics
+  decision: reject
+  reason: award_descriptor_fragment
+  review_status: rejected_descriptor_fragment
+  source: codex_v1_public_purity_batch1
+- canonical_title: Behemoth and Leviathan
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_v1_public_purity_batch1
+- canonical_title: The Eight Immortals of the Wine Cup
+  decision: reject
+  reason: group_not_work
+  review_status: rejected_group_not_work
+  source: codex_v1_public_purity_batch1
+- canonical_title: Language and Mind
+  decision: reject
+  reason: linguistics_not_literature
+  review_status: rejected_non_literature_domain
+  source: codex_v1_public_purity_batch1
+- canonical_title: Man and His Works
+  decision: reject
+  reason: anthropology_not_literature
+  review_status: rejected_non_literature_domain
+  source: codex_v1_public_purity_batch1
+- canonical_title: The Cathedral and the Bazaar
+  decision: reject
+  reason: software_essay_not_literature
+  review_status: rejected_non_literature_domain
+  source: codex_v1_public_purity_batch1
+- canonical_title: Open Veins of Latin America
+  decision: reject
+  reason: political_history_not_literature
+  review_status: rejected_non_literature_domain
+  source: codex_v1_public_purity_batch1
+- canonical_title: Sex and the Single Girl
+  decision: reject
+  reason: social_science_not_literature
+  review_status: rejected_non_literature_domain
+  source: codex_v1_public_purity_batch1
+- canonical_title: Declaration of the Rights of Woman and the Female Citizen
+  decision: reject
+  reason: political_document_not_literature
+  review_status: rejected_non_literature_domain
+  source: codex_v1_public_purity_batch1
+- canonical_title: According to Jesus Christ
+  decision: alias
+  alias_of: The Gospel According to Jesus Christ
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: According to Mark
+  decision: alias
+  alias_of: The Gospel According to Mark
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: Vindication of the Rights of Woman
+  decision: alias
+  alias_of: A Vindication of the Rights of Woman
+  reason: title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: Vindication of the Rights of Women
+  decision: alias
+  alias_of: A Vindication of the Rights of Woman
+  reason: plural_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: 1755 Dictionary of the English Language
+  decision: alias
+  alias_of: Dictionary of the English Language
+  reason: dated_title_fragment
+  review_status: merged_truncated_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: the Blessed Damosel
+  decision: alias
+  alias_of: The Blessed Damozel
+  reason: misspelled_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: Tiny Alice in 1964
+  decision: alias
+  alias_of: Tiny Alice
+  reason: date_suffix_fragment
+  review_status: merged_truncated_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: Has Come to Triumph
+  decision: alias
+  alias_of: To a Friend Whose Work Has Come to Triumph
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: Windy McPherson
+  decision: alias
+  alias_of: Windy McPherson's Son
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: San Manuel Bueno
+  decision: alias
+  alias_of: San Manuel Bueno, Martir
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_v1_public_purity_batch1
+- canonical_title: Calvin-Benson cycle
+  decision: reject
+  reason: science_not_literature
+  review_status: rejected_science_not_literature
+  source: codex_v1_public_purity_batch2
+- canonical_title: tricarboxylic acid cycle
+  decision: reject
+  reason: science_not_literature
+  review_status: rejected_science_not_literature
+  source: codex_v1_public_purity_batch2
+- canonical_title: citric acid cycle” before mentioned
+  decision: reject
+  reason: science_answerline_artifact
+  review_status: rejected_science_not_literature
+  source: codex_v1_public_purity_batch2
+- canonical_title: Krebs_ cycle or _citric acid_ cycle
+  decision: reject
+  reason: science_answerline_artifact
+  review_status: rejected_science_not_literature
+  source: codex_v1_public_purity_batch2
+- canonical_title: A Book for All and None
+  decision: reject
+  reason: philosophy_subtitle_fragment
+  review_status: rejected_non_literature_domain
+  source: codex_v1_public_purity_batch2
+- canonical_title: 'Thus Spoke Zarathustra: A Book for All and None'
+  decision: reject
+  reason: philosophy_not_literature
+  review_status: rejected_non_literature_domain
+  source: codex_v1_public_purity_batch2
+- canonical_title: Valerie and Theofraste
+  decision: reject
+  reason: fictional_book_not_standalone_work
+  review_status: rejected_fictional_book_not_work
+  source: codex_v1_public_purity_batch2
+- canonical_title: Happy Days Are Here Again
+  decision: reject
+  reason: song_reference_not_literary_work
+  review_status: rejected_non_literature_domain
+  source: codex_v1_public_purity_batch2
