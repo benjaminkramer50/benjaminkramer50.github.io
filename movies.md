@@ -401,6 +401,37 @@ title: Movie Log
     return moviePosters[key] && moviePosters[key].poster_url ? moviePosters[key].poster_url : '';
   }
 
+  function formatRating(value) {
+    var rating = parseFloat(value);
+    if (!isFinite(rating)) return '';
+    return rating % 1 === 0 ? String(rating) : rating.toFixed(1);
+  }
+
+  function renderRatingHtml(value) {
+    var rating = parseFloat(value);
+    if (!isFinite(rating)) return '';
+
+    var fullStars = Math.floor(rating);
+    var hasHalf = rating % 1 !== 0;
+    var halfPos = fullStars + 1;
+    var stars = [];
+
+    for (var i = 1; i <= 5; i++) {
+      if (i <= fullStars) {
+        stars.push('<span class="star-full">&#9733;</span>');
+      } else if (hasHalf && i === halfPos) {
+        stars.push('<span class="star-half">&#9733;</span>');
+      } else {
+        stars.push('<span class="star-empty">&#9734;</span>');
+      }
+    }
+
+    return '<span class="canon-row-rating" aria-label="Rating: ' + escapeHtml(formatRating(rating)) + ' out of 5">' +
+      stars.join('') +
+      '<span class="canon-row-rating-value">' + escapeHtml(formatRating(rating)) + '/5</span>' +
+    '</span>';
+  }
+
   function parseDate(value) {
     if (!value) return null;
     var date = new Date(value);
@@ -534,6 +565,8 @@ title: Movie Log
         statusPills += '<span class="canon-pill canon-pill-favorite">Favorite</span>';
       }
       var posterUrl = posterForMovie(item);
+      var ratingHtml = renderRatingHtml(item.rating);
+      var reviewMetaHtml = ratingHtml ? '<div class="canon-row-review-meta">' + ratingHtml + '</div>' : '';
       var reviewHtml = item.reviewed ? (
         '<div class="canon-row-review">' +
           '<div class="canon-row-review-poster">' +
@@ -541,7 +574,7 @@ title: Movie Log
               ? '<img src="' + escapeHtml(posterUrl) + '" alt="' + escapeHtml(item.title) + ' poster" loading="lazy">'
               : '<div class="canon-row-review-placeholder"><span>' + escapeHtml(item.title) + '</span><span>(' + escapeHtml(item.year) + ')</span></div>') +
           '</div>' +
-          '<div class="canon-row-review-copy"><p>' + escapeHtml(item.review).replace(/\n/g, '<br>') + '</p></div>' +
+          '<div class="canon-row-review-copy">' + reviewMetaHtml + '<p>' + escapeHtml(item.review).replace(/\n/g, '<br>') + '</p></div>' +
         '</div>'
       ) : '';
 
