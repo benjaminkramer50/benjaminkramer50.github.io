@@ -731,6 +731,84 @@ def tier_for(score, review_status, total_count, set_count, year_count)
   "qb_candidate"
 end
 
+def dominant_track_from_counts(track_counts)
+  track_counts.max_by { |track, count| [count, track] }&.first || "unknown"
+end
+
+def track_profile(track_counts)
+  total = track_counts.values.sum
+  return "unknown_track" if total.zero?
+
+  literature_count = track_counts["literature"].to_i
+  dominant = dominant_track_from_counts(track_counts)
+  return "literature_dominant" if dominant == "literature" || literature_count.to_f / total >= 0.5
+  return "cross_category_literary" if literature_count.positive?
+
+  "non_literature_context"
+end
+
+def evidence_profile(answerline_count, clue_count)
+  return "answerline_and_clue" if answerline_count.positive? && clue_count.positive?
+  return "answerline_only" if answerline_count.positive?
+  return "clue_only" if clue_count.positive?
+
+  "unknown_evidence"
+end
+
+def work_form_from_hint(form_hint)
+  case form_hint.to_s
+  when "novel", "novella"
+    "long_fiction"
+  when "play", "drama", "tragedy", "comedy"
+    "drama"
+  when "poem", "poetry", "ode", "elegy", "ballad", "sonnet"
+    "poetry"
+  when "story", "short_story", "tale", "fable"
+    "short_fiction"
+  when "epic", "saga", "romance"
+    "epic_or_romance"
+  when "essay", "memoir", "autobiography", "diary", "letter"
+    "essay_memoir_nonfiction"
+  when "collection", "cycle", "anthology"
+    "collection_or_cycle"
+  when "myth", "scripture", "sutra", "hymn"
+    "scripture_myth_hymn"
+  else
+    nil
+  end
+end
+
+def work_form_from_title(title)
+  normalized = normalize_title(title)
+  return "poetry" if normalized.match?(/\b(poems|selected poems|sonnets|odes|elegies|ballads|cantos|songs|ghazals|rubaiyat)\b/)
+  return "drama" if normalized.match?(/\b(plays|tragedy|comedies|comedy|drama)\b/)
+  return "short_fiction" if normalized.match?(/\b(stories|short stories|tales|fables)\b/)
+  return "epic_or_romance" if normalized.match?(/\b(epic|saga|romance)\b/)
+  return "essay_memoir_nonfiction" if normalized.match?(/\b(essays|memoir|autobiography|confessions|diary|journal|letters)\b/)
+  return "collection_or_cycle" if normalized.match?(/\b(anthology|cycle|collected|selected works)\b/)
+
+  "unknown_form"
+end
+
+def classified_work_form(stats, title)
+  prioritized_counts = stats.answerline_form_counts.empty? ? stats.form_counts : stats.answerline_form_counts
+  form_hint, = prioritized_counts
+    .reject { |hint, _| %w[answerline_seed clue_derived_seed unknown work book].include?(hint.to_s) }
+    .max_by { |hint, count| [count, hint.to_s] }
+  work_form_from_hint(form_hint) || work_form_from_title(title)
+end
+
+def routing_status(review_status, adjudication)
+  return "needs_review" if needs_review_status?(review_status)
+  return "rejected" if rejected_review_status?(review_status)
+
+  reason = adjudication_reason(adjudication)
+  return "author_split_needed" if reason == "author_aware_split_needed"
+  return "protected_title_collision" if reason == "distinct_work_not_duplicate"
+
+  "accepted_clean"
+end
+
 def safe_tsv(value)
   normalize_space(value).gsub("\t", " ")
 end
@@ -1576,6 +1654,12 @@ def main
     answerline_count = stats.answerline_question_ids.length
     clue_count = stats.clue_question_ids.length
     total_count = stats.question_ids.length
+    form_hint = stats.form_counts.max_by { |_, count| count }&.first || "unknown"
+    work_form = classified_work_form(stats, title)
+    dominant_quizbowl_track = dominant_track_from_counts(track_counts)
+    quizbowl_track_profile = track_profile(track_counts)
+    evidence_profile = evidence_profile(answerline_count, clue_count)
+    routing_status = routing_status(row[:review_status], row[:adjudication])
 
     if row[:review_status] == "accepted_likely_work"
       data_rows << {
@@ -1596,7 +1680,12 @@ def main
         "last_year" => years.last,
         "tossup_count" => stats.question_type_counts["tossup"],
         "bonus_count" => stats.question_type_counts["bonus_part"] + stats.question_type_counts["bonus"],
-        "form_hint" => stats.form_counts.max_by { |_, count| count }&.first || "unknown",
+        "form_hint" => form_hint,
+        "work_form" => work_form,
+        "evidence_profile" => evidence_profile,
+        "dominant_quizbowl_track" => dominant_quizbowl_track,
+        "quizbowl_track_profile" => quizbowl_track_profile,
+        "routing_status" => routing_status,
         "quizbowl_track_counts" => track_counts,
         "adjudication_decision" => adjudication_decision(row[:adjudication]),
         "adjudication_reason" => adjudication_reason(row[:adjudication]),
@@ -1622,6 +1711,11 @@ def main
       "tier" => row[:tier],
       "review_status" => row[:review_status],
       "base_review_status" => row[:base_review_status],
+      "work_form" => work_form,
+      "evidence_profile" => evidence_profile,
+      "dominant_quizbowl_track" => dominant_quizbowl_track,
+      "quizbowl_track_profile" => quizbowl_track_profile,
+      "routing_status" => routing_status,
       "source_counts_json" => JSON.generate(source_counts),
       "form_counts_json" => JSON.generate(form_counts),
       "answerline_form_counts_json" => JSON.generate(answerline_form_counts),
@@ -1637,7 +1731,12 @@ def main
       "candidate_id" => work_id,
       "canonical_title" => safe_tsv(title),
       "normalized_title" => stats.normalized_title,
-      "form_hint" => stats.form_counts.max_by { |_, count| count }&.first || "unknown",
+      "form_hint" => form_hint,
+      "work_form" => work_form,
+      "evidence_profile" => evidence_profile,
+      "dominant_quizbowl_track" => dominant_quizbowl_track,
+      "quizbowl_track_profile" => quizbowl_track_profile,
+      "routing_status" => routing_status,
       "candidate_source" => source_counts.map { |source, count| "#{source}:#{count}" }.join(";"),
       "form_counts_json" => JSON.generate(form_counts),
       "answerline_form_counts_json" => JSON.generate(answerline_form_counts),
@@ -1733,12 +1832,12 @@ def main
 
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_title_candidates.tsv"),
-    %w[candidate_id canonical_title normalized_title form_hint candidate_source form_counts_json answerline_form_counts_json track_counts_json disambiguation_status base_disambiguation_status adjudication_decision adjudication_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
+    %w[candidate_id canonical_title normalized_title form_hint work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status candidate_source form_counts_json answerline_form_counts_json track_counts_json disambiguation_status base_disambiguation_status adjudication_decision adjudication_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
     candidate_tsv_rows
   )
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_canon_scores.tsv"),
-    %w[work_id rank canonical_title total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status base_review_status source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason examples_json],
+    %w[work_id rank canonical_title total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status base_review_status work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason examples_json],
     score_tsv_rows
   )
   write_tsv(
@@ -1807,7 +1906,12 @@ def main
     "llm_review_queue_count" => llm_review_rows.length,
     "mention_rows" => mention_rows.length,
     "tier_counts" => score_rows.group_by { |row| row[:tier] }.transform_values(&:length),
-    "review_status_counts" => score_rows.group_by { |row| row[:review_status] }.transform_values(&:length)
+    "review_status_counts" => score_rows.group_by { |row| row[:review_status] }.transform_values(&:length),
+    "public_work_form_counts" => data_rows.group_by { |row| row["work_form"] }.transform_values(&:length),
+    "public_evidence_profile_counts" => data_rows.group_by { |row| row["evidence_profile"] }.transform_values(&:length),
+    "public_quizbowl_track_profile_counts" => data_rows.group_by { |row| row["quizbowl_track_profile"] }.transform_values(&:length),
+    "public_routing_status_counts" => data_rows.group_by { |row| row["routing_status"] }.transform_values(&:length),
+    "public_dominant_track_counts" => data_rows.group_by { |row| row["dominant_quizbowl_track"] }.transform_values(&:length)
   }
   File.write(File.join(options[:out_dir], "quizbowl_lit_summary.json"), JSON.pretty_generate(summary) + "\n")
 

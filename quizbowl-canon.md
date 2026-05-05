@@ -12,7 +12,9 @@ wide: true
 {% assign qb_contextual = qb_items | where: "tier", "qb_contextual" %}
 {% assign qb_candidates = qb_items | where: "tier", "qb_candidate" %}
 {% assign qb_accepted = qb_items | where: "review_status", "accepted_likely_work" %}
-{% assign qb_needs_review = qb_items.size | minus: qb_accepted.size %}
+{% assign qb_author_split = qb_items | where: "routing_status", "author_split_needed" %}
+{% assign qb_title_collision = qb_items | where: "routing_status", "protected_title_collision" %}
+{% assign qb_watch_count = qb_author_split.size | plus: qb_title_collision.size %}
 
 <p class="page-intro">A quizbowl-only literature canon built directly from the raw parsed quizbowl archive. Work candidates come from raw answerlines when the question asks for a literary work, plus repeated title mentions in clue text.</p>
 
@@ -32,8 +34,8 @@ wide: true
     <span class="canon-stat-label">Major</span>
   </div>
   <div class="canon-stat canon-stat-source-review">
-    <span class="canon-stat-number">{{ qb_needs_review }}</span>
-    <span class="canon-stat-label">Needs Review</span>
+    <span class="canon-stat-number">{{ qb_watch_count }}</span>
+    <span class="canon-stat-label">Title Watch</span>
   </div>
 </div>
 
@@ -41,7 +43,7 @@ wide: true
   <span>Corpus: full parsed quizbowl archive</span>
   <span>Threshold: 4+ quizbowl questions</span>
   <span>Evidence: raw answerlines and clue text</span>
-  <span>Sort: quizbowl salience rank</span>
+  <span>Categories: evidence-derived</span>
 </div>
 
 <div class="canon-filters" aria-label="Quizbowl canon filters">
@@ -55,26 +57,46 @@ wide: true
       <option value="qb_candidate">Review Candidate</option>
     </select>
   </label>
-  <label class="canon-filter-field" for="qb-review-filter">
-    <span>Review</span>
-    <select id="qb-review-filter" aria-label="Filter by review status">
-      <option value="">Any Review Status</option>
-      <option value="accepted" selected>Accepted Likely Work</option>
-      <option value="needs-review">Needs Review</option>
-      <option value="needs_review_common_or_short_title">Common / Short Title</option>
-      <option value="needs_review_possible_character_or_person">Possible Person / Character</option>
-      <option value="needs_review_possible_combined_title">Possible Combined Title</option>
-      <option value="needs_review_fragment_title">Fragment Title</option>
-      <option value="needs_review_section_or_subwork_title">Section / Subwork Title</option>
+  <label class="canon-filter-field" for="qb-form-filter">
+    <span>Form</span>
+    <select id="qb-form-filter" aria-label="Filter by inferred work form">
+      <option value="">Any Form</option>
+      <option value="long_fiction">Long Fiction</option>
+      <option value="drama">Drama</option>
+      <option value="poetry">Poetry</option>
+      <option value="short_fiction">Short Fiction</option>
+      <option value="epic_or_romance">Epic / Romance</option>
+      <option value="essay_memoir_nonfiction">Essay / Memoir</option>
+      <option value="collection_or_cycle">Collection / Cycle</option>
+      <option value="scripture_myth_hymn">Scripture / Myth / Hymn</option>
+      <option value="unknown_form">Unknown</option>
     </select>
   </label>
-  <label class="canon-filter-field" for="qb-source-filter">
-    <span>Source</span>
-    <select id="qb-source-filter" aria-label="Filter by extraction source">
-      <option value="">Any Source</option>
-      <option value="answerline+clue">Answerline + Clue</option>
-      <option value="answerline">Answerline Only</option>
-      <option value="clue">Clue Only</option>
+  <label class="canon-filter-field" for="qb-evidence-filter">
+    <span>Evidence</span>
+    <select id="qb-evidence-filter" aria-label="Filter by evidence profile">
+      <option value="">Any Evidence</option>
+      <option value="answerline_and_clue">Answerline + Clue</option>
+      <option value="answerline_only">Answerline Only</option>
+      <option value="clue_only">Clue Only</option>
+    </select>
+  </label>
+  <label class="canon-filter-field" for="qb-context-filter">
+    <span>Context</span>
+    <select id="qb-context-filter" aria-label="Filter by dominant quizbowl context">
+      <option value="">Any Context</option>
+      <option value="literature_dominant">Literature Dominant</option>
+      <option value="cross_category_literary">Cross-Category Literary</option>
+      <option value="non_literature_context">Non-Literature Context</option>
+    </select>
+  </label>
+  <label class="canon-filter-field" for="qb-route-filter">
+    <span>Routing</span>
+    <select id="qb-route-filter" aria-label="Filter by curation route">
+      <option value="">Any Routing</option>
+      <option value="accepted_clean">Accepted</option>
+      <option value="protected_title_collision">Protected Collision</option>
+      <option value="author_split_needed">Author Split Needed</option>
     </select>
   </label>
   <label class="canon-filter-field" for="qb-sort">
@@ -97,42 +119,56 @@ wide: true
   {% for item in qb_items %}
   {% assign tier_label = item.tier | replace: "qb_", "" | replace: "_", " " | capitalize %}
   {% if item.tier == "qb_candidate" %}{% assign tier_label = "Review Candidate" %}{% endif %}
-  {% assign review_group = "needs-review" %}
-  {% assign review_label = item.review_status | replace: "_", " " | capitalize %}
-  {% if item.review_status == "accepted_likely_work" %}
-    {% assign review_group = "accepted" %}
-    {% assign review_label = "Accepted" %}
-  {% elsif item.review_status == "needs_review_common_or_short_title" %}
-    {% assign review_label = "Common / Short" %}
-  {% elsif item.review_status == "needs_review_possible_character_or_person" %}
-    {% assign review_label = "Person / Character" %}
-  {% elsif item.review_status == "needs_review_possible_combined_title" %}
-    {% assign review_label = "Combined Title" %}
-  {% elsif item.review_status == "needs_review_fragment_title" %}
-    {% assign review_label = "Fragment" %}
-  {% elsif item.review_status == "needs_review_section_or_subwork_title" %}
-    {% assign review_label = "Section / Subwork" %}
-  {% elsif item.review_status == "needs_review_low_evidence" %}
-    {% assign review_label = "Low Evidence" %}
+  {% assign form_label = item.work_form | replace: "_", " " | capitalize %}
+  {% if item.work_form == "long_fiction" %}
+    {% assign form_label = "Long Fiction" %}
+  {% elsif item.work_form == "short_fiction" %}
+    {% assign form_label = "Short Fiction" %}
+  {% elsif item.work_form == "epic_or_romance" %}
+    {% assign form_label = "Epic / Romance" %}
+  {% elsif item.work_form == "essay_memoir_nonfiction" %}
+    {% assign form_label = "Essay / Memoir" %}
+  {% elsif item.work_form == "collection_or_cycle" %}
+    {% assign form_label = "Collection / Cycle" %}
+  {% elsif item.work_form == "scripture_myth_hymn" %}
+    {% assign form_label = "Scripture / Myth / Hymn" %}
+  {% elsif item.work_form == "unknown_form" %}
+    {% assign form_label = "Unknown Form" %}
   {% endif %}
-  {% assign source_group = "clue" %}
-  {% assign source_label = "Clue Only" %}
-  {% if item.answerline_question_count > 0 and item.clue_mention_question_count > 0 %}
-    {% assign source_group = "answerline+clue" %}
-    {% assign source_label = "Answerline + Clue" %}
-  {% elsif item.answerline_question_count > 0 %}
-    {% assign source_group = "answerline" %}
-    {% assign source_label = "Answerline Only" %}
+  {% assign evidence_label = item.evidence_profile | replace: "_", " " | capitalize %}
+  {% if item.evidence_profile == "answerline_and_clue" %}
+    {% assign evidence_label = "Answerline + Clue" %}
+  {% elsif item.evidence_profile == "answerline_only" %}
+    {% assign evidence_label = "Answerline Only" %}
+  {% elsif item.evidence_profile == "clue_only" %}
+    {% assign evidence_label = "Clue Only" %}
+  {% endif %}
+  {% assign context_label = item.quizbowl_track_profile | replace: "_", " " | capitalize %}
+  {% if item.quizbowl_track_profile == "literature_dominant" %}
+    {% assign context_label = "Literature Dominant" %}
+  {% elsif item.quizbowl_track_profile == "cross_category_literary" %}
+    {% assign context_label = "Cross-Category Literary" %}
+  {% elsif item.quizbowl_track_profile == "non_literature_context" %}
+    {% assign context_label = "Non-Literature Context" %}
+  {% endif %}
+  {% assign routing_label = item.routing_status | replace: "_", " " | capitalize %}
+  {% if item.routing_status == "accepted_clean" %}
+    {% assign routing_label = "Accepted" %}
+  {% elsif item.routing_status == "protected_title_collision" %}
+    {% assign routing_label = "Protected Collision" %}
+  {% elsif item.routing_status == "author_split_needed" %}
+    {% assign routing_label = "Author Split Needed" %}
   {% endif %}
   {% assign first_example = item.examples | first %}
-  {% capture search_text %}{{ item.title }} {{ item.tier }} {{ item.review_status }} {{ item.form_hint }} {{ first_example.set_title }} {{ first_example.snippet }}{% endcapture %}
+  {% capture search_text %}{{ item.title }} {{ item.tier }} {{ item.work_form }} {{ item.evidence_profile }} {{ item.dominant_quizbowl_track }} {{ item.quizbowl_track_profile }} {{ item.routing_status }} {{ first_example.set_title }} {{ first_example.snippet }}{% endcapture %}
   <article class="canon-item quizbowl-canon-item"
            data-rank="{{ item.rank }}"
            data-title="{{ item.title | downcase | escape }}"
            data-tier="{{ item.tier | escape }}"
-           data-review="{{ item.review_status | escape }}"
-           data-review-group="{{ review_group }}"
-           data-source="{{ source_group }}"
+           data-form="{{ item.work_form | escape }}"
+           data-evidence="{{ item.evidence_profile | escape }}"
+           data-context="{{ item.quizbowl_track_profile | escape }}"
+           data-route="{{ item.routing_status | escape }}"
            data-question-count="{{ item.total_question_count }}"
            data-search="{{ search_text | strip_newlines | downcase | escape }}">
     <div class="canon-status-mark quizbowl-tier-mark" aria-hidden="true"></div>
@@ -140,9 +176,8 @@ wide: true
       <div class="canon-item-topline">
         <span class="canon-sequence-badge">#{{ item.rank }}</span>
         <span class="canon-era-badge">{{ tier_label }}</span>
+        <span class="canon-date">{{ form_label }}</span>
         <span class="canon-date">{{ item.total_question_count }} questions</span>
-        <span class="canon-date">{{ item.answerline_question_count }} answers</span>
-        <span class="canon-date">{{ item.clue_mention_question_count }} clues</span>
         <span class="canon-date">{{ item.distinct_set_count }} sets</span>
         {% if item.first_year and item.last_year %}
         <span class="canon-date">{{ item.first_year }}-{{ item.last_year }}</span>
@@ -150,8 +185,12 @@ wide: true
       </div>
       <h2 class="canon-title">{{ item.title }}</h2>
       <div class="canon-meta">
-        <span class="canon-chip canon-level-chip">{{ review_label }}</span>
-        <span class="canon-chip">{{ source_label }}</span>
+        <span class="canon-chip canon-level-chip">{{ evidence_label }}</span>
+        <span class="canon-chip">{{ context_label }}</span>
+        {% if item.routing_status != "accepted_clean" %}
+        <span class="canon-chip quizbowl-routing-chip">{{ routing_label }}</span>
+        {% endif %}
+        <span class="canon-chip">{{ item.dominant_quizbowl_track | replace: "_", " " }}</span>
         <span class="canon-chip">{{ item.tossup_count }} tossups</span>
         <span class="canon-chip">{{ item.bonus_count }} bonuses</span>
       </div>
@@ -180,8 +219,10 @@ wide: true
   var rows = Array.prototype.slice.call(document.querySelectorAll('.quizbowl-canon-item'));
   var list = document.getElementById('qb-canon-list');
   var tierFilter = document.getElementById('qb-tier-filter');
-  var reviewFilter = document.getElementById('qb-review-filter');
-  var sourceFilter = document.getElementById('qb-source-filter');
+  var formFilter = document.getElementById('qb-form-filter');
+  var evidenceFilter = document.getElementById('qb-evidence-filter');
+  var contextFilter = document.getElementById('qb-context-filter');
+  var routeFilter = document.getElementById('qb-route-filter');
   var sortSelect = document.getElementById('qb-sort');
   var searchInput = document.getElementById('qb-search');
   var visibleCount = document.getElementById('qb-visible-count');
@@ -194,15 +235,17 @@ wide: true
 
   function matches(row) {
     var tier = tierFilter ? tierFilter.value : '';
-    var review = reviewFilter ? reviewFilter.value : '';
-    var source = sourceFilter ? sourceFilter.value : '';
+    var form = formFilter ? formFilter.value : '';
+    var evidence = evidenceFilter ? evidenceFilter.value : '';
+    var context = contextFilter ? contextFilter.value : '';
+    var route = routeFilter ? routeFilter.value : '';
     var search = searchInput ? searchInput.value.toLowerCase().trim() : '';
 
     if (tier && row.getAttribute('data-tier') !== tier) return false;
-    if (review === 'accepted' && row.getAttribute('data-review-group') !== 'accepted') return false;
-    if (review === 'needs-review' && row.getAttribute('data-review-group') !== 'needs-review') return false;
-    if (review && review !== 'accepted' && review !== 'needs-review' && row.getAttribute('data-review') !== review) return false;
-    if (source && row.getAttribute('data-source') !== source) return false;
+    if (form && row.getAttribute('data-form') !== form) return false;
+    if (evidence && row.getAttribute('data-evidence') !== evidence) return false;
+    if (context && row.getAttribute('data-context') !== context) return false;
+    if (route && row.getAttribute('data-route') !== route) return false;
     if (search && (row.getAttribute('data-search') || '').indexOf(search) === -1) return false;
     return true;
   }
@@ -230,7 +273,7 @@ wide: true
     if (noResults) noResults.style.display = rows.length > 0 && shown === 0 ? '' : 'none';
   }
 
-  [tierFilter, reviewFilter, sourceFilter, sortSelect].forEach(function (filter) {
+  [tierFilter, formFilter, evidenceFilter, contextFilter, routeFilter, sortSelect].forEach(function (filter) {
     if (filter) filter.addEventListener('change', render);
   });
   if (searchInput) searchInput.addEventListener('input', render);

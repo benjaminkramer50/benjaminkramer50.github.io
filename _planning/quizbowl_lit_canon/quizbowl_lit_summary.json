@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T08:07:00Z",
+  "generated_at": "2026-05-05T13:05:27Z",
   "db_path": "file:/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db?mode=ro&immutable=1",
   "source_table": "archive_parsed_questions",
   "evidence_fields": [
@@ -432,5 +432,44 @@
     "needs_review_low_evidence": 1208,
     "needs_review_fragment_title": 1,
     "rejected_duplicate_or_art_context_variant": 1
+  },
+  "public_work_form_counts": {
+    "long_fiction": 1713,
+    "epic_or_romance": 75,
+    "collection_or_cycle": 393,
+    "drama": 738,
+    "poetry": 956,
+    "short_fiction": 711,
+    "essay_memoir_nonfiction": 216,
+    "unknown_form": 239,
+    "scripture_myth_hymn": 9
+  },
+  "public_evidence_profile_counts": {
+    "answerline_and_clue": 2753,
+    "clue_only": 2030,
+    "answerline_only": 267
+  },
+  "public_quizbowl_track_profile_counts": {
+    "literature_dominant": 2411,
+    "cross_category_literary": 1515,
+    "non_literature_context": 1124
+  },
+  "public_routing_status_counts": {
+    "accepted_clean": 5037,
+    "protected_title_collision": 10,
+    "author_split_needed": 3
+  },
+  "public_dominant_track_counts": {
+    "literature": 2340,
+    "other_academic": 2630,
+    "philosophy": 14,
+    "fine_arts": 12,
+    "mythology": 13,
+    "pop_culture": 14,
+    "religion": 6,
+    "history": 5,
+    "geography": 13,
+    "social_science": 1,
+    "science": 2
   }
 }

@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-05T08:07:00Z
+Generated: 2026-05-05T13:05:27Z
 
 ## Corpus
 
