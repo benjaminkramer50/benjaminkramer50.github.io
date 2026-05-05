@@ -86,14 +86,8 @@
 - slug: a-dog-s-life-1962
   title: A Dog's Life
   year: 1962
-  director: Gualiero Jacopetti
+  director: Gualtiero Jacopetti & Paolo Cavara
   source_index: 427
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: a-dog-s-life-1962
-  title: A Dog's Life
-  year: 1962
-  director: Paolo Cavara
-  source_index: 910
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: a-hard-day-s-night-1964
   title: A Hard Day's Night
@@ -110,26 +104,14 @@
 - slug: a-matter-of-life-and-death-1946
   title: A Matter of Life and Death
   year: 1946
-  director: Emeric Pressburger
-  source_index: 298
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: a-matter-of-life-and-death-1946
-  title: A Matter of Life and Death
-  year: 1946
   director: Michael Powell & Emeric Pressburger
-  source_index: 826
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: a-night-at-the-opera-1935
-  title: A Night at the Opera
-  year: 1935
-  director: Edmund Goulding
-  source_index: 281
+  source_index: 298
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: a-night-at-the-opera-1935
   title: A Night at the Opera
   year: 1935
   director: Sam Wood
-  source_index: 1065
+  source_index: 281
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: a-nightmare-on-elm-street-1984
   title: A Nightmare on Elm Street
@@ -194,14 +176,8 @@
 - slug: a-tale-of-the-wind-1988
   title: A Tale of the Wind
   year: 1988
-  director: Jordan Peele
-  source_index: 637
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: a-tale-of-the-wind-1988
-  title: A Tale of the Wind
-  year: 1988
   director: Joris Ivens
-  source_index: 638
+  source_index: 637
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: a-throw-of-dice-1929
   title: A Throw of Dice
@@ -278,26 +254,14 @@
 - slug: aileen-life-and-death-of-a-serial-killer-2003
   title: 'Aileen: Life and Death of a Serial Killer'
   year: 2003
-  director: Joan Churchill
+  director: Nick Broomfield & Joan Churchill
   source_index: 570
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: aileen-life-and-death-of-a-serial-killer-2003
-  title: 'Aileen: Life and Death of a Serial Killer'
-  year: 2003
-  director: Nick Broomfield
-  source_index: 871
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: airplane-1980
   title: Airplane!
   year: 1980
-  director: David Zucker
+  director: Jim Abrahams & David Zucker
   source_index: 260
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: airplane-1980
-  title: Airplane!
-  year: 1980
-  director: Jim Abrahams
-  source_index: 562
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: akira-1988
   title: Akira
@@ -500,14 +464,8 @@
 - slug: animal-farm-1954
   title: Animal Farm
   year: 1954
-  director: John Halas
+  director: John Halas & Joy Batchelor
   source_index: 605
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: animal-farm-1954
-  title: Animal Farm
-  year: 1954
-  director: Joy Batchelor
-  source_index: 652
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: annie-hall-1977
   title: Annie Hall
@@ -602,14 +560,8 @@
 - slug: avengers-infinity-war-2018
   title: 'Avengers: Infinity War'
   year: 2018
-  director: Anthony Russo
+  director: Anthony Russo & Joe Russo
   source_index: 106
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: avengers-infinity-war-2018
-  title: 'Avengers: Infinity War'
-  year: 2018
-  director: Joe Russo
-  source_index: 571
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: babe-1995
   title: Babe
@@ -692,14 +644,8 @@
 - slug: beauty-and-the-beast-1946
   title: Beauty and the Beast
   year: 1946
-  director: Jean Cocteau
+  director: Jean Cocteau & René Clément
   source_index: 529
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: beauty-and-the-beast-1946
-  title: Beauty and the Beast
-  year: 1946
-  director: René Clément
-  source_index: 982
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: before-the-revolution-1964
   title: Before the Revolution
@@ -764,14 +710,8 @@
 - slug: black-narcissus-1946
   title: Black Narcissus
   year: 1946
-  director: Emeric Pressburger
-  source_index: 299
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: black-narcissus-1946
-  title: Black Narcissus
-  year: 1946
   director: Michael Powell & Emeric Pressburger
-  source_index: 827
+  source_index: 299
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: black-orpheus-1959
   title: Black Orpheus
@@ -1076,14 +1016,8 @@
 - slug: caravaggio-1986
   title: Caravaggio
   year: 1986
-  director: Denys Arcand
-  source_index: 266
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: caravaggio-1986
-  title: Caravaggio
-  year: 1986
   director: Derek Jarman
-  source_index: 267
+  source_index: 266
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: carmen-jones-1954
   title: Carmen Jones
@@ -1178,14 +1112,8 @@
 - slug: christ-stopped-at-eboli-1979
   title: Christ Stopped at Eboli
   year: 1979
-  director: Forugh Farrokhzad
-  source_index: 333
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: christ-stopped-at-eboli-1979
-  title: Christ Stopped at Eboli
-  year: 1979
   director: Francesco Rosi
-  source_index: 334
+  source_index: 333
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: chronicle-of-a-summer-1961
   title: Chronicle of a Summer
@@ -1202,14 +1130,8 @@
 - slug: cinema-paradiso-1988
   title: Cinema Paradiso
   year: 1988
-  director: Gillo Pontecorvo
-  source_index: 416
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: cinema-paradiso-1988
-  title: Cinema Paradiso
-  year: 1988
   director: Giuseppe Tornatore
-  source_index: 417
+  source_index: 416
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: citizen-kane-1941
   title: Citizen Kane
@@ -1232,14 +1154,8 @@
 - slug: city-of-god-2002
   title: City of God
   year: 2002
-  director: Fernando Meirelles
+  director: Fernando Meirelles & Kátia Lund
   source_index: 330
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: city-of-god-2002
-  title: City of God
-  year: 2002
-  director: Kátia Lund
-  source_index: 665
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: cleo-from-5-to-7-1962
   title: Cleo from 5 to 7
@@ -1366,12 +1282,6 @@
   year: 1940
   director: Dorothy Arzner
   source_index: 271
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: dance-girl-dance-1940
-  title: Dance, Girl, Dance
-  year: 1940
-  director: Roy del Ruth
-  source_index: 1052
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: dancer-in-the-dark-2000
   title: Dancer in the Dark
@@ -1682,14 +1592,8 @@
 - slug: el-norte-1983
   title: El Norte
   year: 1983
-  director: Gregory La Cava
-  source_index: 423
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: el-norte-1983
-  title: El Norte
-  year: 1983
   director: Gregory Nava
-  source_index: 424
+  source_index: 423
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: el-topo-1970
   title: El Topo
@@ -1772,14 +1676,8 @@
 - slug: fantasia-1940
   title: Fantasia
   year: 1940
-  director: James Algar
+  director: James Algar & Samuel Armstrong
   source_index: 508
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: fantasia-1940
-  title: Fantasia
-  year: 1940
-  director: Samuel Armstrong
-  source_index: 1066
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: fantastic-planet-1973
   title: Fantastic Planet
@@ -1904,13 +1802,7 @@
 - slug: foolish-wives-1922
   title: Foolish Wives
   year: 1922
-  director: Eric von Stroheim
-  source_index: 306
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: foolish-wives-1922
-  title: Foolish Wives
-  year: 1922
-  director: Éric Rohmer
+  director: Erich von Stroheim
   source_index: 304
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: footlight-parade-1933
@@ -2078,14 +1970,8 @@
 - slug: gimme-shelter-1970
   title: Gimme Shelter
   year: 1970
-  director: Albert Maysles
+  director: Albert Maysles & David Maysles
   source_index: 34
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: gimme-shelter-1970
-  title: Gimme Shelter
-  year: 1970
-  director: David Maysles
-  source_index: 256
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: gladiator-2000
   title: Gladiator
@@ -2102,14 +1988,8 @@
 - slug: glory-1989
   title: Glory
   year: 1989
-  director: Edward Yang
-  source_index: 286
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: glory-1989
-  title: Glory
-  year: 1989
   director: Edward Zwick
-  source_index: 287
+  source_index: 286
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: gold-diggers-of-1933-1933
   title: Gold Diggers of 1933
@@ -2126,14 +2006,8 @@
 - slug: gone-with-the-wind-1939
   title: Gone With the Wind
   year: 1939
-  director: George Cukor
-  source_index: 387
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: gone-with-the-wind-1939
-  title: Gone With the Wind
-  year: 1939
   director: Victor Fleming
-  source_index: 1187
+  source_index: 387
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: good-bye-lenin-2003
   title: Good bye, Lenin!
@@ -2192,13 +2066,7 @@
 - slug: greed-1924
   title: Greed
   year: 1924
-  director: Eric von Stroheim
-  source_index: 307
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: greed-1924
-  title: Greed
-  year: 1924
-  director: Éric Rohmer
+  director: Erich von Stroheim
   source_index: 305
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: groundhog-day-1993
@@ -2276,20 +2144,8 @@
 - slug: hearts-of-darkness-a-filmmaker-s-apocalypse-1991
   title: 'Hearts of Darkness: A Filmmaker''s Apocalypse'
   year: 1991
-  director: Eleanor Coppola
+  director: Fax Bahr, George Hickenlooper & Eleanor Coppola
   source_index: 290
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: hearts-of-darkness-a-filmmaker-s-apocalypse-1991
-  title: 'Hearts of Darkness: A Filmmaker''s Apocalypse'
-  year: 1991
-  director: Fax Bahr
-  source_index: 322
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: hearts-of-darkness-a-filmmaker-s-apocalypse-1991
-  title: 'Hearts of Darkness: A Filmmaker''s Apocalypse'
-  year: 1991
-  director: George Hickenlooper
-  source_index: 395
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: heat-1995
   title: Heat
@@ -2456,14 +2312,8 @@
 - slug: i-know-where-i-m-going-1945
   title: I Know Where I'm Going!
   year: 1945
-  director: Emeric Pressburger
-  source_index: 297
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: i-know-where-i-m-going-1945
-  title: I Know Where I'm Going!
-  year: 1945
   director: Michael Powell & Emeric Pressburger
-  source_index: 825
+  source_index: 297
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: i-walked-with-a-zombie-1943
   title: I Walked with a Zombie
@@ -2546,14 +2396,8 @@
 - slug: inglourious-basterds-2009
   title: Inglourious Basterds
   year: 2009
-  director: Eli Roth
-  source_index: 292
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: inglourious-basterds-2009
-  title: Inglourious Basterds
-  year: 2009
   director: Quentin Tarantino
-  source_index: 964
+  source_index: 292
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: inside-llewyn-davis-2013
   title: Inside Llewyn Davis
@@ -2708,14 +2552,8 @@
 - slug: king-kong-1933
   title: King Kong
   year: 1933
-  director: Ernest B. Schoedsack
-  source_index: 309
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: king-kong-1933
-  title: King Kong
-  year: 1933
   director: Merian C. Cooper & Ernest B. Schoedsack
-  source_index: 800
+  source_index: 309
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: king-of-new-york-1990
   title: King of New York
@@ -2918,14 +2756,8 @@
 - slug: little-miss-sunshine-2006
   title: Little Miss Sunshine
   year: 2006
-  director: Jonathan Dayton
+  director: Jonathan Dayton & Valerie Faris
   source_index: 631
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: little-miss-sunshine-2006
-  title: Little Miss Sunshine
-  year: 2006
-  director: Valerie Faris
-  source_index: 1183
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: live-and-become-2005
   title: Live and Become
@@ -2942,14 +2774,8 @@
 - slug: lock-stock-and-two-smoking-barrels-1998
   title: Lock, Stock and Two Smoking Barrels
   year: 1998
-  director: Guy Maddin
-  source_index: 434
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: lock-stock-and-two-smoking-barrels-1998
-  title: Lock, Stock and Two Smoking Barrels
-  year: 1998
   director: Guy Ritchie
-  source_index: 435
+  source_index: 434
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: lola-1961
   title: Lola
@@ -3170,14 +2996,8 @@
 - slug: meshes-of-the-afternoon-1943
   title: Meshes of the Afternoon
   year: 1943
-  director: Aleksander Hammid
+  director: Maya Deren & Alexander Hammid
   source_index: 46
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: meshes-of-the-afternoon-1943
-  title: Meshes of the Afternoon
-  year: 1943
-  director: Maya Deren
-  source_index: 790
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: metropolis-1927
   title: Metropolis
@@ -3242,14 +3062,8 @@
 - slug: monty-python-and-the-holy-grail-1975
   title: Monty Python and the Holy Grail
   year: 1975
-  director: Terry Gilliam
+  director: Terry Gilliam & Terry Jones
   source_index: 1155
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: monty-python-and-the-holy-grail-1975
-  title: Monty Python and the Holy Grail
-  year: 1975
-  director: Terry Jones
-  source_index: 1156
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: moolaade-2004
   title: Moolaade
@@ -3332,14 +3146,8 @@
 - slug: mutiny-on-the-bounty-1935
   title: Mutiny on the Bounty
   year: 1935
-  director: Frank Darabont
-  source_index: 353
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: mutiny-on-the-bounty-1935
-  title: Mutiny on the Bounty
-  year: 1935
   director: Frank Lloyd
-  source_index: 354
+  source_index: 353
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: my-brilliant-career-1979
   title: My Brilliant Career
@@ -3524,14 +3332,8 @@
 - slug: october-ten-days-that-shook-the-world-1927
   title: 'October: Ten Days That Shook the World'
   year: 1927
-  director: Grigori Aleksandrov
+  director: Sergei M. Eisenstein & Grigori Aleksandrov
   source_index: 426
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: october-ten-days-that-shook-the-world-1927
-  title: 'October: Ten Days That Shook the World'
-  year: 1927
-  director: Sergei M. Eisenstein
-  source_index: 1079
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: odd-man-out-1947
   title: Odd Man Out
@@ -3566,14 +3368,8 @@
 - slug: on-the-town-1949
   title: On the Town
   year: 1949
-  director: Gene Kelly
+  director: Gene Kelly & Stanley Donen
   source_index: 378
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: on-the-town-1949
-  title: On the Town
-  year: 1949
-  director: Stanley Donen
-  source_index: 1105
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: on-the-waterfront-1954
   title: On the Waterfront
@@ -3668,14 +3464,8 @@
 - slug: our-hospitality-1923
   title: Our Hospitality
   year: 1923
-  director: Buster Keaton
+  director: Buster Keaton & John G. Blystone
   source_index: 161
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: our-hospitality-1923
-  title: Our Hospitality
-  year: 1923
-  director: John G. Blystone
-  source_index: 603
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: out-of-africa-1985
   title: Out of Africa
@@ -3740,14 +3530,8 @@
 - slug: passenger-1963
   title: Passenger
   year: 1963
-  director: Andrzej Munk
+  director: Andrzej Munk & Witold Lesiewicz
   source_index: 90
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: passenger-1963
-  title: Passenger
-  year: 1963
-  director: Witold Lesiewicz
-  source_index: 1238
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: pat-garrett-and-billy-the-kid-1973
   title: Pat Garrett and Billy the Kid
@@ -3794,14 +3578,8 @@
 - slug: performance-1970
   title: Performance
   year: 1970
-  director: Donald Cammell
+  director: Donald Cammell & Nicolas Roeg
   source_index: 270
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: performance-1970
-  title: Performance
-  year: 1970
-  director: Nicolas Roeg
-  source_index: 872
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: persona-1966
   title: Persona
@@ -4028,14 +3806,8 @@
 - slug: red-river-1948
   title: Red River
   year: 1948
-  director: Arthur Rosson
+  director: Howard Hawks & Arthur Rosson
   source_index: 111
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: red-river-1948
-  title: Red River
-  year: 1948
-  director: Howard Hawks
-  source_index: 465
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: red-sorghum-1987
   title: Red Sorghum
@@ -4268,14 +4040,8 @@
 - slug: scarface-the-shame-of-a-nation-1932
   title: 'Scarface: The Shame Of A Nation'
   year: 1932
-  director: Howard Hawks
+  director: Howard Hawks & Richard Rosson
   source_index: 466
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: scarface-the-shame-of-a-nation-1932
-  title: 'Scarface: The Shame Of A Nation'
-  year: 1932
-  director: Richard Rosson
-  source_index: 990
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: schindler-s-list-1993
   title: Schindler's List
@@ -4376,14 +4142,8 @@
 - slug: shaft-1971
   title: Shaft
   year: 1971
-  director: Goldfrey Reggio
-  source_index: 420
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: shaft-1971
-  title: Shaft
-  year: 1971
   director: Gordon Parks
-  source_index: 421
+  source_index: 420
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: shame-1968
   title: Shame
@@ -4496,14 +4256,8 @@
 - slug: singin-in-the-rain-1952
   title: Singin' in the Rain
   year: 1952
-  director: Gene Kelly
+  director: Gene Kelly & Stanley Donen
   source_index: 379
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: singin-in-the-rain-1952
-  title: Singin' in the Rain
-  year: 1952
-  director: Stanley Donen
-  source_index: 1106
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: skyfall-2012
   title: Skyfall
@@ -4538,14 +4292,8 @@
 - slug: slumdog-millionaire-2008
   title: Slumdog Millionaire
   year: 2008
-  director: Danny Boyle
+  director: Danny Boyle & Loveleen Tandan
   source_index: 226
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: slumdog-millionaire-2008
-  title: Slumdog Millionaire
-  year: 2008
-  director: Loveleen Tandan
-  source_index: 730
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: smiles-of-a-summer-night-1955
   title: Smiles of a Summer Night
@@ -4556,26 +4304,14 @@
 - slug: smoke-1995
   title: Smoke
   year: 1995
-  director: Paul Auster
+  director: Wayne Wang & Paul Auster
   source_index: 914
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: smoke-1995
-  title: Smoke
-  year: 1995
-  director: Wayne Wang
-  source_index: 1204
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: snow-white-and-the-seven-dwarfs-1937
   title: Snow White and the Seven Dwarfs
   year: 1937
   director: David Hand
   source_index: 244
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: snow-white-and-the-seven-dwarfs-1937
-  title: Snow White and the Seven Dwarfs
-  year: 1937
-  director: William Cottrell
-  source_index: 1221
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: solaris-1972
   title: Solaris
@@ -4712,14 +4448,8 @@
 - slug: steamboat-bill-jr-1928
   title: Steamboat Bill, Jr.
   year: 1928
-  director: Buster Keaton
+  director: Charles Reisner & Buster Keaton
   source_index: 164
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: steamboat-bill-jr-1928
-  title: Steamboat Bill, Jr.
-  year: 1928
-  director: Charles Reisner
-  source_index: 189
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: stella-dallas-1937
   title: Stella Dallas
@@ -4742,14 +4472,8 @@
 - slug: straight-outta-compton-2015
   title: Straight Outta Compton
   year: 2015
-  director: Errol Morris
-  source_index: 314
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: straight-outta-compton-2015
-  title: Straight Outta Compton
-  year: 2015
   director: F. Gary Gray
-  source_index: 315
+  source_index: 314
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: strange-days-1995
   title: Strange Days
@@ -4964,14 +4688,8 @@
 - slug: the-adventures-of-prince-achmed-1926
   title: The Adventures of Prince Achmed
   year: 1926
-  director: Carl Koch
-  source_index: 167
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-adventures-of-prince-achmed-1926
-  title: The Adventures of Prince Achmed
-  year: 1926
   director: Lotte Reiniger
-  source_index: 724
+  source_index: 167
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-adventures-of-priscilla-queen-of-the-desert-1994
   title: The adventures of Priscilla, Queen of the Desert
@@ -4982,14 +4700,8 @@
 - slug: the-adventures-of-robin-hood-1938
   title: The Adventures of Robin Hood
   year: 1938
-  director: Michael Curtiz
+  director: Michael Curtiz & William Keighley
   source_index: 810
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-adventures-of-robin-hood-1938
-  title: The Adventures of Robin Hood
-  year: 1938
-  director: William Keighley
-  source_index: 1225
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-african-queen-1951
   title: The African Queen
@@ -5162,14 +4874,8 @@
 - slug: the-big-parade-1925
   title: The Big Parade
   year: 1925
-  director: George W. Hill
-  source_index: 410
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-big-parade-1925
-  title: The Big Parade
-  year: 1925
   director: King Vidor
-  source_index: 685
+  source_index: 410
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-big-red-one-1980
   title: The Big Red One
@@ -5246,14 +4952,8 @@
 - slug: the-blair-witch-project-1999
   title: The Blair Witch Project
   year: 1999
-  director: Daniel Myrick
+  director: Daniel Myrick & Eduardo Sánchez
   source_index: 222
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-blair-witch-project-1999
-  title: The Blair Witch Project
-  year: 1999
-  director: Eduardo Sánchez
-  source_index: 282
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-blue-angel-1930
   title: The Blue Angel
@@ -5618,14 +5318,8 @@
 - slug: the-general-1927
   title: The General
   year: 1927
-  director: Buster Keaton
+  director: Buster Keaton & Clyde Bruckman
   source_index: 163
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-general-1927
-  title: The General
-  year: 1927
-  director: Clyde Bruckman
-  source_index: 212
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-ghost-and-mrs-muir-1947
   title: The Ghost and Mrs. Muir
@@ -5882,14 +5576,8 @@
 - slug: the-kid-brother-1927
   title: The Kid Brother
   year: 1927
-  director: J. A. Howe
+  director: Ted Wilde & J. A. Howe
   source_index: 490
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-kid-brother-1927
-  title: The Kid Brother
-  year: 1927
-  director: Ted Wilde
-  source_index: 1147
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-kid-with-a-bike-2011
   title: The Kid with a Bike
@@ -6020,14 +5708,8 @@
 - slug: the-life-and-death-of-colonel-blimp-1943
   title: The Life and Death of Colonel Blimp
   year: 1943
-  director: Emeric Pressburger
-  source_index: 296
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-life-and-death-of-colonel-blimp-1943
-  title: The Life and Death of Colonel Blimp
-  year: 1943
   director: Michael Powell & Emeric Pressburger
-  source_index: 824
+  source_index: 296
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-life-of-emile-zola-1937
   title: The Life of Emile Zola
@@ -6038,14 +5720,8 @@
 - slug: the-lion-king-1994
   title: The Lion King
   year: 1994
-  director: Rob Minkoff
+  director: Roger Allers & Rob Minkoff
   source_index: 998
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-lion-king-1994
-  title: The Lion King
-  year: 1994
-  director: Roger Allers
-  source_index: 1039
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-lives-of-others-2006
   title: The Lives of Others
@@ -6080,14 +5756,8 @@
 - slug: the-magnificent-ambersons-1942
   title: The Magnificent Ambersons
   year: 1942
-  director: Fred Fleck
-  source_index: 361
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-magnificent-ambersons-1942
-  title: The Magnificent Ambersons
-  year: 1942
   director: Orson Welles
-  source_index: 896
+  source_index: 361
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-maltese-falcon-1941
   title: The Maltese Falcon
@@ -6302,14 +5972,8 @@
 - slug: the-phantom-of-the-opera-1925
   title: The Phantom of the Opera
   year: 1925
-  director: Lon Chaney
-  source_index: 722
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-phantom-of-the-opera-1925
-  title: The Phantom of the Opera
-  year: 1925
   director: Rupert Julian
-  source_index: 1053
+  source_index: 722
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-phenix-city-story-1955
   title: The Phenix City Story
@@ -6446,14 +6110,8 @@
 - slug: the-red-shoes-1948
   title: The Red Shoes
   year: 1948
-  director: Emeric Pressburger
-  source_index: 300
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-red-shoes-1948
-  title: The Red Shoes
-  year: 1948
   director: Michael Powell & Emeric Pressburger
-  source_index: 828
+  source_index: 300
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-revenant-2015
   title: The Revenant
@@ -6878,14 +6536,8 @@
 - slug: the-wizard-of-oz-1939
   title: The Wizard of Oz
   year: 1939
-  director: George Cukor
-  source_index: 388
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: the-wizard-of-oz-1939
-  title: The Wizard of Oz
-  year: 1939
   director: Victor Fleming
-  source_index: 1188
+  source_index: 388
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: the-wolf-man-1941
   title: The Wolf Man
@@ -6950,14 +6602,8 @@
 - slug: there-s-something-about-mary-1998
   title: There's Something About Mary
   year: 1998
-  director: Bobby Farrelly
+  director: Peter Farrelly & Bobby Farrelly
   source_index: 149
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: there-s-something-about-mary-1998
-  title: There's Something About Mary
-  year: 1998
-  director: Peter Farrelly
-  source_index: 939
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: things-to-come-1936
   title: Things to Come
@@ -7100,13 +6746,7 @@
 - slug: too-early-too-late-1981
   title: Too Early, Too Late
   year: 1981
-  director: Danièle Huillet
-  source_index: 276
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: too-early-too-late-1981
-  title: Too Early, Too Late
-  year: 1981
-  director: Danièle Huillet
+  director: Danièle Huillet & Jean-Marie Straub
   source_index: 223
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: tootsie-1982
@@ -7286,14 +6926,8 @@
 - slug: vij-1967
   title: Vij
   year: 1967
-  director: Georgiy Kropachyov
+  director: Konstantin Ershov & Georgiy Kropachyov
   source_index: 413
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: vij-1967
-  title: Vij
-  year: 1967
-  director: Konstantin Ershov
-  source_index: 691
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: vinyl-1965
   title: Vinyl
@@ -7394,14 +7028,8 @@
 - slug: west-side-story-1961
   title: West Side Story
   year: 1961
-  director: Jerome Robbins
+  director: Robert Wise & Jerome Robbins
   source_index: 558
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: west-side-story-1961
-  title: West Side Story
-  year: 1961
-  director: Robert Wise
-  source_index: 1027
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: what-ever-happened-to-baby-jane-1962
   title: What Ever Happened to Baby Jane?
@@ -7538,14 +7166,8 @@
 - slug: yol-1982
   title: Yol
   year: 1982
-  director: Serif Gören
+  director: Şerif Gören & Yılmaz Güney
   source_index: 1087
-  source: '1001 Movies You Must See Before You Die Wiki: By Director'
-- slug: yol-1982
-  title: Yol
-  year: 1982
-  director: Yilmaz Güney
-  source_index: 1255
   source: '1001 Movies You Must See Before You Die Wiki: By Director'
 - slug: young-frankenstein-1974
   title: Young Frankenstein
