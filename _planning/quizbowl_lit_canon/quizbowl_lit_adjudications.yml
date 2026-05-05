@@ -17208,3 +17208,1037 @@ decisions:
   source: codex_phase_c_duplicate_disambiguation
   notes: 'Phase C duplicate consolidation: merge article variant into Diary of a
     Madman; author-aware Gogol/Lu Xun split is deferred.'
+- candidate_id: qb_lit_tale_of_two_cities_8e569eb6
+  canonical_title: Tale of Two Cities
+  normalized_title: tale of two cities
+  decision: alias
+  alias_of: A Tale of Two Cities
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into A Tale of Two Cities.'
+- candidate_id: qb_lit_the_mending_wall_d5c53dd4
+  canonical_title: The Mending Wall
+  normalized_title: the mending wall
+  decision: alias
+  alias_of: Mending Wall
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Mending Wall.'
+- candidate_id: qb_lit_playboy_of_the_western_world_fd4512b6
+  canonical_title: Playboy of the Western World
+  normalized_title: playboy of the western world
+  decision: alias
+  alias_of: The Playboy of the Western World
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Playboy of the Western World.'
+- candidate_id: qb_lit_a_remembrance_of_things_past_1809575c
+  canonical_title: A Remembrance of Things Past
+  normalized_title: a remembrance of things past
+  decision: alias
+  alias_of: Remembrance of Things Past
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Remembrance of Things Past.'
+- candidate_id: qb_lit_the_ball_of_fat_8aff0239
+  canonical_title: The Ball of Fat
+  normalized_title: the ball of fat
+  decision: alias
+  alias_of: Ball of Fat
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Ball of Fat.'
+- candidate_id: qb_lit_decameron_484651a7
+  canonical_title: Decameron
+  normalized_title: decameron
+  decision: alias
+  alias_of: The Decameron
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Decameron.'
+- candidate_id: qb_lit_the_sentimental_education_2f327e77
+  canonical_title: The Sentimental Education
+  normalized_title: the sentimental education
+  decision: alias
+  alias_of: Sentimental Education
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Sentimental Education.'
+- candidate_id: qb_lit_mysteries_of_udolpho_f134da26
+  canonical_title: Mysteries of Udolpho
+  normalized_title: mysteries of udolpho
+  decision: alias
+  alias_of: The Mysteries of Udolpho
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Mysteries of Udolpho.'
+- candidate_id: qb_lit_supermarket_in_california_96b040d4
+  canonical_title: Supermarket in California
+  normalized_title: supermarket in california
+  decision: alias
+  alias_of: A Supermarket in California
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into A Supermarket in California.'
+- candidate_id: qb_lit_the_death_of_a_naturalist_894fca31
+  canonical_title: The Death of a Naturalist
+  normalized_title: the death of a naturalist
+  decision: alias
+  alias_of: Death of a Naturalist
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Death of a Naturalist.'
+- candidate_id: qb_lit_murders_in_the_rue_morgue_dcdc1d2c
+  canonical_title: Murders in the Rue Morgue
+  normalized_title: murders in the rue morgue
+  decision: alias
+  alias_of: The Murders in the Rue Morgue
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Murders in the Rue Morgue.'
+- candidate_id: qb_lit_celebrated_jumping_frog_of_calaveras_county_8efe5d9a
+  canonical_title: Celebrated Jumping Frog of Calaveras County
+  normalized_title: celebrated jumping frog of calaveras county
+  decision: alias
+  alias_of: The Celebrated Jumping Frog of Calaveras County
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Celebrated Jumping Frog of Calaveras County.'
+- candidate_id: qb_lit_story_of_an_hour_c07525b4
+  canonical_title: Story of an Hour
+  normalized_title: story of an hour
+  decision: alias
+  alias_of: The Story of an Hour
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Story of an Hour.'
+- candidate_id: qb_lit_the_archaic_torso_of_apollo_166eb4f3
+  canonical_title: The Archaic Torso of Apollo
+  normalized_title: the archaic torso of apollo
+  decision: alias
+  alias_of: Archaic Torso of Apollo
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Archaic Torso of Apollo.'
+- candidate_id: qb_lit_a_diamond_as_big_as_the_ritz_c1d0c6ca
+  canonical_title: A Diamond as Big as the Ritz
+  normalized_title: a diamond as big as the ritz
+  decision: alias
+  alias_of: The Diamond as Big as the Ritz
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Diamond as Big as the Ritz.'
+- candidate_id: qb_lit_the_metamorphoses_39f63f8b
+  canonical_title: The Metamorphoses
+  normalized_title: the metamorphoses
+  decision: alias
+  alias_of: Metamorphoses
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Metamorphoses.'
+- candidate_id: qb_lit_dream_songs_41314d7e
+  canonical_title: Dream Songs
+  normalized_title: dream songs
+  decision: alias
+  alias_of: The Dream Songs
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Dream Songs.'
+- candidate_id: qb_lit_lady_with_the_dog_68fc0630
+  canonical_title: Lady with the Dog
+  normalized_title: lady with the dog
+  decision: alias
+  alias_of: The Lady with the Dog
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Lady with the Dog.'
+- candidate_id: qb_lit_the_heart_of_a_dog_6b72720d
+  canonical_title: The Heart of a Dog
+  normalized_title: the heart of a dog
+  decision: alias
+  alias_of: Heart of a Dog
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Heart of a Dog.'
+- candidate_id: qb_lit_essay_on_criticism_8549acd0
+  canonical_title: Essay on Criticism
+  normalized_title: essay on criticism
+  decision: alias
+  alias_of: An Essay on Criticism
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into An Essay on Criticism.'
+- candidate_id: qb_lit_the_hunger_artist_19d10160
+  canonical_title: The Hunger Artist
+  normalized_title: the hunger artist
+  decision: alias
+  alias_of: A Hunger Artist
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into A Hunger Artist.'
+- candidate_id: qb_lit_auto_da_f_2f50ffd5
+  canonical_title: Auto-da-F
+  normalized_title: auto da f
+  decision: alias
+  alias_of: Auto-da-Fé
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Auto-da-Fé.'
+- candidate_id: qb_lit_the_inferno_dec3e7c0
+  canonical_title: the Inferno
+  normalized_title: the inferno
+  decision: alias
+  alias_of: Inferno
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Inferno.'
+- candidate_id: qb_lit_the_idylls_of_the_king_e57d96c7
+  canonical_title: The Idylls of the King
+  normalized_title: the idylls of the king
+  decision: alias
+  alias_of: Idylls of the King
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Idylls of the King.'
+- candidate_id: qb_lit_cloud_messenger_ea731925
+  canonical_title: Cloud Messenger
+  normalized_title: cloud messenger
+  decision: alias
+  alias_of: The Cloud Messenger
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Cloud Messenger.'
+- candidate_id: qb_lit_the_odour_of_chrysanthemums_a1b42c06
+  canonical_title: The Odour of Chrysanthemums
+  normalized_title: the odour of chrysanthemums
+  decision: alias
+  alias_of: Odour of Chrysanthemums
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Odour of Chrysanthemums.'
+- candidate_id: qb_lit_children_of_gebelawi_32188b5c
+  canonical_title: Children of Gebelawi
+  normalized_title: children of gebelawi
+  decision: alias
+  alias_of: The Children of Gebelawi
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Children of Gebelawi.'
+- candidate_id: qb_lit_the_woman_in_the_dunes_5ce85628
+  canonical_title: The Woman in the Dunes
+  normalized_title: the woman in the dunes
+  decision: alias
+  alias_of: Woman in the Dunes
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Woman in the Dunes.'
+- candidate_id: qb_lit_eve_of_st_agnes_caa1afa6
+  canonical_title: Eve of St. Agnes
+  normalized_title: eve of st agnes
+  decision: alias
+  alias_of: The Eve of St. Agnes
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Eve of St. Agnes.'
+- candidate_id: qb_lit_convergence_of_the_twain_11c5a1e3
+  canonical_title: Convergence of the Twain
+  normalized_title: convergence of the twain
+  decision: alias
+  alias_of: The Convergence of the Twain
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Convergence of the Twain.'
+- candidate_id: qb_lit_the_pittsburgh_cycle_02019a23
+  canonical_title: The Pittsburgh Cycle
+  normalized_title: the pittsburgh cycle
+  decision: alias
+  alias_of: Pittsburgh Cycle
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Pittsburgh Cycle.'
+- candidate_id: qb_lit_great_american_novel_6721abd7
+  canonical_title: Great American Novel
+  normalized_title: great american novel
+  decision: alias
+  alias_of: The Great American Novel
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Great American Novel.'
+- candidate_id: qb_lit_the_war_with_the_newts_42809f43
+  canonical_title: The War With the Newts
+  normalized_title: the war with the newts
+  decision: alias
+  alias_of: War with the Newts
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into War with the Newts.'
+- candidate_id: qb_lit_the_tale_of_a_tub_ad9e0d39
+  canonical_title: The Tale of a Tub
+  normalized_title: the tale of a tub
+  decision: alias
+  alias_of: A Tale of a Tub
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into A Tale of a Tub.'
+- candidate_id: qb_lit_chronicles_of_narnia_38db46a2
+  canonical_title: Chronicles of Narnia
+  normalized_title: chronicles of narnia
+  decision: alias
+  alias_of: The Chronicles of Narnia
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Chronicles of Narnia.'
+- candidate_id: qb_lit_the_kalevala_f2ef1887
+  canonical_title: The Kalevala
+  normalized_title: the kalevala
+  decision: alias
+  alias_of: Kalevala
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Kalevala.'
+- candidate_id: qb_lit_bacchae_e060c736
+  canonical_title: BACCHAE
+  normalized_title: bacchae
+  decision: alias
+  alias_of: The Bacchae
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Bacchae.'
+- candidate_id: qb_lit_the_anecdote_of_the_jar_4efbd87b
+  canonical_title: The Anecdote of the Jar
+  normalized_title: the anecdote of the jar
+  decision: alias
+  alias_of: Anecdote of the Jar
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Anecdote of the Jar.'
+- candidate_id: qb_lit_a_piece_of_string_841c0a43
+  canonical_title: A Piece of String
+  normalized_title: a piece of string
+  decision: alias
+  alias_of: The Piece of String
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Piece of String.'
+- candidate_id: qb_lit_the_white_heron_a2532acb
+  canonical_title: The White Heron
+  normalized_title: the white heron
+  decision: alias
+  alias_of: A White Heron
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into A White Heron.'
+- candidate_id: qb_lit_the_true_history_of_the_kelly_gang_f4801307
+  canonical_title: The True History of the Kelly Gang
+  normalized_title: the true history of the kelly gang
+  decision: alias
+  alias_of: True History of the Kelly Gang
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into True History of the Kelly Gang.'
+- candidate_id: qb_lit_ballad_of_the_harp_weaver_564d58d1
+  canonical_title: Ballad of the Harp-Weaver
+  normalized_title: ballad of the harp weaver
+  decision: alias
+  alias_of: The Ballad of the Harp-Weaver
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Ballad of the Harp-Weaver.'
+- candidate_id: qb_lit_parable_of_the_grand_inquisitor_03723270
+  canonical_title: Parable of the Grand Inquisitor
+  normalized_title: parable of the grand inquisitor
+  decision: alias
+  alias_of: The Grand Inquisitor
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Grand Inquisitor.'
+- candidate_id: qb_lit_toilers_of_the_sea_4551dec9
+  canonical_title: Toilers of the Sea
+  normalized_title: toilers of the sea
+  decision: alias
+  alias_of: The Toilers of the Sea
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Toilers of the Sea.'
+- candidate_id: qb_lit_the_poison_tree_1e92f4e8
+  canonical_title: The Poison Tree
+  normalized_title: the poison tree
+  decision: alias
+  alias_of: A Poison Tree
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into A Poison Tree.'
+- candidate_id: qb_lit_the_journey_of_the_magi_4bf890a1
+  canonical_title: The Journey of the Magi
+  normalized_title: the journey of the magi
+  decision: alias
+  alias_of: Journey of the Magi
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Journey of the Magi.'
+- candidate_id: qb_lit_an_apology_for_raymond_sebond_07a28843
+  canonical_title: An Apology for Raymond Sebond
+  normalized_title: an apology for raymond sebond
+  decision: alias
+  alias_of: Apology for Raymond Sebond
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Apology for Raymond Sebond.'
+- candidate_id: qb_lit_the_conversion_of_the_jews_ebd933e7
+  canonical_title: The Conversion of the Jews
+  normalized_title: the conversion of the jews
+  decision: alias
+  alias_of: Conversion of the Jews
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Conversion of the Jews.'
+- candidate_id: qb_lit_report_to_an_academy_13d4b0a9
+  canonical_title: Report to an Academy
+  normalized_title: report to an academy
+  decision: alias
+  alias_of: A Report to an Academy
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into A Report to an Academy.'
+- candidate_id: qb_lit_children_of_the_night_f2dd8b2d
+  canonical_title: Children of the Night
+  normalized_title: children of the night
+  decision: alias
+  alias_of: The Children of the Night
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch2
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Children of the Night.'
+- candidate_id: qb_lit_cantos_06007007
+  canonical_title: Cantos
+  normalized_title: cantos
+  decision: alias
+  alias_of: The Cantos
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Cantos.'
+- candidate_id: qb_lit_prelude_1a026a09
+  canonical_title: Prelude
+  normalized_title: prelude
+  decision: alias
+  alias_of: The Prelude
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Prelude.'
+- candidate_id: qb_lit_novel_without_a_hero_386ebabb
+  canonical_title: Novel Without a Hero
+  normalized_title: novel without a hero
+  decision: alias
+  alias_of: A Novel Without a Hero
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into A Novel Without a Hero.'
+- candidate_id: qb_lit_triumph_of_the_egg_f5d905f7
+  canonical_title: Triumph of the Egg
+  normalized_title: triumph of the egg
+  decision: alias
+  alias_of: The Triumph of the Egg
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Triumph of the Egg.'
+- candidate_id: qb_lit_book_of_the_grotesque_fc3f20b1
+  canonical_title: Book of the Grotesque
+  normalized_title: book of the grotesque
+  decision: alias
+  alias_of: The Book of the Grotesque
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Book of the Grotesque.'
+- candidate_id: qb_lit_torrents_of_spring_15388de8
+  canonical_title: Torrents of Spring
+  normalized_title: torrents of spring
+  decision: alias
+  alias_of: The Torrents of Spring
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Torrents of Spring.'
+- candidate_id: qb_lit_the_rubaiyat_d5cf9b6e
+  canonical_title: The Rubaiyat
+  normalized_title: the rubaiyat
+  decision: alias
+  alias_of: Rubaiyat
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Rubaiyat.'
+- candidate_id: qb_lit_the_death_of_the_poet_7b723c95
+  canonical_title: The Death of the Poet
+  normalized_title: the death of the poet
+  decision: alias
+  alias_of: Death of the Poet
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Death of the Poet.'
+- candidate_id: qb_lit_the_oresteia_9cb83f57
+  canonical_title: The Oresteia
+  normalized_title: the oresteia
+  decision: alias
+  alias_of: Oresteia
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Oresteia.'
+- candidate_id: qb_lit_citizen_of_the_world_53636b21
+  canonical_title: Citizen of the World
+  normalized_title: citizen of the world
+  decision: alias
+  alias_of: The Citizen of the World
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Citizen of the World.'
+- candidate_id: qb_lit_four_ages_of_man_ac8f6644
+  canonical_title: Four Ages of Man
+  normalized_title: four ages of man
+  decision: alias
+  alias_of: The Four Ages of Man
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Four Ages of Man.'
+- candidate_id: qb_lit_book_of_sand_e37f6fa1
+  canonical_title: Book of Sand
+  normalized_title: book of sand
+  decision: alias
+  alias_of: The Book of Sand
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Book of Sand.'
+- candidate_id: qb_lit_the_wizard_of_the_crow_283b6048
+  canonical_title: The Wizard of the Crow
+  normalized_title: the wizard of the crow
+  decision: alias
+  alias_of: Wizard of the Crow
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Wizard of the Crow.'
+- candidate_id: qb_lit_epic_of_the_wheat_f9c77896
+  canonical_title: Epic of the Wheat
+  normalized_title: epic of the wheat
+  decision: alias
+  alias_of: The Epic of the Wheat
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Epic of the Wheat.'
+- candidate_id: qb_lit_the_diary_of_a_superfluous_man_0f0808d0
+  canonical_title: The Diary of a Superfluous Man
+  normalized_title: the diary of a superfluous man
+  decision: alias
+  alias_of: Diary of a Superfluous Man
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Diary of a Superfluous Man.'
+- candidate_id: qb_lit_the_confessions_of_felix_krull_828a3b4a
+  canonical_title: The Confessions of Felix Krull
+  normalized_title: the confessions of felix krull
+  decision: alias
+  alias_of: Confessions of Felix Krull
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Confessions of Felix Krull.'
+- candidate_id: qb_lit_the_dance_of_the_lost_traveller_203609a4
+  canonical_title: The Dance of the Lost Traveller
+  normalized_title: the dance of the lost traveller
+  decision: alias
+  alias_of: Dance of the Lost Traveller
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Dance of the Lost Traveller.'
+- candidate_id: qb_lit_the_eclogues_a5aa3e45
+  canonical_title: the Eclogues
+  normalized_title: the eclogues
+  decision: alias
+  alias_of: Eclogues
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Eclogues.'
+- candidate_id: qb_lit_five_orange_pips_53750f77
+  canonical_title: Five Orange Pips
+  normalized_title: five orange pips
+  decision: alias
+  alias_of: The Five Orange Pips
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Five Orange Pips.'
+- candidate_id: qb_lit_the_menaechmi_2a4b9306
+  canonical_title: The Menaechmi
+  normalized_title: the menaechmi
+  decision: alias
+  alias_of: Menaechmi
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Menaechmi.'
+- candidate_id: qb_lit_daughters_of_the_late_colonel_52f02d9a
+  canonical_title: Daughters of the Late Colonel
+  normalized_title: daughters of the late colonel
+  decision: alias
+  alias_of: The Daughters of the Late Colonel
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Daughters of the Late Colonel.'
+- candidate_id: qb_lit_supper_at_elsinore_e2478d1c
+  canonical_title: Supper at Elsinore
+  normalized_title: supper at elsinore
+  decision: alias
+  alias_of: The Supper at Elsinore
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Supper at Elsinore.'
+- candidate_id: qb_lit_continuity_of_parks_f44332c9
+  canonical_title: Continuity of Parks
+  normalized_title: continuity of parks
+  decision: alias
+  alias_of: The Continuity of Parks
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into The Continuity of Parks.'
+- candidate_id: qb_lit_genius_of_the_south_b5834b44
+  canonical_title: Genius of the South
+  normalized_title: genius of the south
+  decision: alias
+  alias_of: A Genius of the South
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into A Genius of the South.'
+- candidate_id: qb_lit_the_georgics_f15bfd26
+  canonical_title: The Georgics
+  normalized_title: the georgics
+  decision: alias
+  alias_of: Georgics
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Georgics.'
+- candidate_id: qb_lit_the_argonautica_54ee09fb
+  canonical_title: The Argonautica
+  normalized_title: the argonautica
+  decision: alias
+  alias_of: Argonautica
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into Argonautica.'
+- candidate_id: qb_lit_elegy_on_the_death_of_a_mad_dog_84cf91f6
+  canonical_title: Elegy on the Death of a Mad Dog
+  normalized_title: elegy on the death of a mad dog
+  decision: alias
+  alias_of: An Elegy on the Death of a Mad Dog
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: 'Phase C duplicate consolidation: merge this article/title variant into An Elegy on the Death of a Mad Dog.'
+- candidate_id: qb_lit_the_jewel_stairs_grievance_8d009afe
+  canonical_title: The Jewel Stairs’ Grievance
+  normalized_title: the jewel stairs grievance
+  decision: alias
+  alias_of: Jewel Stairs' Grievance
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_article_alias_batch3
+  notes: "Phase C duplicate consolidation: merge this article/title variant into Jewel Stairs' Grievance."
+- canonical_title: The Life and Times of Michael K
+  decision: alias
+  alias_of: Life & Times of Michael K
+  reason: duplicate_translation_or_punctuation_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge prose title variant into the answerline-backed Coetzee title Life & Times of Michael K.'
+- canonical_title: The Life and Times of Michael
+  decision: alias
+  alias_of: Life & Times of Michael K
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: clue snippets show this is the truncated Coetzee title Life & Times of Michael K.'
+- canonical_title: Life and Times of Michael
+  decision: alias
+  alias_of: Life & Times of Michael K
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: clue snippets show this is the truncated Coetzee title Life & Times of Michael K.'
+- canonical_title: Sun Stone
+  decision: alias
+  alias_of: Sunstone
+  reason: duplicate_translation_or_spacing_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge Octavio Paz poem spelling variant into the answerline-backed Sunstone row.'
+- canonical_title: The Sun Stone
+  decision: alias
+  alias_of: Sunstone
+  reason: duplicate_translation_or_spacing_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge Octavio Paz poem article/spacing variant into Sunstone.'
+- canonical_title: The Sunstone
+  decision: alias
+  alias_of: Sunstone
+  reason: duplicate_translation_or_spacing_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge Octavio Paz poem article variant into Sunstone.'
+- canonical_title: Iliad and the Odyssey
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: phrase combines two separate Homeric works in author prompts; it is not a standalone reading-list work.'
+- canonical_title: The Iliad and The Odyssey
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: phrase combines two separate Homeric works in author prompts; it is not a standalone reading-list work.'
+- canonical_title: A Study of Provincial Life
+  decision: alias
+  alias_of: Middlemarch
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle fragment for Middlemarch, not an independent work row.'
+- canonical_title: Study of Provincial Life
+  decision: alias
+  alias_of: Middlemarch
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle fragment for Middlemarch, not an independent work row.'
+- canonical_title: Weaver of Raveloe
+  decision: alias
+  alias_of: Silas Marner
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle fragment for Silas Marner, not an independent work row.'
+- canonical_title: The Weaver of Raveloe
+  decision: alias
+  alias_of: Silas Marner
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle fragment for Silas Marner, not an independent work row.'
+- canonical_title: 'Silas Marner: The Weaver of Raveloe'
+  decision: alias
+  alias_of: Silas Marner
+  reason: subtitle_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge full subtitle answerline variant into Silas Marner.'
+- canonical_title: Moor of Venice
+  decision: alias
+  alias_of: Othello
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle/epithet fragment for Othello, not an independent work row.'
+- canonical_title: the Moor of Venice
+  decision: alias
+  alias_of: Othello
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle/epithet fragment for Othello, not an independent work row.'
+- canonical_title: Airborne Toxic Event
+  decision: alias
+  alias_of: White Noise
+  reason: section_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: section/event phrase from White Noise, not an independent work row.'
+- canonical_title: The Airborne Toxic Event
+  decision: alias
+  alias_of: White Noise
+  reason: section_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: section/event phrase from White Noise, not an independent work row.'
+- canonical_title: Poet of the American Revolution
+  decision: reject
+  reason: person_epithet_not_work
+  review_status: rejected_person_epithet_not_work
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: epithet for an author/person in clues, not a literary work title.'
+- canonical_title: The Poet of the American Revolution
+  decision: reject
+  reason: person_epithet_not_work
+  review_status: rejected_person_epithet_not_work
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: epithet for an author/person in clues, not a literary work title.'
+- canonical_title: The Strange Case of Dr
+  decision: alias
+  alias_of: The Strange Case of Dr. Jekyll and Mr. Hyde
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: truncated variant of The Strange Case of Dr. Jekyll and Mr. Hyde.'
+- canonical_title: Strange Case of Dr
+  decision: alias
+  alias_of: The Strange Case of Dr. Jekyll and Mr. Hyde
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: truncated variant of The Strange Case of Dr. Jekyll and Mr. Hyde.'
+- canonical_title: A Gay Fantasia on National Themes
+  decision: alias
+  alias_of: Angels in America
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle fragment for Angels in America, not a separate public work row.'
+- canonical_title: Gay Fantasia on National Themes
+  decision: alias
+  alias_of: Angels in America
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle fragment for Angels in America, not a separate public work row.'
+- canonical_title: 'Angels in America: A Gay Fantasia on National Themes'
+  decision: alias
+  alias_of: Angels in America
+  reason: subtitle_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge subtitle-bearing title variant into Angels in America.'
+- canonical_title: Stillness in the Room
+  decision: alias
+  alias_of: I Heard a Fly Buzz When I Died
+  reason: quotation_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: quoted line fragment from Dickinson poem, not an independent work row.'
+- canonical_title: the Stillness in the Room
+  decision: alias
+  alias_of: I Heard a Fly Buzz When I Died
+  reason: quotation_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: quoted line fragment from Dickinson poem, not an independent work row.'
+- canonical_title: Sea of Faith
+  decision: alias
+  alias_of: Dover Beach
+  reason: quotation_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: quoted phrase from Dover Beach, not an independent work row.'
+- canonical_title: the Sea of Faith
+  decision: alias
+  alias_of: Dover Beach
+  reason: quotation_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: quoted phrase from Dover Beach, not an independent work row.'
+- canonical_title: Epic of Wheat
+  decision: reject
+  reason: cycle_title_not_standalone_work
+  review_status: rejected_section_or_cycle_title
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: projected Frank Norris cycle label, not a standalone work for the public reading list.'
+- canonical_title: The Epic of Wheat
+  decision: reject
+  reason: cycle_title_not_standalone_work
+  review_status: rejected_section_or_cycle_title
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: projected Frank Norris cycle label, not a standalone work for the public reading list.'
+- canonical_title: Fields of Gazing Grain
+  decision: alias
+  alias_of: Because I Could Not Stop for Death
+  reason: quotation_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: quoted phrase from Because I Could Not Stop for Death, not an independent work row.'
+- canonical_title: the Fields of Gazing Grain
+  decision: alias
+  alias_of: Because I Could Not Stop for Death
+  reason: quotation_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: quoted phrase from Because I Could Not Stop for Death, not an independent work row.'
+- canonical_title: Georgics and the Aeneid
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: phrase combines two separate Virgil works in author prompts; it is not a standalone reading-list work.'
+- canonical_title: The Georgics and The Aeneid
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: phrase combines two separate Virgil works in author prompts; it is not a standalone reading-list work.'
+- canonical_title: Story of Wall Street
+  decision: alias
+  alias_of: Bartleby the Scrivener
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle fragment for Bartleby the Scrivener, not an independent work row.'
+- canonical_title: A Story of Wall Street
+  decision: alias
+  alias_of: Bartleby the Scrivener
+  reason: subtitle_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: subtitle fragment for Bartleby the Scrivener, not an independent work row.'
+- canonical_title: 'Bartleby, the Scrivener: A Story of Wall Street'
+  decision: alias
+  alias_of: Bartleby the Scrivener
+  reason: subtitle_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge subtitle-bearing title variant into Bartleby the Scrivener.'
+- canonical_title: The Parable of the Grand Inquisitor
+  decision: alias
+  alias_of: The Grand Inquisitor
+  reason: duplicate_subwork_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge alternate subwork title into The Grand Inquisitor.'
+- canonical_title: Legend of the Grand Inquisitor
+  decision: alias
+  alias_of: The Grand Inquisitor
+  reason: duplicate_subwork_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge alternate subwork title into The Grand Inquisitor.'
+- canonical_title: The Legend of the Grand Inquisitor
+  decision: alias
+  alias_of: The Grand Inquisitor
+  reason: duplicate_subwork_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: merge alternate subwork title into The Grand Inquisitor.'
+- canonical_title: Shape of Ice
+  decision: alias
+  alias_of: The Convergence of the Twain
+  reason: quotation_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: quoted phrase from The Convergence of the Twain, not an independent work row.'
+- canonical_title: a Shape of Ice
+  decision: alias
+  alias_of: The Convergence of the Twain
+  reason: quotation_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: quoted phrase from The Convergence of the Twain, not an independent work row.'
+- canonical_title: Blue Flannel Suit
+  decision: alias
+  alias_of: Birthday Letters
+  reason: subwork_title_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: poem title referenced as part of Birthday Letters evidence; avoid a separate clue-fragment row.'
+- canonical_title: The Blue Flannel Suit
+  decision: alias
+  alias_of: Birthday Letters
+  reason: subwork_title_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: poem title referenced as part of Birthday Letters evidence; avoid a separate clue-fragment row.'
+- canonical_title: Host of the Beast
+  decision: alias
+  alias_of: Billiards at Half-Past Nine
+  reason: motif_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: motif phrase from Billiards at Half-Past Nine, not an independent work row.'
+- canonical_title: the Host of the Beast
+  decision: alias
+  alias_of: Billiards at Half-Past Nine
+  reason: motif_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C consolidation: motif phrase from Billiards at Half-Past Nine, not an independent work row.'
+- canonical_title: Zoo Story and Who
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: combined author-prompt fragment for two Edward Albee plays, not a standalone work.'
+- canonical_title: The Zoo Story and Who
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: combined author-prompt fragment for two Edward Albee plays, not a standalone work.'
+- canonical_title: The Zoo Story and Who's Afraid of Virginia Woolf
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_c_subtitle_fragment_batch4
+  notes: 'Phase C cleanup: combined author-prompt fragment for two Edward Albee plays, not a standalone work.'

@@ -1,32 +1,32 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-05T07:11:38Z
+Generated: 2026-05-05T07:55:26Z
 
 ## Corpus
 
-- Database: `/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db`
+- Database: `file:/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db?mode=ro&immutable=1`
 - Source table: `archive_parsed_questions`
 - Rows processed: 2216999
 - Evidence fields: raw `answerline` and raw `clue_text`
 - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
-- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2049 decisions)
-- Manual alias rules: 43 loaded, 42 applied after pass 1
+- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2168 decisions)
+- Manual alias rules: 159 loaded, 158 applied after pass 1
 - Worker processes: 4
 - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
 - Threshold: total distinct quizbowl questions >= 4
 
 ## Candidate Extraction
 
-- Raw answerline work candidates: 9505
-- Exact-match work-title seeds from answerlines and clues: 5485
-- Exact-match seed basis counts: `answerline`=712, `answerline_and_clue`=1029, `clue`=3744
-- Raw normalized candidates: 81830
-- Candidates clearing threshold: 14354
-- Public YAML rows after accepted-work filtering: 5177
-- Rejected non-literature candidates: 2922
-- Audit queue rows: 12576
+- Raw answerline work candidates: 9473
+- Exact-match work-title seeds from answerlines and clues: 5383
+- Exact-match seed basis counts: `answerline`=703, `answerline_and_clue`=1031, `clue`=3649
+- Raw normalized candidates: 81714
+- Candidates clearing threshold: 14238
+- Public YAML rows after accepted-work filtering: 5050
+- Rejected non-literature candidates: 2933
+- Audit queue rows: 12567
 - LLM review queue rows: 500
-- Evidence/example rows written: 68654
+- Evidence/example rows written: 68074
 
 ## Review Routing
 
@@ -38,14 +38,14 @@ Generated: 2026-05-05T07:11:38Z
 ## Tier Counts
 
 - `qb_candidate`: 6255
-- `qb_contextual`: 2458
-- `qb_core`: 1056
-- `qb_major`: 1663
-- `qb_rejected`: 2922
+- `qb_contextual`: 2419
+- `qb_core`: 1049
+- `qb_major`: 1582
+- `qb_rejected`: 2933
 
 ## Review Status Counts
 
-- `accepted_likely_work`: 5177
+- `accepted_likely_work`: 5050
 - `merged_duplicate_title_variant`: 1
 - `needs_review_act_title_boundary`: 1
 - `needs_review_alternate_poem_title_boundary`: 1
@@ -138,7 +138,7 @@ Generated: 2026-05-05T07:11:38Z
 - `rejected_character_title_fragment`: 1
 - `rejected_christian_apologetics_not_literature_reading_list`: 1
 - `rejected_clue_fragment_not_work`: 1
-- `rejected_combined_title_author_prompt`: 40
+- `rejected_combined_title_author_prompt`: 47
 - `rejected_common_title_ambiguous_not_standalone`: 4
 - `rejected_common_title_fragment`: 3
 - `rejected_common_title_or_opera_section_not_work`: 1
@@ -267,7 +267,7 @@ Generated: 2026-05-05T07:11:38Z
 - `rejected_part_title_duplicate_of_angels_in_america`: 1
 - `rejected_period_label_not_work`: 1
 - `rejected_person_case_not_work`: 1
-- `rejected_person_epithet_not_work`: 2
+- `rejected_person_epithet_not_work`: 4
 - `rejected_person_name_not_work`: 1
 - `rejected_person_not_work`: 8
 - `rejected_person_or_character_name_not_work`: 1
@@ -365,6 +365,7 @@ Generated: 2026-05-05T07:11:38Z
 - `rejected_science_term_not_work`: 2
 - `rejected_scripture_religion_domain`: 2
 - `rejected_section_or_common_title_not_standalone`: 1
+- `rejected_section_or_cycle_title`: 2
 - `rejected_section_or_person_name_not_work`: 1
 - `rejected_section_or_refrain_fragment`: 1
 - `rejected_section_or_subwork_duplicate_of_masnavi`: 3

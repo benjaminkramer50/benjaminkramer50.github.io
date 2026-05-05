@@ -743,6 +743,14 @@ def repo_relative_path(path)
   path
 end
 
+def sqlite_uri?(path)
+  path.to_s.start_with?("file:")
+end
+
+def quizbowl_database_available?(path)
+  sqlite_uri?(path) || File.exist?(path)
+end
+
 def write_tsv(path, headers, rows)
   CSV.open(path, "w", col_sep: "\t", write_headers: true, headers: headers) do |csv|
     rows.each { |row| csv << headers.map { |header| row.fetch(header, "") } }
@@ -1412,7 +1420,7 @@ def main
     return
   end
 
-  raise "Missing quizbowl database: #{options[:db_path]}" unless File.exist?(options[:db_path])
+  raise "Missing quizbowl database: #{options[:db_path]}" unless quizbowl_database_available?(options[:db_path])
 
   FileUtils.mkdir_p(options[:out_dir])
   FileUtils.mkdir_p(File.dirname(options[:data_out]))
