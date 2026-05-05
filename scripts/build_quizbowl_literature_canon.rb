@@ -70,6 +70,7 @@ CandidateStats = Struct.new(
   :source_counts,
   :form_counts,
   :answerline_form_counts,
+  :track_counts,
   :question_ids,
   :answerline_question_ids,
   :clue_question_ids,
@@ -91,6 +92,7 @@ def new_stats(normalized_title)
     source_counts: Hash.new(0),
     form_counts: Hash.new(0),
     answerline_form_counts: Hash.new(0),
+    track_counts: Hash.new(0),
     question_ids: Set.new,
     answerline_question_ids: Set.new,
     clue_question_ids: Set.new,
@@ -444,6 +446,8 @@ def add_observation(stats_by_key, normalized, display, source, form_hint, row, s
   stats.display_counts[display] += 1
   stats.source_counts[source] += 1
   stats.form_counts[form_hint || "unknown"] += 1
+  track_id = row["track_id"].to_s
+  stats.track_counts[track_id] += 1 unless track_id.empty?
   stats.literary_signal_count += snippet.to_s.scan(LITERARY_SIGNAL_RE).length
   stats.non_literary_signal_count += snippet.to_s.scan(NON_LITERARY_CONTEXT_RE).length
   qid = row["id"].to_i
@@ -561,7 +565,7 @@ def review_status_for(stats)
   return "needs_review_common_or_short_title" if obvious_nonwork_title?(title)
   return "needs_review_possible_combined_title" if possible_combined_title_artifact?(title)
   return "needs_review_fragment_title" if fragment_title_artifact?(title)
-  return "needs_review_non_literary_context" if non_literary_context_dominated?(stats)
+  return "rejected_non_literary_context" if non_literary_context_dominated?(stats)
   return "accepted_likely_work" if literary_answerline_backed?(stats)
   return "needs_review_section_or_subwork_title" if clue_count >= 4 && section_context_dominated?(stats)
   return "needs_review_possible_character_or_person" if answerline_count.zero? && person_like_title?(title)
@@ -571,6 +575,10 @@ def review_status_for(stats)
   return "needs_review_possible_character_or_person" if person_like_title?(title)
 
   "needs_review_low_evidence"
+end
+
+def rejected_review_status?(review_status)
+  review_status.to_s.start_with?("rejected_")
 end
 
 def log1p(value)
@@ -592,6 +600,7 @@ def salience_score(stats)
 end
 
 def tier_for(score, review_status, total_count, set_count, year_count)
+  return "qb_rejected" if rejected_review_status?(review_status)
   return "qb_candidate" unless review_status == "accepted_likely_work"
   return "qb_core" if score >= 12.5 && total_count >= 80 && set_count >= 25 && year_count >= 10
   return "qb_major" if score >= 8.75 && total_count >= 20 && set_count >= 8
@@ -608,6 +617,16 @@ def write_tsv(path, headers, rows)
   CSV.open(path, "w", col_sep: "\t", write_headers: true, headers: headers) do |csv|
     rows.each { |row| csv << headers.map { |header| row.fetch(header, "") } }
   end
+end
+
+def load_track_id_map(db)
+  track_by_question_id = {}
+  db.execute("SELECT archive_parsed_question_id, track_id FROM archive_practice_questions") do |row|
+    question_id = row["archive_parsed_question_id"].to_i
+    track_id = row["track_id"].to_s
+    track_by_question_id[question_id] = track_id unless track_id.empty?
+  end
+  track_by_question_id
 end
 
 def parse_options
@@ -647,6 +666,9 @@ def main
 
   stats_by_key = {}
   answerline_seed_stats = {}
+  warn "Loading quizbowl category diagnostics from archive_practice_questions"
+  track_by_question_id = load_track_id_map(db)
+  warn "  loaded track labels for #{track_by_question_id.length} parsed questions"
   processed = 0
   skipped_long = 0
   started = Time.now
@@ -664,6 +686,7 @@ def main
     processed += 1
     break if options[:limit] && processed > options[:limit]
 
+    row["track_id"] = track_by_question_id[row["id"].to_i]
     clue_text = row["clue_text"].to_s
     answerline = row["answerline"].to_s
     if clue_text.length > options[:max_clue_chars]
@@ -699,6 +722,7 @@ def main
     pass2_processed += 1
     break if options[:limit] && pass2_processed > options[:limit]
 
+    row["track_id"] = track_by_question_id[row["id"].to_i]
     clue_text = row["clue_text"].to_s
     next if clue_text.length > options[:max_clue_chars]
     next if clue_text.match?(ANSWER_MARKER_RE)
@@ -753,31 +777,36 @@ def main
     source_counts = stats.source_counts.sort.to_h
     form_counts = stats.form_counts.sort.to_h
     answerline_form_counts = stats.answerline_form_counts.sort.to_h
+    track_counts = stats.track_counts.sort.to_h
     examples = stats.examples.first(3)
     answerline_count = stats.answerline_question_ids.length
     clue_count = stats.clue_question_ids.length
     total_count = stats.question_ids.length
 
-    data_rows << {
-      "id" => work_id,
-      "rank" => index + 1,
-      "title" => title,
-      "tier" => row[:tier],
-      "review_status" => row[:review_status],
-      "quizbowl_salience_score" => format("%.4f", row[:score]).to_f,
-      "total_question_count" => total_count,
-      "answerline_question_count" => answerline_count,
-      "clue_mention_question_count" => clue_count,
-      "distinct_set_count" => stats.set_titles.length,
-      "distinct_year_count" => years.length,
-      "first_year" => years.first,
-      "last_year" => years.last,
-      "tossup_count" => stats.question_type_counts["tossup"],
-      "bonus_count" => stats.question_type_counts["bonus_part"] + stats.question_type_counts["bonus"],
-      "form_hint" => stats.form_counts.max_by { |_, count| count }&.first || "unknown",
-      "evidence_basis" => "raw_archive_parsed_questions_answerlines_and_clue_text",
-      "examples" => examples
-    }
+    unless rejected_review_status?(row[:review_status])
+      data_rows << {
+        "id" => work_id,
+        "rank" => data_rows.length + 1,
+        "audit_rank" => index + 1,
+        "title" => title,
+        "tier" => row[:tier],
+        "review_status" => row[:review_status],
+        "quizbowl_salience_score" => format("%.4f", row[:score]).to_f,
+        "total_question_count" => total_count,
+        "answerline_question_count" => answerline_count,
+        "clue_mention_question_count" => clue_count,
+        "distinct_set_count" => stats.set_titles.length,
+        "distinct_year_count" => years.length,
+        "first_year" => years.first,
+        "last_year" => years.last,
+        "tossup_count" => stats.question_type_counts["tossup"],
+        "bonus_count" => stats.question_type_counts["bonus_part"] + stats.question_type_counts["bonus"],
+        "form_hint" => stats.form_counts.max_by { |_, count| count }&.first || "unknown",
+        "quizbowl_track_counts" => track_counts,
+        "evidence_basis" => "raw_archive_parsed_questions_answerlines_and_clue_text",
+        "examples" => examples
+      }
+    end
 
     score_tsv_rows << {
       "work_id" => work_id,
@@ -798,6 +827,7 @@ def main
       "source_counts_json" => JSON.generate(source_counts),
       "form_counts_json" => JSON.generate(form_counts),
       "answerline_form_counts_json" => JSON.generate(answerline_form_counts),
+      "track_counts_json" => JSON.generate(track_counts),
       "literary_signal_count" => stats.literary_signal_count,
       "non_literary_signal_count" => stats.non_literary_signal_count,
       "examples_json" => JSON.generate(stats.examples.first(5))
@@ -811,13 +841,14 @@ def main
       "candidate_source" => source_counts.map { |source, count| "#{source}:#{count}" }.join(";"),
       "form_counts_json" => JSON.generate(form_counts),
       "answerline_form_counts_json" => JSON.generate(answerline_form_counts),
+      "track_counts_json" => JSON.generate(track_counts),
       "disambiguation_status" => row[:review_status],
       "total_question_count" => total_count,
       "answerline_question_count" => answerline_count,
       "clue_mention_question_count" => clue_count,
       "distinct_set_count" => stats.set_titles.length,
       "distinct_year_count" => years.length,
-      "notes" => "Generated from raw archive_parsed_questions only; no Loci track labels or canon refinement tables."
+      "notes" => "Evidence is generated from raw archive_parsed_questions answerlines and clue text; quizbowl track labels are diagnostic metadata only."
     }
 
     cluster_tsv_rows << {
@@ -844,7 +875,7 @@ def main
   end
 
   review_rows = score_rows
-    .select { |row| row[:review_status] != "accepted_likely_work" || high_risk_title?(row[:title]) || person_like_title?(row[:title]) }
+    .select { |row| !rejected_review_status?(row[:review_status]) && (row[:review_status] != "accepted_likely_work" || high_risk_title?(row[:title]) || person_like_title?(row[:title])) }
     .first(500)
     .map do |row|
       stats = row[:stats]
@@ -859,6 +890,29 @@ def main
         "source_counts_json" => JSON.generate(stats.source_counts.sort.to_h),
         "form_counts_json" => JSON.generate(stats.form_counts.sort.to_h),
         "answerline_form_counts_json" => JSON.generate(stats.answerline_form_counts.sort.to_h),
+        "track_counts_json" => JSON.generate(stats.track_counts.sort.to_h),
+        "literary_signal_count" => stats.literary_signal_count,
+        "non_literary_signal_count" => stats.non_literary_signal_count,
+        "example_snippet" => safe_tsv(stats.examples.first&.fetch("snippet", "") || "")
+      }
+    end
+
+  rejected_rows = score_rows
+    .select { |row| rejected_review_status?(row[:review_status]) }
+    .map do |row|
+      stats = row[:stats]
+      {
+        "candidate_id" => candidate_id_for(row[:title]),
+        "canonical_title" => safe_tsv(row[:title]),
+        "rejection_reason" => row[:review_status],
+        "total_question_count" => stats.question_ids.length,
+        "answerline_question_count" => stats.answerline_question_ids.length,
+        "clue_mention_question_count" => stats.clue_question_ids.length,
+        "distinct_set_count" => stats.set_titles.length,
+        "source_counts_json" => JSON.generate(stats.source_counts.sort.to_h),
+        "form_counts_json" => JSON.generate(stats.form_counts.sort.to_h),
+        "answerline_form_counts_json" => JSON.generate(stats.answerline_form_counts.sort.to_h),
+        "track_counts_json" => JSON.generate(stats.track_counts.sort.to_h),
         "literary_signal_count" => stats.literary_signal_count,
         "non_literary_signal_count" => stats.non_literary_signal_count,
         "example_snippet" => safe_tsv(stats.examples.first&.fetch("snippet", "") || "")
@@ -867,12 +921,12 @@ def main
 
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_title_candidates.tsv"),
-    %w[candidate_id canonical_title normalized_title form_hint candidate_source form_counts_json answerline_form_counts_json disambiguation_status total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
+    %w[candidate_id canonical_title normalized_title form_hint candidate_source form_counts_json answerline_form_counts_json track_counts_json disambiguation_status total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
     candidate_tsv_rows
   )
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_canon_scores.tsv"),
-    %w[work_id rank canonical_title total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status source_counts_json form_counts_json answerline_form_counts_json literary_signal_count non_literary_signal_count examples_json],
+    %w[work_id rank canonical_title total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count examples_json],
     score_tsv_rows
   )
   write_tsv(
@@ -887,8 +941,13 @@ def main
   )
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_false_positive_review.tsv"),
-    %w[candidate_id canonical_title review_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count source_counts_json form_counts_json answerline_form_counts_json literary_signal_count non_literary_signal_count example_snippet],
+    %w[candidate_id canonical_title review_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count example_snippet],
     review_rows
+  )
+  write_tsv(
+    File.join(options[:out_dir], "quizbowl_lit_rejected.tsv"),
+    %w[candidate_id canonical_title rejection_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count example_snippet],
+    rejected_rows
   )
 
   File.write(options[:data_out], data_rows.to_yaml)
@@ -897,8 +956,14 @@ def main
     "generated_at" => Time.now.utc.iso8601,
     "db_path" => options[:db_path],
     "source_table" => "archive_parsed_questions",
-    "excluded_loci_processed_inputs" => [
-      "archive_practice_questions.track_id",
+    "evidence_fields" => [
+      "archive_parsed_questions.answerline",
+      "archive_parsed_questions.clue_text"
+    ],
+    "diagnostic_fields" => [
+      "archive_practice_questions.track_id"
+    ],
+    "excluded_processed_inputs" => [
       "archive_canon_refinement_runs",
       "archive_canon_answerline_candidates"
     ],
@@ -910,6 +975,8 @@ def main
     "exact_match_seed_basis_counts" => seed_basis_counts.sort.to_h,
     "raw_candidate_count" => stats_by_key.length,
     "threshold_candidate_count" => score_rows.length,
+    "public_data_count" => data_rows.length,
+    "rejected_candidate_count" => rejected_rows.length,
     "mention_rows" => mention_rows.length,
     "tier_counts" => score_rows.group_by { |row| row[:tier] }.transform_values(&:length),
     "review_status_counts" => score_rows.group_by { |row| row[:review_status] }.transform_values(&:length)
@@ -927,7 +994,8 @@ def main
     - Source table: `archive_parsed_questions`
     - Rows processed: #{processed}
     - Evidence fields: raw `answerline` and raw `clue_text`
-    - Explicitly not used: `archive_practice_questions.track_id`, `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
+    - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
+    - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
     - Threshold: total distinct quizbowl questions >= #{options[:threshold]}
 
     ## Candidate Extraction
@@ -937,6 +1005,8 @@ def main
     - Exact-match seed basis counts: #{seed_basis_counts.sort.map { |basis, count| "`#{basis}`=#{count}" }.join(", ")}
     - Raw normalized candidates: #{stats_by_key.length}
     - Candidates clearing threshold: #{score_rows.length}
+    - Public YAML rows after excluding rejected non-literature: #{data_rows.length}
+    - Rejected non-literature candidates: #{rejected_rows.length}
     - Evidence/example rows written: #{mention_rows.length}
 
     ## Review Routing
@@ -944,7 +1014,7 @@ def main
     - Accepted works require repeated quizbowl evidence and are strongest when raw answerline prompts identify the title as a literary form.
     - Non-literary context signals are counted across all observed snippets, not just displayed examples.
     - Strong raw answerline forms such as novel, play, poem, story, epic, saga, and collection can override noisy clue mentions from music, film, or other adaptation contexts.
-    - Generic book/work/essay prompts do not override non-literary context dominance; those candidates are routed to review.
+    - Generic book/work/essay prompts do not override non-literary context dominance; those candidates are rejected from the public literature canon.
 
     ## Tier Counts
 
@@ -961,11 +1031,12 @@ def main
     - `quizbowl_lit_clusters.tsv`
     - `quizbowl_lit_canon_scores.tsv`
     - `quizbowl_lit_false_positive_review.tsv`
+    - `quizbowl_lit_rejected.tsv`
     - `_data/quizbowl_literature_canon.yml`
 
     ## Caveats
 
-    This is an independent quizbowl-corpus build. It uses answerlines only when the raw question prompt asks for a literary work, then counts both answerline frequency and clue-text mentions. It does not inherit Loci literature-track labels or processed canon classifications.
+    This is an independent quizbowl-corpus build. It uses answerlines only when the raw question prompt asks for a literary work, then counts both answerline frequency and clue-text mentions. Quizbowl track labels are diagnostic metadata for audit and category sanity checks, not inclusion evidence.
   MARKDOWN
   File.write(File.join(options[:out_dir], "quizbowl_lit_method_report.md"), method_report)
 

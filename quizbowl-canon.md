@@ -16,7 +16,7 @@ wide: true
 
 <p class="page-intro">A quizbowl-only literature canon built directly from the raw parsed quizbowl archive. Work candidates come from raw answerlines when the question asks for a literary work, plus repeated title mentions in clue text.</p>
 
-<p class="canon-status-note">This is evidence-first, not hand-curated. It is useful for finding what quizbowl repeatedly treats as canonical, measuring salience by recurrence, and separating strong automatic hits from review candidates.</p>
+<p class="canon-status-note">This is evidence-first, not hand-curated. It is useful for finding what quizbowl repeatedly treats as canonical, measuring salience by recurrence, and separating strong automatic hits from review candidates. Rejected non-literary titles, such as operas and social-science works, are kept in the audit files rather than shown here.</p>
 
 <div class="canon-summary quizbowl-summary" aria-label="Quizbowl canon summary">
   <div class="canon-stat canon-stat-accepted">
@@ -65,7 +65,6 @@ wide: true
       <option value="needs_review_possible_character_or_person">Possible Person / Character</option>
       <option value="needs_review_possible_combined_title">Possible Combined Title</option>
       <option value="needs_review_fragment_title">Fragment Title</option>
-      <option value="needs_review_non_literary_context">Non-literary Context</option>
       <option value="needs_review_section_or_subwork_title">Section / Subwork Title</option>
     </select>
   </label>
@@ -111,8 +110,6 @@ wide: true
     {% assign review_label = "Combined Title" %}
   {% elsif item.review_status == "needs_review_fragment_title" %}
     {% assign review_label = "Fragment" %}
-  {% elsif item.review_status == "needs_review_non_literary_context" %}
-    {% assign review_label = "Non-literary" %}
   {% elsif item.review_status == "needs_review_section_or_subwork_title" %}
     {% assign review_label = "Section / Subwork" %}
   {% elsif item.review_status == "needs_review_low_evidence" %}

@@ -6,7 +6,7 @@ Status: implemented_parallel_track
 
 ## Core Idea
 
-Build a literature canon from the raw quizbowl corpus. Do not use Bloom, online lists, anthology tables of contents, syllabi, the existing canon, Loci literature-track labels, or Loci canon-refinement tables as evidence. The current canon is preserved as-is; this becomes a separate experimental canon and comparison layer.
+Build a literature canon from the raw quizbowl corpus. Do not use Bloom, online lists, anthology tables of contents, syllabi, the existing canon, Loci literature-track labels, or Loci canon-refinement tables as inclusion evidence. The current canon is preserved as-is; this becomes a separate experimental canon and comparison layer.
 
 The inclusion signal is simple in principle:
 
@@ -36,7 +36,7 @@ This is more objective than hand-ranking because every inclusion can be traced t
 
 ## Key Methodological Rule
 
-Use raw quizbowl data only. The build reads `archive_parsed_questions.answerline` and `archive_parsed_questions.clue_text`; it explicitly does not read `archive_practice_questions.track_id`, `archive_canon_refinement_runs`, or `archive_canon_answerline_candidates`.
+Use raw quizbowl answerlines and clue text as evidence. The build reads `archive_parsed_questions.answerline` and `archive_parsed_questions.clue_text` for inclusion and scoring. It may read `archive_practice_questions.track_id` only as diagnostic quizbowl-category metadata for audit and rejection sanity checks; it explicitly does not read `archive_canon_refinement_runs` or `archive_canon_answerline_candidates`.
 
 Answerlines count only when the raw prompt asks for a literary work. Clue-text title mentions count independently. Neither channel is allowed to define the whole canon by itself.
 
@@ -49,6 +49,7 @@ Create a parallel build area:
 - `_planning/quizbowl_lit_canon/quizbowl_lit_clusters.tsv`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_canon_scores.tsv`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_false_positive_review.tsv`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_rejected.tsv`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_method_report.md`
 - `_data/quizbowl_literature_canon.yml`
 
@@ -67,7 +68,8 @@ One row per possible literary work title:
 - `candidate_source`: raw answerline work prompt, clue extraction, answerline-seed clue mention, clue-derived seed clue mention
 - `form_counts_json`
 - `answerline_form_counts_json`
-- `disambiguation_status`: accepted likely work, common/short title, possible person/character, possible combined title, fragment title, non-literary context, section/subwork title, or low evidence
+- `track_counts_json`: diagnostic quizbowl category counts, not inclusion evidence
+- `disambiguation_status`: accepted likely work, common/short title, possible person/character, possible combined title, fragment title, rejected non-literary context, section/subwork title, or low evidence
 - `total_question_count`
 - `answerline_question_count`
 - `clue_mention_question_count`
@@ -109,6 +111,7 @@ One row per accepted work cluster:
 - `source_counts_json`
 - `form_counts_json`
 - `answerline_form_counts_json`
+- `track_counts_json`
 - `literary_signal_count`
 - `non_literary_signal_count`
 - `examples_json`
@@ -203,7 +206,8 @@ Initial tiers:
 - `qb_core`: very high score, broad set/year spread.
 - `qb_major`: strong recurring work.
 - `qb_contextual`: clears threshold but narrower circuit/time support.
-- `qb_candidate`: clears raw threshold but needs review for ambiguity, parser leakage, or non-literary status.
+- `qb_candidate`: clears raw threshold but needs review for ambiguity or parser leakage.
+- `qb_rejected`: clears raw threshold but is not a literature-canon work, such as opera/music, social science, philosophy/history/theory, or other non-literary context-dominated material. These rows are kept in audit TSVs and excluded from the public YAML.
 
 ## Validation
 
@@ -214,7 +218,7 @@ Run reviewer-style checks before trusting the output:
 - Answer-leak scan: reject clue rows containing `answer:`, `answers:`, `answerline:`, or visible answer blocks.
 - Same-set inflation scan: works whose mentions come mostly from one tournament or one packet family.
 - Year-span check: distinguish old quizbowl artifacts from persistent canon.
-- Processed-Loci contamination check: prove that evidence counts do not use Loci track labels or canon-refinement tables.
+- Processed-Loci contamination check: prove that evidence counts do not use Loci track labels or canon-refinement tables; track labels may appear only as diagnostic category counts.
 - Answerline-gating check: prove that clue-derived works can enter even without answerline support.
 
 ## Expected Biases
