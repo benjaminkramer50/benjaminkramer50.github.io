@@ -326,7 +326,7 @@ def new_stats(normalized_title)
 end
 
 def normalize_space(value)
-  value.to_s.gsub(/[[:cntrl:]]/, " ").gsub(SPACE_RE, " ").strip
+  value.to_s.gsub(/[\u200B\u200C\u200D\uFEFF]/, "").gsub(/[[:cntrl:]]/, " ").gsub(SPACE_RE, " ").strip
 end
 
 def ascii_fold(value)

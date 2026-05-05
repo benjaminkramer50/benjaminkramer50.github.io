@@ -18523,3 +18523,513 @@ decisions:
   review_status: rejected_quizbowl_parser_artifact
   source: codex_phase_b_tail_pollution_batch1
   notes: 'Tail cleanup: quizbowl packet gimmick, not a literary work.'
+- canonical_title: Anna Karenin
+  decision: alias
+  alias_of: Anna Karenina
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: alternate transliterated title; merge into the established Anna Karenina row.'
+- canonical_title: Blood Wedding or Bodas de Sangre
+  decision: alias
+  alias_of: Blood Wedding
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: answerline includes Spanish alternate title; merge into Blood Wedding.'
+- canonical_title: 'Cutting Timber: An Irritation, or Hölzfallen'
+  decision: alias
+  alias_of: Woodcutters
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: literal/alternate Bernhard title; merge into Woodcutters.'
+- canonical_title: Az ajtó
+  decision: alias
+  alias_of: The Door
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Hungarian title of Magda Szabo novel; merge into The Door.'
+- canonical_title: Contre Saint-Beuve
+  decision: alias
+  alias_of: Against Sainte-Beuve
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: French title variant; merge into Against Sainte-Beuve.'
+- canonical_title: Dak Ghar
+  decision: alias
+  alias_of: The Post Office
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Bengali title of Tagore play; merge into The Post Office.'
+- canonical_title: Dama s sobachkoy
+  decision: alias
+  alias_of: The Lady with the Dog
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: transliterated Russian title; merge into The Lady with the Dog.'
+- canonical_title: 'Das Parfum: Die Geschichte eines Mörders'
+  decision: alias
+  alias_of: 'Perfume: The Story of a Murderer'
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: German title/subtitle; merge into Perfume.'
+- canonical_title: Decamerone
+  decision: alias
+  alias_of: The Decameron
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Italian title variant; merge into The Decameron.'
+- canonical_title: Il Decameron
+  decision: alias
+  alias_of: The Decameron
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Italian article/title variant; merge into The Decameron.'
+- canonical_title: 'The Decameron: Prencipe Galeotto'
+  decision: alias
+  alias_of: The Decameron
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: malformed subtitle variant; merge into The Decameron.'
+- canonical_title: The Decameron, or Prince Galehaut
+  decision: alias
+  alias_of: The Decameron
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: subtitle/alternate answerline variant; merge into The Decameron.'
+- canonical_title: 'Decameron: Principe Galeotto'
+  decision: alias
+  alias_of: The Decameron
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: subtitle variant; merge into The Decameron.'
+- canonical_title: Eclogues or Bucolics
+  decision: alias
+  alias_of: Eclogues
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: alternate title answerline; merge into Eclogues.'
+- canonical_title: Ensaio sobre a cegueira
+  decision: alias
+  alias_of: Blindness
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Portuguese title of Saramago novel; merge into Blindness.'
+- canonical_title: Ensaio sobre a cegueira or Essay on Blindness
+  decision: alias
+  alias_of: Blindness
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: answerline includes Portuguese and English title variants; merge into Blindness.'
+- canonical_title: 'Faust: The First Part of the Tragedy'
+  decision: alias
+  alias_of: Faust
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: subtitle/part title variant; merge into Faust for the public reading list.'
+- canonical_title: 'Giants in the Earth_: A Saga of the Prairie'
+  decision: alias
+  alias_of: Giants in the Earth
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: malformed subtitle variant; merge into Giants in the Earth.'
+- canonical_title: Gospodin iz San-Frantsisko
+  decision: alias
+  alias_of: The Gentleman from San Francisco
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: transliterated Russian title; merge into The Gentleman from San Francisco.'
+- canonical_title: Heauton Timorumenos
+  decision: alias
+  alias_of: The Self-Tormentor
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Latin title variant of Terence play; merge into The Self-Tormentor.'
+- canonical_title: Hippeis
+  decision: alias
+  alias_of: The Knights
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Greek title variant; merge into The Knights.'
+- canonical_title: Il visconte dimezzato
+  decision: alias
+  alias_of: The Cloven Viscount
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Italian title of Calvino novel; merge into The Cloven Viscount.'
+- canonical_title: Kinkakuji
+  decision: alias
+  alias_of: The Temple of the Golden Pavilion
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Japanese title variant; merge into The Temple of the Golden Pavilion.'
+- canonical_title: La fiesta del chivo
+  decision: alias
+  alias_of: The Feast of the Goat
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Spanish title of Vargas Llosa novel; merge into The Feast of the Goat.'
+- canonical_title: The Feast of the Goat de
+  decision: alias
+  alias_of: The Feast of the Goat
+  reason: title_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: parser fragment with trailing connector; merge into The Feast of the Goat.'
+- canonical_title: Las babas del diablo” or “Devil’s Spit” or similar translations
+  decision: alias
+  alias_of: Blow-Up
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: answerline gives Cortazar title and translation hints; merge into Blow-Up.'
+- canonical_title: Le Dieu du Carnage
+  decision: alias
+  alias_of: God of Carnage
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: French title variant; merge into God of Carnage.'
+- canonical_title: Le tour du monde en quatre-vingts jours
+  decision: alias
+  alias_of: Around the World in Eighty Days
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: French title variant; merge into Around the World in Eighty Days.'
+- canonical_title: Mario und der Zauberer
+  decision: alias
+  alias_of: Mario and the Magician
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: German title variant; merge into Mario and the Magician.'
+- canonical_title: Meijin
+  decision: alias
+  alias_of: The Master of Go
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Japanese title variant; merge into The Master of Go.'
+- canonical_title: Memushiri ko-uchi
+  decision: alias
+  alias_of: Nip the Buds, Shoot the Kids
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Japanese title variant; merge into Nip the Buds, Shoot the Kids.'
+- canonical_title: Myortvye dushi
+  decision: alias
+  alias_of: Dead Souls
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: transliterated Russian title; merge into Dead Souls.'
+- canonical_title: Persai
+  decision: alias
+  alias_of: The Persians
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Greek title variant; merge into The Persians.'
+- canonical_title: Pryestupleniye i Nakazaniye
+  decision: alias
+  alias_of: Crime and Punishment
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: transliterated Russian title; merge into Crime and Punishment.'
+- canonical_title: Satyrica
+  decision: alias
+  alias_of: Satyricon
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: alternate Latin title; merge into Satyricon.'
+- canonical_title: Sasameyuki
+  decision: alias
+  alias_of: The Makioka Sisters
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Japanese title variant; merge into The Makioka Sisters.'
+- canonical_title: Tartuffe, or the Imposter
+  decision: alias
+  alias_of: Tartuffe
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: subtitle/translation variant; merge into Tartuffe.'
+- canonical_title: Tartuffe, ou l'Imposteur
+  decision: alias
+  alias_of: Tartuffe
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: French title/subtitle variant; merge into Tartuffe.'
+- canonical_title: Tartuffe, or The Impostor
+  decision: alias
+  alias_of: Tartuffe
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: subtitle variant; merge into Tartuffe.'
+- canonical_title: Tartuffe, or the hypocrite
+  decision: alias
+  alias_of: Tartuffe
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: subtitle variant; merge into Tartuffe.'
+- canonical_title: Le Tartuffe
+  decision: alias
+  alias_of: Tartuffe
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: French article/title variant; merge into Tartuffe.'
+- canonical_title: The Frenzy of Orlando
+  decision: alias
+  alias_of: Orlando Furioso
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: literal translation of Orlando Furioso; merge into established row.'
+- canonical_title: The Life and Adventures of Nicholas Nickleby
+  decision: alias
+  alias_of: Nicholas Nickleby
+  reason: duplicate_full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: full title variant; merge into Nicholas Nickleby.'
+- canonical_title: The Life and Death of _King John
+  decision: alias
+  alias_of: King John
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: malformed Shakespeare full title variant; merge into King John.'
+- canonical_title: The Magic Mountain or Der Zauberberg
+  decision: alias
+  alias_of: The Magic Mountain
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: answerline includes German alternate title; merge into The Magic Mountain.'
+- canonical_title: The Mayor of Zalamea or El Alcalde de Zalamea
+  decision: alias
+  alias_of: The Mayor of Zalamea
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: answerline includes Spanish alternate title; merge into The Mayor of Zalamea.'
+- canonical_title: The Plague or La Peste
+  decision: alias
+  alias_of: The Plague
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: answerline includes French alternate title; merge into The Plague.'
+- canonical_title: 'The Red and the Black: A Chronicle of the 19th Century'
+  decision: alias
+  alias_of: The Red and the Black
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: subtitle variant; merge into The Red and the Black.'
+- canonical_title: The Scarlet and the Black
+  decision: alias
+  alias_of: The Red and the Black
+  reason: wrong_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: answerline variant is evidenced by Julien Sorel clues; merge into The Red and the Black.'
+- canonical_title: The Lower Depths or Na dne
+  decision: alias
+  alias_of: The Lower Depths
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: answerline includes Russian alternate title; merge into The Lower Depths.'
+- canonical_title: The Immoralist or L'Immoraliste
+  decision: alias
+  alias_of: The Immoralist
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: answerline includes French alternate title; merge into The Immoralist.'
+- canonical_title: Troades
+  decision: alias
+  alias_of: The Trojan Women
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Latin/Greek title variant; merge into The Trojan Women.'
+- canonical_title: True History or Vera Historia
+  decision: alias
+  alias_of: A True Story
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: alternate title answerline; merge into A True Story.'
+- canonical_title: Treasure Island, or the Mutiny of the Hispaniola
+  decision: alias
+  alias_of: Treasure Island
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: subtitle variant; merge into Treasure Island.'
+- canonical_title: Vishnyovy sad
+  decision: alias
+  alias_of: The Cherry Orchard
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: transliterated Russian title; merge into The Cherry Orchard.'
+- canonical_title: Voyage au bout de la nuit
+  decision: alias
+  alias_of: Journey to the End of the Night
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: French title of Celine novel; merge into Journey to the End of the Night.'
+- canonical_title: William’s Vision of Piers Plowman
+  decision: alias
+  alias_of: Piers Plowman
+  reason: duplicate_full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: full title variant; merge into Piers Plowman.'
+- canonical_title: A hora da estrela
+  decision: alias
+  alias_of: The Hour of the Star
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Portuguese title of Lispector novella; merge into The Hour of the Star.'
+- canonical_title: Veinte poemas de amour y una canción de desesperada
+  decision: alias
+  alias_of: Twenty Love Poems and a Song of Despair
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: misspelled Spanish answerline variant; merge into Twenty Love Poems and a Song of Despair.'
+- canonical_title: El almohadón de plumas
+  decision: alias
+  alias_of: The Feather Pillow
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Spanish title variant; merge into The Feather Pillow.'
+- canonical_title: Kuroi Ame
+  decision: alias
+  alias_of: Black Rain
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Japanese title variant; merge into Black Rain.'
+- canonical_title: A Day in the Life of Ivan Denisovich
+  decision: alias
+  alias_of: One Day in the Life of Ivan Denisovich
+  reason: wrong_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: common wrong title variant; merge into One Day in the Life of Ivan Denisovich.'
+- canonical_title: Jay Gatsby's house or equivalents before "this novel
+  decision: reject
+  reason: quizbowl_answerline_instruction_artifact
+  review_status: rejected_quizbowl_parser_artifact
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: quizbowl answerline instruction asks for a setting/object, not a literary work.'
+- canonical_title: Ghostbusters
+  decision: reject
+  reason: film_domain_not_literature
+  review_status: rejected_film_not_literature_product
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: film answerline artifact, not a literary work.'
+- canonical_title: Szent-Györgyi-Krebs cycle
+  decision: reject
+  reason: science_term_not_work
+  review_status: rejected_science_term_not_work
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: biochemical pathway, not a literary work.'
+- canonical_title: Politeia
+  decision: alias
+  alias_of: The Republic
+  reason: philosophy_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: Greek title variant of Plato work; target is already routed out of the literature-only product.'
+- canonical_title: Die Traumdeutung
+  decision: alias
+  alias_of: The Interpretation of Dreams
+  reason: social_science_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: German title variant of Freud work; target is already routed out of the literature-only product.'
+- canonical_title: Der Ursprung des Kunstwerkes
+  decision: alias
+  alias_of: The Origin of the Work of Art
+  reason: philosophy_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: German title variant of Heidegger essay; target is already non-public for the literature list.'
+- canonical_title: Gentleman from Providence
+  decision: reject
+  reason: person_epithet_not_work
+  review_status: rejected_person_epithet_not_work
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: epithet for Lovecraft, not a standalone work.'
+- canonical_title: Book of Community
+  decision: alias
+  alias_of: Popol Vuh
+  reason: subtitle_or_translation_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: translation/subtitle phrase for Popol Vuh; merge into Popol Vuh.'
+- canonical_title: Mercy, Pity, Peace, and Love
+  decision: reject
+  reason: quoted_phrase_not_work
+  review_status: rejected_quotation_phrase_not_work
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: quoted phrase from Blake context, not a standalone work title.'
+- canonical_title: Guilt and Innocence in Hitler
+  decision: reject
+  reason: title_fragment
+  review_status: rejected_title_fragment
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: truncated historical-work title phrase embedded in a clue, not a literary work.'
+- canonical_title: Closed Doors, or The Great Drumsheugh Case
+  decision: reject
+  reason: source_case_not_literary_work
+  review_status: rejected_history_journalism_not_literature
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: case/source context behind a play, not itself a public literature-list work.'
+- canonical_title: The Marriage of Cana
+  decision: reject
+  reason: visual_art_context_not_literature
+  review_status: rejected_visual_art_not_literature
+  source: codex_phase_b_tail_pollution_batch2
+  notes: 'Tail cleanup: painting context, not a literary work.'
