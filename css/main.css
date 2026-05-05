@@ -2519,6 +2519,7 @@ textarea:focus-visible,
 
 .canon-row-actions {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.35rem;

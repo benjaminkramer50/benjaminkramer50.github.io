@@ -585,6 +585,7 @@ title: Movie Log
             '<div class="canon-row-director">' + escapeHtml(item.director) + '</div>' +
           '</div>' +
           '<div class="canon-row-actions">' +
+            ratingHtml +
             statusPills +
           '</div>' +
         '</div>' +
