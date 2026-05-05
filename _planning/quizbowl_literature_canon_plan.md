@@ -8,6 +8,21 @@ Status: implemented_parallel_track
 
 Build a literature canon from the raw quizbowl corpus. Do not use Bloom, online lists, anthology tables of contents, syllabi, the existing canon, Loci literature-track labels, or Loci canon-refinement tables as inclusion evidence. The current canon is preserved as-is; this becomes a separate experimental canon and comparison layer.
 
+## Final Product Goal
+
+The main deliverable is a quizbowl-derived literature reading list, not just a raw canon dump. The public product should help someone decide what to read, in what broad order, and why each work matters in quizbowl culture.
+
+The final literature product should include:
+
+- A clean accepted reading list of literary works.
+- A salience score and tier for each work.
+- Evidence links or snippets showing why the work appears.
+- Filters for tier, source channel, review status, form/genre, era, region/tradition, and eventually unit.
+- Reading-list views that can be grouped into units such as ancient epic/scripture-as-literature, classical drama, medieval romance, early modern drama, global novel traditions, modernism, postcolonial literature, contemporary global literature, poetry, short fiction, and oral traditions.
+- Audit-only rejected/review queues so opera, social science, philosophy, geography artifacts, author names, characters, and ambiguous title fragments do not pollute the public reading list.
+
+The correct endpoint is a browsable and deeply filterable quizbowl literature syllabus, backed by reproducible evidence.
+
 The inclusion signal is simple in principle:
 
 - A literary work becomes eligible when it appears in at least four distinct raw quizbowl questions.
@@ -277,6 +292,49 @@ Target: 0.5-1 day.
 - Show frequency evidence: mentions, sets, years, first/last appearance.
 - Let users filter by tier, form, era if available, and review status.
 - Keep the current canon and quizbowl canon visually distinct.
+
+### QL6: Reading-List Units And Deep Filters
+
+Target: 1-3 days for a useful first pass; longer for serious manual refinement.
+
+- Add normalized form labels: novel, play, poem, short story, epic, collection, scripture-as-literature, oral/traditional text, essay/memoir only when treated as literature.
+- Add broad eras and unit labels, initially rule-based from dates/title traditions and later manually corrected.
+- Add region/tradition labels where evidence is strong enough: Greek, Roman, Sanskrit, Classical Chinese, Japanese, Arabic/Persian, European medieval, early modern European, Russian, Latin American, African, South Asian, East Asian, Indigenous, Caribbean, diasporic, etc.
+- Create reading-list views by unit and tier, so the page is not only a ranked list.
+- Keep ambiguous unit/era assignments in audit fields until adjudicated.
+
+### QL7: Adjudication And LLM-Assisted Review
+
+Target: iterative.
+
+- Store explicit human or LLM-assisted decisions in `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml`.
+- Generate deterministic audit queues: accepted-but-suspicious, rejected-but-rescuable, high-salience review, generic/short title, and split/merge/subwork.
+- Use LLM calls only on evidence packets, not as a free-form source of canon additions.
+- Require structured JSON decisions: accept literary work, reject non-literary, split, merge, alias, or needs human review.
+- Rerun the build after adjudication so every public decision is reproducible.
+
+## Later Subject Reading Lists
+
+The same quizbowl-derived method can produce additional reading lists after the literature pipeline is stable. These should be separate products, not folded into literature.
+
+Recommended separation:
+
+- **Religion:** scripture, theological works, devotional texts, religious law, major commentarial traditions, mysticism, and religious-philosophical works when quizbowl treats them primarily as religion.
+- **Mythology:** myth cycles, epics, sagas, cosmogonies, oral myth traditions, folklore collections, and mythographic sources. This overlaps with literature, but the product goal is different: mythological literacy rather than literary reading order.
+- **Philosophy:** primary philosophical works and major dialogues/treatises. Keep separate from social science because quizbowl has a distinct philosophy category and because the reading-list logic is author/work/argument centered.
+- **Social Science:** anthropology, sociology, political theory, economics, psychology, linguistics, and related theory. This may become multiple sublists rather than one flat list, because `The Protestant Ethic`, `Deep Play`, `The Interpretation of Cultures`, `The General Theory`, and similar works belong to different learning arcs.
+
+Initial recommendation:
+
+- Build **religion** and **mythology** as separate but cross-linked lists.
+- Build **philosophy** as its own list.
+- Build **social science** as an umbrella with subdiscipline filters; later split it if the list becomes large enough.
+
+Shared infrastructure:
+
+- Reuse candidate extraction, scoring, evidence snippets, track diagnostics, rejected audit files, and adjudication YAML.
+- Change subject-specific keep/reject rules. For example, `The Magic Flute` remains rejected for literature but might still be rejected for mythology/religion unless the task is music; `Deep Play` is rejected for literature but accepted for social science/anthropology.
+- Keep a cross-subject entity map so the same title can have different status by subject.
 
 ## Decision Point
 
