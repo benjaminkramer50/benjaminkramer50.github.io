@@ -85,13 +85,15 @@ This project is done in stages. The corpus-derived canon will never be permanent
 | --- | --- | --- | --- | --- |
 | A | Evidence Pipeline | complete enough for iteration | Raw answerlines and clue text produce reproducible accepted/rejected/review outputs without Loci processed canon tables. | build script, method report, public YAML |
 | B | Public-List Purity | active, `2,011 / 2,000` top audit and public-purity rows adjudicated; first-`1,000` public-row spot check completed | Top `2,000` audit rows adjudicated, first `1,000` public rows pass spot checks, and the next queue is mostly real boundary cases. | adjudications YAML, rejected TSV, review queue |
-| C | Alias And Duplicate Consolidation | active, `40` high-confidence alias rules added | High-salience duplicate families and whole/subwork boundaries are resolved or explicitly routed. | cluster TSV, adjudications YAML |
+| C | Alias And Duplicate Consolidation | active, `43` high-confidence alias rules added; `Invisible Man`/`The Invisible Man` marked distinct | High-salience duplicate families and whole/subwork boundaries are resolved or explicitly routed. | cluster TSV, adjudications YAML |
 | D | Classification Layer | not started | Every public row has provisional form, unit, era, region/tradition, and confidence fields. | enriched public YAML |
 | E | UI And Reading Experience | not started | The public page is a filterable reading-list tool rather than a flat row dump. | site pages/components/styles |
 | F | Literature Release Gate | not started | A stable quizbowl literature canon has passed A-E and has a final method report. | public site, method report |
 | G | Adjacent Quizbowl Reading Lists | planned after F | Religion, mythology, philosophy, and social-science sibling products have their own pipelines and public pages. | separate domain YAMLs and pages |
 
 Current operating phase: Phase C. The top-audit-row count has crossed `2,000` adjudicated rows, the first-`1,000` public-row purity pass removed obvious fragments and non-work rows, and the builder now supports manual alias merges so duplicate variants contribute to one canonical row instead of splitting quizbowl strength.
+
+Current Phase C caveat: `Diary of a Madman` is kept as a public row with article variants merged, but its evidence mixes Gogol and Lu Xun translation conventions. It should be revisited in an author-aware split pass rather than treated as fully resolved.
 
 ### Phase Transition Rules
 

@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-05T07:00:02Z
+Generated: 2026-05-05T07:11:38Z
 
 ## Corpus
 
@@ -9,24 +9,24 @@ Generated: 2026-05-05T07:00:02Z
 - Rows processed: 2216999
 - Evidence fields: raw `answerline` and raw `clue_text`
 - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
-- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2043 decisions)
-- Manual alias rules: 40 loaded, 39 applied after pass 1
+- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2049 decisions)
+- Manual alias rules: 43 loaded, 42 applied after pass 1
 - Worker processes: 4
 - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
 - Threshold: total distinct quizbowl questions >= 4
 
 ## Candidate Extraction
 
-- Raw answerline work candidates: 9508
-- Exact-match work-title seeds from answerlines and clues: 5488
-- Exact-match seed basis counts: `answerline`=714, `answerline_and_clue`=1029, `clue`=3745
-- Raw normalized candidates: 81833
-- Candidates clearing threshold: 14357
-- Public YAML rows after accepted-work filtering: 5180
+- Raw answerline work candidates: 9505
+- Exact-match work-title seeds from answerlines and clues: 5485
+- Exact-match seed basis counts: `answerline`=712, `answerline_and_clue`=1029, `clue`=3744
+- Raw normalized candidates: 81830
+- Candidates clearing threshold: 14354
+- Public YAML rows after accepted-work filtering: 5177
 - Rejected non-literature candidates: 2922
 - Audit queue rows: 12576
 - LLM review queue rows: 500
-- Evidence/example rows written: 68669
+- Evidence/example rows written: 68654
 
 ## Review Routing
 
@@ -39,13 +39,13 @@ Generated: 2026-05-05T07:00:02Z
 
 - `qb_candidate`: 6255
 - `qb_contextual`: 2458
-- `qb_core`: 1059
+- `qb_core`: 1056
 - `qb_major`: 1663
 - `qb_rejected`: 2922
 
 ## Review Status Counts
 
-- `accepted_likely_work`: 5180
+- `accepted_likely_work`: 5177
 - `merged_duplicate_title_variant`: 1
 - `needs_review_act_title_boundary`: 1
 - `needs_review_alternate_poem_title_boundary`: 1

@@ -17149,3 +17149,62 @@ decisions:
   review_status: merged_duplicate_title_variant
   source: codex_phase_c_top_duplicate_alias_pass
   notes: 'Phase C duplicate consolidation: merge this title variant into An Essay on Man.'
+- candidate_id: qb_lit_invisible_man_4f63617d
+  canonical_title: Invisible Man
+  normalized_title: invisible man
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: The Invisible Man
+  source: codex_phase_c_duplicate_disambiguation
+  notes: 'Phase C duplicate disambiguation: Ralph Ellison novel; do not merge with
+    H. G. Wells''s The Invisible Man.'
+- candidate_id: qb_lit_the_invisible_man_65889b58
+  canonical_title: The Invisible Man
+  normalized_title: the invisible man
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: Invisible Man
+  source: codex_phase_c_duplicate_disambiguation
+  notes: 'Phase C duplicate disambiguation: H. G. Wells novel; do not merge with
+    Ralph Ellison''s Invisible Man.'
+- candidate_id: qb_lit_the_song_of_despair_789109c1
+  canonical_title: The Song of Despair
+  normalized_title: the song of despair
+  decision: alias
+  alias_of: A Song of Despair
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_disambiguation
+  notes: 'Phase C duplicate consolidation: merge this article variant into A Song
+    of Despair.'
+- candidate_id: qb_lit_song_of_despair_b79b5e9b
+  canonical_title: Song of Despair
+  normalized_title: song of despair
+  decision: alias
+  alias_of: A Song of Despair
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_disambiguation
+  notes: 'Phase C duplicate consolidation: merge this articleless variant into A
+    Song of Despair.'
+- candidate_id: qb_lit_diary_of_a_madman_775c3720
+  canonical_title: Diary of a Madman
+  normalized_title: diary of a madman
+  decision: accept
+  reason: author_aware_split_needed
+  review_status: accepted_likely_work
+  source: codex_phase_c_duplicate_disambiguation
+  notes: 'Phase C duplicate disambiguation: keep public for now, but evidence mixes
+    Gogol and Lu Xun translation conventions; this needs an author-aware split pass.'
+- candidate_id: qb_lit_the_diary_of_a_madman_5cd719d9
+  canonical_title: The Diary of a Madman
+  normalized_title: the diary of a madman
+  decision: alias
+  alias_of: Diary of a Madman
+  reason: duplicate_title_variant_with_author_split_caveat
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_disambiguation
+  notes: 'Phase C duplicate consolidation: merge article variant into Diary of a
+    Madman; author-aware Gogol/Lu Xun split is deferred.'
