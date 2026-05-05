@@ -29,28 +29,7 @@ title: Movie Log
         {% assign favorite_count = favorite_count | plus: 1 %}
       {% endif %}
     {% endfor %}
-    <section class="movie-profile" aria-labelledby="movie-profile-title">
-      <div class="movie-profile-copy">
-        <p class="movie-profile-kicker">Movie profile</p>
-        <h2 class="movie-profile-title" id="movie-profile-title">Neo-noir is the home base.</h2>
-        <p class="movie-profile-text">My favorite genre is neo-noir: tense investigations, city texture, paranoia, and mysteries that keep widening after the case is solved.</p>
-        <p class="movie-profile-line">In total, since {{ movie_log_start }}, I've watched {{ sorted_movies.size }} movies.</p>
-      </div>
-      <div class="movie-profile-stats" aria-label="Movie log stats">
-        <div class="movie-profile-stat">
-          <span>{{ sorted_movies.size }}</span>
-          <small>watched</small>
-        </div>
-        <div class="movie-profile-stat">
-          <span>{{ favorite_count }}</span>
-          <small>favorites</small>
-        </div>
-        <div class="movie-profile-stat">
-          <span>Neo-noir</span>
-          <small>favorite genre</small>
-        </div>
-      </div>
-    </section>
+    <p class="movie-profile"><strong>Favorite genre:</strong> neo-noir. In total, since {{ movie_log_start }}, I've watched {{ sorted_movies.size }} movies; {{ favorite_count }} are on the favorites shelf.</p>
     {% if favorite_count > 0 %}
     <div class="favorite-poster-grid">
       {% for item in fav_movies %}
