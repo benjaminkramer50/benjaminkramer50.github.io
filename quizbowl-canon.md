@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Quizbowl Literature Reading List
-description: A searchable quizbowl-derived reading list built from repeated literary works in raw answerlines and clue text.
+title: Literature Canon Reading List
+description: A chronological academic literature reading path built from works that recur across quizbowl answerlines and clue text.
 permalink: /quizbowl-canon/
 wide: true
 ---
@@ -12,20 +12,20 @@ wide: true
 {% assign qb_contextual = qb_items | where: "tier", "qb_contextual" %}
 {% assign qb_accepted = qb_items | where: "review_status", "accepted_likely_work" %}
 
-<section class="quizbowl-canon-hero" aria-label="Quizbowl literature reading list overview">
-  <p class="quizbowl-kicker">Quizbowl Literature</p>
-  <p class="page-intro">A searchable reading list of literary works that recur across quizbowl questions. Strength is based on how often a title appears in raw answerlines and clue text, so the list works as a practical map of what quizbowl repeatedly treats as canonical.</p>
-  <p class="canon-status-note">This is not a universal canon and it is not a hand-ranked syllabus. It is an evidence-first browser for quizbowl recurrence, with non-literary hits filtered out of the public list.</p>
+<section class="quizbowl-canon-hero" aria-label="Literature canon reading list overview">
+  <p class="quizbowl-kicker">Academic Literature Canon</p>
+  <p class="page-intro">A chronological reading path through works that repeatedly appear in academic quizbowl literature questions, organized from ancient and classical traditions through contemporary global writing.</p>
+  <p class="canon-status-note">Quizbowl is the source signal, not the subject of the page. The list uses recurrence in answerlines and clue text as evidence for academic canon salience, then presents the result as a literature reading list. Chronology is assigned by the build pipeline from work-date evidence when available, with transparent low-confidence period fallbacks for rows that still need date review.</p>
 </section>
 
 <div class="canon-summary quizbowl-summary" aria-label="Quizbowl canon summary">
   <div class="canon-stat canon-stat-accepted">
     <span class="canon-stat-number">{{ qb_accepted.size }}</span>
-    <span class="canon-stat-label">Public Works</span>
+    <span class="canon-stat-label">Works</span>
   </div>
   <div class="canon-stat canon-stat-accepted">
     <span class="canon-stat-number">{{ qb_core.size }}</span>
-    <span class="canon-stat-label">Core</span>
+    <span class="canon-stat-label">Essential</span>
   </div>
   <div class="canon-stat canon-stat-reviewed">
     <span class="canon-stat-number">{{ qb_major.size }}</span>
@@ -33,38 +33,38 @@ wide: true
   </div>
   <div class="canon-stat canon-stat-planned">
     <span class="canon-stat-number">{{ qb_contextual.size }}</span>
-    <span class="canon-stat-label">Contextual</span>
+    <span class="canon-stat-label">Further Reading</span>
   </div>
 </div>
 
 <div class="quizbowl-method-strip" aria-label="Build method">
-  <span>Source: parsed quizbowl archive</span>
-  <span>Included: repeated literary works</span>
-  <span>Evidence: answerlines and clue text</span>
-  <span>View: paginated for speed</span>
+  <span>Path: ancient to contemporary</span>
+  <span>Source signal: 3+ quizbowl mentions</span>
+  <span>Scope: literature works only</span>
+  <span>Default: period order</span>
 </div>
 
-<div class="quizbowl-quick-filters" aria-label="Quick tier filters">
+<div class="quizbowl-quick-filters" aria-label="Quick canon-strength filters">
   <button class="quizbowl-filter-button" type="button" data-tier-button="" aria-pressed="true">All</button>
-  <button class="quizbowl-filter-button" type="button" data-tier-button="qb_core" aria-pressed="false">Core</button>
+  <button class="quizbowl-filter-button" type="button" data-tier-button="qb_core" aria-pressed="false">Essential</button>
   <button class="quizbowl-filter-button" type="button" data-tier-button="qb_major" aria-pressed="false">Major</button>
-  <button class="quizbowl-filter-button" type="button" data-tier-button="qb_contextual" aria-pressed="false">Contextual</button>
+  <button class="quizbowl-filter-button" type="button" data-tier-button="qb_contextual" aria-pressed="false">Further Reading</button>
 </div>
 
-<div class="canon-filters quizbowl-primary-filters" aria-label="Primary quizbowl literature filters">
+<div class="canon-filters quizbowl-primary-filters" aria-label="Primary literature canon filters">
   <label class="canon-filter-field canon-search-field" for="qb-search">
     <span>Search</span>
-    <input id="qb-search" type="search" placeholder="Title, form, tradition, set, clue sample..." aria-label="Search quizbowl literature reading list">
+    <input id="qb-search" type="search" placeholder="Title, period, tradition, form..." aria-label="Search literature canon reading list">
   </label>
   <label class="canon-filter-field" for="qb-unit-filter">
-    <span>Reading Unit</span>
+    <span>Unit</span>
     <select id="qb-unit-filter" aria-label="Filter by reading unit">
       <option value="">Any Unit</option>
       <option value="ancient_epic_scripture_myth">Ancient Epic / Scripture</option>
       <option value="classical_drama">Classical Drama</option>
       <option value="medieval_romance_saga">Medieval Romance / Saga</option>
       <option value="early_modern_drama">Early Modern Drama</option>
-      <option value="early_modern_world_literature">Early Modern World Lit</option>
+      <option value="early_modern_world_literature">Early Modern World Literature</option>
       <option value="eighteenth_century_prose_and_drama">18th-Century Prose / Drama</option>
       <option value="nineteenth_century_fiction">19th-Century Fiction</option>
       <option value="nineteenth_century_poetry_and_drama">19th-Century Poetry / Drama</option>
@@ -85,9 +85,10 @@ wide: true
   </label>
   <label class="canon-filter-field" for="qb-sort">
     <span>Sort</span>
-    <select id="qb-sort" aria-label="Sort quizbowl literature reading list">
-      <option value="rank">Salience Rank</option>
-      <option value="questions">Question Count</option>
+    <select id="qb-sort" aria-label="Sort literature canon reading list">
+      <option value="chronology" selected>Reading Path</option>
+      <option value="rank">Canon Strength</option>
+      <option value="questions">Source Signal</option>
       <option value="title">Title</option>
     </select>
   </label>
@@ -103,14 +104,14 @@ wide: true
 
 <details class="quizbowl-advanced-filters">
   <summary>More filters</summary>
-  <div class="canon-filters quizbowl-secondary-filters" aria-label="Additional quizbowl literature filters">
+  <div class="canon-filters quizbowl-secondary-filters" aria-label="Additional literature canon filters">
     <label class="canon-filter-field" for="qb-tier-filter">
-      <span>Tier</span>
-      <select id="qb-tier-filter" aria-label="Filter by quizbowl salience tier">
-        <option value="">Any Tier</option>
-        <option value="qb_core">Core</option>
+      <span>Strength</span>
+      <select id="qb-tier-filter" aria-label="Filter by canon strength">
+        <option value="">Any Strength</option>
+        <option value="qb_core">Essential</option>
         <option value="qb_major">Major</option>
-        <option value="qb_contextual">Contextual</option>
+        <option value="qb_contextual">Further Reading</option>
         <option value="qb_candidate">Review Candidate</option>
       </select>
     </label>
@@ -130,7 +131,7 @@ wide: true
       </select>
     </label>
     <label class="canon-filter-field" for="qb-evidence-filter">
-      <span>Evidence</span>
+      <span>Source Evidence</span>
       <select id="qb-evidence-filter" aria-label="Filter by evidence profile">
         <option value="">Any Evidence</option>
         <option value="answerline_and_clue">Answerline + Clue</option>
@@ -139,9 +140,9 @@ wide: true
       </select>
     </label>
     <label class="canon-filter-field" for="qb-era-filter">
-      <span>Era</span>
-      <select id="qb-era-filter" aria-label="Filter by inferred era">
-        <option value="">Any Era</option>
+      <span>Period</span>
+      <select id="qb-era-filter" aria-label="Filter by literary period">
+        <option value="">Any Period</option>
         <option value="ancient_classical">Ancient / Classical</option>
         <option value="medieval">Medieval</option>
         <option value="early_modern">Early Modern</option>
@@ -179,18 +180,18 @@ wide: true
       </select>
     </label>
     <label class="canon-filter-field" for="qb-context-filter">
-      <span>Context</span>
-      <select id="qb-context-filter" aria-label="Filter by dominant quizbowl context">
-        <option value="">Any Context</option>
+      <span>Source Context</span>
+      <select id="qb-context-filter" aria-label="Filter by source context">
+        <option value="">Any Source Context</option>
         <option value="literature_dominant">Literature Dominant</option>
         <option value="cross_category_literary">Cross-Category Literary</option>
         <option value="non_literature_context">Non-Literature Context</option>
       </select>
     </label>
     <label class="canon-filter-field" for="qb-route-filter">
-      <span>Routing</span>
+      <span>Curation</span>
       <select id="qb-route-filter" aria-label="Filter by curation route">
-        <option value="">Any Routing</option>
+        <option value="">Any Curation</option>
         <option value="accepted_clean">Accepted</option>
         <option value="protected_title_collision">Protected Collision</option>
         <option value="author_split_needed">Author Split Needed</option>
@@ -200,7 +201,7 @@ wide: true
 </details>
 
 <div class="quizbowl-canon-toolbar" aria-live="polite">
-  <div class="canon-visible-count" id="qb-visible-count">Loading literature list...</div>
+  <div class="canon-visible-count" id="qb-visible-count">Loading reading list...</div>
   <div class="quizbowl-pagination" id="qb-pagination-top">
     <button class="quizbowl-page-btn" type="button" data-page-action="prev">Previous</button>
     <span class="quizbowl-page-status" data-page-status>Page 1 of 1</span>
@@ -212,9 +213,9 @@ wide: true
   <div class="quizbowl-loading">Loading works...</div>
 </div>
 
-<div id="qb-no-results" class="diary-no-results" hidden>No quizbowl literature works match those filters.</div>
+<div id="qb-no-results" class="diary-no-results" hidden>No literature works match those filters.</div>
 
-<div class="quizbowl-pagination quizbowl-pagination-bottom" id="qb-pagination-bottom" aria-label="Quizbowl literature pages">
+<div class="quizbowl-pagination quizbowl-pagination-bottom" id="qb-pagination-bottom" aria-label="Literature reading-list pages">
   <button class="quizbowl-page-btn" type="button" data-page-action="prev">Previous</button>
   <span class="quizbowl-page-status" data-page-status>Page 1 of 1</span>
   <button class="quizbowl-page-btn" type="button" data-page-action="next">Next</button>
@@ -245,12 +246,61 @@ wide: true
   var pageStatuses = Array.prototype.slice.call(document.querySelectorAll('[data-page-status]'));
   var tierButtons = Array.prototype.slice.call(document.querySelectorAll('[data-tier-button]'));
 
+  var eraOrder = {
+    ancient_classical: 10,
+    medieval: 20,
+    early_modern: 30,
+    eighteenth_century: 40,
+    long_19th_century: 50,
+    modernist: 60,
+    postwar_modern: 70,
+    contemporary: 80,
+    unknown_era: 99
+  };
+
+  var unitOrder = {
+    ancient_epic_scripture_myth: 10,
+    classical_drama: 11,
+    medieval_romance_saga: 20,
+    early_modern_drama: 30,
+    early_modern_world_literature: 31,
+    eighteenth_century_prose_and_drama: 40,
+    nineteenth_century_fiction: 50,
+    nineteenth_century_poetry_and_drama: 51,
+    modernism: 60,
+    postwar_literature: 70,
+    postwar_global_literature: 71,
+    contemporary_global_literature: 80,
+    poetry: 90,
+    short_fiction: 91,
+    drama: 92,
+    literary_nonfiction: 93,
+    fiction_and_narrative: 94,
+    collections_and_cycles: 95,
+    epic_romance_or_oral_tradition: 96,
+    scripture_myth_hymn: 97,
+    unclassified_unit: 99
+  };
+
+  var tierOrder = {
+    qb_core: 1,
+    qb_major: 2,
+    qb_contextual: 3,
+    qb_candidate: 4
+  };
+
   var labels = {
     tier: {
-      qb_core: 'Core',
+      qb_core: 'Essential',
       qb_major: 'Major',
-      qb_contextual: 'Contextual',
+      qb_contextual: 'Further Reading',
       qb_candidate: 'Review Candidate'
+    },
+    strength: {
+      qb_core: 'High',
+      qb_major: 'Medium',
+      qb_contextual: 'Specialized',
+      qb_candidate: 'Candidate'
     },
     form: {
       long_fiction: 'Long Fiction',
@@ -273,7 +323,7 @@ wide: true
       classical_drama: 'Classical Drama',
       medieval_romance_saga: 'Medieval Romance / Saga',
       early_modern_drama: 'Early Modern Drama',
-      early_modern_world_literature: 'Early Modern World Lit',
+      early_modern_world_literature: 'Early Modern World Literature',
       eighteenth_century_prose_and_drama: '18th-Century Prose / Drama',
       nineteenth_century_fiction: '19th-Century Fiction',
       nineteenth_century_poetry_and_drama: '19th-Century Poetry / Drama',
@@ -354,6 +404,10 @@ wide: true
     return Number.isFinite(parsed) ? parsed : fallback;
   }
 
+  function orderValue(order, key, fallback) {
+    return Object.prototype.hasOwnProperty.call(order, key) ? order[key] : fallback;
+  }
+
   function selectedValue(control) {
     return control ? control.value : '';
   }
@@ -364,6 +418,9 @@ wide: true
       item.tier,
       item.work_form,
       item.evidence_profile,
+      item.chronology_label,
+      item.chronology_source,
+      item.chronology_confidence,
       item.reading_unit,
       item.era,
       item.region_or_tradition,
@@ -391,7 +448,16 @@ wide: true
   }
 
   function compareItems(a, b) {
-    var sort = selectedValue(sortSelect) || 'rank';
+    var sort = selectedValue(sortSelect) || 'chronology';
+    if (sort === 'chronology') {
+      return (
+        numberValue(a.chronology_sort_year, 9999) - numberValue(b.chronology_sort_year, 9999) ||
+        orderValue(unitOrder, a.reading_unit, 999) - orderValue(unitOrder, b.reading_unit, 999) ||
+        orderValue(tierOrder, a.tier, 9) - orderValue(tierOrder, b.tier, 9) ||
+        numberValue(a.rank, 999999) - numberValue(b.rank, 999999) ||
+        String(a.title || '').localeCompare(String(b.title || ''))
+      );
+    }
     if (sort === 'questions') {
       return numberValue(b.total_question_count, 0) - numberValue(a.total_question_count, 0);
     }
@@ -416,26 +482,27 @@ wide: true
     });
   }
 
-  function renderItem(item) {
+  function renderItem(item, displayNumber) {
     var article = document.createElement('article');
     article.className = 'canon-item quizbowl-canon-item';
     article.setAttribute('data-tier', item.tier || '');
 
-    var firstLast = item.first_year && item.last_year
-      ? '<span class="canon-date">' + escapeHtml(item.first_year) + '-' + escapeHtml(item.last_year) + '</span>'
-      : '';
     var region = item.region_or_tradition && item.region_or_tradition !== 'unknown_region'
       ? '<span class="canon-chip">' + escapeHtml(label('region', item.region_or_tradition)) + '</span>'
-      : '';
-    var era = item.era && item.era !== 'unknown_era'
-      ? '<span class="canon-chip">' + escapeHtml(label('era', item.era)) + '</span>'
       : '';
     var route = item.routing_status && item.routing_status !== 'accepted_clean'
       ? '<span class="canon-chip quizbowl-routing-chip">' + escapeHtml(label('routing', item.routing_status)) + '</span>'
       : '';
+    var chronology = item.chronology_label
+      ? '<span class="canon-date">' + escapeHtml(item.chronology_label) + '</span>'
+      : '';
+    var chronologyNote = item.chronology_needs_review
+      ? '<span class="canon-chip">Chronology needs review</span>'
+      : '';
+    var sequencePrefix = selectedValue(sortSelect) === 'chronology' ? 'Path ' : '#';
     var example = item.example && item.example.snippet
-      ? '<details class="quizbowl-evidence"><summary>Evidence sample</summary><p><span>' +
-          escapeHtml(item.example.set_title || 'Quizbowl clue') +
+      ? '<details class="quizbowl-evidence"><summary>Source evidence</summary><p><span>Quizbowl source: ' +
+          escapeHtml(item.example.set_title || 'clue sample') +
           (item.example.year ? ', ' + escapeHtml(item.example.year) : '') +
         '</span>' + escapeHtml(item.example.snippet) + '</p></details>'
       : '';
@@ -444,30 +511,24 @@ wide: true
       '<div class="canon-status-mark quizbowl-tier-mark" aria-hidden="true"></div>' +
       '<div class="canon-item-body">' +
         '<div class="canon-item-topline">' +
-          '<span class="canon-sequence-badge">#' + escapeHtml(item.rank) + '</span>' +
+          '<span class="canon-sequence-badge">' + sequencePrefix + escapeHtml(displayNumber) + '</span>' +
+          chronology +
+          '<span class="canon-date">' + escapeHtml(label('era', item.era)) + '</span>' +
           '<span class="canon-era-badge">' + escapeHtml(label('tier', item.tier)) + '</span>' +
           '<span class="canon-date">' + escapeHtml(label('unit', item.reading_unit)) + '</span>' +
-          '<span class="canon-date">' + escapeHtml(item.total_question_count) + ' questions</span>' +
-          '<span class="canon-date">' + escapeHtml(item.distinct_set_count) + ' sets</span>' +
-          firstLast +
         '</div>' +
         '<h2 class="canon-title">' + escapeHtml(item.title) + '</h2>' +
         '<div class="canon-meta">' +
           '<span class="canon-chip canon-level-chip">' + escapeHtml(label('form', item.work_form)) + '</span>' +
-          '<span class="canon-chip">' + escapeHtml(label('evidence', item.evidence_profile)) + '</span>' +
           region +
-          era +
-          '<span class="canon-chip">' + escapeHtml(label('context', item.quizbowl_track_profile)) + '</span>' +
+          chronologyNote +
           route +
-          '<span class="canon-chip">' + escapeHtml(label('', item.dominant_quizbowl_track)) + '</span>' +
-          '<span class="canon-chip">' + escapeHtml(item.tossup_count) + ' tossups</span>' +
-          '<span class="canon-chip">' + escapeHtml(item.bonus_count) + ' bonuses</span>' +
         '</div>' +
         example +
       '</div>' +
       '<div class="canon-item-actions quizbowl-score-block">' +
-        '<span class="quizbowl-score-label">Score</span>' +
-        '<span class="canon-status-label">' + escapeHtml(item.quizbowl_salience_score) + '</span>' +
+        '<span class="quizbowl-score-label">Signal</span>' +
+        '<span class="canon-status-label">' + escapeHtml(label('strength', item.tier)) + '</span>' +
       '</div>';
     return article;
   }
@@ -489,8 +550,8 @@ wide: true
     var pageItems = filteredItems.slice(start, start + size);
 
     list.innerHTML = '';
-    pageItems.forEach(function (item) {
-      list.appendChild(renderItem(item));
+    pageItems.forEach(function (item, index) {
+      list.appendChild(renderItem(item, start + index + 1));
     });
 
     if (visibleCount) {
