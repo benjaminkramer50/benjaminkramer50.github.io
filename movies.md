@@ -65,7 +65,7 @@ title: Movie Log
   </div>
 
   <div data-shelf-view-panel="recents">
-  <p class="movie-count-note">This year, I've watched <strong>{{ movies_this_year }}</strong> movies; all time, I've logged <strong>{{ sorted_movies.size }}</strong>.</p>
+  <p class="movie-count-note">This year, I've watched <strong>{{ movies_this_year }}</strong> movies. All time, I've logged <strong>{{ sorted_movies.size }}</strong>.</p>
   <div class="shelf-section" id="shelf-recents">
     <div class="shelf-row">
       {% for item in sorted_movies limit:12 %}
