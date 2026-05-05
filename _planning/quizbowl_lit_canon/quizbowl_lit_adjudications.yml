@@ -19033,3 +19033,777 @@ decisions:
   review_status: rejected_visual_art_not_literature
   source: codex_phase_b_tail_pollution_batch2
   notes: 'Tail cleanup: painting context, not a literary work.'
+- canonical_title: The Crying of Lot 49 and Gravity's Rainbow
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing two Pynchon works, not a standalone work.'
+- canonical_title: The Sorrows of Young Werther and Faust
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Goethe works, not a standalone work.'
+- canonical_title: Iliad and Odyssey
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: translator/author clue listing Homeric epics, not a standalone work.'
+- canonical_title: The Alchemist and Volpone
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Jonson plays, not a standalone work.'
+- canonical_title: Volpone and The Alchemist
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Jonson plays, not a standalone work.'
+- canonical_title: The Seagull and The Cherry Orchard
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Chekhov plays, not a standalone work.'
+- canonical_title: Endgame and Waiting for Godot
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Beckett plays, not a standalone work.'
+- canonical_title: Burger's Daughter and July's People
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Gordimer novels, not a standalone work.'
+- canonical_title: The Bald Soprano and Rhinoceros
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Ionesco plays, not a standalone work.'
+- canonical_title: Rhinoceros and The Bald Soprano
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Ionesco plays, not a standalone work.'
+- canonical_title: The Misanthrope and Tartuffe
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Moliere plays, not a standalone work.'
+- canonical_title: Tartuffe and The Misanthrope
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Moliere plays, not a standalone work.'
+- canonical_title: The Miser and Tartuffe
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Moliere plays, not a standalone work.'
+- canonical_title: The Piano Lesson and Fences
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing August Wilson plays, not a standalone work.'
+- canonical_title: Steppenwolf and Siddhartha
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Hesse works, not a standalone work.'
+- canonical_title: Siddhartha and Steppenwolf
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Hesse works, not a standalone work.'
+- canonical_title: Pale Fire and Lolita
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Nabokov novels, not a standalone work.'
+- canonical_title: Rob Roy and Ivanhoe
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Walter Scott novels, not a standalone work.'
+- canonical_title: The Plague and The Stranger
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Camus works, not a standalone work.'
+- canonical_title: The Conservationist and July's People
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Gordimer novels, not a standalone work.'
+- canonical_title: The Conservationist and July
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: truncated author clue for Gordimer works, not a standalone work.'
+- canonical_title: The Crucible and Death of a Salesman
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Miller plays, not a standalone work.'
+- canonical_title: Death of a Salesman and The Crucible
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Miller plays, not a standalone work.'
+- canonical_title: All My Sons and The Crucible
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Miller plays, not a standalone work.'
+- canonical_title: After the Fall and All My Sons
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Miller plays, not a standalone work.'
+- canonical_title: Animal Farm and 1984
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Orwell novels, not a standalone work.'
+- canonical_title: 1984 and Animal Farm
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Orwell novels, not a standalone work.'
+- canonical_title: Sonnets to Orpheus and the Duino Elegies
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Rilke works, not a standalone work.'
+- canonical_title: Cat's Cradle and Slaughterhouse-Five
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Vonnegut novels, not a standalone work.'
+- canonical_title: The Fountainhead and Atlas Shrugged
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Rand novels, not a standalone work.'
+- canonical_title: Atlas Shrugged and The Fountainhead
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Rand novels, not a standalone work.'
+- canonical_title: Antigone and Oedipus Rex
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Sophocles plays, not a standalone work.'
+- canonical_title: Oedipus Rex and Antigone
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Sophocles plays, not a standalone work.'
+- canonical_title: Major Barbara and Pygmalion
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Shaw plays, not a standalone work.'
+- canonical_title: Silas Marner and Middlemarch
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Eliot novels, not a standalone work.'
+- canonical_title: Middlemarch and SIlas Marner
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Eliot novels, not a standalone work.'
+- canonical_title: The Mill on the Floss and Middlemarch
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Eliot novels, not a standalone work.'
+- canonical_title: The Bluest Eye and Beloved
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Morrison novels, not a standalone work.'
+- canonical_title: Song of Solomon and Beloved
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Morrison novels, not a standalone work.'
+- canonical_title: The Hunchback of Notre Dame and Les Miserables
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Hugo novels, not a standalone work.'
+- canonical_title: The Trojan Women and Medea
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Euripides plays, not a standalone work.'
+- canonical_title: Medea and The Trojan Women
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Euripides plays, not a standalone work.'
+- canonical_title: The Frogs and The Clouds
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Aristophanes plays, not a standalone work.'
+- canonical_title: The Birds and The Clouds
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Aristophanes plays, not a standalone work.'
+- canonical_title: The Birds and Lysistrata
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Aristophanes plays, not a standalone work.'
+- canonical_title: The Robbers and William Tell
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Schiller plays, not a standalone work.'
+- canonical_title: Waiting for the Barbarians and Disgrace
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Coetzee novels, not a standalone work.'
+- canonical_title: Emma and Pride and Prejudice
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Austen novels, not a standalone work.'
+- canonical_title: Nostromo and Heart of Darkness
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Conrad novels, not a standalone work.'
+- canonical_title: The Aleph and The Garden of Forking Paths
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Borges stories/collections, not a standalone work.'
+- canonical_title: Matilda and Charlie and the Chocolate Factory
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Dahl novels, not a standalone work.'
+- canonical_title: Faust and The Sorrows of Young Werther
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Goethe works, not a standalone work.'
+- canonical_title: The Memorandum and The Garden Party
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Havel plays, not a standalone work.'
+- canonical_title: Typee and Omoo
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Melville novels, not a standalone work.'
+- canonical_title: Blood Wedding and Yerma
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Lorca plays, not a standalone work.'
+- canonical_title: Speed-the-Plow and Glengarry Glen Ross
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Mamet plays, not a standalone work.'
+- canonical_title: The Immoralist and The Counterfeiters
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Gide novels, not a standalone work.'
+- canonical_title: The Inheritors and Pincher Martin
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Golding novels, not a standalone work.'
+- canonical_title: The Octopus and McTeague
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Norris novels, not a standalone work.'
+- canonical_title: Zadig and Candide
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Voltaire works, not a standalone work.'
+- canonical_title: According to Jesus Christ and Blindness
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: truncated author clue listing Saramago works, not a standalone work.'
+- canonical_title: The Gospel According to Jesus Christ and Blindness
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Saramago works, not a standalone work.'
+- canonical_title: Dubliners and Ulysses
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Joyce works, not a standalone work.'
+- canonical_title: The Satanic Verses and Midnight
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: truncated author clue for Rushdie works, not a standalone work.'
+- canonical_title: The Sound and the Fury and Absalom
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: truncated author clue for Faulkner works, not a standalone work.'
+- canonical_title: Ars Amatoria and Metamorphoses
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Ovid works, not a standalone work.'
+- canonical_title: Cosmicomics and If on a Winter's Night a Traveler
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Calvino works, not a standalone work.'
+- canonical_title: Seven Against Thebes and The Oresteia
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Aeschylus works, not a standalone work.'
+- canonical_title: Shirley and Villette
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Charlotte Bronte novels, not a standalone work.'
+- canonical_title: Snow and My Name is Red
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: author clue listing Pamuk novels, not a standalone work.'
+- canonical_title: Rahel and Estha
+  decision: reject
+  reason: character_pair_not_work
+  review_status: rejected_character_pair_not_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: character pair from The God of Small Things, not a work.'
+- canonical_title: Tom and Maggie Tulliver
+  decision: reject
+  reason: character_pair_not_work
+  review_status: rejected_character_pair_not_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: character pair from The Mill on the Floss, not a work.'
+- canonical_title: London and Paris
+  decision: reject
+  reason: clue_fragment_not_work
+  review_status: rejected_clue_fragment_not_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: setting phrase from A Tale of Two Cities clue, not a standalone work.'
+- canonical_title: Love and Marriage
+  decision: reject
+  reason: act_title_not_standalone_work
+  review_status: rejected_act_title_not_standalone_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: Our Town act title, not a standalone work.'
+- canonical_title: Dick and Jane
+  decision: reject
+  reason: embedded_reader_fragment_not_work
+  review_status: rejected_embedded_text_not_public_literature
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: embedded primer fragment in Morrison clue, not a standalone canon work.'
+- canonical_title: A Jug of Wine, a Loaf of Bread—and Thou
+  decision: reject
+  reason: quotation_fragment_not_work
+  review_status: rejected_quotation_fragment_not_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: quoted line from Rubaiyat context, not a standalone work.'
+- canonical_title: Tomorrow and Tomorrow and Tomorrow
+  decision: reject
+  reason: quotation_fragment_not_work
+  review_status: rejected_quotation_fragment_not_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: Macbeth quotation phrase, not a standalone work.'
+- canonical_title: Destroyer and Preserver
+  decision: reject
+  reason: quotation_fragment_not_work
+  review_status: rejected_quotation_fragment_not_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: phrase from Ode to the West Wind, not a standalone work.'
+- canonical_title: The Conquest and Colonialism
+  decision: reject
+  reason: section_title_not_standalone_work
+  review_status: rejected_section_title_not_standalone_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: essay/section inside The Labyrinth of Solitude context, not a standalone public work.'
+- canonical_title: Eating and Drinking
+  decision: reject
+  reason: section_title_not_standalone_work
+  review_status: rejected_section_title_not_standalone_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: section from The Prophet, not a standalone public work.'
+- canonical_title: Reason and Passion
+  decision: reject
+  reason: section_title_not_standalone_work
+  review_status: rejected_section_title_not_standalone_work
+  source: codex_phase_b_combined_title_batch1
+  notes: 'Combined-title cleanup: section from The Prophet, not a standalone public work.'
+- canonical_title: The Crying of Lot 49 and Gravity
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: truncated author clue for Pynchon works, not a standalone work.'
+- canonical_title: David and Goliath
+  decision: reject
+  reason: character_or_biblical_motif_not_work
+  review_status: rejected_biblical_motif_or_subwork
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: biblical/character motif in clue context, not a standalone literature-list work.'
+- canonical_title: Fun and Games
+  decision: reject
+  reason: act_title_not_standalone_work
+  review_status: rejected_act_title_not_standalone_work
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: act title from Who''s Afraid of Virginia Woolf?, not a standalone work.'
+- canonical_title: The Trial and The Metamorphosis
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Kafka works, not a standalone work.'
+- canonical_title: Sunstone and The Labyrinth of Solitude
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Paz works, not a standalone work.'
+- canonical_title: Yerma and Blood Wedding
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Lorca plays, not a standalone work.'
+- canonical_title: Yerma and The House of Bernarda Alba
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Lorca plays, not a standalone work.'
+- canonical_title: Man and Superman and Pygmalion
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Shaw plays, not a standalone work.'
+- canonical_title: Nana and Germinal
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Zola novels, not a standalone work.'
+- canonical_title: Andromaque and Phedre
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Racine plays, not a standalone work.'
+- canonical_title: Clarissa and Pamela
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Richardson novels, not a standalone work.'
+- canonical_title: Buddenbrooks and Death in Venice
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Thomas Mann works, not a standalone work.'
+- canonical_title: Buddenbrooks and The Magic Mountain
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Thomas Mann works, not a standalone work.'
+- canonical_title: The Hobbit and The Lord of the Rings
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Tolkien works, not a standalone work.'
+- canonical_title: The Castle and The Trial
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Kafka works, not a standalone work.'
+- canonical_title: The Imaginary Invalid and Tartuffe
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Moliere plays, not a standalone work.'
+- canonical_title: The Stone Raft and Blindness
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Saramago works, not a standalone work.'
+- canonical_title: Fences and The Piano Lesson
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing August Wilson plays, not a standalone work.'
+- canonical_title: Herzog and The Adventures of Augie March
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Bellow novels, not a standalone work.'
+- canonical_title: Les Miserables and The Hunchback of Notre Dame
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Hugo novels, not a standalone work.'
+- canonical_title: The Clouds and Lysistrata
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Aristophanes plays, not a standalone work.'
+- canonical_title: The Frogs and Lysistrata
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Aristophanes plays, not a standalone work.'
+- canonical_title: Babbitt and Main Street
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Sinclair Lewis novels, not a standalone work.'
+- canonical_title: Main Street and Babbitt
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Sinclair Lewis novels, not a standalone work.'
+- canonical_title: Evangeline and The Song of Hiawatha
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Longfellow poems, not a standalone work.'
+- canonical_title: Without a Hero and Requiem
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Akhmatova works, not a standalone work.'
+- canonical_title: Odyssey and the Iliad
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Homeric epics, not a standalone work.'
+- canonical_title: Finnegans Wake and Ulysses
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Joyce works, not a standalone work.'
+- canonical_title: Kidnapped and Treasure Island
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Stevenson novels, not a standalone work.'
+- canonical_title: My Name is Red and Snow
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Pamuk novels, not a standalone work.'
+- canonical_title: One Day in the Life of Ivan Denisovich and The Gulag
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: truncated author clue listing Solzhenitsyn works, not a standalone work.'
+- canonical_title: The Bacchae and Medea
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Euripides plays, not a standalone work.'
+- canonical_title: The Cherry Orchard and The Seagull
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Chekhov plays, not a standalone work.'
+- canonical_title: The Counterfeiters and The Immoralist
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Gide novels, not a standalone work.'
+- canonical_title: The Idiot and Crime and Punishment
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Dostoevsky novels, not a standalone work.'
+- canonical_title: Arms and the Man and Pygmalion
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Shaw plays, not a standalone work.'
+- canonical_title: Kim and The Jungle Book
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Kipling works, not a standalone work.'
+- canonical_title: The Fall and The Plague
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Camus works, not a standalone work.'
+- canonical_title: The Father and Miss Julie
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Strindberg plays, not a standalone work.'
+- canonical_title: The School for Scandal and The Rivals
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Sheridan plays, not a standalone work.'
+- canonical_title: The Woman in White and The Moonstone
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Wilkie Collins novels, not a standalone work.'
+- canonical_title: Uncle Vanya and The Seagull
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Chekhov plays, not a standalone work.'
+- canonical_title: Death Comes for the Archbishop and My
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: truncated author clue for Willa Cather works, not a standalone work.'
+- canonical_title: The Birds and The Frogs
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Aristophanes plays, not a standalone work.'
+- canonical_title: The Dunciad and The Rape of the Lock
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Pope works, not a standalone work.'
+- canonical_title: The Glass Bead Game and Siddhartha
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Hesse works, not a standalone work.'
+- canonical_title: Too Late the Phalarope and Cry
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: truncated author clue for Alan Paton works, not a standalone work.'
+- canonical_title: Civil Disobedience and Walden
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch2
+  notes: 'Combined-title cleanup: author clue listing Thoreau works, not a standalone work.'
