@@ -79,6 +79,27 @@ The public YAML should contain only `accepted_likely_work` rows. Ambiguous `need
 
 This project is done in stages. The corpus-derived canon will never be permanently final because new quizbowl packets can be added, but the first production-quality version has concrete stopping criteria.
 
+### Phase Map
+
+| Phase | Name | Status | Exit Gate | Primary Artifacts |
+| --- | --- | --- | --- | --- |
+| A | Evidence Pipeline | complete enough for iteration | Raw answerlines and clue text produce reproducible accepted/rejected/review outputs without Loci processed canon tables. | build script, method report, public YAML |
+| B | Public-List Purity | active, `2,005 / 2,000` top audit rows adjudicated | Top `2,000` audit rows adjudicated, first `1,000` public rows pass spot checks, and the next queue is mostly real boundary cases. | adjudications YAML, rejected TSV, review queue |
+| C | Alias And Duplicate Consolidation | partially active | High-salience duplicate families and whole/subwork boundaries are resolved or explicitly routed. | cluster TSV, adjudications YAML |
+| D | Classification Layer | not started | Every public row has provisional form, unit, era, region/tradition, and confidence fields. | enriched public YAML |
+| E | UI And Reading Experience | not started | The public page is a filterable reading-list tool rather than a flat row dump. | site pages/components/styles |
+| F | Literature Release Gate | not started | A stable quizbowl literature canon has passed A-E and has a final method report. | public site, method report |
+| G | Adjacent Quizbowl Reading Lists | planned after F | Religion, mythology, philosophy, and social-science sibling products have their own pipelines and public pages. | separate domain YAMLs and pages |
+
+Current operating phase: Phase B. The top-audit-row count has crossed `2,000` adjudicated rows. The immediate next checkpoint is a first-`1,000` public-row purity spot check, followed by a decision on whether the remaining queue is clean enough to move into Phase C or whether Phase B needs one more targeted cleanup pass.
+
+### Phase Transition Rules
+
+- Do not start Phase D classification until Phase B has removed obvious public-list pollution and Phase C has resolved the worst duplicate families.
+- Do not redesign the UI in Phase E until the data model has the classification fields users will filter by.
+- Do not fold religion, mythology, philosophy, or social-science works back into the literature list; Phase G creates sibling products after the literature list is stable.
+- If a later phase exposes a major upstream problem, return to the earlier phase, fix it, rebuild, and update the method report.
+
 ### Phase A: Evidence Pipeline
 
 Status: complete enough for iteration.
