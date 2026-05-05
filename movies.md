@@ -8,11 +8,14 @@ title: Movie Log
 {% assign sorted_movies = site.data.movies | reverse | sort: "date_watched" | reverse %}
 {% assign fav_movies = sorted_movies | sort: "date_watched" | reverse %}
 {% assign canon_movies = site.data.movie_canon %}
-{% assign movie_log_start = "April 2026" %}
-{% if sorted_movies.size > 0 %}
-  {% assign first_logged_movie = sorted_movies | last %}
-  {% assign movie_log_start = first_logged_movie.date_watched | date: "%B %Y" %}
-{% endif %}
+{% assign current_movie_year = site.time | date: "%Y" %}
+{% assign movies_this_year = 0 %}
+{% for item in sorted_movies %}
+  {% assign watched_year = item.date_watched | date: "%Y" %}
+  {% if watched_year == current_movie_year %}
+    {% assign movies_this_year = movies_this_year | plus: 1 %}
+  {% endif %}
+{% endfor %}
 
 {% if sorted_movies.size > 0 or canon_movies.size > 0 %}
 <div class="shelf">
@@ -29,7 +32,6 @@ title: Movie Log
         {% assign favorite_count = favorite_count | plus: 1 %}
       {% endif %}
     {% endfor %}
-    <p class="movie-profile"><strong>Favorite genre:</strong> neo-noir. In total, since {{ movie_log_start }}, I've watched {{ sorted_movies.size }} movies; {{ favorite_count }} are on the favorites shelf.</p>
     {% if favorite_count > 0 %}
     <div class="favorite-poster-grid">
       {% for item in fav_movies %}
@@ -63,6 +65,7 @@ title: Movie Log
   </div>
 
   <div data-shelf-view-panel="recents">
+  <p class="movie-count-note">This year, I've watched <strong>{{ movies_this_year }}</strong> movies; all time, I've logged <strong>{{ sorted_movies.size }}</strong>.</p>
   <div class="shelf-section" id="shelf-recents">
     <div class="shelf-row">
       {% for item in sorted_movies limit:12 %}

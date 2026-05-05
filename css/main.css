@@ -2018,7 +2018,7 @@ textarea:focus-visible,
   text-decoration: none !important;
 }
 
-.movie-profile {
+.movie-count-note {
   max-width: 46rem;
   margin: 0.1rem 0 1rem;
   padding: 0 0 0.85rem;
@@ -2028,7 +2028,7 @@ textarea:focus-visible,
   color: var(--color-muted);
 }
 
-.movie-profile strong {
+.movie-count-note strong {
   color: var(--color-text);
   font-weight: 600;
 }
