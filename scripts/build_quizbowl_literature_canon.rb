@@ -6,6 +6,7 @@ require "digest"
 require "fileutils"
 require "json"
 require "optparse"
+require "rbconfig"
 require "set"
 require "sqlite3"
 require "time"
@@ -15,6 +16,7 @@ ROOT = File.expand_path("..", __dir__)
 DEFAULT_DB = "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db"
 DEFAULT_OUT = File.join(ROOT, "_planning", "quizbowl_lit_canon")
 DEFAULT_DATA_OUT = File.join(ROOT, "_data", "quizbowl_literature_canon.yml")
+DEFAULT_ADJUDICATIONS = File.join(DEFAULT_OUT, "quizbowl_lit_adjudications.yml")
 
 SPACE_RE = /\s+/
 ANSWER_MARKER_RE = /\b(?:answer|answers|answerline|answerlines)\s*:/i
@@ -32,6 +34,15 @@ STRONG_LITERARY_FORMS = Set.new(%w[
   novel play poem short_story story novella epic collection drama tragedy
   comedy cycle trilogy tetralogy saga romance fable tale myth scripture
   gospel anthology lyric ode sonnet ballad elegy
+]).freeze
+CORE_LITERARY_ANSWERLINE_FORMS = Set.new(%w[
+  novel play poem short_story story novella epic drama tragedy comedy cycle
+  trilogy tetralogy saga romance fable tale myth scripture gospel lyric ode
+  sonnet ballad elegy
+]).freeze
+NON_LITERATURE_TRACKS = Set.new(%w[
+  fine_arts social_science geography history science philosophy pop_culture
+  current_events trash
 ]).freeze
 LEADING_NOISE_RE = /\A(?:the\s+)?(?:title\s+|aforementioned\s+|another\s+|this\s+|that\s+)+/i
 LEADING_BAD_WORD_RE = /\A(?:in|on|at|by|from|to|for|with|and|or|name|identify|this|that|another|other|along|later|extra)\b/i
@@ -63,6 +74,9 @@ TITLE_PHRASE_RE = /#{CAP_WORD}(?:(?:\s+#{LOWER_CONNECTOR}|\s+#{CAP_WORD})){0,10}
 HIGH_RISK_TITLE_EXEMPT_NORMALIZED = Set.new([
   "the aeneid", "the iliad", "the odyssey", "the ramayana"
 ]).freeze
+
+GENERIC_ANSWERLINE_FORMS = Set.new(%w[book work essay unknown]).freeze
+LLM_REVIEW_QUEUE_LIMIT = 500
 
 CandidateStats = Struct.new(
   :normalized_title,
@@ -352,18 +366,47 @@ end
 def non_literary_context_dominated?(stats)
   return false if literary_answerline_backed?(stats)
 
-  non_literary_count = stats.non_literary_signal_count.to_i
-  return false if non_literary_count < 2
+  non_literary_signal_count = stats.non_literary_signal_count.to_i
+  literary_signal_count = stats.literary_signal_count.to_i
+  literature_track_count = track_count(stats, "literature")
+  named_non_lit_track_count = named_non_literature_track_count(stats)
+  core_form_count = core_literary_answerline_form_count(stats)
 
-  true
+  return true if non_literary_signal_count >= 2 && non_literary_signal_count > literary_signal_count
+  return true if named_non_lit_track_count >= 5 && literature_track_count.zero? && core_form_count.zero?
+  if named_non_lit_track_count >= 10 &&
+      named_non_lit_track_count >= [literature_track_count * 3, 10].max &&
+      core_form_count < 4
+    return true
+  end
+
+  false
+end
+
+def core_literary_answerline_form_count(stats)
+  stats.answerline_form_counts.sum do |form, count|
+    CORE_LITERARY_ANSWERLINE_FORMS.include?(form) ? count : 0
+  end
+end
+
+def core_literary_form_count(stats)
+  stats.form_counts.sum do |form, count|
+    CORE_LITERARY_ANSWERLINE_FORMS.include?(form) ? count : 0
+  end
 end
 
 def literary_answerline_backed?(stats)
   return false if stats.answerline_question_ids.length < 4
 
-  stats.answerline_form_counts.any? do |form, count|
-    count >= 4 && STRONG_LITERARY_FORMS.include?(form)
-  end
+  core_literary_answerline_form_count(stats) >= 4
+end
+
+def clue_only_non_literature_track_dominated?(stats)
+  return false unless stats.answerline_question_ids.empty?
+  return false if track_count(stats, "literature").positive?
+  return false if core_literary_form_count(stats).positive?
+
+  (named_non_literature_track_count(stats) + track_count(stats, "other_academic")) >= 3
 end
 
 def section_context_dominated?(stats)
@@ -474,6 +517,39 @@ def add_observation(stats_by_key, normalized, display, source, form_hint, row, s
   end
 end
 
+def merge_counter!(target, source)
+  source.each { |key, count| target[key] += count }
+end
+
+def merge_stats!(target, source)
+  merge_counter!(target.display_counts, source.display_counts)
+  merge_counter!(target.source_counts, source.source_counts)
+  merge_counter!(target.form_counts, source.form_counts)
+  merge_counter!(target.answerline_form_counts, source.answerline_form_counts)
+  merge_counter!(target.track_counts, source.track_counts)
+  target.question_ids.merge(source.question_ids)
+  target.answerline_question_ids.merge(source.answerline_question_ids)
+  target.clue_question_ids.merge(source.clue_question_ids)
+  target.set_titles.merge(source.set_titles)
+  target.years.merge(source.years)
+  merge_counter!(target.question_type_counts, source.question_type_counts)
+  target.literary_signal_count += source.literary_signal_count
+  target.non_literary_signal_count += source.non_literary_signal_count
+  target.examples = (target.examples + source.examples)
+    .sort_by { |example| [example["question_id"].to_i, example["match_type"].to_s, example["snippet"].to_s] }
+    .first(5)
+end
+
+def merge_stats_by_key!(target, source)
+  source.each do |normalized, stats|
+    if target.key?(normalized)
+      merge_stats!(target[normalized], stats)
+    else
+      target[normalized] = stats
+    end
+  end
+end
+
 def canonical_title(stats)
   stats.display_counts.max_by { |title, count| [count, title.length] }&.first || stats.normalized_title
 end
@@ -568,6 +644,7 @@ def review_status_for(stats)
   return "rejected_non_literary_context" if non_literary_context_dominated?(stats)
   return "accepted_likely_work" if literary_answerline_backed?(stats)
   return "needs_review_section_or_subwork_title" if clue_count >= 4 && section_context_dominated?(stats)
+  return "needs_review_non_literature_track_context" if clue_only_non_literature_track_dominated?(stats)
   return "needs_review_possible_character_or_person" if answerline_count.zero? && person_like_title?(title)
   return "accepted_likely_work" if answerline_count >= 4
   return "needs_review_common_or_short_title" if high_risk_title?(title)
@@ -579,6 +656,45 @@ end
 
 def rejected_review_status?(review_status)
   review_status.to_s.start_with?("rejected_")
+end
+
+def needs_review_status?(review_status)
+  review_status.to_s.start_with?("needs_review_")
+end
+
+def manual_status_from_adjudication(adjudication, base_status)
+  return base_status unless adjudication
+
+  explicit_status = adjudication["review_status"] || adjudication["status"]
+  return explicit_status.to_s unless explicit_status.to_s.empty?
+
+  decision = adjudication["decision"].to_s.downcase
+  reason = normalize_title(adjudication["reason"] || adjudication["category"] || "manual")
+    .tr(" ", "_")
+  reason = "manual" if reason.empty?
+
+  case decision
+  when "accept", "accepted"
+    "accepted_likely_work"
+  when "reject", "rejected"
+    "rejected_#{reason}"
+  when "review", "needs_review"
+    "needs_review_#{reason}"
+  else
+    base_status
+  end
+end
+
+def adjudication_decision(adjudication)
+  return "" unless adjudication
+
+  adjudication["decision"].to_s
+end
+
+def adjudication_reason(adjudication)
+  return "" unless adjudication
+
+  (adjudication["reason"] || adjudication["category"] || adjudication["notes"]).to_s
 end
 
 def log1p(value)
@@ -613,10 +729,54 @@ def safe_tsv(value)
   normalize_space(value).gsub("\t", " ")
 end
 
+def repo_relative_path(path)
+  expanded = File.expand_path(path)
+  root = File.expand_path(ROOT)
+  return expanded[(root.length + 1)..] if expanded.start_with?("#{root}#{File::SEPARATOR}")
+
+  path
+end
+
 def write_tsv(path, headers, rows)
   CSV.open(path, "w", col_sep: "\t", write_headers: true, headers: headers) do |csv|
     rows.each { |row| csv << headers.map { |header| row.fetch(header, "") } }
   end
+end
+
+def write_jsonl(path, rows)
+  File.open(path, "w") do |file|
+    rows.each { |row| file.puts(JSON.generate(row)) }
+  end
+end
+
+def load_adjudications(path)
+  return {} unless File.exist?(path)
+
+  payload = YAML.load_file(path) || {}
+  decisions = payload["decisions"] || []
+  by_key = {}
+  decisions.each_with_index do |entry, index|
+    unless entry.is_a?(Hash)
+      warn "Ignoring malformed adjudication entry at index #{index}"
+      next
+    end
+
+    keys = []
+    candidate_id = entry["candidate_id"].to_s
+    keys << "id:#{candidate_id}" unless candidate_id.empty?
+
+    normalized = entry["normalized_title"].to_s
+    title = entry["canonical_title"] || entry["title"]
+    normalized = normalize_title(title) if normalized.empty? && title
+    keys << "title:#{normalized}" unless normalized.empty?
+
+    keys.each { |key| by_key[key] = entry }
+  end
+  by_key
+end
+
+def adjudication_for(adjudications, title, work_id)
+  adjudications["id:#{work_id}"] || adjudications["title:#{normalize_title(title)}"]
 end
 
 def load_track_id_map(db)
@@ -629,63 +789,313 @@ def load_track_id_map(db)
   track_by_question_id
 end
 
-def parse_options
-  options = {
-    db_path: DEFAULT_DB,
-    out_dir: DEFAULT_OUT,
-    data_out: DEFAULT_DATA_OUT,
-    threshold: 4,
-    limit: nil,
-    max_clue_chars: 6_000,
-    progress_every: 250_000
-  }
-
-  OptionParser.new do |parser|
-    parser.on("--db PATH") { |value| options[:db_path] = value }
-    parser.on("--out-dir PATH") { |value| options[:out_dir] = value }
-    parser.on("--data-out PATH") { |value| options[:data_out] = value }
-    parser.on("--threshold N", Integer) { |value| options[:threshold] = value }
-    parser.on("--limit N", Integer) { |value| options[:limit] = value }
-    parser.on("--max-clue-chars N", Integer) { |value| options[:max_clue_chars] = value }
-    parser.on("--progress-every N", Integer) { |value| options[:progress_every] = value }
-  end.parse!
-
-  options
+def track_count(stats, track)
+  stats.track_counts.fetch(track, 0).to_i
 end
 
-def main
-  options = parse_options
-  raise "Missing quizbowl database: #{options[:db_path]}" unless File.exist?(options[:db_path])
+def known_track_count(stats)
+  stats.track_counts.values.sum
+end
 
-  FileUtils.mkdir_p(options[:out_dir])
-  FileUtils.mkdir_p(File.dirname(options[:data_out]))
+def non_literature_track_count(stats)
+  known_track_count(stats) - track_count(stats, "literature")
+end
 
-  db = SQLite3::Database.new(options[:db_path])
+def named_non_literature_track_count(stats)
+  stats.track_counts.sum do |track, count|
+    NON_LITERATURE_TRACKS.include?(track) ? count : 0
+  end
+end
+
+def dominant_track(stats)
+  stats.track_counts.max_by { |track, count| [count, track] }&.first.to_s
+end
+
+def strong_answerline_form_count(stats)
+  stats.answerline_form_counts.sum do |form, count|
+    STRONG_LITERARY_FORMS.include?(form) ? count : 0
+  end
+end
+
+def generic_answerline_dominated?(stats)
+  answerline_total = stats.answerline_form_counts.values.sum
+  return false if answerline_total.zero?
+
+  generic_count = stats.answerline_form_counts.sum do |form, count|
+    GENERIC_ANSWERLINE_FORMS.include?(form) ? count : 0
+  end
+  generic_count.positive? && generic_count >= strong_answerline_form_count(stats)
+end
+
+def accepted_suspicious?(row)
+  return false unless row[:review_status] == "accepted_likely_work"
+
+  stats = row[:stats]
+  literature = track_count(stats, "literature")
+  non_literature = non_literature_track_count(stats)
+  known = known_track_count(stats)
+  return true if generic_answerline_dominated?(stats) && row[:score] >= 8.0
+  return true if stats.non_literary_signal_count.to_i >= 20
+  return true if known >= 25 && literature < 5 && non_literature >= 20
+  return true if known >= 50 && non_literature >= [literature * 4, 40].max
+
+  false
+end
+
+def rejected_suspicious?(row)
+  return false unless rejected_review_status?(row[:review_status])
+
+  stats = row[:stats]
+  return true if strong_answerline_form_count(stats) >= 2
+  return true if track_count(stats, "literature") >= 10
+  return true if row[:score] >= 9.0 && stats.non_literary_signal_count.to_i < stats.literary_signal_count.to_i
+
+  false
+end
+
+def audit_queue_specs_for(row)
+  status = row[:review_status]
+  specs = []
+
+  if accepted_suspicious?(row)
+    specs << ["accepted_suspicious", "verify_accept_or_move_to_adjudicated_rejection", "accepted row has weak category/form/context sanity signals"]
+  end
+
+  if rejected_suspicious?(row)
+    specs << ["rejected_suspicious", "verify_rejection_or_rescue_with_adjudication", "rejected row has literature-track or strong-form rescue signals"]
+  end
+
+  if needs_review_status?(status)
+    specs << ["high_salience_review", "classify_accept_reject_split_or_merge", "high-salience unresolved review candidate"]
+  end
+
+  if status == "needs_review_common_or_short_title" || high_risk_title?(row[:title])
+    specs << ["generic_short_title", "disambiguate_short_or_common_title", "short/common title needs identity check"]
+  end
+
+  if %w[needs_review_possible_combined_title needs_review_section_or_subwork_title].include?(status)
+    specs << ["alias_split_candidate", "decide_split_merge_or_scope", "possible combined title, section, or subwork issue"]
+  end
+
+  specs
+end
+
+def audit_queue_row(queue_id, queue_name, row, recommended_action, notes)
+  stats = row[:stats]
+  example = stats.examples.first || {}
+  {
+    "queue_id" => queue_id,
+    "queue_name" => queue_name,
+    "priority_score" => format("%.4f", row[:score]),
+    "work_id" => candidate_id_for(row[:title]),
+    "canonical_title" => safe_tsv(row[:title]),
+    "current_status" => row[:review_status],
+    "base_status" => row[:base_review_status],
+    "tier" => row[:tier],
+    "total_question_count" => stats.question_ids.length,
+    "answerline_question_count" => stats.answerline_question_ids.length,
+    "clue_mention_question_count" => stats.clue_question_ids.length,
+    "distinct_set_count" => stats.set_titles.length,
+    "literature_track_count" => track_count(stats, "literature"),
+    "non_literature_track_count" => non_literature_track_count(stats),
+    "dominant_track" => dominant_track(stats),
+    "source_counts_json" => JSON.generate(stats.source_counts.sort.to_h),
+    "form_counts_json" => JSON.generate(stats.form_counts.sort.to_h),
+    "answerline_form_counts_json" => JSON.generate(stats.answerline_form_counts.sort.to_h),
+    "track_counts_json" => JSON.generate(stats.track_counts.sort.to_h),
+    "literary_signal_count" => stats.literary_signal_count,
+    "non_literary_signal_count" => stats.non_literary_signal_count,
+    "adjudication_decision" => adjudication_decision(row[:adjudication]),
+    "adjudication_reason" => adjudication_reason(row[:adjudication]),
+    "recommended_action" => recommended_action,
+    "llm_batch_eligible" => "yes",
+    "notes" => notes,
+    "example_snippet" => safe_tsv(example.fetch("snippet", ""))
+  }
+end
+
+def build_audit_queue_rows(score_rows)
+  queue_rows = []
+  score_rows.each do |row|
+    audit_queue_specs_for(row).each do |queue_name, action, notes|
+      queue_rows << audit_queue_row("", queue_name, row, action, notes)
+    end
+  end
+
+  queue_rank = {
+    "rejected_suspicious" => 0,
+    "accepted_suspicious" => 1,
+    "high_salience_review" => 2,
+    "generic_short_title" => 3,
+    "alias_split_candidate" => 4
+  }
+  queue_rows.sort_by! do |queue_row|
+    [queue_rank.fetch(queue_row["queue_name"], 99), -queue_row["priority_score"].to_f, queue_row["canonical_title"]]
+  end
+  queue_rows.each_with_index do |queue_row, index|
+    queue_row["queue_id"] = "qb_lit_audit_#{(index + 1).to_s.rjust(6, "0")}"
+  end
+end
+
+def build_llm_review_rows(audit_rows)
+  audit_rows.first(LLM_REVIEW_QUEUE_LIMIT).map do |row|
+    {
+      "queue_id" => row["queue_id"],
+      "queue_name" => row["queue_name"],
+      "task" => "Classify this quizbowl-derived literature-canon candidate as accept_literary_work, reject_non_literary, split_or_merge, or needs_human_review. Use the evidence fields only; do not invent bibliography.",
+      "canonical_title" => row["canonical_title"],
+      "current_status" => row["current_status"],
+      "recommended_action" => row["recommended_action"],
+      "counts" => {
+        "total_questions" => row["total_question_count"],
+        "answerline_questions" => row["answerline_question_count"],
+        "clue_mentions" => row["clue_mention_question_count"],
+        "distinct_sets" => row["distinct_set_count"],
+        "literary_signals" => row["literary_signal_count"],
+        "non_literary_signals" => row["non_literary_signal_count"]
+      },
+      "source_counts" => JSON.parse(row["source_counts_json"]),
+      "form_counts" => JSON.parse(row["form_counts_json"]),
+      "answerline_form_counts" => JSON.parse(row["answerline_form_counts_json"]),
+      "quizbowl_track_counts" => JSON.parse(row["track_counts_json"]),
+      "example_snippet" => row["example_snippet"]
+    }
+  end
+end
+
+def scan_bounds(db, limit)
+  row = db.get_first_row(<<~SQL)
+    SELECT MIN(id) AS min_id, MAX(id) AS max_id, COUNT(*) AS row_count
+    FROM archive_parsed_questions
+    WHERE clue_text IS NOT NULL
+      AND answerline IS NOT NULL
+  SQL
+  min_id = row["min_id"].to_i
+  max_id = row["max_id"].to_i
+  row_count = row["row_count"].to_i
+
+  if limit && limit < row_count
+    max_id = db.get_first_value(
+      <<~SQL,
+        SELECT id
+        FROM archive_parsed_questions
+        WHERE clue_text IS NOT NULL
+          AND answerline IS NOT NULL
+        ORDER BY id
+        LIMIT 1 OFFSET ?
+      SQL
+      limit - 1
+    ).to_i
+    row_count = limit
+  end
+
+  [min_id, max_id, row_count]
+end
+
+def chunk_ranges(min_id, max_id, jobs)
+  jobs = [jobs.to_i, 1].max
+  return [[min_id, max_id]] if jobs == 1 || min_id >= max_id
+
+  step = ((max_id - min_id + 1).to_f / jobs).ceil
+  ranges = []
+  start_id = min_id
+  while start_id <= max_id
+    end_id = [start_id + step - 1, max_id].min
+    ranges << [start_id, end_id]
+    start_id = end_id + 1
+  end
+  ranges
+end
+
+def open_worker_db(path)
+  db = SQLite3::Database.new(path, readonly: true)
   db.results_as_hash = true
   db.busy_timeout = 30_000
+  db
+end
 
-  stats_by_key = {}
-  answerline_seed_stats = {}
-  warn "Loading quizbowl category diagnostics from archive_practice_questions"
-  track_by_question_id = load_track_id_map(db)
-  warn "  loaded track labels for #{track_by_question_id.length} parsed questions"
-  processed = 0
-  skipped_long = 0
-  started = Time.now
-
-  warn "Pass 1: deriving work-title candidates from raw archive_parsed_questions"
-  sql = <<~SQL
+def scan_sql_for_range
+  <<~SQL
     SELECT id, set_title, year, question_type, clue_text, answerline
     FROM archive_parsed_questions
     WHERE clue_text IS NOT NULL
       AND answerline IS NOT NULL
+      AND id BETWEEN ? AND ?
     ORDER BY id
   SQL
+end
 
-  db.execute(sql) do |row|
+def load_marshal(path)
+  File.open(path, "rb") { |file| Marshal.load(file) }
+end
+
+def dump_marshal(path, payload)
+  File.open(path, "wb") { |file| Marshal.dump(payload, file) }
+end
+
+def cleanup_paths(paths)
+  paths.each do |path|
+    FileUtils.rm_f(path)
+    FileUtils.rm_f("#{path}.error")
+  end
+end
+
+def worker_tmp_dir(out_dir)
+  File.join(out_dir, ".quizbowl_lit_tmp")
+end
+
+def spawn_range_workers(label, ranges, options, extra_args = [])
+  tmp_dir = worker_tmp_dir(options[:out_dir])
+  FileUtils.mkdir_p(tmp_dir)
+  workers = ranges.each_with_index.map do |(start_id, end_id), index|
+    path = File.join(tmp_dir, "#{label}_#{index.to_s.rjust(3, "0")}_#{Process.pid}.marshal")
+    error_path = "#{path}.error"
+    args = [
+      RbConfig.ruby,
+      File.expand_path(__FILE__),
+      "--worker", label,
+      "--db", options[:db_path],
+      "--out-dir", options[:out_dir],
+      "--range-start", start_id.to_s,
+      "--range-end", end_id.to_s,
+      "--worker-index", (index + 1).to_s,
+      "--tmp-path", path,
+      "--max-clue-chars", options[:max_clue_chars].to_s,
+      "--progress-every", options[:progress_every].to_s
+    ] + extra_args.flatten
+    pid = Process.spawn(*args)
+    { pid: pid, path: path, error_path: error_path, index: index }
+  end
+
+  failures = []
+  workers.each do |worker|
+    _pid, status = Process.wait2(worker[:pid])
+    failures << worker unless status.success?
+  end
+
+  unless failures.empty?
+    messages = failures.map do |worker|
+      if File.exist?(worker[:error_path])
+        File.read(worker[:error_path])
+      else
+        "#{label} worker #{worker[:index] + 1} exited unsuccessfully"
+      end
+    end
+    raise messages.join("\n")
+  end
+
+  workers.sort_by { |worker| worker[:index] }.map { |worker| worker[:path] }
+end
+
+def run_pass1_range(options, track_by_question_id, start_id, end_id, worker_index, started)
+  local_stats = {}
+  local_answerline_seed_stats = {}
+  processed = 0
+  skipped_long = 0
+  db = open_worker_db(options[:db_path])
+
+  db.execute(scan_sql_for_range, start_id, end_id) do |row|
     processed += 1
-    break if options[:limit] && processed > options[:limit]
-
     row["track_id"] = track_by_question_id[row["id"].to_i]
     clue_text = row["clue_text"].to_s
     answerline = row["answerline"].to_s
@@ -697,57 +1107,350 @@ def main
     if (form = prompt_form(clue_text))
       answerline_variants(answerline).each do |title|
         normalized = normalize_title(title)
-        add_observation(stats_by_key, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
-        add_observation(answerline_seed_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
+        add_observation(local_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
+        add_observation(local_answerline_seed_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
       end
     end
 
     unless clue_text.match?(ANSWER_MARKER_RE)
       extract_clue_title_candidates(clue_text).each do |match|
         normalized = normalize_title(match[:title])
-        add_observation(stats_by_key, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet])
+        add_observation(local_stats, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet])
       end
     end
 
     if options[:progress_every].positive? && (processed % options[:progress_every]).zero?
-      warn "  pass1 processed=#{processed} candidates=#{stats_by_key.length} answerline_candidates=#{answerline_seed_stats.length} elapsed=#{(Time.now - started).round(1)}s"
+      warn "  pass1 worker=#{worker_index} processed=#{processed} range=#{start_id}-#{end_id} elapsed=#{(Time.now - started).round(1)}s"
     end
   end
 
-  seeds, seed_index, seed_basis_counts = build_seed_index(stats_by_key, options[:threshold])
-  warn "Pass 2: counting clue-text mentions for #{seeds.length} work-title seeds from answerlines and clue extraction"
+  db.close
+  {
+    stats_by_key: local_stats,
+    answerline_seed_stats: local_answerline_seed_stats,
+    processed: processed,
+    skipped_long: skipped_long
+  }
+end
 
-  pass2_processed = 0
-  db.execute(sql) do |row|
-    pass2_processed += 1
-    break if options[:limit] && pass2_processed > options[:limit]
+def run_parallel_pass1(options, db, track_by_question_id, started)
+  min_id, max_id, row_count = scan_bounds(db, options[:limit])
+  db.close
+  ranges = chunk_ranges(min_id, max_id, [options[:jobs], row_count].min)
+  warn "Pass 1: deriving work-title candidates from raw archive_parsed_questions with #{ranges.length} workers"
+  tmp_dir = worker_tmp_dir(options[:out_dir])
+  FileUtils.mkdir_p(tmp_dir)
+  track_map_path = File.join(tmp_dir, "track_map_#{Process.pid}.marshal")
+  dump_marshal(track_map_path, track_by_question_id)
+  partial_paths = spawn_range_workers("pass1", ranges, options, ["--track-map", track_map_path])
 
+  stats_by_key = {}
+  answerline_seed_stats = {}
+  processed = 0
+  skipped_long = 0
+  begin
+    partial_paths.each do |path|
+      payload = load_marshal(path)
+      merge_stats_by_key!(stats_by_key, payload[:stats_by_key])
+      merge_stats_by_key!(answerline_seed_stats, payload[:answerline_seed_stats])
+      processed += payload[:processed]
+      skipped_long += payload[:skipped_long]
+    end
+  ensure
+    cleanup_paths(partial_paths + [track_map_path])
+  end
+  warn "  pass1 merged processed=#{processed} candidates=#{stats_by_key.length} answerline_candidates=#{answerline_seed_stats.length} elapsed=#{(Time.now - started).round(1)}s"
+
+  [stats_by_key, answerline_seed_stats, processed, skipped_long]
+end
+
+def run_pass2_range(options, seed_index, track_by_question_id, start_id, end_id, worker_index, started)
+  matches = []
+  processed = 0
+  db = open_worker_db(options[:db_path])
+
+  db.execute(scan_sql_for_range, start_id, end_id) do |row|
+    processed += 1
     row["track_id"] = track_by_question_id[row["id"].to_i]
     clue_text = row["clue_text"].to_s
     next if clue_text.length > options[:max_clue_chars]
     next if clue_text.match?(ANSWER_MARKER_RE)
 
     find_seed_clue_matches(clue_text, seed_index).each do |match|
-      normalized = normalize_title(match[:title])
-      add_observation(stats_by_key, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet])
+      matches << {
+        "normalized" => normalize_title(match[:title]),
+        "title" => match[:title],
+        "source" => match[:source],
+        "form_hint" => match[:form_hint],
+        "snippet" => match[:snippet],
+        "row" => {
+          "id" => row["id"].to_i,
+          "set_title" => row["set_title"].to_s,
+          "year" => row["year"].to_i,
+          "question_type" => row["question_type"].to_s,
+          "track_id" => row["track_id"].to_s
+        }
+      }
     end
 
-    if options[:progress_every].positive? && (pass2_processed % options[:progress_every]).zero?
-      warn "  pass2 processed=#{pass2_processed} elapsed=#{(Time.now - started).round(1)}s"
+    if options[:progress_every].positive? && (processed % options[:progress_every]).zero?
+      warn "  pass2 worker=#{worker_index} processed=#{processed} matches=#{matches.length} range=#{start_id}-#{end_id} elapsed=#{(Time.now - started).round(1)}s"
     end
+  end
+
+  db.close
+  { processed: processed, matches: matches }
+end
+
+def run_parallel_pass2(options, seed_index, track_by_question_id, stats_by_key, started)
+  bounds_db = open_worker_db(options[:db_path])
+  min_id, max_id, row_count = scan_bounds(bounds_db, options[:limit])
+  bounds_db.close
+  ranges = chunk_ranges(min_id, max_id, [options[:jobs], row_count].min)
+  warn "Pass 2: counting clue-text mentions with #{ranges.length} workers"
+  tmp_dir = worker_tmp_dir(options[:out_dir])
+  FileUtils.mkdir_p(tmp_dir)
+  track_map_path = File.join(tmp_dir, "track_map_#{Process.pid}.marshal")
+  seed_index_path = File.join(tmp_dir, "seed_index_#{Process.pid}.marshal")
+  dump_marshal(track_map_path, track_by_question_id)
+  dump_marshal(seed_index_path, seed_index)
+  partial_paths = spawn_range_workers(
+    "pass2",
+    ranges,
+    options,
+    ["--track-map", track_map_path, "--seed-index", seed_index_path]
+  )
+
+  processed = 0
+  begin
+    partial_paths.each do |path|
+      payload = load_marshal(path)
+      processed += payload[:processed]
+      payload[:matches].each do |match|
+        add_observation(
+          stats_by_key,
+          match["normalized"],
+          match["title"],
+          match["source"],
+          match["form_hint"],
+          match["row"],
+          match["snippet"]
+        )
+      end
+    end
+  ensure
+    cleanup_paths(partial_paths + [track_map_path, seed_index_path])
+  end
+  warn "  pass2 merged processed=#{processed} elapsed=#{(Time.now - started).round(1)}s"
+  processed
+end
+
+def parse_options
+  options = {
+    db_path: DEFAULT_DB,
+    out_dir: DEFAULT_OUT,
+    data_out: DEFAULT_DATA_OUT,
+    adjudications_path: DEFAULT_ADJUDICATIONS,
+    jobs: 1,
+    worker: nil,
+    range_start: nil,
+    range_end: nil,
+    worker_index: 1,
+    tmp_path: nil,
+    track_map_path: nil,
+    seed_index_path: nil,
+    threshold: 4,
+    limit: nil,
+    max_clue_chars: 6_000,
+    progress_every: 250_000
+  }
+
+  OptionParser.new do |parser|
+    parser.on("--db PATH") { |value| options[:db_path] = value }
+    parser.on("--out-dir PATH") { |value| options[:out_dir] = value }
+    parser.on("--data-out PATH") { |value| options[:data_out] = value }
+    parser.on("--adjudications PATH") { |value| options[:adjudications_path] = value }
+    parser.on("--jobs N", Integer) { |value| options[:jobs] = value }
+    parser.on("--worker NAME") { |value| options[:worker] = value }
+    parser.on("--range-start N", Integer) { |value| options[:range_start] = value }
+    parser.on("--range-end N", Integer) { |value| options[:range_end] = value }
+    parser.on("--worker-index N", Integer) { |value| options[:worker_index] = value }
+    parser.on("--tmp-path PATH") { |value| options[:tmp_path] = value }
+    parser.on("--track-map PATH") { |value| options[:track_map_path] = value }
+    parser.on("--seed-index PATH") { |value| options[:seed_index_path] = value }
+    parser.on("--threshold N", Integer) { |value| options[:threshold] = value }
+    parser.on("--limit N", Integer) { |value| options[:limit] = value }
+    parser.on("--max-clue-chars N", Integer) { |value| options[:max_clue_chars] = value }
+    parser.on("--progress-every N", Integer) { |value| options[:progress_every] = value }
+  end.parse!
+
+  options
+end
+
+def run_worker(options)
+  raise "--tmp-path is required for worker mode" unless options[:tmp_path]
+  raise "--track-map is required for worker mode" unless options[:track_map_path]
+  raise "--range-start and --range-end are required for worker mode" unless options[:range_start] && options[:range_end]
+
+  started = Time.now
+  track_by_question_id = load_marshal(options[:track_map_path])
+  payload = case options[:worker]
+  when "pass1"
+    run_pass1_range(
+      options,
+      track_by_question_id,
+      options[:range_start],
+      options[:range_end],
+      options[:worker_index],
+      started
+    )
+  when "pass2"
+    raise "--seed-index is required for pass2 worker mode" unless options[:seed_index_path]
+
+    seed_index = load_marshal(options[:seed_index_path])
+    run_pass2_range(
+      options,
+      seed_index,
+      track_by_question_id,
+      options[:range_start],
+      options[:range_end],
+      options[:worker_index],
+      started
+    )
+  else
+    raise "Unknown worker mode: #{options[:worker]}"
+  end
+
+  dump_marshal(options[:tmp_path], payload)
+rescue StandardError => e
+  File.write("#{options[:tmp_path]}.error", e.full_message) if options[:tmp_path]
+  warn "#{options[:worker]} worker #{options[:worker_index]} failed: #{e.class}: #{e.message}"
+  exit 1
+end
+
+def main
+  options = parse_options
+  if options[:worker]
+    run_worker(options)
+    return
+  end
+
+  raise "Missing quizbowl database: #{options[:db_path]}" unless File.exist?(options[:db_path])
+
+  FileUtils.mkdir_p(options[:out_dir])
+  FileUtils.mkdir_p(File.dirname(options[:data_out]))
+
+  db = SQLite3::Database.new(options[:db_path], readonly: true)
+  db.results_as_hash = true
+  db.busy_timeout = 30_000
+
+  adjudications = load_adjudications(options[:adjudications_path])
+  warn "Loaded #{adjudications.values.uniq.length} adjudications from #{options[:adjudications_path]}"
+  warn "Loading quizbowl category diagnostics from archive_practice_questions"
+  track_by_question_id = load_track_id_map(db)
+  warn "  loaded track labels for #{track_by_question_id.length} parsed questions"
+  started = Time.now
+  options[:jobs] = [options[:jobs].to_i, 1].max
+
+  stats_by_key = {}
+  answerline_seed_stats = {}
+  processed = 0
+  skipped_long = 0
+
+  sql = <<~SQL
+    SELECT id, set_title, year, question_type, clue_text, answerline
+    FROM archive_parsed_questions
+    WHERE clue_text IS NOT NULL
+      AND answerline IS NOT NULL
+    ORDER BY id
+  SQL
+
+  if options[:jobs] > 1
+    stats_by_key, answerline_seed_stats, processed, skipped_long =
+      run_parallel_pass1(options, db, track_by_question_id, started)
+  else
+    warn "Pass 1: deriving work-title candidates from raw archive_parsed_questions"
+    db.execute(sql) do |row|
+      break if options[:limit] && processed >= options[:limit]
+
+      processed += 1
+
+      row["track_id"] = track_by_question_id[row["id"].to_i]
+      clue_text = row["clue_text"].to_s
+      answerline = row["answerline"].to_s
+      if clue_text.length > options[:max_clue_chars]
+        skipped_long += 1
+        next
+      end
+
+      if (form = prompt_form(clue_text))
+        answerline_variants(answerline).each do |title|
+          normalized = normalize_title(title)
+          add_observation(stats_by_key, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
+          add_observation(answerline_seed_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
+        end
+      end
+
+      unless clue_text.match?(ANSWER_MARKER_RE)
+        extract_clue_title_candidates(clue_text).each do |match|
+          normalized = normalize_title(match[:title])
+          add_observation(stats_by_key, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet])
+        end
+      end
+
+      if options[:progress_every].positive? && (processed % options[:progress_every]).zero?
+        warn "  pass1 processed=#{processed} candidates=#{stats_by_key.length} answerline_candidates=#{answerline_seed_stats.length} elapsed=#{(Time.now - started).round(1)}s"
+      end
+    end
+  end
+
+  seeds, seed_index, seed_basis_counts = build_seed_index(stats_by_key, options[:threshold])
+
+  pass2_processed = if options[:jobs] > 1
+    warn "Pass 2: counting clue-text mentions for #{seeds.length} work-title seeds from answerlines and clue extraction"
+    run_parallel_pass2(options, seed_index, track_by_question_id, stats_by_key, started)
+  else
+    warn "Pass 2: counting clue-text mentions for #{seeds.length} work-title seeds from answerlines and clue extraction"
+    single_pass2_processed = 0
+    db.execute(sql) do |row|
+      break if options[:limit] && single_pass2_processed >= options[:limit]
+
+      single_pass2_processed += 1
+
+      row["track_id"] = track_by_question_id[row["id"].to_i]
+      clue_text = row["clue_text"].to_s
+      next if clue_text.length > options[:max_clue_chars]
+      next if clue_text.match?(ANSWER_MARKER_RE)
+
+      find_seed_clue_matches(clue_text, seed_index).each do |match|
+        normalized = normalize_title(match[:title])
+        add_observation(stats_by_key, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet])
+      end
+
+      if options[:progress_every].positive? && (single_pass2_processed % options[:progress_every]).zero?
+        warn "  pass2 processed=#{single_pass2_processed} elapsed=#{(Time.now - started).round(1)}s"
+      end
+    end
+    single_pass2_processed
   end
 
   selected_stats = stats_by_key.values.select { |stats| stats.question_ids.length >= options[:threshold] }
   score_rows = selected_stats.map do |stats|
     title = canonical_title(stats)
-    review_status = review_status_for(stats)
+    work_id = candidate_id_for(title)
+    base_review_status = review_status_for(stats)
+    adjudication = adjudication_for(adjudications, title, work_id)
+    review_status = manual_status_from_adjudication(adjudication, base_review_status)
     score = salience_score(stats)
     total_count = stats.question_ids.length
     tier = tier_for(score, review_status, total_count, stats.set_titles.length, stats.years.length)
     {
       stats: stats,
       title: title,
+      work_id: work_id,
+      base_review_status: base_review_status,
       review_status: review_status,
+      adjudication: adjudication,
       score: score,
       tier: tier
     }
@@ -783,7 +1486,7 @@ def main
     clue_count = stats.clue_question_ids.length
     total_count = stats.question_ids.length
 
-    unless rejected_review_status?(row[:review_status])
+    if row[:review_status] == "accepted_likely_work"
       data_rows << {
         "id" => work_id,
         "rank" => data_rows.length + 1,
@@ -791,6 +1494,7 @@ def main
         "title" => title,
         "tier" => row[:tier],
         "review_status" => row[:review_status],
+        "base_review_status" => row[:base_review_status],
         "quizbowl_salience_score" => format("%.4f", row[:score]).to_f,
         "total_question_count" => total_count,
         "answerline_question_count" => answerline_count,
@@ -803,6 +1507,8 @@ def main
         "bonus_count" => stats.question_type_counts["bonus_part"] + stats.question_type_counts["bonus"],
         "form_hint" => stats.form_counts.max_by { |_, count| count }&.first || "unknown",
         "quizbowl_track_counts" => track_counts,
+        "adjudication_decision" => adjudication_decision(row[:adjudication]),
+        "adjudication_reason" => adjudication_reason(row[:adjudication]),
         "evidence_basis" => "raw_archive_parsed_questions_answerlines_and_clue_text",
         "examples" => examples
       }
@@ -824,12 +1530,15 @@ def main
       "quizbowl_salience_score" => format("%.4f", row[:score]),
       "tier" => row[:tier],
       "review_status" => row[:review_status],
+      "base_review_status" => row[:base_review_status],
       "source_counts_json" => JSON.generate(source_counts),
       "form_counts_json" => JSON.generate(form_counts),
       "answerline_form_counts_json" => JSON.generate(answerline_form_counts),
       "track_counts_json" => JSON.generate(track_counts),
       "literary_signal_count" => stats.literary_signal_count,
       "non_literary_signal_count" => stats.non_literary_signal_count,
+      "adjudication_decision" => adjudication_decision(row[:adjudication]),
+      "adjudication_reason" => adjudication_reason(row[:adjudication]),
       "examples_json" => JSON.generate(stats.examples.first(5))
     }
 
@@ -843,6 +1552,9 @@ def main
       "answerline_form_counts_json" => JSON.generate(answerline_form_counts),
       "track_counts_json" => JSON.generate(track_counts),
       "disambiguation_status" => row[:review_status],
+      "base_disambiguation_status" => row[:base_review_status],
+      "adjudication_decision" => adjudication_decision(row[:adjudication]),
+      "adjudication_reason" => adjudication_reason(row[:adjudication]),
       "total_question_count" => total_count,
       "answerline_question_count" => answerline_count,
       "clue_mention_question_count" => clue_count,
@@ -883,6 +1595,7 @@ def main
         "candidate_id" => candidate_id_for(row[:title]),
         "canonical_title" => safe_tsv(row[:title]),
         "review_reason" => row[:review_status],
+        "base_review_reason" => row[:base_review_status],
         "total_question_count" => stats.question_ids.length,
         "answerline_question_count" => stats.answerline_question_ids.length,
         "clue_mention_question_count" => stats.clue_question_ids.length,
@@ -893,6 +1606,8 @@ def main
         "track_counts_json" => JSON.generate(stats.track_counts.sort.to_h),
         "literary_signal_count" => stats.literary_signal_count,
         "non_literary_signal_count" => stats.non_literary_signal_count,
+        "adjudication_decision" => adjudication_decision(row[:adjudication]),
+        "adjudication_reason" => adjudication_reason(row[:adjudication]),
         "example_snippet" => safe_tsv(stats.examples.first&.fetch("snippet", "") || "")
       }
     end
@@ -905,6 +1620,7 @@ def main
         "candidate_id" => candidate_id_for(row[:title]),
         "canonical_title" => safe_tsv(row[:title]),
         "rejection_reason" => row[:review_status],
+        "base_rejection_reason" => row[:base_review_status],
         "total_question_count" => stats.question_ids.length,
         "answerline_question_count" => stats.answerline_question_ids.length,
         "clue_mention_question_count" => stats.clue_question_ids.length,
@@ -915,18 +1631,23 @@ def main
         "track_counts_json" => JSON.generate(stats.track_counts.sort.to_h),
         "literary_signal_count" => stats.literary_signal_count,
         "non_literary_signal_count" => stats.non_literary_signal_count,
+        "adjudication_decision" => adjudication_decision(row[:adjudication]),
+        "adjudication_reason" => adjudication_reason(row[:adjudication]),
         "example_snippet" => safe_tsv(stats.examples.first&.fetch("snippet", "") || "")
       }
     end
 
+  audit_queue_rows = build_audit_queue_rows(score_rows)
+  llm_review_rows = build_llm_review_rows(audit_queue_rows)
+
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_title_candidates.tsv"),
-    %w[candidate_id canonical_title normalized_title form_hint candidate_source form_counts_json answerline_form_counts_json track_counts_json disambiguation_status total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
+    %w[candidate_id canonical_title normalized_title form_hint candidate_source form_counts_json answerline_form_counts_json track_counts_json disambiguation_status base_disambiguation_status adjudication_decision adjudication_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
     candidate_tsv_rows
   )
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_canon_scores.tsv"),
-    %w[work_id rank canonical_title total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count examples_json],
+    %w[work_id rank canonical_title total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status base_review_status source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason examples_json],
     score_tsv_rows
   )
   write_tsv(
@@ -941,13 +1662,22 @@ def main
   )
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_false_positive_review.tsv"),
-    %w[candidate_id canonical_title review_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count example_snippet],
+    %w[candidate_id canonical_title review_reason base_review_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason example_snippet],
     review_rows
   )
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_rejected.tsv"),
-    %w[candidate_id canonical_title rejection_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count example_snippet],
+    %w[candidate_id canonical_title rejection_reason base_rejection_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason example_snippet],
     rejected_rows
+  )
+  write_tsv(
+    File.join(options[:out_dir], "quizbowl_lit_audit_queue.tsv"),
+    %w[queue_id queue_name priority_score work_id canonical_title current_status base_status tier total_question_count answerline_question_count clue_mention_question_count distinct_set_count literature_track_count non_literature_track_count dominant_track source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason recommended_action llm_batch_eligible notes example_snippet],
+    audit_queue_rows
+  )
+  write_jsonl(
+    File.join(options[:out_dir], "quizbowl_lit_llm_review_queue.jsonl"),
+    llm_review_rows
   )
 
   File.write(options[:data_out], data_rows.to_yaml)
@@ -963,6 +1693,9 @@ def main
     "diagnostic_fields" => [
       "archive_practice_questions.track_id"
     ],
+    "adjudications_path" => repo_relative_path(options[:adjudications_path]),
+    "adjudication_count" => adjudications.values.uniq.length,
+    "jobs" => options[:jobs],
     "excluded_processed_inputs" => [
       "archive_canon_refinement_runs",
       "archive_canon_answerline_candidates"
@@ -977,6 +1710,8 @@ def main
     "threshold_candidate_count" => score_rows.length,
     "public_data_count" => data_rows.length,
     "rejected_candidate_count" => rejected_rows.length,
+    "audit_queue_count" => audit_queue_rows.length,
+    "llm_review_queue_count" => llm_review_rows.length,
     "mention_rows" => mention_rows.length,
     "tier_counts" => score_rows.group_by { |row| row[:tier] }.transform_values(&:length),
     "review_status_counts" => score_rows.group_by { |row| row[:review_status] }.transform_values(&:length)
@@ -995,6 +1730,8 @@ def main
     - Rows processed: #{processed}
     - Evidence fields: raw `answerline` and raw `clue_text`
     - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
+    - Adjudication file: `#{repo_relative_path(options[:adjudications_path])}` (#{adjudications.values.uniq.length} decisions)
+    - Worker processes: #{options[:jobs]}
     - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
     - Threshold: total distinct quizbowl questions >= #{options[:threshold]}
 
@@ -1005,8 +1742,10 @@ def main
     - Exact-match seed basis counts: #{seed_basis_counts.sort.map { |basis, count| "`#{basis}`=#{count}" }.join(", ")}
     - Raw normalized candidates: #{stats_by_key.length}
     - Candidates clearing threshold: #{score_rows.length}
-    - Public YAML rows after excluding rejected non-literature: #{data_rows.length}
+    - Public YAML rows after accepted-work filtering: #{data_rows.length}
     - Rejected non-literature candidates: #{rejected_rows.length}
+    - Audit queue rows: #{audit_queue_rows.length}
+    - LLM review queue rows: #{llm_review_rows.length}
     - Evidence/example rows written: #{mention_rows.length}
 
     ## Review Routing
@@ -1032,6 +1771,8 @@ def main
     - `quizbowl_lit_canon_scores.tsv`
     - `quizbowl_lit_false_positive_review.tsv`
     - `quizbowl_lit_rejected.tsv`
+    - `quizbowl_lit_audit_queue.tsv`
+    - `quizbowl_lit_llm_review_queue.jsonl`
     - `_data/quizbowl_literature_canon.yml`
 
     ## Caveats

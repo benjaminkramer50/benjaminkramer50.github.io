@@ -1,0 +1,32 @@
+# Manual and LLM-assisted decisions for the quizbowl-derived literature list.
+# These decisions override deterministic routing only for this literature product.
+version: 1
+decisions:
+  - canonical_title: The Magic Flute
+    normalized_title: the magic flute
+    decision: reject
+    reason: non_literary_opera
+    review_status: rejected_non_literary_context
+    source: user_confirmed
+    notes: Opera, not a literary work for this reading list.
+  - canonical_title: "Deep Play: Notes on the Balinese Cockfight"
+    normalized_title: deep play notes on the balinese cockfight
+    decision: reject
+    reason: social_science_anthropology
+    review_status: rejected_non_literary_context
+    source: user_confirmed
+    notes: Anthropology/social science, not literature.
+  - canonical_title: "Deep Play: Notes on a Balinese Cockfight"
+    normalized_title: deep play notes on a balinese cockfight
+    decision: reject
+    reason: social_science_anthropology
+    review_status: rejected_non_literary_context
+    source: user_confirmed
+    notes: Variant title for the same anthropology essay.
+  - canonical_title: Deep Play
+    normalized_title: deep play
+    decision: reject
+    reason: social_science_anthropology
+    review_status: rejected_non_literary_context
+    source: user_confirmed
+    notes: Short-title variant for the Geertz anthropology essay in this corpus.

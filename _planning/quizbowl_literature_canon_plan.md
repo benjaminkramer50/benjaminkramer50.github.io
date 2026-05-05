@@ -65,10 +65,15 @@ Create a parallel build area:
 - `_planning/quizbowl_lit_canon/quizbowl_lit_canon_scores.tsv`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_false_positive_review.tsv`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_rejected.tsv`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_audit_queue.tsv`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_llm_review_queue.jsonl`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_method_report.md`
 - `_data/quizbowl_literature_canon.yml`
 
 Do not overwrite `_data/canon_quick_path.yml`.
+
+The public YAML should contain only `accepted_likely_work` rows. Ambiguous `needs_review_*` candidates and rejected rows remain available in TSV/JSONL audit artifacts, but they should not drive the public reading-list UI.
 
 ## Data Model
 
@@ -267,6 +272,7 @@ Target: 0.5-1 day.
 - Run raw answerline and clue-text title extraction over all parsed question rows.
 - Store raw candidates and evidence snippets.
 - Generate candidate clusters.
+- Use `scripts/build_quizbowl_literature_canon.rb --jobs N` for multiprocessing when rebuilding the full corpus. Workers scan disjoint ID ranges and the parent performs the deterministic merge/write step.
 
 ### QL3: Review And Filtering
 
@@ -309,6 +315,7 @@ Target: iterative.
 
 - Store explicit human or LLM-assisted decisions in `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml`.
 - Generate deterministic audit queues: accepted-but-suspicious, rejected-but-rescuable, high-salience review, generic/short title, and split/merge/subwork.
+- Write the top bounded review packets to `quizbowl_lit_llm_review_queue.jsonl` for optional strict JSON adjudication.
 - Use LLM calls only on evidence packets, not as a free-form source of canon additions.
 - Require structured JSON decisions: accept literary work, reject non-literary, split, merge, alias, or needs human review.
 - Rerun the build after adjudication so every public decision is reproducible.

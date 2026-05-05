@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T00:51:15Z",
+  "generated_at": "2026-05-05T03:36:34Z",
   "db_path": "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db",
   "source_table": "archive_parsed_questions",
   "evidence_fields": [
@@ -9,6 +9,9 @@
   "diagnostic_fields": [
     "archive_practice_questions.track_id"
   ],
+  "adjudications_path": "_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml",
+  "adjudication_count": 4,
+  "jobs": 4,
   "excluded_processed_inputs": [
     "archive_canon_refinement_runs",
     "archive_canon_answerline_candidates"
@@ -17,32 +20,35 @@
   "processed_rows": 2216999,
   "skipped_long_clue_rows": 201,
   "raw_answerline_candidate_count": 9543,
-  "exact_match_seed_count": 5271,
+  "exact_match_seed_count": 5523,
   "exact_match_seed_basis_counts": {
-    "answerline": 740,
-    "answerline_and_clue": 1023,
-    "clue": 3508
+    "answerline": 721,
+    "answerline_and_clue": 1042,
+    "clue": 3760
   },
   "raw_candidate_count": 81872,
   "threshold_candidate_count": 14396,
-  "public_data_count": 10477,
-  "rejected_candidate_count": 3919,
-  "mention_rows": 68825,
+  "public_data_count": 5013,
+  "rejected_candidate_count": 2509,
+  "audit_queue_count": 13199,
+  "llm_review_queue_count": 500,
+  "mention_rows": 68864,
   "tier_counts": {
-    "qb_core": 967,
-    "qb_rejected": 3919,
-    "qb_candidate": 6131,
-    "qb_major": 1187,
-    "qb_contextual": 2192
+    "qb_core": 1119,
+    "qb_rejected": 2509,
+    "qb_candidate": 6874,
+    "qb_major": 1616,
+    "qb_contextual": 2278
   },
   "review_status_counts": {
-    "accepted_likely_work": 4346,
-    "rejected_non_literary_context": 3919,
+    "accepted_likely_work": 5013,
+    "rejected_non_literary_context": 2509,
     "needs_review_possible_combined_title": 478,
-    "needs_review_common_or_short_title": 2207,
-    "needs_review_section_or_subwork_title": 413,
-    "needs_review_possible_character_or_person": 1818,
-    "needs_review_low_evidence": 1214,
+    "needs_review_common_or_short_title": 2457,
+    "needs_review_section_or_subwork_title": 462,
+    "needs_review_non_literature_track_context": 500,
+    "needs_review_possible_character_or_person": 1768,
+    "needs_review_low_evidence": 1208,
     "needs_review_fragment_title": 1
   }
 }

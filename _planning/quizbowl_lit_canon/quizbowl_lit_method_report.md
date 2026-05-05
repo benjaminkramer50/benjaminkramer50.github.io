@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-05T00:51:15Z
+Generated: 2026-05-05T03:36:34Z
 
 ## Corpus
 
@@ -9,19 +9,23 @@ Generated: 2026-05-05T00:51:15Z
 - Rows processed: 2216999
 - Evidence fields: raw `answerline` and raw `clue_text`
 - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
+- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (4 decisions)
+- Worker processes: 4
 - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
 - Threshold: total distinct quizbowl questions >= 4
 
 ## Candidate Extraction
 
 - Raw answerline work candidates: 9543
-- Exact-match work-title seeds from answerlines and clues: 5271
-- Exact-match seed basis counts: `answerline`=740, `answerline_and_clue`=1023, `clue`=3508
+- Exact-match work-title seeds from answerlines and clues: 5523
+- Exact-match seed basis counts: `answerline`=721, `answerline_and_clue`=1042, `clue`=3760
 - Raw normalized candidates: 81872
 - Candidates clearing threshold: 14396
-- Public YAML rows after excluding rejected non-literature: 10477
-- Rejected non-literature candidates: 3919
-- Evidence/example rows written: 68825
+- Public YAML rows after accepted-work filtering: 5013
+- Rejected non-literature candidates: 2509
+- Audit queue rows: 13199
+- LLM review queue rows: 500
+- Evidence/example rows written: 68864
 
 ## Review Routing
 
@@ -32,22 +36,23 @@ Generated: 2026-05-05T00:51:15Z
 
 ## Tier Counts
 
-- `qb_candidate`: 6131
-- `qb_contextual`: 2192
-- `qb_core`: 967
-- `qb_major`: 1187
-- `qb_rejected`: 3919
+- `qb_candidate`: 6874
+- `qb_contextual`: 2278
+- `qb_core`: 1119
+- `qb_major`: 1616
+- `qb_rejected`: 2509
 
 ## Review Status Counts
 
-- `accepted_likely_work`: 4346
-- `needs_review_common_or_short_title`: 2207
+- `accepted_likely_work`: 5013
+- `needs_review_common_or_short_title`: 2457
 - `needs_review_fragment_title`: 1
-- `needs_review_low_evidence`: 1214
-- `needs_review_possible_character_or_person`: 1818
+- `needs_review_low_evidence`: 1208
+- `needs_review_non_literature_track_context`: 500
+- `needs_review_possible_character_or_person`: 1768
 - `needs_review_possible_combined_title`: 478
-- `needs_review_section_or_subwork_title`: 413
-- `rejected_non_literary_context`: 3919
+- `needs_review_section_or_subwork_title`: 462
+- `rejected_non_literary_context`: 2509
 
 ## Outputs
 
@@ -57,6 +62,8 @@ Generated: 2026-05-05T00:51:15Z
 - `quizbowl_lit_canon_scores.tsv`
 - `quizbowl_lit_false_positive_review.tsv`
 - `quizbowl_lit_rejected.tsv`
+- `quizbowl_lit_audit_queue.tsv`
+- `quizbowl_lit_llm_review_queue.jsonl`
 - `_data/quizbowl_literature_canon.yml`
 
 ## Caveats
