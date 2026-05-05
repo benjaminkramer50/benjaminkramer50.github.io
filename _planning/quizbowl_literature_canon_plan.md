@@ -315,10 +315,16 @@ Target: iterative.
 
 - Store explicit human or LLM-assisted decisions in `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml`.
 - Generate deterministic audit queues: accepted-but-suspicious, rejected-but-rescuable, high-salience review, generic/short title, and split/merge/subwork.
-- Write the top bounded review packets to `quizbowl_lit_llm_review_queue.jsonl` for optional strict JSON adjudication.
+- Write the top bounded, not-yet-adjudicated review packets to `quizbowl_lit_llm_review_queue.jsonl` for optional strict JSON adjudication.
 - Use LLM calls only on evidence packets, not as a free-form source of canon additions.
 - Require structured JSON decisions: accept literary work, reject non-literary, split, merge, alias, or needs human review.
 - Rerun the build after adjudication so every public decision is reproducible.
+
+Current adjudication status:
+
+- First 500 queued evidence packets audited into `quizbowl_lit_adjudications.yml`.
+- Rebuilt public YAML with adjudicated accepts only; rejected, duplicate, ambiguous, and non-literary domain rows remain in planning artifacts.
+- The JSONL queue now advances to the next pending batch instead of repeating adjudicated rows.
 
 ## Later Subject Reading Lists
 

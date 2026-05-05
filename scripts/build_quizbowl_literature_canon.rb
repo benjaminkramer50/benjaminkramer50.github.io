@@ -938,29 +938,32 @@ def build_audit_queue_rows(score_rows)
 end
 
 def build_llm_review_rows(audit_rows)
-  audit_rows.first(LLM_REVIEW_QUEUE_LIMIT).map do |row|
-    {
-      "queue_id" => row["queue_id"],
-      "queue_name" => row["queue_name"],
-      "task" => "Classify this quizbowl-derived literature-canon candidate as accept_literary_work, reject_non_literary, split_or_merge, or needs_human_review. Use the evidence fields only; do not invent bibliography.",
-      "canonical_title" => row["canonical_title"],
-      "current_status" => row["current_status"],
-      "recommended_action" => row["recommended_action"],
-      "counts" => {
-        "total_questions" => row["total_question_count"],
-        "answerline_questions" => row["answerline_question_count"],
-        "clue_mentions" => row["clue_mention_question_count"],
-        "distinct_sets" => row["distinct_set_count"],
-        "literary_signals" => row["literary_signal_count"],
-        "non_literary_signals" => row["non_literary_signal_count"]
-      },
-      "source_counts" => JSON.parse(row["source_counts_json"]),
-      "form_counts" => JSON.parse(row["form_counts_json"]),
-      "answerline_form_counts" => JSON.parse(row["answerline_form_counts_json"]),
-      "quizbowl_track_counts" => JSON.parse(row["track_counts_json"]),
-      "example_snippet" => row["example_snippet"]
-    }
-  end
+  audit_rows
+    .select { |row| row["adjudication_decision"].to_s.empty? }
+    .first(LLM_REVIEW_QUEUE_LIMIT)
+    .map do |row|
+      {
+        "queue_id" => row["queue_id"],
+        "queue_name" => row["queue_name"],
+        "task" => "Classify this quizbowl-derived literature-canon candidate as accept_literary_work, reject_non_literary, split_or_merge, or needs_human_review. Use the evidence fields only; do not invent bibliography.",
+        "canonical_title" => row["canonical_title"],
+        "current_status" => row["current_status"],
+        "recommended_action" => row["recommended_action"],
+        "counts" => {
+          "total_questions" => row["total_question_count"],
+          "answerline_questions" => row["answerline_question_count"],
+          "clue_mentions" => row["clue_mention_question_count"],
+          "distinct_sets" => row["distinct_set_count"],
+          "literary_signals" => row["literary_signal_count"],
+          "non_literary_signals" => row["non_literary_signal_count"]
+        },
+        "source_counts" => JSON.parse(row["source_counts_json"]),
+        "form_counts" => JSON.parse(row["form_counts_json"]),
+        "answerline_form_counts" => JSON.parse(row["answerline_form_counts_json"]),
+        "quizbowl_track_counts" => JSON.parse(row["track_counts_json"]),
+        "example_snippet" => row["example_snippet"]
+      }
+    end
 end
 
 def scan_bounds(db, limit)
