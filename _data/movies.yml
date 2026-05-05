@@ -14,7 +14,7 @@
 - title: "Brick"
   year: 2005
   director: "Rian Johnson"
-  rating: 5
+  rating: 4.5
   genre: "Mystery thriller"
   date_watched: "2026-05-02"
   review: |-
@@ -43,7 +43,7 @@
 - title: "Creed II"
   year: 2018
   director: "Steven Caple Jr."
-  rating: 3
+  rating: 2.5
   genre: "Sports drama"
   date_watched: "2026-04-28"
   review: |-
@@ -56,7 +56,7 @@
 - title: "Creed III"
   year: 2023
   director: "Michael B. Jordan"
-  rating: 2
+  rating: 2.5
   genre: "Sports drama"
   date_watched: "2026-04-29"
   review: |-
@@ -69,7 +69,7 @@
 - title: "Creed"
   year: 2015
   director: "Ryan Coogler"
-  rating: 4
+  rating: 3.5
   genre: "Sports drama"
   date_watched: "2026-04-28"
   review: |-
@@ -118,7 +118,7 @@ The raw emotion that is illustrated, including Miklo's desire to fit in and Paco
 - title: "Clockers"
   year: 1995
   director: "Spike Lee"
-  rating: 3.5
+  rating: 3
   genre: "Crime drama"
   date_watched: "2026-04-21"
   review: "The plot was quite convoluted (which may have been part of the point), however the movie was well-acted and the message and takeaways were incredibly impactful. I also believe the movie did a lot more \"telling\" than \"showing\", which I think is alright to an extent, however it disrupted the narrative of the characters. I do think that there were lots of unanswered questions, relating to Strike's condition. Also, there were lots relating to the narrative in general as there seemed to be many changes/assumptions as to what happened depending on the perspective of the character."
