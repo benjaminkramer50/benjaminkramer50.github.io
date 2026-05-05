@@ -145,7 +145,7 @@ title: Movie Log
   <div class="canon-browser-topline">
     <div>
       <h2 class="canon-browser-title">Canon</h2>
-      <p class="canon-browser-note">A searchable catalog sourced from the <a href="https://1001movies.fandom.com/wiki/By_Director" target="_blank" rel="noopener">1001 Movies You Must See Before You Die Wiki's By Director index</a>, with watched films marked where they overlap. The list has {{ canon_movies.size }} unique films because the source aggregates titles across multiple editions of the book series rather than preserving one fixed 1,001-film edition.</p>
+      <p class="canon-browser-note">A searchable catalog sourced from the <a href="https://1001movies.fandom.com/wiki/By_Director" target="_blank" rel="noopener">1001 Movies You Must See Before You Die Wiki's By Director index</a>, with watched films marked where they overlap. This is a cross-edition wiki index, not one fixed 1,001-film edition: the wiki's <a href="https://1001movies.fandom.com/wiki/Complete_List" target="_blank" rel="noopener">Complete List</a> is numbered to 1,216 entries, while this director-indexed version currently resolves to {{ canon_movies.size }} unique title-year records after duplicate director rows are merged.</p>
     </div>
   </div>
 
