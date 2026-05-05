@@ -32,14 +32,14 @@ title: Publications
 
 <div class="entry">
 <p class="entry-title">Birth order and disease risk across the human phenome: evidence from 10 million siblings</p>
-<p class="entry-authors"><strong>Benjamin K Kramer</strong>, Samuel A Kushner, Andrey Rzhetsky</p>
+<p class="entry-authors"><strong>Benjamin K Kramer</strong>, Steven A Kushner, Andrey Rzhetsky</p>
 <p class="entry-venue">medRxiv 2026</p>
 <a href="https://www.medrxiv.org/content/10.1101/2026.03.26.26349438" target="_blank" class="entry-link">medRxiv</a>
 </div>
 
 <div class="entry">
 <p class="entry-title">Free-Living Hip Accelerometry Predicts Frailty Status and 12-Month Frailty Decline in Older Adults</p>
-<p class="entry-authors"><strong>Benjamin Kramer</strong>, Yanan Long, Michael Pagan, Samantha Brown, Andrey Rzhetsky, Megan Huisingh-Scheetz</p>
+<p class="entry-authors"><strong>Benjamin Kramer</strong>, Yanan Long, Michelangelo Pagan, Sylvia Brown, Andrey Rzhetsky, Megan Huisingh-Scheetz</p>
 <p class="entry-venue">medRxiv 2025</p>
 <a href="https://doi.org/10.1101/2025.07.09.25330372" target="_blank" class="entry-link">medRxiv</a>
 </div>
