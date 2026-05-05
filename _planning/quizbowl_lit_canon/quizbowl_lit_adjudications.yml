@@ -19807,3 +19807,426 @@ decisions:
   review_status: rejected_combined_title_author_prompt
   source: codex_phase_b_combined_title_batch2
   notes: 'Combined-title cleanup: author clue listing Thoreau works, not a standalone work.'
+- canonical_title: Death and the King
+  decision: alias
+  alias_of: Death and the King's Horseman
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Life and Death of Mr
+  decision: alias
+  alias_of: The Life and Death of Mr. Badman
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Decadent and Depraved
+  decision: alias
+  alias_of: The Kentucky Derby is Decadent and Depraved
+  reason: subtitle_fragment
+  review_status: merged_subtitle_fragment
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Joke and The Unbearable Lightness of Being
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Salammbo and Madame Bovary
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Joke and The Book of Laughter and Forgetting
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Rivals and The School for Scandal
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Rover and Oroonoko
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Underworld and White Noise
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Eclogues and the Georgics
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Mother and The Lower Depths
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Prometheus Bound and the Oresteia
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Glass Bead Game and Steppenwolf
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Arrowsmith and Main Street
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Confessions of a Mask and the Sea of Fertility
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Disgrace and Waiting for the Barbarians
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Eclogues and the Aeneid
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Birthday Party and The Dumbwaiter
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Caretaker and The Birthday Party
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Chairs and Rhinoceros
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Theogony and Works and Days
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Betrayal and The Birthday Party
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Blood Meridian and The Road
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Disgrace and Life
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Hugh Selwyn Mauberley and The Cantos
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Lysistrata and The Frogs
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Medea and The Bacchae
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Orlando and Mrs
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Human Stain and Portnoy
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Vivisector and Voss
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: American Pastoral and Portnoy
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Aura and Where the Air is Clear
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Demian and Siddhartha
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Juneteenth and Invisible Man
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Just So Stories and Kim
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Ambassadors and The Turn of the Screw
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Way of All Flesh and Erewhon
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Eclogues and Georgics
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Half of a Yellow Sun and Americanah
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Inspector General and the Overcoat
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: My Name is Asher Lev and The Chosen
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Orlando and To the Lighthouse
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Blacks and The Maids
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Fall and The Stranger
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Myth of Sisyphus and The Stranger
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Libra and White Noise
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Maggie and The Red Badge of Courage
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Dwarf and Barabbas
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Fixer and The Natural
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Moonstone and The Woman in White
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Road and No Country for Old Men
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Adam Bede and Middlemarch
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Bayou Folk and The Awakening
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Breakfast of Champions and Cat
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Dream on Monkey Mountain and Omeros
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Elizabeth Costello and Disgrace
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Oryx and Crake and The Handmaid
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Art of Love and Metamorphoses
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Black Heralds and Trilce
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Garden of Forking Paths and Ficciones
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Stranger and The Plague
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Third Policeman and At Swim-Two-Birds
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Year of the Death of Ricardo Reis and Blindness
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Works and Days and Theogony
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Andromaque and Ph
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Beneath the Wheel and Demian
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: El Filibusterismo and Noli Me Tangere
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Kidnapped and The Strange Case of Dr
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Seeing and Blindness
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Ambassadors and The Portrait of a Lady
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Name of the Rose and Foucault
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Silmarillion and the Lord of the Rings
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Ariel and The Bell Jar
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Delta Wedding and The Optimist
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Heartbreak Tango and Betrayed
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Bluest Eye and Sula
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Conservationist and Burger
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Fixer and The Assistant
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Magus and The French Lieutenant
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Museum of Innocence and Snow
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Rape of the Lock and The Dunciad
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: Norwegian Wood and 1
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Blind Assassin and The Handmaid
+  decision: reject
+  reason: combined_title_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
+- canonical_title: The Idiot and Notes from the Underground
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_combined_title_batch3
