@@ -16735,3 +16735,57 @@ decisions:
   source: codex_first_1000_public_spotcheck
   notes: 'First-1,000 public-row spot check: duplicate title variant of A Portrait
     of the Artist as a Young Man.'
+- candidate_id: qb_lit_of_myself_3f04d171
+  canonical_title: of Myself
+  normalized_title: of myself
+  decision: reject
+  reason: title_fragment_duplicate
+  review_status: rejected_title_fragment_duplicate
+  source: codex_first_1000_public_purity_pass
+  notes: 'First-1,000 public-row purity pass: fragment of Song of Myself, not a
+    standalone work.'
+- candidate_id: qb_lit_badge_of_courage_4e316fbc
+  canonical_title: Badge of Courage
+  normalized_title: badge of courage
+  decision: reject
+  reason: title_fragment_duplicate
+  review_status: rejected_title_fragment_duplicate
+  source: codex_first_1000_public_purity_pass
+  notes: 'First-1,000 public-row purity pass: fragment of The Red Badge of Courage,
+    not a standalone work.'
+- candidate_id: qb_lit_the_oak_tree_e8a28b32
+  canonical_title: The Oak Tree
+  normalized_title: the oak tree
+  decision: reject
+  reason: embedded_fictional_work_not_standalone
+  review_status: rejected_embedded_fictional_work_not_standalone
+  source: codex_first_1000_public_purity_pass
+  notes: 'First-1,000 public-row purity pass: fictional embedded work in Orlando
+    and music-context collision, not a public reading-list work.'
+- candidate_id: qb_lit_of_forking_paths_6b238959
+  canonical_title: of Forking Paths
+  normalized_title: of forking paths
+  decision: reject
+  reason: title_fragment_duplicate
+  review_status: rejected_title_fragment_duplicate
+  source: codex_first_1000_public_purity_pass
+  notes: 'First-1,000 public-row purity pass: fragment of The Garden of Forking
+    Paths, not a standalone work.'
+- candidate_id: qb_lit_of_the_golden_pavilion_dbf4ca60
+  canonical_title: of the Golden Pavilion
+  normalized_title: of the golden pavilion
+  decision: reject
+  reason: title_fragment_duplicate
+  review_status: rejected_title_fragment_duplicate
+  source: codex_first_1000_public_purity_pass
+  notes: 'First-1,000 public-row purity pass: fragment of The Temple of the Golden
+    Pavilion, not a standalone work.'
+- candidate_id: qb_lit_vladimir_and_estragon_52f0392c
+  canonical_title: Vladimir and Estragon
+  normalized_title: vladimir and estragon
+  decision: reject
+  reason: character_pair_not_work
+  review_status: rejected_character_pair_not_work
+  source: codex_first_1000_public_purity_pass
+  notes: 'First-1,000 public-row purity pass: characters from Waiting for Godot,
+    not a standalone work.'

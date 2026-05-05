@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-05T06:18:53Z
+Generated: 2026-05-05T06:30:49Z
 
 ## Corpus
 
@@ -9,7 +9,7 @@ Generated: 2026-05-05T06:18:53Z
 - Rows processed: 2216999
 - Evidence fields: raw `answerline` and raw `clue_text`
 - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
-- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2003 decisions)
+- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2008 decisions)
 - Worker processes: 4
 - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
 - Threshold: total distinct quizbowl questions >= 4
@@ -21,9 +21,9 @@ Generated: 2026-05-05T06:18:53Z
 - Exact-match seed basis counts: `answerline`=721, `answerline_and_clue`=1042, `clue`=3760
 - Raw normalized candidates: 81872
 - Candidates clearing threshold: 14396
-- Public YAML rows after accepted-work filtering: 5226
-- Rejected non-literature candidates: 2916
-- Audit queue rows: 12578
+- Public YAML rows after accepted-work filtering: 5220
+- Rejected non-literature candidates: 2922
+- Audit queue rows: 12583
 - LLM review queue rows: 500
 - Evidence/example rows written: 68864
 
@@ -38,13 +38,13 @@ Generated: 2026-05-05T06:18:53Z
 
 - `qb_candidate`: 6254
 - `qb_contextual`: 2458
-- `qb_core`: 1102
+- `qb_core`: 1096
 - `qb_major`: 1666
-- `qb_rejected`: 2916
+- `qb_rejected`: 2922
 
 ## Review Status Counts
 
-- `accepted_likely_work`: 5226
+- `accepted_likely_work`: 5220
 - `needs_review_act_title_boundary`: 1
 - `needs_review_alternate_poem_title_boundary`: 1
 - `needs_review_ambiguous_collection_fragment_boundary`: 1
@@ -131,6 +131,7 @@ Generated: 2026-05-05T06:18:53Z
 - `rejected_character_not_work`: 6
 - `rejected_character_or_adjacent_title_fragment`: 1
 - `rejected_character_or_title_fragment`: 4
+- `rejected_character_pair_not_work`: 1
 - `rejected_character_phrase_not_work`: 7
 - `rejected_character_title_fragment`: 1
 - `rejected_christian_apologetics_not_literature_reading_list`: 1
@@ -162,6 +163,7 @@ Generated: 2026-05-05T06:18:53Z
 - `rejected_embedded_concept_not_work`: 1
 - `rejected_embedded_fictional_or_philosophy_text_not_literary_work`: 1
 - `rejected_embedded_fictional_text_not_standalone_work`: 2
+- `rejected_embedded_fictional_work_not_standalone`: 1
 - `rejected_embedded_play_or_art_subject_not_work`: 1
 - `rejected_embedded_play_title_fragment`: 2
 - `rejected_environmental_ethics_not_literature`: 1
@@ -418,7 +420,7 @@ Generated: 2026-05-05T06:18:53Z
 - `rejected_theater_title_but_pop_context_low_confidence`: 1
 - `rejected_theology_philosophy_not_literature`: 1
 - `rejected_title_fragment`: 1
-- `rejected_title_fragment_duplicate`: 58
+- `rejected_title_fragment_duplicate`: 62
 - `rejected_title_fragment_duplicate_of_tristram_shandy`: 1
 - `rejected_title_fragment_or_activity_not_work`: 1
 - `rejected_title_fragment_or_character_label`: 1
