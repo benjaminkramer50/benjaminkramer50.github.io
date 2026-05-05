@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T13:05:27Z",
+  "generated_at": "2026-05-05T19:10:27Z",
   "db_path": "file:/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db?mode=ro&immutable=1",
   "source_table": "archive_parsed_questions",
   "evidence_fields": [
@@ -471,5 +471,66 @@
     "geography": 13,
     "social_science": 1,
     "science": 2
+  },
+  "public_era_counts": {
+    "postwar_modern": 166,
+    "ancient_classical": 183,
+    "early_modern": 227,
+    "long_19th_century": 313,
+    "modernist": 212,
+    "medieval": 87,
+    "eighteenth_century": 55,
+    "unknown_era": 3713,
+    "contemporary": 94
+  },
+  "public_region_or_tradition_counts": {
+    "african": 100,
+    "greek": 159,
+    "iberian_lusophone": 57,
+    "roman_latin": 59,
+    "english_british_irish": 485,
+    "american": 501,
+    "latin_american": 162,
+    "russian_eastern_european": 182,
+    "germanic_scandinavian": 164,
+    "french": 134,
+    "south_asian": 100,
+    "unknown_region": 2487,
+    "italian": 64,
+    "japanese_korean": 81,
+    "indigenous_oceania": 18,
+    "biblical_religious": 70,
+    "arabic_persian_turkic": 136,
+    "chinese": 64,
+    "caribbean": 27
+  },
+  "public_reading_unit_counts": {
+    "postwar_global_literature": 48,
+    "ancient_epic_scripture_myth": 17,
+    "early_modern_world_literature": 165,
+    "nineteenth_century_fiction": 105,
+    "modernism": 212,
+    "medieval_romance_saga": 87,
+    "postwar_literature": 118,
+    "nineteenth_century_poetry_and_drama": 208,
+    "early_modern_drama": 62,
+    "eighteenth_century_prose_and_drama": 55,
+    "fiction_and_narrative": 1329,
+    "poetry": 717,
+    "drama": 521,
+    "literary_nonfiction": 165,
+    "short_fiction": 549,
+    "unclassified_unit": 195,
+    "collections_and_cycles": 302,
+    "classical_drama": 51,
+    "contemporary_global_literature": 94,
+    "epic_romance_or_oral_tradition": 43,
+    "scripture_myth_hymn": 7
+  },
+  "public_classification_confidence_counts": {
+    "rule_high": 1029,
+    "rule_medium": 1730,
+    "rule_low": 2192,
+    "unknown_metadata": 99
   }
 }

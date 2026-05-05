@@ -79,6 +79,191 @@ HIGH_RISK_TITLE_EXEMPT_NORMALIZED = Set.new([
 GENERIC_ANSWERLINE_FORMS = Set.new(%w[book work essay unknown]).freeze
 LLM_REVIEW_QUEUE_LIMIT = 500
 
+ERA_TITLE_OVERRIDES = {
+  "heart of darkness" => "long_19th_century",
+  "moby dick" => "long_19th_century",
+  "the great gatsby" => "modernist",
+  "one hundred years of solitude" => "postwar_modern",
+  "cry the beloved country" => "postwar_modern",
+  "the scarlet letter" => "long_19th_century",
+  "jane eyre" => "long_19th_century",
+  "anna karenina" => "long_19th_century",
+  "a raisin in the sun" => "postwar_modern",
+  "crime and punishment" => "long_19th_century",
+  "a dolls house" => "long_19th_century",
+  "madame bovary" => "long_19th_century",
+  "catch 22" => "postwar_modern",
+  "les miserables" => "long_19th_century",
+  "midnights children" => "postwar_modern",
+  "war and peace" => "long_19th_century",
+  "native son" => "postwar_modern",
+  "invisible man" => "postwar_modern",
+  "the waste land" => "modernist",
+  "brave new world" => "modernist",
+  "a streetcar named desire" => "postwar_modern",
+  "pride and prejudice" => "long_19th_century",
+  "our town" => "modernist",
+  "the sound and the fury" => "modernist",
+  "the catcher in the rye" => "postwar_modern",
+  "whos afraid of virginia woolf" => "postwar_modern",
+  "the birthday party" => "postwar_modern",
+  "the tin drum" => "postwar_modern",
+  "the handmaids tale" => "postwar_modern",
+  "wuthering heights" => "long_19th_century",
+  "the grapes of wrath" => "modernist",
+  "their eyes were watching god" => "modernist",
+  "death of a salesman" => "postwar_modern",
+  "vanity fair" => "long_19th_century",
+  "waiting for godot" => "postwar_modern",
+  "the unbearable lightness of being" => "postwar_modern",
+  "lord of the flies" => "postwar_modern",
+  "great expectations" => "long_19th_century",
+  "the satanic verses" => "postwar_modern",
+  "fathers and sons" => "long_19th_century",
+  "the rime of the ancient mariner" => "long_19th_century",
+  "death in venice" => "modernist",
+  "the house of the spirits" => "postwar_modern",
+  "the three musketeers" => "long_19th_century",
+  "julius caesar" => "early_modern",
+  "six characters in search of an author" => "modernist",
+  "the importance of being earnest" => "long_19th_century",
+  "a good man is hard to find" => "postwar_modern",
+  "the cherry orchard" => "modernist",
+  "the charge of the light brigade" => "long_19th_century",
+  "miss julie" => "long_19th_century",
+  "leaves of grass" => "long_19th_century",
+  "dover beach" => "long_19th_century",
+  "long days journey into night" => "postwar_modern",
+  "the magic mountain" => "modernist",
+  "a clockwork orange" => "postwar_modern",
+  "slaughterhouse five" => "postwar_modern",
+  "ode on a grecian urn" => "long_19th_century",
+  "henry iv" => "early_modern",
+  "the red badge of courage" => "long_19th_century",
+  "dead souls" => "long_19th_century",
+  "as i lay dying" => "modernist",
+  "the iceman cometh" => "postwar_modern",
+  "the glass menagerie" => "postwar_modern",
+  "the brothers karamazov" => "long_19th_century",
+  "the lion and the jewel" => "postwar_modern",
+  "the age of innocence" => "modernist",
+  "song of myself" => "long_19th_century",
+  "julys people" => "postwar_modern",
+  "hedda gabler" => "long_19th_century",
+  "twenty love poems and a song of despair" => "modernist",
+  "robinson crusoe" => "eighteenth_century",
+  "gravitys rainbow" => "postwar_modern",
+  "the tale of genji" => "medieval",
+  "my antonia" => "modernist",
+  "the count of monte cristo" => "long_19th_century",
+  "little women" => "long_19th_century",
+  "the bell jar" => "postwar_modern",
+  "the garden party" => "modernist",
+  "eugene onegin" => "long_19th_century",
+  "the picture of dorian gray" => "long_19th_century",
+  "a passage to india" => "modernist",
+  "my last duchess" => "long_19th_century",
+  "elegy written in a country churchyard" => "eighteenth_century",
+  "the love song of j alfred prufrock" => "modernist",
+  "the song of hiawatha" => "long_19th_century",
+  "snow country" => "postwar_modern",
+  "uncle toms cabin" => "long_19th_century",
+  "the sorrows of young werther" => "eighteenth_century",
+  "no exit" => "postwar_modern"
+}.freeze
+
+REGION_TITLE_OVERRIDES = {
+  "heart of darkness" => "english_british_irish",
+  "moby dick" => "american",
+  "the great gatsby" => "american",
+  "one hundred years of solitude" => "latin_american",
+  "cry the beloved country" => "african",
+  "the scarlet letter" => "american",
+  "jane eyre" => "english_british_irish",
+  "anna karenina" => "russian_eastern_european",
+  "a raisin in the sun" => "american",
+  "crime and punishment" => "russian_eastern_european",
+  "a dolls house" => "germanic_scandinavian",
+  "madame bovary" => "french",
+  "catch 22" => "american",
+  "les miserables" => "french",
+  "midnights children" => "south_asian",
+  "war and peace" => "russian_eastern_european",
+  "native son" => "american",
+  "invisible man" => "american",
+  "the waste land" => "english_british_irish",
+  "brave new world" => "english_british_irish",
+  "a streetcar named desire" => "american",
+  "pride and prejudice" => "english_british_irish",
+  "our town" => "american",
+  "the sound and the fury" => "american",
+  "the catcher in the rye" => "american",
+  "whos afraid of virginia woolf" => "american",
+  "the birthday party" => "english_british_irish",
+  "the tin drum" => "germanic_scandinavian",
+  "wuthering heights" => "english_british_irish",
+  "the grapes of wrath" => "american",
+  "their eyes were watching god" => "american",
+  "death of a salesman" => "american",
+  "vanity fair" => "english_british_irish",
+  "waiting for godot" => "english_british_irish",
+  "the unbearable lightness of being" => "russian_eastern_european",
+  "lord of the flies" => "english_british_irish",
+  "great expectations" => "english_british_irish",
+  "the satanic verses" => "south_asian",
+  "fathers and sons" => "russian_eastern_european",
+  "the rime of the ancient mariner" => "english_british_irish",
+  "death in venice" => "germanic_scandinavian",
+  "the house of the spirits" => "latin_american",
+  "the three musketeers" => "french",
+  "julius caesar" => "english_british_irish",
+  "six characters in search of an author" => "italian",
+  "the importance of being earnest" => "english_british_irish",
+  "a good man is hard to find" => "american",
+  "the cherry orchard" => "russian_eastern_european",
+  "the charge of the light brigade" => "english_british_irish",
+  "miss julie" => "germanic_scandinavian",
+  "leaves of grass" => "american",
+  "dover beach" => "english_british_irish",
+  "long days journey into night" => "american",
+  "the magic mountain" => "germanic_scandinavian",
+  "a clockwork orange" => "english_british_irish",
+  "slaughterhouse five" => "american",
+  "ode on a grecian urn" => "english_british_irish",
+  "henry iv" => "english_british_irish",
+  "the red badge of courage" => "american",
+  "dead souls" => "russian_eastern_european",
+  "as i lay dying" => "american",
+  "the iceman cometh" => "american",
+  "the glass menagerie" => "american",
+  "the brothers karamazov" => "russian_eastern_european",
+  "the lion and the jewel" => "african",
+  "the age of innocence" => "american",
+  "song of myself" => "american",
+  "julys people" => "african",
+  "hedda gabler" => "germanic_scandinavian",
+  "twenty love poems and a song of despair" => "latin_american",
+  "robinson crusoe" => "english_british_irish",
+  "gravitys rainbow" => "american",
+  "the tale of genji" => "japanese_korean",
+  "my antonia" => "american",
+  "the count of monte cristo" => "french",
+  "little women" => "american",
+  "the bell jar" => "american",
+  "the garden party" => "indigenous_oceania",
+  "eugene onegin" => "russian_eastern_european",
+  "the picture of dorian gray" => "english_british_irish",
+  "a passage to india" => "english_british_irish",
+  "my last duchess" => "english_british_irish",
+  "elegy written in a country churchyard" => "english_british_irish",
+  "the love song of j alfred prufrock" => "english_british_irish",
+  "the song of hiawatha" => "american",
+  "snow country" => "japanese_korean",
+  "uncle toms cabin" => "american",
+  "the sorrows of young werther" => "germanic_scandinavian",
+  "no exit" => "french"
+}.freeze
+
 CandidateStats = Struct.new(
   :normalized_title,
   :display_counts,
@@ -807,6 +992,97 @@ def routing_status(review_status, adjudication)
   return "protected_title_collision" if reason == "distinct_work_not_duplicate"
 
   "accepted_clean"
+end
+
+def metadata_context(title, stats)
+  normalize_title([
+    title,
+    stats.examples.map { |example| example["snippet"] },
+    stats.examples.map { |example| example["set_title"] }
+  ].flatten.join(" "))
+end
+
+def inferred_era(stats, title)
+  title_key = normalize_title(title)
+  return ERA_TITLE_OVERRIDES.fetch(title_key) if ERA_TITLE_OVERRIDES.key?(title_key)
+
+  text = metadata_context(title, stats)
+
+  return "ancient_classical" if text.match?(/\b(ancient greek|ancient roman|homeric|homer|iliad|odyssey|aeneid|sophocles|euripides|aeschylus|aristophanes|virgil|ovid|catullus|horace|lucretius|plato|aristotle|gilgamesh|vedic|upanishad|ramayana|mahabharata|bhagavad gita|hebrew bible|old testament|new testament|quran|dhammapada|dao de jing|analects)\b/)
+  return "medieval" if text.match?(/\b(medieval|middle english|old english|old norse|beowulf|canterbury tales|divine comedy|decameron|song of roland|nibelungenlied|morte d arthur|sir gawain|mabinogion|poetic edda|prose edda|njals saga|njal s saga|tale of genji|heike|shahnameh|one thousand and one nights|arabian nights)\b/)
+  return "early_modern" if text.match?(/\b(early modern|renaissance|elizabethan|jacobean|shakespeare|marlowe|spenser|milton|cervantes|don quixote|paradise lost|faerie queene|hamlet|macbeth|king lear|othello|tempest|merchant of venice|romeo and juliet|midsummer night s dream|twelfth night|measure for measure)\b/)
+  return "eighteenth_century" if text.match?(/\b(18th century|eighteenth century|enlightenment|restoration comedy|gulliver s travels|candide|tom jones|tristram shandy|moll flanders|robinson crusoe|dangerous liaisons)\b/)
+  return "long_19th_century" if text.match?(/\b(19th century|nineteenth century|victorian|romantic poet|romanticism|realist novel|naturalist novel|austen|dickens|bronte|eliot|thackeray|hardy|hawthorne|melville|whitman|poe|twain|flaubert|balzac|zola|stendhal|tolstoy|dostoevsky|dostoyevsky|chekhov|gogol|turgenev|pushkin|ibsen|strindberg)\b/)
+  return "modernist" if text.match?(/\b(modernist|modernism|world war i|interwar|early twentieth century|joyce|woolf|proust|kafka|yeats|eliot|pound|faulkner|beckett|lorca|pirandello|waste land|ulysses|dubliners|sound and the fury|to the lighthouse|in search of lost time)\b/)
+  return "postwar_modern" if text.match?(/\b(postwar|post war|postcolonial|post colonial|cold war|1950s|1960s|1970s|1980s|1990s|late twentieth century|twentieth century|borges|nabokov|calvino|garcia marquez|garcia marqu ez|morrison|achebe|coetzee|pynchon|de lillo|delillo|becketts)\b/)
+  return "contemporary" if text.match?(/\b(contemporary|21st century|twenty first century|2000s|2010s|2020s|adichie|tokarczuk|pamuk|bolano|bola no|murakami|ishiguro|ferrante|alexievich|ward|saramago)\b/)
+
+  "unknown_era"
+end
+
+def inferred_region_or_tradition(stats, title)
+  title_key = normalize_title(title)
+  return REGION_TITLE_OVERRIDES.fetch(title_key) if REGION_TITLE_OVERRIDES.key?(title_key)
+
+  text = metadata_context(title, stats)
+
+  return "african" if text.match?(/\b(nigerian|south african|kenyan|ghanaian|senegalese|ethiopian|zimbabwean|ugandan|egyptian|achebe|soyinka|ngugi|coetzee|gordimer|okri|adichie|couto|gurnah|dangarembga)\b/) || text.match?(/\bafrican (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+  return "caribbean" if text.match?(/\b(jamaican|haitian|trinidadian|barbadian|st lucian|walcott|naipaul|kincaid|brathwaite|chamoiseau|con de|conde|danticat|marlon james)\b/) || text.match?(/\bcaribbean (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+  return "latin_american" if text.match?(/\b(colombian|argentine|argentinian|mexican|chilean|peruvian|cuban|brazilian|uruguayan|guatemalan|garcia marquez|garcia marqu ez|borges|neruda|paz|fuentes|cortazar|vargas llosa|lispector|bolano|bola no|allende)\b/) || text.match?(/\blatin american (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+  return "indigenous_oceania" if text.match?(/\b(indigenous|native american|aboriginal australian|maori|pacific islander|inuit|first nations|cherokee|navajo|ojibwe|erdrich|silko|momaday|alexie|alexis wright|patricia grace)\b/)
+  return "south_asian" if text.match?(/\b(indian|sanskrit|vedic|bengali|urdu|hindi|tamil|telugu|kannada|malayalam|marathi|pakistani|sri lankan|ramayana|mahabharata|bhagavad gita|kalidasa|tagore|rushdie|narayan|anita desai|arundhati roy|amitav ghosh|mistry|lahiri|seth)\b/)
+  return "chinese" if text.match?(/\b(chinese|classical chinese|tang poet|du fu|li bai|li po|wang wei|lu xun|cao xueqin|dream of the red chamber|journey to the west|water margin|romance of the three kingdoms|analects|dao de jing|tao te ching)\b/)
+  return "japanese_korean" if text.match?(/\b(japanese|korean|heian|genji|pillow book|murasaki|basho|noh|akutagawa|kawabata|mishima|oe|murakami|yoko ogawa|han kang|hwang sok yong|pachinko)\b/)
+  return "arabic_persian_turkic" if text.match?(/\b(arabic|persian|turkish|ottoman|iranian|sufi|quran|shahnameh|ferdowsi|rumi|hafez|nizami|attar|saadi|mahfouz|pamuk|one thousand and one nights|arabian nights)\b/)
+  return "greek" if text.match?(/\b(greek|homeric|homer|sophocles|euripides|aeschylus|aristophanes|sappho|pindar|iliad|odyssey|oedipus|antigone|oresteia|bacchae|medea)\b/)
+  return "roman_latin" if text.match?(/\b(roman poet|roman author|latin poet|latin literature|virgil|ovid|catullus|horace|lucretius|juvenal|seneca|petronius|aeneid|metamorphoses)\b/)
+  return "biblical_religious" if text.match?(/\b(hebrew bible|old testament|new testament|bible|biblical|gospel|quran|scripture|upanishad|sutra|dhammapada|avesta)\b/)
+  return "russian_eastern_european" if text.match?(/\b(polish|czech|hungarian|romanian|ukrainian|bulgarian|balkan|dostoevsky|dostoyevsky|tolstoy|chekhov|gogol|pushkin|turgenev|nabokov|kafka|sienkiewicz|kundera|tokarczuk|krasznahorkai)\b/) || text.match?(/\brussian (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+  return "germanic_scandinavian" if text.match?(/\b(austrian|scandinavian|norwegian|swedish|danish|icelandic|old norse|goethe|schiller|mann|rilke|kafka|ibsen|strindberg|andersen|laxness|fosse|poetic edda|nibelungenlied)\b/) || text.match?(/\bgerman (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+  return "french" if text.match?(/\b(francophone|moliere|racine|corneille|voltaire|flaubert|balzac|stendhal|zola|baudelaire|proust|camus|sartre|hugo|maupassant|duras)\b/) || text.match?(/\bfrench (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+  return "italian" if text.match?(/\b(dante|petrarch|boccaccio|ariosto|tasso|calvino|eco|ferrante|divine comedy|decameron)\b/) || text.match?(/\bitalian (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+  return "iberian_lusophone" if text.match?(/\b(cervantes|lope de vega|calderon|camoes|saramago|pessoa|lorca|cela|marias|don quixote|lusiads)\b/) || text.match?(/\b(?:spanish|portuguese) (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+  return "american" if text.match?(/\b(african american|united states|hawthorne|melville|whitman|poe|twain|emily dickinson|fitzgerald|hemingway|faulkner|steinbeck|morrison|ellison|great gatsby|moby dick|scarlet letter|huckleberry finn|leaves of grass)\b/) || text.match?(/\bamerican (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+  return "english_british_irish" if text.match?(/\b(anglo saxon|old english|middle english|chaucer|shakespeare|marlowe|spenser|milton|austen|dickens|bronte|eliot|woolf|joyce|yeats|beckett|wilde|swift|defoe|byron|shelley|keats|tennyson|hardy|beowulf|canterbury tales|hamlet|macbeth|king lear|othello|paradise lost|ulysses|dubliners)\b/) || text.match?(/\b(?:english|british|irish|scottish) (?:author|writer|novel|literature|play|poem|poet|novelist|playwright)\b/)
+
+  "unknown_region"
+end
+
+def reading_unit_for(work_form, era, region)
+  return "ancient_epic_scripture_myth" if era == "ancient_classical" && %w[epic_or_romance scripture_myth_hymn].include?(work_form)
+  return "classical_drama" if era == "ancient_classical" && work_form == "drama"
+  return "medieval_romance_saga" if era == "medieval"
+  return "early_modern_drama" if era == "early_modern" && work_form == "drama"
+  return "early_modern_world_literature" if era == "early_modern"
+  return "eighteenth_century_prose_and_drama" if era == "eighteenth_century"
+  return "nineteenth_century_fiction" if era == "long_19th_century" && work_form == "long_fiction"
+  return "nineteenth_century_poetry_and_drama" if era == "long_19th_century"
+  return "modernism" if era == "modernist"
+  return "postwar_global_literature" if era == "postwar_modern" && %w[african caribbean latin_american south_asian chinese japanese_korean arabic_persian_turkic indigenous_oceania].include?(region)
+  return "postwar_literature" if era == "postwar_modern"
+  return "contemporary_global_literature" if era == "contemporary"
+  return "poetry" if work_form == "poetry"
+  return "short_fiction" if work_form == "short_fiction"
+  return "drama" if work_form == "drama"
+  return "literary_nonfiction" if work_form == "essay_memoir_nonfiction"
+  return "fiction_and_narrative" if work_form == "long_fiction"
+  return "collections_and_cycles" if work_form == "collection_or_cycle"
+  return "epic_romance_or_oral_tradition" if work_form == "epic_or_romance"
+  return "scripture_myth_hymn" if work_form == "scripture_myth_hymn"
+
+  "unclassified_unit"
+end
+
+def classification_confidence_for(era, region, unit)
+  known_era = era != "unknown_era"
+  known_region = region != "unknown_region"
+  known_unit = unit != "unclassified_unit"
+
+  return "rule_high" if known_era && known_region && known_unit
+  return "rule_medium" if known_unit && (known_era || known_region)
+  return "rule_low" if known_unit || known_era || known_region
+
+  "unknown_metadata"
 end
 
 def safe_tsv(value)
@@ -1660,6 +1936,10 @@ def main
     quizbowl_track_profile = track_profile(track_counts)
     evidence_profile = evidence_profile(answerline_count, clue_count)
     routing_status = routing_status(row[:review_status], row[:adjudication])
+    era = inferred_era(stats, title)
+    region_or_tradition = inferred_region_or_tradition(stats, title)
+    reading_unit = reading_unit_for(work_form, era, region_or_tradition)
+    classification_confidence = classification_confidence_for(era, region_or_tradition, reading_unit)
 
     if row[:review_status] == "accepted_likely_work"
       data_rows << {
@@ -1686,6 +1966,10 @@ def main
         "dominant_quizbowl_track" => dominant_quizbowl_track,
         "quizbowl_track_profile" => quizbowl_track_profile,
         "routing_status" => routing_status,
+        "era" => era,
+        "region_or_tradition" => region_or_tradition,
+        "reading_unit" => reading_unit,
+        "classification_confidence" => classification_confidence,
         "quizbowl_track_counts" => track_counts,
         "adjudication_decision" => adjudication_decision(row[:adjudication]),
         "adjudication_reason" => adjudication_reason(row[:adjudication]),
@@ -1716,6 +2000,10 @@ def main
       "dominant_quizbowl_track" => dominant_quizbowl_track,
       "quizbowl_track_profile" => quizbowl_track_profile,
       "routing_status" => routing_status,
+      "era" => era,
+      "region_or_tradition" => region_or_tradition,
+      "reading_unit" => reading_unit,
+      "classification_confidence" => classification_confidence,
       "source_counts_json" => JSON.generate(source_counts),
       "form_counts_json" => JSON.generate(form_counts),
       "answerline_form_counts_json" => JSON.generate(answerline_form_counts),
@@ -1737,6 +2025,10 @@ def main
       "dominant_quizbowl_track" => dominant_quizbowl_track,
       "quizbowl_track_profile" => quizbowl_track_profile,
       "routing_status" => routing_status,
+      "era" => era,
+      "region_or_tradition" => region_or_tradition,
+      "reading_unit" => reading_unit,
+      "classification_confidence" => classification_confidence,
       "candidate_source" => source_counts.map { |source, count| "#{source}:#{count}" }.join(";"),
       "form_counts_json" => JSON.generate(form_counts),
       "answerline_form_counts_json" => JSON.generate(answerline_form_counts),
@@ -1832,12 +2124,12 @@ def main
 
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_title_candidates.tsv"),
-    %w[candidate_id canonical_title normalized_title form_hint work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status candidate_source form_counts_json answerline_form_counts_json track_counts_json disambiguation_status base_disambiguation_status adjudication_decision adjudication_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
+    %w[candidate_id canonical_title normalized_title form_hint work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status era region_or_tradition reading_unit classification_confidence candidate_source form_counts_json answerline_form_counts_json track_counts_json disambiguation_status base_disambiguation_status adjudication_decision adjudication_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
     candidate_tsv_rows
   )
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_canon_scores.tsv"),
-    %w[work_id rank canonical_title total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status base_review_status work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason examples_json],
+    %w[work_id rank canonical_title total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status base_review_status work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status era region_or_tradition reading_unit classification_confidence source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason examples_json],
     score_tsv_rows
   )
   write_tsv(
@@ -1911,7 +2203,11 @@ def main
     "public_evidence_profile_counts" => data_rows.group_by { |row| row["evidence_profile"] }.transform_values(&:length),
     "public_quizbowl_track_profile_counts" => data_rows.group_by { |row| row["quizbowl_track_profile"] }.transform_values(&:length),
     "public_routing_status_counts" => data_rows.group_by { |row| row["routing_status"] }.transform_values(&:length),
-    "public_dominant_track_counts" => data_rows.group_by { |row| row["dominant_quizbowl_track"] }.transform_values(&:length)
+    "public_dominant_track_counts" => data_rows.group_by { |row| row["dominant_quizbowl_track"] }.transform_values(&:length),
+    "public_era_counts" => data_rows.group_by { |row| row["era"] }.transform_values(&:length),
+    "public_region_or_tradition_counts" => data_rows.group_by { |row| row["region_or_tradition"] }.transform_values(&:length),
+    "public_reading_unit_counts" => data_rows.group_by { |row| row["reading_unit"] }.transform_values(&:length),
+    "public_classification_confidence_counts" => data_rows.group_by { |row| row["classification_confidence"] }.transform_values(&:length)
   }
   File.write(File.join(options[:out_dir], "quizbowl_lit_summary.json"), JSON.pretty_generate(summary) + "\n")
 
@@ -1960,6 +2256,18 @@ def main
     ## Review Status Counts
 
     #{summary["review_status_counts"].sort.map { |status, count| "- `#{status}`: #{count}" }.join("\n")}
+
+    ## Public Classification Counts
+
+    Work forms: #{summary["public_work_form_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
+
+    Eras: #{summary["public_era_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
+
+    Regions/traditions: #{summary["public_region_or_tradition_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
+
+    Reading units: #{summary["public_reading_unit_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
+
+    Classification confidence: #{summary["public_classification_confidence_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
 
     ## Outputs
 

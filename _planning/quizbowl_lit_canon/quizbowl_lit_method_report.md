@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-05T13:05:27Z
+Generated: 2026-05-05T19:10:27Z
 
 ## Corpus
 
@@ -434,6 +434,18 @@ Generated: 2026-05-05T13:05:27Z
 - `rejected_visual_art_not_literature`: 1
 - `rejected_visual_art_or_common_name_not_work`: 1
 - `rejected_visual_natural_history_not_literature`: 1
+
+## Public Classification Counts
+
+Work forms: `collection_or_cycle`=393, `drama`=738, `epic_or_romance`=75, `essay_memoir_nonfiction`=216, `long_fiction`=1713, `poetry`=956, `scripture_myth_hymn`=9, `short_fiction`=711, `unknown_form`=239
+
+Eras: `ancient_classical`=183, `contemporary`=94, `early_modern`=227, `eighteenth_century`=55, `long_19th_century`=313, `medieval`=87, `modernist`=212, `postwar_modern`=166, `unknown_era`=3713
+
+Regions/traditions: `african`=100, `american`=501, `arabic_persian_turkic`=136, `biblical_religious`=70, `caribbean`=27, `chinese`=64, `english_british_irish`=485, `french`=134, `germanic_scandinavian`=164, `greek`=159, `iberian_lusophone`=57, `indigenous_oceania`=18, `italian`=64, `japanese_korean`=81, `latin_american`=162, `roman_latin`=59, `russian_eastern_european`=182, `south_asian`=100, `unknown_region`=2487
+
+Reading units: `ancient_epic_scripture_myth`=17, `classical_drama`=51, `collections_and_cycles`=302, `contemporary_global_literature`=94, `drama`=521, `early_modern_drama`=62, `early_modern_world_literature`=165, `eighteenth_century_prose_and_drama`=55, `epic_romance_or_oral_tradition`=43, `fiction_and_narrative`=1329, `literary_nonfiction`=165, `medieval_romance_saga`=87, `modernism`=212, `nineteenth_century_fiction`=105, `nineteenth_century_poetry_and_drama`=208, `poetry`=717, `postwar_global_literature`=48, `postwar_literature`=118, `scripture_myth_hymn`=7, `short_fiction`=549, `unclassified_unit`=195
+
+Classification confidence: `rule_high`=1029, `rule_low`=2192, `rule_medium`=1730, `unknown_metadata`=99
 
 ## Outputs
 

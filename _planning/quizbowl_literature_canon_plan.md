@@ -86,12 +86,12 @@ This project is done in stages. The corpus-derived canon will never be permanent
 | A | Evidence Pipeline | complete enough for iteration | Raw answerlines and clue text produce reproducible accepted/rejected/review outputs without Loci processed canon tables. | build script, method report, public YAML |
 | B | Public-List Purity | active, `2,011 / 2,000` top audit and public-purity rows adjudicated; first-`1,000` public-row spot check completed | Top `2,000` audit rows adjudicated, first `1,000` public rows pass spot checks, and the next queue is mostly real boundary cases. | adjudications YAML, rejected TSV, review queue |
 | C | Alias And Duplicate Consolidation | complete for broad title-variant pass; `159` high-confidence alias rules added; six residual article-normalized title clusters marked as protected distinct or author-split cases | High-salience duplicate families and whole/subwork boundaries are resolved or explicitly routed. | cluster TSV, adjudications YAML |
-| D | Classification Layer | active, evidence-derived form/evidence/context/routing fields added; era and region/tradition metadata still pending stronger sources | Every public row has provisional form, unit, era, region/tradition, and confidence fields. | enriched public YAML |
-| E | UI And Reading Experience | active, first filterable page pass added for tier, form, evidence, context, routing, sort, and search | The public page is a filterable reading-list tool rather than a flat row dump. | site pages/components/styles |
+| D | Classification Layer | active, every public row now has provisional form, evidence, context, routing, era, region/tradition, reading-unit, and confidence fields | Every public row has provisional form, unit, era, region/tradition, and confidence fields. | enriched public YAML |
+| E | UI And Reading Experience | active, filterable page pass added for tier, form, evidence, unit, era, tradition, context, routing, sort, and search | The public page is a filterable reading-list tool rather than a flat row dump. | site pages/components/styles |
 | F | Literature Release Gate | not started | A stable quizbowl literature canon has passed A-E and has a final method report. | public site, method report |
 | G | Adjacent Quizbowl Reading Lists | planned after F | Religion, mythology, philosophy, and social-science sibling products have their own pipelines and public pages. | separate domain YAMLs and pages |
 
-Current operating phase: Phase D/E. The top-audit-row count has crossed `2,000` adjudicated rows, the first-`1,000` public-row purity pass removed obvious fragments and non-work rows, and the builder now supports manual alias merges so duplicate variants contribute to one canonical row instead of splitting quizbowl strength. The first public classification/UI layer is intentionally conservative: it uses evidence-derived form, evidence profile, quizbowl context, and routing status, while era and region/tradition wait for a stronger metadata source.
+Current operating phase: Phase D/E. The top-audit-row count has crossed `2,000` adjudicated rows, the first-`1,000` public-row purity pass removed obvious fragments and non-work rows, and the builder now supports manual alias merges so duplicate variants contribute to one canonical row instead of splitting quizbowl strength. The public classification/UI layer is intentionally conservative: it uses evidence-derived form, evidence profile, quizbowl context, routing status, and provisional rule-derived era, region/tradition, reading-unit, and confidence fields. Unknown metadata is left explicit rather than forced into false precision.
 
 Current Phase C caveat: `Diary of a Madman` is kept as a public row with article variants merged, but its evidence mixes Gogol and Lu Xun translation conventions. It should be revisited in an author-aware split pass rather than treated as fully resolved.
 
@@ -142,7 +142,7 @@ Done when:
 
 ### Phase D: Classification Layer
 
-Status: not started.
+Status: active.
 
 Goal: make the list usable as a reading syllabus rather than a flat ranking.
 
@@ -154,9 +154,15 @@ Done when every public row has at least provisional:
 - `region_or_tradition`: Greek, Roman, Sanskrit, Hebrew, Arabic/Persian, Chinese, Japanese, Russian, Latin American, African, Caribbean, Indigenous, etc.
 - `confidence`: rule-derived, manually checked, or needs review.
 
+Current implementation:
+
+- `work_form`, `evidence_profile`, `quizbowl_track_profile`, and `routing_status` are generated for every public row.
+- `era`, `region_or_tradition`, `reading_unit`, and `classification_confidence` are generated for every public row.
+- The front of the list has high-salience title overrides to avoid clue-allusion artifacts; broader rows remain `unknown_era` or `unknown_region` when evidence is too weak.
+
 ### Phase E: UI And Reading Experience
 
-Status: not started.
+Status: active.
 
 Goal: make the page look like a serious reading-list tool.
 
