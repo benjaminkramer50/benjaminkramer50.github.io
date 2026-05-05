@@ -156,7 +156,27 @@ The first stable quizbowl literature canon is done when:
 - Phase E has shipped a filterable UI.
 - A final method report records corpus version, row counts, thresholds, scoring, audit counts, and known limitations.
 
-After that, further work becomes maintenance:
+### Phase G: Adjacent Quizbowl Reading Lists
+
+Status: planned after the first stable literature release.
+
+Goal: reuse the same raw-corpus method to build sibling reading lists for domains that are valuable but should not pollute the literature canon.
+
+Separate products should be created for:
+
+- `religion`: scripture, theology, devotional texts, sermons, religious autobiography, doctrinal works, and religious history when quizbowl treats the text itself as clueable.
+- `mythology`: myth cycles, epics, sagas, folklore collections, named source texts, oral traditions, and major mythographic compilations.
+- `philosophy`: primary philosophical works, named essays, dialogues, treatises, and high-salience theory texts.
+- `social_science`: anthropology, sociology, political theory/science, economics, psychology, linguistics, media theory, and related nonfiction works.
+
+Done when:
+
+- Each sibling list has its own inclusion rules, rejected/review queues, scoring, and public YAML.
+- Boundary rules are explicit for works that can belong to more than one list, such as scripture-as-literature, mythic epics, literary theory, political philosophy, psychoanalysis, anthropology, and religious autobiography.
+- The literature list can link to these adjacent products without absorbing non-literary works back into its public rows.
+- The UI can expose these domains as separate tabs or separate pages with shared evidence display and filters.
+
+After Phase F/G, further work becomes maintenance:
 
 - Audit the next review batch only when the public list or top audit queue shows a material problem.
 - Rebuild when the local quizbowl corpus changes.
