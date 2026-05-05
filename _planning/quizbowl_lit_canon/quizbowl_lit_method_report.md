@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-05T07:55:26Z
+Generated: 2026-05-05T08:07:00Z
 
 ## Corpus
 
@@ -9,7 +9,7 @@ Generated: 2026-05-05T07:55:26Z
 - Rows processed: 2216999
 - Evidence fields: raw `answerline` and raw `clue_text`
 - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
-- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2168 decisions)
+- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2172 decisions)
 - Manual alias rules: 159 loaded, 158 applied after pass 1
 - Worker processes: 4
 - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`

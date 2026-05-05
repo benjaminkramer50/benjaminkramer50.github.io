@@ -18242,3 +18242,73 @@ decisions:
   review_status: rejected_combined_title_author_prompt
   source: codex_phase_c_subtitle_fragment_batch4
   notes: 'Phase C cleanup: combined author-prompt fragment for two Edward Albee plays, not a standalone work.'
+- canonical_title: A Country Doctor
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: The Country Doctor
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: Kafka short story evidence; do not merge with The Country Doctor.'
+- canonical_title: The Country Doctor
+  decision: accept
+  reason: author_aware_split_needed
+  review_status: accepted_likely_work
+  distinct_from: A Country Doctor
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: clue evidence mixes Balzac and Sarah Orne Jewett country-doctor titles; keep public for now and route to the later author-aware split pass.'
+- canonical_title: Hamlet
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: The Hamlet
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: Shakespeare play; do not merge with Faulkner''s The Hamlet.'
+- canonical_title: The Hamlet
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: Hamlet
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: Faulkner novel; do not merge with Shakespeare''s Hamlet.'
+- canonical_title: The Island
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: Island
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: Athol Fugard play evidence; do not merge with Huxley''s Island.'
+- canonical_title: Island
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: The Island
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: Huxley novel evidence; do not merge with Fugard''s The Island.'
+- canonical_title: The Pearl
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: Pearl
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: Steinbeck novella; do not merge with the Middle English Pearl.'
+- canonical_title: Pearl
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: The Pearl
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: Middle English poem/Pearl Poet evidence; do not merge with Steinbeck''s The Pearl.'
+- canonical_title: The Mother
+  decision: accept
+  reason: author_aware_split_needed
+  review_status: accepted_likely_work
+  distinct_from: A Mother
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: evidence mixes Gorky''s novel and Gwendolyn Brooks''s poem; keep public for now and route to the later author-aware split pass.'
+- canonical_title: A Mother
+  decision: accept
+  reason: distinct_work_not_duplicate
+  review_status: accepted_likely_work
+  distinct_from: The Mother
+  source: codex_phase_c_residual_cluster_disambiguation
+  notes: 'Residual Phase C duplicate cluster ruling: Joyce Dubliners story; do not merge with The Mother title family.'
