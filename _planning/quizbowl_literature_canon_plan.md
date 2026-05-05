@@ -18,7 +18,7 @@ The final literature product should include:
 - A salience score and tier for each work.
 - Evidence links or snippets showing why the work appears.
 - Filters for tier, source channel, review status, form/genre, era, region/tradition, and eventually unit.
-- Reading-list views that can be grouped into units such as ancient epic/scripture-as-literature, classical drama, medieval romance, early modern drama, global novel traditions, modernism, postcolonial literature, contemporary global literature, poetry, short fiction, and oral traditions.
+- Reading-list views that can be grouped into units such as ancient epic/scripture-as-literature, classical drama, medieval romance, early modern drama, global novel traditions, modernism, postcolonial literature, contemporary global literature, poetry, short fiction, literary criticism/theory, and oral traditions.
 - Audit-only rejected/review queues so opera, social science, philosophy, geography artifacts, author names, characters, and ambiguous title fragments do not pollute the public reading list.
 
 The correct endpoint is a browsable and deeply filterable quizbowl literature syllabus, backed by reproducible evidence.
@@ -74,6 +74,93 @@ Create a parallel build area:
 Do not overwrite `_data/canon_quick_path.yml`.
 
 The public YAML should contain only `accepted_likely_work` rows. Ambiguous `needs_review_*` candidates and rejected rows remain available in TSV/JSONL audit artifacts, but they should not drive the public reading-list UI.
+
+## End-To-End Completion Plan
+
+This project is done in stages. The corpus-derived canon will never be permanently final because new quizbowl packets can be added, but the first production-quality version has concrete stopping criteria.
+
+### Phase A: Evidence Pipeline
+
+Status: complete enough for iteration.
+
+Done when:
+
+- Raw answerline and raw clue-text extraction both run from `archive_parsed_questions`.
+- The build does not depend on Loci processed canon tables or external canon lists.
+- The build can complete reproducibly with `--jobs 4`.
+- Public YAML exports only accepted works.
+- Rejected/review rows are retained in audit artifacts.
+
+### Phase B: Public-List Purity
+
+Status: active.
+
+Goal: make the visible literature list clean enough that obvious false positives are rare.
+
+Done when:
+
+- The top `2,000` audit queue rows have been adjudicated or routed into durable keep/reject/review rules.
+- The first `1,000` public rows have no obvious non-literary entities, people, characters, places, music-only works, science terms, sports terms, newspapers, institutions, or parser fragments.
+- The next pending `quizbowl_lit_llm_review_queue.jsonl` batch is no longer dominated by easy rejects or obvious rescues; remaining cases are genuinely ambiguous.
+- Spot checks for known traps pass: opera/musical works, social science/philosophy titles, Bible/religion works, art/music titles, character names, author names, title fragments, and duplicate title variants.
+
+### Phase C: Alias And Duplicate Consolidation
+
+Status: partially active.
+
+Goal: avoid having the same work appear under multiple surface forms.
+
+Done when:
+
+- High-salience duplicates are merged or one variant is rejected as a duplicate/title variant.
+- Common article variants are handled: `Divine Comedy` / `The Divine Comedy`, `Arabian Nights` / `The Arabian Nights`, `War of the Worlds` / `The War of the Worlds`, etc.
+- Transliteration and translated-title variants are captured when the quizbowl evidence clearly identifies the same work.
+- Whole-work versus subwork boundaries are explicit: collection, individual poem/story, embedded fictional work, chapter/section, and motif are not silently collapsed.
+
+### Phase D: Classification Layer
+
+Status: not started.
+
+Goal: make the list usable as a reading syllabus rather than a flat ranking.
+
+Done when every public row has at least provisional:
+
+- `form`: novel, play, poem, epic, short story, collection, scripture-as-literature, oral/traditional text, memoir/autobiography, essay, literary criticism/theory, mixed/other.
+- `unit`: broad reading-list grouping.
+- `era`: ancient, classical, late antique, medieval, early modern, long 19th century, modernist, postwar, contemporary, or more specific where useful.
+- `region_or_tradition`: Greek, Roman, Sanskrit, Hebrew, Arabic/Persian, Chinese, Japanese, Russian, Latin American, African, Caribbean, Indigenous, etc.
+- `confidence`: rule-derived, manually checked, or needs review.
+
+### Phase E: UI And Reading Experience
+
+Status: not started.
+
+Goal: make the page look like a serious reading-list tool.
+
+Done when:
+
+- The first screen is not a 5,000-row dump.
+- Users can filter by tier, unit, era, region/tradition, form, and evidence channel.
+- Works display concise evidence and score context without exposing raw audit clutter.
+- Progress/status controls still work.
+- The page is visually quieter, denser, and less AI-generated.
+
+### Phase F: Release Gate
+
+The first stable quizbowl literature canon is done when:
+
+- Phase A is complete.
+- Phase B has adjudicated at least the top `2,000` audit rows and passes the first-`1,000` public-row purity check.
+- Phase C has handled the top duplicate/alias families.
+- Phase D has provisional classification fields for all public rows.
+- Phase E has shipped a filterable UI.
+- A final method report records corpus version, row counts, thresholds, scoring, audit counts, and known limitations.
+
+After that, further work becomes maintenance:
+
+- Audit the next review batch only when the public list or top audit queue shows a material problem.
+- Rebuild when the local quizbowl corpus changes.
+- Add separate religion, mythology, philosophy, and social-science products without folding them back into literature.
 
 ## Data Model
 
