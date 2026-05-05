@@ -1204,6 +1204,8 @@ layout: null
           <div class="form-group">
             <label class="form-label" for="book-title">Title</label>
             <input class="form-input" type="text" id="book-title" placeholder="Book title" required autocomplete="off">
+            <input type="hidden" id="book-canon-id">
+            <div class="form-hint" id="book-canon-hint">Enter a title to see whether it matches the literature canon list.</div>
           </div>
 
           <div class="form-row">
@@ -2235,6 +2237,69 @@ layout: null
         }
       }
 
+      var literatureCanonData = [
+        {% for item in site.data.quizbowl_literature_canon %}
+        {
+          "id": {{ item.id | jsonify }},
+          "title": {{ item.title | jsonify }},
+          "tier": {{ item.tier | jsonify }},
+          "work_form": {{ item.work_form | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ];
+      var bookCanonIdInput = document.getElementById('book-canon-id');
+      var bookCanonHint = document.getElementById('book-canon-hint');
+      var literatureCanonById = {};
+      var literatureCanonByTitle = {};
+
+      literatureCanonData.forEach(function (item) {
+        literatureCanonById[item.id] = item;
+        var key = toSlug(item.title);
+        if (!literatureCanonByTitle[key]) literatureCanonByTitle[key] = [];
+        literatureCanonByTitle[key].push(item);
+      });
+
+      function canonTierLabel(tier) {
+        if (tier === 'qb_core') return 'Essential';
+        if (tier === 'qb_major') return 'Major';
+        if (tier === 'qb_contextual') return 'Further Reading';
+        return 'Candidate';
+      }
+
+      function findCanonBook(title, canonId) {
+        if (canonId && literatureCanonById[canonId]) return literatureCanonById[canonId];
+        var key = toSlug(title);
+        if (!key) return null;
+        var matches = literatureCanonByTitle[key] || [];
+        return matches.length === 1 ? matches[0] : null;
+      }
+
+      function updateBookCanonMatch() {
+        if (!bookCanonHint || !bookCanonIdInput) return;
+
+        var bookTitleEl = document.getElementById('book-title');
+        if (!bookTitleEl) return;
+
+        var title = bookTitleEl.value.trim();
+        var existingCanonId = bookCanonIdInput.value.trim();
+        var existingMatch = existingCanonId ? literatureCanonById[existingCanonId] : null;
+        var match = existingMatch && toSlug(existingMatch.title) === toSlug(title)
+          ? existingMatch
+          : findCanonBook(title, '');
+        var matches = literatureCanonByTitle[toSlug(title)] || [];
+
+        if (match) {
+          bookCanonIdInput.value = match.id;
+          bookCanonHint.textContent = 'Canon match: ' + match.title + ' - ' + canonTierLabel(match.tier) + '. This entry will mark the work as logged on the canon page.';
+        } else if (title && matches.length > 1) {
+          bookCanonIdInput.value = '';
+          bookCanonHint.textContent = 'Multiple canon matches found for this title; no canon_id will be added automatically.';
+        } else {
+          bookCanonIdInput.value = '';
+          bookCanonHint.textContent = title ? 'No canon match found.' : 'Enter a title to see whether it matches the literature canon list.';
+        }
+      }
+
       titleInput.addEventListener('input', function () {
         updateSlugPreview();
         updateMovieCanonMatch();
@@ -2547,9 +2612,11 @@ layout: null
         var rating = document.getElementById('book-rating').value;
         var date = document.getElementById('book-date').value;
         var review = document.getElementById('book-review').value.trim();
+        var canonId = document.getElementById('book-canon-id').value.trim();
 
         var lines = [];
         lines.push('- title: ' + yamlStr(title));
+        if (canonId) lines.push('  canon_id: ' + yamlStr(canonId));
         if (author) lines.push('  author: ' + yamlStr(author));
         if (genre) lines.push('  genre: ' + yamlStr(genre));
         if (rating) lines.push('  rating: ' + rating);
@@ -2568,6 +2635,8 @@ layout: null
         var yaml = document.getElementById('book-yaml-pre').textContent;
         copyToClipboard(yaml, 'book-copy-feedback');
       });
+
+      document.getElementById('book-title').addEventListener('input', updateBookCanonMatch);
 
       // ═══════════════ Paper Log ═══════════════
       document.getElementById('paper-generate-btn').addEventListener('click', function () {
@@ -3141,12 +3210,14 @@ layout: null
 
       function loadBookEntry(entry) {
         setFieldValue('book-title', entry.title);
+        setFieldValue('book-canon-id', entry.canon_id);
         setFieldValue('book-author', entry.author);
         setFieldValue('book-genre', entry.genre);
         setFieldValue('book-rating', entry.rating);
         setFieldValue('book-date', entry.date_read || todayStr);
         setFieldValue('book-review', entry.review);
         setFieldChecked('book-favorite', entry.favorite);
+        updateBookCanonMatch();
         hideYamlOutput('book-yaml-output');
         scrollToPanelStart('book');
         document.getElementById('book-title').focus();

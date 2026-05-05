@@ -15,7 +15,7 @@ wide: true
 <section class="quizbowl-canon-hero" aria-label="Literature canon reading list overview">
   <p class="quizbowl-kicker">Academic Literature Canon</p>
   <p class="page-intro">A chronological reading path through works that repeatedly appear in academic quizbowl literature questions, organized from ancient and classical traditions through contemporary global writing.</p>
-  <p class="canon-status-note">Quizbowl is the source signal, not the subject of the page. The list uses recurrence in answerlines and clue text as evidence for academic canon salience, then presents the result as a literature reading list. Chronology is assigned by the build pipeline from work-date evidence when available, with transparent low-confidence period fallbacks for rows that still need date review.</p>
+  <p class="canon-status-note">This list was built from raw quizbowl answerlines and clue text: recurring literary works were extracted, de-duplicated, filtered for non-literary false positives, scored by recurrence, and then arranged into a provisional chronological reading path.</p>
 </section>
 
 <div class="canon-summary quizbowl-summary" aria-label="Quizbowl canon summary">
@@ -35,13 +35,6 @@ wide: true
     <span class="canon-stat-number">{{ qb_contextual.size }}</span>
     <span class="canon-stat-label">Further Reading</span>
   </div>
-</div>
-
-<div class="quizbowl-method-strip" aria-label="Build method">
-  <span>Path: ancient to contemporary</span>
-  <span>Source signal: 3+ quizbowl mentions</span>
-  <span>Scope: literature works only</span>
-  <span>Default: period order</span>
 </div>
 
 <div class="quizbowl-quick-filters" aria-label="Quick canon-strength filters">
@@ -81,6 +74,15 @@ wide: true
       <option value="epic_romance_or_oral_tradition">Epic / Oral Tradition</option>
       <option value="scripture_myth_hymn">Scripture / Myth / Hymn</option>
       <option value="unclassified_unit">Unclassified</option>
+    </select>
+  </label>
+  <label class="canon-filter-field" for="qb-reading-status">
+    <span>Status</span>
+    <select id="qb-reading-status" aria-label="Filter by book-log status">
+      <option value="">Any Status</option>
+      <option value="logged">Logged</option>
+      <option value="favorite">Favorites</option>
+      <option value="not-logged">Not Logged</option>
     </select>
   </label>
   <label class="canon-filter-field" for="qb-sort">
@@ -221,6 +223,8 @@ wide: true
   <button class="quizbowl-page-btn" type="button" data-page-action="next">Next</button>
 </div>
 
+<script type="application/json" id="book-log-data">{{ site.data.books | jsonify }}</script>
+
 <script>
 (function () {
   var dataUrl = '{{ "/quizbowl-canon-data.json" | relative_url }}';
@@ -237,6 +241,7 @@ wide: true
   var regionFilter = document.getElementById('qb-region-filter');
   var contextFilter = document.getElementById('qb-context-filter');
   var routeFilter = document.getElementById('qb-route-filter');
+  var readingStatusFilter = document.getElementById('qb-reading-status');
   var sortSelect = document.getElementById('qb-sort');
   var searchInput = document.getElementById('qb-search');
   var pageSizeSelect = document.getElementById('qb-page-size');
@@ -394,6 +399,87 @@ wide: true
       .replace(/'/g, '&#39;');
   }
 
+  function slugify(value) {
+    return String(value || '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function parseDate(value) {
+    if (!value) return null;
+    var date = new Date(value);
+    return isNaN(date.getTime()) ? null : date;
+  }
+
+  function formatDate(value) {
+    var date = parseDate(value);
+    if (!date) return '';
+    return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+
+  function formatRating(value) {
+    var rating = Number(value);
+    if (!Number.isFinite(rating)) return '';
+    return rating % 1 === 0 ? String(rating) : rating.toFixed(1);
+  }
+
+  function readBookLogData() {
+    var el = document.getElementById('book-log-data');
+    if (!el) return [];
+    try {
+      return JSON.parse(el.textContent || '[]');
+    } catch (error) {
+      return [];
+    }
+  }
+
+  var bookGroups = {};
+  readBookLogData().forEach(function (entry) {
+    [entry.canon_id, slugify(entry.title)].forEach(function (key) {
+      if (!key) return;
+      if (!bookGroups[key]) bookGroups[key] = [];
+      bookGroups[key].push(entry);
+    });
+  });
+
+  function summarizeBookLog(entries) {
+    if (!entries || !entries.length) return null;
+
+    var latest = entries[0];
+    var favorite = false;
+    entries.forEach(function (entry) {
+      var entryDate = parseDate(entry.date_read);
+      var latestDate = parseDate(latest.date_read);
+      if (entry.favorite) favorite = true;
+      if (entryDate && (!latestDate || entryDate > latestDate)) latest = entry;
+    });
+
+    return {
+      logged: true,
+      title: latest.title || '',
+      author: latest.author || '',
+      rating: latest.rating,
+      favorite: favorite || !!latest.favorite,
+      date_read: latest.date_read || '',
+      review: latest.review || ''
+    };
+  }
+
+  function attachBookLog(item) {
+    var summary = summarizeBookLog(bookGroups[item.id] || bookGroups[slugify(item.title)] || []);
+    if (!summary) return item;
+
+    item.logged = true;
+    item.book_log_title = summary.title;
+    item.book_log_author = summary.author;
+    item.book_log_rating = summary.rating;
+    item.book_log_favorite = summary.favorite;
+    item.book_log_date = summary.date_read;
+    item.book_log_review = summary.review;
+    return item;
+  }
+
   function label(group, value) {
     if (!value) return '';
     return labels[group] && labels[group][value] ? labels[group][value] : String(value).replace(/_/g, ' ');
@@ -428,7 +514,9 @@ wide: true
       item.quizbowl_track_profile,
       item.routing_status,
       item.example && item.example.set_title,
-      item.example && item.example.snippet
+      item.example && item.example.snippet,
+      item.logged ? 'logged read finished book log' : '',
+      item.book_log_review
     ].join(' ').toLowerCase();
   }
 
@@ -443,6 +531,9 @@ wide: true
     if (selectedValue(regionFilter) && item.region_or_tradition !== selectedValue(regionFilter)) return false;
     if (selectedValue(contextFilter) && item.quizbowl_track_profile !== selectedValue(contextFilter)) return false;
     if (selectedValue(routeFilter) && item.routing_status !== selectedValue(routeFilter)) return false;
+    if (selectedValue(readingStatusFilter) === 'logged' && !item.logged) return false;
+    if (selectedValue(readingStatusFilter) === 'favorite' && !item.book_log_favorite) return false;
+    if (selectedValue(readingStatusFilter) === 'not-logged' && item.logged) return false;
     if (search && item.searchText.indexOf(search) === -1) return false;
     return true;
   }
@@ -484,7 +575,7 @@ wide: true
 
   function renderItem(item, displayNumber) {
     var article = document.createElement('article');
-    article.className = 'canon-item quizbowl-canon-item';
+    article.className = 'canon-item quizbowl-canon-item' + (item.logged ? ' quizbowl-canon-item-logged' : '');
     article.setAttribute('data-tier', item.tier || '');
 
     var region = item.region_or_tradition && item.region_or_tradition !== 'unknown_region'
@@ -499,9 +590,20 @@ wide: true
     var chronologyNote = item.chronology_needs_review
       ? '<span class="canon-chip">Chronology needs review</span>'
       : '';
+    var logRating = formatRating(item.book_log_rating);
+    var logMeta = item.logged
+      ? '<span class="canon-chip quizbowl-log-chip">Logged' + (item.book_log_date ? ' ' + escapeHtml(formatDate(item.book_log_date)) : '') + '</span>' +
+        (item.book_log_favorite ? '<span class="canon-chip quizbowl-favorite-chip">Favorite</span>' : '')
+      : '';
+    var logDetails = item.logged && (logRating || item.book_log_review)
+      ? '<details class="quizbowl-evidence quizbowl-book-log"><summary>Book log</summary><p>' +
+          (logRating ? '<span>Rating: ' + escapeHtml(logRating) + '/5</span>' : '') +
+          (item.book_log_review ? escapeHtml(item.book_log_review).replace(/\n/g, '<br>') : '') +
+        '</p></details>'
+      : '';
     var sequencePrefix = selectedValue(sortSelect) === 'chronology' ? 'Path ' : '#';
     var example = item.example && item.example.snippet
-      ? '<details class="quizbowl-evidence"><summary>Source evidence</summary><p><span>Quizbowl source: ' +
+      ? '<details class="quizbowl-evidence"><summary>Corpus evidence</summary><p><span>Source: ' +
           escapeHtml(item.example.set_title || 'clue sample') +
           (item.example.year ? ', ' + escapeHtml(item.example.year) : '') +
         '</span>' + escapeHtml(item.example.snippet) + '</p></details>'
@@ -517,17 +619,19 @@ wide: true
           '<span class="canon-era-badge">' + escapeHtml(label('tier', item.tier)) + '</span>' +
           '<span class="canon-date">' + escapeHtml(label('unit', item.reading_unit)) + '</span>' +
         '</div>' +
-        '<h2 class="canon-title">' + escapeHtml(item.title) + '</h2>' +
+        '<h2 class="canon-title">' + (item.logged ? '<span class="quizbowl-title-check" aria-label="Logged">&#x2611;</span>' : '') + escapeHtml(item.title) + '</h2>' +
         '<div class="canon-meta">' +
           '<span class="canon-chip canon-level-chip">' + escapeHtml(label('form', item.work_form)) + '</span>' +
           region +
+          logMeta +
           chronologyNote +
           route +
         '</div>' +
+        logDetails +
         example +
       '</div>' +
       '<div class="canon-item-actions quizbowl-score-block">' +
-        '<span class="quizbowl-score-label">Signal</span>' +
+        '<span class="quizbowl-score-label">Level</span>' +
         '<span class="canon-status-label">' + escapeHtml(label('strength', item.tier)) + '</span>' +
       '</div>';
     return article;
@@ -575,7 +679,7 @@ wide: true
     if (visibleCount) visibleCount.textContent = 'The literature list did not load.';
   }
 
-  [tierFilter, formFilter, evidenceFilter, unitFilter, eraFilter, regionFilter, contextFilter, routeFilter, sortSelect, pageSizeSelect].forEach(function (filter) {
+  [tierFilter, formFilter, evidenceFilter, unitFilter, eraFilter, regionFilter, contextFilter, routeFilter, readingStatusFilter, sortSelect, pageSizeSelect].forEach(function (filter) {
     if (filter) filter.addEventListener('change', applyFilters);
   });
   if (searchInput) searchInput.addEventListener('input', applyFilters);
@@ -602,6 +706,7 @@ wide: true
     })
     .then(function (data) {
       items = data.map(function (item) {
+        attachBookLog(item);
         item.searchText = buildSearchText(item);
         return item;
       });
