@@ -18312,3 +18312,214 @@ decisions:
   distinct_from: The Mother
   source: codex_phase_c_residual_cluster_disambiguation
   notes: 'Residual Phase C duplicate cluster ruling: Joyce Dubliners story; do not merge with The Mother title family.'
+- canonical_title: The Blue Bird and Pell
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: combined Maeterlinck title fragment, not a standalone reading-list work.'
+- canonical_title: Trip Inside Your Mind
+  decision: reject
+  reason: non_literary_music
+  review_status: rejected_non_literary_music
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: song/music clue artifact, not a literary work.'
+- canonical_title: Arcadia and Astrophil and Stella
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: combined Sidney works from an author clue, not a standalone work.'
+- canonical_title: End of Part B
+  decision: reject
+  reason: quizbowl_packet_audio_artifact
+  review_status: rejected_quizbowl_parser_artifact
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: packet instruction/audio artifact, not a literary work.'
+- canonical_title: Ravelstein and Herzog
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: combined Bellow titles from an author clue, not a standalone work.'
+- canonical_title: Volpone and Bartholomew Fair
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: combined Jonson titles from an author clue, not a standalone work.'
+- canonical_title: Catch-22 by Joseph Heller
+  decision: alias
+  alias_of: Catch-22
+  reason: duplicate_title_with_author_suffix
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: answerline title includes author suffix; merge into Catch-22.'
+- canonical_title: Pastoral Symphony or Symphony No. 6 in F Major, Op. 68
+  decision: reject
+  reason: non_literary_music
+  review_status: rejected_non_literary_music
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: Beethoven symphony, not a literary work.'
+- canonical_title: Songs Without Words or Lieder Ohne Worte
+  decision: reject
+  reason: non_literary_music
+  review_status: rejected_non_literary_music
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: Mendelssohn piano works, not a literary work.'
+- canonical_title: The House of Seven Gables by Nathaniel Hawthorne
+  decision: alias
+  alias_of: The House of the Seven Gables
+  reason: duplicate_title_with_author_suffix
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: title plus author suffix; merge into The House of the Seven Gables.'
+- canonical_title: 'Madame Bovary: Province Manners'
+  decision: alias
+  alias_of: Madame Bovary
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: subtitle/answerline variant; merge into Madame Bovary.'
+- canonical_title: The Trial or Der Prozess by Franz Kafka
+  decision: alias
+  alias_of: The Trial
+  reason: duplicate_translated_title_with_author_suffix
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: translated-title and author-suffix variant; merge into The Trial.'
+- canonical_title: The Canterbury Tales [Tales of Canterbury
+  decision: alias
+  alias_of: The Canterbury Tales
+  reason: duplicate_answerline_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: malformed answerline variant; merge into The Canterbury Tales.'
+- canonical_title: Frankenstein [Frankenstein
+  decision: alias
+  alias_of: Frankenstein
+  reason: duplicate_answerline_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: malformed answerline variant; merge into Frankenstein.'
+- canonical_title: Vojna i mir
+  decision: alias
+  alias_of: War and Peace
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: Russian-title answerline variant; merge into War and Peace.'
+- canonical_title: La Gerusalemme liberata or The Liberation of Jerusalem
+  decision: alias
+  alias_of: Jerusalem Delivered
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: Italian/transliterated title variant; merge into Jerusalem Delivered.'
+- canonical_title: Oedipus Coloneus or Oidipous epi Kolōnōi
+  decision: alias
+  alias_of: Oedipus at Colonus
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: transliterated answerline variant; merge into Oedipus at Colonus.'
+- canonical_title: Frühlings Erwachen
+  decision: alias
+  alias_of: Spring Awakening
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: German-title answerline variant; merge into Spring Awakening.'
+- canonical_title: 'The Lower Depths: Scenes from Russian Life'
+  decision: alias
+  alias_of: The Lower Depths
+  reason: duplicate_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: subtitle variant; merge into The Lower Depths.'
+- canonical_title: The Misanthrope or Le Misanthrope [mee-ZAN-trohp
+  decision: alias
+  alias_of: The Misanthrope
+  reason: duplicate_answerline_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: malformed answerline variant; merge into The Misanthrope.'
+- canonical_title: The Analects of Confucius or Lúnyǔ
+  decision: reject
+  reason: philosophy_domain_not_literature
+  review_status: rejected_non_literary_context
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: philosophy-domain duplicate already rejected as Analects for the literature-only product.'
+- canonical_title: Membra Jesu nostri patientis sanctissima
+  decision: reject
+  reason: non_literary_music
+  review_status: rejected_non_literary_music
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: Buxtehude cantata cycle, not a literary work.'
+- canonical_title: Paula de
+  decision: alias
+  alias_of: Paula
+  reason: title_fragment
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: parser fragment from "memoir Paula describes"; merge into Paula review row.'
+- canonical_title: The Marne and 1923
+  decision: reject
+  reason: combined_title_year_fragment
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: fragment joining The Marne and A Son at the Front publication year context.'
+- canonical_title: Siddhartha and The Glass Bead Game
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: combined Hesse works from an author clue; individual works already have rows.'
+- canonical_title: The Alderson Story
+  decision: reject
+  reason: non_literary_biographical_context
+  review_status: rejected_non_literary_context
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: clue identifies an activist/organizer through a prison-life book, not a literature reading-list work.'
+- canonical_title: Notes of a Madman_ HTH
+  decision: reject
+  reason: malformed_answerline_or_parser_artifact
+  review_status: rejected_quizbowl_parser_artifact
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: malformed title/answerline artifact; do not treat as an independent work.'
+- canonical_title: The Miser and Le Bourgeois Gentilhomme
+  decision: reject
+  reason: combined_title_author_prompt
+  review_status: rejected_combined_title_author_prompt
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: combined Moliere works from an author clue, not a standalone work.'
+- canonical_title: Where in the World is Jason Dettelbach
+  decision: reject
+  reason: quizbowl_game_or_packet_artifact
+  review_status: rejected_quizbowl_parser_artifact
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: quizbowl game prompt/location gimmick, not a literary work.'
+- canonical_title: Dialektik der Aufklärung
+  decision: reject
+  reason: philosophy_social_theory_domain
+  review_status: rejected_non_literary_context
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: critical theory/philosophy work belongs in a future adjacent list, not literature-only.'
+- canonical_title: 'Kings of the Hill: How Nine Powerful Men Changed the Course of American History'
+  decision: reject
+  reason: history_domain_not_literature
+  review_status: rejected_non_literary_context
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: history/political nonfiction, not literature-only.'
+- canonical_title: History of England from the Accession of James II
+  decision: reject
+  reason: history_domain_not_literature
+  review_status: rejected_non_literary_context
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: historical work belongs outside the literature-only reading list.'
+- canonical_title: Medicine for Hypochondriacs
+  decision: reject
+  reason: quizbowl_game_or_packet_artifact
+  review_status: rejected_quizbowl_parser_artifact
+  source: codex_phase_b_tail_pollution_batch1
+  notes: 'Tail cleanup: quizbowl packet gimmick, not a literary work.'

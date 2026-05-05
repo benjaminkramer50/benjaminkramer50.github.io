@@ -169,7 +169,16 @@ ERA_TITLE_OVERRIDES = {
   "snow country" => "postwar_modern",
   "uncle toms cabin" => "long_19th_century",
   "the sorrows of young werther" => "eighteenth_century",
-  "no exit" => "postwar_modern"
+  "no exit" => "postwar_modern",
+  "frankenstein" => "long_19th_century",
+  "the house of the seven gables" => "long_19th_century",
+  "the glass bead game" => "postwar_modern",
+  "the lower depths" => "modernist",
+  "the trial" => "modernist",
+  "oedipus at colonus" => "ancient_classical",
+  "jerusalem delivered" => "early_modern",
+  "the misanthrope" => "early_modern",
+  "spring awakening" => "modernist"
 }.freeze
 
 REGION_TITLE_OVERRIDES = {
@@ -261,7 +270,16 @@ REGION_TITLE_OVERRIDES = {
   "snow country" => "japanese_korean",
   "uncle toms cabin" => "american",
   "the sorrows of young werther" => "germanic_scandinavian",
-  "no exit" => "french"
+  "no exit" => "french",
+  "frankenstein" => "english_british_irish",
+  "the house of the seven gables" => "american",
+  "the glass bead game" => "germanic_scandinavian",
+  "the lower depths" => "russian_eastern_european",
+  "the trial" => "germanic_scandinavian",
+  "oedipus at colonus" => "greek",
+  "jerusalem delivered" => "italian",
+  "the misanthrope" => "french",
+  "spring awakening" => "germanic_scandinavian"
 }.freeze
 
 CandidateStats = Struct.new(
