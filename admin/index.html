@@ -2338,6 +2338,19 @@ layout: null
         return '"' + val.replace(/\r?\n/g, '\\n') + '"';
       }
 
+      function yamlTextField(key, val, indent) {
+        var normalized = String(val || '').replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+        var prefix = new Array(indent + 1).join(' ');
+        if (normalized.indexOf('\n') === -1) return prefix + key + ': ' + yamlStr(normalized);
+
+        var valuePrefix = new Array(indent + 3).join(' ');
+        var lines = [prefix + key + ': |-'];
+        normalized.split('\n').forEach(function (line) {
+          lines.push(line ? valuePrefix + line : '');
+        });
+        return lines.join('\n');
+      }
+
       // ── Helper: copy to clipboard with feedback ──
       function copyToClipboard(text, feedbackId) {
         navigator.clipboard.writeText(text).then(function () {
@@ -2452,7 +2465,7 @@ layout: null
         if (price) lines.push('  price: ' + price);
         if (rating) lines.push('  rating: ' + rating);
         if (date) lines.push('  last_visit: "' + date + '"');
-        if (notes) lines.push('  notes: ' + yamlStr(notes));
+        if (notes) lines.push(yamlTextField('notes', notes, 2));
         if (document.getElementById('food-favorite').checked) lines.push('  favorite: true');
 
         // Collect dishes
@@ -2469,7 +2482,7 @@ layout: null
           var dRating = ratingEl ? ratingEl.value : '';
           if (dRating) lines.push('      rating: ' + dRating);
           var dNotes = notesEl ? notesEl.value.trim() : '';
-          if (dNotes) lines.push('      notes: ' + yamlStr(dNotes));
+          if (dNotes) lines.push(yamlTextField('notes', dNotes, 6));
         }
 
         var yaml = lines.join('\n');
@@ -2506,7 +2519,7 @@ layout: null
         if (rating) lines.push('  rating: ' + rating);
         if (genre) lines.push('  genre: ' + yamlStr(genre));
         if (date) lines.push('  date_watched: "' + date + '"');
-        if (review) lines.push('  review: ' + yamlStr(review));
+        if (review) lines.push(yamlTextField('review', review, 2));
         if (document.getElementById('movie-favorite').checked) lines.push('  favorite: true');
 
         var yaml = lines.join('\n');
@@ -2541,7 +2554,7 @@ layout: null
         if (genre) lines.push('  genre: ' + yamlStr(genre));
         if (rating) lines.push('  rating: ' + rating);
         if (date) lines.push('  date_read: "' + date + '"');
-        if (review) lines.push('  review: ' + yamlStr(review));
+        if (review) lines.push(yamlTextField('review', review, 2));
         if (document.getElementById('book-favorite').checked) lines.push('  favorite: true');
 
         var yaml = lines.join('\n');
@@ -2575,7 +2588,7 @@ layout: null
         if (year) lines.push('  year: ' + year);
         if (field) lines.push('  field: ' + yamlStr(field));
         if (date) lines.push('  date_read: "' + date + '"');
-        if (notes) lines.push('  notes: ' + yamlStr(notes));
+        if (notes) lines.push(yamlTextField('notes', notes, 2));
         if (document.getElementById('paper-favorite').checked) lines.push('  favorite: true');
 
         var yaml = lines.join('\n');
@@ -2609,7 +2622,7 @@ layout: null
         if (rating) lines.push('  rating: ' + rating);
         if (status) lines.push('  status: ' + yamlStr(status));
         if (date) lines.push('  date_watched: "' + date + '"');
-        if (review) lines.push('  review: ' + yamlStr(review));
+        if (review) lines.push(yamlTextField('review', review, 2));
         if (document.getElementById('tv-favorite').checked) lines.push('  favorite: true');
 
         var yaml = lines.join('\n');
@@ -2938,7 +2951,7 @@ layout: null
         lines.push('canon_review:');
         lines.push('  status: ' + yamlStr(reviewStatus));
         lines.push('  tier: ' + yamlStr(tier));
-        lines.push('  rationale: ' + yamlStr(rationale));
+        lines.push(yamlTextField('rationale', rationale, 2));
         lines.push('  reviewed_on: "' + todayStr + '"');
         lines.push('  reviewed_by: "Benjamin Kramer"');
         lines.push('  confidence: ' + yamlStr(confidence));
@@ -2950,7 +2963,7 @@ layout: null
         lines.push('  started_on: ' + yamlNullOrString(started));
         lines.push('  completed_on: ' + yamlNullOrString(completed));
         lines.push('  progress_percent: ' + progressPercent);
-        lines.push('  private_notes: ' + yamlStr(privateNotes));
+        lines.push(yamlTextField('private_notes', privateNotes, 2));
         if (versionTitle) {
           lines.push('versions:');
           lines.push('  - id: ' + yamlStr(versionId));
@@ -2969,7 +2982,7 @@ layout: null
         }
         lines.push('evidence:');
         lines.push('  - type: ' + yamlStr(evidenceType));
-        lines.push('    citation: ' + yamlStr(evidenceCitation));
+        lines.push(yamlTextField('citation', evidenceCitation, 4));
         lines.push('    url: null');
         lines.push('    source_name: ' + yamlStr(evidenceSource));
         lines.push('    accessed_on: null');
@@ -3056,8 +3069,8 @@ layout: null
         if (stateCode) lines.push('  state_code: "' + stateCode + '"');
         if (date) lines.push('  trip_date: "' + date + '"');
         if (purpose) lines.push('  purpose: ' + yamlStr(purpose));
-        if (highlights) lines.push('  highlights: ' + yamlStr(highlights));
-        if (notes) lines.push('  notes: ' + yamlStr(notes));
+        if (highlights) lines.push(yamlTextField('highlights', highlights, 2));
+        if (notes) lines.push(yamlTextField('notes', notes, 2));
         if (document.getElementById('travel-favorite').checked) lines.push('  favorite: true');
 
         var yaml = lines.join('\n');
