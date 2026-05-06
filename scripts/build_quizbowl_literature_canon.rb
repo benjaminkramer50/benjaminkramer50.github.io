@@ -1375,7 +1375,11 @@ def load_reference_metadata(root)
   end.tap do |resolved|
     load_metadata_overlay(DEFAULT_METADATA_OVERLAY).each do |row|
       metadata_title_keys(row[:title]).each do |key|
-        next if resolved.key?(key)
+        existing = resolved[key]
+        manual_correction = row[:source] == "codex_manual_metadata_correction"
+        fills_missing_date = existing && existing[:sort_year].nil? && !row[:sort_year].nil?
+        fills_missing_creator = existing && existing[:creators].to_a.empty? && !row[:creators].to_a.empty?
+        next if existing && !manual_correction && !fills_missing_date && !fills_missing_creator
 
         resolved[key] = {
           creators: row[:creators],

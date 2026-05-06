@@ -21407,3 +21407,126 @@ decisions:
   reason: author_aware_split_target_literary_work
   review_status: accepted_likely_work
   source: codex_phase_c_author_split_batch2
+- canonical_title: is Just to Say
+  normalized_title: is just to say
+  decision: alias
+  alias_of: This Is Just to Say
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch1
+  notes: 'Extractor dropped the opening word from William Carlos Williams''s poem title; merge into the full title.'
+- canonical_title: 30 points
+  normalized_title: 30 points
+  decision: reject
+  reason: quizbowl_scoring_instruction_not_work
+  review_status: rejected_quizbowl_parser_artifact
+  source: codex_phase_d_chronology_cleanup_batch1
+  notes: 'Public-purity cleanup from top unplaced rows: scoring text from old quizbowl prompts, not a literary work.'
+- canonical_title: Christopher Marlowe
+  normalized_title: christopher marlowe
+  decision: reject
+  reason: author_name_not_work
+  review_status: rejected_person_or_author
+  source: codex_phase_d_chronology_cleanup_batch1
+  notes: 'Public-purity cleanup from top unplaced rows: person/author row, not a literary work.'
+- canonical_title: John Milton
+  normalized_title: john milton
+  decision: reject
+  reason: author_name_not_work
+  review_status: rejected_person_or_author
+  source: codex_phase_d_chronology_cleanup_batch1
+  notes: 'Public-purity cleanup from top unplaced rows: person/author row, not a literary work.'
+- canonical_title: Edith Wharton
+  normalized_title: edith wharton
+  decision: reject
+  reason: author_name_not_work
+  review_status: rejected_person_or_author
+  source: codex_phase_d_chronology_cleanup_batch1
+  notes: 'Public-purity cleanup from top unplaced rows: person/author row, not a literary work.'
+- canonical_title: Mixing It Up
+  normalized_title: mixing it up
+  decision: reject
+  reason: fictional_embedded_play_not_public_reading_list_work
+  review_status: rejected_embedded_or_fictional_work
+  source: codex_phase_d_chronology_cleanup_batch1
+  notes: 'Public-purity cleanup from top unplaced rows: evidence identifies the rehearsal play inside Pirandello''s Six Characters in Search of an Author, not a standalone reading-list work.'
+- canonical_title: Harper LEE
+  normalized_title: harper lee
+  decision: reject
+  reason: author_name_not_work
+  review_status: rejected_person_or_author
+  source: codex_phase_d_chronology_cleanup_batch2
+  notes: 'Public-purity cleanup from top unplaced rows: person/author row, not a literary work.'
+- canonical_title: O. Henry
+  normalized_title: o henry
+  decision: reject
+  reason: author_name_not_work
+  review_status: rejected_person_or_author
+  source: codex_phase_d_chronology_cleanup_batch2
+  notes: 'Public-purity cleanup from top unplaced rows: person/author row, not a literary work.'
+- canonical_title: Bus Stop
+  normalized_title: bus stop
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d_chronology_cleanup_batch2
+  notes: 'Evidence mixes William Inge''s play, Gao Xingjian''s play, and adaptation/television contexts; route clear literary contexts to author-specific rows.'
+  split_into:
+  - title: Bus Stop (William Inge)
+    match_any:
+    - William Inge
+    - Inge
+    - Come Back, Little Sheba
+    - Come Back Little Sheba
+    - Midwestern playwright
+    - Cherie
+    - Bo Decker
+  - title: Bus Stop (Gao Xingjian)
+    match_any:
+    - Gao Xingjian
+    - Gao
+    - Soul Mountain
+    - Buying a Fishing Rod
+    - Chinese Nobel
+    - Chinese Noble
+- canonical_title: Bus Stop (William Inge)
+  normalized_title: bus stop william inge
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d_chronology_cleanup_batch2
+- canonical_title: Bus Stop (Gao Xingjian)
+  normalized_title: bus stop gao xingjian
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d_chronology_cleanup_batch2
+- canonical_title: The Other Side
+  normalized_title: the other side
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d_chronology_cleanup_batch2
+  notes: 'Evidence mixes Alfred Kubin''s novel with non-literary and music contexts; route only clear Kubin literary contexts into the public split target.'
+  split_into:
+  - title: The Other Side (Alfred Kubin)
+    match_any:
+    - Alfred Kubin
+    - Kubin
+    - Dream Realm
+    - Perle
+    - Austrian expressionist
+- canonical_title: The Other Side (Alfred Kubin)
+  normalized_title: the other side alfred kubin
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d_chronology_cleanup_batch2
+- candidate_id: qb_lit_the_other_side_52a8ac30
+  canonical_title: The Other Side
+  normalized_title: the other side
+  decision: split
+  reason: title_collision_and_non_literary_context_dominance
+  review_status: needs_review_title_collision_and_non_literary_context_dominance
+  source: codex_phase_d_chronology_cleanup_batch2
+  notes: 'Candidate-id override for older manual accept: public evidence is dominated by unrelated, non-literary uses; clear Kubin contexts are routed separately but below threshold.'

@@ -10588,3 +10588,1404 @@
   source: codex_manual_metadata_correction
   confidence: high
   notes: Author-aware split target for Heine evidence under `Book of Songs`.
+- title: The Second Coming
+  normalized_title: the second coming
+  creators:
+  - William Butler Yeats
+  sort_year: 1920
+  date_label: '1920'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Importance of Being Earnest
+  normalized_title: the importance of being earnest
+  creators:
+  - Oscar Wilde
+  sort_year: 1895
+  date_label: '1895'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Garden Party
+  normalized_title: the garden party
+  creators:
+  - Katherine Mansfield
+  sort_year: 1922
+  date_label: '1922'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Love Song of J. Alfred Prufrock
+  normalized_title: the love song of j alfred prufrock
+  creators:
+  - T. S. Eliot
+  sort_year: 1915
+  date_label: '1915'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Main Street
+  normalized_title: main street
+  creators:
+  - Sinclair Lewis
+  sort_year: 1920
+  date_label: '1920'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Master Harold and the Boys
+  normalized_title: master harold and the boys
+  creators:
+  - Athol Fugard
+  sort_year: 1982
+  date_label: '1982'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Jew of Malta
+  normalized_title: the jew of malta
+  creators:
+  - Christopher Marlowe
+  sort_year: 1590
+  date_label: c. 1590
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Blood Wedding
+  normalized_title: blood wedding
+  creators:
+  - Federico Garcia Lorca
+  sort_year: 1933
+  date_label: '1933'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Howl
+  normalized_title: howl
+  creators:
+  - Allen Ginsberg
+  sort_year: 1956
+  date_label: '1956'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Labyrinth of Solitude
+  normalized_title: the labyrinth of solitude
+  creators:
+  - Octavio Paz
+  sort_year: 1950
+  date_label: '1950'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Emperor of Ice Cream
+  normalized_title: the emperor of ice cream
+  creators:
+  - Wallace Stevens
+  sort_year: 1922
+  date_label: c. 1922
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: After the Fall
+  normalized_title: after the fall
+  creators:
+  - Arthur Miller
+  sort_year: 1964
+  date_label: '1964'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Sunday Morning
+  normalized_title: sunday morning
+  creators:
+  - Wallace Stevens
+  sort_year: 1915
+  date_label: '1915'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: One Thousand and One Nights
+  normalized_title: one thousand and one nights
+  creators:
+  - Arabic and transregional story-cycle tradition
+  sort_year: 900
+  date_label: medieval compilation, with earlier sources
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Cairo Trilogy
+  normalized_title: cairo trilogy
+  creators:
+  - Naguib Mahfouz
+  sort_year: 1956
+  date_label: 1956-1957
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: A Song of Despair
+  normalized_title: a song of despair
+  creators:
+  - Pablo Neruda
+  sort_year: 1924
+  date_label: '1924'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Library of Babel
+  normalized_title: the library of babel
+  creators:
+  - Jorge Luis Borges
+  sort_year: 1941
+  date_label: '1941'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Dumb Waiter
+  normalized_title: the dumb waiter
+  creators:
+  - Harold Pinter
+  sort_year: 1957
+  date_label: '1957'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Duino Elegies
+  normalized_title: duino elegies
+  creators:
+  - Rainer Maria Rilke
+  sort_year: 1923
+  date_label: '1923'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Mending Wall
+  normalized_title: mending wall
+  creators:
+  - Robert Frost
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Major Barbara
+  normalized_title: major barbara
+  creators:
+  - George Bernard Shaw
+  sort_year: 1905
+  date_label: '1905'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: No Longer at Ease
+  normalized_title: no longer at ease
+  creators:
+  - Chinua Achebe
+  sort_year: 1960
+  date_label: '1960'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: September 1, 1939
+  normalized_title: september 1 1939
+  creators:
+  - W. H. Auden
+  sort_year: 1939
+  date_label: '1939'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Ode to a Nightingale
+  normalized_title: ode to a nightingale
+  creators:
+  - John Keats
+  sort_year: 1819
+  date_label: '1819'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Journey to the West
+  normalized_title: journey to the west
+  creators:
+  - Wu Cheng'en attribution
+  - Ming vernacular fiction tradition
+  sort_year: 1592
+  date_label: c. 1592
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Glengarry Glen Ross
+  normalized_title: glengarry glen ross
+  creators:
+  - David Mamet
+  sort_year: 1983
+  date_label: '1983'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Ode to Joy
+  normalized_title: ode to joy
+  creators:
+  - Friedrich Schiller
+  sort_year: 1785
+  date_label: '1785'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Awakening
+  normalized_title: the awakening
+  creators:
+  - Kate Chopin
+  sort_year: 1899
+  date_label: '1899'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Little Foxes
+  normalized_title: the little foxes
+  creators:
+  - Lillian Hellman
+  sort_year: 1939
+  date_label: '1939'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Tom Jones
+  normalized_title: tom jones
+  creators:
+  - Henry Fielding
+  sort_year: 1749
+  date_label: '1749'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Blow-Up
+  normalized_title: blow up
+  creators:
+  - Julio Cortazar
+  sort_year: 1959
+  date_label: '1959'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Gitanjali
+  normalized_title: gitanjali
+  creators:
+  - Rabindranath Tagore
+  sort_year: 1910
+  date_label: '1910'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Romance of the Three Kingdoms
+  normalized_title: romance of the three kingdoms
+  creators:
+  - Luo Guanzhong attribution
+  - Chinese historical fiction tradition
+  sort_year: 1321
+  date_label: 14th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Sonnets from the Portuguese
+  normalized_title: sonnets from the portuguese
+  creators:
+  - Elizabeth Barrett Browning
+  sort_year: 1850
+  date_label: '1850'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Decameron
+  normalized_title: the decameron
+  creators:
+  - Giovanni Boccaccio
+  sort_year: 1349
+  date_label: c. 1349-1353
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Negro Speaks of Rivers
+  normalized_title: the negro speaks of rivers
+  creators:
+  - Langston Hughes
+  sort_year: 1921
+  date_label: '1921'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Death, Be Not Proud
+  normalized_title: death be not proud
+  creators:
+  - John Donne
+  sort_year: 1609
+  date_label: c. 1609
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Daddy
+  normalized_title: daddy
+  creators:
+  - Sylvia Plath
+  sort_year: 1962
+  date_label: '1962'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1; corrects spurious quizbowl creator inference.
+- title: Ode to the West Wind
+  normalized_title: ode to the west wind
+  creators:
+  - Percy Bysshe Shelley
+  sort_year: 1819
+  date_label: '1819'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Book of Daniel
+  normalized_title: book of daniel
+  creators:
+  - Jewish apocalyptic and court-tale tradition
+  sort_year: -164
+  date_label: 2nd century BCE final form
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Richard Cory
+  normalized_title: richard cory
+  creators:
+  - Edwin Arlington Robinson
+  sort_year: 1897
+  date_label: '1897'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Don Juan
+  normalized_title: don juan
+  creators:
+  - Lord Byron
+  sort_year: 1819
+  date_label: 1819-1824
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: "A Valediction: Forbidding Mourning"
+  normalized_title: a valediction forbidding mourning
+  creators:
+  - John Donne
+  sort_year: 1611
+  date_label: c. 1611
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Blood Knot
+  normalized_title: the blood knot
+  creators:
+  - Athol Fugard
+  sort_year: 1961
+  date_label: '1961'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Ozymandias
+  normalized_title: ozymandias
+  creators:
+  - Percy Bysshe Shelley
+  sort_year: 1818
+  date_label: '1818'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Sea of Fertility
+  normalized_title: the sea of fertility
+  creators:
+  - Yukio Mishima
+  sort_year: 1965
+  date_label: 1965-1970
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Human Comedy
+  normalized_title: the human comedy
+  creators:
+  - Honore de Balzac
+  sort_year: 1829
+  date_label: 1829-1848
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Thirteen Ways of Looking at a Blackbird
+  normalized_title: thirteen ways of looking at a blackbird
+  creators:
+  - Wallace Stevens
+  sort_year: 1917
+  date_label: '1917'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Book of Revelation
+  normalized_title: book of revelation
+  creators:
+  - John of Patmos
+  - Early Christian apocalyptic tradition
+  sort_year: 95
+  date_label: c. 95 CE
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: anyone lived in a pretty how town
+  normalized_title: anyone lived in a pretty how town
+  creators:
+  - E. E. Cummings
+  sort_year: 1940
+  date_label: '1940'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Playboy of the Western World
+  normalized_title: the playboy of the western world
+  creators:
+  - John Millington Synge
+  sort_year: 1907
+  date_label: '1907'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Threepenny Opera
+  normalized_title: the threepenny opera
+  creators:
+  - Bertolt Brecht
+  - Kurt Weill
+  sort_year: 1928
+  date_label: '1928'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1; retained as Brecht/Weill stage work rather than music-only opera.
+- title: Out of Africa
+  normalized_title: out of africa
+  creators:
+  - Isak Dinesen
+  sort_year: 1937
+  date_label: '1937'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Skin of Our Teeth
+  normalized_title: the skin of our teeth
+  creators:
+  - Thornton Wilder
+  sort_year: 1942
+  date_label: '1942'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Tintern Abbey
+  normalized_title: tintern abbey
+  creators:
+  - William Wordsworth
+  sort_year: 1798
+  date_label: '1798'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Prometheus Bound
+  normalized_title: prometheus bound
+  creators:
+  - Aeschylus attribution
+  sort_year: -450
+  date_label: 5th century BCE
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Red Wheelbarrow
+  normalized_title: the red wheelbarrow
+  creators:
+  - William Carlos Williams
+  sort_year: 1923
+  date_label: '1923'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Seven Against Thebes
+  normalized_title: seven against thebes
+  creators:
+  - Aeschylus
+  sort_year: -467
+  date_label: 467 BCE
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Anthem for Doomed Youth
+  normalized_title: anthem for doomed youth
+  creators:
+  - Wilfred Owen
+  sort_year: 1917
+  date_label: '1917'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: La Belle Dame Sans Merci
+  normalized_title: la belle dame sans merci
+  creators:
+  - John Keats
+  sort_year: 1819
+  date_label: '1819'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Men and Women
+  normalized_title: men and women
+  creators:
+  - Robert Browning
+  sort_year: 1855
+  date_label: '1855'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Devil's Dictionary
+  normalized_title: the devils dictionary
+  creators:
+  - Ambrose Bierce
+  sort_year: 1911
+  date_label: '1911'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: We Real Cool
+  normalized_title: we real cool
+  creators:
+  - Gwendolyn Brooks
+  sort_year: 1960
+  date_label: '1960'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Acts of the Apostles
+  normalized_title: acts of the apostles
+  creators:
+  - Early Christian textual tradition
+  sort_year: 85
+  date_label: c. 80-90 CE
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Ball of Fat
+  normalized_title: ball of fat
+  creators:
+  - Guy de Maupassant
+  sort_year: 1880
+  date_label: '1880'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Night
+  normalized_title: night
+  creators:
+  - Elie Wiesel
+  sort_year: 1958
+  date_label: '1958'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Song Offerings
+  normalized_title: song offerings
+  creators:
+  - Rabindranath Tagore
+  sort_year: 1912
+  date_label: '1912'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: "The River Merchant's Wife: A Letter"
+  normalized_title: the river merchants wife a letter
+  creators:
+  - Ezra Pound
+  - Li Bai source text
+  sort_year: 1915
+  date_label: '1915'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Book of Esther
+  normalized_title: book of esther
+  creators:
+  - Hebrew Bible / Tanakh narrative tradition
+  sort_year: -300
+  date_label: 4th-2nd century BCE
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Song of Roland
+  normalized_title: the song of roland
+  creators:
+  - Old French epic tradition
+  sort_year: 1100
+  date_label: c. 11th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Blithe Spirit
+  normalized_title: blithe spirit
+  creators:
+  - Noel Coward
+  sort_year: 1941
+  date_label: '1941'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Lady Lazarus
+  normalized_title: lady lazarus
+  creators:
+  - Sylvia Plath
+  sort_year: 1962
+  date_label: '1962'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Emma
+  normalized_title: emma
+  creators:
+  - Jane Austen
+  sort_year: 1815
+  date_label: '1815'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Quo Vadis
+  normalized_title: quo vadis
+  creators:
+  - Henryk Sienkiewicz
+  sort_year: 1896
+  date_label: '1896'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: A Dream Deferred
+  normalized_title: a dream deferred
+  creators:
+  - Langston Hughes
+  sort_year: 1951
+  date_label: '1951'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1; common quizbowl title variant for `Harlem`.
+- title: Marriage a la Mode
+  normalized_title: marriage a la mode
+  creators:
+  - John Dryden
+  sort_year: 1673
+  date_label: '1673'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Dream on Monkey Mountain
+  normalized_title: dream on monkey mountain
+  creators:
+  - Derek Walcott
+  sort_year: 1970
+  date_label: '1970'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Heights of Macchu Picchu
+  normalized_title: the heights of macchu picchu
+  creators:
+  - Pablo Neruda
+  sort_year: 1950
+  date_label: '1950'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Watch on the Rhine
+  normalized_title: watch on the rhine
+  creators:
+  - Lillian Hellman
+  sort_year: 1941
+  date_label: '1941'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Pastoral Symphony
+  normalized_title: the pastoral symphony
+  creators:
+  - Andre Gide
+  sort_year: 1919
+  date_label: '1919'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: A Death in the Family
+  normalized_title: a death in the family
+  creators:
+  - James Agee
+  sort_year: 1957
+  date_label: '1957'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Gospel of Luke
+  normalized_title: gospel of luke
+  creators:
+  - Early Christian textual tradition
+  sort_year: 85
+  date_label: c. 80-90 CE
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: This Is Just to Say
+  normalized_title: this is just to say
+  creators:
+  - William Carlos Williams
+  sort_year: 1934
+  date_label: '1934'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1; canonical full title for truncated `is Just to Say`.
+- title: The Man Without a Country
+  normalized_title: the man without a country
+  creators:
+  - Edward Everett Hale
+  sort_year: 1863
+  date_label: '1863'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Indian Burying Ground
+  normalized_title: the indian burying ground
+  creators:
+  - Philip Freneau
+  sort_year: 1787
+  date_label: '1787'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Clouds
+  normalized_title: the clouds
+  creators:
+  - Aristophanes
+  sort_year: -423
+  date_label: 423 BCE
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Alchemist
+  normalized_title: the alchemist
+  creators:
+  - Ben Jonson
+  sort_year: 1610
+  date_label: '1610'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Ender's Game
+  normalized_title: enders game
+  creators:
+  - Orson Scott Card
+  sort_year: 1985
+  date_label: '1985'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Snow
+  normalized_title: snow
+  creators:
+  - Orhan Pamuk
+  sort_year: 2002
+  date_label: '2002'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Bartholomew Fair
+  normalized_title: bartholomew fair
+  creators:
+  - Ben Jonson
+  sort_year: 1614
+  date_label: '1614'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Autobiography of Alice B. Toklas
+  normalized_title: the autobiography of alice b toklas
+  creators:
+  - Gertrude Stein
+  sort_year: 1933
+  date_label: '1933'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Desire Under the Elms
+  normalized_title: desire under the elms
+  creators:
+  - Eugene O'Neill
+  sort_year: 1924
+  date_label: '1924'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Strange Interlude
+  normalized_title: strange interlude
+  creators:
+  - Eugene O'Neill
+  sort_year: 1928
+  date_label: '1928'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Secret Sharer
+  normalized_title: the secret sharer
+  creators:
+  - Joseph Conrad
+  sort_year: 1910
+  date_label: '1910'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Rebecca
+  normalized_title: rebecca
+  creators:
+  - Daphne du Maurier
+  sort_year: 1938
+  date_label: '1938'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: The Razor's Edge
+  normalized_title: the razors edge
+  creators:
+  - W. Somerset Maugham
+  sort_year: 1944
+  date_label: '1944'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Andrea del Sarto
+  normalized_title: andrea del sarto
+  creators:
+  - Robert Browning
+  sort_year: 1855
+  date_label: '1855'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Requiem
+  normalized_title: requiem
+  creators:
+  - Anna Akhmatova
+  sort_year: 1935
+  date_label: 1935-1940
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 1.
+- title: Bus Stop (William Inge)
+  normalized_title: bus stop william inge
+  creators:
+  - William Inge
+  sort_year: 1955
+  date_label: '1955'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target from Phase D chronology cleanup batch 2.
+- title: Bus Stop (Gao Xingjian)
+  normalized_title: bus stop gao xingjian
+  creators:
+  - Gao Xingjian
+  sort_year: 1983
+  date_label: c. 1983
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Author-aware split target from Phase D chronology cleanup batch 2.
+- title: The Other Side (Alfred Kubin)
+  normalized_title: the other side alfred kubin
+  creators:
+  - Alfred Kubin
+  sort_year: 1909
+  date_label: '1909'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target from Phase D chronology cleanup batch 2.
+- title: A True Story
+  normalized_title: a true story
+  creators:
+  - Lucian of Samosata
+  sort_year: 175
+  date_label: 2nd century CE
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Juno and the Paycock
+  normalized_title: juno and the paycock
+  creators:
+  - Sean O'Casey
+  sort_year: 1924
+  date_label: '1924'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Childe Harold's Pilgrimage
+  normalized_title: childe harolds pilgrimage
+  creators:
+  - Lord Byron
+  sort_year: 1812
+  date_label: 1812-1818
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Kingdom of This World
+  normalized_title: the kingdom of this world
+  creators:
+  - Alejo Carpentier
+  sort_year: 1949
+  date_label: '1949'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Gargantua and Pantagruel
+  normalized_title: gargantua and pantagruel
+  creators:
+  - Francois Rabelais
+  sort_year: 1532
+  date_label: 1532-1564
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Consolation of Philosophy
+  normalized_title: the consolation of philosophy
+  creators:
+  - Boethius
+  sort_year: 524
+  date_label: c. 524
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Book of Genesis
+  normalized_title: book of genesis
+  creators:
+  - Hebrew Bible / Tanakh narrative tradition
+  sort_year: -500
+  date_label: ancient Israelite; composite text
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Chambered Nautilus
+  normalized_title: the chambered nautilus
+  creators:
+  - Oliver Wendell Holmes Sr.
+  sort_year: 1858
+  date_label: '1858'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Riders to the Sea
+  normalized_title: riders to the sea
+  creators:
+  - John Millington Synge
+  sort_year: 1904
+  date_label: '1904'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Mysteries of Udolpho
+  normalized_title: the mysteries of udolpho
+  creators:
+  - Ann Radcliffe
+  sort_year: 1794
+  date_label: '1794'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2; corrects spurious quizbowl creator inference.
+- title: Go Down, Moses
+  normalized_title: go down moses
+  creators:
+  - William Faulkner
+  sort_year: 1942
+  date_label: '1942'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Bride Comes to Yellow Sky
+  normalized_title: the bride comes to yellow sky
+  creators:
+  - Stephen Crane
+  sort_year: 1898
+  date_label: '1898'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Leatherstocking Tales
+  normalized_title: the leatherstocking tales
+  creators:
+  - James Fenimore Cooper
+  sort_year: 1823
+  date_label: 1823-1841
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Holy Sonnets
+  normalized_title: holy sonnets
+  creators:
+  - John Donne
+  sort_year: 1609
+  date_label: c. 1609
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Blue Hotel
+  normalized_title: the blue hotel
+  creators:
+  - Stephen Crane
+  sort_year: 1898
+  date_label: '1898'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Funeral Blues
+  normalized_title: funeral blues
+  creators:
+  - W. H. Auden
+  sort_year: 1936
+  date_label: c. 1936
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Crossing Brooklyn Ferry
+  normalized_title: crossing brooklyn ferry
+  creators:
+  - Walt Whitman
+  sort_year: 1856
+  date_label: '1856'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Bell-Tower
+  normalized_title: the bell tower
+  creators:
+  - Herman Melville
+  sort_year: 1855
+  date_label: '1855'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Blessed Damozel
+  normalized_title: the blessed damozel
+  creators:
+  - Dante Gabriel Rossetti
+  sort_year: 1850
+  date_label: '1850'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Notes from the Underground
+  normalized_title: notes from the underground
+  creators:
+  - Fyodor Dostoyevsky
+  sort_year: 1864
+  date_label: '1864'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Terence, This is Stupid Stuff
+  normalized_title: terence this is stupid stuff
+  creators:
+  - A. E. Housman
+  sort_year: 1896
+  date_label: '1896'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Waiting for Lefty
+  normalized_title: waiting for lefty
+  creators:
+  - Clifford Odets
+  sort_year: 1935
+  date_label: '1935'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: A Supermarket in California
+  normalized_title: a supermarket in california
+  creators:
+  - Allen Ginsberg
+  sort_year: 1956
+  date_label: '1956'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Babi Yar
+  normalized_title: babi yar
+  creators:
+  - Yevgeny Yevtushenko
+  sort_year: 1961
+  date_label: '1961'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2; corrects spurious music-context creator inference.
+- title: Oedipus at Colonus
+  normalized_title: oedipus at colonus
+  creators:
+  - Sophocles
+  sort_year: -401
+  date_label: 401 BCE
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Death of the Hired Man
+  normalized_title: the death of the hired man
+  creators:
+  - Robert Frost
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Beggar's Opera
+  normalized_title: the beggars opera
+  creators:
+  - John Gay
+  sort_year: 1728
+  date_label: '1728'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Musee des Beaux Arts
+  normalized_title: musee des beaux arts
+  creators:
+  - W. H. Auden
+  sort_year: 1938
+  date_label: '1938'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Way of the World
+  normalized_title: the way of the world
+  creators:
+  - William Congreve
+  sort_year: 1700
+  date_label: '1700'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Book of Job
+  normalized_title: book of job
+  creators:
+  - Hebrew Bible / Tanakh wisdom-poetic tradition
+  sort_year: -500
+  date_label: ancient Israelite; final form debated
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Narrow Road to the Deep North
+  normalized_title: the narrow road to the deep north
+  creators:
+  - Matsuo Basho
+  sort_year: 1702
+  date_label: '1702'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Passionate Shepherd to His Love
+  normalized_title: the passionate shepherd to his love
+  creators:
+  - Christopher Marlowe
+  sort_year: 1599
+  date_label: c. 1599
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Plough and the Stars
+  normalized_title: the plough and the stars
+  creators:
+  - Sean O'Casey
+  sort_year: 1926
+  date_label: '1926'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Knight's Tale
+  normalized_title: the knights tale
+  creators:
+  - Geoffrey Chaucer
+  sort_year: 1387
+  date_label: c. 1380s-1390s
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Libation Bearers
+  normalized_title: the libation bearers
+  creators:
+  - Aeschylus
+  sort_year: -458
+  date_label: 458 BCE
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Book of Judges
+  normalized_title: book of judges
+  creators:
+  - Hebrew Bible / Tanakh narrative tradition
+  sort_year: -550
+  date_label: ancient Israelite; final form debated
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Gift Outright
+  normalized_title: the gift outright
+  creators:
+  - Robert Frost
+  sort_year: 1941
+  date_label: '1941'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Birds
+  normalized_title: the birds
+  creators:
+  - Aristophanes
+  sort_year: -414
+  date_label: 414 BCE
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Story of an Hour
+  normalized_title: the story of an hour
+  creators:
+  - Kate Chopin
+  sort_year: 1894
+  date_label: '1894'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Emperor Jones
+  normalized_title: the emperor jones
+  creators:
+  - Eugene O'Neill
+  sort_year: 1920
+  date_label: '1920'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Out of the Cradle Endlessly Rocking
+  normalized_title: out of the cradle endlessly rocking
+  creators:
+  - Walt Whitman
+  sort_year: 1859
+  date_label: '1859'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Celebrated Jumping Frog of Calaveras County
+  normalized_title: the celebrated jumping frog of calaveras county
+  creators:
+  - Mark Twain
+  sort_year: 1865
+  date_label: '1865'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2; corrects spurious quizbowl creator inference.
+- title: Hero and Leander
+  normalized_title: hero and leander
+  creators:
+  - Christopher Marlowe
+  - George Chapman
+  sort_year: 1598
+  date_label: '1598'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Kaddish
+  normalized_title: kaddish
+  creators:
+  - Allen Ginsberg
+  sort_year: 1961
+  date_label: '1961'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2; corrects spurious music-context creator inference.
+- title: The Frogs
+  normalized_title: the frogs
+  creators:
+  - Aristophanes
+  sort_year: -405
+  date_label: 405 BCE
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Arcadia
+  normalized_title: arcadia
+  creators:
+  - Tom Stoppard
+  sort_year: 1993
+  date_label: '1993'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Spanish Tragedy
+  normalized_title: the spanish tragedy
+  creators:
+  - Thomas Kyd
+  sort_year: 1587
+  date_label: c. 1587
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Medea
+  normalized_title: medea
+  creators:
+  - Euripides
+  sort_year: -431
+  date_label: 431 BCE
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Rules of the Game
+  normalized_title: the rules of the game
+  creators:
+  - Luigi Pirandello
+  sort_year: 1918
+  date_label: '1918'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Pied Beauty
+  normalized_title: pied beauty
+  creators:
+  - Gerard Manley Hopkins
+  sort_year: 1877
+  date_label: '1877'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: A Worn Path
+  normalized_title: a worn path
+  creators:
+  - Eudora Welty
+  sort_year: 1941
+  date_label: '1941'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: Seven Gothic Tales
+  normalized_title: seven gothic tales
+  creators:
+  - Isak Dinesen
+  sort_year: 1934
+  date_label: '1934'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Cloud Messenger
+  normalized_title: the cloud messenger
+  creators:
+  - Kalidasa
+  sort_year: 400
+  date_label: c. 4th-5th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual Phase D chronology cleanup batch 2.
+- title: The Big Money
+  normalized_title: the big money
+  creators:
+  - John Dos Passos
+  sort_year: 1936
+  date_label: '1936'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual Phase D chronology cleanup batch 2.
