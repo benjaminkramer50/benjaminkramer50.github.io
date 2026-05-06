@@ -360,7 +360,8 @@ def parse_options
     limit: 500,
     search_limit: 8,
     sleep: 0.05,
-    only_unplaced: true
+    only_unplaced: true,
+    retry_reported: false
   }
   OptionParser.new do |parser|
     parser.on("--canon PATH") { |value| options[:canon] = value }
@@ -370,8 +371,19 @@ def parse_options
     parser.on("--search-limit N", Integer) { |value| options[:search_limit] = value }
     parser.on("--sleep SECONDS", Float) { |value| options[:sleep] = value }
     parser.on("--all-gaps") { options[:only_unplaced] = false }
+    parser.on("--retry-reported") { options[:retry_reported] = true }
   end.parse!
   options
+end
+
+def reported_title_keys(report_path)
+  return Set.new unless File.exist?(report_path)
+
+  keys = Set.new
+  CSV.foreach(report_path, headers: true, col_sep: "\t") do |row|
+    keys << normalize_title(row["title"])
+  end
+  keys
 end
 
 def prefer_metadata_row(existing, candidate)
@@ -402,9 +414,12 @@ def main
   data = YAML.load_file(options[:canon])
   existing = File.exist?(options[:out]) ? (YAML.load_file(options[:out]) || []) : []
   existing_keys = existing.map { |row| normalize_title(row["title"]) }.to_set
+  reported_keys = options[:retry_reported] ? Set.new : reported_title_keys(options[:report])
 
   rows = data.select do |row|
-    next false if existing_keys.include?(normalize_title(row["title"]))
+    title_key = normalize_title(row["title"])
+    next false if existing_keys.include?(title_key)
+    next false if reported_keys.include?(title_key)
     next false if options[:only_unplaced] && row["chronology_source"].to_s != "unknown"
 
     row["review_status"] == "accepted_likely_work"
@@ -450,7 +465,7 @@ def main
     combined_by_key[key] = prefer_metadata_row(combined_by_key[key], row)
   end
   combined = combined_by_key.values
-  File.write(options[:out], combined.to_yaml)
+  File.write(options[:out], combined.to_yaml.gsub(/[ \t]+$/, ""))
 
   write_header = !File.exist?(options[:report])
   CSV.open(options[:report], write_header ? "w" : "a", col_sep: "\t", write_headers: write_header, headers: REPORT_HEADERS) do |csv|

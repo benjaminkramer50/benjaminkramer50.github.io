@@ -21716,3 +21716,292 @@ decisions:
   reason: author_aware_split_target_literary_work
   review_status: accepted_likely_work
   source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: The Sketch Book
+  normalized_title: the sketch book
+  decision: alias
+  alias_of: The Sketch Book of Geoffrey Crayon
+  reason: shortened_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: The Sketchbook of Geoffrey Crayon
+  normalized_title: the sketchbook of geoffrey crayon
+  decision: alias
+  alias_of: The Sketch Book of Geoffrey Crayon
+  reason: spelling_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Os Lusiadas
+  normalized_title: os lusiadas
+  decision: alias
+  alias_of: The Lusiads
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: La Chartreuse de Parme
+  normalized_title: la chartreuse de parme
+  decision: alias
+  alias_of: The Charterhouse of Parma
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: La vida es sueño
+  normalized_title: la vida es sueno
+  decision: alias
+  alias_of: Life is a Dream
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Le Petit Prince
+  normalized_title: le petit prince
+  decision: alias
+  alias_of: The Little Prince
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: En attendant Godot
+  normalized_title: en attendant godot
+  decision: alias
+  alias_of: Waiting for Godot
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: The Modern Prometheus
+  normalized_title: the modern prometheus
+  decision: alias
+  alias_of: Frankenstein
+  reason: subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Frankenstein, or The Modern Prometheus
+  normalized_title: frankenstein or the modern prometheus
+  decision: alias
+  alias_of: Frankenstein
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: 100 Years of Solitude
+  normalized_title: 100 years of solitude
+  decision: alias
+  alias_of: One Hundred Years of Solitude
+  reason: numeric_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: La Peste
+  normalized_title: la peste
+  decision: alias
+  alias_of: The Plague
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Der Tod in Venedig
+  normalized_title: der tod in venedig
+  decision: alias
+  alias_of: Death in Venice
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Die Verwandlung
+  normalized_title: die verwandlung
+  decision: alias
+  alias_of: The Metamorphosis
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: I Promessi Sposi
+  normalized_title: i promessi sposi
+  decision: alias
+  alias_of: The Betrothed
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Die Räuber
+  normalized_title: die rauber
+  decision: alias
+  alias_of: The Robbers
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Der Sandmann
+  normalized_title: der sandmann
+  decision: alias
+  alias_of: The Sandman
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Fathers and Children
+  normalized_title: fathers and children
+  decision: alias
+  alias_of: Fathers and Sons
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Bodas de sangre
+  normalized_title: bodas de sangre
+  decision: alias
+  alias_of: Blood Wedding
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: The Wild Honeysuckle
+  normalized_title: the wild honeysuckle
+  decision: alias
+  alias_of: The Wild Honey-Suckle
+  reason: spelling_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: of an Ex-Colored Man
+  normalized_title: of an ex colored man
+  decision: alias
+  alias_of: The Autobiography of an Ex-Colored Man
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: as Big as the Ritz
+  normalized_title: as big as the ritz
+  decision: alias
+  alias_of: The Diamond as Big as the Ritz
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Life Among the Lowly
+  normalized_title: life among the lowly
+  decision: alias
+  alias_of: Uncle Tom's Cabin
+  reason: subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: The Patient Griselda
+  normalized_title: the patient griselda
+  decision: alias
+  alias_of: The Decameron
+  reason: subwork_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Thomas Sutpen
+  normalized_title: thomas sutpen
+  decision: reject
+  reason: character_name_not_work
+  review_status: rejected_character_name_not_work
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: 124 Bluestone Road
+  normalized_title: 124 bluestone road
+  decision: reject
+  reason: fictional_place_not_work
+  review_status: rejected_place_or_setting_not_work
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: The Custom House
+  normalized_title: the custom house
+  decision: alias
+  alias_of: The Scarlet Letter
+  reason: prologue_or_section_title_variant
+  review_status: merged_subwork_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: The Book of the Grotesque
+  normalized_title: the book of the grotesque
+  decision: alias
+  alias_of: Winesburg, Ohio
+  reason: prologue_or_section_title_variant
+  review_status: merged_subwork_title_variant
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Fabrizio del Dongo
+  normalized_title: fabrizio del dongo
+  decision: alias
+  alias_of: The Charterhouse of Parma
+  reason: character_name_for_work_answer
+  review_status: merged_character_prompt_to_work
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Finnish mythology
+  normalized_title: finnish mythology
+  decision: reject
+  reason: mythology_domain_for_adjacent_product
+  review_status: rejected_mythology_domain
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Theater of the Absurd
+  normalized_title: theater of the absurd
+  decision: reject
+  reason: literary_movement_not_work
+  review_status: rejected_literary_period_or_movement
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Theatre of the Absurd
+  normalized_title: theatre of the absurd
+  decision: reject
+  reason: literary_movement_not_work
+  review_status: rejected_literary_period_or_movement
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Spanish Golden Age
+  normalized_title: spanish golden age
+  decision: reject
+  reason: literary_period_not_work
+  review_status: rejected_literary_period_or_movement
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Four Great Classical Novels
+  normalized_title: four great classical novels
+  decision: reject
+  reason: category_label_not_work
+  review_status: rejected_category_or_group_label
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Equal Rights Amendment
+  normalized_title: equal rights amendment
+  decision: reject
+  reason: political_text_or_policy_not_literature_work
+  review_status: rejected_non_literary_political_text
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Zeno of Elea
+  normalized_title: zeno of elea
+  decision: reject
+  reason: person_philosopher_not_work
+  review_status: rejected_person_or_author
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Bringing Up Baby
+  normalized_title: bringing up baby
+  decision: reject
+  reason: film_not_literature_work
+  review_status: rejected_film_or_screen_work
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Throne of Blood
+  normalized_title: throne of blood
+  decision: reject
+  reason: film_not_literature_work
+  review_status: rejected_film_or_screen_work
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Shakespeare in Love
+  normalized_title: shakespeare in love
+  decision: reject
+  reason: film_not_literature_work
+  review_status: rejected_film_or_screen_work
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: The Kindly Ones
+  normalized_title: the kindly ones
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d_chronology_cleanup_batch4
+  notes: 'Evidence mixes Aeschylus''s Eumenides, whose title means The Kindly Ones, with Jonathan Littell''s modern novel.'
+  split_into:
+  - title: Eumenides
+    match_any:
+    - Aeschylus
+    - Oresteia
+    - Furies
+    - Orestes
+    - Clytemnestra
+    - Apollo
+    - Athena
+  - title: The Kindly Ones (Jonathan Littell)
+    match_any:
+    - Jonathan Littell
+    - Littell
+    - Grand Prix du Roman
+    - Prix Goncourt
+- canonical_title: Eumenides
+  normalized_title: eumenides
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: The Kindly Ones (Jonathan Littell)
+  normalized_title: the kindly ones jonathan littell
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d_chronology_cleanup_batch4
