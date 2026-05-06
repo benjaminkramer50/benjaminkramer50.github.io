@@ -21113,3 +21113,120 @@ decisions:
   reason: original_language_title_variant
   review_status: merged_duplicate_title_variant
   source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: North and South
+  normalized_title: north and south
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_c_author_split_batch1
+  notes: 'Keep unmatched evidence held; route context-matched observations into creator-specific rows.'
+  split_into:
+  - title: North and South (Elizabeth Gaskell)
+    match_any:
+    - Elizabeth Gaskell
+    - Gaskell
+    - Margaret Hale
+    - John Thornton
+    - Cranford
+    - Mary Barton
+    - Victorian novelist
+    - Milton-Northern
+    - Nicholas Higgins
+  - title: North and South (John Jakes)
+    match_any:
+    - John Jakes
+    - Jakes
+    - Hazard and Main
+    - Hazard family
+    - Main family
+    - Orry Main
+    - George Hazard
+- canonical_title: Bread and Wine
+  normalized_title: bread and wine
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_c_author_split_batch1
+  notes: 'Keep unmatched evidence held; route context-matched observations into the Holderlin poem or Silone novel.'
+  split_into:
+  - title: Bread and Wine (Friedrich Holderlin)
+    match_any:
+    - Holderlin
+    - Hölderlin
+    - Friedrich Holderlin
+    - Wilhelm Heinze
+    - Heinze
+    - Hyperion
+    - Death of Empedocles
+    - Empedocles
+    - The Rhine
+  - title: Bread and Wine (Ignazio Silone)
+    match_any:
+    - Ignazio Silone
+    - Silone
+    - Pietro Spina
+    - Don Benedetto
+- canonical_title: The Lost World
+  normalized_title: the lost world
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_c_author_split_batch1
+  notes: 'Keep unmatched evidence held; route context-matched observations into the Doyle, Crichton, or Jarrell works.'
+  split_into:
+  - title: The Lost World (Arthur Conan Doyle)
+    match_any:
+    - Arthur Conan Doyle
+    - Conan Doyle
+    - Professor Challenger
+    - Challenger
+    - Disintegration Machine
+    - Land of Mist
+    - Maple White
+  - title: The Lost World (Michael Crichton)
+    match_any:
+    - Michael Crichton
+    - Crichton
+    - Jurassic Park
+    - Ian Malcolm
+    - dinosaurs didn't die
+  - title: The Lost World (Randall Jarrell)
+    match_any:
+    - Randall Jarrell
+    - Jarrell
+    - The Woman at the Washington Zoo
+    - Blood for a Stranger
+    - Little Friend, Little Friend
+- canonical_title: The Royal Family
+  normalized_title: the royal family
+  decision: split
+  reason: title_collision_or_generic_phrase_requires_split
+  review_status: needs_review_title_collision_or_generic_phrase_requires_split
+  source: codex_phase_c_author_split_batch1
+  notes: 'Keep generic royal-family evidence held; route context-matched observations into creator-specific literary works.'
+  split_into:
+  - title: The Royal Family (William T. Vollmann)
+    match_any:
+    - William T. Vollmann
+    - Vollmann
+    - Tenderloin
+    - prostitutes
+    - McTeague
+  - title: The Royal Family (Kaufman and Ferber)
+    match_any:
+    - George S. Kaufman
+    - George Kaufman
+    - Kaufman
+    - Edna Ferber
+    - Ferber
+    - Stage Door
+    - Dinner at Eight
+    - Show Boat
+    - Barrymore
+- canonical_title: The Lost World (Randall Jarrell)
+  normalized_title: the lost world randall jarrell
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_c_author_split_batch1
+  notes: 'Poetry collection split out from ambiguous `The Lost World` evidence; accepted because context consistently identifies Randall Jarrell.'

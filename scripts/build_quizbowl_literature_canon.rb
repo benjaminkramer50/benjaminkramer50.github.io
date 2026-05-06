@@ -349,6 +349,7 @@ CandidateStats = Struct.new(
 )
 
 Seed = Struct.new(:canonical_title, :normalized_title, :variants, :seed_basis, keyword_init: true)
+SplitRule = Struct.new(:source_normalized, :target_title, :target_normalized, :match_terms, keyword_init: true)
 
 def new_stats(normalized_title)
   CandidateStats.new(
@@ -784,8 +785,34 @@ def unreliable_high_risk_seed_match?(text, end_index, matched_text)
   false
 end
 
-def add_observation(stats_by_key, normalized, display, source, form_hint, row, snippet)
+def split_context_text(display, row, snippet)
+  normalize_title([
+    display,
+    snippet,
+    row["clue_text"],
+    row["answerline"],
+    row["set_title"]
+  ].compact.join(" "))
+end
+
+def split_target_for(normalized, display, row, snippet, split_rules)
+  rules = split_rules.fetch(normalized, nil)
+  return nil unless rules && !rules.empty?
+
+  context = split_context_text(display, row, snippet)
+  rules.find do |rule|
+    rule.match_terms.any? { |term| !term.empty? && context.include?(term) }
+  end
+end
+
+def add_observation(stats_by_key, normalized, display, source, form_hint, row, snippet, split_rules = {})
+  if (rule = split_target_for(normalized, display, row, snippet, split_rules))
+    normalized = rule.target_normalized
+    display = rule.target_title
+  end
+
   stats = stats_by_key[normalized] ||= new_stats(normalized)
+  stats.manual_canonical_title ||= rule.target_title if rule
   stats.display_counts[display] += 1
   stats.source_counts[source] += 1
   stats.form_counts[form_hint || "unknown"] += 1
@@ -1517,6 +1544,49 @@ def load_alias_rules(path)
   [alias_map, canonical_titles]
 end
 
+def load_split_rules(path)
+  return {} unless File.exist?(path)
+
+  payload = YAML.load_file(path) || {}
+  decisions = payload["decisions"] || []
+  rules_by_source = {}
+
+  decisions.each do |entry|
+    next unless entry.is_a?(Hash)
+
+    split_targets = entry["split_into"] || entry["split_targets"]
+    next if split_targets.nil?
+
+    source_title = entry["split_source"] || entry["canonical_title"] || entry["title"]
+    source_normalized = entry["normalized_title"].to_s
+    source_normalized = normalize_title(source_title) if source_normalized.empty? && source_title
+    next if source_normalized.empty?
+
+    Array(split_targets).each do |target|
+      next unless target.is_a?(Hash)
+
+      target_title = normalize_space(target["title"] || target["canonical_title"])
+      next if target_title.empty?
+
+      match_terms = Array(target["match_any"] || target["match_terms"] || target["terms"])
+        .map { |term| normalize_title(term) }
+        .reject(&:empty?)
+        .uniq
+      next if match_terms.empty?
+
+      rules_by_source[source_normalized] ||= []
+      rules_by_source[source_normalized] << SplitRule.new(
+        source_normalized: source_normalized,
+        target_title: target_title,
+        target_normalized: normalize_title(target_title),
+        match_terms: match_terms
+      )
+    end
+  end
+
+  rules_by_source
+end
+
 def resolved_alias_target(normalized, alias_map)
   seen = {}
   current = normalized
@@ -1876,6 +1946,7 @@ end
 def run_pass1_range(options, track_by_question_id, start_id, end_id, worker_index, started)
   local_stats = {}
   local_answerline_seed_stats = {}
+  split_rules = load_split_rules(options[:adjudications_path])
   processed = 0
   skipped_long = 0
   db = open_worker_db(options[:db_path])
@@ -1893,15 +1964,15 @@ def run_pass1_range(options, track_by_question_id, start_id, end_id, worker_inde
     if (form = prompt_form(clue_text))
       answerline_variants(answerline).each do |title|
         normalized = normalize_title(title)
-        add_observation(local_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
-        add_observation(local_answerline_seed_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
+        add_observation(local_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0), split_rules)
+        add_observation(local_answerline_seed_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0), split_rules)
       end
     end
 
     unless clue_text.match?(ANSWER_MARKER_RE)
       extract_clue_title_candidates(clue_text).each do |match|
         normalized = normalize_title(match[:title])
-        add_observation(local_stats, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet])
+        add_observation(local_stats, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet], split_rules)
       end
     end
 
@@ -1974,7 +2045,8 @@ def run_pass2_range(options, seed_index, track_by_question_id, start_id, end_id,
           "set_title" => row["set_title"].to_s,
           "year" => row["year"].to_i,
           "question_type" => row["question_type"].to_s,
-          "track_id" => row["track_id"].to_s
+          "track_id" => row["track_id"].to_s,
+          "answerline" => row["answerline"].to_s
         }
       }
     end
@@ -1988,7 +2060,7 @@ def run_pass2_range(options, seed_index, track_by_question_id, start_id, end_id,
   { processed: processed, matches: matches }
 end
 
-def run_parallel_pass2(options, seed_index, track_by_question_id, stats_by_key, started)
+def run_parallel_pass2(options, seed_index, track_by_question_id, stats_by_key, split_rules, started)
   bounds_db = open_worker_db(options[:db_path])
   min_id, max_id, row_count = scan_bounds(bounds_db, options[:limit])
   bounds_db.close
@@ -2020,7 +2092,8 @@ def run_parallel_pass2(options, seed_index, track_by_question_id, stats_by_key, 
           match["source"],
           match["form_hint"],
           match["row"],
-          match["snippet"]
+          match["snippet"],
+          split_rules
         )
       end
     end
@@ -2130,9 +2203,12 @@ def main
 
   adjudications = load_adjudications(options[:adjudications_path])
   alias_map, alias_canonical_titles = load_alias_rules(options[:adjudications_path])
+  split_rules = load_split_rules(options[:adjudications_path])
   reference_metadata = load_reference_metadata(ROOT)
   warn "Loaded #{adjudications.values.uniq.length} adjudications from #{options[:adjudications_path]}"
   warn "Loaded #{alias_map.length} manual alias rules from #{options[:adjudications_path]}" unless alias_map.empty?
+  split_rule_count = split_rules.values.sum(&:length)
+  warn "Loaded #{split_rule_count} author-aware split targets from #{options[:adjudications_path]}" if split_rule_count.positive?
   warn "Loaded #{reference_metadata.length} reviewed canon metadata title keys from _canon"
   warn "Loading quizbowl category diagnostics from archive_practice_questions"
   track_by_question_id = load_track_id_map(db)
@@ -2174,15 +2250,15 @@ def main
       if (form = prompt_form(clue_text))
         answerline_variants(answerline).each do |title|
           normalized = normalize_title(title)
-          add_observation(stats_by_key, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
-          add_observation(answerline_seed_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0))
+          add_observation(stats_by_key, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0), split_rules)
+          add_observation(answerline_seed_stats, normalized, title, "raw_answerline_work_prompt", form, row, snippet_for(clue_text, 0), split_rules)
         end
       end
 
       unless clue_text.match?(ANSWER_MARKER_RE)
         extract_clue_title_candidates(clue_text).each do |match|
           normalized = normalize_title(match[:title])
-          add_observation(stats_by_key, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet])
+          add_observation(stats_by_key, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet], split_rules)
         end
       end
 
@@ -2200,7 +2276,7 @@ def main
 
   pass2_processed = if options[:jobs] > 1
     warn "Pass 2: counting clue-text mentions for #{seeds.length} work-title seeds from answerlines and clue extraction"
-    run_parallel_pass2(options, seed_index, track_by_question_id, stats_by_key, started)
+    run_parallel_pass2(options, seed_index, track_by_question_id, stats_by_key, split_rules, started)
   else
     warn "Pass 2: counting clue-text mentions for #{seeds.length} work-title seeds from answerlines and clue extraction"
     single_pass2_processed = 0
@@ -2216,7 +2292,7 @@ def main
 
       find_seed_clue_matches(clue_text, seed_index).each do |match|
         normalized = normalize_title(match[:title])
-        add_observation(stats_by_key, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet])
+        add_observation(stats_by_key, normalized, match[:title], match[:source], match[:form_hint], row, match[:snippet], split_rules)
       end
 
       if options[:progress_every].positive? && (single_pass2_processed % options[:progress_every]).zero?
@@ -2552,6 +2628,8 @@ def main
     "adjudication_count" => adjudications.values.uniq.length,
     "manual_alias_rule_count" => alias_map.length,
     "manual_aliases_applied_after_pass1" => applied_aliases,
+    "manual_split_rule_source_count" => split_rules.length,
+    "manual_split_rule_target_count" => split_rule_count,
     "jobs" => options[:jobs],
     "excluded_processed_inputs" => [
       "archive_canon_refinement_runs",
@@ -2603,6 +2681,7 @@ def main
     - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
     - Adjudication file: `#{repo_relative_path(options[:adjudications_path])}` (#{adjudications.values.uniq.length} decisions)
     - Manual alias rules: #{alias_map.length} loaded, #{applied_aliases} applied after pass 1
+    - Author-aware split targets: #{split_rule_count} targets across #{split_rules.length} source titles
     - Worker processes: #{options[:jobs]}
     - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
     - Threshold: total distinct quizbowl questions >= #{options[:threshold]}

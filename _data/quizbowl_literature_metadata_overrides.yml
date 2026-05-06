@@ -10369,3 +10369,112 @@
   source: codex_manual_metadata_correction
   confidence: high
   notes: Manual correction for truncated public title variant `Dear and Loving Husband`.
+- title: North and South (Elizabeth Gaskell)
+  normalized_title: north and south elizabeth gaskell
+  wikidata_id:
+  wikidata_label: North and South
+  wikidata_description: novel by Elizabeth Gaskell
+  creators:
+  - Elizabeth Gaskell
+  sort_year: 1855
+  date_label: 1854-1855
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `North and South`.
+- title: North and South (John Jakes)
+  normalized_title: north and south john jakes
+  wikidata_id:
+  wikidata_label: North and South
+  wikidata_description: novel by John Jakes
+  creators:
+  - John Jakes
+  sort_year: 1982
+  date_label: '1982'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `North and South`.
+- title: Bread and Wine (Friedrich Holderlin)
+  normalized_title: bread and wine friedrich holderlin
+  wikidata_id:
+  wikidata_label: Bread and Wine
+  wikidata_description: elegy by Friedrich Holderlin
+  creators:
+  - Friedrich Holderlin
+  sort_year: 1801
+  date_label: c. 1800-1801
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `Bread and Wine`.
+- title: Bread and Wine (Ignazio Silone)
+  normalized_title: bread and wine ignazio silone
+  wikidata_id:
+  wikidata_label: Bread and Wine
+  wikidata_description: novel by Ignazio Silone
+  creators:
+  - Ignazio Silone
+  sort_year: 1936
+  date_label: '1936'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `Bread and Wine`.
+- title: The Lost World (Arthur Conan Doyle)
+  normalized_title: the lost world arthur conan doyle
+  wikidata_id:
+  wikidata_label: The Lost World
+  wikidata_description: novel by Arthur Conan Doyle
+  creators:
+  - Arthur Conan Doyle
+  sort_year: 1912
+  date_label: '1912'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `The Lost World`.
+- title: The Lost World (Michael Crichton)
+  normalized_title: the lost world michael crichton
+  wikidata_id:
+  wikidata_label: The Lost World
+  wikidata_description: novel by Michael Crichton
+  creators:
+  - Michael Crichton
+  sort_year: 1995
+  date_label: '1995'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `The Lost World`.
+- title: The Lost World (Randall Jarrell)
+  normalized_title: the lost world randall jarrell
+  wikidata_id:
+  wikidata_label: The Lost World
+  wikidata_description: poetry collection by Randall Jarrell
+  creators:
+  - Randall Jarrell
+  sort_year: 1965
+  date_label: '1965'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `The Lost World`.
+- title: The Royal Family (William T. Vollmann)
+  normalized_title: the royal family william t vollmann
+  wikidata_id:
+  wikidata_label: The Royal Family
+  wikidata_description: novel by William T. Vollmann
+  creators:
+  - William T. Vollmann
+  sort_year: 2000
+  date_label: '2000'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `The Royal Family`.
+- title: The Royal Family (Kaufman and Ferber)
+  normalized_title: the royal family kaufman and ferber
+  wikidata_id:
+  wikidata_label: The Royal Family
+  wikidata_description: play by George S. Kaufman and Edna Ferber
+  creators:
+  - George S. Kaufman
+  - Edna Ferber
+  sort_year: 1927
+  date_label: '1927'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `The Royal Family`.
