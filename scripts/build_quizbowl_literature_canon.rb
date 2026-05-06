@@ -349,7 +349,7 @@ CandidateStats = Struct.new(
 )
 
 Seed = Struct.new(:canonical_title, :normalized_title, :variants, :seed_basis, keyword_init: true)
-SplitRule = Struct.new(:source_normalized, :target_title, :target_normalized, :match_terms, keyword_init: true)
+SplitRule = Struct.new(:source_title, :source_normalized, :target_title, :target_normalized, :match_terms, keyword_init: true)
 
 def new_stats(normalized_title)
   CandidateStats.new(
@@ -800,9 +800,14 @@ def split_target_for(normalized, display, row, snippet, split_rules)
   return nil unless rules && !rules.empty?
 
   context = split_context_text(display, row, snippet)
-  rules.find do |rule|
-    rule.match_terms.any? { |term| !term.empty? && context.include?(term) }
+  scored_rules = []
+  rules.each_with_index do |rule, index|
+    matched_terms = rule.match_terms.select { |term| !term.empty? && context.include?(term) }
+    next if matched_terms.empty?
+
+    scored_rules << [matched_terms.length, matched_terms.sum(&:length), -index, rule]
   end
+  scored_rules.max_by { |count, chars, order, _rule| [count, chars, order] }&.last
 end
 
 def add_observation(stats_by_key, normalized, display, source, form_hint, row, snippet, split_rules = {})
@@ -1576,6 +1581,7 @@ def load_split_rules(path)
 
       rules_by_source[source_normalized] ||= []
       rules_by_source[source_normalized] << SplitRule.new(
+        source_title: normalize_space(source_title || source_normalized),
         source_normalized: source_normalized,
         target_title: target_title,
         target_normalized: normalize_title(target_title),
@@ -1787,6 +1793,68 @@ def build_audit_queue_rows(score_rows)
   end
   queue_rows.each_with_index do |queue_row, index|
     queue_row["queue_id"] = "qb_lit_audit_#{(index + 1).to_s.rjust(6, "0")}"
+  end
+end
+
+def split_audit_status(stats, score_row, data_row, threshold)
+  return "missing" unless stats
+  return "below_threshold" if stats.question_ids.length < threshold
+  return "present_public" if data_row
+  return "needs_review" if score_row
+
+  "missing"
+end
+
+def split_audit_notes(target_status, target_score_row)
+  case target_status
+  when "present_public"
+    ""
+  when "below_threshold"
+    "Split target observed but below the public threshold."
+  when "needs_review"
+    decision = adjudication_decision(target_score_row&.fetch(:adjudication, nil))
+    reason = adjudication_reason(target_score_row&.fetch(:adjudication, nil))
+    status = target_score_row&.fetch(:review_status, "")
+    details = [decision, reason, status].map(&:to_s).reject(&:empty?).uniq
+    details.empty? ? "Split target cleared threshold but is not public." : "Split target cleared threshold but is not public: #{details.join("; ")}."
+  else
+    "No routed observations for this split target."
+  end
+end
+
+def build_split_audit_rows(split_rules, stats_by_key, score_rows, data_rows, candidate_rows, threshold)
+  score_by_normalized = score_rows.to_h { |row| [row[:stats].normalized_title, row] }
+  data_by_normalized = data_rows.to_h { |row| [normalize_title(row["title"]), row] }
+  candidate_by_normalized = candidate_rows.to_h { |row| [row["normalized_title"], row] }
+
+  split_rules.values.flatten.sort_by { |rule| [rule.source_title.to_s, rule.target_title.to_s] }.map do |rule|
+    source_stats = stats_by_key[rule.source_normalized]
+    target_stats = stats_by_key[rule.target_normalized]
+    source_score_row = score_by_normalized[rule.source_normalized]
+    target_score_row = score_by_normalized[rule.target_normalized]
+    source_data_row = data_by_normalized[rule.source_normalized]
+    target_data_row = data_by_normalized[rule.target_normalized]
+    target_candidate = candidate_by_normalized[rule.target_normalized]
+
+    source_status = split_audit_status(source_stats, source_score_row, source_data_row, threshold)
+    target_status = split_audit_status(target_stats, target_score_row, target_data_row, threshold)
+
+    {
+      "source_title" => safe_tsv(rule.source_title),
+      "source_normalized" => rule.source_normalized,
+      "target_title" => safe_tsv(rule.target_title),
+      "target_normalized" => rule.target_normalized,
+      "target_status" => target_status,
+      "target_total_question_count" => target_stats&.question_ids&.length || 0,
+      "target_answerline_question_count" => target_stats&.answerline_question_ids&.length || 0,
+      "target_creator" => target_candidate&.fetch("creators", "") || Array(target_data_row&.fetch("creators", [])).join("; "),
+      "target_chronology_label" => target_candidate&.fetch("chronology_label", "") || target_data_row&.fetch("chronology_label", ""),
+      "source_status" => source_status,
+      "source_total_question_count" => source_stats&.question_ids&.length || 0,
+      "source_answerline_question_count" => source_stats&.answerline_question_ids&.length || 0,
+      "match_terms_json" => JSON.generate(rule.match_terms),
+      "notes" => split_audit_notes(target_status, target_score_row)
+    }
   end
 end
 
@@ -2570,6 +2638,7 @@ def main
 
   audit_queue_rows = build_audit_queue_rows(score_rows)
   llm_review_rows = build_llm_review_rows(audit_queue_rows)
+  split_audit_rows = build_split_audit_rows(split_rules, stats_by_key, score_rows, data_rows, candidate_tsv_rows, options[:threshold])
 
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_title_candidates.tsv"),
@@ -2610,6 +2679,11 @@ def main
     File.join(options[:out_dir], "quizbowl_lit_llm_review_queue.jsonl"),
     llm_review_rows
   )
+  write_tsv(
+    File.join(options[:out_dir], "quizbowl_lit_split_audit.tsv"),
+    %w[source_title source_normalized target_title target_normalized target_status target_total_question_count target_answerline_question_count target_creator target_chronology_label source_status source_total_question_count source_answerline_question_count match_terms_json notes],
+    split_audit_rows
+  )
 
   File.write(options[:data_out], data_rows.to_yaml)
 
@@ -2630,6 +2704,7 @@ def main
     "manual_aliases_applied_after_pass1" => applied_aliases,
     "manual_split_rule_source_count" => split_rules.length,
     "manual_split_rule_target_count" => split_rule_count,
+    "manual_split_public_target_count" => split_audit_rows.count { |row| row["target_status"] == "present_public" },
     "jobs" => options[:jobs],
     "excluded_processed_inputs" => [
       "archive_canon_refinement_runs",
@@ -2647,6 +2722,7 @@ def main
     "rejected_candidate_count" => rejected_rows.length,
     "audit_queue_count" => audit_queue_rows.length,
     "llm_review_queue_count" => llm_review_rows.length,
+    "split_audit_row_count" => split_audit_rows.length,
     "mention_rows" => mention_rows.length,
     "tier_counts" => score_rows.group_by { |row| row[:tier] }.transform_values(&:length),
     "review_status_counts" => score_rows.group_by { |row| row[:review_status] }.transform_values(&:length),
@@ -2681,7 +2757,8 @@ def main
     - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
     - Adjudication file: `#{repo_relative_path(options[:adjudications_path])}` (#{adjudications.values.uniq.length} decisions)
     - Manual alias rules: #{alias_map.length} loaded, #{applied_aliases} applied after pass 1
-    - Author-aware split targets: #{split_rule_count} targets across #{split_rules.length} source titles
+    - Author-aware split targets: #{split_rule_count} targets across #{split_rules.length} source titles (#{summary["manual_split_public_target_count"]} public after routing)
+    - Split audit rows: #{summary["split_audit_row_count"]} written to `#{repo_relative_path(File.join(options[:out_dir], "quizbowl_lit_split_audit.tsv"))}`
     - Worker processes: #{options[:jobs]}
     - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
     - Threshold: total distinct quizbowl questions >= #{options[:threshold]}

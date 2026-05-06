@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T06:11:45Z",
+  "generated_at": "2026-05-06T07:07:50Z",
   "db_path": "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db",
   "source_table": "archive_parsed_questions",
   "evidence_fields": [
@@ -10,11 +10,12 @@
     "archive_practice_questions.track_id"
   ],
   "adjudications_path": "_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml",
-  "adjudication_count": 2620,
-  "manual_alias_rule_count": 336,
-  "manual_aliases_applied_after_pass1": 335,
-  "manual_split_rule_source_count": 4,
-  "manual_split_rule_target_count": 9,
+  "adjudication_count": 2632,
+  "manual_alias_rule_count": 339,
+  "manual_aliases_applied_after_pass1": 337,
+  "manual_split_rule_source_count": 8,
+  "manual_split_rule_target_count": 16,
+  "manual_split_public_target_count": 12,
   "jobs": 6,
   "excluded_processed_inputs": [
     "archive_canon_refinement_runs",
@@ -23,29 +24,30 @@
   "threshold": 3,
   "processed_rows": 2216999,
   "skipped_long_clue_rows": 201,
-  "raw_answerline_candidate_count": 9321,
-  "exact_match_seed_count": 6334,
+  "raw_answerline_candidate_count": 9323,
+  "exact_match_seed_count": 6337,
   "exact_match_seed_basis_counts": {
-    "answerline": 953,
-    "answerline_and_clue": 1281,
-    "clue": 4100
+    "answerline": 952,
+    "answerline_and_clue": 1282,
+    "clue": 4103
   },
-  "raw_candidate_count": 81558,
-  "threshold_candidate_count": 20213,
-  "public_data_count": 5275,
+  "raw_candidate_count": 81563,
+  "threshold_candidate_count": 20217,
+  "public_data_count": 5276,
   "rejected_candidate_count": 3916,
-  "audit_queue_count": 19345,
+  "audit_queue_count": 19348,
   "llm_review_queue_count": 500,
-  "mention_rows": 87163,
+  "split_audit_row_count": 16,
+  "mention_rows": 87179,
   "tier_counts": {
-    "qb_core": 1050,
+    "qb_core": 1049,
     "qb_rejected": 3916,
-    "qb_candidate": 11022,
-    "qb_major": 1613,
-    "qb_contextual": 2612
+    "qb_candidate": 11025,
+    "qb_major": 1614,
+    "qb_contextual": 2613
   },
   "review_status_counts": {
-    "accepted_likely_work": 5275,
+    "accepted_likely_work": 5276,
     "rejected_duplicate_title_variant": 27,
     "rejected_science_not_literature": 9,
     "rejected_place_not_work": 1,
@@ -70,7 +72,7 @@
     "rejected_fragment_title_artifact": 6,
     "rejected_character_not_work": 6,
     "rejected_person_not_work": 8,
-    "needs_review_title_collision_requires_author_aware_split": 5,
+    "needs_review_title_collision_requires_author_aware_split": 8,
     "rejected_figures_not_work": 1,
     "rejected_television_not_literature": 4,
     "rejected_language_or_period_label_not_work": 1,
@@ -453,7 +455,7 @@
   "public_work_form_counts": {
     "long_fiction": 1796,
     "epic_or_romance": 78,
-    "collection_or_cycle": 408,
+    "collection_or_cycle": 409,
     "drama": 745,
     "poetry": 1008,
     "short_fiction": 768,
@@ -462,22 +464,21 @@
     "scripture_myth_hymn": 14
   },
   "public_evidence_profile_counts": {
-    "answerline_and_clue": 2984,
+    "answerline_and_clue": 2985,
     "clue_only": 2032,
     "answerline_only": 259
   },
   "public_quizbowl_track_profile_counts": {
-    "literature_dominant": 2363,
-    "cross_category_literary": 1603,
-    "non_literature_context": 1309
+    "literature_dominant": 2364,
+    "cross_category_literary": 1602,
+    "non_literature_context": 1310
   },
   "public_routing_status_counts": {
-    "accepted_clean": 5264,
-    "protected_title_collision": 9,
-    "author_split_needed": 2
+    "accepted_clean": 5268,
+    "protected_title_collision": 8
   },
   "public_dominant_track_counts": {
-    "literature": 2292,
+    "literature": 2293,
     "other_academic": 2884,
     "philosophy": 12,
     "fine_arts": 14,
@@ -490,54 +491,54 @@
     "science": 1
   },
   "public_era_counts": {
-    "postwar_modern": 384,
-    "ancient_classical": 165,
+    "postwar_modern": 385,
+    "ancient_classical": 166,
     "early_modern": 250,
-    "long_19th_century": 450,
-    "modernist": 364,
+    "long_19th_century": 451,
+    "modernist": 365,
     "medieval": 97,
-    "eighteenth_century": 68,
-    "unknown_era": 3394,
+    "eighteenth_century": 67,
+    "unknown_era": 3392,
     "contemporary": 103
   },
   "public_region_or_tradition_counts": {
-    "african": 97,
+    "african": 96,
     "greek": 125,
     "roman_latin": 61,
     "english_british_irish": 487,
-    "american": 427,
+    "american": 426,
     "latin_american": 159,
     "iberian_lusophone": 56,
     "russian_eastern_european": 178,
     "french": 127,
     "germanic_scandinavian": 160,
     "south_asian": 95,
-    "unknown_region": 2861,
+    "unknown_region": 2864,
     "italian": 65,
     "japanese_korean": 79,
     "indigenous_oceania": 25,
-    "arabic_persian_turkic": 104,
+    "arabic_persian_turkic": 103,
     "caribbean": 34,
-    "chinese": 70,
+    "chinese": 71,
     "biblical_religious": 65
   },
   "public_reading_unit_counts": {
-    "postwar_global_literature": 80,
+    "postwar_global_literature": 79,
     "ancient_epic_scripture_myth": 12,
     "early_modern_world_literature": 175,
     "nineteenth_century_fiction": 157,
-    "modernism": 364,
+    "modernism": 365,
     "medieval_romance_saga": 97,
-    "postwar_literature": 304,
-    "nineteenth_century_poetry_and_drama": 293,
+    "postwar_literature": 306,
+    "nineteenth_century_poetry_and_drama": 294,
     "early_modern_drama": 75,
-    "eighteenth_century_prose_and_drama": 68,
+    "eighteenth_century_prose_and_drama": 67,
     "poetry": 702,
     "fiction_and_narrative": 1128,
     "drama": 467,
     "literary_nonfiction": 159,
     "unclassified_unit": 178,
-    "short_fiction": 527,
+    "short_fiction": 526,
     "collections_and_cycles": 293,
     "classical_drama": 41,
     "epic_romance_or_oral_tradition": 40,
@@ -545,35 +546,35 @@
     "scripture_myth_hymn": 12
   },
   "public_classification_confidence_counts": {
-    "rule_high": 1143,
-    "rule_medium": 1898,
-    "rule_low": 2148,
+    "rule_high": 1141,
+    "rule_medium": 1903,
+    "rule_low": 2146,
     "unknown_metadata": 86
   },
   "public_creator_source_counts": {
     "reviewed_canon_record": 46,
-    "codex_manual_metadata_correction": 27,
-    "wikidata_metadata_overlay": 755,
-    "quizbowl_author_answerline": 1816,
-    "unknown": 2631
+    "codex_manual_metadata_correction": 36,
+    "wikidata_metadata_overlay": 754,
+    "quizbowl_author_answerline": 1812,
+    "unknown": 2628
   },
   "public_creator_confidence_counts": {
-    "high": 740,
-    "medium": 1339,
-    "unknown": 2631,
-    "low": 565
+    "high": 748,
+    "medium": 1337,
+    "unknown": 2628,
+    "low": 563
   },
   "public_chronology_source_counts": {
     "reviewed_canon_record": 46,
-    "codex_manual_metadata_correction": 26,
-    "wikidata_metadata_overlay": 679,
-    "unknown": 4504,
-    "title_override": 20
+    "codex_manual_metadata_correction": 35,
+    "wikidata_metadata_overlay": 678,
+    "unknown": 4498,
+    "title_override": 19
   },
   "public_chronology_confidence_counts": {
-    "high": 758,
-    "unknown": 4504,
+    "high": 765,
+    "unknown": 4498,
     "medium": 13
   },
-  "public_chronology_needs_review_count": 4504
+  "public_chronology_needs_review_count": 4498
 }

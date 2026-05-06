@@ -10478,3 +10478,113 @@
   source: codex_manual_metadata_correction
   confidence: high
   notes: Author-aware split target for the ambiguous title `The Royal Family`.
+- title: Diary of a Madman (Nikolai Gogol)
+  normalized_title: diary of a madman nikolai gogol
+  wikidata_id:
+  wikidata_label: Diary of a Madman
+  wikidata_description: 1835 short story by Nikolai Gogol
+  creators:
+  - Nikolai Gogol
+  sort_year: 1835
+  date_label: '1835'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `Diary of a Madman`.
+- title: Diary of a Madman (Lu Xun)
+  normalized_title: diary of a madman lu xun
+  wikidata_id:
+  wikidata_label: A Madman's Diary
+  wikidata_description: 1918 short story by Lu Xun
+  creators:
+  - Lu Xun
+  sort_year: 1918
+  date_label: '1918'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `Diary of a Madman`.
+- title: The Island (Athol Fugard)
+  normalized_title: the island athol fugard
+  wikidata_id:
+  wikidata_label: The Island
+  wikidata_description: play by Athol Fugard, John Kani, and Winston Ntshona
+  creators:
+  - Athol Fugard
+  - John Kani
+  - Winston Ntshona
+  sort_year: 1973
+  date_label: '1973'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `The Island`.
+- title: Island
+  normalized_title: island
+  wikidata_id:
+  wikidata_label: Island
+  wikidata_description: 1962 novel by Aldous Huxley
+  creators:
+  - Aldous Huxley
+  sort_year: 1962
+  date_label: '1962'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Metadata correction for Huxley's articleless novel, distinct from Fugard's play `The Island`.
+- title: The Mother (Maxim Gorky)
+  normalized_title: the mother maxim gorky
+  wikidata_id:
+  wikidata_label: Mother
+  wikidata_description: novel by Maxim Gorky
+  creators:
+  - Maxim Gorky
+  sort_year: 1906
+  date_label: 1906-1907
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `The Mother`.
+- title: The Mother (Gwendolyn Brooks)
+  normalized_title: the mother gwendolyn brooks
+  wikidata_id:
+  wikidata_label: the mother
+  wikidata_description: poem by Gwendolyn Brooks
+  creators:
+  - Gwendolyn Brooks
+  sort_year: 1945
+  date_label: '1945'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for the ambiguous title `The Mother`.
+- title: A Mother
+  normalized_title: a mother
+  wikidata_id:
+  wikidata_label: A Mother
+  wikidata_description: short story by James Joyce in Dubliners
+  creators:
+  - James Joyce
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Metadata correction for Joyce's story, distinct from the Gorky and Brooks `The Mother` rows.
+- title: Book of Songs / Shijing
+  normalized_title: book of songs shijing
+  wikidata_id:
+  wikidata_label: Shijing
+  wikidata_description: ancient Chinese poetry anthology
+  creators:
+  - Classical Chinese poetic tradition
+  sort_year: -800
+  date_label: c. 11th-7th century BCE
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for classical Chinese evidence under `Book of Songs`.
+- title: Book of Songs (Heinrich Heine)
+  normalized_title: book of songs heinrich heine
+  wikidata_id:
+  wikidata_label: Book of Songs
+  wikidata_description: poetry collection by Heinrich Heine
+  creators:
+  - Heinrich Heine
+  sort_year: 1827
+  date_label: '1827'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Author-aware split target for Heine evidence under `Book of Songs`.

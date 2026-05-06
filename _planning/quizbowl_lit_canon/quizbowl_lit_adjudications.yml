@@ -21230,3 +21230,180 @@ decisions:
   review_status: accepted_likely_work
   source: codex_phase_c_author_split_batch1
   notes: 'Poetry collection split out from ambiguous `The Lost World` evidence; accepted because context consistently identifies Randall Jarrell.'
+- candidate_id: qb_lit_diary_of_a_madman_775c3720
+  canonical_title: Diary of a Madman
+  normalized_title: diary of a madman
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_c_author_split_batch2
+  notes: 'Keep unmatched evidence held; route context-matched observations into the Gogol or Lu Xun short stories.'
+  split_into:
+  - title: Diary of a Madman (Nikolai Gogol)
+    match_any:
+    - Nikolai Gogol
+    - Gogol
+    - Arabesques
+    - Poprishchin
+    - The Nose
+    - Taras Bulba
+    - Inspector General
+    - Khlestakov
+    - Nevsky Prospect
+    - Dikanka
+  - title: Diary of a Madman (Lu Xun)
+    match_any:
+    - Lu Xun
+    - Lu Hsun
+    - Call to Arms
+    - A Call to Arms
+    - The True Story of Ah Q
+    - Ah Q
+    - Kuangren Riji
+    - cannibal
+    - cannibalism
+    - May Fourth
+- canonical_title: The Diary of a Madman
+  normalized_title: the diary of a madman
+  decision: alias
+  alias_of: Diary of a Madman (Nikolai Gogol)
+  reason: article_variant_of_gogol_story
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_author_split_batch2
+  notes: 'Article-bearing quizbowl variant is routed to Gogol; Lu Xun evidence is handled by `Diary of a Madman` and `A Madman''s Diary` variants.'
+- canonical_title: A Madman's Diary
+  normalized_title: a madmans diary
+  decision: alias
+  alias_of: Diary of a Madman (Lu Xun)
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_author_split_batch2
+- canonical_title: Diary of a Madman or A Madman's Diary or Kuangren Riji
+  normalized_title: diary of a madman or a madmans diary or kuangren riji
+  decision: alias
+  alias_of: Diary of a Madman (Lu Xun)
+  reason: combined_answerline_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_author_split_batch2
+- canonical_title: Diary of a Madman (Nikolai Gogol)
+  normalized_title: diary of a madman nikolai gogol
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_c_author_split_batch2
+- canonical_title: Diary of a Madman (Lu Xun)
+  normalized_title: diary of a madman lu xun
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_c_author_split_batch2
+- canonical_title: The Island
+  normalized_title: the island
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_c_author_split_batch2
+  notes: 'Route Fugard/Kani/Ntshona play evidence into an explicit split target; keep unmatched generic island evidence out of the public row.'
+  split_into:
+  - title: The Island (Athol Fugard)
+    match_any:
+    - Athol Fugard
+    - Fugard
+    - John Kani
+    - Winston Ntshona
+    - Robben Island
+    - cellmates
+    - Master Harold
+    - Sizwe Bansi
+    - Styles's studio
+- canonical_title: The Island (Athol Fugard)
+  normalized_title: the island athol fugard
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_c_author_split_batch2
+- canonical_title: The Mother
+  normalized_title: the mother
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_c_author_split_batch2
+  notes: 'Keep unmatched parent-title evidence held; route context-matched observations into the Gorky novel or Brooks poem.'
+  split_into:
+  - title: The Mother (Maxim Gorky)
+    match_any:
+    - Maxim Gorky
+    - Gorky
+    - socialist realism
+    - Pavel
+    - Nilovna
+    - The Lower Depths
+    - Luka
+  - title: The Mother (Gwendolyn Brooks)
+    match_any:
+    - Gwendolyn Brooks
+    - Brooks
+    - We Real Cool
+    - Golden Shovel
+    - Chicagoan
+    - old yellow pair
+- canonical_title: The Mother (Maxim Gorky)
+  normalized_title: the mother maxim gorky
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_c_author_split_batch2
+- canonical_title: The Mother (Gwendolyn Brooks)
+  normalized_title: the mother gwendolyn brooks
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_c_author_split_batch2
+- canonical_title: Book of Songs
+  normalized_title: book of songs
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_c_author_split_batch2
+  notes: 'Route classical Chinese Shijing evidence separately from Heine poetry-collection evidence.'
+  split_into:
+  - title: Book of Songs / Shijing
+    match_any:
+    - Shijing
+    - Shi Jing
+    - Classic of Poetry
+    - Classic of Odes
+    - Book of Odes
+    - carambola
+    - wild-ox horn
+    - wild ox horn
+    - Seventh Moon
+    - Zhou
+  - title: Book of Songs (Heinrich Heine)
+    match_any:
+    - Heinrich Heine
+    - Heine
+    - Die Lorelei
+    - Lorelei
+    - Romanzero
+    - Lyrical Intermezzo
+    - Schumann
+- canonical_title: The Book of Songs
+  normalized_title: the book of songs
+  decision: alias
+  alias_of: Book of Songs (Heinrich Heine)
+  reason: article_variant_of_heine_collection
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_author_split_batch2
+- canonical_title: Book of Songs / Shijing
+  normalized_title: book of songs shijing
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_c_author_split_batch2
+- canonical_title: Book of Songs (Heinrich Heine)
+  normalized_title: book of songs heinrich heine
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_c_author_split_batch2
