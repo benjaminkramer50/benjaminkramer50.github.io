@@ -2778,17 +2778,13 @@
     filter.
 - title: Billy Budd
   normalized_title: billy budd
-  wikidata_id: Q863037
-  wikidata_label: Billy Budd, Sailor
-  wikidata_description: novella by Herman Melville
   creators:
   - Herman Melville
   sort_year: 1924
   date_label: '1924'
-  source: wikidata_metadata_overlay
+  source: codex_manual_metadata_correction
   confidence: high
-  notes: Exact normalized title or alias match; Wikidata description matched literary-work
-    filter.
+  notes: Manual target metadata for merged Billy Budd, Foretopman title variant.
 - title: Ode to the West Wind
   normalized_title: ode to the west wind
   creators:
@@ -13419,17 +13415,14 @@
     filter.
 - title: If This Is a Man
   normalized_title: if this is a man
-  wikidata_id: Q836036
-  wikidata_label: If This Is a Man
-  wikidata_description: memoir by Primo Levi
   creators:
   - Primo Levi
-  sort_year: 1946
-  date_label: '1946'
-  source: wikidata_metadata_overlay
+  sort_year: 1947
+  date_label: '1947'
+  source: codex_manual_metadata_correction
   confidence: high
-  notes: Exact normalized title or alias match; Wikidata description matched literary-work
-    filter.
+  notes: Manual target metadata for merged Survival in Auschwitz translation-title
+    variant.
 - title: The Pillars of Society
   normalized_title: the pillars of society
   wikidata_id: Q1774700
@@ -18041,17 +18034,13 @@
     filter.
 - title: The Good Person of Szechwan
   normalized_title: the good person of szechwan
-  wikidata_id: Q555959
-  wikidata_label: The Good Person of Szechwan
-  wikidata_description: play by Bertolt Brecht
   creators:
   - Bertolt Brecht
   sort_year: 1943
   date_label: '1943'
-  source: wikidata_metadata_overlay
+  source: codex_manual_metadata_correction
   confidence: high
-  notes: Exact normalized title or alias match; Wikidata description matched literary-work
-    filter.
+  notes: Manual target metadata for merged Good Woman/Good Person title variants.
 - title: Fear of Flying
   normalized_title: fear of flying
   wikidata_id: Q1088550
@@ -19342,17 +19331,157 @@
     filter.
 - title: Looking Backward
   normalized_title: looking backward
-  wikidata_id: Q1305106
-  wikidata_label: Looking Backward
-  wikidata_description: novel by Edward Bellamy
   creators:
   - Edward Bellamy
   sort_year: 1888
   date_label: '1888'
-  source: wikidata_metadata_overlay
+  source: codex_manual_metadata_correction
   confidence: high
-  notes: Exact normalized title or alias match; Wikidata description matched literary-work
-    filter.
+  notes: 'Manual target metadata for merged full-title variant Looking Backward: 2000-1887.'
+- title: The Lotos-Eaters
+  normalized_title: the lotos eaters
+  creators:
+  - Alfred Tennyson
+  sort_year: 1832
+  date_label: '1832'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction; Wikidata matched a modern novel for the spelling variant The Lotus-Eaters.
+- title: Canzoniere
+  normalized_title: canzoniere
+  creators:
+  - Petrarch
+  sort_year: 1336
+  date_label: c. 1336-1374
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual target metadata for merged Song Book title variant.
+- title: The School for Wives
+  normalized_title: the school for wives
+  creators:
+  - Moliere
+  sort_year: 1662
+  date_label: '1662'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction; Wikidata matched Gide for the original French title rather than Moliere's play.
+- title: The Revolution Will Not Be Televised
+  normalized_title: the revolution will not be televised
+  creators:
+  - Gil Scott-Heron
+  sort_year: 1970
+  date_label: '1970'
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual correction; quizbowl evidence points to Gil Scott-Heron's spoken-word poem/song, not the Joe Trippi book.
+- title: Peeling the Onion
+  normalized_title: peeling the onion
+  creators:
+  - Gunter Grass
+  sort_year: 2006
+  date_label: '2006'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction; quizbowl evidence points to Gunter Grass's memoir, not the unrelated Wendy Orr book.
+- title: The Erl-King
+  normalized_title: the erl king
+  creators:
+  - Angela Carter
+  sort_year: 1979
+  date_label: '1979'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction; current quizbowl evidence points to Carter's Bloody Chamber story.
+- title: Tristan and Iseult
+  normalized_title: tristan and iseult
+  creators:
+  - Medieval romance tradition
+  sort_year: 1170
+  date_label: c. 12th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual correction; Wikidata matched a modern retelling, while quizbowl evidence points to the medieval romance tradition.
+- title: The Company of Wolves
+  normalized_title: the company of wolves
+  creators:
+  - Angela Carter
+  sort_year: 1979
+  date_label: '1979'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction; Wikidata matched a modern secondary book, while quizbowl evidence points to Carter's story.
+- title: Sonnet 18
+  normalized_title: sonnet 18
+  creators:
+  - William Shakespeare
+  sort_year: 1609
+  date_label: '1609'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction; Wikidata matched the wrong Sonnet 18.
+- title: The Great Stone Face
+  normalized_title: the great stone face
+  creators:
+  - Nathaniel Hawthorne
+  sort_year: 1850
+  date_label: '1850'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction; Wikidata supplied a later collection/edition date.
+- title: The Plum in the Golden Vase
+  normalized_title: the plum in the golden vase
+  creators:
+  - Lanling Xiaoxiao Sheng
+  sort_year: 1610
+  date_label: c. 1610
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Manual target metadata for merged Golden Lotus title variant.
+- title: The Strange Case of Dr. Jekyll and Mr. Hyde
+  normalized_title: the strange case of dr jekyll and mr hyde
+  creators:
+  - Robert Louis Stevenson
+  sort_year: 1886
+  date_label: '1886'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual target metadata for merged Jekyll and Hyde shorthand title.
+- title: On the Pulse of Morning
+  normalized_title: on the pulse of morning
+  creators:
+  - Maya Angelou
+  sort_year: 1993
+  date_label: '1993'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual target metadata for merged opening-line clue fragment.
+- title: One Flew Over the Cuckoo’s Nest
+  normalized_title: one flew over the cuckoos nest
+  creators:
+  - Ken Kesey
+  sort_year: 1962
+  date_label: '1962'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual target metadata for merged truncated title.
+- title: A Good Man is Hard to Find
+  normalized_title: a good man is hard to find
+  creators:
+  - Flannery O'Connor
+  sort_year: 1953
+  date_label: '1953'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual target metadata for merged character-initials clue fragment.
+- title: Chicago
+  normalized_title: chicago
+  creators:
+  - Carl Sandburg
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual target metadata for merged quoted-line variants.
 - title: Mary Stuart
   normalized_title: mary stuart
   wikidata_id: Q425837
@@ -19745,17 +19874,14 @@
     filter.
 - title: Agamemnon
   normalized_title: agamemnon
-  wikidata_id: Q126362748
-  wikidata_label: Agamemnon
-  wikidata_description: 1786 German translation by Jenisch of the play by Aeschylus
   creators:
   - Aeschylus
-  sort_year: 1786
-  date_label: '1786'
-  source: wikidata_metadata_overlay
+  sort_year: -458
+  date_label: 458 BCE
+  source: codex_manual_metadata_correction
   confidence: high
-  notes: Exact normalized title or alias match; Wikidata description matched literary-work
-    filter.
+  notes: Manual correction; Wikidata overlay matched a later translation rather than
+    the Aeschylus tragedy.
 - title: Nightmare Abbey
   normalized_title: nightmare abbey
   wikidata_id: Q4054406
@@ -20838,17 +20964,14 @@
     filter.
 - title: Nightfall
   normalized_title: nightfall
-  wikidata_id: Q7728455
-  wikidata_label: The Curse
-  wikidata_description: short story by Arthur C. Clarke
   creators:
-  - Arthur C. Clarke
-  sort_year: 1946
-  date_label: '1946'
-  source: wikidata_metadata_overlay
+  - Isaac Asimov
+  sort_year: 1941
+  date_label: '1941'
+  source: codex_manual_metadata_correction
   confidence: high
-  notes: Exact normalized title or alias match; Wikidata description matched literary-work
-    filter.
+  notes: Manual correction; quizbowl evidence points to Asimov's short story, not
+    the unrelated Wikidata alias hit.
 - title: The Possessed
   normalized_title: the possessed
   wikidata_id: Q329989
@@ -21631,17 +21754,13 @@
     filter.
 - title: The Family of Pascual Duarte
   normalized_title: the family of pascual duarte
-  wikidata_id: Q1002647
-  wikidata_label: The Family of Pascual Duarte
-  wikidata_description: novel by Camilo José Cela
   creators:
-  - Camilo José Cela
-  sort_year: 2008
-  date_label: '2008'
-  source: wikidata_metadata_overlay
+  - Camilo Jose Cela
+  sort_year: 1942
+  date_label: '1942'
+  source: codex_manual_metadata_correction
   confidence: high
-  notes: Exact normalized title or alias match; Wikidata description matched literary-work
-    filter.
+  notes: Manual correction; Wikidata supplied an edition-derived date.
 - title: The Graveyard by the Sea
   normalized_title: the graveyard by the sea
   wikidata_id: Q3221443
@@ -23548,34 +23667,8 @@
   date_label: '1649'
   source: codex_manual_metadata_correction
   confidence: high
-  notes: Manual correction for quizbowl subtitle row "Going to the Wars"; Wikidata matched an unrelated historical book.
-- title: Agamemnon
-  normalized_title: agamemnon
-  creators:
-  - Aeschylus
-  sort_year: -458
-  date_label: 458 BCE
-  source: codex_manual_metadata_correction
-  confidence: high
-  notes: Manual correction; Wikidata overlay matched a later translation rather than the Aeschylus tragedy.
-- title: Nightfall
-  normalized_title: nightfall
-  creators:
-  - Isaac Asimov
-  sort_year: 1941
-  date_label: '1941'
-  source: codex_manual_metadata_correction
-  confidence: high
-  notes: Manual correction; quizbowl evidence points to Asimov's short story, not the unrelated Wikidata alias hit.
-- title: The Family of Pascual Duarte
-  normalized_title: the family of pascual duarte
-  creators:
-  - Camilo Jose Cela
-  sort_year: 1942
-  date_label: '1942'
-  source: codex_manual_metadata_correction
-  confidence: high
-  notes: Manual correction; Wikidata supplied an edition-derived date.
+  notes: Manual correction for quizbowl subtitle row "Going to the Wars"; Wikidata
+    matched an unrelated historical book.
 - title: Phaedra (Racine)
   normalized_title: phaedra racine
   creators:
@@ -23594,24 +23687,6 @@
   source: codex_manual_metadata_correction
   confidence: medium
   notes: Manual split target for the Roman tragedy; date is approximate.
-- title: The Good Person of Szechwan
-  normalized_title: the good person of szechwan
-  creators:
-  - Bertolt Brecht
-  sort_year: 1943
-  date_label: '1943'
-  source: codex_manual_metadata_correction
-  confidence: high
-  notes: Manual target metadata for merged Good Woman/Good Person title variants.
-- title: If This Is a Man
-  normalized_title: if this is a man
-  creators:
-  - Primo Levi
-  sort_year: 1947
-  date_label: '1947'
-  source: codex_manual_metadata_correction
-  confidence: high
-  notes: Manual target metadata for merged Survival in Auschwitz translation-title variant.
 - title: Demons
   normalized_title: demons
   creators:
@@ -23621,21 +23696,3538 @@
   source: codex_manual_metadata_correction
   confidence: high
   notes: Manual target metadata for merged The Possessed translation-title variant.
-- title: Billy Budd
-  normalized_title: billy budd
+- title: The Lotus-Eaters
+  normalized_title: the lotus eaters
+  wikidata_id: Q7748824
+  wikidata_label: The Lotus Eaters
+  wikidata_description: book by Tatjana Soli
+  creators:
+  - Tatjana Soli
+  sort_year: 2010
+  date_label: '2010'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Happy Prince
+  normalized_title: the happy prince
+  wikidata_id: Q1198734
+  wikidata_label: The Happy Prince
+  wikidata_description: literary fairy tale by Oscar Wilde
+  creators:
+  - Oscar Wilde
+  sort_year: 1888
+  date_label: '1888'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Blind Owl
+  normalized_title: the blind owl
+  wikidata_id: Q1211660
+  wikidata_label: The Blind Owl
+  wikidata_description: 1937 novel by Sadegh Hedayat
+  creators:
+  - Sadegh Hedayat
+  sort_year: 1937
+  date_label: '1937'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Holy War
+  normalized_title: the holy war
+  wikidata_id: Q4920388
+  wikidata_label: The Holy War
+  wikidata_description: 1682 novel by John Bunyan
+  creators:
+  - John Bunyan
+  sort_year: 1682
+  date_label: '1682'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Black Tulip
+  normalized_title: the black tulip
+  wikidata_id: Q1141764
+  wikidata_label: The Black Tulip
+  wikidata_description: novel by Alexandre Dumas
+  creators:
+  - Alexandre Dumas
+  sort_year: 1850
+  date_label: '1850'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Bridges of Madison County
+  normalized_title: the bridges of madison county
+  wikidata_id: Q284395
+  wikidata_label: The Bridges of Madison County
+  wikidata_description: 1992 novel by Robert James Waller
+  creators:
+  - Robert James Waller
+  sort_year: 1992
+  date_label: '1992'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Fifty Grand
+  normalized_title: fifty grand
+  wikidata_id: Q5447638
+  wikidata_label: Fifty Grand
+  wikidata_description: short story by Ernest Hemingway
+  creators:
+  - Ernest Hemingway
+  sort_year: 1927
+  date_label: '1927'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Song Book
+  normalized_title: song book
+  wikidata_id: Q777574
+  wikidata_label: Il Canzoniere
+  wikidata_description: poetry anthology by Petrarch
+  creators:
+  - Petrarch
+  sort_year: 1336
+  date_label: '1336'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Mystery of the Yellow Room
+  normalized_title: the mystery of the yellow room
+  wikidata_id: Q2563691
+  wikidata_label: The Mystery of the Yellow Room
+  wikidata_description: novel by Gaston Leroux
+  creators:
+  - Gaston Leroux
+  sort_year: 1907
+  date_label: '1907'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Little Lord Fauntleroy
+  normalized_title: little lord fauntleroy
+  wikidata_id: Q387480
+  wikidata_label: Little Lord Fauntleroy
+  wikidata_description: novel by Frances Hodgson Burnett
+  creators:
+  - Frances Hodgson Burnett
+  sort_year: 1885
+  date_label: '1885'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Minna von Barnhelm
+  normalized_title: minna von barnhelm
+  wikidata_id: Q1209859
+  wikidata_label: Minna von Barnhelm
+  wikidata_description: play written by Gotthold Ephraim Lessing
+  creators:
+  - Gotthold Ephraim Lessing
+  sort_year: 1767
+  date_label: '1767'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: L’école des femmes
+  normalized_title: lecole des femmes
+  wikidata_id: Q101479354
+  wikidata_label: L'école des Femmes
+  wikidata_description: book
+  creators:
+  - André Gide
+  sort_year: 1929
+  date_label: '1929'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Rape of Lucrece
+  normalized_title: the rape of lucrece
+  wikidata_id: Q1398793
+  wikidata_label: The Rape of Lucrece
+  wikidata_description: poem by William Shakespeare
+  creators:
+  - William Shakespeare
+  sort_year: 1594
+  date_label: '1594'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Georgics
+  normalized_title: georgics
+  wikidata_id: Q674439
+  wikidata_label: Georgics
+  wikidata_description: poem by Virgil
+  creators:
+  - Virgil
+  sort_year: -37
+  date_label: 37 BCE
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Book of Ecclesiastes
+  normalized_title: book of ecclesiastes
+  wikidata_id: Q131072
+  wikidata_label: Ecclesiastes
+  wikidata_description: book of the Bible
+  creators:
+  - Qohelet
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Dune
+  normalized_title: dune
+  wikidata_id: Q190192
+  wikidata_label: Dune
+  wikidata_description: 1965 science fiction novel by Frank Herbert
+  creators: []
+  sort_year: 1965
+  date_label: '1965'
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Poetic Principle
+  normalized_title: the poetic principle
+  wikidata_id: Q1171513
+  wikidata_label: The Poetic Principle
+  wikidata_description: essay by Edgar Allan Poe on his literary theory
+  creators:
+  - Edgar Allan Poe
+  sort_year: 1850
+  date_label: '1850'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Epic of the Wheat
+  normalized_title: the epic of the wheat
+  wikidata_id: Q7732336
+  wikidata_label: The Epic of the Wheat
+  wikidata_description: novel by Frank Norris
+  creators:
+  - Frank Norris
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Woman in the Nineteenth Century
+  normalized_title: woman in the nineteenth century
+  wikidata_id: Q8030728
+  wikidata_label: Woman in the Nineteenth Century
+  wikidata_description: book by Margaret Fuller
+  creators:
+  - Margaret Fuller
+  sort_year: 1843
+  date_label: '1843'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: One Man's Bible
+  normalized_title: one mans bible
+  wikidata_id: Q390176
+  wikidata_label: One Man's Bible
+  wikidata_description: 1999 novel by Gao Xingjian
+  creators:
+  - Gao Xingjian
+  sort_year: 1999
+  date_label: '1999'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: We Are Seven
+  normalized_title: we are seven
+  wikidata_id: Q7977884
+  wikidata_label: We are Seven
+  wikidata_description: poem by William Wordsworth
+  creators:
+  - William Wordsworth
+  sort_year: 1798
+  date_label: '1798'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: She Came to Stay
+  normalized_title: she came to stay
+  wikidata_id: Q859773
+  wikidata_label: She Came to Stay
+  wikidata_description: 1943 novel by Simone de Beauvoir
+  creators:
+  - Simone de Beauvoir
+  sort_year: 1943
+  date_label: '1943'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Moon is Down
+  normalized_title: the moon is down
+  wikidata_id: Q1195848
+  wikidata_label: The Moon Is Down
+  wikidata_description: 1942 novella by John Steinbeck
+  creators:
+  - John Steinbeck
+  sort_year: 1942
+  date_label: '1942'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Not Without Laughter
+  normalized_title: not without laughter
+  wikidata_id: Q7062232
+  wikidata_label: Not Without Laughter
+  wikidata_description: novel by Langston Hughes
+  creators:
+  - Langston Hughes
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Outline of History
+  normalized_title: the outline of history
+  wikidata_id: Q5840464
+  wikidata_label: The Outline of History
+  wikidata_description: book by H. G. Wells
+  creators:
+  - H. G. Wells
+  sort_year: 1919
+  date_label: '1919'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Oven Bird
+  normalized_title: the oven bird
+  wikidata_id: Q7755727
+  wikidata_label: The Oven Bird
+  wikidata_description: poem
+  creators:
+  - Robert Frost
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Herland
+  normalized_title: herland
+  wikidata_id: Q5739278
+  wikidata_label: Herland
+  wikidata_description: 1915 novel by Charlotte Perkins Gilman
+  creators:
+  - Charlotte Perkins Gilman
+  sort_year: 1915
+  date_label: '1915'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Rhodora
+  normalized_title: the rhodora
+  wikidata_id: Q7760610
+  wikidata_label: The Rhodora
+  wikidata_description: poem written by Ralph Waldo Emerson
+  creators:
+  - Ralph Waldo Emerson
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Vandover and the Brute
+  normalized_title: vandover and the brute
+  wikidata_id: Q19881660
+  wikidata_label: Vandover and the Brute
+  wikidata_description: 1914 novel by Frank Norris
+  creators:
+  - Frank Norris
+  sort_year: 1914
+  date_label: '1914'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: 'Vanity Fair: A Novel without a Hero'
+  normalized_title: vanity fair a novel without a hero
+  wikidata_id: Q111271937
+  wikidata_label: 'Vanity Fair: A Novel without a Hero'
+  wikidata_description: novel by William Makepeace Thackeray
+  creators:
+  - William Makepeace Thackeray
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: A Toccata of Galuppi’s
+  normalized_title: a toccata of galuppis
+  wikidata_id: Q2819931
+  wikidata_label: A Toccata of Galuppi's
+  wikidata_description: poem
+  creators:
+  - Robert Browning
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Hippolytus
+  normalized_title: hippolytus
+  wikidata_id: Q375786
+  wikidata_label: Hippolytus
+  wikidata_description: ancient Greek tragedy by Euripides
+  creators:
+  - Euripides
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Inside the Whale
+  normalized_title: inside the whale
+  wikidata_id: Q2908748
+  wikidata_label: Inside the Whale
+  wikidata_description: 1940 essay by George Orwell
+  creators:
+  - George Orwell
+  sort_year: 1940
+  date_label: '1940'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Save Me the Waltz
+  normalized_title: save me the waltz
+  wikidata_id: Q2822836
+  wikidata_label: Save Me the Waltz
+  wikidata_description: book by Zelda Fitzgerald
+  creators:
+  - Zelda Fitzgerald
+  sort_year: 1932
+  date_label: '1932'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: A Defence of Poetry
+  normalized_title: a defence of poetry
+  wikidata_id: Q3707362
+  wikidata_label: A Defence of Poetry
+  wikidata_description: essay by Percy Bysshe Shelley
+  creators:
+  - Percy Bysshe Shelley
+  sort_year: 1840
+  date_label: '1840'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Hotel New Hampshire
+  normalized_title: the hotel new hampshire
+  wikidata_id: Q1169021
+  wikidata_label: The Hotel New Hampshire
+  wikidata_description: novel by John Irving
+  creators:
+  - John Irving
+  sort_year: 1981
+  date_label: '1981'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Spirit of the Age
+  normalized_title: the spirit of the age
+  wikidata_id: Q7765949
+  wikidata_label: The Spirit of the Age
+  wikidata_description: book by William Hazlitt
+  creators:
+  - William Hazlitt
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Tristan and Iseult
+  normalized_title: tristan and iseult
+  wikidata_id: Q7844150
+  wikidata_label: Tristan and Iseult
+  wikidata_description: 1971 novel by Rosemary Sutcliff
+  creators:
+  - Rosemary Sutcliff
+  sort_year: 1971
+  date_label: '1971'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Islands in the Stream
+  normalized_title: islands in the stream
+  wikidata_id: Q1664485
+  wikidata_label: Islands in the Stream
+  wikidata_description: 1970 novel by Ernest Hemingway
+  creators:
+  - Ernest Hemingway
+  sort_year: 1970
+  date_label: '1970'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: When Rain Clouds Gather
+  normalized_title: when rain clouds gather
+  wikidata_id: Q111944207
+  wikidata_label: When Rain Clouds Gather
+  wikidata_description: 1968 Bessie Head novel
+  creators:
+  - Bessie Emery Head
+  sort_year: 1968
+  date_label: '1968'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Peeling the Onion
+  normalized_title: peeling the onion
+  wikidata_id: Q124311994
+  wikidata_label: Peeling the Onion
+  wikidata_description: book by Wendy Orr
+  creators:
+  - Wendy Orr
+  sort_year: 1996
+  date_label: '1996'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: If Beale Street Could Talk
+  normalized_title: if beale street could talk
+  wikidata_id: Q15052484
+  wikidata_label: If Beale Street Could Talk
+  wikidata_description: novel by James Baldwin
+  creators:
+  - James Baldwin
+  sort_year: 1974
+  date_label: '1974'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Idiot Boy
+  normalized_title: the idiot boy
+  wikidata_id: Q7741358
+  wikidata_label: The Idiot Boy
+  wikidata_description: poem
+  creators:
+  - William Wordsworth
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Cymbeline
+  normalized_title: cymbeline
+  wikidata_id: Q730212
+  wikidata_label: Cymbeline
+  wikidata_description: play by William Shakespeare
+  creators:
+  - William Shakespeare
+  sort_year: 1623
+  date_label: '1623'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Crimes of the Heart
+  normalized_title: crimes of the heart
+  wikidata_id: Q1633629
+  wikidata_label: Crimes of the Heart
+  wikidata_description: play by Beth Henley
+  creators:
+  - Beth Henley
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Inter Ice Age 4
+  normalized_title: inter ice age 4
+  wikidata_id: Q470397
+  wikidata_label: Inter Ice Age 4
+  wikidata_description: 1959 novel by Kobo Abe
+  creators:
+  - Kōbō Abe
+  sort_year: 1959
+  date_label: '1959'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Double Indemnity
+  normalized_title: double indemnity
+  wikidata_id: Q2270341
+  wikidata_label: Double Indemnity
+  wikidata_description: novel by James M. Cain
+  creators:
+  - James M. Cain
+  sort_year: 1943
+  date_label: '1943'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Wonderful Adventures of Nils
+  normalized_title: the wonderful adventures of nils
+  wikidata_id: Q726254
+  wikidata_label: The Wonderful Adventures of Nils
+  wikidata_description: 1906 children's fantasy novel by Selma Lagerlöf
+  creators:
+  - Selma Lagerlöf
+  sort_year: 1906
+  date_label: '1906'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Tono-Bungay
+  normalized_title: tono bungay
+  wikidata_id: Q1535422
+  wikidata_label: Tono-bungay
+  wikidata_description: novel by H.G. Wells
+  creators:
+  - H. G. Wells
+  sort_year: 1909
+  date_label: '1909'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Caliban Upon Setebos
+  normalized_title: caliban upon setebos
+  wikidata_id: Q5019815
+  wikidata_label: Caliban upon Setebos
+  wikidata_description: poem
+  creators:
+  - Robert Browning
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Liza of Lambeth
+  normalized_title: liza of lambeth
+  wikidata_id: Q1866618
+  wikidata_label: Liza of Lambeth
+  wikidata_description: 1897 novel by William Somerset Maugham
+  creators:
+  - William Somerset Maugham
+  sort_year: 1897
+  date_label: '1897'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Confessions of Felix Krull
+  normalized_title: confessions of felix krull
+  wikidata_id: Q137052
+  wikidata_label: Confessions of Felix Krull
+  wikidata_description: 1954 novel by Thomas Mann
+  creators:
+  - Thomas Mann
+  sort_year: 1954
+  date_label: '1954'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Revolution Will Not Be Televised
+  normalized_title: the revolution will not be televised
+  wikidata_id: Q7760580
+  wikidata_label: The Revolution Will Not Be Televised
+  wikidata_description: 2004 book by Joe Trippi
+  creators: []
+  sort_year: 2004
+  date_label: '2004'
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Little Drummer Girl
+  normalized_title: the little drummer girl
+  wikidata_id: Q1214462
+  wikidata_label: The Little Drummer Girl
+  wikidata_description: 1983 novel by John le Carré
+  creators:
+  - John le Carré
+  sort_year: 1983
+  date_label: '1983'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Erl-King
+  normalized_title: the erl king
+  wikidata_id: Q3226565
+  wikidata_label: The Erl-King
+  wikidata_description: novel by Michel Tournier
+  creators:
+  - Michel Tournier
+  sort_year: 1970
+  date_label: '1970'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Town and the City
+  normalized_title: the town and the city
+  wikidata_id: Q2333013
+  wikidata_label: The Town and the City
+  wikidata_description: novel by Jack Kerouac
+  creators:
+  - Jack Kerouac
+  sort_year: 1950
+  date_label: '1950'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Edgar Huntly
+  normalized_title: edgar huntly
+  wikidata_id: Q5337298
+  wikidata_label: Edgar Huntly
+  wikidata_description: 1799 novel by Charles Brockden Brown
+  creators:
+  - Charles Brockden Brown
+  sort_year: 1799
+  date_label: '1799'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Caretaker
+  normalized_title: the caretaker
+  wikidata_id: Q1194169
+  wikidata_label: The Caretaker
+  wikidata_description: play written by Harold Pinter
+  creators:
+  - Harold Pinter
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Main Travelled Roads
+  normalized_title: main travelled roads
+  wikidata_id: Q16386851
+  wikidata_label: Main-Travelled Roads
+  wikidata_description: book by Hamlin Garland
+  creators:
+  - Hamlin Garland
+  sort_year: 1891
+  date_label: '1891'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The History Boys
+  normalized_title: the history boys
+  wikidata_id: Q5572447
+  wikidata_label: The History Boys
+  wikidata_description: play by Alan Bennett
+  creators:
+  - Alan Bennett
+  sort_year: 2004
+  date_label: '2004'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Circle Game
+  normalized_title: the circle game
+  wikidata_id: Q7723073
+  wikidata_label: The Circle Game
+  wikidata_description: book by Margaret Atwood
+  creators:
+  - Margaret Atwood
+  sort_year: 1964
+  date_label: '1964'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Between the World and Me
+  normalized_title: between the world and me
+  wikidata_id: Q20669329
+  wikidata_label: Between the World and Me
+  wikidata_description: 2015 book by Ta-Nehisi Coates
+  creators:
+  - Ta-Nehisi Coates
+  sort_year: 2015
+  date_label: '2015'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Day the Leader was Killed
+  normalized_title: the day the leader was killed
+  wikidata_id: Q7729227
+  wikidata_label: The Day the Leader was Killed
+  wikidata_description: 1985 novel by Naguib Mahfouz
+  creators:
+  - Naguib Mahfouz
+  sort_year: 1985
+  date_label: '1985'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: A Horseman in the Sky
+  normalized_title: a horseman in the sky
+  wikidata_id: Q4657405
+  wikidata_label: A Horseman in the Sky
+  wikidata_description: short story by Ambrose Bierce
+  creators:
+  - Ambrose Bierce
+  sort_year: 1889
+  date_label: '1889'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Berlin Alexanderplatz
+  normalized_title: berlin alexanderplatz
+  wikidata_id: Q694245
+  wikidata_label: Berlin Alexanderplatz
+  wikidata_description: novel by Alfred Döblin
+  creators:
+  - Alfred Döblin
+  sort_year: 1929
+  date_label: '1929'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Vineland
+  normalized_title: vineland
+  wikidata_id: Q2738674
+  wikidata_label: Vineland
+  wikidata_description: novel by Thomas Pynchon
+  creators:
+  - Thomas Pynchon
+  sort_year: 1990
+  date_label: '1990'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Premature Burial
+  normalized_title: the premature burial
+  wikidata_id: Q2086517
+  wikidata_label: The Premature Burial
+  wikidata_description: short story by Edgar Allan Poe
+  creators:
+  - Edgar Allan Poe
+  sort_year: 1844
+  date_label: '1844'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Teach Us to Outgrow Our Madness
+  normalized_title: teach us to outgrow our madness
+  wikidata_id: Q5475651
+  wikidata_label: Teach Us to Outgrow Our Madness
+  wikidata_description: 1969 short story collection by Kenzaburō Ōe
+  creators:
+  - Kenzaburō Ōe
+  sort_year: 1969
+  date_label: '1969'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Buried Giant
+  normalized_title: the buried giant
+  wikidata_id: Q19363462
+  wikidata_label: The Buried Giant
+  wikidata_description: 2015 novel by Kazuo Ishiguro
+  creators:
+  - Kazuo Ishiguro
+  sort_year: 2015
+  date_label: '2015'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Grandissimes
+  normalized_title: the grandissimes
+  wikidata_id: Q7737514
+  wikidata_label: The Grandissimes
+  wikidata_description: novel by George Washington Cable
+  creators:
+  - George Washington Cable
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Conference of the Birds
+  normalized_title: the conference of the birds
+  wikidata_id: Q2271966
+  wikidata_label: The Conference of the Birds
+  wikidata_description: Persian poem by Sufi poet Attar
+  creators:
+  - Attar of Nishapur
+  sort_year: 1177
+  date_label: '1177'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Goophered Grapevine
+  normalized_title: the goophered grapevine
+  wikidata_id: Q19088555
+  wikidata_label: The Goophered Grapevine
+  wikidata_description: short story by Charles Chesnutt
+  creators:
+  - Charles Chesnutt
+  sort_year: 1899
+  date_label: '1899'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Lyrics of Lowly Life
+  normalized_title: lyrics of lowly life
+  wikidata_id: Q111889807
+  wikidata_label: Lyrics of Lowly Life
+  wikidata_description: 1896 collection of poetry by Paul Laurence Dunbar
+  creators:
+  - Paul Laurence Dunbar
+  sort_year: 1896
+  date_label: '1896'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Billy Budd, Sailor
+  normalized_title: billy budd sailor
+  wikidata_id: Q863037
+  wikidata_label: Billy Budd, Sailor
+  wikidata_description: novella by Herman Melville
   creators:
   - Herman Melville
   sort_year: 1924
   date_label: '1924'
-  source: codex_manual_metadata_correction
+  source: wikidata_metadata_overlay
   confidence: high
-  notes: Manual target metadata for merged Billy Budd, Foretopman title variant.
-- title: Looking Backward
-  normalized_title: looking backward
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Flies
+  normalized_title: the flies
+  wikidata_id: Q1212496
+  wikidata_label: The Flies
+  wikidata_description: 1947 play by Jean-Paul Sartre
   creators:
-  - Edward Bellamy
-  sort_year: 1888
-  date_label: '1888'
-  source: codex_manual_metadata_correction
+  - Jean-Paul Sartre
+  sort_year: 1947
+  date_label: '1947'
+  source: wikidata_metadata_overlay
   confidence: high
-  notes: 'Manual target metadata for merged full-title variant Looking Backward: 2000-1887.'
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Maud Martha
+  normalized_title: maud martha
+  wikidata_id: Q17006637
+  wikidata_label: Maud Martha
+  wikidata_description: book by Gwendolyn Brooks
+  creators:
+  - Gwendolyn Brooks
+  sort_year: 1953
+  date_label: '1953'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Pike County Ballads
+  normalized_title: pike county ballads
+  wikidata_id: Q16947415
+  wikidata_label: Pike County Ballads
+  wikidata_description: book by John Hay
+  creators:
+  - John Hay
+  sort_year: 1871
+  date_label: '1871'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Golden Lotus
+  normalized_title: the golden lotus
+  wikidata_id: Q753535
+  wikidata_label: Jin Ping Mei
+  wikidata_description: 1610 Chinese naturalistic novel
+  creators:
+  - Lanling Xiaoxiao Sheng
+  sort_year: 1610
+  date_label: '1610'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Barabbas
+  normalized_title: barabbas
+  wikidata_id: Q547731
+  wikidata_label: Barabbas
+  wikidata_description: novel by Pär Lagerkvist
+  creators:
+  - Pär Lagerkvist
+  sort_year: 1950
+  date_label: '1950'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Dust Tracks on a Road
+  normalized_title: dust tracks on a road
+  wikidata_id: Q5316992
+  wikidata_label: Dust Tracks on a Road
+  wikidata_description: autobiographical book by Zora Neale Hurston
+  creators:
+  - Zora Neale Hurston
+  sort_year: 1942
+  date_label: '1942'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Life is Elsewhere
+  normalized_title: life is elsewhere
+  wikidata_id: Q966732
+  wikidata_label: Life Is Elsewhere
+  wikidata_description: novel by Milan Kundera
+  creators:
+  - Milan Kundera
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Five-Forty-Eight
+  normalized_title: the five forty eight
+  wikidata_id: Q7734260
+  wikidata_label: The Five-Forty-Eight
+  wikidata_description: short story by John Cheever
+  creators:
+  - John Cheever
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Et dukkehjem
+  normalized_title: et dukkehjem
+  wikidata_id: Q669694
+  wikidata_label: A Doll's House
+  wikidata_description: 1879 play by Henrik Ibsen
+  creators:
+  - Henrik Ibsen
+  sort_year: 1879
+  date_label: '1879'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Tales of the Alhambra
+  normalized_title: tales of the alhambra
+  wikidata_id: Q1210997
+  wikidata_label: Tales of the Alhambra
+  wikidata_description: book
+  creators:
+  - Washington Irving
+  sort_year: 1832
+  date_label: '1832'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Fire Down Below
+  normalized_title: fire down below
+  wikidata_id: Q18276103
+  wikidata_label: Fire Down Below
+  wikidata_description: book by William Golding
+  creators:
+  - William Golding
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Girl from Samos
+  normalized_title: the girl from samos
+  wikidata_id: Q3822133
+  wikidata_label: Samia
+  wikidata_description: ancient Greek comedy by Menander
+  creators:
+  - Menander
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Trials of Brother Jero
+  normalized_title: the trials of brother jero
+  wikidata_id: Q9358278
+  wikidata_label: The Trials of Brother Jero
+  wikidata_description: play by Wole Soyinka
+  creators:
+  - Wole Soyinka
+  sort_year: 1964
+  date_label: '1964'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Group
+  normalized_title: the group
+  wikidata_id: Q1211885
+  wikidata_label: The Group
+  wikidata_description: novel by Mary McCarthy
+  creators:
+  - Mary McCarthy
+  sort_year: 1963
+  date_label: '1963'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Long Dark Tea-Time of the Soul
+  normalized_title: the long dark tea time of the soul
+  wikidata_id: Q1199348
+  wikidata_label: The Long Dark Tea-Time of the Soul
+  wikidata_description: 1988 novel by Douglas Adams
+  creators:
+  - Douglas Adams
+  sort_year: 1988
+  date_label: '1988'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Aghwee the Sky Monster
+  normalized_title: aghwee the sky monster
+  wikidata_id: Q4692471
+  wikidata_label: Aghwee the Sky Monster
+  wikidata_description: novel by Kenzaburo Oe
+  creators:
+  - Kenzaburō Ōe
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Adulterous Woman
+  normalized_title: the adulterous woman
+  wikidata_id: Q7712420
+  wikidata_label: The Adulterous Woman
+  wikidata_description: short story by Albert Camus
+  creators:
+  - Albert Camus
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Castle of Crossed Destinies
+  normalized_title: the castle of crossed destinies
+  wikidata_id: Q612882
+  wikidata_label: The Castle of Crossed Destinies
+  wikidata_description: 1973 novel by Italo Calvino
+  creators:
+  - Italo Calvino
+  sort_year: 1973
+  date_label: '1973'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Clear Light of Day
+  normalized_title: clear light of day
+  wikidata_id: Q3667522
+  wikidata_label: Clear Light of Day
+  wikidata_description: 1980 novel by Anita Desai
+  creators:
+  - Anita Desai
+  sort_year: 1980
+  date_label: '1980'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Bound East for Cardiff
+  normalized_title: bound east for cardiff
+  wikidata_id: Q110985024
+  wikidata_label: Bound East for Cardiff
+  wikidata_description: play by Eugene O'Neill
+  creators:
+  - Eugene O'Neill
+  sort_year: 1916
+  date_label: '1916'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: If He Hollers Let Him Go
+  normalized_title: if he hollers let him go
+  wikidata_id: Q5990320
+  wikidata_label: If He Hollers Let Him Go
+  wikidata_description: novel by Chester Himes
+  creators:
+  - Chester Himes
+  sort_year: 1945
+  date_label: '1945'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Children of the Alley
+  normalized_title: children of the alley
+  wikidata_id: Q2275911
+  wikidata_label: Children of Gebelawi
+  wikidata_description: 1967 novel by Naguib Mahfouz
+  creators:
+  - Naguib Mahfouz
+  sort_year: 1967
+  date_label: '1967'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The City in the Sea
+  normalized_title: the city in the sea
+  wikidata_id: Q3657057
+  wikidata_label: The City in the Sea
+  wikidata_description: poem written by Edgar Allan Poe
+  creators:
+  - Edgar Allan Poe
+  sort_year: 1831
+  date_label: '1831'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Stalin Epigram
+  normalized_title: stalin epigram
+  wikidata_id: Q31506
+  wikidata_label: Stalin Epigram
+  wikidata_description: poem by Osip Mandelstam
+  creators:
+  - Osip Mandelstam
+  sort_year: 1933
+  date_label: '1933'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Unfortunate Traveller
+  normalized_title: the unfortunate traveller
+  wikidata_id: Q1588078
+  wikidata_label: The Unfortunate Traveller
+  wikidata_description: picaresque novel by Thomas Nashe
+  creators:
+  - Thomas Nashe
+  sort_year: 1594
+  date_label: '1594'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Mythologies
+  normalized_title: mythologies
+  wikidata_id: Q1396027
+  wikidata_label: Mythologies
+  wikidata_description: book by Roland Barthes
+  creators:
+  - Roland Barthes
+  sort_year: 1957
+  date_label: '1957'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: House Taken Over
+  normalized_title: house taken over
+  wikidata_id: Q8341841
+  wikidata_label: Casa tomada
+  wikidata_description: 1949 short story by Julio Cortázar
+  creators:
+  - Julio Cortázar
+  sort_year: 1949
+  date_label: '1949'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Auguries of Innocence
+  normalized_title: auguries of innocence
+  wikidata_id: Q2027936
+  wikidata_label: Auguries of Innocence
+  wikidata_description: poem by William Blake
+  creators:
+  - William Blake
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Green Man
+  normalized_title: the green man
+  wikidata_id: Q7738180
+  wikidata_label: The Green Man
+  wikidata_description: novel by Kingsley Amis
+  creators:
+  - Kingsley Amis
+  sort_year: 1969
+  date_label: '1969'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Women of Brewster Place
+  normalized_title: the women of brewster place
+  wikidata_id: Q7775605
+  wikidata_label: The Women of Brewster Place
+  wikidata_description: 1982 novel by Gloria Naylor
+  creators:
+  - Gloria Naylor
+  sort_year: 1982
+  date_label: '1982'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: After the Banquet
+  normalized_title: after the banquet
+  wikidata_id: Q2080424
+  wikidata_label: After the Banquet
+  wikidata_description: novel by Yukio Mishima
+  creators:
+  - Yukio Mishima
+  sort_year: 1960
+  date_label: '1960'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Flame of Life
+  normalized_title: the flame of life
+  wikidata_id: Q1167825
+  wikidata_label: The Flame
+  wikidata_description: 1900 novel by Gabriele D'Annunzio
+  creators:
+  - Gabriele D'Annunzio
+  sort_year: 1900
+  date_label: '1900'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Sun and Steel
+  normalized_title: sun and steel
+  wikidata_id: Q7638687
+  wikidata_label: Sun and Steel
+  wikidata_description: essay by Yukio Mishima
+  creators:
+  - Yukio Mishima
+  sort_year: 1968
+  date_label: '1968'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Winterset
+  normalized_title: winterset
+  wikidata_id: Q8026514
+  wikidata_label: Winterset
+  wikidata_description: play written by Maxwell Anderson
+  creators:
+  - Maxwell Anderson
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Beautyful Ones Are Not Yet Born
+  normalized_title: the beautyful ones are not yet born
+  wikidata_id: Q7716212
+  wikidata_label: The Beautyful Ones Are Not Yet Born
+  wikidata_description: 1968 novel by Ayi Kwei Armah
+  creators:
+  - Ayi Kwei Armah
+  sort_year: 1968
+  date_label: '1968'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Tree of Man
+  normalized_title: the tree of man
+  wikidata_id: Q5839903
+  wikidata_label: The Tree of Man
+  wikidata_description: novel by Patrick White
+  creators:
+  - Patrick White
+  sort_year: 1955
+  date_label: '1955'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Recessional
+  normalized_title: recessional
+  wikidata_id: Q7302393
+  wikidata_label: Recessional
+  wikidata_description: 1897 poem written by Rudyard Kipling
+  creators:
+  - Rudyard Kipling
+  sort_year: 1897
+  date_label: '1897'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Erewhon
+  normalized_title: erewhon
+  wikidata_id: Q1350048
+  wikidata_label: Erewhon
+  wikidata_description: 1872 novel by Samuel Butler
+  creators:
+  - Samuel Butler
+  sort_year: 1872
+  date_label: '1872'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Feel Free
+  normalized_title: feel free
+  wikidata_id: Q60062841
+  wikidata_label: Feel Free
+  wikidata_description: 2018 book of essays by Zadie Smith
+  creators:
+  - Zadie Smith
+  sort_year: 2018
+  date_label: '2018'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Generation X
+  normalized_title: generation x
+  wikidata_id: Q633210
+  wikidata_label: 'Generation X: Tales for an Accelerated Culture'
+  wikidata_description: 1991 novel by Douglas Coupland
+  creators:
+  - Douglas Coupland
+  sort_year: 1991
+  date_label: '1991'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Tragedy of Macbeth
+  normalized_title: the tragedy of macbeth
+  wikidata_id: Q130283
+  wikidata_label: Macbeth
+  wikidata_description: tragic play by William Shakespeare from the early 1600s
+  creators:
+  - William Shakespeare
+  sort_year: 1623
+  date_label: '1623'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The History of the Siege of Lisbon
+  normalized_title: the history of the siege of lisbon
+  wikidata_id: Q2701463
+  wikidata_label: The History of the Siege of Lisbon
+  wikidata_description: 1989 novel by José Saramago
+  creators:
+  - José Saramago
+  sort_year: 1989
+  date_label: '1989'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Trilogy of Desire
+  normalized_title: trilogy of desire
+  wikidata_id: Q4463074
+  wikidata_label: Trilogy of desire
+  wikidata_description: novel by Theodore Dreiser
+  creators:
+  - Theodore Dreiser
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Blood and Sand
+  normalized_title: blood and sand
+  wikidata_id: Q5646475
+  wikidata_label: Blood and Sand
+  wikidata_description: novel by Vicente Blasco Ibañez
+  creators:
+  - Vicente Blasco Ibáñez
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Le Horla
+  normalized_title: le horla
+  wikidata_id: Q3223495
+  wikidata_label: Le Horla
+  wikidata_description: 1886 collection of short stories by Guy de Maupassant
+  creators:
+  - Guy de Maupassant
+  sort_year: 1886
+  date_label: '1886'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: A Retrieved Reformation
+  normalized_title: a retrieved reformation
+  wikidata_id: Q4659205
+  wikidata_label: A Retrieved Reformation
+  wikidata_description: short story by O. Henry
+  creators:
+  - O. Henry
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Alcestis
+  normalized_title: alcestis
+  wikidata_id: Q1246408
+  wikidata_label: Alcestis
+  wikidata_description: ancient Greek tragedy by Euripides
+  creators:
+  - Euripides
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Adventure of the Empty House
+  normalized_title: the adventure of the empty house
+  wikidata_id: Q1171427
+  wikidata_label: The Adventure of the Empty House
+  wikidata_description: short story by Arthur Conan Doyle
+  creators:
+  - Arthur Conan Doyle
+  sort_year: 1903
+  date_label: '1903'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Resistible Rise of Arturo Ui
+  normalized_title: the resistible rise of arturo ui
+  wikidata_id: Q1198320
+  wikidata_label: The Resistible Rise of Arturo Ui
+  wikidata_description: 1957 play by Bertolt Brecht
+  creators:
+  - Bertolt Brecht
+  sort_year: 1957
+  date_label: '1957'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Head to Toe
+  normalized_title: head to toe
+  wikidata_id: Q133528653
+  wikidata_label: Head to Toe
+  wikidata_description: 1971 novel by Joe Orton
+  creators:
+  - Joe Orton
+  sort_year: 1971
+  date_label: '1971'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Comedian as the Letter C
+  normalized_title: the comedian as the letter c
+  wikidata_id: Q7726911
+  wikidata_label: The Comedian as the Letter C
+  wikidata_description: poem
+  creators:
+  - Wallace Stevens
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Ones Who Walk Away from Omelas
+  normalized_title: the ones who walk away from omelas
+  wikidata_id: Q7755107
+  wikidata_label: The Ones Who Walk Away from Omelas
+  wikidata_description: 1973 short story by Ursula K. Le Guin
+  creators:
+  - Ursula K. Le Guin
+  sort_year: 1973
+  date_label: '1973'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Dream Life of Balso Snell
+  normalized_title: the dream life of balso snell
+  wikidata_id: Q7730924
+  wikidata_label: The Dream Life of Balso Snell
+  wikidata_description: novel by Nathanael West
+  creators:
+  - Nathanael West
+  sort_year: 1931
+  date_label: '1931'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Bouvard and Pecuchet
+  normalized_title: bouvard and pecuchet
+  wikidata_id: Q728104
+  wikidata_label: Bouvard et Pécuchet
+  wikidata_description: novel by Gustave Flaubert
+  creators:
+  - Gustave Flaubert
+  sort_year: 1881
+  date_label: '1881'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Imp of the Perverse
+  normalized_title: the imp of the perverse
+  wikidata_id: Q1570069
+  wikidata_label: The Imp of the Perverse
+  wikidata_description: 1845 short story by Edgar Allan Poe
+  creators:
+  - Edgar Allan Poe
+  sort_year: 1845
+  date_label: '1845'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Ruy Blas
+  normalized_title: ruy blas
+  wikidata_id: Q3085278
+  wikidata_label: Ruy Blas
+  wikidata_description: tragedy by Victor Hugo
+  creators: []
+  sort_year: 1839
+  date_label: '1839'
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Monk
+  normalized_title: the monk
+  wikidata_id: Q2659564
+  wikidata_label: The Monk
+  wikidata_description: 1796 novel by Matthew Lewis
+  creators:
+  - Matthew Gregory Lewis
+  sort_year: 1796
+  date_label: '1796'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Bear Came Over the Mountain
+  normalized_title: the bear came over the mountain
+  wikidata_id: Q60664117
+  wikidata_label: The Bear Came Over the Mountain
+  wikidata_description: short story by Alice Munro
+  creators:
+  - Alice Munro
+  sort_year: 1999
+  date_label: '1999'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Hive
+  normalized_title: the hive
+  wikidata_id: Q3212510
+  wikidata_label: The Hive
+  wikidata_description: 1951 novel by Camilo José Cela
+  creators:
+  - Camilo José Cela
+  sort_year: 1951
+  date_label: '1951'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Mother Night
+  normalized_title: mother night
+  wikidata_id: Q1470593
+  wikidata_label: Mother Night
+  wikidata_description: novel by Kurt Vonnegut
+  creators:
+  - Kurt Vonnegut
+  sort_year: 1961
+  date_label: '1961'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Tale of Peter Rabbit
+  normalized_title: the tale of peter rabbit
+  wikidata_id: Q580463
+  wikidata_label: The Tale of Peter Rabbit
+  wikidata_description: book by Beatrix Potter
+  creators:
+  - Beatrix Potter
+  sort_year: 1902
+  date_label: '1902'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Desperate Remedies
+  normalized_title: desperate remedies
+  wikidata_id: Q2846293
+  wikidata_label: Desperate Remedies
+  wikidata_description: 1871 novel by Thomas Hardy
+  creators:
+  - Thomas Hardy
+  sort_year: 1871
+  date_label: '1871'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The House by the Medlar Tree
+  normalized_title: the house by the medlar tree
+  wikidata_id: Q2356529
+  wikidata_label: I Malavoglia
+  wikidata_description: 1881 novel by Giovanni Verga
+  creators:
+  - Giovanni Verga
+  sort_year: 1881
+  date_label: '1881'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Changeling
+  normalized_title: the changeling
+  wikidata_id: Q7722086
+  wikidata_label: The Changeling
+  wikidata_description: English tragedy play
+  creators:
+  - Thomas Middleton
+  - William Rowley
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Surprised by Joy
+  normalized_title: surprised by joy
+  wikidata_id: Q2367535
+  wikidata_label: Surprised by Joy
+  wikidata_description: partial autobiography about the author's conversion to Christianity
+    by C.S. Lewis
+  creators:
+  - C. S. Lewis
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Golden Pot
+  normalized_title: the golden pot
+  wikidata_id: Q785009
+  wikidata_label: The Golden Pot
+  wikidata_description: 1814 novella by E. T. A. Hoffmann
+  creators:
+  - E. T. A. Hoffmann
+  sort_year: 1814
+  date_label: '1814'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Temple of My Familiar
+  normalized_title: the temple of my familiar
+  wikidata_id: Q7768366
+  wikidata_label: The Temple of My Familiar
+  wikidata_description: novel by Alice Walker
+  creators:
+  - Alice Walker
+  sort_year: 1989
+  date_label: '1989'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Sophie's World
+  normalized_title: sophies world
+  wikidata_id: Q61324
+  wikidata_label: Sophie's World
+  wikidata_description: 1991 novel by Jostein Gaarder
+  creators:
+  - Jostein Gaarder
+  sort_year: 1991
+  date_label: '1991'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: God of Carnage
+  normalized_title: god of carnage
+  wikidata_id: Q1193969
+  wikidata_label: God of Carnage
+  wikidata_description: play by Yasmina Reza
+  creators:
+  - Yasmina Reza
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Curious Incident of the Dog in the Night-Time
+  normalized_title: the curious incident of the dog in the night time
+  wikidata_id: Q14956953
+  wikidata_label: The Curious Incident of the Dog in the Night-Time
+  wikidata_description: play by Simon Stephens, adapted from the novel
+  creators:
+  - Simon Stephens
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Signs and Symbols
+  normalized_title: signs and symbols
+  wikidata_id: Q7513028
+  wikidata_label: Signs and Symbols
+  wikidata_description: short story by Vladimir Nabokov
+  creators:
+  - Vladimir Nabokov
+  sort_year: 1948
+  date_label: '1948'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Tales of the Jazz Age
+  normalized_title: tales of the jazz age
+  wikidata_id: Q3928516
+  wikidata_label: Tales of the Jazz Age
+  wikidata_description: collection of short stories by F. Scott Fitzgerald
+  creators:
+  - F. Scott Fitzgerald
+  sort_year: 1922
+  date_label: '1922'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Jekyll and Hyde
+  normalized_title: jekyll and hyde
+  wikidata_id: Q217352
+  wikidata_label: Strange Case of Dr Jekyll and Mr Hyde
+  wikidata_description: 1886 novella by Robert Louis Stevenson
+  creators:
+  - Robert Louis Stevenson
+  sort_year: 1886
+  date_label: '1886'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Swami and Friends
+  normalized_title: swami and friends
+  wikidata_id: Q7653285
+  wikidata_label: Swami and Friends
+  wikidata_description: novel by Indian author R. K. Narayan
+  creators:
+  - R. K. Narayan
+  sort_year: 1935
+  date_label: '1935'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The New Negro
+  normalized_title: the new negro
+  wikidata_id: Q3988480
+  wikidata_label: The New Negro
+  wikidata_description: book by Alain Locke
+  creators:
+  - various authors
+  sort_year: 1925
+  date_label: '1925'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Man with the Blue Guitar
+  normalized_title: the man with the blue guitar
+  wikidata_id: Q19572857
+  wikidata_label: The Man With the Blue Guitar
+  wikidata_description: poem
+  creators:
+  - Wallace Stevens
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Mirror and the Light
+  normalized_title: the mirror and the light
+  wikidata_id: Q7751674
+  wikidata_label: The Mirror and the Light
+  wikidata_description: 2020 novel by Hilary Mantel
+  creators:
+  - Hilary Mantel
+  sort_year: 2020
+  date_label: '2020'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Curse of the Starving Class
+  normalized_title: curse of the starving class
+  wikidata_id: Q4380323
+  wikidata_label: Curse of the Starving Class
+  wikidata_description: play by Sam Shepard
+  creators:
+  - Sam Shepard
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Lives of the Poets
+  normalized_title: lives of the poets
+  wikidata_id: Q4015014
+  wikidata_label: Lives of the Most Eminent English Poets
+  wikidata_description: book by Samuel Johnson
+  creators:
+  - Samuel Johnson
+  sort_year: 1779
+  date_label: '1779'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Rose Aylmer
+  normalized_title: rose aylmer
+  wikidata_id: Q19102014
+  wikidata_label: Rose Aylmer
+  wikidata_description: poem by Walter Savage Landor
+  creators:
+  - Walter Savage Landor
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Ninety-Three
+  normalized_title: ninety three
+  wikidata_id: Q199940
+  wikidata_label: Ninety-three
+  wikidata_description: novel by Victor Hugo
+  creators: []
+  sort_year: 1874
+  date_label: '1874'
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Rendezvous with Rama
+  normalized_title: rendezvous with rama
+  wikidata_id: Q741222
+  wikidata_label: Rendezvous with Rama
+  wikidata_description: 1973 novel by Arthur C. Clarke
+  creators:
+  - Arthur C. Clarke
+  sort_year: 1973
+  date_label: '1973'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Sonnet 18
+  normalized_title: sonnet 18
+  wikidata_id: Q19047919
+  wikidata_label: Sonnet 18
+  wikidata_description: Richard Barnfield poem
+  creators:
+  - Richard Barnfield
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Rosy Crucifixion
+  normalized_title: the rosy crucifixion
+  wikidata_id: Q2599462
+  wikidata_label: The Rosy Crucifixion
+  wikidata_description: novel by Henry Miller
+  creators:
+  - Henry Miller
+  sort_year: 1949
+  date_label: '1949'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Round the Bend
+  normalized_title: round the bend
+  wikidata_id: Q7371208
+  wikidata_label: Round the Bend
+  wikidata_description: novel by Nevil Shute
+  creators:
+  - Nevil Shute
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Rabelais and His World
+  normalized_title: rabelais and his world
+  wikidata_id: Q3819637
+  wikidata_label: Rabelais and His World
+  wikidata_description: essay by Mikhail Bakhtin
+  creators:
+  - Mikhail Bakhtin
+  sort_year: 1965
+  date_label: '1965'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Five Orange Pips
+  normalized_title: the five orange pips
+  wikidata_id: Q1193379
+  wikidata_label: The Five Orange Pips
+  wikidata_description: short story by Arthur Conan Doyle
+  creators:
+  - Arthur Conan Doyle
+  sort_year: 1891
+  date_label: '1891'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Anil's Ghost
+  normalized_title: anils ghost
+  wikidata_id: Q3222646
+  wikidata_label: Anil's Ghost
+  wikidata_description: 2000 novel by Michael Ondaatje
+  creators:
+  - Michael Ondaatje
+  sort_year: 2000
+  date_label: '2000'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Trout Fishing in America
+  normalized_title: trout fishing in america
+  wikidata_id: Q7846597
+  wikidata_label: Trout Fishing in America
+  wikidata_description: 1967 novella by Richard Brautigan
+  creators:
+  - Richard Brautigan
+  sort_year: 1967
+  date_label: '1967'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: My Kinsman, Major Molineux
+  normalized_title: my kinsman major molineux
+  wikidata_id: Q964692
+  wikidata_label: My Kinsman, Major Molineux
+  wikidata_description: Short story by American author Nathaniel Hawthorne
+  creators:
+  - Nathaniel Hawthorne
+  sort_year: 1832
+  date_label: '1832'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Barefoot Boy
+  normalized_title: the barefoot boy
+  wikidata_id: Q48772029
+  wikidata_label: The Barefoot Boy
+  wikidata_description: poem by John Greenleaf Whittier
+  creators:
+  - John Greenleaf Whittier
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Inheritors
+  normalized_title: the inheritors
+  wikidata_id: Q2087440
+  wikidata_label: The Inheritors
+  wikidata_description: novel by William Golding
+  creators:
+  - William Golding
+  sort_year: 1955
+  date_label: '1955'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: What I Believe
+  normalized_title: what i believe
+  wikidata_id: Q132419278
+  wikidata_label: What I Believe
+  wikidata_description: essay by Bertrand Russell
+  creators:
+  - Bertrand Russell
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Woman at the Washington Zoo
+  normalized_title: the woman at the washington zoo
+  wikidata_id: Q124395065
+  wikidata_label: The Woman at the Washington Zoo
+  wikidata_description: book of poems by Randall Jarrell
+  creators:
+  - Randall Jarrell
+  sort_year: 1960
+  date_label: '1960'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Under the Gaslight
+  normalized_title: under the gaslight
+  wikidata_id: Q48989204
+  wikidata_label: Under the Gaslight
+  wikidata_description: play by Augustin Daly
+  creators:
+  - Augustin Daly
+  sort_year: 1867
+  date_label: '1867'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Growing Stone
+  normalized_title: the growing stone
+  wikidata_id: Q16385885
+  wikidata_label: The Growing Stone
+  wikidata_description: book by Albert Camus
+  creators:
+  - Albert Camus
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Quicksand
+  normalized_title: quicksand
+  wikidata_id: Q7271766
+  wikidata_label: Quicksand
+  wikidata_description: novel by Junichiro Tanizaki
+  creators:
+  - Jun'ichirō Tanizaki
+  sort_year: 1931
+  date_label: '1931'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Juneteenth
+  normalized_title: juneteenth
+  wikidata_id: Q6312519
+  wikidata_label: Juneteenth
+  wikidata_description: 1999 novel by Ralph Ellison
+  creators:
+  - Ralph Ellison
+  sort_year: 1999
+  date_label: '1999'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Winter Journey
+  normalized_title: winter journey
+  wikidata_id: Q134932988
+  wikidata_label: Winter Journey
+  wikidata_description: 2008 short story by Joel Lane
+  creators:
+  - Joel Lane
+  sort_year: 2008
+  date_label: '2008'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Captain Singleton
+  normalized_title: captain singleton
+  wikidata_id: Q1728631
+  wikidata_label: Captain Singleton
+  wikidata_description: 1720 novel by Daniel Defoe
+  creators:
+  - Daniel Defoe
+  sort_year: 1720
+  date_label: '1720'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Light That Failed
+  normalized_title: the light that failed
+  wikidata_id: Q1517178
+  wikidata_label: The Light That Failed
+  wikidata_description: novel by Rudyard Kipling
+  creators:
+  - Rudyard Kipling
+  sort_year: 1891
+  date_label: '1891'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Jakob von Gunten
+  normalized_title: jakob von gunten
+  wikidata_id: Q1679462
+  wikidata_label: Jakob von Gunten
+  wikidata_description: novel by Robert Walser
+  creators:
+  - Robert Walser
+  sort_year: 1909
+  date_label: '1909'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Spinoza of Market Street
+  normalized_title: the spinoza of market street
+  wikidata_id: Q16564422
+  wikidata_label: The Spinoza of Market Street
+  wikidata_description: short story by Isaac Bashevis Singer
+  creators:
+  - Isaac Bashevis Singer
+  sort_year: 1961
+  date_label: '1961'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Britannicus
+  normalized_title: britannicus
+  wikidata_id: Q1196012
+  wikidata_label: Britannicus
+  wikidata_description: tragic play by Jean Racine
+  creators:
+  - Jean Racine
+  sort_year: 1670
+  date_label: '1670'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Three Men in a Boat
+  normalized_title: three men in a boat
+  wikidata_id: Q955910
+  wikidata_label: Three Men in a Boat
+  wikidata_description: 1889 novel by Jerome K. Jerome
+  creators:
+  - Jerome K. Jerome
+  sort_year: 1889
+  date_label: '1889'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Ready Player One
+  normalized_title: ready player one
+  wikidata_id: Q3906523
+  wikidata_label: Ready Player One
+  wikidata_description: novel by Ernest Cline
+  creators:
+  - Ernest Cline
+  sort_year: 2011
+  date_label: '2011'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Book of Deuteronomy
+  normalized_title: book of deuteronomy
+  wikidata_id: Q42614
+  wikidata_label: Deuteronomy
+  wikidata_description: fifth book of the Torah and Christian Old Testament
+  creators:
+  - Moses
+  - Deuteronomist
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Recognitions
+  normalized_title: the recognitions
+  wikidata_id: Q1212808
+  wikidata_label: The Recognitions
+  wikidata_description: novel by William Gaddis
+  creators:
+  - William Gaddis
+  sort_year: 1955
+  date_label: '1955'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Autumn Day
+  normalized_title: autumn day
+  wikidata_id: Q19194081
+  wikidata_label: Autumn Day
+  wikidata_description: poem by Vladimir Nabokov
+  creators:
+  - Vladimir Nabokov
+  sort_year: 1916
+  date_label: '1916'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Futility
+  normalized_title: futility
+  wikidata_id: Q5510526
+  wikidata_label: Futility
+  wikidata_description: 1918 poem by Wilfred Owen
+  creators: []
+  sort_year: 1918
+  date_label: '1918'
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Counterfeiters
+  normalized_title: the counterfeiters
+  wikidata_id: Q276722
+  wikidata_label: The Counterfeiters
+  wikidata_description: 1925 novel by André Gide
+  creators:
+  - André Gide
+  sort_year: 1925
+  date_label: '1925'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Horses and Men
+  normalized_title: horses and men
+  wikidata_id: Q16386100
+  wikidata_label: Horses and Men
+  wikidata_description: 1923 short story collection by Sherwood Anderson
+  creators:
+  - Sherwood Anderson
+  sort_year: 1923
+  date_label: '1923'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Great Stone Face
+  normalized_title: the great stone face
+  wikidata_id: Q59792521
+  wikidata_label: The Great Stone Face
+  wikidata_description: version of short story in 1889 book
+  creators:
+  - Nathaniel Hawthorne
+  sort_year: 1889
+  date_label: '1889'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Lost in Yonkers
+  normalized_title: lost in yonkers
+  wikidata_id: Q4817639
+  wikidata_label: Lost in Yonkers
+  wikidata_description: play by Neil Simon
+  creators:
+  - Neil Simon
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Brief Interviews with Hideous Men
+  normalized_title: brief interviews with hideous men
+  wikidata_id: Q3644406
+  wikidata_label: Brief Interviews with Hideous Men
+  wikidata_description: 1999 short story collection by David Foster Wallace
+  creators:
+  - David Foster Wallace
+  sort_year: 1999
+  date_label: '1999'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Daffodils
+  normalized_title: daffodils
+  wikidata_id: Q2295398
+  wikidata_label: I Wandered Lonely as a Cloud
+  wikidata_description: poem by William Wordsworth
+  creators:
+  - William Wordsworth
+  sort_year: 1807
+  date_label: '1807'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Blue Cross
+  normalized_title: the blue cross
+  wikidata_id: Q6367266
+  wikidata_label: The Blue Cross
+  wikidata_description: short story by G.K. Chesterton
+  creators:
+  - G. K. Chesterton
+  sort_year: 1910
+  date_label: '1910'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Everything is Illuminated
+  normalized_title: everything is illuminated
+  wikidata_id: Q923551
+  wikidata_label: Everything Is Illuminated
+  wikidata_description: novel by Jonathan Safran Foer
+  creators:
+  - Jonathan Safran Foer
+  sort_year: 2002
+  date_label: '2002'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Delta of Venus
+  normalized_title: delta of venus
+  wikidata_id: Q1167497
+  wikidata_label: Delta of Venus
+  wikidata_description: 1977 short story collection by Anaïs Nin
+  creators:
+  - Anaïs Nin
+  sort_year: 1977
+  date_label: '1977'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Blues For Mister Charlie
+  normalized_title: blues for mister charlie
+  wikidata_id: Q4930510
+  wikidata_label: Blues for Mister Charlie
+  wikidata_description: play by James Baldwin
+  creators:
+  - James Baldwin
+  sort_year: 1964
+  date_label: '1964'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Cenci
+  normalized_title: the cenci
+  wikidata_id: Q7721863
+  wikidata_label: The Cenci
+  wikidata_description: 1819 play by Percy Bysshe Shelley
+  creators:
+  - Percy Bysshe Shelley
+  sort_year: 1819
+  date_label: '1819'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Disillusionment of Ten O’Clock
+  normalized_title: disillusionment of ten oclock
+  wikidata_id: Q5282232
+  wikidata_label: Disillusionment of Ten O'Clock
+  wikidata_description: poem
+  creators:
+  - Wallace Stevens
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Great Divorce
+  normalized_title: the great divorce
+  wikidata_id: Q2326672
+  wikidata_label: The Great Divorce
+  wikidata_description: novel by C. S. Lewis
+  creators:
+  - C. S. Lewis
+  sort_year: 1945
+  date_label: '1945'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Infinite Plan
+  normalized_title: the infinite plan
+  wikidata_id: Q3795130
+  wikidata_label: The Infinite Plan
+  wikidata_description: 1991 novel by Isabel Allende
+  creators:
+  - Isabel Allende
+  sort_year: 1991
+  date_label: '1991'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Rainbow
+  normalized_title: the rainbow
+  wikidata_id: Q3288936
+  wikidata_label: The Rainbow
+  wikidata_description: 1915 novel by D.H. Lawrence
+  creators:
+  - D. H. Lawrence
+  sort_year: 1915
+  date_label: '1915'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Counterparts
+  normalized_title: counterparts
+  wikidata_id: Q3937878
+  wikidata_label: Counterparts
+  wikidata_description: short story by James Joyce
+  creators:
+  - James Joyce
+  sort_year: 1914
+  date_label: '1914'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Country Husband
+  normalized_title: the country husband
+  wikidata_id: Q115553918
+  wikidata_label: The Country Husband
+  wikidata_description: 1954 short story by John Cheever
+  creators:
+  - John Cheever
+  sort_year: 1954
+  date_label: '1954'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Life in the Iron Mills
+  normalized_title: life in the iron mills
+  wikidata_id: Q6545189
+  wikidata_label: Life in the Iron Mills
+  wikidata_description: short story by Rebecca Harding Davis
+  creators:
+  - Rebecca Harding Davis
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Mystery of Marie Roget
+  normalized_title: the mystery of marie roget
+  wikidata_id: Q1167993
+  wikidata_label: The Mystery of Marie Rogêt
+  wikidata_description: short story by Edgar Allan Poe
+  creators:
+  - Edgar Allan Poe
+  sort_year: 1842
+  date_label: '1842'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Farming of Bones
+  normalized_title: the farming of bones
+  wikidata_id: Q7733468
+  wikidata_label: The Farming of Bones
+  wikidata_description: 1998 novel by Edwidge Danticat
+  creators:
+  - Edwidge Danticat
+  sort_year: 1998
+  date_label: '1998'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Typee
+  normalized_title: typee
+  wikidata_id: Q2463076
+  wikidata_label: Typee
+  wikidata_description: novel by Herman Melville
+  creators:
+  - Herman Melville
+  sort_year: 1846
+  date_label: '1846'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Botchan
+  normalized_title: botchan
+  wikidata_id: Q1190533
+  wikidata_label: Botchan
+  wikidata_description: novel by Natsume Sōseki
+  creators:
+  - Natsume Sōseki
+  sort_year: 1906
+  date_label: '1906'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Lives of the Most Eminent English Poets
+  normalized_title: lives of the most eminent english poets
+  wikidata_id: Q4015014
+  wikidata_label: Lives of the Most Eminent English Poets
+  wikidata_description: book by Samuel Johnson
+  creators:
+  - Samuel Johnson
+  sort_year: 1779
+  date_label: '1779'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Woyzeck
+  normalized_title: woyzeck
+  wikidata_id: Q657215
+  wikidata_label: Woyzeck
+  wikidata_description: play written by Georg Büchner
+  creators: []
+  sort_year: 1875
+  date_label: '1875'
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Heathen Chinee
+  normalized_title: the heathen chinee
+  wikidata_id: Q7739250
+  wikidata_label: The Heathen Chinee
+  wikidata_description: Satirical narrative poem by Bret Harte
+  creators:
+  - Bret Harte
+  sort_year: 1870
+  date_label: '1870'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Laugh of the Medusa
+  normalized_title: the laugh of the medusa
+  wikidata_id: Q25384894
+  wikidata_label: The Laugh of the Medusa
+  wikidata_description: essay by Hélène Cixous
+  creators:
+  - Hélène Cixous
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Night Sky with Exit Wounds
+  normalized_title: night sky with exit wounds
+  wikidata_id: Q56278369
+  wikidata_label: Night Sky with Exit Wounds
+  wikidata_description: collection of poetry
+  creators:
+  - Ocean Vuong
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Grace Abounding to the Chief of Sinners
+  normalized_title: grace abounding to the chief of sinners
+  wikidata_id: Q2316733
+  wikidata_label: Grace Abounding to the Chief of Sinners
+  wikidata_description: book by John Bunyan
+  creators:
+  - John Bunyan
+  sort_year: 1666
+  date_label: '1666'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Princess and the Pea
+  normalized_title: the princess and the pea
+  wikidata_id: Q11861
+  wikidata_label: The Princess and the Pea
+  wikidata_description: fairy tale by Hans Christian Andersen
+  creators:
+  - Hans Christian Andersen
+  sort_year: 1835
+  date_label: '1835'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: City of Glass
+  normalized_title: city of glass
+  wikidata_id: Q5123698
+  wikidata_label: City of Glass
+  wikidata_description: 1994 graphic novel written by David Mazzucchelli
+  creators:
+  - David Mazzucchelli
+  - Paul Auster
+  sort_year: 1994
+  date_label: '1994'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Mateo Falcone
+  normalized_title: mateo falcone
+  wikidata_id: Q653141
+  wikidata_label: Mateo Falcone
+  wikidata_description: short story by Prosper Mérimée
+  creators:
+  - Prosper Mérimée
+  sort_year: 1829
+  date_label: '1829'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Tales of Soldiers and Civilians
+  normalized_title: tales of soldiers and civilians
+  wikidata_id: Q7679354
+  wikidata_label: Tales of Soldiers and Civilians
+  wikidata_description: 1891 short story collection by Ambrose Bierce
+  creators:
+  - Ambrose Bierce
+  sort_year: 1891
+  date_label: '1891'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Austerlitz
+  normalized_title: austerlitz
+  wikidata_id: Q473389
+  wikidata_label: Austerlitz
+  wikidata_description: 2001 German novel by W.G. Sebald
+  creators:
+  - W. G. Sebald
+  sort_year: 2001
+  date_label: '2001'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Virginian
+  normalized_title: the virginian
+  wikidata_id: Q7772831
+  wikidata_label: The Virginian
+  wikidata_description: novel by Owen Wister
+  creators:
+  - Owen Wister
+  sort_year: 1902
+  date_label: '1902'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Dark Night of the Soul
+  normalized_title: dark night of the soul
+  wikidata_id: Q23988771
+  wikidata_label: Dark Night of the Soul
+  wikidata_description: poem by John of the Cross
+  creators:
+  - John of the Cross
+  sort_year: 1578
+  date_label: '1578'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Illywhacker
+  normalized_title: illywhacker
+  wikidata_id: Q16386250
+  wikidata_label: Illywhacker
+  wikidata_description: 1985 novel by Peter Carey
+  creators:
+  - Peter Carey
+  sort_year: 1985
+  date_label: '1985'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Man With the Hoe
+  normalized_title: the man with the hoe
+  wikidata_id: Q7749999
+  wikidata_label: The Man With the Hoe
+  wikidata_description: poem by Edwin Markham
+  creators:
+  - Edwin Markham
+  sort_year: 1899
+  date_label: '1899'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Love Among the Ruins
+  normalized_title: love among the ruins
+  wikidata_id: Q3264135
+  wikidata_label: Love Among the Ruins
+  wikidata_description: 1855 poem by Robert Browning
+  creators:
+  - Robert Browning
+  sort_year: 1855
+  date_label: '1855'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Casabianca
+  normalized_title: casabianca
+  wikidata_id: Q1046613
+  wikidata_label: Casabianca
+  wikidata_description: English poem by Felicia Hemans
+  creators:
+  - Felicia Hemans
+  sort_year: 1826
+  date_label: '1826'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: What Maisie Knew
+  normalized_title: what maisie knew
+  wikidata_id: Q2943614
+  wikidata_label: What Maisie Knew
+  wikidata_description: novel by Henry James
+  creators:
+  - Henry James
+  sort_year: 1897
+  date_label: '1897'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Highwayman
+  normalized_title: the highwayman
+  wikidata_id: Q11153710
+  wikidata_label: The Highwayman
+  wikidata_description: poem by Alfred Noyes
+  creators:
+  - Alfred Noyes
+  sort_year: 1906
+  date_label: '1906'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Black Woman
+  normalized_title: black woman
+  wikidata_id: Q4922175
+  wikidata_label: Black Woman
+  wikidata_description: poem
+  creators:
+  - Léopold Sédar Senghor
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Nutcracker and the Mouse King
+  normalized_title: the nutcracker and the mouse king
+  wikidata_id: Q744557
+  wikidata_label: The Nutcracker and the Mouse King
+  wikidata_description: story by E. T. A. Hoffmann
+  creators:
+  - E. T. A. Hoffmann
+  sort_year: 1816
+  date_label: '1816'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: San Manuel Bueno, Martir
+  normalized_title: san manuel bueno martir
+  wikidata_id: Q7414788
+  wikidata_label: San Manuel Bueno, Mártir
+  wikidata_description: 1931 novel by Miguel de Unamuno
+  creators:
+  - Miguel de Unamuno
+  sort_year: 1931
+  date_label: '1931'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Thing Around Your Neck
+  normalized_title: the thing around your neck
+  wikidata_id: Q7768727
+  wikidata_label: The Thing Around Your Neck
+  wikidata_description: 2009 short story collection by Chimamanda Ngozi Adichie
+  creators:
+  - Chimamanda Ngozi Adichie
+  sort_year: 2009
+  date_label: '2009'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: How to Travel with a Salmon
+  normalized_title: how to travel with a salmon
+  wikidata_id: Q2986194
+  wikidata_label: How to Travel with a Salmon
+  wikidata_description: essay by Umberto Eco
+  creators:
+  - Umberto Eco
+  sort_year: 1992
+  date_label: '1992'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Shalimar the Clown
+  normalized_title: shalimar the clown
+  wikidata_id: Q3090602
+  wikidata_label: Shalimar the Clown
+  wikidata_description: 2005 novel by Salman Rushdie
+  creators:
+  - Salman Rushdie
+  sort_year: 2005
+  date_label: '2005'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: An Outcast of the Islands
+  normalized_title: an outcast of the islands
+  wikidata_id: Q1090444
+  wikidata_label: An Outcast of the Islands
+  wikidata_description: novel by Joseph Conrad
+  creators:
+  - Joseph Conrad
+  sort_year: 1896
+  date_label: '1896'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Life and Death of Mr. Badman
+  normalized_title: the life and death of mr badman
+  wikidata_id: Q13726028
+  wikidata_label: The Life and Death of Mr Badman
+  wikidata_description: book by John Bunyan
+  creators:
+  - John Bunyan
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Areopagitica
+  normalized_title: areopagitica
+  wikidata_id: Q642635
+  wikidata_label: Areopagitica
+  wikidata_description: book by John Milton
+  creators:
+  - John Milton
+  sort_year: 1644
+  date_label: '1644'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Story of My Experiments with Truth
+  normalized_title: the story of my experiments with truth
+  wikidata_id: Q2719827
+  wikidata_label: The Story of My Experiments with Truth
+  wikidata_description: autobiography of Mahatma Gandhi
+  creators:
+  - Mahatma Gandhi
+  sort_year: 1927
+  date_label: '1927'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Lamb to the Slaughter
+  normalized_title: lamb to the slaughter
+  wikidata_id: Q2998946
+  wikidata_label: Lamb to the Slaughter
+  wikidata_description: short story by Roald Dahl
+  creators:
+  - Roald Dahl
+  sort_year: 1953
+  date_label: '1953'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Travels in Hyperreality
+  normalized_title: travels in hyperreality
+  wikidata_id: Q5431258
+  wikidata_label: Faith in Fakes
+  wikidata_description: essay by Umberto Eco
+  creators:
+  - Umberto Eco
+  sort_year: 1973
+  date_label: '1973'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Three Blind Mice
+  normalized_title: three blind mice
+  wikidata_id: Q3540050
+  wikidata_label: Three Blind Mice
+  wikidata_description: 1985 play written by Agatha Christie
+  creators:
+  - Agatha Christie
+  sort_year: 1985
+  date_label: '1985'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Mine Boy
+  normalized_title: mine boy
+  wikidata_id: Q20981730
+  wikidata_label: Mine Boy
+  wikidata_description: novel by Peter Abrahams
+  creators:
+  - Peter Abrahams
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: What Price Glory
+  normalized_title: what price glory
+  wikidata_id: Q7991351
+  wikidata_label: What Price Glory?
+  wikidata_description: 1924 comedy-drama written by Maxwell Anderson
+  creators:
+  - Maxwell Anderson
+  sort_year: 1924
+  date_label: '1924'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Trickster of Seville and the Stone Guest
+  normalized_title: the trickster of seville and the stone guest
+  wikidata_id: Q2714218
+  wikidata_label: The Trickster of Seville and the Stone Guest
+  wikidata_description: Spanish Golden Age play
+  creators:
+  - Tirso de Molina
+  sort_year: 1630
+  date_label: '1630'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Ancient Evenings
+  normalized_title: ancient evenings
+  wikidata_id: Q4752839
+  wikidata_label: Ancient Evenings
+  wikidata_description: 1983 novel by Norman Mailer
+  creators:
+  - Norman Mailer
+  sort_year: 1983
+  date_label: '1983'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Lifted Veil
+  normalized_title: the lifted veil
+  wikidata_id: Q6763446
+  wikidata_label: The Lifted Veil
+  wikidata_description: book by George Eliot
+  creators:
+  - George Eliot
+  sort_year: 1859
+  date_label: '1859'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Indian Camp
+  normalized_title: indian camp
+  wikidata_id: Q3067537
+  wikidata_label: Indian Camp
+  wikidata_description: short story by Ernest Hemingway
+  creators:
+  - Ernest Hemingway
+  sort_year: 1924
+  date_label: '1924'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Hobbit
+  normalized_title: the hobbit
+  wikidata_id: Q74287
+  wikidata_label: The Hobbit
+  wikidata_description: 1937 fantasy novel by J. R. R. Tolkien
+  creators:
+  - J. R. R. Tolkien
+  sort_year: 1937
+  date_label: '1937'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Das Glasperlenspiel
+  normalized_title: das glasperlenspiel
+  wikidata_id: Q836841
+  wikidata_label: The Glass Bead Game
+  wikidata_description: novel by Hermann Hesse (1943)
+  creators:
+  - Hermann Hesse
+  sort_year: 1943
+  date_label: '1943'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Literature of Exhaustion
+  normalized_title: the literature of exhaustion
+  wikidata_id: Q7747558
+  wikidata_label: The Literature of Exhaustion
+  wikidata_description: 1967 essay by John Barth
+  creators:
+  - John Barth
+  sort_year: 1967
+  date_label: '1967'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Decline of the English Murder
+  normalized_title: decline of the english murder
+  wikidata_id: Q5249517
+  wikidata_label: Decline of the English Murder
+  wikidata_description: essay by George Orwell
+  creators:
+  - George Orwell
+  sort_year: 1946
+  date_label: '1946'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Chosen
+  normalized_title: the chosen
+  wikidata_id: Q2752989
+  wikidata_label: The Chosen
+  wikidata_description: 1967 novel by Chaim Potok
+  creators:
+  - Chaim Potok
+  sort_year: 1967
+  date_label: '1967'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The History of Henry Esmond
+  normalized_title: the history of henry esmond
+  wikidata_id: Q3203517
+  wikidata_label: The History of Henry Esmond
+  wikidata_description: historical novel by William Makepeace Thackeray
+  creators:
+  - William Makepeace Thackeray
+  sort_year: 1852
+  date_label: '1852'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Hunger Angel
+  normalized_title: the hunger angel
+  wikidata_id: Q479895
+  wikidata_label: The Hunger Angel
+  wikidata_description: 2009 novel by Herta Müller
+  creators:
+  - Herta Müller
+  sort_year: 2009
+  date_label: '2009'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: House of Leaves
+  normalized_title: house of leaves
+  wikidata_id: Q521688
+  wikidata_label: House of Leaves
+  wikidata_description: 2000 novel by Mark Z. Danielewski
+  creators:
+  - Mark Z. Danielewski
+  sort_year: 2000
+  date_label: '2000'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Blind Willow, Sleeping Woman
+  normalized_title: blind willow sleeping woman
+  wikidata_id: Q3235678
+  wikidata_label: Blind Willow, Sleeping Woman
+  wikidata_description: 2006 short story collection by Haruki Murakami
+  creators:
+  - Haruki Murakami
+  sort_year: 2006
+  date_label: '2006'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Revelations of Divine Love
+  normalized_title: revelations of divine love
+  wikidata_id: Q7317855
+  wikidata_label: Revelations of Divine Love
+  wikidata_description: medieval book of Christian mystical devotions by Julian of
+    Norwich
+  creators:
+  - Julian of Norwich
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: A Jury of Her Peers
+  normalized_title: a jury of her peers
+  wikidata_id: Q4657532
+  wikidata_label: A Jury of Her Peers
+  wikidata_description: short story by Susan Glaspell
+  creators:
+  - Susan Glaspell
+  sort_year: 1917
+  date_label: '1917'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Fuzzy-Wuzzy
+  normalized_title: fuzzy wuzzy
+  wikidata_id: Q5511057
+  wikidata_label: Fuzzy-Wuzzy
+  wikidata_description: 1892 poem by Rudyard Kipling
+  creators:
+  - Rudyard Kipling
+  sort_year: 1892
+  date_label: '1892'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Dry Salvages
+  normalized_title: the dry salvages
+  wikidata_id: Q7731099
+  wikidata_label: The Dry Salvages
+  wikidata_description: 1941 poem written by T. S. Eliot
+  creators:
+  - T. S. Eliot
+  sort_year: 1941
+  date_label: '1941'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Financier
+  normalized_title: the financier
+  wikidata_id: Q577607
+  wikidata_label: The Financier
+  wikidata_description: novel by Theodore Dreiser
+  creators:
+  - Theodore Dreiser
+  sort_year: 1912
+  date_label: '1912'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Setting Free the Bears
+  normalized_title: setting free the bears
+  wikidata_id: Q444610
+  wikidata_label: Setting Free the Bears
+  wikidata_description: 1968 novel by John Irving
+  creators:
+  - John Irving
+  sort_year: 1968
+  date_label: '1968'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Nonexistent Knight
+  normalized_title: the nonexistent knight
+  wikidata_id: Q2571696
+  wikidata_label: The Nonexistent Knight
+  wikidata_description: novel by Italo Calvino
+  creators:
+  - Italo Calvino
+  sort_year: 1959
+  date_label: '1959'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: After Twenty Years
+  normalized_title: after twenty years
+  wikidata_id: Q15723815
+  wikidata_label: After Twenty Years
+  wikidata_description: short story by O. Henry
+  creators:
+  - O. Henry
+  sort_year: 1906
+  date_label: '1906'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Enoch Arden
+  normalized_title: enoch arden
+  wikidata_id: Q1343501
+  wikidata_label: Enoch Arden
+  wikidata_description: 1864 poem written by Alfred, Lord Tennyson
+  creators:
+  - Alfred Tennyson
+  sort_year: 1864
+  date_label: '1864'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Copenhagen
+  normalized_title: copenhagen
+  wikidata_id: Q1561910
+  wikidata_label: Copenhagen
+  wikidata_description: play by Michael Frayn
+  creators:
+  - Michael Frayn
+  sort_year: 1998
+  date_label: '1998'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Casa Guidi Windows
+  normalized_title: casa guidi windows
+  wikidata_id: Q3661113
+  wikidata_label: Casa Guidi Windows
+  wikidata_description: poem by Elizabeth Barrett Browning
+  creators:
+  - Elizabeth Barrett Browning
+  sort_year: 1848
+  date_label: '1848'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: A Night in Acadie
+  normalized_title: a night in acadie
+  wikidata_id: Q19024039
+  wikidata_label: A Night in Acadie
+  wikidata_description: short story collection by Kate Chopin, 1897 edition
+  creators:
+  - Kate Chopin
+  sort_year: 1897
+  date_label: '1897'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Memoirs of a Fox-Hunting Man
+  normalized_title: memoirs of a fox hunting man
+  wikidata_id: Q3050598
+  wikidata_label: Memoirs of a Fox-Hunting Man
+  wikidata_description: book by Siegfried Sassoon
+  creators:
+  - Siegfried Sassoon
+  sort_year: 1928
+  date_label: '1928'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Sozaboy
+  normalized_title: sozaboy
+  wikidata_id: Q7572055
+  wikidata_label: 'Sozaboy: A Novel in Rotten English'
+  wikidata_description: 1985 novel by Ken Saro-Wiwa
+  creators:
+  - Ken Saro-Wiwa
+  sort_year: 1985
+  date_label: '1985'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Millennium Approaches
+  normalized_title: millennium approaches
+  wikidata_id: Q110023396
+  wikidata_label: Millennium Approaches
+  wikidata_description: part one of the play Angels in America by American playwright
+    Tony Kushner
+  creators:
+  - Tony Kushner
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Girl, Woman, Other
+  normalized_title: girl woman other
+  wikidata_id: Q70929843
+  wikidata_label: Girl, Woman, Other
+  wikidata_description: 2018 novel by Bernardine Evaristo
+  creators:
+  - Bernardine Evaristo
+  sort_year: 2018
+  date_label: '2018'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Company of Wolves
+  normalized_title: the company of wolves
+  wikidata_id: Q136132604
+  wikidata_label: The Company of Wolves
+  wikidata_description: 2017 James Gracey book
+  creators: []
+  sort_year: 2017
+  date_label: '2017'
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Fine Clothes to the Jew
+  normalized_title: fine clothes to the jew
+  wikidata_id: Q5450062
+  wikidata_label: Fine Clothes to the Jew
+  wikidata_description: book by Langston Hughes
+  creators:
+  - Langston Hughes
+  sort_year: 1927
+  date_label: '1927'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Amen Corner
+  normalized_title: the amen corner
+  wikidata_id: Q16154147
+  wikidata_label: The Amen Corner
+  wikidata_description: 1954 play written by James Baldwin
+  creators:
+  - James Baldwin
+  sort_year: 1954
+  date_label: '1954'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.

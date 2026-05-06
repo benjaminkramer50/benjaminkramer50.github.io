@@ -22330,3 +22330,246 @@ decisions:
   reason: parser_artifact_not_work
   review_status: rejected_parser_artifact_not_work
   source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Lotus-Eaters
+  decision: alias
+  alias_of: The Lotos-Eaters
+  reason: spelling_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Song Book
+  decision: alias
+  alias_of: Canzoniere
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: L’école des femmes
+  decision: alias
+  alias_of: The School for Wives
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: 'Vanity Fair: A Novel without a Hero'
+  decision: alias
+  alias_of: Vanity Fair
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: The Lovesong of J. Alfred Prufrock
+  decision: alias
+  alias_of: The Love Song of J. Alfred Prufrock
+  reason: spelling_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Billy Budd, Sailor
+  decision: alias
+  alias_of: Billy Budd
+  reason: alternate_full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Et dukkehjem
+  decision: alias
+  alias_of: A Doll’s House
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: A Doll House
+  decision: alias
+  alias_of: A Doll’s House
+  reason: punctuation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: A Doll House, or Et dukkehjem
+  decision: alias
+  alias_of: A Doll’s House
+  reason: combined_translation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: A Doll's House or Et dukkehjem
+  decision: alias
+  alias_of: A Doll’s House
+  reason: combined_translation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Slaughter-House Five
+  decision: alias
+  alias_of: Slaughterhouse-Five
+  reason: punctuation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: "Slaughterhouse-Five, or The Children's Crusade: A Duty-Dance with Death"
+  decision: alias
+  alias_of: Slaughterhouse-Five
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: El beso de la mujer araña
+  decision: alias
+  alias_of: Kiss of the Spider Woman
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: El laberinto de la soledad
+  decision: alias
+  alias_of: The Labyrinth of Solitude
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Como agua para chocolate
+  decision: alias
+  alias_of: Like Water for Chocolate
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: The Golden Lotus
+  decision: alias
+  alias_of: The Plum in the Golden Vase
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: The Tragedy of Macbeth
+  decision: alias
+  alias_of: Macbeth
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Le Horla
+  decision: alias
+  alias_of: The Horla
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Jekyll and Hyde
+  decision: alias
+  alias_of: The Strange Case of Dr. Jekyll and Mr. Hyde
+  reason: shorthand_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Daffodils
+  decision: alias
+  alias_of: I Wandered Lonely as a Cloud
+  reason: common_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Das Glasperlenspiel
+  decision: alias
+  alias_of: The Glass Bead Game
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Rayuela or Hopscotch
+  decision: alias
+  alias_of: Hopscotch
+  reason: combined_translation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Chayka
+  decision: alias
+  alias_of: The Seagull
+  reason: transliterated_original_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: The Sea Gull
+  decision: alias
+  alias_of: The Seagull
+  reason: spelling_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: La Nausée
+  decision: alias
+  alias_of: Nausea
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Nausea or La Nausee
+  decision: alias
+  alias_of: Nausea
+  reason: combined_translation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: The Picture of Dorian Grey
+  decision: alias
+  alias_of: The Picture of Dorian Gray
+  reason: spelling_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Piedra del Sol
+  decision: alias
+  alias_of: Piedra de Sol
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: La Muerte de Artemio Cruz
+  decision: alias
+  alias_of: The Death of Artemio Cruz
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: La tía Julia y el escribidor
+  decision: alias
+  alias_of: Aunt Julia and the Scriptwriter
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Master i Margarita
+  decision: alias
+  alias_of: The Master and Margarita
+  reason: transliterated_original_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Hog Butcher of the World
+  decision: alias
+  alias_of: Chicago
+  reason: quoted_line_for_poem_title
+  review_status: merged_line_or_phrase_to_work
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Hog Butcher for the World, Tool Maker, Stacker of Wheat
+  decision: alias
+  alias_of: Chicago
+  reason: quoted_line_for_poem_title
+  review_status: merged_line_or_phrase_to_work
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: The Road to Mandalay
+  decision: alias
+  alias_of: Mandalay
+  reason: alternate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: One Flew Over the Cuckoo
+  decision: alias
+  alias_of: One Flew Over the Cuckoo’s Nest
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: W.A.S.T.E
+  decision: alias
+  alias_of: The Crying of Lot 49
+  reason: embedded_acronym_for_work_clue
+  review_status: merged_clue_fragment_to_work
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: E.A.T
+  decision: alias
+  alias_of: A Good Man is Hard to Find
+  reason: character_initials_for_work_clue
+  review_status: merged_clue_fragment_to_work
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: A Rock, A River, A Tree
+  decision: alias
+  alias_of: On the Pulse of Morning
+  reason: opening_line_for_poem_title
+  review_status: merged_line_or_phrase_to_work
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: The Outline of History
+  decision: reject
+  reason: history_survey_for_adjacent_product
+  review_status: rejected_history_domain
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: What I Believe
+  decision: review
+  reason: title_collision_literary_essay_philosophy_boundary
+  review_status: needs_review_title_collision_or_nonfiction_boundary
+  source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: Three Blind Mice
+  decision: review
+  reason: title_collision_christie_story_nursery_rhyme_boundary
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d_chronology_cleanup_batch6
