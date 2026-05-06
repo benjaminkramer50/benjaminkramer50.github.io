@@ -21530,3 +21530,189 @@ decisions:
   review_status: needs_review_title_collision_and_non_literary_context_dominance
   source: codex_phase_d_chronology_cleanup_batch2
   notes: 'Candidate-id override for older manual accept: public evidence is dominated by unrelated, non-literary uses; clear Kubin contexts are routed separately but below threshold.'
+- canonical_title: Tonight I Can Write
+  normalized_title: tonight i can write
+  decision: alias
+  alias_of: Tonight I Can Write the Saddest Lines
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'Duplicate Neruda title fragment; merge into the full poem title.'
+- canonical_title: Huck Finn
+  normalized_title: huck finn
+  decision: alias
+  alias_of: The Adventures of Huckleberry Finn
+  reason: shorthand_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'Shorthand title variant for Twain''s novel.'
+- canonical_title: Les Fleurs du
+  normalized_title: les fleurs du
+  decision: alias
+  alias_of: Les Fleurs du Mal
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'Truncated French title variant; route to the canonical Baudelaire collection row.'
+- canonical_title: Les Fleurs de Mal
+  normalized_title: les fleurs de mal
+  decision: alias
+  alias_of: Les Fleurs du Mal
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: Les Fleurs du Mal or The Flowers of Evil
+  normalized_title: les fleurs du mal or the flowers of evil
+  decision: alias
+  alias_of: Les Fleurs du Mal
+  reason: combined_answerline_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: the U.S.A trilogy
+  normalized_title: the u s a trilogy
+  decision: alias
+  alias_of: U.S.A. Trilogy
+  reason: article_and_punctuation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: Oresteia Trilogy
+  normalized_title: oresteia trilogy
+  decision: alias
+  alias_of: Oresteia
+  reason: descriptive_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: La casa de los espíritus
+  normalized_title: la casa de los espiritus
+  decision: alias
+  alias_of: The House of the Spirits
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: Huis Clos
+  normalized_title: huis clos
+  decision: alias
+  alias_of: No Exit
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: 20,000 Leagues Under the Sea
+  normalized_title: 20 000 leagues under the sea
+  decision: alias
+  alias_of: Twenty Thousand Leagues Under the Sea
+  reason: numeric_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: Outlaws of the Marsh
+  normalized_title: outlaws of the marsh
+  decision: alias
+  alias_of: Water Margin
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: The Art of Poetry
+  normalized_title: the art of poetry
+  decision: alias
+  alias_of: Ars Poetica
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: La Vita Nuova
+  normalized_title: la vita nuova
+  decision: alias
+  alias_of: The New Life
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: The Murder of Gonzago
+  normalized_title: the murder of gonzago
+  decision: reject
+  reason: embedded_fictional_play_not_standalone_work
+  review_status: rejected_embedded_or_fictional_work
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'The evidence is for the play-within-the-play in Hamlet, not a standalone public reading-list work.'
+- canonical_title: Dictionary of the English Language
+  normalized_title: dictionary of the english language
+  decision: reject
+  reason: reference_work_not_literature_reading_list_work
+  review_status: rejected_reference_work
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'Johnson''s dictionary is historically important, but this literature reading-list product excludes reference works; adjacent nonfiction products can handle them later.'
+- canonical_title: The Tragic Sense of Life
+  normalized_title: the tragic sense of life
+  decision: reject
+  reason: philosophy_work_for_adjacent_product
+  review_status: rejected_philosophy_or_social_science
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'High-salience humanities work, but belongs in the planned philosophy/social-science sibling list rather than the literature reading list.'
+- candidate_id: qb_lit_the_tragic_sense_of_life_3eff1cf4
+  canonical_title: The Tragic Sense of Life
+  normalized_title: the tragic sense of life
+  decision: reject
+  reason: philosophy_work_for_adjacent_product
+  review_status: rejected_philosophy_or_social_science
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'Candidate-id override for an older manual accept; route this to the planned philosophy/social-science sibling product.'
+- canonical_title: the Artful Dodger
+  normalized_title: the artful dodger
+  decision: reject
+  reason: character_name_not_work
+  review_status: rejected_character_name_not_work
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'Evidence points to a character in Oliver Twist.'
+- canonical_title: Janie Crawford
+  normalized_title: janie crawford
+  decision: reject
+  reason: character_name_not_work
+  review_status: rejected_character_name_not_work
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'Evidence points to the protagonist of Their Eyes Were Watching God.'
+- canonical_title: Harry Haller
+  normalized_title: harry haller
+  decision: reject
+  reason: character_name_not_work
+  review_status: rejected_character_name_not_work
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'Evidence points to the protagonist of Steppenwolf.'
+- canonical_title: Katherine Mansfield
+  normalized_title: katherine mansfield
+  decision: reject
+  reason: author_name_not_work
+  review_status: rejected_person_or_author
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: Hyperion
+  normalized_title: hyperion
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d_chronology_cleanup_batch3
+  notes: 'Evidence mixes Keats''s unfinished poem and Hölderlin''s novel; the generic parent must not inherit unrelated Wikidata metadata.'
+  split_into:
+  - title: Hyperion (Friedrich Holderlin)
+    match_any:
+    - Holderlin
+    - Hölderlin
+    - Diotima
+    - Mistra
+    - Death of Empedocles
+    - Paul Flemming
+  - title: Hyperion (John Keats)
+    match_any:
+    - John Keats
+    - Keats
+    - Titans
+    - Lamia
+    - Ode to a Nightingale
+    - Ode on a Grecian Urn
+- canonical_title: Hyperion (Friedrich Holderlin)
+  normalized_title: hyperion friedrich holderlin
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d_chronology_cleanup_batch3
+- canonical_title: Hyperion (John Keats)
+  normalized_title: hyperion john keats
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d_chronology_cleanup_batch3

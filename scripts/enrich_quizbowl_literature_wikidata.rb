@@ -31,7 +31,7 @@ REPORT_HEADERS = %w[
 ].freeze
 
 LITERARY_DESCRIPTION_RE = /\b(?:novel|novella|poem|poetry|play|drama|tragedy|comedy|short stor(?:y|ies)|story|literary work|book|epic|saga|romance|memoir|autobiography|essay|fable|fairy tale|myth|scripture|gospel|sutra|anthology|poetry collection|graphic novel)\b/i
-NON_LITERARY_DESCRIPTION_RE = /\b(?:film|movie|television|tv|tv series|episode|album|song|single|opera|oratorio|cantata|symphony|composition|concerto|sonata|painting|sculpture|woodcuts?|video game|board game|manga series|anime|band|musical group|book review|critical edition|book edition|edition of|translation of|magazine article|journal article|newspaper article|title character|fictional character|character of|character in|protagonist of)\b/i
+NON_LITERARY_DESCRIPTION_RE = /\b(?:film|movie|television|tv|tv series|episode|album|song|single|opera|oratorio|cantata|symphony|composition|concerto|sonata|painting|sculpture|woodcuts?|video game|board game|manga series|anime|band|musical group|book imprint|imprint|publisher|publishing house|book review|critical edition|book edition|edition of|translation of|magazine article|journal article|newspaper article|title character|fictional character|character of|character in|protagonist of)\b/i
 DESCRIPTION_FORM_GROUPS = {
   "poetry" => /\b(?:poem|poetry|poetry collection|verse|lyric|ode|sonnet|ballad|elegy)\b/i,
   "drama" => /\b(?:play|drama|tragedy|comedy|theatrical)\b/i,
@@ -374,6 +374,29 @@ def parse_options
   options
 end
 
+def prefer_metadata_row(existing, candidate)
+  return candidate unless existing
+
+  existing_manual = existing["source"] == "codex_manual_metadata_correction"
+  candidate_manual = candidate["source"] == "codex_manual_metadata_correction"
+  return candidate if candidate_manual && !existing_manual
+  return existing if existing_manual && !candidate_manual
+
+  existing_has_date = !existing["sort_year"].nil? && existing["sort_year"].to_s != ""
+  candidate_has_date = !candidate["sort_year"].nil? && candidate["sort_year"].to_s != ""
+  existing_has_creator = Array(existing["creators"]).any?
+  candidate_has_creator = Array(candidate["creators"]).any?
+  if (!existing_has_date && candidate_has_date) || (!existing_has_creator && candidate_has_creator)
+    merged = existing.merge(candidate)
+    merged["sort_year"] = existing["sort_year"] if existing_has_date && !candidate_has_date
+    merged["date_label"] = existing["date_label"] if existing_has_date && !candidate_has_date
+    merged["creators"] = existing["creators"] if existing_has_creator && !candidate_has_creator
+    return merged
+  end
+
+  existing
+end
+
 def main
   options = parse_options
   data = YAML.load_file(options[:canon])
@@ -421,7 +444,12 @@ def main
     sleep options[:sleep] if options[:sleep].positive?
   end
 
-  combined = (existing + new_overrides).uniq { |row| normalize_title(row["title"]) }
+  combined_by_key = {}
+  (existing + new_overrides).each do |row|
+    key = normalize_title(row["title"])
+    combined_by_key[key] = prefer_metadata_row(combined_by_key[key], row)
+  end
+  combined = combined_by_key.values
   File.write(options[:out], combined.to_yaml)
 
   write_header = !File.exist?(options[:report])
