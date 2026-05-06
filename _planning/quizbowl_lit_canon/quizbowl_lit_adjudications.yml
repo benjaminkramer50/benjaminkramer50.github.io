@@ -264,11 +264,11 @@ decisions:
 - candidate_id: qb_lit_bread_and_wine_eed02547
   canonical_title: Bread and Wine
   normalized_title: bread and wine
-  decision: accept
-  reason: literary_work_manual_audit
-  review_status: accepted_likely_work
+  decision: review
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
   source: codex_500_queue_audit
-  notes: Audited from the 500-row LLM review queue; evidence identifies a literary/textual work rather than a non-literary entity.
+  notes: Reopened after public-list purity pass; evidence mixes Holderlin poem and Silone novel references, so this needs author-aware splitting.
 - candidate_id: qb_lit_the_black_prince_963d2595
   canonical_title: The Black Prince
   normalized_title: the black prince
@@ -3048,11 +3048,11 @@ decisions:
 - candidate_id: qb_lit_north_and_south_f54e7acc
   canonical_title: North and South
   normalized_title: north and south
-  decision: accept
-  reason: accepted_after_sanity_audit
-  review_status: accepted_likely_work
+  decision: review
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
   source: codex_500_queue_audit
-  notes: Audited from the 500-row LLM review queue; suspicious routing signal was not enough to remove this literary work.
+  notes: Reopened after public-list purity pass; evidence mixes Elizabeth Gaskell and John Jakes works, so this needs author-aware splitting.
 - candidate_id: qb_lit_the_hunchback_of_notre_dame_b9e10175
   canonical_title: The Hunchback of Notre Dame
   normalized_title: the hunchback of notre dame
@@ -3976,11 +3976,11 @@ decisions:
 - candidate_id: qb_lit_the_end_of_the_world_9147dd5d
   canonical_title: The End of the World
   normalized_title: the end of the world
-  decision: accept
-  reason: accepted_after_sanity_audit
-  review_status: accepted_likely_work
+  decision: review
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
   source: codex_500_queue_audit
-  notes: Audited from the 500-row LLM review queue; suspicious routing signal was not enough to remove this literary work.
+  notes: Reopened after public-list purity pass; evidence spans multiple literary and non-literary uses of the same title.
 - candidate_id: qb_lit_the_song_of_the_lark_ba8927bb
   canonical_title: The Song of the Lark
   normalized_title: the song of the lark
@@ -20782,3 +20782,334 @@ decisions:
   review_status: merged_duplicate_title_variant
   source: codex_phase_c_duplicate_alias_batch3
   notes: 'Merge Sakuntala/Shakuntala transliteration variant into one canonical row.'
+- canonical_title: I do
+  decision: reject
+  reason: common_phrase_not_literary_work
+  review_status: rejected_common_phrase_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: Salem Witch Trials
+  decision: reject
+  reason: topic_context_not_literary_work
+  review_status: rejected_topic_context_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: Grover's Corners
+  decision: reject
+  reason: setting_name_not_literary_work
+  review_status: rejected_setting_name_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: Blanche DuBois
+  decision: reject
+  reason: character_name_not_work
+  review_status: rejected_character_name_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: Without a Hero
+  decision: reject
+  reason: mixed_title_fragment_not_standalone_work
+  review_status: rejected_title_fragment_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: The Horror! The Horror
+  decision: reject
+  reason: quotation_not_literary_work
+  review_status: rejected_quotation_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: Gustav von Aschenbach
+  decision: reject
+  reason: character_name_not_work
+  review_status: rejected_character_name_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: of the White Moon
+  decision: reject
+  reason: title_fragment_not_standalone_work
+  review_status: rejected_title_fragment_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: of Fred
+  decision: reject
+  reason: pronunciation_gloss_not_work
+  review_status: rejected_title_gloss_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: Pulitzer Prize-winner
+  decision: reject
+  reason: award_descriptor_not_literary_work
+  review_status: rejected_descriptor_fragment
+  source: codex_v1_public_purity_batch3
+- canonical_title: Hog Butcher for the World
+  decision: reject
+  reason: quoted_phrase_not_literary_work
+  review_status: rejected_quotation_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: the Big Man
+  decision: reject
+  reason: character_or_generic_phrase_not_work
+  review_status: rejected_character_or_phrase_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: Shot Heard 'Round the World
+  normalized_title: shot heard round the world
+  decision: reject
+  reason: event_phrase_not_literary_work
+  review_status: rejected_event_phrase_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: Days and Nights
+  decision: reject
+  reason: fictional_book_not_standalone_work
+  review_status: rejected_fictional_book_not_work
+  source: codex_v1_public_purity_batch3
+- canonical_title: The End of the World
+  decision: review
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_v1_public_purity_batch3
+- canonical_title: The Golden Age
+  decision: review
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_v1_public_purity_batch3
+- canonical_title: The Open Door
+  decision: review
+  reason: title_collision_or_low_confidence_nonfiction_boundary
+  review_status: needs_review_title_collision_or_low_confidence_nonfiction_boundary
+  source: codex_v1_public_purity_batch3
+- canonical_title: The Third Man
+  decision: review
+  reason: title_collision_or_film_context_requires_split
+  review_status: needs_review_title_collision_or_film_context_requires_split
+  source: codex_v1_public_purity_batch3
+- canonical_title: North and South
+  decision: review
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_v1_public_purity_batch3
+  notes: 'Quizbowl evidence mixes Elizabeth Gaskell and John Jakes works; hold until author-aware splitting can separate them.'
+- canonical_title: Bread and Wine
+  decision: review
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_v1_public_purity_batch3
+  notes: 'Quizbowl evidence mixes Holderlin poem and Silone novel references; hold until author-aware splitting can separate them.'
+- canonical_title: Life & Times
+  decision: alias
+  alias_of: Life & Times of Michael K
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Lately Sprung Up in America
+  decision: alias
+  alias_of: The Tenth Muse Lately Sprung Up in America
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Stopping by Woods
+  decision: alias
+  alias_of: Stopping by Woods on a Snowy Evening
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: of Otranto
+  decision: alias
+  alias_of: The Castle of Otranto
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Thirteen Ways of Looking
+  decision: alias
+  alias_of: Thirteen Ways of Looking at a Blackbird
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Girl of the Streets
+  decision: alias
+  alias_of: 'Maggie: A Girl of the Streets'
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Red, Red
+  decision: alias
+  alias_of: A Red, Red Rose
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Dear and Loving Husband
+  decision: alias
+  alias_of: To My Dear and Loving Husband
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Devil's Dictionary
+  decision: alias
+  alias_of: The Devil's Dictionary
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: The Book of Job
+  decision: alias
+  alias_of: Book of Job
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: The Book of Judges
+  decision: alias
+  alias_of: Book of Judges
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Electric-Kool-Aid Acid Test
+  decision: alias
+  alias_of: The Electric Kool-Aid Acid Test
+  reason: article_and_punctuation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: 120 Days of Sodom
+  decision: alias
+  alias_of: The 120 Days of Sodom
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Blue Hotel
+  decision: alias
+  alias_of: The Blue Hotel
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Autumn of the Patriarch
+  decision: alias
+  alias_of: The Autumn of the Patriarch
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Wild Swans at Coole
+  decision: alias
+  alias_of: The Wild Swans at Coole
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: The Hymn to Aphrodite
+  decision: alias
+  alias_of: Hymn to Aphrodite
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Armies of the Night
+  decision: alias
+  alias_of: The Armies of the Night
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: House of Fame
+  decision: alias
+  alias_of: The House of Fame
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Tale of the Heike
+  decision: alias
+  alias_of: The Tale of the Heike
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Conqueror Worm
+  decision: alias
+  alias_of: The Conqueror Worm
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Growth of the Soil
+  decision: alias
+  alias_of: The Growth of the Soil
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Prisoner of the Caucasus
+  decision: alias
+  alias_of: The Prisoner of the Caucasus
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Epistle to Dr. Arbuthnot
+  decision: alias
+  alias_of: An Epistle to Dr. Arbuthnot
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Life of Samuel Johnson
+  decision: alias
+  alias_of: The Life of Samuel Johnson
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Death of a Poet
+  decision: alias
+  alias_of: The Death of a Poet
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: first Duino Elegy
+  decision: alias
+  alias_of: The First Duino Elegy
+  reason: article_and_case_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Ballad Upon a Wedding
+  decision: alias
+  alias_of: A Ballad upon a Wedding
+  reason: article_and_case_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Circle in the Fire
+  decision: alias
+  alias_of: A Circle in the Fire
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Essay on Blindness
+  decision: alias
+  alias_of: An Essay on Blindness
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Ballad of the Landlord
+  decision: alias
+  alias_of: The Ballad of the Landlord
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Walk to the Paradise Garden
+  decision: alias
+  alias_of: The Walk to the Paradise Garden
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: The Thousand and One Nights
+  decision: alias
+  alias_of: One Thousand and One Nights
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Astrophel and Stella
+  decision: alias
+  alias_of: Astrophil and Stella
+  reason: spelling_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Side of Paradise
+  decision: alias
+  alias_of: This Side of Paradise
+  reason: truncated_title_variant
+  review_status: merged_truncated_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: The River Merchants Wife
+  decision: alias
+  alias_of: "The River Merchant's Wife: A Letter"
+  reason: punctuation_and_truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Der Zauberberg
+  decision: alias
+  alias_of: The Magic Mountain
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4
+- canonical_title: Der Steppenwolf
+  decision: alias
+  alias_of: Steppenwolf
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch4

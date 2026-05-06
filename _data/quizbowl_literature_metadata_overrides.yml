@@ -10200,3 +10200,172 @@
   confidence: high
   notes: Exact article-bearing title correction after metadata lookup was tightened
     to avoid article-collision errors.
+- title: This Side of Paradise
+  normalized_title: this side of paradise
+  wikidata_id:
+  wikidata_label: This Side of Paradise
+  wikidata_description: 1920 novel by F. Scott Fitzgerald
+  creators:
+  - F. Scott Fitzgerald
+  sort_year: 1920
+  date_label: '1920'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction for truncated public title variant `Side of Paradise`.
+- title: Chicago
+  normalized_title: chicago
+  wikidata_id:
+  wikidata_label: Chicago
+  wikidata_description: poem by Carl Sandburg
+  creators:
+  - Carl Sandburg
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction after answerline parsing attached a non-author token.
+- title: Antony and Cleopatra
+  normalized_title: antony and cleopatra
+  wikidata_id:
+  wikidata_label: Antony and Cleopatra
+  wikidata_description: play by William Shakespeare
+  creators:
+  - William Shakespeare
+  sort_year: 1607
+  date_label: c. 1606-1607
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction after opera-context clues attached Samuel Barber to the Shakespeare play row.
+- title: The General in His Labyrinth
+  normalized_title: the general in his labyrinth
+  wikidata_id:
+  wikidata_label: The General in His Labyrinth
+  wikidata_description: novel by Gabriel Garcia Marquez
+  creators:
+  - Gabriel Garcia Marquez
+  sort_year: 1989
+  date_label: '1989'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction after answerline parsing attached a neighboring title.
+- title: My Life in the Bush of Ghosts
+  normalized_title: my life in the bush of ghosts
+  wikidata_id:
+  wikidata_label: My Life in the Bush of Ghosts
+  wikidata_description: novel by Amos Tutuola
+  creators:
+  - Amos Tutuola
+  sort_year: 1954
+  date_label: '1954'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction after answerline parsing attached a neighboring Tutuola title.
+- title: Love Medicine
+  normalized_title: love medicine
+  wikidata_id:
+  wikidata_label: Love Medicine
+  wikidata_description: novel by Louise Erdrich
+  creators:
+  - Louise Erdrich
+  sort_year: 1984
+  date_label: '1984'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction after answerline parsing attached unrelated film text.
+- title: Barry Lyndon
+  normalized_title: barry lyndon
+  wikidata_id:
+  wikidata_label: Barry Lyndon
+  wikidata_description: novel by William Makepeace Thackeray
+  creators:
+  - William Makepeace Thackeray
+  sort_year: 1844
+  date_label: '1844'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction after adaptation-context clues attached Stanley Kubrick.
+- title: The White Castle
+  normalized_title: the white castle
+  wikidata_id:
+  wikidata_label: The White Castle
+  wikidata_description: novel by Orhan Pamuk
+  creators:
+  - Orhan Pamuk
+  sort_year: 1985
+  date_label: '1985'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction after answerline parsing attached another Pamuk title.
+- title: Shirley
+  normalized_title: shirley
+  wikidata_id:
+  wikidata_label: Shirley
+  wikidata_description: novel by Charlotte Bronte
+  creators:
+  - Charlotte Bronte
+  sort_year: 1849
+  date_label: '1849'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction after answerline parsing attached a neighboring Bronte title.
+- title: Pearl
+  normalized_title: pearl
+  wikidata_id:
+  wikidata_label: Pearl
+  wikidata_description: Middle English poem by the Pearl Poet
+  creators:
+  - Pearl Poet
+  sort_year: 1375
+  date_label: late 14th century
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction to keep the Middle English poem distinct from Steinbeck's The Pearl.
+- title: The Gilded Age
+  normalized_title: the gilded age
+  wikidata_id:
+  wikidata_label: The Gilded Age
+  wikidata_description: novel by Mark Twain and Charles Dudley Warner
+  creators:
+  - Mark Twain
+  - Charles Dudley Warner
+  sort_year: 1873
+  date_label: '1873'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual cleanup of quizbowl answerline author formatting.
+- title: The Armies of the Night
+  normalized_title: the armies of the night
+  wikidata_id:
+  wikidata_label: The Armies of the Night
+  wikidata_description: nonfiction novel by Norman Mailer
+  creators:
+  - Norman Mailer
+  sort_year: 1968
+  date_label: '1968'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual cleanup of article/case title variants.
+- title: Astrophil and Stella
+  normalized_title: astrophil and stella
+  wikidata_id:
+  wikidata_label: Astrophil and Stella
+  wikidata_description: sonnet sequence by Philip Sidney
+  creators:
+  - Philip Sidney
+  sort_year: 1591
+  date_label: '1591'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual cleanup of Astrophel/Astrophil spelling variants.
+- title: To My Dear and Loving Husband
+  normalized_title: to my dear and loving husband
+  wikidata_id:
+  wikidata_label: To My Dear and Loving Husband
+  wikidata_description: poem by Anne Bradstreet
+  creators:
+  - Anne Bradstreet
+  sort_year: 1678
+  date_label: '1678'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Manual correction for truncated public title variant `Dear and Loving Husband`.

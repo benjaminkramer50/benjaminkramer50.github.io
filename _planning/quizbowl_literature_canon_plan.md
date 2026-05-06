@@ -87,8 +87,8 @@ This project is done in stages. The corpus-derived canon will never be permanent
 | --- | --- | --- | --- | --- |
 | A | Evidence Pipeline | complete enough for iteration | Raw answerlines and clue text produce reproducible accepted/rejected/review outputs without Loci processed canon tables. | build script, method report, public YAML |
 | B | Public-List Purity | active, `2,011 / 2,000` top audit and public-purity rows adjudicated; first-`1,000` public-row spot check completed | Top `2,000` audit rows adjudicated, first `1,000` public rows pass spot checks, and the next queue is mostly real boundary cases. | adjudications YAML, rejected TSV, review queue |
-| C | Alias And Duplicate Consolidation | complete for broad title-variant pass; `298` manual alias rules added; residual same-title collisions are marked as protected distinct or author-split cases | High-salience duplicate families and whole/subwork boundaries are resolved or explicitly routed. | cluster TSV, adjudications YAML |
-| D | Classification And Metadata Layer | active, every public row now has provisional classification fields; expanded metadata overlay contains `784` accepted/corrected rows and contributes `680` Wikidata chronology rows, `756` Wikidata creator rows, `8` manual chronology corrections, and `9` manual creator corrections to the public list | Every public row has provisional classification fields, high-salience rows have audited creator/date metadata where available, and unresolved rows stay explicitly marked `unknown`/`Unplaced`. | enriched public YAML, metadata overlay, Wikidata audit TSV |
+| C | Alias And Duplicate Consolidation | complete for broad title-variant pass; `336` manual alias rules added; residual same-title collisions are marked as protected distinct or author-split cases | High-salience duplicate families and whole/subwork boundaries are resolved or explicitly routed. | cluster TSV, adjudications YAML |
+| D | Classification And Metadata Layer | active, every public row now has provisional classification fields; expanded metadata overlay contains `798` accepted/corrected rows and contributes `679` Wikidata chronology rows, `755` Wikidata creator rows, `21` manual chronology corrections, and `22` manual creator corrections to the public list | Every public row has provisional classification fields, high-salience rows have audited creator/date metadata where available, and unresolved rows stay explicitly marked `unknown`/`Unplaced`. | enriched public YAML, metadata overlay, Wikidata audit TSV |
 | E | UI And Reading Experience | active, filterable page pass added for tier, form, evidence, unit, era, tradition, context, routing, sort, and search | The public page is a filterable reading-list tool rather than a flat row dump. | site pages/components/styles |
 | F | Literature Release Gate | not started | A stable quizbowl literature canon has passed A-E and has a final method report. | public site, method report |
 | G | Adjacent Quizbowl Reading Lists | planned after F | Religion, mythology, philosophy, and social-science sibling products have their own pipelines and public pages. | separate domain YAMLs and pages |
@@ -98,12 +98,12 @@ Current operating phase: Phase D/E. The top-audit-row count has crossed `2,000` 
 Current metadata checkpoint:
 
 - Threshold: `total_question_count >= 3`.
-- Public rows: `5327`.
-- Creator coverage: `2651 / 5327`.
-- Chronology coverage: `754 / 5327` public rows have non-`Unplaced` chronology (`46` reviewed canon records, `20` title overrides, `680` Wikidata overlay rows, `8` manual metadata corrections).
-- Remaining chronology backlog: `4573` public rows marked `Unplaced`.
+- Public rows: `5270`.
+- Creator coverage: `2639 / 5270`.
+- Chronology coverage: `766 / 5270` public rows have non-`Unplaced` chronology (`46` reviewed canon records, `20` title overrides, `679` Wikidata overlay rows, `21` manual metadata corrections).
+- Remaining chronology backlog: `4504` public rows marked `Unplaced`.
 - Known constraint: Wikidata is metadata support, not inclusion evidence; quizbowl raw answerlines/clues remain the only inclusion signal.
-- Current cleanup note: shorthand duplicate rows `Tom Sawyer` and `Huckleberry Finn` now merge into the full Mark Twain titles; Shakuntala transliteration/title variants now merge into `The Recognition of Shakuntala`; `The Royal Family` and `The Lost World` are held in review until author-aware splitting resolves their mixed evidence.
+- Current cleanup note: shorthand duplicate rows `Tom Sawyer` and `Huckleberry Finn` now merge into the full Mark Twain titles; Shakuntala transliteration/title variants now merge into `The Recognition of Shakuntala`; article/truncation variants such as `Life & Times`, `Stopping by Woods`, `of Otranto`, `Astrophel and Stella`, and `Der Zauberberg` now merge into canonical rows; non-work fragments such as `I do`, `Grover's Corners`, `Blanche DuBois`, and `The Horror! The Horror` are rejected; `The Royal Family`, `The Lost World`, `North and South`, `Bread and Wine`, `The End of the World`, and `The Third Man` are held in review until author-aware splitting resolves mixed evidence.
 
 Current Phase C caveat: `Diary of a Madman` is kept as a public row with article variants merged, but its evidence mixes Gogol and Lu Xun translation conventions. It should be revisited in an author-aware split pass rather than treated as fully resolved.
 
