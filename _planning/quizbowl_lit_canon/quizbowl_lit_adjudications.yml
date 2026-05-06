@@ -22005,3 +22005,328 @@ decisions:
   reason: author_aware_split_target_literary_work
   review_status: accepted_likely_work
   source: codex_phase_d_chronology_cleanup_batch4
+- canonical_title: Going to the Wars
+  normalized_title: going to the wars
+  decision: alias
+  alias_of: To Lucasta, Going to the Warres
+  reason: subtitle_variant
+  review_status: merged_subtitle_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Voyna i mir
+  normalized_title: voyna i mir
+  decision: alias
+  alias_of: War and Peace
+  reason: transliterated_original_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: L'Etranger
+  normalized_title: l etranger
+  decision: alias
+  alias_of: The Stranger
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: L’Etranger
+  normalized_title: l etranger
+  decision: alias
+  alias_of: The Stranger
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: L’Etranger
+  normalized_title: letranger
+  decision: alias
+  alias_of: The Stranger
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: La Parure
+  normalized_title: la parure
+  decision: alias
+  alias_of: The Necklace
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Le Misanthrope
+  normalized_title: le misanthrope
+  decision: alias
+  alias_of: The Misanthrope
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Fin de partie
+  normalized_title: fin de partie
+  decision: alias
+  alias_of: Endgame
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Prestupleniye i nakazaniye
+  normalized_title: prestupleniye i nakazaniye
+  decision: alias
+  alias_of: Crime and Punishment
+  reason: transliterated_original_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Fröken Julie
+  normalized_title: froken julie
+  decision: alias
+  alias_of: Miss Julie
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: La Chute
+  normalized_title: la chute
+  decision: alias
+  alias_of: The Fall
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Nesnesitelná lehkost bytí
+  normalized_title: nesnesitelna lehkost byti
+  decision: alias
+  alias_of: The Unbearable Lightness of Being
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Les Trois Mousquetaires
+  normalized_title: les trois mousquetaires
+  decision: alias
+  alias_of: The Three Musketeers
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Il nome della rosa
+  normalized_title: il nome della rosa
+  decision: alias
+  alias_of: The Name of the Rose
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Im Westen nichts Neues
+  normalized_title: im westen nichts neues
+  decision: alias
+  alias_of: All Quiet on the Western Front
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Veinte poemas de amor y una canción desesperada
+  normalized_title: veinte poemas de amor y una cancion desesperada
+  decision: alias
+  alias_of: Twenty Love Poems and a Song of Despair
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Dyadya Vanya
+  normalized_title: dyadya vanya
+  decision: alias
+  alias_of: Uncle Vanya
+  reason: transliterated_original_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Le Comte de Monte-Cristo
+  normalized_title: le comte de monte cristo
+  decision: alias
+  alias_of: The Count of Monte Cristo
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Billy Budd, Foretopman
+  normalized_title: billy budd foretopman
+  decision: alias
+  alias_of: Billy Budd
+  reason: alternate_full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Survival in Auschwitz
+  normalized_title: survival in auschwitz
+  decision: alias
+  alias_of: If This Is a Man
+  reason: alternate_translation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Possessed
+  normalized_title: the possessed
+  decision: alias
+  alias_of: Demons
+  reason: alternate_translation_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Scottish Play
+  normalized_title: the scottish play
+  decision: alias
+  alias_of: Macbeth
+  reason: euphemistic_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Good Woman of Setzuan
+  normalized_title: the good woman of setzuan
+  decision: alias
+  alias_of: The Good Person of Szechwan
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Amazing Adventures of Kavalier
+  normalized_title: the amazing adventures of kavalier
+  decision: alias
+  alias_of: The Amazing Adventures of Kavalier and Clay
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Brief Wondrous Life
+  normalized_title: brief wondrous life
+  decision: alias
+  alias_of: The Brief Wondrous Life of Oscar Wao
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Island of Dr
+  normalized_title: the island of dr
+  decision: alias
+  alias_of: The Island of Doctor Moreau
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Sketch Book of Geoffrey Crayon, Gent
+  normalized_title: the sketch book of geoffrey crayon gent
+  decision: alias
+  alias_of: The Sketch Book of Geoffrey Crayon
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: 'Looking Backward: 2000-1887'
+  normalized_title: looking backward 2000 1887
+  decision: alias
+  alias_of: Looking Backward
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Lonely Crowd
+  normalized_title: the lonely crowd
+  decision: reject
+  reason: social_science_work_for_adjacent_product
+  review_status: rejected_social_science_domain
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Poet
+  normalized_title: the poet
+  decision: review
+  reason: ambiguous_common_literary_title_or_character_label
+  review_status: needs_review_ambiguous_common_literary_title
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Apple Tree
+  normalized_title: the apple tree
+  decision: review
+  reason: ambiguous_common_literary_title_multiple_authors
+  review_status: needs_review_ambiguous_common_literary_title
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Phaedra
+  normalized_title: phaedra
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d_chronology_cleanup_batch5
+  notes: Evidence mixes Racine's French tragedy, Seneca's Roman tragedy, and later Phaedra-myth allusions.
+  split_into:
+  - title: Phaedra (Racine)
+    match_any:
+    - Racine
+    - Oenone
+    - Hippolyte
+    - Neptune
+    - Theseus
+    - Phedre
+  - title: Phaedra (Seneca)
+    match_any:
+    - Seneca
+    - Roman
+    - tragedy that inspired Racine
+- canonical_title: Phaedra (Racine)
+  normalized_title: phaedra racine
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Phaedra (Seneca)
+  normalized_title: phaedra seneca
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Spanish
+  normalized_title: spanish
+  decision: reject
+  reason: language_name_not_work
+  review_status: rejected_language_name_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Little Father Time
+  normalized_title: little father time
+  decision: reject
+  reason: character_name_not_work
+  review_status: rejected_character_name_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Inuit Mythology
+  normalized_title: inuit mythology
+  decision: reject
+  reason: mythology_domain_for_adjacent_product
+  review_status: rejected_mythology_domain
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Person from Porlock
+  normalized_title: person from porlock
+  decision: reject
+  reason: person_or_anecdotal_figure_not_work
+  review_status: rejected_person_or_character_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Valley of Ashes
+  normalized_title: valley of ashes
+  decision: reject
+  reason: fictional_place_not_work
+  review_status: rejected_place_or_setting_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Self-Taught Man
+  normalized_title: self taught man
+  decision: reject
+  reason: character_name_not_work
+  review_status: rejected_character_name_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Cide Hamete Benengeli
+  normalized_title: cide hamete benengeli
+  decision: reject
+  reason: fictional_author_not_standalone_work
+  review_status: rejected_character_or_fictional_author_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Mad Trist
+  normalized_title: the mad trist
+  decision: reject
+  reason: embedded_fictional_work_not_standalone
+  review_status: rejected_embedded_fictional_work_not_standalone
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: The Royal Nonesuch
+  normalized_title: the royal nonesuch
+  decision: reject
+  reason: embedded_performance_not_standalone_work
+  review_status: rejected_embedded_performance_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Shiva of the Knees
+  normalized_title: shiva of the knees
+  decision: reject
+  reason: character_epithet_not_work
+  review_status: rejected_character_name_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: of the Knees
+  normalized_title: of the knees
+  decision: reject
+  reason: character_epithet_fragment_not_work
+  review_status: rejected_character_phrase_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Washington Irving's
+  normalized_title: washington irvings
+  decision: reject
+  reason: possessive_author_fragment_not_work
+  review_status: rejected_author_fragment_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
+- canonical_title: Bonus Questions
+  normalized_title: bonus questions
+  decision: reject
+  reason: parser_artifact_not_work
+  review_status: rejected_parser_artifact_not_work
+  source: codex_phase_d_chronology_cleanup_batch5
