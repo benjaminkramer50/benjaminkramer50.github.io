@@ -8,6 +8,7 @@ require "json"
 require "net/http"
 require "optparse"
 require "set"
+require "thread"
 require "time"
 require "uri"
 require "yaml"
@@ -31,7 +32,7 @@ REPORT_HEADERS = %w[
 ].freeze
 
 LITERARY_DESCRIPTION_RE = /\b(?:novel|novella|poem|poetry|play|drama|tragedy|comedy|short stor(?:y|ies)|story|literary work|book|epic|saga|romance|memoir|autobiography|essay|fable|fairy tale|myth|scripture|gospel|sutra|anthology|poetry collection|graphic novel)\b/i
-NON_LITERARY_DESCRIPTION_RE = /\b(?:film|movie|television|tv|tv series|episode|album|song|single|opera|oratorio|cantata|symphony|composition|concerto|sonata|painting|sculpture|woodcuts?|video game|board game|manga series|anime|band|musical group|book imprint|imprint|publisher|publishing house|book review|critical edition|book edition|edition of|translation of|magazine article|journal article|newspaper article|title character|fictional character|character of|character in|protagonist of)\b/i
+NON_LITERARY_DESCRIPTION_RE = /\b(?:film|movie|television|tv|tv series|episode|album|song|single|opera|oratorio|cantata|symphony|composition|concerto|sonata|musical|website|painting|sculpture|woodcuts?|video game|board game|manga series|anime|band|musical group|book imprint|imprint|publisher|publishing house|book review|critical edition|book edition|edition of|translation of|magazine article|journal article|newspaper article|title character|fictional character|character of|character in|protagonist of)\b/i
 DESCRIPTION_FORM_GROUPS = {
   "poetry" => /\b(?:poem|poetry|poetry collection|verse|lyric|ode|sonnet|ballad|elegy)\b/i,
   "drama" => /\b(?:play|drama|tragedy|comedy|theatrical)\b/i,
@@ -73,7 +74,7 @@ def title_keys(title)
   keys
 end
 
-def http_json(url, attempts: 3)
+def http_json(url, attempts: 5)
   uri = URI(url)
 
   attempts.times do |attempt|
@@ -83,7 +84,16 @@ def http_json(url, attempts: 3)
     response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: uri.scheme == "https", read_timeout: 30) do |http|
       http.request(request)
     end
-    raise "HTTP #{response.code} for #{url}" unless response.is_a?(Net::HTTPSuccess)
+    unless response.is_a?(Net::HTTPSuccess)
+      if response.code.to_i == 429 && attempt < attempts - 1
+        retry_after = response["retry-after"].to_f
+        wait = [retry_after, 4.0 * (attempt + 1)].max
+        sleep wait + rand
+        next
+      end
+
+      raise "HTTP #{response.code} for #{url}"
+    end
 
     return JSON.parse(response.body)
   rescue StandardError
@@ -360,6 +370,7 @@ def parse_options
     limit: 500,
     search_limit: 8,
     sleep: 0.05,
+    jobs: 1,
     only_unplaced: true,
     retry_reported: false
   }
@@ -370,10 +381,51 @@ def parse_options
     parser.on("--limit N", Integer) { |value| options[:limit] = value }
     parser.on("--search-limit N", Integer) { |value| options[:search_limit] = value }
     parser.on("--sleep SECONDS", Float) { |value| options[:sleep] = value }
+    parser.on("--jobs N", Integer) { |value| options[:jobs] = value }
     parser.on("--all-gaps") { options[:only_unplaced] = false }
     parser.on("--retry-reported") { options[:retry_reported] = true }
   end.parse!
   options
+end
+
+def process_wikidata_rows(rows, search_limit, sleep_seconds, jobs)
+  jobs = [jobs.to_i, 1].max
+  results = Array.new(rows.length)
+
+  if jobs == 1
+    rows.each_with_index do |row, index|
+      warn "wikidata #{index + 1}/#{rows.length}: #{row["title"]}"
+      results[index] = candidate_for(row, search_limit)
+      sleep sleep_seconds if sleep_seconds.positive?
+    end
+    return results
+  end
+
+  queue = Queue.new
+  rows.each_with_index { |row, index| queue << [row, index] }
+  warn_mutex = Mutex.new
+
+  workers = jobs.times.map do
+    Thread.new do
+      loop do
+        row, index = queue.pop(true)
+        warn_mutex.synchronize do
+          warn "wikidata #{index + 1}/#{rows.length}: #{row["title"]}"
+        end
+        results[index] = candidate_for(row, search_limit)
+        sleep sleep_seconds if sleep_seconds.positive?
+      rescue ThreadError
+        break
+      rescue StandardError => e
+        warn_mutex.synchronize do
+          warn "wikidata failed title=#{row&.fetch("title", nil).inspect}: #{e.class}: #{e.message}"
+        end
+        results[index] = nil if index
+      end
+    end
+  end
+  workers.each(&:join)
+  results
 end
 
 def reported_title_keys(report_path)
@@ -428,11 +480,12 @@ def main
   FileUtils.mkdir_p(File.dirname(options[:out]))
   FileUtils.mkdir_p(File.dirname(options[:report]))
 
+  candidates = process_wikidata_rows(rows, options[:search_limit], options[:sleep], options[:jobs])
+
   new_overrides = []
   report_rows = []
   rows.each_with_index do |row, index|
-    warn "wikidata #{index + 1}/#{rows.length}: #{row["title"]}"
-    candidate = candidate_for(row, options[:search_limit])
+    candidate = candidates[index]
     if candidate
       new_overrides << candidate
       report_rows << {
@@ -456,7 +509,6 @@ def main
         "decision" => "no_high_confidence_match"
       }
     end
-    sleep options[:sleep] if options[:sleep].positive?
   end
 
   combined_by_key = {}

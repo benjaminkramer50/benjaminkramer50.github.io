@@ -22573,3 +22573,530 @@ decisions:
   reason: title_collision_christie_story_nursery_rhyme_boundary
   review_status: needs_review_title_collision_requires_author_aware_split
   source: codex_phase_d_chronology_cleanup_batch6
+- canonical_title: No Telephone to Heaven
+  decision: accept
+  reason: wikidata_false_match_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Life to Come
+  decision: accept
+  reason: wikidata_false_match_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Beethoven Was One-Sixteenth Black
+  decision: accept
+  reason: wikidata_work_level_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: El ingenioso hidalgo Don Quixote de la Mancha
+  decision: alias
+  alias_of: Don Quixote
+  reason: original_language_full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Questions of Travel
+  decision: accept
+  reason: wikidata_false_match_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Aria da Capo
+  decision: accept
+  reason: wikidata_production_item_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Scholars
+  decision: review
+  reason: title_collision_yeats_poem_wu_jingzi_novel
+  review_status: needs_review_title_collision_requires_split
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Pied Piper of Hamelin
+  decision: accept
+  reason: wikidata_false_match_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: My Last Farewell
+  decision: alias
+  alias_of: Mi Ultimo Adios
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Gypsy Ballads
+  decision: alias
+  alias_of: Romancero Gitano
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Lives of Animals
+  decision: accept
+  reason: wikidata_contributor_list_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Great Fear
+  decision: reject
+  reason: section_or_adjacent_history_fragment
+  review_status: rejected_section_or_adjacent_history_fragment
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Tragedy of Julius Caesar
+  decision: alias
+  alias_of: Julius Caesar
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Poems from Prison
+  decision: accept
+  reason: wikidata_false_match_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Jolly Corner
+  decision: accept
+  reason: wikidata_artist_book_match_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Old Goriot
+  decision: alias
+  alias_of: Pere Goriot
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Evolution of Cooperation
+  decision: reject
+  reason: social_science_game_theory
+  review_status: rejected_social_science_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Mistakes of a Night
+  decision: alias
+  alias_of: She Stoops to Conquer
+  reason: subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Story-Teller
+  decision: review
+  reason: title_collision_saki_benjamin_other_contexts
+  review_status: needs_review_title_collision_requires_split
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Gospel According to John
+  decision: review
+  reason: scripture_vs_commentary_false_wikidata_match
+  review_status: needs_review_scripture_boundary_or_metadata_correction
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Cloak
+  decision: alias
+  alias_of: The Overcoat
+  reason: translated_title_variant_for_gogol
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Transformations
+  decision: accept
+  reason: wikidata_false_match_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Mastro-Don Gesualdo
+  decision: accept
+  reason: wikidata_edition_item_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Zero at the Bone
+  decision: alias
+  alias_of: A Narrow Fellow in the Grass
+  reason: quoted_line_for_poem_title
+  review_status: merged_line_or_phrase_to_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Lives of the Twelve Caesars
+  decision: accept
+  reason: wikidata_edition_item_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Suppliants
+  decision: accept
+  reason: wikidata_title_collision_corrected_to_aeschylus
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Na Dne
+  decision: alias
+  alias_of: The Lower Depths
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Hernani
+  decision: accept
+  reason: wikidata_missing_creator_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Aulularia
+  decision: alias
+  alias_of: The Pot of Gold
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Gravity and Grace
+  decision: reject
+  reason: philosophy_religion_boundary_not_literature_work
+  review_status: rejected_adjacent_philosophy_religion_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Resurrection-Man
+  decision: alias
+  alias_of: A Tale of Two Cities
+  reason: character_epithet_clue_fragment
+  review_status: merged_clue_fragment_to_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Chariots of the Gods
+  decision: reject
+  reason: pseudoscience_nonfiction
+  review_status: rejected_adjacent_nonfiction_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: 'Discipline and Punish: The Birth of the Prison'
+  decision: reject
+  reason: philosophy_social_theory
+  review_status: rejected_adjacent_philosophy_social_theory_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Eumenides
+  decision: accept
+  reason: greek_tragedy_work_kept_separate_from_title_collision
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Eumenides
+  decision: alias
+  alias_of: The Eumenides
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Form of the Sword
+  decision: accept
+  reason: borges_story_canonical_title
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Shape of the Sword
+  decision: alias
+  alias_of: The Form of the Sword
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Love of the Last Tycoon
+  decision: alias
+  alias_of: The Last Tycoon
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Snow-Image
+  decision: review
+  reason: wikidata_version_item_requires_work_level_review
+  review_status: needs_review_version_item_or_story_metadata
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Beginners
+  decision: review
+  reason: story_collection_boundary
+  review_status: needs_review_story_collection_boundary
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Ambitious Guest
+  decision: review
+  reason: wikidata_version_item_requires_work_level_review
+  review_status: needs_review_version_item_or_story_metadata
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Tres Tristes Tigres
+  decision: alias
+  alias_of: Three Trapped Tigers
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Under the Rose
+  decision: review
+  reason: title_collision_pynchon_story_false_wikidata_match
+  review_status: needs_review_title_collision_or_metadata_correction
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Use of Knowledge in Society
+  decision: reject
+  reason: economics_social_science
+  review_status: rejected_social_science_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Mask of Anarchy
+  decision: alias
+  alias_of: The Masque of Anarchy
+  reason: spelling_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Rest of the Story
+  decision: reject
+  reason: radio_segment_or_false_literary_match
+  review_status: rejected_non_literary_context
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: La Condition Humaine
+  decision: alias
+  alias_of: Man’s Fate
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Todesfuge
+  decision: alias
+  alias_of: Death Fugue
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Ten Little Indians
+  decision: review
+  reason: title_collision_christie_alexie_song_contexts
+  review_status: needs_review_title_collision_requires_split
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The May-Pole of Merry Mount
+  decision: review
+  reason: wikidata_version_item_requires_work_level_review
+  review_status: needs_review_version_item_or_story_metadata
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Yellow Wall-Paper
+  decision: alias
+  alias_of: The Yellow Wallpaper
+  reason: hyphenated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Une Saison en Enfer
+  decision: alias
+  alias_of: A Season in Hell
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Power of the Powerless
+  decision: reject
+  reason: political_theory_essay
+  review_status: rejected_adjacent_political_theory_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Bah! Humbug
+  decision: alias
+  alias_of: A Christmas Carol
+  reason: clue_phrase_for_work
+  review_status: merged_clue_fragment_to_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: CollegeHumor.com
+  decision: reject
+  reason: website_not_literature
+  review_status: rejected_non_literary_context
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Recalled to Life
+  decision: alias
+  alias_of: A Tale of Two Cities
+  reason: section_title_or_phrase_for_work
+  review_status: merged_clue_fragment_to_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Tenth Man
+  decision: review
+  reason: title_collision_greene_novel_chayefsky_play
+  review_status: needs_review_title_collision_requires_split
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Myth of the Machine
+  decision: reject
+  reason: history_of_technology_social_theory
+  review_status: rejected_adjacent_social_theory_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Worlds in Collision
+  decision: reject
+  reason: pseudoscience_nonfiction
+  review_status: rejected_adjacent_nonfiction_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Mabinogion
+  decision: accept
+  reason: wikidata_modern_edition_item_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: My Father Bleeds History
+  decision: alias
+  alias_of: Maus
+  reason: volume_title_for_larger_work
+  review_status: merged_subwork_to_larger_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Maus
+  decision: accept
+  reason: graphic_narrative_literature_work_manual_audit
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Small Rain
+  decision: review
+  reason: wikidata_false_match_pynchon_story
+  review_status: needs_review_metadata_correction
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: How to Succeed in Business Without Really Trying
+  decision: reject
+  reason: musical_not_literature
+  review_status: rejected_non_literary_musical
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Our Posthuman Future
+  decision: reject
+  reason: political_theory_social_science
+  review_status: rejected_social_science_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Tiger, Tiger
+  decision: review
+  reason: title_collision_kipling_blake_false_wikidata_match
+  review_status: needs_review_title_collision_requires_split
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: A House to Let
+  decision: accept
+  reason: collaborative_story_metadata_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Lost Leader
+  decision: accept
+  reason: wikidata_false_date_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Trouble with Normal
+  decision: reject
+  reason: queer_theory_social_science
+  review_status: rejected_adjacent_social_theory_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Cinnamon Peeler
+  decision: review
+  reason: wikidata_collection_match_for_poem
+  review_status: needs_review_poem_collection_boundary
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Birds of Passage
+  decision: review
+  reason: title_collision_longfellow_whitman_cather_contexts
+  review_status: needs_review_title_collision_requires_split
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Hymn to Zeus
+  decision: review
+  reason: title_collision_cleanthes_callimachus_aeschylus
+  review_status: needs_review_title_collision_requires_split
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Eye
+  decision: accept
+  reason: wikidata_false_match_corrected_to_nabokov
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Spain in Our Hearts
+  decision: accept
+  reason: wikidata_false_match_corrected_to_neruda
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Killer in the Rain
+  decision: review
+  reason: wikidata_false_match_chandler_story
+  review_status: needs_review_metadata_correction
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: 'Surveiller et Punir: Naissance de la Prison'
+  decision: reject
+  reason: philosophy_social_theory
+  review_status: rejected_adjacent_philosophy_social_theory_domain
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: How to Write About Africa
+  decision: accept
+  reason: literary_satirical_essay_metadata_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Slaughter Yard
+  decision: accept
+  reason: wikidata_creator_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Toba Tek Singh
+  decision: accept
+  reason: wikidata_date_corrected
+  review_status: accepted_likely_work
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Cantankerous Lover
+  decision: alias
+  alias_of: The Misanthrope
+  reason: translated_subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Way of the Soul
+  decision: alias
+  alias_of: In Memoriam A.H.H.
+  reason: original_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Morte accidentale di un anarchico
+  decision: alias
+  alias_of: Accidental Death of an Anarchist
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Le mur
+  decision: review
+  reason: title_story_collection_boundary
+  review_status: needs_review_story_collection_boundary
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Suna no onna
+  decision: alias
+  alias_of: Woman in the Dunes
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Jigokuhen
+  decision: alias
+  alias_of: Hell Screen
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The History of Rasselas, Prince of Abissinia
+  decision: alias
+  alias_of: Rasselas
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Life and Adventures of Martin Chuzzlewit
+  decision: alias
+  alias_of: Martin Chuzzlewit
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Bieguni
+  decision: alias
+  alias_of: Flights
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Just So Stories for Little Children
+  decision: alias
+  alias_of: Just So Stories
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Summoning of Everyman
+  decision: review
+  reason: wikidata_edition_item_requires_work_level_review
+  review_status: needs_review_version_item_or_play_metadata
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Lykke-Per
+  decision: review
+  reason: wikidata_edition_item_requires_work_level_review
+  review_status: needs_review_version_item_or_novel_metadata
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: 'Lanark: A Life in Four Books'
+  decision: alias
+  alias_of: Lanark
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Sonezaki Shinjū
+  decision: alias
+  alias_of: The Love Suicides at Sonezaki
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Yūkoku
+  decision: alias
+  alias_of: Patriotism
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: Aladdin and the Wonderful Lamp
+  decision: review
+  reason: wikidata_version_item_requires_work_level_review
+  review_status: needs_review_version_item_or_tale_metadata
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Face on the Barroom Floor
+  decision: review
+  reason: wikidata_false_match_algren_story_context
+  review_status: needs_review_metadata_correction
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: 'The Good Soldier: A Tale of Passion'
+  decision: alias
+  alias_of: The Good Soldier
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1
+- canonical_title: The Pioneers, or, the Sources of the Susquehanna
+  decision: alias
+  alias_of: The Pioneers
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_wikidata_giant_audit_wave1

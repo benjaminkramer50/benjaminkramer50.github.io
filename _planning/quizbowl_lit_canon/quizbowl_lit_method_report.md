@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-06T20:11:38Z
+Generated: 2026-05-06T21:20:00Z
 
 ## Corpus
 
@@ -9,9 +9,9 @@ Generated: 2026-05-06T20:11:38Z
 - Rows processed: 2216999
 - Evidence fields: raw `answerline` and raw `clue_text`
 - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
-- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2786 decisions)
-- Manual alias rules: 444 loaded, 441 applied after pass 1
-- Author-aware split targets: 25 targets across 13 source titles (20 public after routing)
+- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2876 decisions)
+- Manual alias rules: 481 loaded, 478 applied after pass 1
+- Author-aware split targets: 25 targets across 13 source titles (19 public after routing)
 - Split audit rows: 25 written to `_planning/quizbowl_lit_canon/quizbowl_lit_split_audit.tsv`
 - Worker processes: 6
 - Explicitly not used for evidence: `archive_canon_refinement_runs`, `archive_canon_answerline_candidates`
@@ -19,16 +19,16 @@ Generated: 2026-05-06T20:11:38Z
 
 ## Candidate Extraction
 
-- Raw answerline work candidates: 9244
-- Exact-match work-title seeds from answerlines and clues: 6244
-- Exact-match seed basis counts: `answerline`=893, `answerline_and_clue`=1275, `clue`=4076
-- Raw normalized candidates: 81470
-- Candidates clearing threshold: 20121
-- Public YAML rows after accepted-work filtering: 5133
-- Rejected non-literature candidates: 3957
-- Audit queue rows: 19371
+- Raw answerline work candidates: 9217
+- Exact-match work-title seeds from answerlines and clues: 6216
+- Exact-match seed basis counts: `answerline`=874, `answerline_and_clue`=1274, `clue`=4068
+- Raw normalized candidates: 81434
+- Candidates clearing threshold: 20085
+- Public YAML rows after accepted-work filtering: 5062
+- Rejected non-literature candidates: 3971
+- Audit queue rows: 19388
 - LLM review queue rows: 500
-- Evidence/example rows written: 86697
+- Evidence/example rows written: 86528
 
 ## Review Routing
 
@@ -39,15 +39,15 @@ Generated: 2026-05-06T20:11:38Z
 
 ## Tier Counts
 
-- `qb_candidate`: 11031
-- `qb_contextual`: 2585
-- `qb_core`: 1038
+- `qb_candidate`: 11052
+- `qb_contextual`: 2512
+- `qb_core`: 1040
 - `qb_major`: 1510
-- `qb_rejected`: 3957
+- `qb_rejected`: 3971
 
 ## Review Status Counts
 
-- `accepted_likely_work`: 5133
+- `accepted_likely_work`: 5062
 - `merged_duplicate_title_variant`: 1
 - `needs_review_act_title_boundary`: 1
 - `needs_review_alternate_poem_title_boundary`: 1
@@ -80,16 +80,19 @@ Generated: 2026-05-06T20:11:38Z
 - `needs_review_low_evidence`: 3327
 - `needs_review_major_subwork_boundary`: 2
 - `needs_review_malformed_title_needs_canonicalization`: 1
+- `needs_review_metadata_correction`: 3
 - `needs_review_mixed_literary_poem_and_music_evidence`: 1
 - `needs_review_mixed_poem_or_philosophy_example`: 1
 - `needs_review_non_literature_track_context`: 732
 - `needs_review_philosophy_economics_satire_boundary`: 1
+- `needs_review_poem_collection_boundary`: 1
 - `needs_review_poem_sequence_or_title_fragment_boundary`: 1
 - `needs_review_possible_character_or_person`: 2686
 - `needs_review_possible_combined_title`: 688
 - `needs_review_preface_or_subwork_boundary`: 1
 - `needs_review_religion_devotional_boundary`: 2
 - `needs_review_religious_autobiography_boundary`: 2
+- `needs_review_scripture_boundary_or_metadata_correction`: 1
 - `needs_review_scripture_or_old_english_poem_boundary`: 1
 - `needs_review_scripture_religion_boundary`: 1
 - `needs_review_section_or_cycle_boundary`: 2
@@ -103,18 +106,30 @@ Generated: 2026-05-06T20:11:38Z
 - `needs_review_sequence_or_section_title_boundary`: 1
 - `needs_review_single_poem_or_section_boundary`: 1
 - `needs_review_speech_or_poetics_text_boundary`: 1
+- `needs_review_story_collection_boundary`: 2
 - `needs_review_title_collision_and_non_literary_context_dominance`: 1
 - `needs_review_title_collision_or_film_context_requires_split`: 1
 - `needs_review_title_collision_or_low_confidence_nonfiction_boundary`: 1
+- `needs_review_title_collision_or_metadata_correction`: 1
 - `needs_review_title_collision_or_nonfiction_boundary`: 1
 - `needs_review_title_collision_requires_author_aware_split`: 10
+- `needs_review_title_collision_requires_split`: 7
 - `needs_review_title_fragment_boundary`: 1
 - `needs_review_title_fragment_duplicate_boundary`: 2
 - `needs_review_title_needs_canonicalization`: 1
 - `needs_review_title_variant_boundary`: 1
+- `needs_review_version_item_or_novel_metadata`: 1
+- `needs_review_version_item_or_play_metadata`: 1
+- `needs_review_version_item_or_story_metadata`: 3
+- `needs_review_version_item_or_tale_metadata`: 1
 - `rejected_abbreviated_title_fragment`: 1
 - `rejected_act_title_not_standalone_work`: 3
 - `rejected_address_fragment_or_common_title`: 1
+- `rejected_adjacent_nonfiction_domain`: 2
+- `rejected_adjacent_philosophy_religion_domain`: 1
+- `rejected_adjacent_philosophy_social_theory_domain`: 2
+- `rejected_adjacent_political_theory_domain`: 1
+- `rejected_adjacent_social_theory_domain`: 2
 - `rejected_adjective_not_work`: 2
 - `rejected_adjective_or_culture_label_not_work`: 1
 - `rejected_adjective_or_title_fragment`: 1
@@ -271,11 +286,11 @@ Generated: 2026-05-06T20:11:38Z
 - `rejected_name_or_music_context_not_work`: 1
 - `rejected_newspaper_not_work`: 1
 - `rejected_nickname_or_character_fragment`: 1
-- `rejected_non_literary_context`: 2895
+- `rejected_non_literary_context`: 2896
 - `rejected_non_literary_music`: 13
 - `rejected_non_literary_music_context`: 2
 - `rejected_non_literary_music_piece`: 2
-- `rejected_non_literary_musical`: 6
+- `rejected_non_literary_musical`: 7
 - `rejected_non_literary_opera`: 2
 - `rejected_non_literary_opera_cycle`: 2
 - `rejected_non_literary_or_insufficient_literary_work_evidence`: 30
@@ -395,6 +410,7 @@ Generated: 2026-05-06T20:11:38Z
 - `rejected_science_psychology_domain`: 1
 - `rejected_science_term_not_work`: 3
 - `rejected_scripture_religion_domain`: 2
+- `rejected_section_or_adjacent_history_fragment`: 1
 - `rejected_section_or_common_title_not_standalone`: 1
 - `rejected_section_or_cycle_title`: 2
 - `rejected_section_or_person_name_not_work`: 1
@@ -414,7 +430,7 @@ Generated: 2026-05-06T20:11:38Z
 - `rejected_social_science_anthropology_domain`: 1
 - `rejected_social_science_chapter_title`: 1
 - `rejected_social_science_combined_title_domain`: 2
-- `rejected_social_science_domain`: 3
+- `rejected_social_science_domain`: 6
 - `rejected_social_science_feminist_criticism_domain`: 1
 - `rejected_social_science_feminist_economics_domain`: 1
 - `rejected_social_science_journalism_not_literature`: 1
@@ -472,25 +488,25 @@ Generated: 2026-05-06T20:11:38Z
 
 ## Public Classification Counts
 
-Work forms: `collection_or_cycle`=399, `drama`=716, `epic_or_romance`=76, `essay_memoir_nonfiction`=222, `long_fiction`=1732, `poetry`=996, `scripture_myth_hymn`=12, `short_fiction`=755, `unknown_form`=225
+Work forms: `collection_or_cycle`=392, `drama`=704, `epic_or_romance`=76, `essay_memoir_nonfiction`=219, `long_fiction`=1713, `poetry`=987, `scripture_myth_hymn`=11, `short_fiction`=741, `unknown_form`=219
 
-Eras: `ancient_classical`=159, `contemporary`=151, `early_modern`=246, `eighteenth_century`=98, `long_19th_century`=637, `medieval`=97, `modernist`=608, `postwar_modern`=740, `unknown_era`=2397
+Eras: `ancient_classical`=142, `contemporary`=187, `early_modern`=232, `eighteenth_century`=112, `long_19th_century`=739, `medieval`=86, `modernist`=697, `postwar_modern`=940, `unknown_era`=1927
 
-Regions/traditions: `african`=78, `american`=287, `arabic_persian_turkic`=72, `biblical_religious`=54, `caribbean`=27, `chinese`=61, `english_british_irish`=446, `french`=120, `germanic_scandinavian`=127, `greek`=103, `iberian_lusophone`=59, `indigenous_oceania`=16, `italian`=55, `japanese_korean`=70, `latin_american`=153, `roman_latin`=52, `russian_eastern_european`=157, `south_asian`=71, `unknown_region`=3125
+Regions/traditions: `african`=74, `american`=214, `arabic_persian_turkic`=51, `biblical_religious`=43, `caribbean`=26, `chinese`=51, `english_british_irish`=427, `french`=115, `germanic_scandinavian`=113, `greek`=90, `iberian_lusophone`=52, `indigenous_oceania`=13, `italian`=54, `japanese_korean`=60, `latin_american`=153, `roman_latin`=46, `russian_eastern_european`=147, `south_asian`=56, `unknown_region`=3277
 
-Reading units: `ancient_epic_scripture_myth`=12, `classical_drama`=43, `collections_and_cycles`=224, `contemporary_global_literature`=151, `drama`=353, `early_modern_drama`=82, `early_modern_world_literature`=164, `eighteenth_century_prose_and_drama`=98, `epic_romance_or_oral_tradition`=36, `fiction_and_narrative`=668, `literary_nonfiction`=123, `medieval_romance_saga`=97, `modernism`=608, `nineteenth_century_fiction`=212, `nineteenth_century_poetry_and_drama`=425, `poetry`=557, `postwar_global_literature`=117, `postwar_literature`=623, `scripture_myth_hymn`=9, `short_fiction`=400, `unclassified_unit`=131
+Reading units: `ancient_epic_scripture_myth`=12, `classical_drama`=43, `collections_and_cycles`=175, `contemporary_global_literature`=187, `drama`=312, `early_modern_drama`=86, `early_modern_world_literature`=146, `eighteenth_century_prose_and_drama`=112, `epic_romance_or_oral_tradition`=33, `fiction_and_narrative`=470, `literary_nonfiction`=100, `medieval_romance_saga`=86, `modernism`=697, `nineteenth_century_fiction`=237, `nineteenth_century_poetry_and_drama`=502, `poetry`=500, `postwar_global_literature`=130, `postwar_literature`=810, `scripture_myth_hymn`=8, `short_fiction`=301, `unclassified_unit`=115
 
-Classification confidence: `rule_high`=1185, `rule_low`=1588, `rule_medium`=2292, `unknown_metadata`=68
+Classification confidence: `rule_high`=1168, `rule_low`=1329, `rule_medium`=2509, `unknown_metadata`=56
 
-Creator source: `codex_manual_metadata_correction`=242, `quizbowl_author_answerline`=944, `reviewed_canon_record`=46, `unknown`=2097, `wikidata_metadata_overlay`=1804
+Creator source: `codex_manual_metadata_correction`=265, `quizbowl_author_answerline`=650, `reviewed_canon_record`=46, `unknown`=1593, `wikidata_metadata_overlay`=2508
 
-Creator confidence: `high`=1859, `low`=344, `medium`=833, `unknown`=2097
+Creator confidence: `high`=2402, `low`=215, `medium`=852, `unknown`=1593
 
-Chronology source: `codex_manual_metadata_correction`=240, `reviewed_canon_record`=46, `title_override`=19, `unknown`=3197, `wikidata_metadata_overlay`=1631
+Chronology source: `codex_manual_metadata_correction`=263, `reviewed_canon_record`=46, `title_override`=19, `unknown`=2556, `wikidata_metadata_overlay`=2178
 
-Chronology confidence: `high`=1875, `medium`=61, `unknown`=3197
+Chronology confidence: `high`=2418, `medium`=88, `unknown`=2556
 
-Chronology rows needing review: 3197
+Chronology rows needing review: 2556
 
 ## Outputs
 
