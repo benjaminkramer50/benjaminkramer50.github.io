@@ -2242,6 +2242,7 @@ layout: null
         {
           "id": {{ item.id | jsonify }},
           "title": {{ item.title | jsonify }},
+          "creators": {{ item.creators | jsonify }},
           "tier": {{ item.tier | jsonify }},
           "work_form": {{ item.work_form | jsonify }}
         }{% unless forloop.last %},{% endunless %}
@@ -2290,7 +2291,8 @@ layout: null
 
         if (match) {
           bookCanonIdInput.value = match.id;
-          bookCanonHint.textContent = 'Canon match: ' + match.title + ' - ' + canonTierLabel(match.tier) + '. This entry will mark the work as logged on the canon page.';
+          var creatorText = Array.isArray(match.creators) && match.creators.length ? ' - ' + match.creators.join(', ') : '';
+          bookCanonHint.textContent = 'Canon match: ' + match.title + creatorText + ' - ' + canonTierLabel(match.tier) + '. This entry will mark the work as logged on the canon page.';
         } else if (title && matches.length > 1) {
           bookCanonIdInput.value = '';
           bookCanonHint.textContent = 'Multiple canon matches found for this title; no canon_id will be added automatically.';

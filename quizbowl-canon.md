@@ -47,7 +47,7 @@ wide: true
 <div class="canon-filters quizbowl-primary-filters" aria-label="Primary literature canon filters">
   <label class="canon-filter-field canon-search-field" for="qb-search">
     <span>Search</span>
-    <input id="qb-search" type="search" placeholder="Title, period, tradition, form..." aria-label="Search literature canon reading list">
+    <input id="qb-search" type="search" placeholder="Title, author, period, tradition, form..." aria-label="Search literature canon reading list">
   </label>
   <label class="canon-filter-field" for="qb-unit-filter">
     <span>Unit</span>
@@ -90,7 +90,7 @@ wide: true
     <select id="qb-sort" aria-label="Sort literature canon reading list">
       <option value="chronology" selected>Reading Path</option>
       <option value="rank">Canon Strength</option>
-      <option value="questions">Source Signal</option>
+      <option value="questions">Canon Signal</option>
       <option value="title">Title</option>
     </select>
   </label>
@@ -133,7 +133,7 @@ wide: true
       </select>
     </label>
     <label class="canon-filter-field" for="qb-evidence-filter">
-      <span>Source Evidence</span>
+      <span>Evidence</span>
       <select id="qb-evidence-filter" aria-label="Filter by evidence profile">
         <option value="">Any Evidence</option>
         <option value="answerline_and_clue">Answerline + Clue</option>
@@ -182,9 +182,9 @@ wide: true
       </select>
     </label>
     <label class="canon-filter-field" for="qb-context-filter">
-      <span>Source Context</span>
+      <span>Context</span>
       <select id="qb-context-filter" aria-label="Filter by source context">
-        <option value="">Any Source Context</option>
+        <option value="">Any Context</option>
         <option value="literature_dominant">Literature Dominant</option>
         <option value="cross_category_literary">Cross-Category Literary</option>
         <option value="non_literature_context">Non-Literature Context</option>
@@ -501,6 +501,7 @@ wide: true
   function buildSearchText(item) {
     return [
       item.title,
+      Array.isArray(item.creators) ? item.creators.join(' ') : '',
       item.tier,
       item.work_form,
       item.evidence_profile,
@@ -573,7 +574,7 @@ wide: true
     });
   }
 
-  function renderItem(item, displayNumber) {
+  function renderItem(item) {
     var article = document.createElement('article');
     article.className = 'canon-item quizbowl-canon-item' + (item.logged ? ' quizbowl-canon-item-logged' : '');
     article.setAttribute('data-tier', item.tier || '');
@@ -601,7 +602,10 @@ wide: true
           (item.book_log_review ? escapeHtml(item.book_log_review).replace(/\n/g, '<br>') : '') +
         '</p></details>'
       : '';
-    var sequencePrefix = selectedValue(sortSelect) === 'chronology' ? 'Path ' : '#';
+    var creatorText = Array.isArray(item.creators) ? item.creators.filter(Boolean).join(', ') : '';
+    var creatorLine = creatorText
+      ? '<div class="canon-creator">' + escapeHtml(creatorText) + '</div>'
+      : '';
     var example = item.example && item.example.snippet
       ? '<details class="quizbowl-evidence"><summary>Corpus evidence</summary><p><span>Source: ' +
           escapeHtml(item.example.set_title || 'clue sample') +
@@ -613,13 +617,13 @@ wide: true
       '<div class="canon-status-mark quizbowl-tier-mark" aria-hidden="true"></div>' +
       '<div class="canon-item-body">' +
         '<div class="canon-item-topline">' +
-          '<span class="canon-sequence-badge">' + sequencePrefix + escapeHtml(displayNumber) + '</span>' +
           chronology +
           '<span class="canon-date">' + escapeHtml(label('era', item.era)) + '</span>' +
           '<span class="canon-era-badge">' + escapeHtml(label('tier', item.tier)) + '</span>' +
           '<span class="canon-date">' + escapeHtml(label('unit', item.reading_unit)) + '</span>' +
         '</div>' +
         '<h2 class="canon-title">' + (item.logged ? '<span class="quizbowl-title-check" aria-label="Logged">&#x2611;</span>' : '') + escapeHtml(item.title) + '</h2>' +
+        creatorLine +
         '<div class="canon-meta">' +
           '<span class="canon-chip canon-level-chip">' + escapeHtml(label('form', item.work_form)) + '</span>' +
           region +
@@ -654,8 +658,8 @@ wide: true
     var pageItems = filteredItems.slice(start, start + size);
 
     list.innerHTML = '';
-    pageItems.forEach(function (item, index) {
-      list.appendChild(renderItem(item, start + index + 1));
+    pageItems.forEach(function (item) {
+      list.appendChild(renderItem(item));
     });
 
     if (visibleCount) {

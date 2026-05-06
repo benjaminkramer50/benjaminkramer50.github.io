@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-05T21:35:43Z
+Generated: 2026-05-06T02:41:45Z
 
 ## Corpus
 
@@ -443,19 +443,23 @@ Generated: 2026-05-05T21:35:43Z
 
 Work forms: `collection_or_cycle`=412, `drama`=759, `epic_or_romance`=81, `essay_memoir_nonfiction`=227, `long_fiction`=1833, `poetry`=1030, `scripture_myth_hymn`=14, `short_fiction`=776, `unknown_form`=242
 
-Eras: `ancient_classical`=187, `contemporary`=102, `early_modern`=251, `eighteenth_century`=55, `long_19th_century`=330, `medieval`=101, `modernist`=227, `postwar_modern`=179, `unknown_era`=3942
+Eras: `ancient_classical`=180, `contemporary`=99, `early_modern`=262, `eighteenth_century`=59, `long_19th_century`=338, `medieval`=104, `modernist`=235, `postwar_modern`=189, `unknown_era`=3908
 
-Regions/traditions: `african`=102, `american`=514, `arabic_persian_turkic`=136, `biblical_religious`=74, `caribbean`=32, `chinese`=81, `english_british_irish`=501, `french`=129, `germanic_scandinavian`=167, `greek`=150, `iberian_lusophone`=57, `indigenous_oceania`=27, `italian`=64, `japanese_korean`=86, `latin_american`=170, `roman_latin`=64, `russian_eastern_european`=186, `south_asian`=108, `unknown_region`=2726
+Regions/traditions: `african`=102, `american`=512, `arabic_persian_turkic`=136, `biblical_religious`=74, `caribbean`=32, `chinese`=82, `english_british_irish`=504, `french`=132, `germanic_scandinavian`=167, `greek`=146, `iberian_lusophone`=58, `indigenous_oceania`=27, `italian`=65, `japanese_korean`=86, `latin_american`=171, `roman_latin`=65, `russian_eastern_european`=190, `south_asian`=109, `unknown_region`=2716
 
-Reading units: `ancient_epic_scripture_myth`=14, `classical_drama`=42, `collections_and_cycles`=321, `contemporary_global_literature`=102, `drama`=543, `early_modern_drama`=65, `early_modern_world_literature`=186, `eighteenth_century_prose_and_drama`=55, `epic_romance_or_oral_tradition`=45, `fiction_and_narrative`=1421, `literary_nonfiction`=173, `medieval_romance_saga`=101, `modernism`=227, `nineteenth_century_fiction`=105, `nineteenth_century_poetry_and_drama`=225, `poetry`=770, `postwar_global_literature`=55, `postwar_literature`=124, `scripture_myth_hymn`=12, `short_fiction`=594, `unclassified_unit`=194
+Reading units: `ancient_epic_scripture_myth`=14, `classical_drama`=42, `collections_and_cycles`=319, `contemporary_global_literature`=99, `drama`=538, `early_modern_drama`=67, `early_modern_world_literature`=195, `eighteenth_century_prose_and_drama`=59, `epic_romance_or_oral_tradition`=43, `fiction_and_narrative`=1403, `literary_nonfiction`=169, `medieval_romance_saga`=104, `modernism`=235, `nineteenth_century_fiction`=111, `nineteenth_century_poetry_and_drama`=227, `poetry`=767, `postwar_global_literature`=62, `postwar_literature`=127, `scripture_myth_hymn`=12, `short_fiction`=589, `unclassified_unit`=192
 
-Classification confidence: `rule_high`=1092, `rule_low`=2404, `rule_medium`=1781, `unknown_metadata`=97
+Classification confidence: `rule_high`=1120, `rule_low`=2387, `rule_medium`=1770, `unknown_metadata`=97
 
-Chronology source: `era_anchor`=1247, `evidence_century_phrase`=112, `evidence_date_phrase`=435, `title_override`=10, `unknown`=3570
+Creator source: `quizbowl_author_answerline`=2436, `reviewed_canon_record`=76, `unknown`=2862
 
-Chronology confidence: `high`=10, `low`=1635, `medium`=159, `unknown`=3570
+Creator confidence: `high`=76, `low`=633, `medium`=1803, `unknown`=2862
 
-Chronology rows needing review: 5205
+Chronology source: `reviewed_canon_record`=76, `title_override`=18, `unknown`=5280
+
+Chronology confidence: `high`=94, `unknown`=5280
+
+Chronology rows needing review: 5280
 
 ## Outputs
 
@@ -472,3 +476,7 @@ Chronology rows needing review: 5205
 ## Caveats
 
 This is an independent quizbowl-corpus build. It uses answerlines only when the raw question prompt asks for a literary work, then counts both answerline frequency and clue-text mentions. Quizbowl track labels are diagnostic metadata for audit and category sanity checks, not inclusion evidence.
+
+Creator metadata is imported from reviewed local canon records where available and otherwise inferred from recurring quizbowl author-answerline clues. Rows without reliable creator evidence remain blank rather than receiving guessed attributions.
+
+Chronology is intentionally conservative. Only reviewed local canon dates and explicit title-level overrides drive public chronological sorting; raw clue-text date mentions are too often dates for authors, settings, influences, prizes, or other works in the same clue, so unresolved rows are marked `Unplaced` until date enrichment is audited separately.

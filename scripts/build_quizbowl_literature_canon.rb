@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require "csv"
+require "date"
 require "digest"
 require "fileutils"
 require "json"
@@ -212,6 +213,8 @@ REGION_TITLE_OVERRIDES = {
   "the tin drum" => "germanic_scandinavian",
   "wuthering heights" => "english_british_irish",
   "the grapes of wrath" => "american",
+  "a rose for emily" => "american",
+  "civil disobedience" => "american",
   "their eyes were watching god" => "american",
   "death of a salesman" => "american",
   "vanity fair" => "english_british_irish",
@@ -219,11 +222,15 @@ REGION_TITLE_OVERRIDES = {
   "the unbearable lightness of being" => "russian_eastern_european",
   "lord of the flies" => "english_british_irish",
   "great expectations" => "english_british_irish",
+  "the god of small things" => "south_asian",
   "the satanic verses" => "south_asian",
   "fathers and sons" => "russian_eastern_european",
   "the rime of the ancient mariner" => "english_british_irish",
   "death in venice" => "germanic_scandinavian",
   "the house of the spirits" => "latin_american",
+  "the legend of sleepy hollow" => "american",
+  "the rape of the lock" => "english_british_irish",
+  "rip van winkle" => "american",
   "the three musketeers" => "french",
   "julius caesar" => "english_british_irish",
   "six characters in search of an author" => "italian",
@@ -295,25 +302,25 @@ ERA_CHRONOLOGY_ANCHORS = {
 }.freeze
 
 CHRONOLOGY_TITLE_OVERRIDES = {
+  "a rose for emily" => [1930, "1930", "title_override"],
+  "civil disobedience" => [1849, "1849", "title_override"],
   "r u r" => [1920, "1920", "title_override"],
   "omeros" => [1990, "1990", "title_override"],
   "a far cry from africa" => [1962, "1962", "title_override"],
   "mourning becomes electra" => [1931, "1931", "title_override"],
   "le cid" => [1637, "1637", "title_override"],
   "the school for wives" => [1662, "1662", "title_override"],
+  "the god of small things" => [1997, "1997", "title_override"],
+  "the legend of sleepy hollow" => [1820, "1820", "title_override"],
   "of cannibals" => [1580, "1580", "title_override"],
   "the lost steps" => [1953, "1953", "title_override"],
+  "the rape of the lock" => [1712, "1712", "title_override"],
+  "the red badge of courage" => [1895, "1895", "title_override"],
   "ruins of a great house" => [1962, "1962", "title_override"],
-  "the island" => [1973, "1973", "title_override"]
+  "the island" => [1973, "1973", "title_override"],
+  "the trojan women" => [-415, "415 BCE", "title_override"],
+  "rip van winkle" => [1819, "1819", "title_override"]
 }.freeze
-
-WORK_DATE_VERBS = /
-  published|written|wrote|composed|completed|first\ performed|performed|premiered|
-  appeared|serialized|released|printed|staged|produced
-/ix
-WORK_DATE_RE = /\b(?:#{WORK_DATE_VERBS})\D{0,80}\b(1[0-9]{3}|20[0-2][0-9])\b/i
-LEADING_YEAR_WORK_RE = /\b(1[0-9]{3}|20[0-2][0-9])\s+(?:novel|play|poem|story|novella|epic|collection|memoir|essay|drama|tragedy|comedy)\b/i
-CENTURY_DATE_RE = /\b(?:c\.?|ca\.?|circa|around|late|early|mid)?\s*(\d{1,2})(?:st|nd|rd|th)[ -]century\s*(BCE|BC|CE|AD)?\b/i
 
 CandidateStats = Struct.new(
   :normalized_title,
@@ -321,6 +328,7 @@ CandidateStats = Struct.new(
   :source_counts,
   :form_counts,
   :answerline_form_counts,
+  :creator_counts,
   :track_counts,
   :question_ids,
   :answerline_question_ids,
@@ -344,6 +352,7 @@ def new_stats(normalized_title)
     source_counts: Hash.new(0),
     form_counts: Hash.new(0),
     answerline_form_counts: Hash.new(0),
+    creator_counts: Hash.new(0),
     track_counts: Hash.new(0),
     question_ids: Set.new,
     answerline_question_ids: Set.new,
@@ -430,6 +439,26 @@ def clean_answerline(raw)
   value = value.split(/\s+--\s+/).first.to_s
   value = value.gsub(/\A[_\-\s"'“”‘’]+|[_\-\s"'“”‘’,;:\.!\?]+\z/u, "")
   normalize_space(value)
+end
+
+def clean_creator_hint(raw)
+  value = clean_answerline(raw)
+  value = value.gsub(/\A(?:author|writer|poet|playwright|novelist)\s*[:\-]\s*/i, "")
+  value = value.gsub(/\b(?:accept|prompt on|do not accept|do not prompt)\b.*\z/i, "")
+  value = value.gsub(/\A[_\-\s"'“”‘’]+|[_\-\s"'“”‘’,;:\.!\?]+\z/u, "")
+  normalize_space(value)
+end
+
+def plausible_creator_hint?(value)
+  return false if value.empty?
+  return false if value.length > 90
+  return false if value.match?(ANSWER_MARKER_RE)
+  return false if value.match?(/\b(?:novel|poem|play|story|book|work|epic|collection)\b/i)
+  return false if value.match?(/[{}\[\]<>]/)
+  return false if value.scan(/[A-Za-z]/).length < 3
+  return false if normalize_title(value).split.length > 8
+
+  true
 end
 
 def answerline_variants(raw)
@@ -759,6 +788,10 @@ def add_observation(stats_by_key, normalized, display, source, form_hint, row, s
   stats.track_counts[track_id] += 1 unless track_id.empty?
   stats.literary_signal_count += snippet.to_s.scan(LITERARY_SIGNAL_RE).length
   stats.non_literary_signal_count += snippet.to_s.scan(NON_LITERARY_CONTEXT_RE).length
+  if source == "author_verb_title"
+    creator_hint = clean_creator_hint(row["answerline"])
+    stats.creator_counts[creator_hint] += 1 if plausible_creator_hint?(creator_hint)
+  end
   qid = row["id"].to_i
   stats.question_ids << qid
   if source == "raw_answerline_work_prompt"
@@ -792,6 +825,7 @@ def merge_stats!(target, source)
   merge_counter!(target.source_counts, source.source_counts)
   merge_counter!(target.form_counts, source.form_counts)
   merge_counter!(target.answerline_form_counts, source.answerline_form_counts)
+  merge_counter!(target.creator_counts, source.creator_counts)
   merge_counter!(target.track_counts, source.track_counts)
   target.question_ids.merge(source.question_ids)
   target.answerline_question_ids.merge(source.answerline_question_ids)
@@ -1081,9 +1115,26 @@ def metadata_context(title, stats)
   ].flatten.join(" "))
 end
 
-def inferred_era(stats, title)
+def era_from_sort_year(year)
+  year = year.to_i
+  return "ancient_classical" if year < 500
+  return "medieval" if year < 1500
+  return "early_modern" if year < 1700
+  return "eighteenth_century" if year < 1800
+  return "long_19th_century" if year < 1900
+  return "modernist" if year < 1945
+  return "postwar_modern" if year < 2000
+
+  "contemporary"
+end
+
+def inferred_era(stats, title, reference_metadata)
   title_key = normalize_title(title)
   return ERA_TITLE_OVERRIDES.fetch(title_key) if ERA_TITLE_OVERRIDES.key?(title_key)
+  return era_from_sort_year(CHRONOLOGY_TITLE_OVERRIDES.fetch(title_key).first) if CHRONOLOGY_TITLE_OVERRIDES.key?(title_key)
+
+  reference = reference_metadata_for(title, reference_metadata)
+  return era_from_sort_year(reference[:sort_year]) if reference && reference[:sort_year]
 
   text = metadata_context(title, stats)
 
@@ -1099,9 +1150,32 @@ def inferred_era(stats, title)
   "unknown_era"
 end
 
-def inferred_region_or_tradition(stats, title)
+def inferred_region_or_tradition(stats, title, reference_metadata)
   title_key = normalize_title(title)
   return REGION_TITLE_OVERRIDES.fetch(title_key) if REGION_TITLE_OVERRIDES.key?(title_key)
+
+  reference = reference_metadata_for(title, reference_metadata)
+  if reference
+    reference_text = normalize_title([title, reference[:creators]].flatten.join(" "))
+    return "african" if reference_text.match?(/\b(african|nigerian|south african|kenyan|ghanaian|senegalese|ethiopian|zimbabwean|swahili|achebe|soyinka|ngugi|coetzee|gordimer)\b/)
+    return "caribbean" if reference_text.match?(/\b(caribbean|jamaican|haitian|trinidadian|barbadian|st lucian|walcott|naipaul|kincaid)\b/)
+    return "latin_american" if reference_text.match?(/\b(latin american|colombian|argentine|mexican|chilean|peruvian|cuban|brazilian|garcia marquez|borges|neruda|paz|fuentes|cortazar|vargas llosa|lispector)\b/)
+    return "south_asian" if reference_text.match?(/\b(south asian|indian|sanskrit|vedic|bengali|urdu|hindi|tamil|telugu|kannada|malayalam|marathi|pakistani|sri lankan|kalidasa|tagore)\b/)
+    return "chinese" if reference_text.match?(/\b(chinese|classical chinese|du fu|li bai|li po|wang wei|cao xueqin|confucius|daoist)\b/)
+    return "japanese_korean" if reference_text.match?(/\b(japanese|korean|heian|murasaki|sei shonagon|basho|noh|akutagawa|kawabata|mishima)\b/)
+    return "arabic_persian_turkic" if reference_text.match?(/\b(arabic|persian|turkish|ottoman|iranian|sufi|quran|ferdowsi|rumi|hafez|nizami|attar|saadi)\b/)
+    return "greek" if reference_text.match?(/\b(greek|homeric|homer|hesiod|sophocles|euripides|aeschylus|aristophanes|sappho|pindar|menander|aristotle)\b/)
+    return "roman_latin" if reference_text.match?(/\b(roman|latin|virgil|ovid|catullus|horace|lucretius|juvenal|seneca|petronius|apuleius)\b/)
+    return "biblical_religious" if reference_text.match?(/\b(hebrew bible|tanakh|old testament|new testament|bible|biblical|gospel|quran|scripture|upanishad|sutra|dhammapada|avesta|mesopotamian|akkadian|sumerian)\b/)
+    return "russian_eastern_european" if reference_text.match?(/\b(russian|polish|czech|hungarian|romanian|ukrainian|bulgarian|balkan|dostoevsky|dostoyevsky|tolstoy|chekhov|gogol|pushkin|turgenev|nabokov|kafka)\b/)
+    return "germanic_scandinavian" if reference_text.match?(/\b(german|germanic|austrian|scandinavian|norwegian|swedish|danish|icelandic|old norse|goethe|schiller|mann|rilke|ibsen|strindberg|anonymous pearl poet)\b/)
+    return "french" if reference_text.match?(/\b(french|francophone|moliere|molière|racine|corneille|voltaire|flaubert|balzac|stendhal|zola|baudelaire|proust|camus|sartre|hugo)\b/)
+    return "italian" if reference_text.match?(/\b(italian|dante|petrarch|petrarca|boccaccio|ariosto|tasso|calvino|eco)\b/)
+    return "iberian_lusophone" if reference_text.match?(/\b(iberian|lusophone|spanish|portuguese|cervantes|lope de vega|calderon|calderón|camoes|camões|saramago|pessoa|lorca)\b/)
+    return "english_british_irish" if reference_text.match?(/\b(english|british|irish|old english|middle english|chaucer|shakespeare|marlowe|spenser|milton|austen|dickens|bronte|eliot|woolf|joyce|yeats|beckett|wilde|swift|defoe|byron|shelley|keats|tennyson|hardy|bunyan)\b/)
+
+    return "unknown_region"
+  end
 
   text = metadata_context(title, stats)
 
@@ -1164,65 +1238,87 @@ def classification_confidence_for(era, region, unit)
   "unknown_metadata"
 end
 
-def date_context_rejected?(context)
-  context.match?(/\b(?:won|winner|nobel|prize|award|awarded|born|birth|died|death|centennial|anniversary|incidental music)\b/i)
+def metadata_title_keys(title)
+  normalized = normalize_title(title)
+  return [] if normalized.empty?
+
+  keys = Set.new([normalized])
+  stripped = normalized.sub(/\A(?:the|a|an)\s+/, "")
+  keys << stripped unless stripped.empty?
+  keys << "the #{stripped}" unless stripped.empty? || stripped == normalized
+  keys.to_a
 end
 
-def century_sort_year(century, suffix)
-  number = century.to_i
-  return nil if number <= 0
+def creator_names_from_front_matter(creators)
+  Array(creators).map do |creator|
+    if creator.is_a?(Hash)
+      normalize_space(creator["name"])
+    else
+      normalize_space(creator)
+    end
+  end.compact.reject(&:empty?)
+end
 
-  if suffix.to_s.match?(/\A(?:BCE|BC)\z/i)
-    -((number - 1) * 100 + 50)
-  else
-    (number - 1) * 100 + 50
+def add_reference_metadata!(metadata, title, creators:, date_label:, sort_year:, source:)
+  creator_values = Array(creators).map { |creator| normalize_space(creator) }.reject(&:empty?)
+  return if title.to_s.empty? || (creator_values.empty? && sort_year.nil? && date_label.to_s.empty?)
+
+  payload = {
+    creators: creator_values,
+    date_label: normalize_space(date_label),
+    sort_year: sort_year,
+    source: source
+  }
+  metadata_title_keys(title).each do |key|
+    metadata[key] ||= []
+    metadata[key] << payload
   end
 end
 
-def chronology_date_candidates(stats, title)
-  title_key = normalize_title(title)
-  candidates = Hash.new { |hash, key| hash[key] = { count: 0, examples: [] } }
+def load_reference_metadata(root)
+  metadata_by_key = {}
 
-  stats.examples.each do |example|
-    snippet = normalize_space(example["snippet"])
-    next if snippet.empty?
+  Dir.glob(File.join(root, "_canon", "*.md")).sort.each do |path|
+    content = File.read(path)
+    next unless content =~ /\A---\s*\n(.*?)\n---\s*\n/m
 
-    normalized_snippet = normalize_title(snippet)
-    title_in_snippet = !title_key.empty? && normalized_snippet.include?(title_key)
-    answerline_backed = example["match_type"].to_s == "raw_answerline_work_prompt"
-    next unless title_in_snippet || answerline_backed
+    front_matter = YAML.safe_load(Regexp.last_match(1), permitted_classes: [Date, Time], aliases: true) || {}
+    titles = [
+      front_matter["title"],
+      front_matter["canonical_title"],
+      front_matter["display_title"],
+      front_matter["sort_title"],
+      front_matter["original_title"],
+      *Array(front_matter["aliases"])
+    ].map { |value| normalize_space(value) }.reject(&:empty?).uniq
+    creators = creator_names_from_front_matter(front_matter["creators"])
+    work_date = front_matter["work_date"].is_a?(Hash) ? front_matter["work_date"] : {}
+    sort_year = work_date["sort_year"]
+    date_label = work_date["label"]
 
-    [WORK_DATE_RE, LEADING_YEAR_WORK_RE].each do |pattern|
-      snippet.scan(pattern) do |match|
-        year = Array(match).first.to_i
-        matched_text = Regexp.last_match(0)
-        context = snippet[[Regexp.last_match.begin(0) - 70, 0].max, matched_text.length + 140].to_s
-        next if date_context_rejected?(context)
-
-        key = [year, year.to_s, "evidence_date_phrase"]
-        candidates[key][:count] += 1
-        candidates[key][:examples] << matched_text
-      end
-    end
-
-    snippet.scan(CENTURY_DATE_RE) do |century, suffix|
-      matched_text = Regexp.last_match(0)
-      context = snippet[[Regexp.last_match.begin(0) - 70, 0].max, matched_text.length + 140].to_s
-      next if date_context_rejected?(context)
-      next unless context.match?(LITERARY_SIGNAL_RE) || title_in_snippet
-
-      year = century_sort_year(century, suffix)
-      next unless year
-
-      normalized_suffix = suffix.to_s.upcase
-      label = "#{century}#{ordinal_suffix(century.to_i)} century#{normalized_suffix.empty? ? "" : " #{normalized_suffix}"}"
-      key = [year, label, "evidence_century_phrase"]
-      candidates[key][:count] += 1
-      candidates[key][:examples] << matched_text
+    titles.each do |title|
+      add_reference_metadata!(
+        metadata_by_key,
+        title,
+        creators: creators,
+        date_label: date_label,
+        sort_year: sort_year,
+        source: "reviewed_canon_record"
+      )
     end
   end
 
-  candidates
+  metadata_by_key.each_with_object({}) do |(key, payloads), resolved|
+    unique_payloads = payloads.uniq do |payload|
+      [
+        payload[:creators].join("\u0000"),
+        payload[:date_label],
+        payload[:sort_year],
+        payload[:source]
+      ]
+    end
+    resolved[key] = unique_payloads.first if unique_payloads.length == 1
+  end
 end
 
 def ordinal_suffix(number)
@@ -1236,7 +1332,37 @@ def ordinal_suffix(number)
   end
 end
 
-def chronology_metadata_for(stats, title, era)
+def creator_metadata_for(stats, title, reference_metadata)
+  reference = reference_metadata_for(title, reference_metadata)
+  if reference && !reference[:creators].to_a.empty?
+    return {
+      "creators" => reference[:creators],
+      "creator_source" => reference[:source],
+      "creator_confidence" => "high"
+    }
+  end
+
+  unless stats.creator_counts.empty?
+    creator, count = stats.creator_counts.max_by { |name, value| [value, name.length] }
+    return {
+      "creators" => [creator],
+      "creator_source" => "quizbowl_author_answerline",
+      "creator_confidence" => count >= 2 ? "medium" : "low"
+    }
+  end
+
+  {
+    "creators" => [],
+    "creator_source" => "unknown",
+    "creator_confidence" => "unknown"
+  }
+end
+
+def reference_metadata_for(title, reference_metadata)
+  metadata_title_keys(title).map { |key| reference_metadata[key] }.compact.first
+end
+
+def chronology_metadata_for(stats, title, era, reference_metadata)
   title_key = normalize_title(title)
   if CHRONOLOGY_TITLE_OVERRIDES.key?(title_key)
     year, label, source = CHRONOLOGY_TITLE_OVERRIDES.fetch(title_key)
@@ -1249,27 +1375,23 @@ def chronology_metadata_for(stats, title, era)
     }
   end
 
-  candidates = chronology_date_candidates(stats, title)
-  unless candidates.empty?
-    (year, label, source), payload = candidates.max_by do |(candidate, data)|
-      candidate_year = candidate[0].to_i
-      [data[:count], candidate[2] == "evidence_date_phrase" ? 1 : 0, -candidate_year.abs]
-    end
+  reference = reference_metadata_for(title, reference_metadata)
+  if reference && reference[:sort_year]
     return {
-      "chronology_sort_year" => year,
-      "chronology_label" => label,
-      "chronology_source" => source,
-      "chronology_confidence" => payload[:count] >= 2 ? "medium" : "low",
-      "chronology_needs_review" => payload[:count] < 2
+      "chronology_sort_year" => reference[:sort_year].to_i,
+      "chronology_label" => reference[:date_label].to_s.empty? ? reference[:sort_year].to_s : reference[:date_label],
+      "chronology_source" => reference[:source],
+      "chronology_confidence" => "high",
+      "chronology_needs_review" => false
     }
   end
 
-  year, label, source = ERA_CHRONOLOGY_ANCHORS.fetch(era, ERA_CHRONOLOGY_ANCHORS.fetch("unknown_era"))
+  year, label, source = ERA_CHRONOLOGY_ANCHORS.fetch("unknown_era")
   {
     "chronology_sort_year" => year,
     "chronology_label" => label,
     "chronology_source" => source,
-    "chronology_confidence" => source == "unknown" ? "unknown" : "low",
+    "chronology_confidence" => "unknown",
     "chronology_needs_review" => true
   }
 end
@@ -1974,8 +2096,10 @@ def main
 
   adjudications = load_adjudications(options[:adjudications_path])
   alias_map, alias_canonical_titles = load_alias_rules(options[:adjudications_path])
+  reference_metadata = load_reference_metadata(ROOT)
   warn "Loaded #{adjudications.values.uniq.length} adjudications from #{options[:adjudications_path]}"
   warn "Loaded #{alias_map.length} manual alias rules from #{options[:adjudications_path]}" unless alias_map.empty?
+  warn "Loaded #{reference_metadata.length} reviewed canon metadata title keys from _canon"
   warn "Loading quizbowl category diagnostics from archive_practice_questions"
   track_by_question_id = load_track_id_map(db)
   warn "  loaded track labels for #{track_by_question_id.length} parsed questions"
@@ -2125,11 +2249,12 @@ def main
     quizbowl_track_profile = track_profile(track_counts)
     evidence_profile = evidence_profile(answerline_count, clue_count)
     routing_status = routing_status(row[:review_status], row[:adjudication])
-    era = inferred_era(stats, title)
-    region_or_tradition = inferred_region_or_tradition(stats, title)
+    era = inferred_era(stats, title, reference_metadata)
+    region_or_tradition = inferred_region_or_tradition(stats, title, reference_metadata)
     reading_unit = reading_unit_for(work_form, era, region_or_tradition)
     classification_confidence = classification_confidence_for(era, region_or_tradition, reading_unit)
-    chronology_metadata = chronology_metadata_for(stats, title, era)
+    creator_metadata = creator_metadata_for(stats, title, reference_metadata)
+    chronology_metadata = chronology_metadata_for(stats, title, era, reference_metadata)
 
     if row[:review_status] == "accepted_likely_work"
       data_rows << {
@@ -2137,6 +2262,9 @@ def main
         "rank" => data_rows.length + 1,
         "audit_rank" => index + 1,
         "title" => title,
+        "creators" => creator_metadata["creators"],
+        "creator_source" => creator_metadata["creator_source"],
+        "creator_confidence" => creator_metadata["creator_confidence"],
         "tier" => row[:tier],
         "review_status" => row[:review_status],
         "base_review_status" => row[:base_review_status],
@@ -2177,6 +2305,9 @@ def main
       "work_id" => work_id,
       "rank" => index + 1,
       "canonical_title" => safe_tsv(title),
+      "creators" => safe_tsv(creator_metadata["creators"].join("; ")),
+      "creator_source" => creator_metadata["creator_source"],
+      "creator_confidence" => creator_metadata["creator_confidence"],
       "total_question_count" => total_count,
       "answerline_question_count" => answerline_count,
       "clue_mention_question_count" => clue_count,
@@ -2218,6 +2349,9 @@ def main
     candidate_tsv_rows << {
       "candidate_id" => work_id,
       "canonical_title" => safe_tsv(title),
+      "creators" => safe_tsv(creator_metadata["creators"].join("; ")),
+      "creator_source" => creator_metadata["creator_source"],
+      "creator_confidence" => creator_metadata["creator_confidence"],
       "normalized_title" => stats.normalized_title,
       "form_hint" => form_hint,
       "work_form" => work_form,
@@ -2329,12 +2463,12 @@ def main
 
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_title_candidates.tsv"),
-    %w[candidate_id canonical_title normalized_title form_hint work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status era region_or_tradition reading_unit classification_confidence chronology_sort_year chronology_label chronology_source chronology_confidence chronology_needs_review candidate_source form_counts_json answerline_form_counts_json track_counts_json disambiguation_status base_disambiguation_status adjudication_decision adjudication_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
+    %w[candidate_id canonical_title creators creator_source creator_confidence normalized_title form_hint work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status era region_or_tradition reading_unit classification_confidence chronology_sort_year chronology_label chronology_source chronology_confidence chronology_needs_review candidate_source form_counts_json answerline_form_counts_json track_counts_json disambiguation_status base_disambiguation_status adjudication_decision adjudication_reason total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count notes],
     candidate_tsv_rows
   )
   write_tsv(
     File.join(options[:out_dir], "quizbowl_lit_canon_scores.tsv"),
-    %w[work_id rank canonical_title total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status base_review_status work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status era region_or_tradition reading_unit classification_confidence chronology_sort_year chronology_label chronology_source chronology_confidence chronology_needs_review source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason examples_json],
+    %w[work_id rank canonical_title creators creator_source creator_confidence total_question_count answerline_question_count clue_mention_question_count distinct_set_count distinct_year_count first_year last_year tossup_count bonus_count quizbowl_salience_score tier review_status base_review_status work_form evidence_profile dominant_quizbowl_track quizbowl_track_profile routing_status era region_or_tradition reading_unit classification_confidence chronology_sort_year chronology_label chronology_source chronology_confidence chronology_needs_review source_counts_json form_counts_json answerline_form_counts_json track_counts_json literary_signal_count non_literary_signal_count adjudication_decision adjudication_reason examples_json],
     score_tsv_rows
   )
   write_tsv(
@@ -2413,6 +2547,8 @@ def main
     "public_region_or_tradition_counts" => data_rows.group_by { |row| row["region_or_tradition"] }.transform_values(&:length),
     "public_reading_unit_counts" => data_rows.group_by { |row| row["reading_unit"] }.transform_values(&:length),
     "public_classification_confidence_counts" => data_rows.group_by { |row| row["classification_confidence"] }.transform_values(&:length),
+    "public_creator_source_counts" => data_rows.group_by { |row| row["creator_source"] }.transform_values(&:length),
+    "public_creator_confidence_counts" => data_rows.group_by { |row| row["creator_confidence"] }.transform_values(&:length),
     "public_chronology_source_counts" => data_rows.group_by { |row| row["chronology_source"] }.transform_values(&:length),
     "public_chronology_confidence_counts" => data_rows.group_by { |row| row["chronology_confidence"] }.transform_values(&:length),
     "public_chronology_needs_review_count" => data_rows.count { |row| row["chronology_needs_review"] }
@@ -2477,6 +2613,10 @@ def main
 
     Classification confidence: #{summary["public_classification_confidence_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
 
+    Creator source: #{summary["public_creator_source_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
+
+    Creator confidence: #{summary["public_creator_confidence_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
+
     Chronology source: #{summary["public_chronology_source_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
 
     Chronology confidence: #{summary["public_chronology_confidence_counts"].sort.map { |label, count| "`#{label}`=#{count}" }.join(", ")}
@@ -2498,6 +2638,10 @@ def main
     ## Caveats
 
     This is an independent quizbowl-corpus build. It uses answerlines only when the raw question prompt asks for a literary work, then counts both answerline frequency and clue-text mentions. Quizbowl track labels are diagnostic metadata for audit and category sanity checks, not inclusion evidence.
+
+    Creator metadata is imported from reviewed local canon records where available and otherwise inferred from recurring quizbowl author-answerline clues. Rows without reliable creator evidence remain blank rather than receiving guessed attributions.
+
+    Chronology is intentionally conservative. Only reviewed local canon dates and explicit title-level overrides drive public chronological sorting; raw clue-text date mentions are too often dates for authors, settings, influences, prizes, or other works in the same clue, so unresolved rows are marked `Unplaced` until date enrichment is audited separately.
   MARKDOWN
   File.write(File.join(options[:out_dir], "quizbowl_lit_method_report.md"), method_report)
 
