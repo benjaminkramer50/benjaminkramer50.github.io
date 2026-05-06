@@ -496,11 +496,11 @@ decisions:
 - candidate_id: qb_lit_the_royal_family_533beb6f
   canonical_title: The Royal Family
   normalized_title: the royal family
-  decision: accept
-  reason: literary_work_manual_audit
-  review_status: accepted_likely_work
-  source: codex_500_queue_audit
-  notes: Audited from the 500-row LLM review queue; evidence identifies a literary/textual work rather than a non-literary entity.
+  decision: review
+  reason: title_collision_or_generic_phrase_requires_split
+  review_status: needs_review_title_collision_or_generic_phrase_requires_split
+  source: codex_metadata_collision_audit
+  notes: Evidence mixes the Vollmann novel, the Kaufman/Ferber play, and generic royal-family mentions; hold from the public list until split.
 - candidate_id: qb_lit_the_battle_hymn_of_the_republic_f3b9d54d
   canonical_title: The Battle Hymn of the Republic
   normalized_title: the battle hymn of the republic
@@ -5007,12 +5007,373 @@ decisions:
   notes: 'Manual batch-2 audit: plausible quizbowl/literary relevance, but this boundary, duplicate, or title needs a narrower rule before public inclusion.'
 - canonical_title: Huckleberry Finn
   normalized_title: huckleberry finn
-  decision: reject
+  alias_of: The Adventures of Huckleberry Finn
+  decision: merge
   reason: duplicate_title_variant
-  review_status: rejected_duplicate_title_variant
+  review_status: accepted_likely_work
   source: codex_500_queue_audit_batch2
   audit_queue_id: qb_lit_audit_000520
-  notes: 'Manual batch-2 audit: keep this false positive or duplicate variant out of the public quizbowl literature reading list.'
+  notes: 'Manual batch-2 audit updated: merge shorthand title evidence into the full Mark Twain work title.'
+- canonical_title: Tom Sawyer
+  normalized_title: tom sawyer
+  alias_of: The Adventures of Tom Sawyer
+  decision: merge
+  reason: duplicate_title_variant
+  review_status: accepted_likely_work
+  source: codex_metadata_collision_audit
+  notes: Merge shorthand title evidence into the full Mark Twain work title; Wikidata's top
+    match for the shorthand is the character, not the work.
+- canonical_title: Odysseia
+  normalized_title: odysseia
+  alias_of: The Odyssey
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_chronology_spot_check
+  notes: Merge transliterated/translated title evidence into the Homeric work row.
+- canonical_title: Ramayanam
+  normalized_title: ramayanam
+  alias_of: Ramayana
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_chronology_spot_check
+  notes: Merge translated title evidence into the Ramayana row.
+- canonical_title: Oedipus the King
+  normalized_title: oedipus the king
+  alias_of: Oedipus Rex
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_chronology_spot_check
+  notes: Merge common English title variant into the existing Sophocles row.
+- canonical_title: Oedipus Rex Accept Oedipus the King
+  normalized_title: oedipus rex accept oedipus the king
+  alias_of: Oedipus Rex
+  decision: merge
+  reason: answerline_artifact_variant
+  review_status: accepted_likely_work
+  source: codex_chronology_spot_check
+  notes: Merge answerline-artifact variant into the existing Sophocles row.
+- canonical_title: Oedipus Coloneus
+  normalized_title: oedipus coloneus
+  alias_of: Oedipus at Colonus
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_chronology_spot_check
+  notes: Merge Latinized title variant into the existing Sophocles row.
+- canonical_title: the Poetics
+  normalized_title: the poetics
+  alias_of: Poetics
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_chronology_spot_check
+  notes: Merge article variant into Aristotle's title.
+- canonical_title: Poetics
+  normalized_title: poetics
+  decision: accept
+  reason: literary_criticism_canonical_work
+  review_status: accepted_likely_work
+  source: codex_chronology_spot_check
+  notes: Canonical literary-critical work; accept so merged article variants do not leave only a lowercase public title.
+- canonical_title: Aeneis
+  normalized_title: aeneis
+  alias_of: Aeneid
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge Latin title variant into the Virgil row.
+- canonical_title: Genji Monogatari
+  normalized_title: genji monogatari
+  alias_of: The Tale of Genji
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge Japanese title variant into the Murasaki Shikibu row.
+- canonical_title: La Divina Commedia
+  normalized_title: la divina commedia
+  alias_of: Divine Comedy
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge Italian title variant into the Dante row.
+- canonical_title: La vida de Lazarillo de Tormes y de sus fortunas y adversidades
+  normalized_title: la vida de lazarillo de tormes y de sus fortunas y adversidades
+  alias_of: Lazarillo de Tormes
+  decision: merge
+  reason: expanded_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge expanded Spanish title variant into the public shorthand row.
+- canonical_title: The Hamlet
+  normalized_title: the hamlet
+  alias_of: Hamlet
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article variant into the Shakespeare row.
+- canonical_title: The Tragedy of Hamlet, Prince of Denmark
+  normalized_title: the tragedy of hamlet prince of denmark
+  alias_of: Hamlet
+  decision: merge
+  reason: expanded_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge full title variant into the Shakespeare row.
+- canonical_title: Don Quixote de la Mancha
+  normalized_title: don quixote de la mancha
+  alias_of: Don Quixote
+  decision: merge
+  reason: expanded_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge Spanish/expanded title variant into the Cervantes row.
+- canonical_title: El ingenioso hidalgo don Quijote de la Mancha
+  normalized_title: el ingenioso hidalgo don quijote de la mancha
+  alias_of: Don Quixote
+  decision: merge
+  reason: expanded_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge full Spanish title variant into the Cervantes row.
+- canonical_title: Don Quijote
+  normalized_title: don quijote
+  alias_of: Don Quixote
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge Spanish spelling variant into the Cervantes row.
+- canonical_title: Pilgrim's Progress
+  normalized_title: pilgrims progress
+  alias_of: The Pilgrim's Progress
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge shorthand variant into the full Bunyan title.
+- canonical_title: The Pilgrim’s Progress from this World, to That Which Is to Come
+  normalized_title: the pilgrims progress from this world to that which is to come
+  alias_of: The Pilgrim's Progress
+  decision: merge
+  reason: expanded_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge expanded title variant into the Bunyan row.
+- canonical_title: Rape of the Lock
+  normalized_title: rape of the lock
+  alias_of: The Rape of the Lock
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article-less variant into the Pope row.
+- canonical_title: Journal of the Plague Year
+  normalized_title: journal of the plague year
+  alias_of: A Journal of the Plague Year
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article-less variant into the Defoe row.
+- canonical_title: Candide, ou l’Optimisme
+  normalized_title: candide ou loptimisme
+  alias_of: Candide
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge French subtitle variant into the Voltaire row.
+- canonical_title: Candide, or Optimism
+  normalized_title: candide or optimism
+  alias_of: Candide
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge English subtitle variant into the Voltaire row.
+- canonical_title: School for Scandal
+  normalized_title: school for scandal
+  alias_of: The School for Scandal
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article-less variant into the Sheridan row.
+- canonical_title: The Story of the Stone
+  normalized_title: the story of the stone
+  alias_of: Dream of the Red Chamber
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge alternate English title into the Cao Xueqin row.
+- canonical_title: Story of the Stone
+  normalized_title: story of the stone
+  alias_of: Dream of the Red Chamber
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article-less alternate title into the Cao Xueqin row.
+- canonical_title: Le Rouge et le Noir
+  normalized_title: le rouge et le noir
+  alias_of: The Red and the Black
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge French title variant into the Stendhal row.
+- canonical_title: Yevgeny Onegin
+  normalized_title: yevgeny onegin
+  alias_of: Eugene Onegin
+  decision: merge
+  reason: transliteration_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge transliteration variant into the Pushkin row.
+- canonical_title: Le Pere Goriot
+  normalized_title: le pere goriot
+  alias_of: Pere Goriot
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge French article variant into the Balzac row.
+- canonical_title: Charterhouse of Parma
+  normalized_title: charterhouse of parma
+  alias_of: The Charterhouse of Parma
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article-less variant into the Stendhal row.
+- canonical_title: Mertvye dushi
+  normalized_title: mertvye dushi
+  alias_of: Dead Souls
+  decision: merge
+  reason: transliteration_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge transliteration variant into the Gogol row.
+- canonical_title: Charge of the Light Brigade
+  normalized_title: charge of the light brigade
+  alias_of: The Charge of the Light Brigade
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article-less variant into the Tennyson row.
+- canonical_title: The Flowers of Evil
+  normalized_title: the flowers of evil
+  alias_of: Les Fleurs du Mal
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge English title variant into the Baudelaire row.
+- canonical_title: A Sentimental Education
+  normalized_title: a sentimental education
+  alias_of: Sentimental Education
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article variant into the Flaubert row.
+- canonical_title: 'Middlemarch: A Study of Provincial Life'
+  normalized_title: middlemarch a study of provincial life
+  alias_of: Middlemarch
+  decision: merge
+  reason: expanded_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge subtitle variant into the George Eliot row.
+- canonical_title: Bratya Karamazovy
+  normalized_title: bratya karamazovy
+  alias_of: The Brothers Karamazov
+  decision: merge
+  reason: transliteration_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge transliteration variant into the Dostoevsky row.
+- canonical_title: The Diamond Necklace
+  normalized_title: the diamond necklace
+  alias_of: The Necklace
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge alternate English title into the Maupassant row.
+- canonical_title: Ballad of Reading Gaol
+  normalized_title: ballad of reading gaol
+  alias_of: The Ballad of Reading Gaol
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article-less variant into the Wilde row.
+- canonical_title: Gift of the Magi
+  normalized_title: gift of the magi
+  alias_of: The Gift of the Magi
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article-less variant into the O. Henry row.
+- canonical_title: The Country Doctor
+  normalized_title: the country doctor
+  alias_of: A Country Doctor
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article variant into the Kafka row.
+- canonical_title: Enrico IV
+  normalized_title: enrico iv
+  alias_of: Henry IV
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge Italian title variant into the Pirandello row.
+- canonical_title: Hollow Men
+  normalized_title: hollow men
+  alias_of: The Hollow Men
+  decision: merge
+  reason: article_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge article-less variant into the Eliot row.
+- canonical_title: Der Prozess
+  normalized_title: der prozess
+  alias_of: The Trial
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge German title variant into the Kafka row.
+- canonical_title: Magister Ludi
+  normalized_title: magister ludi
+  alias_of: The Glass Bead Game
+  decision: merge
+  reason: alternate_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge alternate title into the Hesse row.
+- canonical_title: Cien años de soledad
+  normalized_title: cien anos de soledad
+  alias_of: One Hundred Years of Solitude
+  decision: merge
+  reason: translated_title_variant
+  review_status: accepted_likely_work
+  source: codex_duplicate_variant_sweep
+  notes: Merge Spanish title variant into the García Márquez row.
 - canonical_title: The Loneliness of the Long Distance Runner
   normalized_title: the loneliness of the long distance runner
   decision: accept
@@ -5071,12 +5432,12 @@ decisions:
   notes: 'Manual batch-2 audit: evidence identifies a literary work, literary essay, drama, poem, fiction, memoir, scripture-as-literature, or quizbowl-literature critical text.'
 - canonical_title: The Lost World
   normalized_title: the lost world
-  decision: accept
-  reason: literary_or_quizbowl_literature_work_manual_audit
-  review_status: accepted_likely_work
-  source: codex_500_queue_audit_batch2
+  decision: review
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_metadata_collision_audit
   audit_queue_id: qb_lit_audit_000529
-  notes: 'Manual batch-2 audit: evidence identifies a literary work, literary essay, drama, poem, fiction, memoir, scripture-as-literature, or quizbowl-literature critical text.'
+  notes: 'Evidence mixes Michael Crichton and Arthur Conan Doyle title evidence; hold from the public list until author-aware splitting is added.'
 - canonical_title: Richard III
   normalized_title: richard iii
   decision: accept
@@ -20405,3 +20766,19 @@ decisions:
   reason: song_reference_not_literary_work
   review_status: rejected_non_literature_domain
   source: codex_v1_public_purity_batch2
+- canonical_title: Shakuntala
+  normalized_title: shakuntala
+  decision: alias
+  alias_of: The Recognition of Shakuntala
+  reason: duplicate_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch3
+  notes: 'Merge Kalidasa title shorthand into the canonical English title used for the public reading list.'
+- canonical_title: The Recognition of Sakuntala
+  normalized_title: the recognition of sakuntala
+  decision: alias
+  alias_of: The Recognition of Shakuntala
+  reason: transliteration_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_c_duplicate_alias_batch3
+  notes: 'Merge Sakuntala/Shakuntala transliteration variant into one canonical row.'

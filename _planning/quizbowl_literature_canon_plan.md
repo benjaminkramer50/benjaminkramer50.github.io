@@ -25,7 +25,7 @@ The correct endpoint is a browsable and deeply filterable quizbowl literature sy
 
 The inclusion signal is simple in principle:
 
-- A literary work becomes eligible when it appears in at least four distinct raw quizbowl questions.
+- A literary work becomes eligible when it appears in at least three distinct raw quizbowl questions.
 - Evidence can come from raw answerlines when the raw question prompt asks for a literary work.
 - Evidence can also come from repeated title mentions in `archive_parsed_questions.clue_text`.
 - Answerlines are not a closed universe. Work titles discovered in clue text can independently enter the candidate pool.
@@ -69,7 +69,9 @@ Create a parallel build area:
 - `_planning/quizbowl_lit_canon/quizbowl_lit_llm_review_queue.jsonl`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_method_report.md`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_wikidata_candidates.tsv`
 - `_data/quizbowl_literature_canon.yml`
+- `_data/quizbowl_literature_metadata_overrides.yml`
 
 Do not overwrite `_data/canon_quick_path.yml`.
 
@@ -85,13 +87,23 @@ This project is done in stages. The corpus-derived canon will never be permanent
 | --- | --- | --- | --- | --- |
 | A | Evidence Pipeline | complete enough for iteration | Raw answerlines and clue text produce reproducible accepted/rejected/review outputs without Loci processed canon tables. | build script, method report, public YAML |
 | B | Public-List Purity | active, `2,011 / 2,000` top audit and public-purity rows adjudicated; first-`1,000` public-row spot check completed | Top `2,000` audit rows adjudicated, first `1,000` public rows pass spot checks, and the next queue is mostly real boundary cases. | adjudications YAML, rejected TSV, review queue |
-| C | Alias And Duplicate Consolidation | complete for broad title-variant pass; `159` high-confidence alias rules added; six residual article-normalized title clusters marked as protected distinct or author-split cases | High-salience duplicate families and whole/subwork boundaries are resolved or explicitly routed. | cluster TSV, adjudications YAML |
-| D | Classification Layer | active, every public row now has provisional form, evidence, context, routing, era, region/tradition, reading-unit, and confidence fields | Every public row has provisional form, unit, era, region/tradition, and confidence fields. | enriched public YAML |
+| C | Alias And Duplicate Consolidation | complete for broad title-variant pass; `298` manual alias rules added; residual same-title collisions are marked as protected distinct or author-split cases | High-salience duplicate families and whole/subwork boundaries are resolved or explicitly routed. | cluster TSV, adjudications YAML |
+| D | Classification And Metadata Layer | active, every public row now has provisional classification fields; expanded metadata overlay contains `784` accepted/corrected rows and contributes `680` Wikidata chronology rows, `756` Wikidata creator rows, `8` manual chronology corrections, and `9` manual creator corrections to the public list | Every public row has provisional classification fields, high-salience rows have audited creator/date metadata where available, and unresolved rows stay explicitly marked `unknown`/`Unplaced`. | enriched public YAML, metadata overlay, Wikidata audit TSV |
 | E | UI And Reading Experience | active, filterable page pass added for tier, form, evidence, unit, era, tradition, context, routing, sort, and search | The public page is a filterable reading-list tool rather than a flat row dump. | site pages/components/styles |
 | F | Literature Release Gate | not started | A stable quizbowl literature canon has passed A-E and has a final method report. | public site, method report |
 | G | Adjacent Quizbowl Reading Lists | planned after F | Religion, mythology, philosophy, and social-science sibling products have their own pipelines and public pages. | separate domain YAMLs and pages |
 
-Current operating phase: Phase D/E. The top-audit-row count has crossed `2,000` adjudicated rows, the first-`1,000` public-row purity pass removed obvious fragments and non-work rows, and the builder now supports manual alias merges so duplicate variants contribute to one canonical row instead of splitting quizbowl strength. The public classification/UI layer is intentionally conservative: it uses evidence-derived form, evidence profile, quizbowl context, routing status, and provisional rule-derived era, region/tradition, reading-unit, and confidence fields. Unknown metadata is left explicit rather than forced into false precision.
+Current operating phase: Phase D/E. The top-audit-row count has crossed `2,000` adjudicated rows, the first-`1,000` public-row purity pass removed obvious fragments and non-work rows, and the builder now supports manual alias merges so duplicate variants contribute to one canonical row instead of splitting quizbowl strength. The public classification/UI layer is intentionally conservative: it uses evidence-derived form, evidence profile, quizbowl context, routing status, and provisional rule-derived era, region/tradition, reading-unit, and confidence fields. The build now also supports a reproducible metadata overlay from Wikidata for creator/date enrichment. Unknown metadata is left explicit rather than forced into false precision.
+
+Current metadata checkpoint:
+
+- Threshold: `total_question_count >= 3`.
+- Public rows: `5327`.
+- Creator coverage: `2651 / 5327`.
+- Chronology coverage: `754 / 5327` public rows have non-`Unplaced` chronology (`46` reviewed canon records, `20` title overrides, `680` Wikidata overlay rows, `8` manual metadata corrections).
+- Remaining chronology backlog: `4573` public rows marked `Unplaced`.
+- Known constraint: Wikidata is metadata support, not inclusion evidence; quizbowl raw answerlines/clues remain the only inclusion signal.
+- Current cleanup note: shorthand duplicate rows `Tom Sawyer` and `Huckleberry Finn` now merge into the full Mark Twain titles; Shakuntala transliteration/title variants now merge into `The Recognition of Shakuntala`; `The Royal Family` and `The Lost World` are held in review until author-aware splitting resolves their mixed evidence.
 
 Current Phase C caveat: `Diary of a Madman` is kept as a public row with article variants merged, but its evidence mixes Gogol and Lu Xun translation conventions. It should be revisited in an author-aware split pass rather than treated as fully resolved.
 
@@ -140,11 +152,11 @@ Done when:
 - Transliteration and translated-title variants are captured when the quizbowl evidence clearly identifies the same work.
 - Whole-work versus subwork boundaries are explicit: collection, individual poem/story, embedded fictional work, chapter/section, and motif are not silently collapsed.
 
-### Phase D: Classification Layer
+### Phase D: Classification And Metadata Layer
 
 Status: active.
 
-Goal: make the list usable as a reading syllabus rather than a flat ranking.
+Goal: make the list usable as a reading syllabus rather than a flat ranking, with enough creator/date metadata to support chronological browsing without pretending low-confidence rows are known.
 
 Done when every public row has at least provisional:
 
@@ -159,6 +171,15 @@ Current implementation:
 - `work_form`, `evidence_profile`, `quizbowl_track_profile`, and `routing_status` are generated for every public row.
 - `era`, `region_or_tradition`, `reading_unit`, and `classification_confidence` are generated for every public row.
 - The front of the list has high-salience title overrides to avoid clue-allusion artifacts; broader rows remain `unknown_era` or `unknown_region` when evidence is too weak.
+- A Wikidata metadata overlay enriches high-salience rows with exact-title creator/date matches gated by literary-work descriptions and creator consistency checks.
+- `Death and the King's Horseman` is explicitly overridden to 1975 because Wikidata supplied an erroneous 1993 date.
+
+Next Phase D work:
+
+- Expand the metadata overlay in ranked batches beyond the first high-salience tranche.
+- Add retry/reporting guardrails so network failures produce refill queues instead of silent gaps.
+- Audit overlay false positives by description/domain and same-title creator mismatch.
+- Use title overrides only for high-confidence corrections where the source metadata is demonstrably wrong.
 
 ### Phase E: UI And Reading Experience
 
@@ -314,7 +335,7 @@ Count accepted evidence from both raw channels:
 
 Primary threshold:
 
-- `total_question_count >= 4`
+- `total_question_count >= 3`
 
 Secondary guards:
 

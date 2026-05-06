@@ -16,9 +16,30 @@ ROOT = File.expand_path("..", __dir__)
 DEFAULT_CANON = File.join(ROOT, "_data", "quizbowl_literature_canon.yml")
 DEFAULT_OUT = File.join(ROOT, "_data", "quizbowl_literature_metadata_overrides.yml")
 DEFAULT_REPORT = File.join(ROOT, "_planning", "quizbowl_lit_canon", "quizbowl_lit_wikidata_candidates.tsv")
+REPORT_HEADERS = %w[
+  title
+  rank
+  total_question_count
+  wikidata_id
+  wikidata_label
+  wikidata_description
+  creators
+  sort_year
+  date_label
+  confidence
+  decision
+].freeze
 
 LITERARY_DESCRIPTION_RE = /\b(?:novel|novella|poem|poetry|play|drama|tragedy|comedy|short stor(?:y|ies)|story|literary work|book|epic|saga|romance|memoir|autobiography|essay|fable|fairy tale|myth|scripture|gospel|sutra|anthology|poetry collection|graphic novel)\b/i
-NON_LITERARY_DESCRIPTION_RE = /\b(?:film|movie|television|tv|tv series|episode|album|song|single|opera|oratorio|cantata|symphony|composition|concerto|sonata|painting|sculpture|woodcuts?|video game|board game|manga series|anime|band|musical group|book review|critical edition|book edition|edition of|translation of|magazine article|journal article|newspaper article)\b/i
+NON_LITERARY_DESCRIPTION_RE = /\b(?:film|movie|television|tv|tv series|episode|album|song|single|opera|oratorio|cantata|symphony|composition|concerto|sonata|painting|sculpture|woodcuts?|video game|board game|manga series|anime|band|musical group|book review|critical edition|book edition|edition of|translation of|magazine article|journal article|newspaper article|title character|fictional character|character of|character in|protagonist of)\b/i
+DESCRIPTION_FORM_GROUPS = {
+  "poetry" => /\b(?:poem|poetry|poetry collection|verse|lyric|ode|sonnet|ballad|elegy)\b/i,
+  "drama" => /\b(?:play|drama|tragedy|comedy|theatrical)\b/i,
+  "fiction" => /\b(?:novel|novella|fiction|romance)\b/i,
+  "short_fiction" => /\b(?:short stor(?:y|ies)|story|fairy tale|fable)\b/i,
+  "collection" => /\b(?:anthology|collection|cycle)\b/i,
+  "nonfiction" => /\b(?:memoir|autobiography|essay)\b/i
+}.freeze
 REJECT_INSTANCE_QIDS = Set.new(%w[
   Q5
 ])
@@ -220,6 +241,46 @@ def creator_match?(row, creator_labels, description)
   wikidata_creators.any? { |wikidata_creator| evidence_text.include?(wikidata_creator) }
 end
 
+def description_form_group(description)
+  DESCRIPTION_FORM_GROUPS.each do |group, pattern|
+    return group if description.to_s.match?(pattern)
+  end
+  nil
+end
+
+def compatible_work_form?(row, description)
+  expected_groups = case row["work_form"].to_s
+                    when "poetry"
+                      %w[poetry collection]
+                    when "drama"
+                      %w[drama]
+                    when "long_fiction", "epic_or_romance"
+                      %w[fiction short_fiction collection]
+                    when "short_fiction"
+                      %w[short_fiction fiction collection]
+                    when "collection_or_cycle"
+                      %w[collection poetry short_fiction fiction]
+                    when "essay_memoir_nonfiction"
+                      %w[nonfiction]
+                    else
+                      []
+                    end
+  return true if expected_groups.empty?
+
+  actual_group = description_form_group(description)
+  actual_group.nil? || expected_groups.include?(actual_group)
+end
+
+def risky_low_evidence_overlay?(row)
+  return false unless Array(row["creators"]).empty?
+  return false if row["answerline_question_count"].to_i >= 3
+
+  track_counts = row["quizbowl_track_counts"].is_a?(Hash) ? row["quizbowl_track_counts"] : {}
+  literature_count = track_counts["literature"].to_i
+  non_literature_count = track_counts.reject { |track, _| track == "literature" }.values.sum(&:to_i)
+  non_literature_count >= [literature_count * 4, 40].max
+end
+
 def refined_creator_labels(row, creator_labels, description)
   return creator_labels if creator_labels.empty?
 
@@ -250,6 +311,8 @@ def plausible_literary_entity?(search_result, entity)
 end
 
 def candidate_for(row, search_limit)
+  return nil if risky_low_evidence_overlay?(row)
+
   title = row.fetch("title").to_s
   wikidata_search(title, search_limit).each do |result|
     qid = result["id"].to_s
@@ -261,6 +324,8 @@ def candidate_for(row, search_limit)
     next unless plausible_literary_entity?(result, entity)
 
     description = entity_description(entity)
+    next unless compatible_work_form?(row, description)
+
     creator_ids = item_ids_from_claims(entity, "P50", "P170")
     creator_labels = labels_for_qids(creator_ids).values.map { |value| normalize_space(value) }.reject(&:empty?).uniq
     next unless creator_match?(row, creator_labels, description)
@@ -360,8 +425,8 @@ def main
   File.write(options[:out], combined.to_yaml)
 
   write_header = !File.exist?(options[:report])
-  CSV.open(options[:report], write_header ? "w" : "a", col_sep: "\t", write_headers: write_header, headers: report_rows.flat_map(&:keys).uniq) do |csv|
-    report_rows.each { |row| csv << row }
+  CSV.open(options[:report], write_header ? "w" : "a", col_sep: "\t", write_headers: write_header, headers: REPORT_HEADERS) do |csv|
+    report_rows.each { |row| csv << REPORT_HEADERS.map { |header| row.fetch(header, "") } }
   end
 
   warn "Wrote #{new_overrides.length} new overrides; total=#{combined.length}"

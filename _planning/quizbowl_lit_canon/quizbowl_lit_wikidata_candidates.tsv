@@ -151,7 +151,7 @@ The Gift of the Magi	171	326	Q1168338	The Gift of the Magi	short story by O. Hen
 An American Tragedy	172	276	Q604418	An American Tragedy	1925 novel by Theodore Dreiser	Theodore Dreiser	1925	1925	high	accepted_overlay
 Breakfast at Tiffany’s	173	344	Q849930	Breakfast at Tiffany's	1958 novella by Truman Capote	Truman Capote	1958	1958	high	accepted_overlay
 The Power and the Glory	174	306	Q431524	The Power and the Glory	novel by Graham Greene	Graham Greene	1940	1940	high	accepted_overlay
-Sailing to Byzantium	175	332	Q16682878	Sailing to Byzantium	2000 short story collection by Robert Silverberg	Robert Silverberg	2000	2000	high	accepted_overlay
+Sailing to Byzantium	175	332	""	Sailing to Byzantium	1928 poem by W. B. Yeats	W. B. Yeats	1928	1928	high	manual_corrected_overlay
 Uncle Vanya	176	306	Q753298	Uncle Vanya	play by Anton Chekhov	Anton Chekhov	1897	1897	high	accepted_overlay
 The Dumb Waiter	177	277	Q2275694	The Dumb Waiter	play by Harold Pinter	Harold Pinter		""	medium	accepted_overlay
 Sense and Sensibility	178	289	Q274744	Sense and Sensibility	1811 novel by Jane Austen	Jane Austen	1811	1811	high	accepted_overlay
@@ -293,7 +293,7 @@ The Human Comedy	324	420	""	""	""	""	""	""	""	no_high_confidence_match
 Oscar and Lucinda	325	269	Q1060522	Oscar and Lucinda	1988 Australian novel by Peter Carey	Peter Carey	1988	1988	high	accepted_overlay
 The Cask of Amontillado	326	175	Q1130590	The Cask of Amontillado	short story by Edgar Allan Poe	Edgar Allan Poe	1846	1846	high	accepted_overlay
 The Four Million	327	261	Q7735024	The Four Million	collection of short stories by O. Henry	O. Henry	1906	1906	high	accepted_overlay
-The Golden Ass	328	209	Q1044767	The Golden Ass	Ancient Roman novel by Apuleius	Apuleius	101	101	high	accepted_overlay
+The Golden Ass	328	209	Q1044767	The Golden Ass	Ancient Roman novel by Apuleius	Apuleius	160	c. 2nd century CE	high	manual_corrected_overlay
 Book of Revelation	329	376	Q42040	Book of Revelation	final book of the New Testament	John of Patmos		""	medium	accepted_overlay
 She Walks in Beauty	330	215	Q7492082	She Walks in Beauty	poem written by Lord Byron in 1814	Lord Byron	1814	1814	high	accepted_overlay
 Spoon River Anthology	331	155	Q461760	Spoon River Anthology	book by Edgar Lee Masters	Edgar Lee Masters	1915	1915	high	accepted_overlay
@@ -372,7 +372,7 @@ Charge of the Light Brigade	406	514	""	""	""	""	""	""	""	no_high_confidence_matc
 Arrow of God	407	193	Q4796152	Arrow of God	1964 novel by Chinua Achebe	Chinua Achebe	1964	1964	high	accepted_overlay
 Old Ironsides	408	209	Q7084278	Old Ironsides	poem	Oliver Wendell Holmes	1830	1830	high	accepted_overlay
 Men and Women	409	839	""	""	""	""	""	""	""	no_high_confidence_match
-Remembrance of Things Past	410	207	Q464928	In Search of Lost Time	novel sequence by Marcel Proust	Marcel Proust	2000	2000	high	accepted_overlay
+Remembrance of Things Past	410	207	Q464928	In Search of Lost Time	novel sequence by Marcel Proust	Marcel Proust	1913	1913	high	manual_corrected_overlay
 Decline and Fall	412	285	Q3115185	Decline and Fall	1928 novel by Evelyn Waugh	Evelyn Waugh	1928	1928	high	accepted_overlay
 The Devil's Dictionary	413	248	""	""	""	""	""	""	""	no_high_confidence_match
 Lady Windermere's Fan	414	170	Q1469224	Lady Windermere's Fan	play written by Oscar Wilde	Oscar Wilde	1892	1892	high	accepted_overlay
@@ -472,7 +472,7 @@ The Blithedale Romance	513	152	Q4007947	The Blithedale Romance	novel by Nathanie
 The Mysteries of Udolpho	514	153	""	""	""	""	""	""	""	no_high_confidence_match
 A Season in Hell	515	257	Q301342	A Season in Hell	extended poem in prose by Arthur Rimbaud	Arthur Rimbaud	1873	1873	high	accepted_overlay
 Harper LEE	516	286	""	""	""	""	""	""	""	no_high_confidence_match
-Metamorphoses	517	109	Q184742	Metamorphoses	narrative poem by Ovid	Ovid	1	1	high	accepted_overlay
+Metamorphoses	517	109	Q184742	Metamorphoses	narrative poem by Ovid	Ovid	8	c. 8 CE	high	manual_corrected_overlay
 A Sportsman’s Sketches	518	210	Q760143	A Sportsman's Sketches	collection of short stories by Ivan Turgenev	Ivan Turgenev	1852	1852	high	accepted_overlay
 Thousand Cranes	519	195	Q1132230	Thousand Cranes	1949–1951 novel by Yasunari Kawabata	Yasunari Kawabata	1949	1949	high	accepted_overlay
 The Piazza Tales	520	141	Q7757032	The Piazza Tales	1856 short story collection by Herman Melville	Herman Melville	1856	1856	high	accepted_overlay
@@ -521,3 +521,503 @@ Rappaccini’s Daughter	565	105	Q3822374	Rappaccini's Daughter	short story by Na
 The Black Prince	566	384	Q7718418	The Black Prince	1973 novel by Iris Murdoch	Iris Murdoch	1973	1973	high	accepted_overlay
 Babi Yar	567	268	""	""	""	""	""	""	""	no_high_confidence_match
 Ars Poetica	568	259	Q677997	Ars Poetica	Latin poem by Horace, written ca. 19 BCE, about the art of writing poetry and drama	Horace	-19	19 BCE	high	accepted_overlay
+The Second Coming	18	840	""	""	""	""	""	""	""	no_high_confidence_match
+30 points	100	4667	""	""	""	""	""	""	""	no_high_confidence_match
+Main Street	110	422	""	""	""	""	""	""	""	no_high_confidence_match
+Master Harold and the Boys	123	356	""	""	""	""	""	""	""	no_high_confidence_match
+North and South	128	896	""	""	""	""	""	""	""	no_high_confidence_match
+Howl	137	242	""	""	""	""	""	""	""	no_high_confidence_match
+The Labyrinth of Solitude	141	456	""	""	""	""	""	""	""	no_high_confidence_match
+After the Fall	149	1034	""	""	""	""	""	""	""	no_high_confidence_match
+Sunday Morning	159	461	""	""	""	""	""	""	""	no_high_confidence_match
+Cairo Trilogy	162	442	""	""	""	""	""	""	""	no_high_confidence_match
+A Song of Despair	165	534	""	""	""	""	""	""	""	no_high_confidence_match
+The Library of Babel	170	371	""	""	""	""	""	""	""	no_high_confidence_match
+Duino Elegies	183	383	""	""	""	""	""	""	""	no_high_confidence_match
+No Longer at Ease	190	321	""	""	""	""	""	""	""	no_high_confidence_match
+Ode to a Nightingale	196	248	""	""	""	""	""	""	""	no_high_confidence_match
+Journey to the West	198	375	""	""	""	""	""	""	""	no_high_confidence_match
+Ode to Joy	206	574	""	""	""	""	""	""	""	no_high_confidence_match
+The Awakening	217	174	""	""	""	""	""	""	""	no_high_confidence_match
+Tom Jones	233	382	""	""	""	""	""	""	""	no_high_confidence_match
+Blow-Up	236	717	""	""	""	""	""	""	""	no_high_confidence_match
+Gitanjali	243	206	""	""	""	""	""	""	""	no_high_confidence_match
+Romance of the Three Kingdoms	245	286	""	""	""	""	""	""	""	no_high_confidence_match
+Sonnets from the Portuguese	247	247	""	""	""	""	""	""	""	no_high_confidence_match
+The Decameron	251	163	""	""	""	""	""	""	""	no_high_confidence_match
+Death, Be Not Proud	276	304	""	""	""	""	""	""	""	no_high_confidence_match
+Daddy	278	224	""	""	""	""	""	""	""	no_high_confidence_match
+Book of Daniel	282	250	""	""	""	""	""	""	""	no_high_confidence_match
+Don Juan	290	644	""	""	""	""	""	""	""	no_high_confidence_match
+One Thousand and One Nights	301	195	""	""	""	""	""	""	""	no_high_confidence_match
+Ozymandias	307	138	""	""	""	""	""	""	""	no_high_confidence_match
+The Sea of Fertility	317	367	""	""	""	""	""	""	""	no_high_confidence_match
+The Human Comedy	324	420	""	""	""	""	""	""	""	no_high_confidence_match
+anyone lived in a pretty how town	332	232	""	""	""	""	""	""	""	no_high_confidence_match
+Side of Paradise	333	205	""	""	""	""	""	""	""	no_high_confidence_match
+The Threepenny Opera	340	357	""	""	""	""	""	""	""	no_high_confidence_match
+Christopher Marlowe	345	447	""	""	""	""	""	""	""	no_high_confidence_match
+Out of Africa	346	253	""	""	""	""	""	""	""	no_high_confidence_match
+Tintern Abbey	358	300	""	""	""	""	""	""	""	no_high_confidence_match
+John Milton	365	528	""	""	""	""	""	""	""	no_high_confidence_match
+A True Story	377	412	""	""	""	""	""	""	""	no_high_confidence_match
+La Belle Dame Sans Merci	397	167	""	""	""	""	""	""	""	no_high_confidence_match
+Men and Women	409	839	""	""	""	""	""	""	""	no_high_confidence_match
+The Devil's Dictionary	413	248	""	""	""	""	""	""	""	no_high_confidence_match
+Acts of the Apostles	423	172	""	""	""	""	""	""	""	no_high_confidence_match
+Ball of Fat	425	204	""	""	""	""	""	""	""	no_high_confidence_match
+Night	430	129	""	""	""	""	""	""	""	no_high_confidence_match
+The Thousand and One Nights	431	261	""	""	""	""	""	""	""	no_high_confidence_match
+Song Offerings	432	171	""	""	""	""	""	""	""	no_high_confidence_match
+I do	451	1151	""	""	""	""	""	""	""	no_high_confidence_match
+Book of Esther	452	177	""	""	""	""	""	""	""	no_high_confidence_match
+The Song of Roland	456	192	""	""	""	""	""	""	""	no_high_confidence_match
+Emma	472	100	""	""	""	""	""	""	""	no_high_confidence_match
+Quo Vadis	475	187	""	""	""	""	""	""	""	no_high_confidence_match
+A Dream Deferred	478	389	""	""	""	""	""	""	""	no_high_confidence_match
+Bus Stop	488	219	""	""	""	""	""	""	""	no_high_confidence_match
+Childe Harold’s Pilgrimage	492	223	""	""	""	""	""	""	""	no_high_confidence_match
+The Kingdom of This World	496	158	""	""	""	""	""	""	""	no_high_confidence_match
+The Consolation of Philosophy	501	226	""	""	""	""	""	""	""	no_high_confidence_match
+The Other Side	503	907	""	""	""	""	""	""	""	no_high_confidence_match
+The Chambered Nautilus	504	153	""	""	""	""	""	""	""	no_high_confidence_match
+The Mysteries of Udolpho	514	153	""	""	""	""	""	""	""	no_high_confidence_match
+Harper LEE	516	286	""	""	""	""	""	""	""	no_high_confidence_match
+O. Henry	521	335	""	""	""	""	""	""	""	no_high_confidence_match
+Go Down, Moses	522	132	""	""	""	""	""	""	""	no_high_confidence_match
+The End of the World	526	904	""	""	""	""	""	""	""	no_high_confidence_match
+The Leatherstocking Tales	529	319	""	""	""	""	""	""	""	no_high_confidence_match
+Holy Sonnets	530	213	""	""	""	""	""	""	""	no_high_confidence_match
+Funeral Blues	535	158	""	""	""	""	""	""	""	no_high_confidence_match
+Crossing Brooklyn Ferry	541	141	""	""	""	""	""	""	""	no_high_confidence_match
+The Golden Age	542	865	""	""	""	""	""	""	""	no_high_confidence_match
+The Bell-Tower	545	314	""	""	""	""	""	""	""	no_high_confidence_match
+Notes from the Underground	552	125	""	""	""	""	""	""	""	no_high_confidence_match
+A Supermarket in California	561	196	""	""	""	""	""	""	""	no_high_confidence_match
+Babi Yar	567	268	""	""	""	""	""	""	""	no_high_confidence_match
+The Queen of Spades	569	255	Q4551661	The Queen of Spades	short story by Alexander Pushkin	Alexander Pushkin	1834	1834	high	accepted_overlay
+Giovanni's Room	570	173	Q5563645	Giovanni's Room	1956 novella by James Baldwin	James Baldwin	1956	1956	high	accepted_overlay
+The Merry Wives of Windsor	571	183	Q844836	The Merry Wives of Windsor	play written by Shakespeare	William Shakespeare	1602	1602	high	accepted_overlay
+The Darkling Thrush	572	115	Q3917777	The Darkling Thrush	1900 poem by Thomas Hardy	Thomas Hardy	1900	1900	high	accepted_overlay
+The Man Who Would Be King	573	106	Q1129936	The Man Who Would Be King	novella by Rudyard Kipling	Rudyard Kipling	1888	1888	high	accepted_overlay
+Pere Goriot	574	243	Q240617	Père Goriot	1835 novel by Honoré de Balzac	Honoré de Balzac	1835	1835	high	accepted_overlay
+Sentimental Education	575	157	Q1212285	Sentimental Education	novel by Gustave Flaubert	Gustave Flaubert	1869	1869	high	accepted_overlay
+The Enormous Room	576	176	Q2389737	The Enormous Room	autobiographical novel by E.E. Cummings	E. E. Cummings	1922	1922	high	accepted_overlay
+The Time of the Hero	577	207	Q763199	The Time of the Hero	novel by Mario Vargas Llosa	Mario Vargas Llosa	1963	1963	high	accepted_overlay
+Oedipus at Colonus	578	123	Q294001	Oedipus at Colonus	ancient Greek tragedy by Sophocles	Sophocles		""	medium	accepted_overlay
+Siddhartha	579	84	Q457289	Siddhartha	novel by Hermann Hesse	Hermann Hesse	1922	1922	high	accepted_overlay
+The Princess Bride	580	181	Q1935913	The Princess Bride	1973 novel by William Goldman	William Goldman	1973	1973	high	accepted_overlay
+The Death of the Hired Man	581	114	Q7729469	The Death of the Hired Man	poem	Robert Frost		""	medium	accepted_overlay
+The Beggar's Opera	582	146	Q138662221	The Beggar's Opera	play by John Gay	John Gay		""	medium	accepted_overlay
+Cancer Ward	583	124	Q1093483	Cancer Ward	Novel by Aleksandr Solzhenitsyn	Aleksandr Solzhenitsyn	1967	1967	high	accepted_overlay
+The Moons of Jupiter	585	247	Q7752186	The Moons of Jupiter	1982 short story collection by Alice Munro	Alice Munro	1982	1982	high	accepted_overlay
+Life of Pi	586	122	Q374204	Life of Pi	2001 novel by Yann Martel	Yann Martel	2001	2001	high	accepted_overlay
+Chicago	587	98	""	""	""	""	""	""	""	no_high_confidence_match
+All the Pretty Horses	588	139	Q264519	All the Pretty Horses	1992 novel by Cormac McCarthy	Cormac McCarthy	1992	1992	high	accepted_overlay
+Musee des Beaux Arts	589	196	""	""	""	""	""	""	""	no_high_confidence_match
+The Way of the World	590	120	Q723947	The Way of the World	play by William Congreve	William Congreve		""	medium	accepted_overlay
+Where Angels Fear to Tread	591	193	Q7993159	Where Angels Fear to Tread	novel by E. M. Forster	E. M. Forster	1905	1905	high	accepted_overlay
+Hopscotch	593	100	Q1755351	Hopscotch	novel by Julio Cortázar	Julio Cortázar	1963	1963	high	accepted_overlay
+Oryx and Crake	594	165	Q2032398	Oryx and Crake	2003 novel by Margaret Atwood	Margaret Atwood	2003	2003	high	accepted_overlay
+Death of a Naturalist	595	199	Q5247576	Death of a Naturalist	book by Seamus Heaney	Seamus Heaney	1966	1966	high	accepted_overlay
+What We Talk About When We Talk About Love	596	119	Q3756652	What We Talk About When We Talk About Love	1981 short story collection by Raymond Carver	Raymond Carver	1981	1981	high	accepted_overlay
+Annabel Lee	597	143	Q564072	Annabel Lee	poem by Edgar Allan Poe	Edgar Allan Poe	1849	1849	high	accepted_overlay
+Lycidas	598	94	Q1645997	Lycidas	1638 poem written by John Milton	John Milton	1638	1638	high	accepted_overlay
+The Narrow Road to the Deep North	599	284	""	""	""	""	""	""	""	no_high_confidence_match
+A Suitable Boy	600	160	Q2918491	A Suitable Boy	1993 novel by Vikram Seth	Vikram Seth	1993	1993	high	accepted_overlay
+Swann's Way	601	190	Q2700307	Swann's Way	novel by Marcel Proust	Marcel Proust	1913	1913	high	accepted_overlay
+The Rocking-Horse Winner	602	129	Q7761295	The Rocking-Horse Winner	1926 short story by D. H. Lawrence	D. H. Lawrence	1926	1926	high	accepted_overlay
+Four Quartets	603	133	Q102046162	Four quartets	book	T. S. Eliot	1959	1959	high	accepted_overlay
+White Teeth	604	136	Q866980	White Teeth	2000 novel by Zadie Smith	Zadie Smith	2000	2000	high	accepted_overlay
+Miniver Cheevy	605	142	Q6867730	Miniver Cheevy	poem by Edwin Arlington Robinson	Edwin Arlington Robinson	1910	1910	high	accepted_overlay
+The Passionate Shepherd to His Love	606	118	Q7756286	The Passionate Shepherd to His Love	poem	Christopher Marlowe		""	medium	accepted_overlay
+Anthills of the Savannah	607	153	Q4011016	Anthills of the Savannah	1987 novel by Chinua Achebe	Chinua Achebe	1987	1987	high	accepted_overlay
+Volpone	608	86	Q1189332	Volpone	comedy play by Ben Jonson	Ben Jonson	1606	1606	high	accepted_overlay
+The Plough and the Stars	609	123	Q7757527	The Plough and the Stars	play by the Irish writer Seán O'Casey	Seán O'Casey		""	medium	accepted_overlay
+Nip the Buds, Shoot the Kids	611	141	Q5227743	Nip the Buds, Shoot the Kids	novel by Kenzaburo Oe	Kenzaburō Ōe	1958	1958	high	accepted_overlay
+The Golden Notebook	612	125	Q784986	The Golden Notebook	novel by Doris Lessing	Doris Lessing	1962	1962	high	accepted_overlay
+The Sea-Wolf	613	146	Q1196857	The Sea-Wolf	novel by Jack London	Jack London	1904	1904	high	accepted_overlay
+The Knight's Tale	614	147	""	""	""	""	""	""	""	no_high_confidence_match
+The Gulag Archipelago	615	231	Q369944	The Gulag Archipelago	1973 essay by Aleksandr Solzhenitsyn	Aleksandr Solzhenitsyn	1973	1973	high	accepted_overlay
+Miss Lonelyhearts	616	102	Q6876987	Miss Lonelyhearts	novel by Nathanael West	Nathanael West	1933	1933	high	accepted_overlay
+A Modest Proposal	617	255	Q264143	A Modest Proposal	satirical essay by Jonathan Swift	Jonathan Swift	1729	1729	high	accepted_overlay
+The Libation Bearers	619	182	Q11688406	The Libation Bearers	play by Aeschylus; part 2 of the Oresteia	Aeschylus		""	medium	accepted_overlay
+Mrs. Warren’s Profession	620	104	Q955587	Mrs. Warren's Profession	play by George Bernard Shaw	George Bernard Shaw	1893	1893	high	accepted_overlay
+Tobacco Road	621	119	Q1169793	Tobacco Road	1932 novel by Erskine Caldwell	Erskine Caldwell	1932	1932	high	accepted_overlay
+Women in Love	622	177	Q2443714	Women in Love	novel by D. H. Lawrence	D. H. Lawrence	1920	1920	high	accepted_overlay
+The Dance of Death	623	151	Q1639545	The Dance of Death	play by August Strindberg	""	1900	1900	medium	accepted_overlay
+The Gift Outright	624	151	Q7736406	The Gift Outright	poem	Robert Frost		""	medium	accepted_overlay
+The Petrified Forest	625	130	Q120973035	The Petrified Forest	1934 play by Robert E. Sherwood	""	1934	1934	medium	accepted_overlay
+The Big Sleep	626	225	Q1649862	The Big Sleep	novel by Raymond Chandler	Raymond Chandler	1939	1939	high	accepted_overlay
+The Birds	627	91	Q1164079	The Birds	comedy by Aristophanes	Aristophanes		""	medium	accepted_overlay
+The Story of an Hour	628	136	Q7766829	The Story of an Hour	Short story by Kate Chopin	Kate Chopin		""	medium	accepted_overlay
+The Sound of the Mountain	629	178	Q3109211	The Sound of the Mountain	novel by Yasunari Kawabata	Yasunari Kawabata	1954	1954	high	accepted_overlay
+Joseph Andrews	630	148	Q784226	Joseph Andrews	novel by Henry Fielding	Henry Fielding	1742	1742	high	accepted_overlay
+The Sailor Who Fell from Grace with the Sea	631	121	Q2397134	The Sailor Who Fell from Grace with the Sea	novel by Yukio Mishima	Yukio Mishima	1963	1963	high	accepted_overlay
+The Murders in the Rue Morgue	633	161	Q459667	The Murders in the Rue Morgue	novella by Edgar Allan Poe	Edgar Allan Poe	1841	1841	high	accepted_overlay
+Murder on the Orient Express	634	178	Q845889	Murder on the Orient Express	1934 novel by Agatha Christie	Agatha Christie	1934	1934	high	accepted_overlay
+Sonnets to Orpheus	635	195	Q1216303	Sonnets to Orpheus	poem collection by Rainer Maria Rilke	Rainer Maria Rilke	1923	1923	high	accepted_overlay
+A View from the Bridge	636	107	Q2916798	A View from the Bridge	play written by Arthur Miller	Arthur Miller	1955	1955	high	accepted_overlay
+The Seagull	637	80	Q650063	The Seagull	play by Anton Chekhov	Anton Chekhov	1896	1896	high	accepted_overlay
+The Emperor Jones	638	132	Q2488744	The Emperor Jones	play written by Eugene O'Neill	Eugene O'Neill		""	medium	accepted_overlay
+Out of the Cradle Endlessly Rocking	639	124	Q7111731	Out of the Cradle Endlessly Rocking	poem by Walt Whitman	Walt Whitman		""	medium	accepted_overlay
+The Age of Anxiety	640	157	Q7712834	The Age of Anxiety	1947 book by W. H. Auden	W. H. Auden	1947	1947	high	accepted_overlay
+The Celebrated Jumping Frog of Calaveras County	641	108	""	""	""	""	""	""	""	no_high_confidence_match
+Goodbye, Columbus	642	145	Q960840	Goodbye, Columbus	1959 short story collection by Philip Roth	Philip Roth	1959	1959	high	accepted_overlay
+The White Man’s Burden	643	148	Q908734	The White Man's Burden	poem by the English poet Rudyard Kipling	Rudyard Kipling	1899	1899	high	accepted_overlay
+Hero and Leander	644	129	""	""	""	""	""	""	""	no_high_confidence_match
+I Wandered Lonely as a Cloud	645	190	Q2295398	I Wandered Lonely as a Cloud	poem by William Wordsworth	William Wordsworth	1807	1807	high	accepted_overlay
+Kaddish	646	112	""	""	""	""	""	""	""	no_high_confidence_match
+The Makioka Sisters	647	134	Q2354342	The Makioka Sisters	novel by Junichiro Tanizaki	Jun'ichirō Tanizaki	1948	1948	high	accepted_overlay
+Ordinary People	648	180	Q7100840	Ordinary People	1976 novel by Judith Guest	Judith Guest	1976	1976	high	accepted_overlay
+The Frogs	649	80	Q815376	The Frogs	comedy by Aristophanes	Aristophanes		""	medium	accepted_overlay
+A Dream Play	650	123	Q1305285	A Dream Play	1902 play by August Strindberg	""	1902	1902	medium	accepted_overlay
+Rob Roy	651	149	Q2156104	Rob Roy	novel by Walter Scott	Walter Scott	1817	1817	high	accepted_overlay
+Arcadia	652	82	""	""	""	""	""	""	""	no_high_confidence_match
+Around the World in Eighty Days	653	135	Q1219561	Around the World in Eighty Days	novel by Jules Verne	Jules Verne	1872	1872	high	accepted_overlay
+Rape of the Lock	654	291	Q1823920	The Rape of the Lock	poem by Alexander Pope	Alexander Pope	1712	1712	high	accepted_overlay
+Atlas Shrugged	655	129	Q374098	Atlas Shrugged	1957 novel by Ayn Rand	Ayn Rand	1957	1957	high	accepted_overlay
+Taras Bulba	656	124	Q1250822	Taras Bulba	novella by the Russian author Nikolai Gogol	Nikolai Gogol	1835	1835	high	accepted_overlay
+Jabberwocky	657	100	Q250371	Jabberwocky	nonsense poem by Lewis Carroll	Lewis Carroll	1871	1871	high	accepted_overlay
+Gunga Din	658	155	Q3120849	Gunga Din	poem by Rudyard Kipling	Rudyard Kipling	1892	1892	high	accepted_overlay
+Like Water for Chocolate	659	101	Q1777072	Like Water for Chocolate	novel by Mexican novelist Laura Esquivel	Laura Esquivel	1989	1989	high	accepted_overlay
+Rashomon	660	101	Q1076912	Rashōmon	short story by Ryūnosuke Akutagawa	Ryūnosuke Akutagawa	1915	1915	high	accepted_overlay
+The Spanish Tragedy	661	129	Q1115255	The Spanish Tragedy	Play by Thomas Kyd	Thomas Kyd		""	medium	accepted_overlay
+Medea	662	78	Q286381	Medea	ancient Greek tragedy by Euripides	Euripides		""	medium	accepted_overlay
+The Fire Next Time	663	192	Q16385696	The Fire Next Time	1963 non-fiction anthology by James Baldwin	James Baldwin	1963	1963	high	accepted_overlay
+Eugenie Grandet	664	142	Q1373644	Eugénie Grandet	1833 novel by Honoré de Balzac	Honoré de Balzac	1833	1833	high	accepted_overlay
+The Rules of the Game	665	168	Q3794181	The rules of the game	play by Luigi Pirandellο	Luigi Pirandello		""	medium	accepted_overlay
+The Naked and the Dead	666	143	Q646361	The Naked and the Dead	novel by Norman Mailer	Norman Mailer	1948	1948	high	accepted_overlay
+Antony and Cleopatra	667	283	""	""	""	""	""	""	""	no_high_confidence_match
+Pied Beauty	668	135	Q7191467	Pied Beauty	poem	Gerard Manley Hopkins		""	medium	accepted_overlay
+Tropic of Cancer	669	164	Q1501700	Tropic of Cancer	1934 novel by Henry Miller	Henry Miller	1934	1934	high	accepted_overlay
+The Prince and the Pauper	670	111	Q869725	The Prince and the Pauper	novel by Mark Twain	Mark Twain	1881	1881	high	accepted_overlay
+A Worn Path	671	110	Q4660832	A Worn Path	short story by Eudora Welty	Eudora Welty		""	medium	accepted_overlay
+Dream on Monkey Mountain	672	130	Q5306515	Dream on Monkey Mountain	play written by Derek Walcott	Derek Walcott		""	medium	accepted_overlay
+Bleak House	673	94	Q883305	Bleak House	novel by Charles Dickens (1853)	Charles Dickens	1853	1853	high	accepted_overlay
+Accidental Death of an Anarchist	674	132	Q2704227	Accidental Death of an Anarchist	1970 play by Dario Fo	Dario Fo	1970	1970	high	accepted_overlay
+The Heights of Macchu Picchu	675	185	""	""	""	""	""	""	""	no_high_confidence_match
+The Purloined Letter	676	112	Q733448	The Purloined Letter	detective story by Edgar Allan Poe	Edgar Allan Poe	1844	1844	high	accepted_overlay
+Watch on the Rhine	677	132	Q7973096	Watch on the Rhine	play written by Lillian Hellman	Lillian Hellman		""	medium	accepted_overlay
+The Moon and Sixpence	678	156	Q1792726	The Moon and Sixpence	1919 novel by W Somerset Maugham	William Somerset Maugham	1919	1919	high	accepted_overlay
+A Separate Peace	679	98	Q4659417	A Separate Peace	novel by John Knowles	John Knowles	1959	1959	high	accepted_overlay
+Boule de Suif	680	101	Q63971	Boule de Suif	1880 short story by Guy de Maupassant	Guy de Maupassant	1880	1880	high	accepted_overlay
+Dejection: An Ode	681	107	Q5252726	Dejection: An Ode	poem	Samuel Taylor Coleridge	1802	1802	high	accepted_overlay
+The Tempest	682	73	Q55230549	The Tempest	1997 novel by Susan Wright	Susan Wright	1997	1997	high	accepted_overlay
+Sophie's Choice	683	104	Q1524588	Sophie's Choice	1979 novel by William Styron	William Styron	1979	1979	high	accepted_overlay
+Pedro Paramo	684	105	Q1427966	Pedro Páramo	novel by Juan Rulfo	Juan Rulfo	1956	1956	high	accepted_overlay
+Desiree’s Baby	685	135	Q3024445	Desiree's Baby	short story by Kate Chopin	Kate Chopin	1893	1893	high	accepted_overlay
+Stranger in a Strange Land	686	148	Q929821	Stranger in a Strange Land	1961 novel by Robert A. Heinlein	Robert A. Heinlein	1961	1961	high	accepted_overlay
+Archaic Torso of Apollo	687	163	Q15792054	Archaic Torso of Apollo	German poem, in: Poems of Rainer Maria Rilke (1918)	Rainer Maria Rilke	1918	1918	high	accepted_overlay
+The Master of Go	688	175	Q2303748	The Master of Go	novel by Yasunari Kawabata	Yasunari Kawabata	1951	1951	high	accepted_overlay
+Fear and Loathing in Las Vegas	689	122	Q772435	Fear and Loathing in Las Vegas	novel by Hunter S. Thompson	Hunter S. Thompson	1971	1971	high	accepted_overlay
+The Hairy Ape	690	104	Q257921	The Hairy Ape	1922 play by Eugene O'Neill	Eugene O'Neill	1922	1922	high	accepted_overlay
+The Diamond as Big as the Ritz	691	102	Q3548539	The Diamond as Big as the Ritz	novella by F. Scott Fitzgerald	F. Scott Fitzgerald	1922	1922	high	accepted_overlay
+Il Canzoniere	692	190	Q777574	Il Canzoniere	poetry anthology by Petrarch	Petrarch	1336	1336	high	accepted_overlay
+The Country of the Pointed Firs	693	103	Q7727811	The Country of the Pointed Firs	short story sequence	Sarah Orne Jewett	1896	1896	high	accepted_overlay
+Book of Job	694	147	""	""	""	""	""	""	""	no_high_confidence_match
+The Golden Bowl	695	144	Q1248585	The Golden Bowl	novel by Henry James	Henry James	1904	1904	high	accepted_overlay
+The Quiet American	697	121	Q1199651	The Quiet American	1955 novel by Graham Greene	Graham Greene	1955	1955	high	accepted_overlay
+Gimpel the Fool	698	113	Q5562782	Gimpel the Fool	1957 short story collection by Isaac Bashevis Singer	Isaac Bashevis Singer	1957	1957	high	accepted_overlay
+The Pastoral Symphony	699	262	""	""	""	""	""	""	""	no_high_confidence_match
+A Death in the Family	700	123	Q4656363	A Death in the Family	autobiographical novel by James Agee	James Agee		""	medium	accepted_overlay
+The Book of Laughter and Forgetting	701	148	Q2723517	The Book of Laughter and Forgetting	1979 novel by Milan Kundera	Milan Kundera	1979	1979	high	accepted_overlay
+Humboldt's Gift	702	149	Q3793856	Humboldt's Gift	1975 novel by Saul Bellow	Saul Bellow	1975	1975	high	accepted_overlay
+Shooting an Elephant	703	133	Q526227	Shooting an Elephant	essay by George Orwell	George Orwell	1936	1936	high	accepted_overlay
+The Kite Runner	705	95	Q637839	The Kite Runner	2003 novel by Khaled Hosseini	Khaled Hosseini	2003	2003	high	accepted_overlay
+Blood Meridian	706	153	Q581426	Blood Meridian	1985 novel by Cormac McCarthy	Cormac McCarthy	1985	1985	high	accepted_overlay
+Heart of a Dog	707	104	Q1345004	The Heart of a Dog	1925 novel by Mikhail Bulgakov	Mikhail Bulgakov	1925	1925	high	accepted_overlay
+Gospel of Luke	708	180	""	""	""	""	""	""	""	no_high_confidence_match
+Steppenwolf	709	69	Q217073	Steppenwolf	1927 novel by Hermann Hesse	Hermann Hesse	1927	1927	high	accepted_overlay
+Notre-Dame de Paris	710	74	Q191380	The Hunchback of Notre Dame	novel by Victor Hugo	""	1831	1831	medium	accepted_overlay
+Dracula	711	68	Q41542	Dracula	1897 novel by Bram Stoker	Bram Stoker	1897	1897	high	manual_corrected_overlay
+is Just to Say	712	193	""	""	""	""	""	""	""	no_high_confidence_match
+The Man Without a Country	713	91	Q7750004	The Man Without a Country	short story by Edward Everett Hale	Edward Everett Hale		""	medium	accepted_overlay
+An Essay on Man	714	131	Q3121862	An Essay on Man	poem by Alexander Pope	Alexander Pope	1733	1733	high	accepted_overlay
+The Indian Burying Ground	715	101	""	""	""	""	""	""	""	no_high_confidence_match
+A Study in Scarlet	716	153	Q223131	A Study in Scarlet	first Sherlock Holmes novel by Sir Arthur Conan Doyle	Arthur Conan Doyle	1887	1887	high	accepted_overlay
+The Sot-Weed Factor	717	113	Q7765340	The Sot-Weed Factor	novel by John Barth	John Barth	1960	1960	high	accepted_overlay
+Elmer Gantry	718	120	Q1247044	Elmer Gantry	1927 novel by Sinclair Lewis	Sinclair Lewis	1927	1927	high	accepted_overlay
+Adonais	719	79	Q2824951	Adonais	1821 poem written by Percy Bysshe Shelley	Percy Bysshe Shelley	1821	1821	high	accepted_overlay
+The Clouds	720	68	Q868447	The Clouds	comedy by Aristophanes	Aristophanes		""	medium	accepted_overlay
+Mario and the Magician	721	105	Q1775812	Mario and the Magician	novella by Thomas Mann	Thomas Mann	1930	1930	high	accepted_overlay
+The Alchemist	722	69	Q647411	The Alchemist	play written by Ben Jonson	Ben Jonson		""	medium	accepted_overlay
+The Famished Road	723	114	Q2086419	The Famished Road	1991 novel by Ben Okri	Ben Okri	1991	1991	high	accepted_overlay
+Invisible Cities	724	176	Q1219705	Invisible Cities	novel by Italo Calvino	Italo Calvino	1972	1972	high	accepted_overlay
+The Wreck of the Deutschland	725	119	Q7776270	The Wreck of the Deutschland	poem	Gerard Manley Hopkins	1918	1918	high	accepted_overlay
+The Lady with the Dog	726	95	Q2418554	The Lady with the Dog	short story by Anton Chekhov	Anton Chekhov	1899	1899	high	accepted_overlay
+Pyramus and Thisbe	727	138	""	""	""	""	""	""	""	no_high_confidence_match
+Book of Judges	728	140	""	""	""	""	""	""	""	no_high_confidence_match
+Ender’s Game	729	91	""	""	""	""	""	""	""	no_high_confidence_match
+Snow	730	80	""	""	""	""	""	""	""	no_high_confidence_match
+The Adventures of Augie March	731	201	Q1771746	The Adventures of Augie March	1953 novel by Saul Bellow	Saul Bellow	1953	1953	high	accepted_overlay
+The Gilded Age	732	177	""	""	""	""	""	""	""	no_high_confidence_match
+Bartholomew Fair	733	115	Q1243205	Bartholomew Fair	play written by Ben Jonson	Ben Jonson		""	medium	accepted_overlay
+A Wrinkle in Time	734	95	Q2268391	A Wrinkle in Time	1962 science fantasy novel by Madeleine L'Engle	Madeleine L'Engle	1962	1962	high	accepted_overlay
+The Autobiography of Alice B. Toklas	735	122	""	""	""	""	""	""	""	no_high_confidence_match
+Mixing It Up	736	141	""	""	""	""	""	""	""	no_high_confidence_match
+Seize the Day	737	149	Q2907590	Seize the Day	novel by Saul Bellow	Saul Bellow	1956	1956	high	accepted_overlay
+Desire Under the Elms	738	87	Q4502184	Desire Under the Elms	play by Eugene O’Neill	Eugene O'Neill		""	medium	accepted_overlay
+The End of the Affair	739	93	Q905112	The End of the Affair	novel by Graham Greene	Graham Greene	1951	1951	high	accepted_overlay
+Ben-Hur	740	181	Q816528	Ben-Hur: A Tale of the Christ	1880 novel by Lewis Wallace	Lew Wallace; Lewis Wallace	1880	1880	high	accepted_overlay
+Strange Interlude	741	96	Q7621410	Strange Interlude	1920s play by Eugene O'Neill	Eugene O'Neill		""	medium	accepted_overlay
+Charlotte's Web	742	118	Q45735	Charlotte's Web	1952 children's novel by E. B. White	E. B. White	1952	1952	high	accepted_overlay
+A Man for All Seasons	743	98	Q3779414	A Man for All Seasons	play by Robert Bolt (1960)	Robert Bolt	1960	1960	high	accepted_overlay
+De Profundis	744	195	Q1249459	De Profundis	literary work by Oscar Wilde	Oscar Wilde	1905	1905	high	accepted_overlay
+The Secret Sharer	745	109	""	""	""	""	""	""	""	no_high_confidence_match
+The Lord of the Rings	746	494	Q15228	The Lord of the Rings	1954–1955 fantasy novel trilogy by J. R. R. Tolkien	J. R. R. Tolkien	1954	1954	high	accepted_overlay
+The Mysterious Stranger	747	105	Q2582895	The Mysterious Stranger	novel attempted by Mark Twain	Mark Twain	1916	1916	high	accepted_overlay
+First Love	748	186	Q1189993	First Love	novella by Ivan Turgenev	Ivan Turgenev	1860	1860	high	accepted_overlay
+Edith Wharton	749	290	""	""	""	""	""	""	""	no_high_confidence_match
+Cannery Row	750	94	Q1216542	Cannery Row	novel by John Steinbeck	John Steinbeck	1945	1945	high	accepted_overlay
+Ah, Wilderness	751	99	Q48745837	Ah, Wilderness	1966 novel by Shuji Terayama	Shūji Terayama	1966	1966	high	accepted_overlay
+Endgame	752	69	Q1235448	Endgame	play by Samuel Beckett	Samuel Beckett	1957	1957	high	accepted_overlay
+The Martian Chronicles	753	152	Q918052	The Martian Chronicles	1950 novel by Ray Bradbury	Ray Bradbury	1950	1950	high	accepted_overlay
+A Country Doctor	754	178	Q15872155	A Country Doctor	short story collection by Franz Kafka	Franz Kafka	1920	1920	high	accepted_overlay
+Rebecca	755	64	""	""	""	""	""	""	""	no_high_confidence_match
+The Real Thing	756	153	Q3522445	The Real Thing	Tom Stoppard play	Tom Stoppard	1982	1982	high	accepted_overlay
+Tristan and Isolde	757	199	""	""	""	""	""	""	""	no_high_confidence_match
+The Human Stain	758	145	Q2258908	The Human Stain	2000 novel by Philip Roth	Philip Roth	2000	2000	high	accepted_overlay
+The Razor’s Edge	759	138	""	""	""	""	""	""	""	no_high_confidence_match
+Ma Rainey’s Black Bottom	760	131	Q6720803	Ma Rainey's Black Bottom	1982 play by August Wilson	August Wilson	1982	1982	high	accepted_overlay
+The True Story of Ah Q	761	117	Q613121	The True Story of Ah Q	novella by Lu Xun	Lu Xun	1921	1921	high	accepted_overlay
+Franny and Zooey	762	143	Q1445395	Franny and Zooey	novel by J. D. Salinger	J. D. Salinger	1961	1961	high	accepted_overlay
+Dr. Heidegger’s Experiment	763	92	Q5304140	Dr. Heidegger's Experiment	short story by Nathaniel Hawthorne	Nathaniel Hawthorne	1837	1837	high	accepted_overlay
+Andrea del Sarto	765	125	Q2846429	Andrea del Sarto	poem by Robert Browning	Robert Browning		""	medium	accepted_overlay
+The Dream Songs	766	108	Q7730936	The Dream Songs	1969 collection of poetry	John Berryman	1969	1969	high	accepted_overlay
+The Masque of the Red Death	767	78	Q766086	The Masque of the Red Death	1842 short story	Edgar Allan Poe	1842	1842	high	accepted_overlay
+Requiem	768	118	""	""	""	""	""	""	""	no_high_confidence_match
+Seven Gothic Tales	769	130	""	""	""	""	""	""	""	no_high_confidence_match
+Angle of Repose	770	113	Q4763360	Angle of Repose	book by Wallace Stegner	Wallace Stegner	1971	1971	high	accepted_overlay
+The Cloud Messenger	771	115	""	""	""	""	""	""	""	no_high_confidence_match
+The Ballad of Reading Gaol	772	143	Q2119279	The Ballad of Reading Gaol	poem by Oscar Wilde, published in 1898	Oscar Wilde	1898	1898	high	accepted_overlay
+Slouching Towards Bethlehem	773	120	Q7541455	Slouching Towards Bethlehem	essay by Joan Didion	Joan Didion	1968	1968	high	accepted_overlay
+Do Androids Dream of Electric Sheep	774	112	Q605249	Do Androids Dream of Electric Sheep?	science fiction novel by Philip K. Dick	Philip K. Dick	1968	1968	high	accepted_overlay
+The Stone Raft	775	170	Q1171599	The Stone Raft	1986 novel by José Saramago	José Saramago	1986	1986	high	accepted_overlay
+The Screwtape Letters	776	148	Q2267287	The Screwtape Letters	satirical, epistolary Christian apologetic novel by C. S. Lewis	C. S. Lewis	1942	1942	high	accepted_overlay
+The Big Money	777	171	Q42184176	The Big Money	novel by John Dos Passos	John Dos Passos		""	medium	accepted_overlay
+Under the Volcano	778	77	Q1570020	Under the Volcano	1947 book	Malcolm Lowry	1947	1947	high	accepted_overlay
+A Hunger Artist	779	105	Q1304684	A Hunger Artist	short story by Franz Kafka	Franz Kafka	1922	1922	high	accepted_overlay
+Rhinoceros	780	72	Q1215121	Rhinoceros	play by Eugène Ionesco	Eugène Ionesco	1959	1959	high	accepted_overlay
+Notes of a Native Son	781	93	Q7062618	Notes of a Native Son	essay by James Baldwin	James Baldwin	1955	1955	high	accepted_overlay
+Shall I compare thee to a summer’s day	782	182	""	""	""	""	""	""	""	no_high_confidence_match
+Inferno	783	65	Q4509219	Inferno	"first part of Dante Alighieri's ""Divine Comedy"""	Dante Alighieri	1304	1304	high	accepted_overlay
+Tonight I Can Write the Saddest Lines	784	237	""	""	""	""	""	""	""	no_high_confidence_match
+Eyeless in Gaza	785	140	Q5422772	Eyeless in Gaza	novel by Aldous Huxley	Aldous Huxley	1936	1936	high	accepted_overlay
+The Confidence Man	788	135	Q3820043	The Confidence-Man	novel by Herman Melville	Herman Melville	1857	1857	high	accepted_overlay
+New Hampshire	789	265	""	""	""	""	""	""	""	no_high_confidence_match
+The Ring and the Book	790	93	Q3202051	The Ring and the Book	1868 poem written by Robert Browning	Robert Browning	1868	1868	high	accepted_overlay
+Kalevala	791	61	""	""	""	""	""	""	""	no_high_confidence_match
+Leda and the Swan	792	145	""	""	""	""	""	""	""	no_high_confidence_match
+The Ballad of the Sad Cafe	793	104	Q7715451	The Ballad of the Sad Café	novel by Carson McCullers	Carson McCullers	1951	1951	high	accepted_overlay
+Skunk Hour	794	122	""	""	""	""	""	""	""	no_high_confidence_match
+Magister Ludi	795	130	Q836841	The Glass Bead Game	novel by Hermann Hesse (1943)	Hermann Hesse	1943	1943	high	accepted_overlay
+i sing of Olaf glad and big	796	118	""	""	""	""	""	""	""	no_high_confidence_match
+Astrophel and Stella	797	102	""	""	""	""	""	""	""	no_high_confidence_match
+The Courtship of Miles Standish	798	105	Q7727869	The Courtship of Miles Standish	1858 poem written by Henry Wadsworth Longfellow	Henry Wadsworth Longfellow	1858	1858	high	accepted_overlay
+The Bloody Chamber	799	110	Q882388	The Bloody Chamber	collection of short stories by Angela Carter	Angela Carter	1979	1979	high	accepted_overlay
+The Ghost Sonata	800	174	Q1213009	The Ghost Sonata	play by August Strindberg	""	1907	1907	medium	accepted_overlay
+The Time of Your Life	801	127	Q7769360	The Time of Your Life	play by William Saroyan	William Saroyan	1939	1939	high	accepted_overlay
+The Four Horsemen of the Apocalypse	802	170	Q9024244	The Four Horsemen of the Apocalypse	novel by Vicente Blasco Ibañez	Vicente Blasco Ibáñez	1916	1916	high	accepted_overlay
+Nathan the Wise	803	137	Q286611	Nathan the Wise	play by Gotthold Ephraim Lessing (1779)	Gotthold Ephraim Lessing	1779	1779	high	accepted_overlay
+The Idea of Order at Key West	804	110	Q7741332	The Idea of Order at Key West	poem by Wallace Stevens	Wallace Stevens		""	medium	accepted_overlay
+Buddenbrooks	805	73	Q326909	Buddenbrooks	1901 novel by Thomas Mann	Thomas Mann	1901	1901	high	accepted_overlay
+Ariel	806	103	""	""	""	""	""	""	""	no_high_confidence_match
+Lost in Translation	807	116	""	""	""	""	""	""	""	no_high_confidence_match
+Inherit the Wind	808	93	Q3561870	Inherit the Wind	American play about the Scopes trial	Jerome Lawrence; Robert Edwin Lee		""	medium	accepted_overlay
+Troilus and Criseyde	809	128	Q2527101	Troilus and Criseyde	poem by Geoffrey Chaucer	Geoffrey Chaucer	1380	1380	high	accepted_overlay
+The Robbers	810	72	Q466333	The Robbers	play by Friedrich Schiller	Friedrich Schiller	1782	1782	high	accepted_overlay
+Theme for English B	811	113	""	""	""	""	""	""	""	no_high_confidence_match
+The Way of All Flesh	812	82	Q255074	The Way of All Flesh	semi-autobiographical Novel (1903) by Samuel Butler	Samuel Butler	1903	1903	high	accepted_overlay
+Nausea	813	65	Q658288	Nausea	novel by Jean-Paul Sartre	Jean-Paul Sartre	1938	1938	high	accepted_overlay
+Pale Horse, Pale Rider	815	108	Q2047664	Pale Horse, Pale Rider	book by Katherine Anne Porter	Katherine Anne Porter	1939	1939	high	accepted_overlay
+The Sandman	816	79	Q798227	The Sandman	short story by E.T.A. Hoffmann	E. T. A. Hoffmann	1817	1817	high	accepted_overlay
+Tis Pity She's a Whore	817	84	""	""	""	""	""	""	""	no_high_confidence_match
+Every Man in His Humour	818	91	Q5417547	Every Man in His Humour	play written by Ben Jonson	Ben Jonson	1601	1601	high	accepted_overlay
+Nostromo	819	63	Q430248	Nostromo	1904 novel by Joseph Conrad	Joseph Conrad	1904	1904	high	accepted_overlay
+Pudd'nhead Wilson	820	119	""	""	""	""	""	""	""	no_high_confidence_match
+Good Country People	822	118	Q5582490	Good Country People	short story by Flannery O'Connor	Flannery O'Connor		""	medium	accepted_overlay
+The Mayor of Zalamea	823	94	Q686158	The Mayor of Zalamea	play by Pedro Calderón de la Barca	Pedro Calderón de la Barca	1651	1651	high	accepted_overlay
+Woman in the Dunes	824	105	""	""	""	""	""	""	""	no_high_confidence_match
+Betrayed by Rita Hayworth	825	108	Q4898214	Betrayed by Rita Hayworth	novel by Manuel Puig	Manuel Puig	1968	1968	high	accepted_overlay
+American Buffalo	826	104	Q4743263	American Buffalo	play written by David Mamet	David Mamet		""	medium	accepted_overlay
+The Tragic Muse	827	171	Q3659366	The Tragic Muse	novel by Henry James	Henry James	1890	1890	high	accepted_overlay
+The River Merchants Wife	828	216	""	""	""	""	""	""	""	no_high_confidence_match
+Enrico IV	829	77	Q667340	Henry IV	play written by Luigi Pirandello	Luigi Pirandello	1922	1922	high	accepted_overlay
+Journey to the Center of the Earth	830	109	Q219457	A Journey to the Centre of the Earth	1864 science fiction novel by Jules Verne	Jules Verne	1864	1864	high	accepted_overlay
+Ivy Day in the Committee Room	831	109	Q3794210	Ivy Day in the Committee Room	short story by James Joyce	James Joyce	1914	1914	high	accepted_overlay
+Mosses from an Old Manse	832	131	Q6916648	Mosses from an Old Manse	short story collection by Nathaniel Hawthorne	Nathaniel Hawthorne	1846	1846	high	accepted_overlay
+Midaq Alley	833	113	Q510850	Midaq Alley	1947 novel by Naguib Mahfouz	Naguib Mahfouz	1947	1947	high	accepted_overlay
+An Essay on Criticism	834	154	Q482427	An Essay on Criticism	British poem	Alexander Pope	1711	1711	high	accepted_overlay
+The Marble Faun	835	96	Q3222702	The Marble Faun	novel by Nathaniel Hawthorne	Nathaniel Hawthorne	1860	1860	high	accepted_overlay
+The Pit and the Pendulum	836	82	Q379449	The Pit and the Pendulum	story by Edgar Allan Poe	Edgar Allan Poe	1842	1842	high	accepted_overlay
+Tonight I Can Write	837	270	""	""	""	""	""	""	""	no_high_confidence_match
+The Diamond Necklace	838	89	Q1650570	The Necklace	1884 short story by Guy de Maupassant	Guy de Maupassant	1884	1884	high	accepted_overlay
+Jerusalem Delivered	839	86	Q1053313	Jerusalem Delivered	epic poem by the Italian poet Torquato Tasso first published in 1581; tells a mythified account of the First Crusade in which Christian knights led by Godfrey of Bouillon battle to take Jerusalem	Torquato Tasso	1581	1581	high	accepted_overlay
+The Lamb	840	92	""	""	""	""	""	""	""	no_high_confidence_match
+Troilus and Cressida	841	117	Q183304	Troilus and Cressida	play by William Shakespeare	William Shakespeare	1602	1602	high	accepted_overlay
+The Minister’s Black Veil	842	123	""	""	""	""	""	""	""	no_high_confidence_match
+Some Prefer Nettles	843	133	Q7559478	Some Prefer Nettles	1929 novel by Jun'ichirō Tanizaki	Jun'ichirō Tanizaki	1929	1929	high	accepted_overlay
+The Aleph	844	81	Q743304	The Aleph	1949 short story collection by Jorge Luis Borges	Jorge Luis Borges	1949	1949	high	accepted_overlay
+Our American Cousin	845	87	Q1639322	Our American Cousin	Play by Tom Taylor	Tom Taylor		""	medium	accepted_overlay
+The Duchess of Malfi	846	86	Q3408612	The Duchess of Malfi	1623 tragedy by John Webster	John Webster	1623	1623	high	accepted_overlay
+The Bridge	847	79	""	""	""	""	""	""	""	no_high_confidence_match
+The Pot of Gold	848	100	Q1234585	Aulularia	ancient Roman play by Plautus	Plautus	-190	c. 2nd century BCE	medium	manual_corrected_overlay
+The Devil and Daniel Webster	849	101	Q7729994	The Devil and Daniel Webster	1936 short story by Stephen Vincent Benét	Stephen Vincent Benét	1936	1936	high	accepted_overlay
+Kidnapped	850	67	Q2349094	Kidnapped	1886 novel by Robert Louis Stevenson	Robert Louis Stevenson	1886	1886	high	accepted_overlay
+Elemental Odes	851	129	""	""	""	""	""	""	""	no_high_confidence_match
+Venus and Adonis	852	130	Q1066765	Venus and Adonis	poem by William Shakespeare	William Shakespeare	1593	1593	high	accepted_overlay
+Harrison Bergeron	853	82	Q3025364	Harrison Bergeron	short story by Kurt Vonnegut	Kurt Vonnegut	1960	1960	high	accepted_overlay
+Murder in the Cathedral	854	102	Q1947367	Murder in the Cathedral	play by T. S. Eliot	T. S. Eliot	1935	1935	high	accepted_overlay
+Gabriela, Clove, and Cinnamon	855	94	""	""	""	""	""	""	""	no_high_confidence_match
+Timon of Athens	856	76	Q284641	Timon of Athens	play by Shakespeare	William Shakespeare	1623	1623	high	accepted_overlay
+The Children of Gebelawi	857	157	""	""	""	""	""	""	""	no_high_confidence_match
+Peter Pan	858	225	""	""	""	""	""	""	""	no_high_confidence_match
+Cakes and Ale	859	98	Q2266873	Cakes and Ale	1930 novel by William Somerset Maugham	William Somerset Maugham	1930	1930	high	accepted_overlay
+Songs of Experience	860	201	Q27890603	Songs of Experience	1794 poetry collection by William Blake	William Blake	1794	1794	high	accepted_overlay
+Walden Two	861	147	Q3289889	Walden Two	1948 novel by B.F. Skinner	B. F. Skinner	1948	1948	high	accepted_overlay
+Burnt Norton	862	93	Q3647427	Burnt Norton	1936 poem written by T. S. Eliot	T. S. Eliot	1936	1936	high	accepted_overlay
+Crome Yellow	863	100	Q5187582	Crome Yellow	novel by Aldous Huxley	Aldous Huxley	1921	1921	high	accepted_overlay
+Penguin Island	864	92	Q1213641	Penguin Island	novel by Anatole France	Anatole France	1908	1908	high	accepted_overlay
+The World According to Garp	865	103	Q2507282	The World According to Garp	1978 novel by John Irving	John Irving	1978	1978	high	accepted_overlay
+The White Devil	866	91	Q1117565	The White Devil	1612 play by John Webster	John Webster	1612	1612	high	accepted_overlay
+Harry Haller	867	246	""	""	""	""	""	""	""	no_high_confidence_match
+The Violent Bear It Away	868	110	Q7772743	The Violent Bear It Away	1960 novel by Flannery O'Connor	Flannery O'Connor	1960	1960	high	accepted_overlay
+A Sentimental Education	869	157	Q1212285	Sentimental Education	novel by Gustave Flaubert	Gustave Flaubert	1869	1869	high	accepted_overlay
+Maud Muller	870	80	Q6792246	Maud Muller	poem	John Greenleaf Whittier	1854	1854	high	accepted_overlay
+A Coney Island of the Mind	871	120	Q4656064	A Coney Island of the Mind	book by Lawrence Ferlinghetti	Lawrence Ferlinghetti		""	medium	accepted_overlay
+Auto-da-Fé	872	121	Q1211666	Auto-da-Fé	1935 novel by Elias Canetti	Elias Canetti	1935	1935	high	accepted_overlay
+The Flea	873	76	Q2158151	The Flea	English-language erotic metaphysical poem by John Donne	John Donne		""	medium	accepted_overlay
+Independent People	874	75	Q3449499	Independent People	novel by Halldór Laxness (1934, 1935)	Halldór Laxness	1934	1934	high	accepted_overlay
+Elective Affinities	875	103	Q951198	Elective Affinities	novel by Johann Wolfgang von Goethe	Johann Wolfgang von Goethe	1809	1809	high	accepted_overlay
+Ghosts	876	58	Q1434818	Ghosts	play by Henrik Ibsen from 1881	Henrik Ibsen	1881	1881	high	accepted_overlay
+Mademoiselle Fifi	877	112	""	""	""	""	""	""	""	no_high_confidence_match
+Tlon, Uqbar, Orbis Tertius	878	99	Q1673835	Tlön, Uqbar, Orbis Tertius	short story by Jorge Luis Borges	Jorge Luis Borges	1940	1940	high	accepted_overlay
+Sinbad the Sailor	879	153	""	""	""	""	""	""	""	no_high_confidence_match
+The Last Tycoon	880	111	Q1199412	The Love of the Last Tycoon	1941 novel by F. Scott Fitzgerald	F. Scott Fitzgerald	1941	1941	high	accepted_overlay
+Tom Sawyer	881	255	""	""	""	""	""	""	""	rejected_character_entity
+The White Goddess	882	126	Q2633415	The White Goddess	book by Robert Graves	Robert Graves	1948	1948	high	accepted_overlay
+El Aleph	883	74	""	""	""	""	""	""	""	no_high_confidence_match
+The Parliament of Fowls	884	86	Q2488701	Parlement of Foules	Middle English poem by Chaucer	Geoffrey Chaucer	1381	1381	high	accepted_overlay
+After Many a Summer Dies the Swan	885	98	Q3187145	After Many a Summer	novel by Aldous Huxley	Aldous Huxley	1939	1939	high	accepted_overlay
+The Short Happy Life of Francis Macomber	886	71	Q1171416	The Short Happy Life of Francis Macomber	short story by Ernest Hemingway set in Africa	Ernest Hemingway	1936	1936	high	accepted_overlay
+Parade's End	887	95	""	""	""	""	""	""	""	no_high_confidence_match
+Babbitt	888	59	Q1107000	Babbitt	novel by Sinclair Lewis	Sinclair Lewis	1922	1922	high	accepted_overlay
+The Amazing Adventures of Kavalier and Clay	889	78	Q2705230	The Amazing Adventures of Kavalier & Clay	novel by Michael Chabon	Michael Chabon	2000	2000	high	accepted_overlay
+Dom Casmurro	890	76	Q1236531	Dom Casmurro	1899 novel by Joaquim Maria Machado de Assis	Machado de Assis	1899	1899	high	accepted_overlay
+The Book of Job	891	144	""	""	""	""	""	""	""	no_high_confidence_match
+Giants in the Earth	892	70	""	""	""	""	""	""	""	no_high_confidence_match
+The New Life	893	229	""	""	""	""	""	""	""	no_high_confidence_match
+The Secret Life of Walter Mitty	894	98	Q2177112	The Secret Life of Walter Mitty	1939 short story by James Thurber	James Thurber	1939	1939	high	accepted_overlay
+Le Pere Goriot	895	90	Q240617	Père Goriot	1835 novel by Honoré de Balzac	Honoré de Balzac	1835	1835	high	accepted_overlay
+The New Colossus	896	108	Q1361263	The New Colossus	Emma Lazarus poem	Emma Lazarus	1883	1883	high	accepted_overlay
+The Woman Warrior	897	104	Q14981259	The Woman Warrior	1976 novel by Maxine Hong Kingston	Maxine Hong Kingston	1976	1976	high	accepted_overlay
+Barbara Frietchie	898	101	Q4858898	Barbara Frietchie	play written by Clyde Fitch	Clyde Fitch		""	medium	accepted_overlay
+The Killers	899	75	Q1213811	The Killers	short story by Ernest Hemingway	Ernest Hemingway	1927	1927	high	accepted_overlay
+The Cantos	900	76	Q2701465	The Cantos	long, incomplete poem in 116 sections (“cantos”), written by Ezra Pound from 1915 to 1962	Ezra Pound	1915	1915	high	accepted_overlay
+Noli Me Tangere	902	127	""	""	""	""	""	""	""	no_high_confidence_match
+The Loved One	903	103	Q3793322	The Loved One	1948 novel by Evelyn Waugh	Evelyn Waugh	1948	1948	high	accepted_overlay
+The Loneliness of the Long Distance Runner	904	79	Q3222069	The Loneliness of the Long Distance Runner	short story by Alan Sillitoe	Alan Sillitoe	1959	1959	high	accepted_overlay
+The Royal Family	905	362	""	""	""	""	""	""	""	held_title_collision
+The Wings of the Dove	906	85	Q1557588	The Wings of the Dove	1902 novel by Henry James	Henry James	1902	1902	high	accepted_overlay
+The Haunting of Hill House	907	115	Q3819311	The Haunting of Hill House	1959 novel by Shirley Jackson	Shirley Jackson	1959	1959	high	accepted_overlay
+Agnes Grey	908	109	Q517172	Agnes Grey	1847 novel by Anne Brontë	Anne Brontë	1847	1847	high	accepted_overlay
+The Deserted Village	909	123	Q16385462	The Deserted Village	poem by Oliver Goldsmith	Oliver Goldsmith	1770	1770	high	accepted_overlay
+Too Late the Phalarope	910	129	Q7823856	Too Late the Phalarope	1953 novel by Alan Paton	Alan Paton	1953	1953	high	accepted_overlay
+The Marriage of Heaven and Hell	911	124	Q1132673	The Marriage of Heaven and Hell	literary work by William Blake	William Blake	1793	1793	high	accepted_overlay
+The Convergence of the Twain	912	112	""	""	""	""	""	""	""	no_high_confidence_match
+Be the Verse	913	143	""	""	""	""	""	""	""	no_high_confidence_match
+The French Lieutenant’s Woman	914	86	Q1268075	The French Lieutenant's Woman	1969 novel by John Fowles	John Fowles	1969	1969	high	accepted_overlay
+Through the Looking Glass	915	225	Q220331	Through the Looking-Glass	1871 children's novel by Lewis Carroll	Lewis Carroll	1871	1871	high	accepted_overlay
+The Village Blacksmith	916	96	Q7772646	The Village Blacksmith	1840 Longfellow poem	Henry Wadsworth Longfellow	1840	1840	high	accepted_overlay
+Hell Screen	917	99	Q1041621	Hell Screen	short story written by Ryūnosuke Akutagawa	Ryūnosuke Akutagawa	1918	1918	high	accepted_overlay
+Walden	918	53	""	""	""	""	""	""	""	no_high_confidence_match
+The Lost World	919	176	""	""	""	""	""	""	""	held_title_collision
+Othello	920	76	Q26833	Othello	theatrical play by William Shakespeare	William Shakespeare	1622	1622	high	accepted_overlay
+Sredni Vashtar	921	97	""	""	""	""	""	""	""	no_high_confidence_match
+A Hazard of New Fortunes	922	80	Q4657268	A Hazard of New Fortunes	1890 novel by William Dean Howells	William Dean Howells	1890	1890	high	accepted_overlay
+Mason and Dixon	923	109	""	""	""	""	""	""	""	no_high_confidence_match
+The Namesake	924	71	Q7753070	The Namesake	novel by Jhumpa Lahiri	Jhumpa Lahiri	2003	2003	high	accepted_overlay
+Frost at Midnight	925	90	Q5506178	Frost at Midnight	Poem by Samuel Taylor Coleridge	Samuel Taylor Coleridge	1798	1798	high	accepted_overlay
+Just So Stories	926	99	Q1247723	Just So Stories	short story collection by Rudyard Kipling	Rudyard Kipling	1902	1902	high	accepted_overlay
+Richard III	927	118	Q652011	Richard III	Shakespearean history play	William Shakespeare	1593	1593	high	accepted_overlay
+Pincher Martin	928	95	Q755441	Pincher Martin	novel by William Golding	William Golding	1956	1956	high	accepted_overlay
+I, Too	929	223	Q24964612	I, Too	1926 poem by Langston Hughes	Langston Hughes	1926	1926	high	accepted_overlay
+Let Us Now Praise Famous Men	930	139	""	""	""	""	""	""	""	no_high_confidence_match
+A Delicate Balance	931	124	Q4656398	A Delicate Balance	play written by Edward Albee	Edward Albee		""	medium	accepted_overlay
+The Rose Tattoo	932	78	Q1219620	The Rose Tattoo	play by Tennessee Williams	Tennessee Williams		""	medium	accepted_overlay
+The Albatross	933	155	Q3201688	The Albatross	poem by Charles Baudelaire	Charles Baudelaire	1842	1842	high	accepted_overlay
+I Heard a Fly Buzz When I Died	934	222	""	""	""	""	""	""	""	no_high_confidence_match
+Life & Times	935	364	""	""	""	""	""	""	""	no_high_confidence_match
+A Moveable Feast	936	99	Q2052363	A Moveable Feast	memoir by Ernest Hemingway about his years as a struggling young expatriate journalist and writer in Paris in the 1920s while he was married to his first wife, Hadley Richardson; first published in 1964	Ernest Hemingway	1964	1964	high	accepted_overlay
+The Winter of Our Discontent	937	136	Q2063426	The Winter of Our Discontent	1961 novel by John Steinbeck	John Steinbeck	1961	1961	high	accepted_overlay
+Babette’s Feast	938	106	Q1762979	Babette's Feast	short story by Karen Blixen	Karen Blixen	1950	1950	high	accepted_overlay
+Buried Child	939	80	Q1521927	Buried Child	play by Sam Shepard	Sam Shepard		""	medium	accepted_overlay
+Manhattan Transfer	940	104	Q1648409	Manhattan Transfer	1925 novel by John Dos Passos	John Dos Passos	1925	1925	high	accepted_overlay
+Identity Card	941	91	Q31316487	Identity Card	book by Salahuddin Pervez	Salahuddin Pervez	1989	1989	high	accepted_overlay
+Casey at the Bat	942	73	Q2735619	Casey at the Bat	baseball poem written during 1888 by Ernest Thayer	Ernest Thayer	1888	1888	high	accepted_overlay
+The Blue Bird	943	95	Q1367544	The Blue Bird	play by Maurice Maeterlinck	Maurice Maeterlinck	1908	1908	high	accepted_overlay
+Between the Acts	944	97	Q2342630	Between the Acts	final novel by Virginia Woolf	Virginia Woolf	1941	1941	high	accepted_overlay
+The 42nd Parallel	945	135	Q20664267	The 42nd Parallel	novel by John Dos Passos	John Dos Passos	1930	1930	high	accepted_overlay
+A Very Old Man with Enormous Wings	946	85	Q4340672	A Very Old Man with Enormous Wings	1968 short story by Gabriel García Márquez	Gabriel García Márquez	1968	1968	high	accepted_overlay
+The Dharma Bums	947	132	Q1493270	The Dharma Bums	novel by Jack Kerouac	Jack Kerouac	1958	1958	high	accepted_overlay
+Three Tall Women	948	87	Q3998111	Three Tall Women	play written by Edward Albee	Edward Albee		""	medium	accepted_overlay
+Paterson	949	80	""	""	""	""	""	""	""	no_high_confidence_match
+Dance of the Happy Shades	950	99	Q60663952	Dance of the Happy Shades	short story by Alice Munro	Alice Munro	1961	1961	high	accepted_overlay
+Janie Crawford	951	224	""	""	""	""	""	""	""	no_high_confidence_match
+Evangeline	952	53	Q2625102	Evangeline	poem by Henry Wadsworth Longfellow	Henry Wadsworth Longfellow	1847	1847	high	accepted_overlay
+Ballad of Reading Gaol	953	141	""	""	""	""	""	""	""	no_high_confidence_match
+Rabbit, Run	954	111	Q178791	Rabbit, Run	1960 novel by John Updike	John Updike	1960	1960	high	accepted_overlay
+Bernice Bobs Her Hair	955	87	Q4894279	Bernice Bobs Her Hair	1920 short story by F. Scott Fitzgerald	F. Scott Fitzgerald	1920	1920	high	accepted_overlay
+Absalom and Achitophel	956	159	Q331718	Absalom and Achitophel	poem by John Dryden	John Dryden	1681	1681	high	accepted_overlay
+The Book of Judges	957	137	""	""	""	""	""	""	""	no_high_confidence_match
+The Rivals	958	62	Q7760957	The Rivals	play by Richard Brinsley Sheridan	Richard Brinsley Sheridan		""	medium	accepted_overlay
+The Lake Isle of Innisfree	959	89	""	""	""	""	""	""	""	no_high_confidence_match
+The Member of the Wedding	961	92	Q1440585	The Member of the Wedding	1946 novel by Carson McCullers	Carson McCullers	1946	1946	high	accepted_overlay
+Tortilla Flat	962	84	""	""	""	""	""	""	""	no_high_confidence_match
+Washington Square	963	77	""	""	""	""	""	""	""	no_high_confidence_match
+A Journal of the Plague Year	964	134	Q1215399	A Journal of the Plague Year	historical novel by Daniel Defoe	Daniel Defoe	1722	1722	high	accepted_overlay
+Digging	965	92	""	""	""	""	""	""	""	no_high_confidence_match
+Book of Isaiah	966	90	""	""	""	""	""	""	""	no_high_confidence_match
+The River-Merchant’s Wife: A Letter	967	79	""	""	""	""	""	""	""	no_high_confidence_match
+The Life You Save May Be Your Own	968	80	Q7747140	The Life You Save May Be Your Own	short story by Flannery O'Connor	Flannery O'Connor		""	medium	accepted_overlay
+De Rerum Natura	969	129	Q861986	De rerum natura	didactic poem by Lucretius	Lucretius	-100	100 BCE	high	accepted_overlay
+Aztec mythology	971	138	""	""	""	""	""	""	""	no_high_confidence_match
+A Simple Heart	972	103	Q110155358	A Simple Heart	short story by Gustave Flaubert	Gustave Flaubert		""	medium	accepted_overlay
+Bliss	973	69	""	""	""	""	""	""	""	no_high_confidence_match
+Idylls of the King	974	128	Q2227196	Idylls of the King	poetry cycle by Alfred, Lord Tennyson	Alfred Tennyson	1859	1859	high	accepted_overlay
+The She-Wolf	975	334	Q3822908	The She-Wolf	story by Giovanni Verga	Giovanni Verga	1880	1880	high	accepted_overlay
+There Will Come Soft Rains	976	109	Q1984117	There Will Come Soft Rains	1950 short story by Ray Bradbury	Ray Bradbury	1950	1950	high	accepted_overlay
+A Vindication of the Rights of Woman	977	156	""	""	""	""	""	""	""	no_high_confidence_match
+How Much Land Does a Man Need	978	80	Q1269280	How Much Land Does a Man Need?	short story by Leo Tolstoy	Leo Tolstoy	1886	1886	high	accepted_overlay
+Man’s Fate	979	91	Q1618413	Man's Fate	1933 novel by André Malraux	André Malraux	1933	1933	high	accepted_overlay
+Exit the King	980	116	Q1247588	Exit the King	play by Eugène Ionesco	Eugène Ionesco		""	medium	accepted_overlay
+The Snow Queen	981	94	Q11880	The Snow Queen	literary fairy tale by Hans Christian Andersen, first published in 1844	Hans Christian Andersen	1844	1844	high	accepted_overlay
+Odour of Chrysanthemums	982	91	Q7078330	Odour of Chrysanthemums	short story by D. H. Lawrence	D. H. Lawrence		""	medium	accepted_overlay
+Captains Courageous	983	88	Q1035138	Captains Courageous	1897 novel by Rudyard Kipling	Rudyard Kipling	1897	1897	high	accepted_overlay
+Henderson the Rain King	984	100	Q3795484	Henderson the Rain King	novel by Saul Bellow	Saul Bellow	1959	1959	high	accepted_overlay
+The Lady of the Lake	985	338	Q2456670	The Lady of the Lake	poem by Walter Scott	Walter Scott	1810	1810	high	accepted_overlay
+the U.S.A trilogy	986	114	""	""	""	""	""	""	""	no_high_confidence_match
+Something Wicked This Way Comes	987	98	Q1167442	Something Wicked This Way Comes	1962 novel by Ray Bradbury	Ray Bradbury	1962	1962	high	accepted_overlay
+The Man That Corrupted Hadleyburg	988	67	Q19093344	The Man that Corrupted Hadleyburg	short story by Mark Twain	Mark Twain		""	medium	accepted_overlay
+The Book of the Duchess	989	103	Q1090634	The Book of the Duchess	book by Geoffrey Chaucer	Geoffrey Chaucer	1368	1368	high	accepted_overlay
+Seven Pillars of Wisdom	990	108	Q24323	Seven Pillars of Wisdom	autobiography of British soldier T. E. Lawrence	T. E. Lawrence	1922	1922	high	accepted_overlay
+Sonnets of Death	991	202	""	""	""	""	""	""	""	no_high_confidence_match
+Self-Portrait in a Convex Mirror	992	157	Q7448173	Self-portrait in a Convex Mirror	1975 poetry collection by John Ashbery	John Ashbery	1975	1975	high	accepted_overlay
+The Prussian Officer	993	208	Q19097291	The Prussian Officer	short story by D. H. Lawrence	D. H. Lawrence		""	medium	accepted_overlay
+Salem Witch Trials	994	322	""	""	""	""	""	""	""	no_high_confidence_match
+Daughter of Fortune	995	117	Q1439091	Daughter of Fortune	1998 novel by Isabel Allende	Isabel Allende	1998	1998	high	accepted_overlay
+The Bone People	996	104	""	""	""	""	""	""	""	no_high_confidence_match
+Beyond the Horizon	997	80	Q794360	Beyond the Horizon	play by Eugene O'Neill	Eugene O'Neill	1918	1918	high	accepted_overlay
+Sartor Resartus	998	88	Q1134140	Sartor Resartus	book by Thomas Carlyle	Thomas Carlyle	1833	1833	high	accepted_overlay
+Spiritual Couplets	999	140	""	""	""	""	""	""	""	no_high_confidence_match
+The Misanthrope	1000	57	Q1053387	The Misanthrope	comedy by Molière	Molière	1666	1666	high	accepted_overlay
+The Gold Bug	1001	88	Q878580	The Gold-Bug	short story by Edgar Allan Poe	Edgar Allan Poe	1842	1842	high	accepted_overlay
+Germinal	1002	53	Q137869	Germinal	novel by Émile Zola	Émile Zola	1885	1885	high	accepted_overlay
+The Final Problem	1003	102	Q228119	The Final Problem	short story by Sir Arthur Conan Doyle	Arthur Conan Doyle	1893	1893	high	accepted_overlay
+Six Degrees of Separation	1004	155	Q3485622	Six Degrees of Separation	play written by John Guare	John Guare		""	medium	accepted_overlay
+The Lusiads	1005	51	""	""	""	""	""	""	""	no_high_confidence_match
+The Confessions of Nat Turner	1006	77	Q7727343	The Confessions of Nat Turner	novel by William Styron	William Styron	1967	1967	high	accepted_overlay
+House Made of Dawn	1007	67	Q5913691	House Made of Dawn	novel by N. Scott Momaday	N. Scott Momaday	1968	1968	high	accepted_overlay
+Edward II	1008	105	Q195219	Edward II	play by Christopher Marlowe	Christopher Marlowe	1594	1594	high	accepted_overlay
+Nicholas Nickleby	1009	69	Q847642	Nicholas Nickleby	monthly serial; novel by Charles Dickens; published 1838–1839	Charles Dickens	1838	1838	high	accepted_overlay

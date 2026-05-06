@@ -100,6 +100,7 @@ ERA_TITLE_OVERRIDES = {
   "war and peace" => "long_19th_century",
   "native son" => "postwar_modern",
   "invisible man" => "postwar_modern",
+  "the invisible man" => "long_19th_century",
   "the waste land" => "modernist",
   "brave new world" => "modernist",
   "a streetcar named desire" => "postwar_modern",
@@ -202,6 +203,7 @@ REGION_TITLE_OVERRIDES = {
   "war and peace" => "russian_eastern_european",
   "native son" => "american",
   "invisible man" => "american",
+  "the invisible man" => "english_british_irish",
   "the waste land" => "english_british_irish",
   "brave new world" => "english_british_irish",
   "a streetcar named desire" => "american",
@@ -321,6 +323,7 @@ CHRONOLOGY_TITLE_OVERRIDES = {
   "the island" => [1973, "1973", "title_override"],
   "the trojan women" => [-415, "415 BCE", "title_override"],
   "rip van winkle" => [1819, "1819", "title_override"],
+  "the invisible man" => [1897, "1897", "title_override"],
   "death and the kings horseman" => [1975, "1975", "title_override"]
 }.freeze
 
@@ -1244,11 +1247,7 @@ def metadata_title_keys(title)
   normalized = normalize_title(title)
   return [] if normalized.empty?
 
-  keys = Set.new([normalized])
-  stripped = normalized.sub(/\A(?:the|a|an)\s+/, "")
-  keys << stripped unless stripped.empty?
-  keys << "the #{stripped}" unless stripped.empty? || stripped == normalized
-  keys.to_a
+  [normalized]
 end
 
 def creator_names_from_front_matter(creators)
@@ -1795,7 +1794,7 @@ def chunk_ranges(min_id, max_id, jobs)
 end
 
 def open_worker_db(path)
-  db = SQLite3::Database.new(path, readonly: true)
+  db = SQLite3::Database.new(path)
   db.results_as_hash = true
   db.busy_timeout = 30_000
   db
@@ -2127,9 +2126,7 @@ def main
   FileUtils.mkdir_p(options[:out_dir])
   FileUtils.mkdir_p(File.dirname(options[:data_out]))
 
-  db = SQLite3::Database.new(options[:db_path], readonly: true)
-  db.results_as_hash = true
-  db.busy_timeout = 30_000
+  db = open_worker_db(options[:db_path])
 
   adjudications = load_adjudications(options[:adjudications_path])
   alias_map, alias_canonical_titles = load_alias_rules(options[:adjudications_path])
