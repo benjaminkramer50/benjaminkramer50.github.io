@@ -18,6 +18,7 @@ DEFAULT_DB = "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db"
 DEFAULT_OUT = File.join(ROOT, "_planning", "quizbowl_lit_canon")
 DEFAULT_DATA_OUT = File.join(ROOT, "_data", "quizbowl_literature_canon.yml")
 DEFAULT_ADJUDICATIONS = File.join(DEFAULT_OUT, "quizbowl_lit_adjudications.yml")
+DEFAULT_METADATA_OVERLAY = File.join(ROOT, "_data", "quizbowl_literature_metadata_overrides.yml")
 
 SPACE_RE = /\s+/
 ANSWER_MARKER_RE = /\b(?:answer|answers|answerline|answerlines)\s*:/i
@@ -319,7 +320,8 @@ CHRONOLOGY_TITLE_OVERRIDES = {
   "ruins of a great house" => [1962, "1962", "title_override"],
   "the island" => [1973, "1973", "title_override"],
   "the trojan women" => [-415, "415 BCE", "title_override"],
-  "rip van winkle" => [1819, "1819", "title_override"]
+  "rip van winkle" => [1819, "1819", "title_override"],
+  "death and the kings horseman" => [1975, "1975", "title_override"]
 }.freeze
 
 CandidateStats = Struct.new(
@@ -1259,7 +1261,7 @@ def creator_names_from_front_matter(creators)
   end.compact.reject(&:empty?)
 end
 
-def add_reference_metadata!(metadata, title, creators:, date_label:, sort_year:, source:)
+def add_reference_metadata!(metadata, title, creators:, date_label:, sort_year:, source:, confidence: "high")
   creator_values = Array(creators).map { |creator| normalize_space(creator) }.reject(&:empty?)
   return if title.to_s.empty? || (creator_values.empty? && sort_year.nil? && date_label.to_s.empty?)
 
@@ -1267,12 +1269,33 @@ def add_reference_metadata!(metadata, title, creators:, date_label:, sort_year:,
     creators: creator_values,
     date_label: normalize_space(date_label),
     sort_year: sort_year,
-    source: source
+    source: source,
+    confidence: confidence.to_s.empty? ? "high" : confidence.to_s
   }
   metadata_title_keys(title).each do |key|
     metadata[key] ||= []
     metadata[key] << payload
   end
+end
+
+def load_metadata_overlay(path)
+  return [] unless File.exist?(path)
+
+  Array(YAML.safe_load(File.read(path), permitted_classes: [Date, Time], aliases: true)).map do |row|
+    next unless row.is_a?(Hash)
+
+    title = normalize_space(row["title"])
+    next if title.empty?
+
+    {
+      title: title,
+      creators: Array(row["creators"]).map { |creator| normalize_space(creator) }.reject(&:empty?),
+      date_label: normalize_space(row["date_label"]),
+      sort_year: row["sort_year"],
+      source: normalize_space(row["source"]).empty? ? "metadata_overlay" : normalize_space(row["source"]),
+      confidence: normalize_space(row["confidence"]).empty? ? "medium" : normalize_space(row["confidence"])
+    }
+  end.compact
 end
 
 def load_reference_metadata(root)
@@ -1318,6 +1341,20 @@ def load_reference_metadata(root)
       ]
     end
     resolved[key] = unique_payloads.first if unique_payloads.length == 1
+  end.tap do |resolved|
+    load_metadata_overlay(DEFAULT_METADATA_OVERLAY).each do |row|
+      metadata_title_keys(row[:title]).each do |key|
+        next if resolved.key?(key)
+
+        resolved[key] = {
+          creators: row[:creators],
+          date_label: row[:date_label],
+          sort_year: row[:sort_year],
+          source: row[:source],
+          confidence: row[:confidence]
+        }
+      end
+    end
   end
 end
 
@@ -1338,7 +1375,7 @@ def creator_metadata_for(stats, title, reference_metadata)
     return {
       "creators" => reference[:creators],
       "creator_source" => reference[:source],
-      "creator_confidence" => "high"
+      "creator_confidence" => reference[:confidence] || "high"
     }
   end
 
@@ -1381,7 +1418,7 @@ def chronology_metadata_for(stats, title, era, reference_metadata)
       "chronology_sort_year" => reference[:sort_year].to_i,
       "chronology_label" => reference[:date_label].to_s.empty? ? reference[:sort_year].to_s : reference[:date_label],
       "chronology_source" => reference[:source],
-      "chronology_confidence" => "high",
+      "chronology_confidence" => reference[:confidence] || "high",
       "chronology_needs_review" => false
     }
   end

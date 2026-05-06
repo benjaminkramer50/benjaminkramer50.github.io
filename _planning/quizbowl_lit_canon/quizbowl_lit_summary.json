@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T02:41:45Z",
+  "generated_at": "2026-05-06T04:14:40Z",
   "db_path": "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db",
   "source_table": "archive_parsed_questions",
   "evidence_fields": [
@@ -477,85 +477,88 @@
     "science": 1
   },
   "public_era_counts": {
-    "postwar_modern": 189,
+    "postwar_modern": 293,
     "ancient_classical": 180,
-    "early_modern": 262,
-    "long_19th_century": 338,
-    "modernist": 235,
+    "early_modern": 264,
+    "long_19th_century": 405,
+    "modernist": 296,
     "medieval": 104,
-    "eighteenth_century": 59,
-    "unknown_era": 3908,
-    "contemporary": 99
+    "eighteenth_century": 68,
+    "unknown_era": 3661,
+    "contemporary": 103
   },
   "public_region_or_tradition_counts": {
-    "african": 102,
-    "greek": 146,
-    "roman_latin": 65,
-    "english_british_irish": 504,
-    "american": 512,
-    "latin_american": 171,
-    "russian_eastern_european": 190,
-    "french": 132,
-    "germanic_scandinavian": 167,
+    "african": 101,
+    "greek": 140,
+    "roman_latin": 66,
+    "english_british_irish": 509,
+    "american": 471,
+    "latin_american": 167,
+    "russian_eastern_european": 192,
+    "french": 130,
+    "germanic_scandinavian": 160,
     "iberian_lusophone": 58,
-    "south_asian": 109,
-    "unknown_region": 2716,
-    "italian": 65,
-    "japanese_korean": 86,
+    "south_asian": 104,
+    "unknown_region": 2803,
+    "italian": 67,
+    "japanese_korean": 82,
     "indigenous_oceania": 27,
-    "biblical_religious": 74,
-    "arabic_persian_turkic": 136,
-    "chinese": 82,
-    "caribbean": 32
+    "caribbean": 34,
+    "chinese": 77,
+    "arabic_persian_turkic": 119,
+    "biblical_religious": 67
   },
   "public_reading_unit_counts": {
-    "postwar_global_literature": 62,
+    "postwar_global_literature": 76,
     "ancient_epic_scripture_myth": 14,
-    "early_modern_world_literature": 195,
-    "nineteenth_century_fiction": 111,
-    "modernism": 235,
+    "early_modern_world_literature": 191,
+    "nineteenth_century_fiction": 142,
+    "modernism": 296,
     "medieval_romance_saga": 104,
-    "postwar_literature": 127,
-    "nineteenth_century_poetry_and_drama": 227,
-    "early_modern_drama": 67,
-    "eighteenth_century_prose_and_drama": 59,
-    "poetry": 767,
-    "fiction_and_narrative": 1403,
-    "drama": 538,
-    "literary_nonfiction": 169,
-    "unclassified_unit": 192,
-    "short_fiction": 589,
-    "collections_and_cycles": 319,
-    "contemporary_global_literature": 99,
-    "classical_drama": 42,
-    "epic_romance_or_oral_tradition": 43,
+    "postwar_literature": 217,
+    "nineteenth_century_poetry_and_drama": 263,
+    "early_modern_drama": 73,
+    "eighteenth_century_prose_and_drama": 68,
+    "poetry": 746,
+    "fiction_and_narrative": 1256,
+    "drama": 498,
+    "literary_nonfiction": 166,
+    "unclassified_unit": 191,
+    "short_fiction": 568,
+    "contemporary_global_literature": 103,
+    "collections_and_cycles": 306,
+    "classical_drama": 43,
+    "epic_romance_or_oral_tradition": 41,
     "scripture_myth_hymn": 12
   },
   "public_classification_confidence_counts": {
-    "rule_high": 1120,
-    "rule_medium": 1770,
-    "rule_low": 2387,
+    "rule_high": 1169,
+    "rule_medium": 1833,
+    "rule_low": 2275,
     "unknown_metadata": 97
   },
   "public_creator_source_counts": {
     "reviewed_canon_record": 76,
-    "quizbowl_author_answerline": 2436,
-    "unknown": 2862
+    "wikidata_metadata_overlay": 446,
+    "quizbowl_author_answerline": 2082,
+    "unknown": 2770
   },
   "public_creator_confidence_counts": {
-    "high": 76,
-    "medium": 1803,
-    "unknown": 2862,
-    "low": 633
+    "high": 483,
+    "medium": 1507,
+    "unknown": 2770,
+    "low": 614
   },
   "public_chronology_source_counts": {
     "reviewed_canon_record": 76,
-    "unknown": 5280,
-    "title_override": 18
+    "wikidata_metadata_overlay": 413,
+    "unknown": 4866,
+    "title_override": 19
   },
   "public_chronology_confidence_counts": {
-    "high": 94,
-    "unknown": 5280
+    "high": 501,
+    "unknown": 4866,
+    "medium": 7
   },
-  "public_chronology_needs_review_count": 5280
+  "public_chronology_needs_review_count": 4866
 }
