@@ -1,6 +1,4 @@
 rank	title	total_question_count	tier	creator_source	creator_confidence	creators	risk_level	risk_reasons	suggested_action
-619	The Petrified Forest	130	qb_core	quizbowl_author_answerline	medium	Robert Sherwood	high	quizbowl_author_answerline_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
-587	Omeros	107	qb_core	quizbowl_author_answerline	medium	Derek Walcott	high	quizbowl_author_answerline_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
 1941	Mozart and Salieri	69	qb_major	quizbowl_author_answerline	low	Nikolay Andreyevich Rimsky-Korsakov	high	quizbowl_author_answerline_creator; low_confidence_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
 1123	If on a Winter's Night a Traveller	68	qb_major	quizbowl_author_answerline	low	Italo Calvino	high	quizbowl_author_answerline_creator; low_confidence_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
 1543	The Trickster of Seville	68	qb_major	quizbowl_author_answerline	medium	Tirso de Molina	high	quizbowl_author_answerline_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
@@ -158,7 +156,6 @@ rank	title	total_question_count	tier	creator_source	creator_confidence	creators	
 1445	La Casa de Bernarda Alba	30	qb_major	quizbowl_author_answerline	low	Federico Garcia Lorca	high	quizbowl_author_answerline_creator; low_confidence_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
 1499	Sanctuary	30	qb_major	quizbowl_author_answerline	low	William FAULKNER	high	quizbowl_author_answerline_creator; low_confidence_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
 1659	The American	30	qb_major	quizbowl_author_answerline	medium	Henry James	high	quizbowl_author_answerline_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
-1978	The Unbearable Bassington	30	qb_major	quizbowl_author_answerline	low	Saki	high	quizbowl_author_answerline_creator; low_confidence_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
 2295	The Vision of Sir Launfal	30	qb_major	quizbowl_author_answerline	medium	James Russell Lowell	high	quizbowl_author_answerline_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
 2370	The Pisan Cantos	30	qb_major	quizbowl_author_answerline	medium	Ezra Weston Loomis Pound	high	quizbowl_author_answerline_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.
 2417	Blindness and Insight	30	qb_major	quizbowl_author_answerline	medium	Paul de Man	high	quizbowl_author_answerline_creator	Replace with reviewed/manual/Wikidata creator or suppress from default path.

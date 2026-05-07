@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-07T04:20:09Z
+Generated: 2026-05-07T04:40:58Z
 
 ## Corpus
 
@@ -506,13 +506,13 @@ Reading units: `ancient_epic_scripture_myth`=12, `classical_drama`=42, `collecti
 
 Classification confidence: `rule_high`=1174, `rule_low`=1191, `rule_medium`=2577, `unknown_metadata`=51
 
-Creator source: `codex_manual_metadata_correction`=487, `quizbowl_author_answerline`=498, `reviewed_canon_record`=46, `unknown`=1462, `wikidata_metadata_overlay`=2500
+Creator source: `codex_manual_metadata_correction`=490, `quizbowl_author_answerline`=495, `reviewed_canon_record`=46, `unknown`=1462, `wikidata_metadata_overlay`=2500
 
-Creator confidence: `high`=2635, `low`=184, `medium`=712, `unknown`=1462
+Creator confidence: `high`=2638, `low`=183, `medium`=710, `unknown`=1462
 
-Chronology source: `codex_manual_metadata_correction`=484, `reviewed_canon_record`=46, `title_override`=19, `unknown`=2249, `wikidata_metadata_overlay`=2195
+Chronology source: `codex_manual_metadata_correction`=486, `reviewed_canon_record`=46, `title_override`=19, `unknown`=2249, `wikidata_metadata_overlay`=2193
 
-Chronology confidence: `high`=2641, `medium`=103, `unknown`=2249
+Chronology confidence: `high`=2643, `medium`=101, `unknown`=2249
 
 Chronology rows needing review: 2249
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T04:20:09Z",
+  "generated_at": "2026-05-07T04:40:58Z",
   "db_path": "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db",
   "source_table": "archive_parsed_questions",
   "evidence_fields": [
@@ -595,27 +595,27 @@
   },
   "public_creator_source_counts": {
     "reviewed_canon_record": 46,
-    "codex_manual_metadata_correction": 487,
+    "codex_manual_metadata_correction": 490,
     "wikidata_metadata_overlay": 2500,
     "unknown": 1462,
-    "quizbowl_author_answerline": 498
+    "quizbowl_author_answerline": 495
   },
   "public_creator_confidence_counts": {
-    "high": 2635,
-    "medium": 712,
+    "high": 2638,
+    "medium": 710,
     "unknown": 1462,
-    "low": 184
+    "low": 183
   },
   "public_chronology_source_counts": {
     "reviewed_canon_record": 46,
-    "codex_manual_metadata_correction": 484,
-    "wikidata_metadata_overlay": 2195,
+    "codex_manual_metadata_correction": 486,
+    "wikidata_metadata_overlay": 2193,
     "title_override": 19,
     "unknown": 2249
   },
   "public_chronology_confidence_counts": {
-    "high": 2641,
-    "medium": 103,
+    "high": 2643,
+    "medium": 101,
     "unknown": 2249
   },
   "public_chronology_needs_review_count": 2249

@@ -6254,13 +6254,14 @@
   wikidata_id: Q120973035
   wikidata_label: The Petrified Forest
   wikidata_description: 1934 play by Robert E. Sherwood
-  creators: []
+  creators:
+  - Robert E. Sherwood
   sort_year: 1934
   date_label: '1934'
-  source: wikidata_metadata_overlay
-  confidence: medium
-  notes: Exact normalized title or alias match; Wikidata description matched literary-work
-    filter.
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction; Wikidata description gives 1934 play
+    by Robert E. Sherwood.
 - title: The Big Sleep
   normalized_title: the big sleep
   wikidata_id: Q1649862
@@ -20610,13 +20611,14 @@
   wikidata_id: Q42197029
   wikidata_label: The Unbearable Bassington
   wikidata_description: novel of 1912 by Saki
-  creators: []
+  creators:
+  - Saki
   sort_year: 1912
   date_label: '1912'
-  source: wikidata_metadata_overlay
-  confidence: medium
-  notes: Exact normalized title or alias match; Wikidata description matched literary-work
-    filter.
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction; Wikidata description gives 1912 novel
+    by Saki.
 - title: The Citizen of the World
   normalized_title: the citizen of the world
   wikidata_id: Q33247550
@@ -38335,3 +38337,11 @@
   confidence: medium
   notes: Exact normalized title or alias match; Wikidata description matched literary-work
     filter.
+- title: Omeros
+  creators:
+  - Derek Walcott
+  sort_year: 1990
+  date_label: '1990'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator/date correction.
