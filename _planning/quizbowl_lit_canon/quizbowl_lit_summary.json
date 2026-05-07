@@ -594,29 +594,29 @@
     "unknown_metadata": 51
   },
   "public_creator_source_counts": {
-    "reviewed_canon_record": 46,
-    "codex_manual_metadata_correction": 490,
-    "wikidata_metadata_overlay": 2500,
-    "unknown": 1462,
-    "quizbowl_author_answerline": 495
+    "reviewed_canon_record": 45,
+    "codex_manual_metadata_correction": 585,
+    "wikidata_metadata_overlay": 2464,
+    "unknown": 1439,
+    "quizbowl_author_answerline": 460
   },
   "public_creator_confidence_counts": {
-    "high": 2638,
-    "medium": 710,
-    "unknown": 1462,
-    "low": 183
+    "high": 2732,
+    "medium": 651,
+    "unknown": 1439,
+    "low": 171
   },
   "public_chronology_source_counts": {
-    "reviewed_canon_record": 46,
-    "codex_manual_metadata_correction": 486,
-    "wikidata_metadata_overlay": 2193,
+    "reviewed_canon_record": 45,
+    "codex_manual_metadata_correction": 581,
+    "wikidata_metadata_overlay": 2192,
     "title_override": 19,
-    "unknown": 2249
+    "unknown": 2156
   },
   "public_chronology_confidence_counts": {
-    "high": 2643,
-    "medium": 101,
-    "unknown": 2249
+    "high": 2737,
+    "medium": 100,
+    "unknown": 2156
   },
-  "public_chronology_needs_review_count": 2249
+  "public_chronology_needs_review_count": 2156
 }

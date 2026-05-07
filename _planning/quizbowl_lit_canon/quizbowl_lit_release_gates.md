@@ -5,13 +5,13 @@ Generated from `_data/quizbowl_literature_canon.yml`.
 ## Counts
 
 - Public accepted rows: `4993`
-- Chronology-ready rows: `2744`
-- Creator-ready rows: `3036`
-- Default reading-path rows: `2718`
-- Creator-risk rows: `495`
+- Chronology-ready rows: `2837`
+- Creator-ready rows: `3094`
+- Default reading-path rows: `2812`
+- Creator-risk rows: `460`
 - Duplicate-risk rows: `113`
 - Boundary-risk rows: `147`
-- Mandatory release-queue rows: `571`
+- Mandatory release-queue rows: `479`
 
 ## Stop Rule
 
@@ -45,12 +45,12 @@ Do not manually clear the full unplaced backlog for v1. Resolve the mandatory re
 | 691 | 262 | `qb_core` | The Pastoral Symphony | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 | 703 | 180 | `qb_core` | Gospel of Luke | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 | 761 | 118 | `qb_core` | Requiem | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 781 | 61 | `qb_major` | Kalevala | rank_le_1000_unresolved_chronology; count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk; boundary_risk | chronology; creator; boundary | Set boundary disposition or route to sibling list before default release. |
+| 781 | 61 | `qb_major` | Kalevala | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 | 789 | 174 | `qb_core` | The Ghost Sonata | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 891 | 53 | `qb_major` | Walden | rank_le_1000_unresolved_chronology; count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
-| 929 | 62 | `qb_major` | The Rivals | rank_le_1000_unresolved_chronology; count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
 | 931 | 104 | `qb_core` | Popol Vuh | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 | 936 | 90 | `qb_core` | Book of Isaiah | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 956 | 157 | `qb_core` | Self-Portrait in a Convex Mirror | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 993 | 90 | `qb_core` | Zend-Avesta | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 
 ## Output Files
 
