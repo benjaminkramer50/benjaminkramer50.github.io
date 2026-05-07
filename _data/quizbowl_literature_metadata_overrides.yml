@@ -36661,3 +36661,707 @@
   source: codex_manual_metadata_correction
   confidence: low
   notes: Removes false Wikidata match; local evidence points to Algren story context.
+- title: Pyramus and Thisbe
+  normalized_title: pyramus and thisbe
+  wikidata_id: Q135403408
+  wikidata_label: Pyramus and Thisbe
+  wikidata_description: literary work by Ovid, published in his Metamorphoses
+  creators:
+  - Ovid
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Lost in Translation
+  normalized_title: lost in translation
+  wikidata_id: Q6684430
+  wikidata_label: Lost in Translation
+  wikidata_description: poem by James Merrill
+  creators:
+  - James Merrill
+  sort_year: 1974
+  date_label: '1974'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Past and Present
+  normalized_title: past and present
+  wikidata_id: Q7142925
+  wikidata_label: Past and Present
+  wikidata_description: book by Thomas Carlyle
+  creators:
+  - Thomas Carlyle
+  sort_year: 1843
+  date_label: '1843'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Pamela
+  normalized_title: pamela
+  wikidata_id: Q2048624
+  wikidata_label: Pamela; or, Virtue Rewarded
+  wikidata_description: 1740 novel by Samuel Richardson
+  creators:
+  - Samuel Richardson
+  sort_year: 1740
+  date_label: '1740'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Modern Love
+  normalized_title: modern love
+  wikidata_id: Q6888750
+  wikidata_label: Modern Love
+  wikidata_description: book by George Meredith
+  creators:
+  - George Meredith
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Voss
+  normalized_title: voss
+  wikidata_id: Q7942045
+  wikidata_label: Voss
+  wikidata_description: novel by Patrick White
+  creators:
+  - Patrick White
+  sort_year: 1957
+  date_label: '1957'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Robber Bridegroom
+  normalized_title: the robber bridegroom
+  wikidata_id: Q7761192
+  wikidata_label: The Robber Bridegroom
+  wikidata_description: novel by Eudora Welty
+  creators:
+  - Eudora Welty
+  sort_year: 1942
+  date_label: '1942'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Silence
+  normalized_title: silence
+  wikidata_id: Q3960523
+  wikidata_label: Silence
+  wikidata_description: 1966 novel by Shusaku Endo
+  creators:
+  - Shūsaku Endō
+  sort_year: 1966
+  date_label: '1966'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Roots
+  normalized_title: roots
+  wikidata_id: Q743223
+  wikidata_label: 'Roots: The Saga of an American Family'
+  wikidata_description: 1976 novel by Alex Haley
+  creators:
+  - Alex Haley
+  sort_year: 1976
+  date_label: '1976'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Everyman
+  normalized_title: everyman
+  wikidata_id: Q5417848
+  wikidata_label: Everyman
+  wikidata_description: modern play
+  creators:
+  - Peter van Diest
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Underworld
+  normalized_title: underworld
+  wikidata_id: Q2249650
+  wikidata_label: Underworld
+  wikidata_description: 1997 novel by Don DeLillo
+  creators:
+  - Don DeLillo
+  sort_year: 1997
+  date_label: '1997'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Cathedral
+  normalized_title: cathedral
+  wikidata_id: Q5052186
+  wikidata_label: Cathedral
+  wikidata_description: 1983 short story collection by Raymond Carver
+  creators:
+  - Raymond Carver
+  sort_year: 1983
+  date_label: '1983'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Jazz
+  normalized_title: jazz
+  wikidata_id: Q3163324
+  wikidata_label: Jazz
+  wikidata_description: novel by Toni Morrison
+  creators:
+  - Toni Morrison
+  sort_year: 1992
+  date_label: '1992'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Equus
+  normalized_title: equus
+  wikidata_id: Q1347946
+  wikidata_label: Equus
+  wikidata_description: 1973 play by Peter Shaffer
+  creators:
+  - Peter Shaffer
+  sort_year: 1973
+  date_label: '1973'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Azul
+  normalized_title: azul
+  wikidata_id: Q5715218
+  wikidata_label: Azul
+  wikidata_description: volume of poetry by Rubén Darío
+  creators:
+  - Rubén Darío
+  sort_year: 1888
+  date_label: '1888'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Shame
+  normalized_title: shame
+  wikidata_id: Q852565
+  wikidata_label: Shame
+  wikidata_description: 1983 novel by Salman Rushdie
+  creators:
+  - Salman Rushdie
+  sort_year: 1983
+  date_label: '1983'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Possession
+  normalized_title: possession
+  wikidata_id: Q428581
+  wikidata_label: Possession
+  wikidata_description: 1990 romance by A. S. Byatt
+  creators:
+  - A. S. Byatt
+  sort_year: 1990
+  date_label: '1990'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Mont Blanc
+  normalized_title: mont blanc
+  wikidata_id: Q6903033
+  wikidata_label: Mont Blanc
+  wikidata_description: poem written by Percy Bysshe Shelley
+  creators:
+  - Percy Bysshe Shelley
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Gigi
+  normalized_title: gigi
+  wikidata_id: Q1247370
+  wikidata_label: Gigi
+  wikidata_description: novella by Colette
+  creators:
+  - Colette
+  sort_year: 1944
+  date_label: '1944'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Work in Progress
+  normalized_title: work in progress
+  wikidata_id: Q28134463
+  wikidata_label: Work In Progress
+  wikidata_description: book by Michael Eisner
+  creators:
+  - Michael Eisner
+  sort_year: 1999
+  date_label: '1999'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Fish
+  normalized_title: the fish
+  wikidata_id: Q28457644
+  wikidata_label: The Fish
+  wikidata_description: 1918 poem by American poet Marianne Moore
+  creators:
+  - Marianne Moore
+  sort_year: 1918
+  date_label: '1918'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Soldier
+  normalized_title: the soldier
+  wikidata_id: Q7765157
+  wikidata_label: The Soldier
+  wikidata_description: 1915 poem by Rupert Brooke
+  creators:
+  - Rupert Brooke
+  sort_year: 1915
+  date_label: '1915'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Crash
+  normalized_title: crash
+  wikidata_id: Q1093988
+  wikidata_label: Crash
+  wikidata_description: 1973 novel by J. G. Ballard
+  creators:
+  - J. G. Ballard
+  sort_year: 1973
+  date_label: '1973'
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Ajax
+  normalized_title: ajax
+  wikidata_id: Q412341
+  wikidata_label: Ajax
+  wikidata_description: ancient Greek tragedy by Sophocles
+  creators:
+  - Sophocles
+  sort_year: -467
+  date_label: 467 BCE
+  source: wikidata_metadata_overlay
+  confidence: high
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: Bread and Roses
+  normalized_title: bread and roses
+  wikidata_id: Q118367668
+  wikidata_label: Bread and Roses
+  wikidata_description: poem by James Oppenheim
+  creators:
+  - James Oppenheim
+  sort_year:
+  date_label: ''
+  source: wikidata_metadata_overlay
+  confidence: medium
+  notes: Exact normalized title or alias match; Wikidata description matched literary-work
+    filter.
+- title: The Cattle Raid of Cooley
+  creators:
+  - Medieval Irish oral and manuscript tradition
+  sort_year: 1100
+  date_label: medieval Irish oral strata; 12th-century manuscript tradition
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Tenth Muse Lately Sprung
+  creators:
+  - Anne Bradstreet
+  sort_year: 1650
+  date_label: '1650'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: New Hampshire
+  creators:
+  - Robert Frost
+  sort_year: 1923
+  date_label: '1923'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: How Do I Love Thee
+  creators:
+  - Elizabeth Barrett Browning
+  sort_year: 1850
+  date_label: '1850'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: World Enough and Time
+  creators:
+  - Robert Penn Warren
+  sort_year: 1950
+  date_label: '1950'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Peter Pan
+  creators:
+  - J. M. Barrie
+  sort_year: 1904
+  date_label: '1904'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: I Heard a Fly Buzz When I Died
+  creators:
+  - Emily Dickinson
+  sort_year: 1862
+  date_label: c. 1862; published 1896
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Boys and Girls
+  creators:
+  - Alice Munro
+  sort_year: 1968
+  date_label: '1968'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Landscape with the Fall of Icarus
+  creators:
+  - William Carlos Williams
+  sort_year: 1960
+  date_label: c. 1960
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Prussian Officer
+  creators:
+  - D. H. Lawrence
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Pittsburgh Cycle
+  creators:
+  - August Wilson
+  sort_year: 1982
+  date_label: 1982-2005
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The American Dream
+  creators:
+  - Edward Albee
+  sort_year: 1961
+  date_label: '1961'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Sonnets of Death
+  creators:
+  - Gabriela Mistral
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: A Red, Red Rose
+  creators:
+  - Robert Burns
+  sort_year: 1794
+  date_label: '1794'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The United Fruit Company
+  creators:
+  - Pablo Neruda
+  sort_year: 1950
+  date_label: '1950'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Beauty and the Beast
+  creators:
+  - French literary fairy-tale tradition
+  sort_year: 1740
+  date_label: 1740; popular 1756 retelling
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Silence of the Lambs
+  creators:
+  - Thomas Harris
+  sort_year: 1988
+  date_label: '1988'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Rougon-Macquart
+  creators:
+  - Emile Zola
+  sort_year: 1871
+  date_label: 1871-1893
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Children of Gebelawi
+  creators:
+  - Naguib Mahfouz
+  sort_year: 1959
+  date_label: '1959'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Six Degrees of Separation
+  creators:
+  - John Guare
+  sort_year: 1990
+  date_label: '1990'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Little Red Riding Hood
+  creators:
+  - Charles Perrault
+  - Brothers Grimm
+  sort_year: 1697
+  date_label: 1697; later Grimm version 1812
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Battle of Blenheim
+  creators:
+  - Robert Southey
+  sort_year: 1798
+  date_label: '1798'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Sinbad the Sailor
+  creators:
+  - Arabic story-cycle tradition
+  sort_year: 1000
+  date_label: medieval Arabic story-cycle tradition
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Lion, The Witch and The Wardrobe
+  creators:
+  - C. S. Lewis
+  sort_year: 1950
+  date_label: '1950'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Harry Potter
+  creators:
+  - J. K. Rowling
+  sort_year: 1997
+  date_label: 1997-2007
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Rings of Saturn
+  creators:
+  - W. G. Sebald
+  sort_year: 1995
+  date_label: '1995'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Nick Adams Stories
+  creators:
+  - Ernest Hemingway
+  sort_year: 1972
+  date_label: '1972'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Everyman
+  creators:
+  - English morality play tradition
+  sort_year: 1500
+  date_label: late 15th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Modern Love
+  creators:
+  - George Meredith
+  sort_year: 1862
+  date_label: '1862'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Mont Blanc
+  creators:
+  - Percy Bysshe Shelley
+  sort_year: 1817
+  date_label: '1817'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Bread and Roses
+  creators:
+  - James Oppenheim
+  sort_year: 1911
+  date_label: '1911'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Chronicles of Narnia
+  creators:
+  - C. S. Lewis
+  sort_year: 1950
+  date_label: 1950-1956
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Counter-Attack
+  creators:
+  - Siegfried Sassoon
+  sort_year: 1918
+  date_label: '1918'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Leda and the Swan
+  creators:
+  - W. B. Yeats
+  sort_year: 1924
+  date_label: '1924'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: This Be the Verse
+  creators:
+  - Philip Larkin
+  sort_year: 1971
+  date_label: '1971'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Ars Amatoria
+  creators:
+  - Ovid
+  sort_year: 2
+  date_label: 1 BCE-2 CE
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Masnavi
+  creators:
+  - Rumi
+  sort_year: 1258
+  date_label: 13th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Martin Fierro
+  creators:
+  - Jose Hernandez
+  sort_year: 1872
+  date_label: 1872-1879
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Dancing Girl
+  creators:
+  - Mori Ogai
+  sort_year: 1890
+  date_label: '1890'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The American Scholar
+  creators:
+  - Ralph Waldo Emerson
+  sort_year: 1837
+  date_label: '1837'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Upon the Burning of Our House
+  creators:
+  - Anne Bradstreet
+  sort_year: 1666
+  date_label: c. 1666; published 1678
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Hansel and Gretel
+  creators:
+  - Brothers Grimm
+  sort_year: 1812
+  date_label: '1812'
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Noli Me Tangere
+  creators:
+  - Jose Rizal
+  sort_year: 1887
+  date_label: '1887'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Poems on Various Subjects
+  creators:
+  - Phillis Wheatley
+  sort_year: 1773
+  date_label: '1773'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Electric Kool-Aid Acid Test
+  creators:
+  - Tom Wolfe
+  sort_year: 1968
+  date_label: '1968'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Don Carlos
+  creators:
+  - Friedrich Schiller
+  sort_year: 1787
+  date_label: '1787'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: A Delicate Balance
+  creators:
+  - Edward Albee
+  sort_year: 1966
+  date_label: '1966'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: All for Love
+  creators:
+  - John Dryden
+  sort_year: 1677
+  date_label: '1677'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Nothing Like the Sun
+  creators:
+  - Anthony Burgess
+  sort_year: 1964
+  date_label: '1964'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Minister's Black Veil
+  creators:
+  - Nathaniel Hawthorne
+  sort_year: 1836
+  date_label: '1836'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Minister’s Black Veil
+  creators:
+  - Nathaniel Hawthorne
+  sort_year: 1836
+  date_label: '1836'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Skunk Hour
+  creators:
+  - Robert Lowell
+  sort_year: 1959
+  date_label: '1959'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Ugly Duckling
+  creators:
+  - Hans Christian Andersen
+  sort_year: 1843
+  date_label: '1843'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: A Coney Island of the Mind
+  creators:
+  - Lawrence Ferlinghetti
+  sort_year: 1958
+  date_label: '1958'
+  source: codex_manual_metadata_correction
+  confidence: high

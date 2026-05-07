@@ -23100,3 +23100,148 @@ decisions:
   reason: full_title_variant
   review_status: merged_duplicate_title_variant
   source: codex_wikidata_giant_audit_wave1
+- canonical_title: A Far Cry
+  decision: alias
+  alias_of: A Far Cry from Africa
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Tristan and Isolde
+  decision: alias
+  alias_of: Tristan and Iseult
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Work in Progress
+  decision: alias
+  alias_of: Finnegans Wake
+  reason: working_title_for_larger_work
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Nick Adams
+  decision: alias
+  alias_of: The Nick Adams Stories
+  reason: character_cycle_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: The Book of the Dead
+  candidate_id: qb_lit_the_book_of_the_dead_703b2fff
+  decision: review
+  reason: title_collision_egyptian_text_rukeyser_sequence_lawrence_work
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Guy de Maupassant
+  decision: review
+  reason: person_title_collision_babel_story
+  review_status: needs_review_title_collision_or_creator_correction
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: The Promised Land
+  candidate_id: qb_lit_the_promised_land_2fb53ea2
+  decision: review
+  reason: title_collision_noisy_creator_answerline
+  review_status: needs_review_title_collision_or_creator_correction
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Belle of Amherst
+  decision: reject
+  reason: person_epithet_not_work
+  review_status: rejected_person_epithet_not_work
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Pyramus and Thisbe
+  decision: review
+  reason: embedded_performance_myth_subwork_boundary
+  review_status: needs_review_embedded_performance_or_myth_boundary
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: A Vindication of the Rights of Woman
+  decision: review
+  reason: adjacent_political_thought_boundary
+  review_status: needs_review_adjacent_political_thought_boundary
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: of Latin America
+  decision: reject
+  reason: parser_fragment
+  review_status: rejected_parser_fragment
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: into the Valley of Death
+  decision: reject
+  reason: quotation_fragment
+  review_status: rejected_quotation_fragment
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: is Water
+  decision: reject
+  reason: parser_fragment_or_nonliterary_speech_title
+  review_status: rejected_parser_fragment_or_nonliterary_speech_title
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Shall I compare thee to a summer's day
+  decision: alias
+  alias_of: Sonnet 18
+  reason: first_line_variant_for_sonnet
+  review_status: merged_line_or_phrase_to_work
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Shall I compare thee to a summer’s day
+  decision: alias
+  alias_of: Sonnet 18
+  reason: first_line_variant_for_sonnet
+  review_status: merged_line_or_phrase_to_work
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Be the Verse
+  decision: alias
+  alias_of: This Be the Verse
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Nip the Buds
+  decision: alias
+  alias_of: Nip the Buds, Shoot the Kids
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Tell-Tale
+  decision: alias
+  alias_of: The Tell-Tale Heart
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Shantih, Shantih, Shantih
+  decision: alias
+  alias_of: The Waste Land
+  reason: quoted_final_line_for_work
+  review_status: merged_line_or_phrase_to_work
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: A Novel Without a Hero
+  decision: alias
+  alias_of: Vanity Fair
+  reason: subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: The Key to All Mythologies
+  decision: alias
+  alias_of: Middlemarch
+  reason: embedded_fictional_work_for_larger_work
+  review_status: merged_embedded_work_to_larger_work
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Spiritual Couplets
+  decision: alias
+  alias_of: Masnavi
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Aztec mythology
+  decision: reject
+  reason: mythology_domain_not_literary_work
+  review_status: rejected_mythology_domain_not_literary_work
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Jana Gana Mana
+  decision: reject
+  reason: anthem_not_literature_reading_list
+  review_status: rejected_song_anthem_not_literature_product
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Annus Mirabilis
+  decision: review
+  reason: title_collision_dryden_larkin_science_contexts
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: The Dark Tower
+  decision: review
+  reason: title_collision_browning_macneice_king_contexts
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d2_metadata_backlog_cleanup
