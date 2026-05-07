@@ -23454,3 +23454,170 @@ decisions:
   reason: shortened_title_variant
   review_status: merged_duplicate_title_variant
   source: codex_phase_d5_metadata_backlog_cleanup
+- candidate_id: qb_lit_snow_white_41727070
+  canonical_title: Snow White
+  normalized_title: snow white
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d6_metadata_backlog_cleanup
+  notes: Evidence mixes Barthelme's novel, fairy-tale clues, and other Snow White title contexts; route only context-matched observations.
+  split_into:
+  - title: Snow White (Donald Barthelme)
+    match_any:
+    - Donald Barthelme
+    - Barthelme
+    - City Life
+    - Come Back, Dr. Caligari
+    - dialogue-arias
+  - title: Snow White (fairy tale)
+    match_any:
+    - Aarne-Thompson
+    - Gold-Tree
+    - Silver-Tree
+    - fairest of them all
+    - magic mirror
+    - seven dwarfs
+    - Brothers Grimm
+    - Grimm
+- candidate_id: qb_lit_here_i_am_4467a907
+  canonical_title: Here I Am
+  normalized_title: here i am
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d6_metadata_backlog_cleanup
+  notes: Evidence mixes Jonathan Safran Foer's novel and Claribel Alegria poem contexts; route only context-matched observations.
+  split_into:
+  - title: Here I Am (Jonathan Safran Foer)
+    match_any:
+    - Jonathan Safran Foer
+    - Safran Foer
+    - Foer
+    - earthquake
+    - Arab invasion
+    - Israel
+    - Tree of Codes
+    - Everything Is Illuminated
+    - Extremely Loud
+  - title: Here I Am (Claribel Alegria)
+    match_any:
+    - Claribel Alegria
+    - Claribel Alegría
+    - Aquarium
+    - Sorrow
+    - Luisa in Realityland
+- canonical_title: Conversion of the Jews
+  decision: alias
+  alias_of: Goodbye, Columbus
+  reason: story_subwork_for_collection
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d6_metadata_backlog_cleanup
+- canonical_title: The Umbilical Cord
+  decision: alias
+  alias_of: The Soft Voice of the Serpent
+  reason: story_subwork_for_collection
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d6_metadata_backlog_cleanup
+- canonical_title: Going to Bed
+  decision: alias
+  alias_of: To His Mistress Going to Bed
+  reason: shortened_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d6_metadata_backlog_cleanup
+- canonical_title: Battle Royal
+  decision: alias
+  alias_of: Invisible Man
+  reason: chapter_or_story_subwork_for_larger_novel
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d6_metadata_backlog_cleanup
+- canonical_title: Battle Royale
+  decision: alias
+  alias_of: Invisible Man
+  reason: chapter_or_story_subwork_for_larger_novel
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d6_12_agent_audit_fix
+- canonical_title: Rossum’s Universal Robots
+  decision: alias
+  alias_of: R.U.R
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d6_12_agent_audit_fix
+- canonical_title: "R.U.R.: Rossum's Universal Robots"
+  decision: alias
+  alias_of: R.U.R
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d6_12_agent_audit_fix
+- canonical_title: R.U.R. or Rossum’s Universal Robots
+  decision: alias
+  alias_of: R.U.R
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d6_12_agent_audit_fix
+- canonical_title: Blessed Be the Tie That Binds
+  decision: alias
+  alias_of: Our Town
+  reason: hymn_refrain_or_scene_reference_in_larger_play
+  review_status: merged_clue_fragment_to_work
+  source: codex_phase_d6_metadata_backlog_cleanup
+- candidate_id: qb_lit_middle_passage_215f9f8f
+  canonical_title: Middle Passage
+  normalized_title: middle passage
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d6_metadata_backlog_cleanup
+  notes: Evidence mixes Charles Johnson's novel, Robert Hayden's poem, and generic Beloved/Middle Passage references; route only context-matched observations.
+  split_into:
+  - title: Middle Passage (Charles Johnson)
+    match_any:
+    - Charles Johnson
+    - Rutherford Calhoun
+    - Allmuseri
+    - Republic
+    - Captain Falcon
+  - title: Middle Passage (Robert Hayden)
+    match_any:
+    - Robert Hayden
+    - Hayden
+    - full fathom five
+    - altar lights
+    - those are altar lights
+- candidate_id: qb_lit_epistle_to_the_romans_84782939
+  canonical_title: Epistle to the Romans
+  normalized_title: epistle to the romans
+  decision: review
+  reason: title_collision_pauline_epistle_and_barth_theology_boundary
+  review_status: needs_review_scripture_religion_boundary
+  source: codex_phase_d6_metadata_backlog_cleanup
+- candidate_id: qb_lit_bliss_caae4eaa
+  canonical_title: Bliss
+  normalized_title: bliss
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_phase_d6_metadata_backlog_cleanup
+  notes: Evidence mixes Katherine Mansfield's story, Peter Carey's novel, and Ellison character/name contexts.
+  split_into:
+  - title: Bliss (Katherine Mansfield)
+    match_any:
+    - Katherine Mansfield
+    - Mansfield
+    - Bertha Young
+    - Miss Brill
+    - The Garden Party
+    - Laura Sheridan
+  - title: Bliss (Peter Carey)
+    match_any:
+    - Peter Carey
+    - Carey
+    - Harry Joy
+    - Oscar and Lucinda
+    - True History of the Kelly Gang
+- canonical_title: Here I Am (Jonathan Safran Foer)
+  normalized_title: here i am jonathan safran foer
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_phase_d6_metadata_backlog_cleanup

@@ -2,7 +2,7 @@
 
 Date: 2026-05-04
 
-Status: implemented_parallel_track
+Status: audited_release_hardening
 
 ## Core Idea
 
@@ -10,13 +10,13 @@ Build a literature canon from the raw quizbowl corpus. Do not use Bloom, online 
 
 ## Final Product Goal
 
-The main deliverable is a quizbowl-derived literature reading list, not just a raw canon dump. The public product should help someone decide what to read, in what broad order, and why each work matters in quizbowl culture.
+The main deliverable is a quizbowl-derived literature reading list, not just a raw canon dump. The public product should help someone decide what to read, in what broad order, and how strongly each work recurs in the academic quizbowl literature corpus.
 
 The final literature product should include:
 
 - A clean accepted reading list of literary works.
 - A salience score and tier for each work.
-- Evidence links or snippets showing why the work appears.
+- Concise evidence/source context showing why the work appears, without making the page feel like a quizbowl operations tool.
 - Filters for tier, source channel, review status, form/genre, era, region/tradition, and eventually unit.
 - Reading-list views that can be grouped into units such as ancient epic/scripture-as-literature, classical drama, medieval romance, early modern drama, global novel traditions, modernism, postcolonial literature, contemporary global literature, poetry, short fiction, literary criticism/theory, and oral traditions.
 - Audit-only rejected/review queues so opera, social science, philosophy, geography artifacts, author names, characters, and ambiguous title fragments do not pollute the public reading list.
@@ -86,32 +86,45 @@ This project is done in stages. The corpus-derived canon will never be permanent
 | Phase | Name | Status | Exit Gate | Primary Artifacts |
 | --- | --- | --- | --- | --- |
 | A | Evidence Pipeline | complete enough for iteration | Raw answerlines and clue text produce reproducible accepted/rejected/review outputs without Loci processed canon tables. | build script, method report, public YAML |
-| B | Public-List Purity | active, `2,926` adjudications loaded; first-`1,000` public-row spot check completed; Wikidata audit and D2-D5 metadata-backlog cleanup waves rejected/merged another set of adjacent-domain false positives, embedded-work fragments, and title collisions | Top `2,000` audit rows adjudicated, first `1,000` public rows pass spot checks, and the next queue is mostly real boundary cases. | adjudications YAML, rejected TSV, review queue |
-| C | Alias And Duplicate Consolidation | complete for broad title-variant pass; `517` manual alias rules added, `514` applied in the latest full rebuild; `13` ambiguous source titles now have `25` author-aware split targets, with `19` public child rows after routing | High-salience duplicate families and whole/subwork boundaries are resolved or explicitly routed. | cluster TSV, adjudications YAML, split-audit TSV |
-| D | Classification And Metadata Layer | active, every public row now has provisional classification fields; metadata overlay contains `3098` accepted/corrected rows and contributes `2197` Wikidata chronology rows, `2480` Wikidata creator rows, `441` manual chronology corrections, and `443` manual creator corrections to the public list | Every public row has provisional classification fields, high-salience rows have audited creator/date metadata where available, and unresolved rows stay explicitly marked `unknown`/`Unplaced`. | enriched public YAML, metadata overlay, Wikidata audit TSV, metadata backlog report |
-| E | UI And Reading Experience | active, filterable page pass added for tier, form, evidence, unit, era, tradition, context, routing, sort, and search | The public page is a filterable reading-list tool rather than a flat row dump. | site pages/components/styles |
-| F | Literature Release Gate | not started | A stable quizbowl literature canon has passed A-E and has a final method report. | public site, method report |
+| B | Public-List Purity | active, `2934` adjudications loaded; 12-agent audit found the raw-evidence method valid but public-list leakage still needs gated cleanup | Top audit rows, high-salience non-literary leaks, and boundary cases are adjudicated or routed, with no unreviewed `qb_core`/`qb_major` adjacent-domain rows in the default path. | adjudications YAML, rejected TSV, review queue |
+| C | Alias And Duplicate Consolidation | active, `526` manual alias rules loaded and `523` applied; `17` ambiguous source titles now have `33` author-aware split targets, with `24` public child rows after routing | High-salience duplicate families, translated titles, subtitles, whole/subwork boundaries, and protected collisions are resolved or explicitly held for review. | cluster TSV, adjudications YAML, split-audit TSV |
+| D | Classification And Metadata Layer | active but re-scoped; all public rows have provisional classification fields, but open-ended manual dating is paused until creator and duplicate gates are hardened | Default chronology path uses only rows with audited creator/date. High-salience unresolved rows are resolved by finite gates; low-salience rows remain explicitly `unknown`/`Unplaced`. | enriched public YAML, metadata overlay, Wikidata audit TSV, metadata backlog report |
+| E | UI And Reading Experience | active, but default view must shift from all accepted rows to a chronology-ready reading path | The public page looks like a serious chronological literature reading list, with All Accepted and Unplaced as secondary views. | site pages/components/styles |
+| F | Literature Release Gate | not started | A stable quizbowl literature canon has passed A-E plus the 12-agent audit gates below. | public site, method report |
 | G | Adjacent Quizbowl Reading Lists | planned after F | Religion, mythology, philosophy, and social-science sibling products have their own pipelines and public pages. | separate domain YAMLs and pages |
 
-Current operating phase: Phase D/E. The top-audit-row count has crossed `2,000` adjudicated rows, the first-`1,000` public-row purity pass removed obvious fragments and non-work rows, and the builder now supports manual alias merges plus author-aware split routing so duplicate variants and ambiguous same-title evidence do not collapse into one public row. The public classification/UI layer is intentionally conservative: it uses evidence-derived form, evidence profile, quizbowl context, routing status, and provisional rule-derived era, region/tradition, reading-unit, and confidence fields. The build now also supports a reproducible metadata overlay from Wikidata for creator/date enrichment. Unknown metadata is left explicit rather than forced into false precision.
+Current operating phase: Phase D/E release hardening. The top-audit-row count has crossed `2,000` adjudicated rows, the first-`1,000` public-row purity pass removed obvious fragments and non-work rows, and the builder supports manual alias merges plus author-aware split routing so duplicate variants and ambiguous same-title evidence do not collapse into one public row. The public classification/UI layer is intentionally conservative: it uses evidence-derived form, evidence profile, quizbowl context, routing status, and provisional rule-derived era, region/tradition, reading-unit, and confidence fields. The build also supports a reproducible metadata overlay from Wikidata for creator/date enrichment. Unknown metadata is left explicit rather than forced into false precision.
 
 Current metadata checkpoint:
 
 - Threshold: `total_question_count >= 3`.
-- Public rows: `5005`.
-- Creator coverage: `3513 / 5005`.
-- Chronology coverage: `2703 / 5005` public rows have non-`Unplaced` chronology (`46` reviewed canon records, `19` title overrides, `2197` Wikidata overlay rows, `441` manual metadata corrections).
-- Remaining chronology backlog: `2302` public rows marked `Unplaced`.
+- Public rows: `4997` (`1030` core, `1455` major, `2512` contextual).
+- Creator coverage: `3526 / 4997`.
+- Chronology coverage: `2744 / 4997` public rows have non-`Unplaced` chronology (`46` reviewed canon records, `19` title overrides, `2196` Wikidata overlay rows, `483` manual metadata corrections).
+- Default-path candidate coverage: `2717 / 4997` rows currently have both creator and chronology.
+- Remaining chronology backlog: `2253` public rows marked `Unplaced`.
+- High-salience unresolved gates: `6` rows at rank `<=1000`, `304` rows with `total_question_count >= 40`, and `457` `qb_major` rows still need resolution by date, merge, rejection, routing, or explicit boundary disposition.
 - Known constraint: Wikidata is metadata support, not inclusion evidence; quizbowl raw answerlines/clues remain the only inclusion signal.
+- Known creator-risk constraint: `527` public rows still use `quizbowl_author_answerline` creator inference. These are not release-quality creators unless separately audited or replaced by manual/Wikidata/reviewed metadata.
 - Current Wikidata pass: the giant metadata sweep attempted `2310` remaining eligible unplaced rows and initially accepted `815` overlays; four read-only audit chunks then removed or corrected false matches, adjacent-domain spillover, version/edition-level items, creator/date errors, and duplicate/original-language title variants before the full corpus rebuild. A D2 retry over the top `600` still-unplaced rows accepted only `25` additional Wikidata overlays, confirming that the remaining backlog is dominated by title collisions, poems without clean Wikidata dates, composite/oral works, noisy creator answerlines, and parser fragments rather than simple search misses.
-- Current D2-D5 backlog artifact: `_planning/quizbowl_lit_canon/quizbowl_lit_metadata_backlog.tsv` ranks all remaining `2302` unplaced public rows by quizbowl salience and buckets them as date-only, creator/date, non-literature context, parser fragment, oral/composite, or creator-audit cases. The cleanup batches lowered the highest unresolved public row from `306` mentions to `95` by dating high-confidence works, merging title variants, and routing ambiguous rows such as `The Book of the Dead`, `The Promised Land`, `Annus Mirabilis`, `The Dark Tower`, `The Rose Garden`, `Oath of the Peach Garden`, `Palm-of-the-Hand`, `Elinor and Marianne`, `Black and Blue`, `Down at the Cross`, and `Maggie` into canonical rows or review.
+- Current D2-D6 backlog artifact: `_planning/quizbowl_lit_canon/quizbowl_lit_metadata_backlog.tsv` ranks all remaining `2253` unplaced public rows by quizbowl salience and buckets them as date-only, creator/date, non-literature context, parser fragment, oral/composite, or creator-audit cases. The cleanup batches lowered the highest unresolved public row from `306` mentions to `69` by dating high-confidence works, merging title variants, and routing ambiguous rows such as `The Book of the Dead`, `The Promised Land`, `Annus Mirabilis`, `The Dark Tower`, `The Rose Garden`, `Oath of the Peach Garden`, `Palm-of-the-Hand`, `Elinor and Marianne`, `Black and Blue`, `Down at the Cross`, `Maggie`, `Battle Royale`, and the `R.U.R.` title family into canonical rows or review.
 - Current cleanup note: shorthand duplicate rows `Tom Sawyer`, `Huckleberry Finn`, and `Huck Finn` now merge into the full Mark Twain titles; Shakuntala transliteration/title variants now merge into `The Recognition of Shakuntala`; article/truncation/original-language variants such as `Life & Times`, `Stopping by Woods`, `of Otranto`, `Astrophel and Stella`, `Der Zauberberg`, `is Just to Say`, `Tonight I Can Write`, `Les Fleurs du`, `Oresteia Trilogy`, `La casa de los espíritus`, `Huis Clos`, `20,000 Leagues Under the Sea`, `Outlaws of the Marsh`, `The Art of Poetry`, `La Vita Nuova`, `The Sketch Book`, `Os Lusiadas`, `En attendant Godot`, `The Modern Prometheus`, `La Peste`, `Der Tod in Venedig`, `I Promessi Sposi`, `Die Räuber`, `Der Sandmann`, `Bodas de sangre`, `Le Petit Prince`, `Voyna i mir`, `L'Etranger`, `La Parure`, `Fin de partie`, `Prestupleniye i nakazaniye`, `Fröken Julie`, `La Chute`, `Les Trois Mousquetaires`, `Il nome della rosa`, `Im Westen nichts Neues`, `Dyadya Vanya`, `The Scottish Play`, `The Lotus-Eaters`, `Song Book`, `L’école des femmes`, `Slaughter-House Five`, `El beso de la mujer araña`, `Como agua para chocolate`, `The Golden Lotus`, `Jekyll and Hyde`, `Daffodils`, `Das Glasperlenspiel`, `Chayka`, `La Nausée`, `The Picture of Dorian Grey`, `Master i Margarita`, and `One Flew Over the Cuckoo` now merge into canonical rows; non-work fragments, author/person rows, characters, reference works, embedded fictional works, movements/categories, films, mythology domains, social-science works, history-domain works, and philosophy rows such as `I do`, `Grover's Corners`, `Blanche DuBois`, `The Horror! The Horror`, `30 points`, `Christopher Marlowe`, `John Milton`, `Edith Wharton`, `Harper LEE`, `O. Henry`, `The Murder of Gonzago`, `Dictionary of the English Language`, `The Tragic Sense of Life`, `the Artful Dodger`, `Janie Crawford`, `Harry Haller`, `Katherine Mansfield`, `Finnish mythology`, `Theater of the Absurd`, `Spanish Golden Age`, `Four Great Classical Novels`, `Equal Rights Amendment`, `Zeno of Elea`, `Bringing Up Baby`, `Throne of Blood`, `Shakespeare in Love`, `The Lonely Crowd`, `Little Father Time`, `Inuit Mythology`, `Person from Porlock`, `Valley of Ashes`, `Self-Taught Man`, `Cide Hamete Benengeli`, `The Mad Trist`, `The Royal Nonesuch`, `Shiva of the Knees`, `Washington Irving's`, `Bonus Questions`, and `The Outline of History` are rejected or routed out; author-aware split routing now separates supported child rows for `North and South`, `Bread and Wine`, `The Lost World`, `The Royal Family`, `Diary of a Madman`, `The Island`, `The Mother`, `Book of Songs`, `Bus Stop`, `Hyperion`, `The Kindly Ones`, and `Phaedra`, while unmatched mixed evidence remains held for review.
-- Current split-audit artifact: `_planning/quizbowl_lit_canon/quizbowl_lit_split_audit.tsv` reports source/target status, routed counts, creators, dates, and match terms for every author-aware split target.
+- Current split-audit artifact: `_planning/quizbowl_lit_canon/quizbowl_lit_split_audit.tsv` reports source/target status, routed counts, creators, dates, and match terms for every author-aware split target. The 12-agent audit also fixed an overbroad `Snow White` split term: the Donald Barthelme child now falls below public threshold, while the fairy-tale child remains public.
+
+### 12-Agent Audit Checkpoint
+
+The May 2026 audit used two waves of six agents to review what was done, what is being done now, and the remaining plan. The consensus is:
+
+- The core evidence method is objective enough for this product: inclusion still comes only from raw answerlines and clue text, not Loci processed canon tables or external canon lists.
+- Continuing hundreds of open-ended manual metadata packets is not optimal. It spends too much time on the long tail before fixing release blockers.
+- The main blockers are public-release quality gates: bad creator inference from quizbowl answerlines, duplicate/translated/subtitle title families, boundary handling for scripture/myth/philosophy/social science, and a UI default that should not expose all accepted rows as one massive path.
+- The correct pivot is finite hardening: fix high-salience unresolved rows, add creator/duplicate/boundary gates, make chronology-ready rows the default public path, and leave low-salience unresolved rows in an explicit Unplaced view.
 
 ### Phase Transition Rules
 
-- Do not start Phase D classification until Phase B has removed obvious public-list pollution and Phase C has resolved the worst duplicate families.
-- Do not redesign the UI in Phase E until the data model has the classification fields users will filter by.
+- Do not continue open-ended manual metadata passes until the D6 regression checks, creator-publication gate, and duplicate-family diagnostic are in place.
+- Do not use `quizbowl_author_answerline` creators in the default reading path unless the row is separately audited or backed by manual/Wikidata/reviewed metadata.
+- Do not make All Accepted the default public experience. The default view is the Chronological Path: accepted rows with reliable creator and chronology metadata.
 - Do not fold religion, mythology, philosophy, or social-science works back into the literature list; Phase G creates sibling products after the literature list is stable.
 - If a later phase exposes a major upstream problem, return to the earlier phase, fix it, rebuild, and update the method report.
 
@@ -137,6 +150,7 @@ Done when:
 
 - The top `2,000` audit queue rows have been adjudicated or routed into durable keep/reject/review rules.
 - The first `1,000` public rows have no obvious non-literary entities, people, characters, places, music-only works, science terms, sports terms, newspapers, institutions, or parser fragments.
+- No `qb_core` or `qb_major` row with adjacent-domain signals remains in the default path without an explicit boundary disposition.
 - The next pending `quizbowl_lit_llm_review_queue.jsonl` batch is no longer dominated by easy rejects or obvious rescues; remaining cases are genuinely ambiguous.
 - Spot checks for known traps pass: opera/musical works, social science/philosophy titles, Bible/religion works, art/music titles, character names, author names, title fragments, and duplicate title variants.
 
@@ -152,6 +166,7 @@ Done when:
 - Common article variants are handled: `Divine Comedy` / `The Divine Comedy`, `Arabian Nights` / `The Arabian Nights`, `War of the Worlds` / `The War of the Worlds`, etc.
 - Transliteration and translated-title variants are captured when the quizbowl evidence clearly identifies the same work.
 - Whole-work versus subwork boundaries are explicit: collection, individual poem/story, embedded fictional work, chapter/section, and motif are not silently collapsed.
+- A duplicate diagnostic flags accepted blank-creator answerline-only rows with `or`, translated-title, colon-subtitle, or slash separators when one component already exists as an accepted title.
 
 ### Phase D: Classification And Metadata Layer
 
@@ -181,9 +196,10 @@ Current implementation:
 
 Next Phase D work:
 
-- Expand the metadata overlay in ranked batches beyond the first high-salience tranche.
-- Add retry/reporting guardrails so network failures produce refill queues instead of silent gaps.
-- Audit overlay false positives by description/domain and same-title creator mismatch.
+- Resolve the finite release gates before touching the long tail: all rank `<=1000` unresolved rows, all rows with `total_question_count >= 40`, all unresolved `qb_major` rows, and any count `20-39` row in a risk bucket.
+- Add a creator-publication gate: default UI suppresses or labels `quizbowl_author_answerline` creators unless audited, and backlog reporting separately queues hard-failure creator strings such as places, countries, other titles, or answerline fragments.
+- Add duplicate-family diagnostics for translated titles, subtitles, `or` answerlines, slash variants, and protected collisions such as `Invisible Man` / `The Invisible Man`.
+- Add explicit boundary fields and audit artifacts: `boundary_domain`, `boundary_disposition`, `sibling_candidate_domain`, `boundary_basis`, `boundary_confidence`, and `boundary_note`.
 - Use title overrides only for high-confidence corrections where the source metadata is demonstrably wrong.
 
 ### Phase E: UI And Reading Experience
@@ -195,8 +211,10 @@ Goal: make the page look like a serious reading-list tool.
 Done when:
 
 - The first screen is not a 5,000-row dump.
+- The default view is a chronology-ready reading path, currently `2717` rows with both creator and date, not the full accepted set.
+- All Accepted and Unplaced are secondary views with clear labels.
 - Users can filter by tier, unit, era, region/tradition, form, and evidence channel.
-- Works display concise evidence and score context without exposing raw audit clutter.
+- Works display title, creator, date/period, tier, form/unit, and concise evidence context without exposing raw audit clutter.
 - Progress/status controls still work.
 - The page is visually quieter, denser, and less AI-generated.
 
@@ -207,8 +225,9 @@ The first stable quizbowl literature canon is done when:
 - Phase A is complete.
 - Phase B has adjudicated at least the top `2,000` audit rows and passes the first-`1,000` public-row purity check.
 - Phase C has handled the top duplicate/alias families.
-- Phase D has provisional classification fields for all public rows.
-- Phase E has shipped a filterable UI.
+- Phase D has provisional classification fields for all public rows and release-quality creator/date metadata for every default-path row.
+- Phase E has shipped a filterable UI whose default view is the chronology-ready path.
+- The release validation passes: no unresolved rank `<=1000` row, no unresolved row with `total_question_count >= 40`, no unresolved `qb_major` row, no unaudited high-risk adjacent-domain row, no obvious duplicate title family, and no unaudited `quizbowl_author_answerline` creator shown as authoritative in the default path.
 - A final method report records corpus version, row counts, thresholds, scoring, audit counts, and known limitations.
 
 ### Phase G: Adjacent Quizbowl Reading Lists

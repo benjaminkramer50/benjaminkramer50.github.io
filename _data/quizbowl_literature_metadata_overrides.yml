@@ -38266,3 +38266,325 @@
   date_label: '2021'
   source: codex_manual_metadata_correction
   confidence: high
+- title: Snow White (Donald Barthelme)
+  creators:
+  - Donald Barthelme
+  sort_year: 1967
+  date_label: '1967'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Snow White (fairy tale)
+  creators:
+  - European fairy-tale tradition
+  sort_year: 1812
+  date_label: oral tradition; Grimm version 1812
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Here I Am (Jonathan Safran Foer)
+  creators:
+  - Jonathan Safran Foer
+  sort_year: 2016
+  date_label: '2016'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Here I Am (Claribel Alegria)
+  creators:
+  - Claribel Alegria
+  sort_year: 1990
+  date_label: late 20th century
+  source: codex_manual_metadata_correction
+  confidence: low
+- title: Epic of Sundiata
+  creators:
+  - Mande oral epic tradition
+  sort_year: 1200
+  date_label: 13th century onward; oral tradition
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Road to Wigan Pier
+  creators:
+  - George Orwell
+  sort_year: 1937
+  date_label: '1937'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: History of the Kings of Britain
+  creators:
+  - Geoffrey of Monmouth
+  sort_year: 1136
+  date_label: c. 1136
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: My Sister Life
+  creators:
+  - Boris Pasternak
+  sort_year: 1922
+  date_label: written 1917; published 1922
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Decolonizing the Mind
+  creators:
+  - Ngugi wa Thiong'o
+  sort_year: 1986
+  date_label: '1986'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: El Aleph
+  creators:
+  - Jorge Luis Borges
+  sort_year: 1945
+  date_label: '1945'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Aeolian Harp
+  creators:
+  - Samuel Taylor Coleridge
+  sort_year: 1796
+  date_label: '1796'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Boesman and Lena
+  creators:
+  - Athol Fugard
+  sort_year: 1969
+  date_label: '1969'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Tamburlaine the Great
+  creators:
+  - Christopher Marlowe
+  sort_year: 1587
+  date_label: c. 1587
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Tell My Horse
+  creators:
+  - Zora Neale Hurston
+  sort_year: 1938
+  date_label: '1938'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Late Mattia Pascal
+  creators:
+  - Luigi Pirandello
+  sort_year: 1904
+  date_label: '1904'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: White Nights
+  creators:
+  - Fyodor Dostoevsky
+  sort_year: 1848
+  date_label: '1848'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: White Buildings
+  creators:
+  - Hart Crane
+  sort_year: 1926
+  date_label: '1926'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: M. Butterfly
+  creators:
+  - David Henry Hwang
+  sort_year: 1988
+  date_label: '1988'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Miles Gloriosus
+  creators:
+  - Plautus
+  sort_year: -205
+  date_label: c. 205 BCE
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Middle Passage (Charles Johnson)
+  creators:
+  - Charles Johnson
+  sort_year: 1990
+  date_label: '1990'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Middle Passage (Robert Hayden)
+  creators:
+  - Robert Hayden
+  sort_year: 1945
+  date_label: first version 1945; revised 1962
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Real Inspector Hound
+  creators:
+  - Tom Stoppard
+  sort_year: 1968
+  date_label: '1968'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Barrack-Room Ballads
+  creators:
+  - Rudyard Kipling
+  sort_year: 1892
+  date_label: '1892'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Speed-the-Plow
+  creators:
+  - David Mamet
+  sort_year: 1988
+  date_label: '1988'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Culture and Anarchy
+  creators:
+  - Matthew Arnold
+  sort_year: 1869
+  date_label: '1869'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Sword in the Stone
+  creators:
+  - T. H. White
+  sort_year: 1938
+  date_label: '1938'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Homage to Mistress Bradstreet
+  creators:
+  - John Berryman
+  sort_year: 1956
+  date_label: '1956'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Giants in the Earth
+  creators:
+  - O. E. Rolvaag
+  sort_year: 1924
+  date_label: 1924-1925; English translation 1927
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: General William Booth Enters into Heaven
+  creators:
+  - Vachel Lindsay
+  sort_year: 1913
+  date_label: '1913'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Tam O’Shanter
+  creators:
+  - Robert Burns
+  sort_year: 1790
+  date_label: '1790'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Montage of a Dream Deferred
+  creators:
+  - Langston Hughes
+  sort_year: 1951
+  date_label: '1951'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Roman Fever
+  creators:
+  - Edith Wharton
+  sort_year: 1934
+  date_label: '1934'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: First Fig
+  creators:
+  - Edna St. Vincent Millay
+  sort_year: 1920
+  date_label: '1920'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Deaths and Entrances
+  creators:
+  - Dylan Thomas
+  sort_year: 1946
+  date_label: '1946'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Battles of Coxinga
+  creators:
+  - Chikamatsu Monzaemon
+  sort_year: 1715
+  date_label: '1715'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Acquainted with the Night
+  creators:
+  - Robert Frost
+  sort_year: 1928
+  date_label: '1928'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Bliss (Katherine Mansfield)
+  creators:
+  - Katherine Mansfield
+  sort_year: 1918
+  date_label: '1918'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Bliss (Peter Carey)
+  creators:
+  - Peter Carey
+  sort_year: 1981
+  date_label: '1981'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The House of Life
+  creators:
+  - Dante Gabriel Rossetti
+  sort_year: 1881
+  date_label: '1881'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Enuma Elish
+  creators:
+  - Babylonian scribal tradition
+  sort_year: -1100
+  date_label: second-first millennium BCE
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Tale of the Heike
+  creators:
+  - Japanese medieval narrative tradition
+  sort_year: 1250
+  date_label: 13th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Soft Voice of the Serpent
+  creators:
+  - Nadine Gordimer
+  sort_year: 1952
+  date_label: '1952'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: To His Mistress Going to Bed
+  creators:
+  - John Donne
+  sort_year: 1595
+  date_label: c. 1590s; published 1654
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Notes on ‘Camp
+  creators:
+  - Susan Sontag
+  sort_year: 1964
+  date_label: '1964'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Against Interpretation
+  creators:
+  - Susan Sontag
+  sort_year: 1966
+  date_label: '1966'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: R.U.R
+  creators:
+  - Karel Capek
+  sort_year: 1920
+  date_label: '1920'
+  source: codex_manual_metadata_correction
+  confidence: high

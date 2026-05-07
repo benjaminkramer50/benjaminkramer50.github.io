@@ -289,7 +289,8 @@ REGION_TITLE_OVERRIDES = {
   "oedipus at colonus" => "greek",
   "jerusalem delivered" => "italian",
   "the misanthrope" => "french",
-  "spring awakening" => "germanic_scandinavian"
+  "spring awakening" => "germanic_scandinavian",
+  "r u r" => "russian_eastern_european"
 }.freeze
 
 ERA_CHRONOLOGY_ANCHORS = {
