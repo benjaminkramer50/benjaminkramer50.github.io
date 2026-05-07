@@ -1,0 +1,150 @@
+- title: The Odyssey
+  disposition: cross_list_literature
+  reason: ancient epic remains core literature; cross-list with mythology later.
+- title: The Iliad
+  disposition: cross_list_literature
+  reason: ancient epic remains core literature; cross-list with mythology later.
+- title: Ramayana
+  disposition: cross_list_literature
+  reason: Sanskrit epic remains core literature; cross-list with mythology/religion later.
+- title: Bhagavad Gita
+  disposition: cross_list_literature
+  reason: scriptural-philosophical poem remains in literature as cross-listed epic subwork.
+- title: Book of Genesis
+  disposition: cross_list_literature
+  reason: scripture read as literature; cross-list with religion later.
+- title: Book of Daniel
+  disposition: cross_list_literature
+  reason: scripture read as literature; cross-list with religion later.
+- title: Book of Esther
+  disposition: cross_list_literature
+  reason: scripture read as literature; cross-list with religion later.
+- title: Book of Job
+  disposition: cross_list_literature
+  reason: wisdom-poetic scripture read as literature; cross-list with religion later.
+- title: Book of Judges
+  disposition: cross_list_literature
+  reason: scripture read as literature; cross-list with religion later.
+- title: Gospel of Luke
+  disposition: cross_list_literature
+  reason: gospel narrative read as literature; cross-list with religion later.
+- title: Book of Isaiah
+  disposition: cross_list_literature
+  reason: prophetic-poetic scripture read as literature; cross-list with religion later.
+- title: Book of Matthew
+  disposition: cross_list_literature
+  reason: gospel narrative read as literature; cross-list with religion later.
+- title: Zend-Avesta
+  disposition: cross_list_literature
+  reason: scripture/liturgical text read as literature; cross-list with religion later.
+- title: Popol Vuh
+  disposition: cross_list_literature
+  reason: mythic narrative text remains core world literature; cross-list with mythology later.
+- title: Epic of Gilgamesh
+  disposition: cross_list_literature
+  reason: ancient epic remains core literature; cross-list with mythology later.
+- title: The Song of Roland
+  disposition: cross_list_literature
+  reason: medieval epic remains literature; cross-list with oral/epic traditions later.
+- title: The Cattle Raid of Cooley
+  disposition: cross_list_literature
+  reason: medieval Irish epic remains literature; cross-list with mythology later.
+- title: Epic of Sundiata
+  disposition: cross_list_literature
+  reason: oral epic remains literature; cross-list with mythology/oral traditions later.
+- title: Enuma Elish
+  disposition: cross_list_literature
+  reason: ancient mythic epic remains literature; cross-list with mythology later.
+- title: Volsunga Saga
+  disposition: cross_list_literature
+  reason: legendary saga remains literature; cross-list with mythology later.
+- title: Kalevala
+  disposition: cross_list_literature
+  reason: national epic remains literature; cross-list with mythology/oral traditions later.
+- title: Works and Days
+  disposition: cross_list_literature
+  reason: archaic didactic poem remains Greek literature despite mythological signal.
+- title: Peer Gynt
+  disposition: keep_literature
+  reason: verse drama; music/performance signal comes from adaptations.
+- title: The Threepenny Opera
+  disposition: keep_literature
+  reason: Brecht dramatic text; music/performance signal is an expected cross-context.
+- title: Happy Days
+  disposition: keep_literature
+  reason: Beckett play; pop/fine-arts track signal is not a reason to route out.
+- title: No Exit
+  disposition: keep_literature
+  reason: Sartre play; philosophy signal is cross-context, not exclusion.
+- title: The Myth of Sisyphus
+  disposition: cross_list_literature
+  reason: Camus literary-philosophical essay; cross-list with philosophy later.
+- title: Marriage a la Mode
+  disposition: keep_literature
+  reason: Dryden dramatic/literary work despite fine-arts signal.
+- title: The Kreutzer Sonata
+  disposition: keep_literature
+  reason: Tolstoy novella; music signal is title allusion.
+- title: The Phantom of the Opera
+  disposition: keep_literature
+  reason: Leroux novel; performance signal comes from adaptations.
+- title: The Ghost Sonata
+  disposition: keep_literature
+  reason: Strindberg play; music signal is title allusion.
+- title: The Beggar's Opera
+  disposition: keep_literature
+  reason: eighteenth-century dramatic text; performance signal is expected.
+- title: The Pastoral Symphony
+  disposition: keep_literature
+  reason: Gide novella; music signal is title allusion.
+- title: Requiem
+  disposition: keep_literature
+  reason: Akhmatova poem cycle; music signal is title allusion.
+- title: A Dance to the Music of Time
+  disposition: keep_literature
+  reason: Powell novel cycle; music signal is title allusion.
+- title: An Equal Music
+  disposition: keep_literature
+  reason: Vikram Seth novel; music signal is title subject/context.
+- title: Pelleas and Melisande
+  disposition: keep_literature
+  reason: Maeterlinck play; opera adaptation signal is cross-context.
+- title: Dirty Hands
+  disposition: keep_literature
+  reason: Sartre play; philosophy signal is cross-context.
+- title: The Pillars of Society
+  disposition: keep_literature
+  reason: Ibsen play; social-signal regex is overbroad.
+- title: The Breasts of Tiresias
+  disposition: keep_literature
+  reason: Apollinaire drama; adjacent-context signal is overbroad.
+- title: The Battle of Blenheim
+  disposition: keep_literature
+  reason: Southey poem; adjacent-context signal is overbroad.
+- title: The Three Body Problem
+  disposition: keep_literature
+  reason: science-fiction novel; non-literature track dominance reflects subject matter.
+- title: The Silence of the Lambs
+  disposition: keep_literature
+  reason: novel; film/pop-culture spillover does not exclude the book.
+- title: I, Robot
+  disposition: keep_literature
+  reason: short-story collection; science/pop-culture context does not exclude the book.
+- title: The Man in the High Castle
+  disposition: keep_literature
+  reason: novel; other-track context reflects adaptation/subject matter.
+- title: The Once and Future King
+  disposition: keep_literature
+  reason: novel sequence; adjacent-context signal is overbroad.
+- title: Good Omens
+  disposition: keep_literature
+  reason: novel; pop-culture/adaptation signal does not exclude the book.
+- title: The Wheel of Time
+  disposition: keep_literature
+  reason: fantasy series; pop-culture signal does not exclude the books.
+- title: The Forsyte Saga
+  disposition: keep_literature
+  reason: novel sequence; saga keyword should not trigger exclusion.
+- title: Self-Portrait in a Convex Mirror
+  disposition: keep_literature
+  reason: Ashbery poem; visual-art title context is an allusion.

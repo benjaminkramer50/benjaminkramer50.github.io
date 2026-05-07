@@ -5,10 +5,10 @@
   "default_path_rows": 2812,
   "creator_risk_rows": 460,
   "duplicate_risk_rows": 113,
-  "boundary_risk_rows": 147,
-  "release_queue_rows": 479,
+  "boundary_risk_rows": 97,
+  "release_queue_rows": 429,
   "release_queue_issue_counts": {
-    "boundary": 138,
+    "boundary": 88,
     "chronology": 382,
     "creator": 140
   }

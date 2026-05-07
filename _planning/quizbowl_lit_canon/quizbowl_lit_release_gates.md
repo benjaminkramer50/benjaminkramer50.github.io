@@ -10,8 +10,8 @@ Generated from `_data/quizbowl_literature_canon.yml`.
 - Default reading-path rows: `2812`
 - Creator-risk rows: `460`
 - Duplicate-risk rows: `113`
-- Boundary-risk rows: `147`
-- Mandatory release-queue rows: `479`
+- Boundary-risk rows: `97`
+- Mandatory release-queue rows: `429`
 
 ## Stop Rule
 
@@ -21,36 +21,36 @@ Do not manually clear the full unplaced backlog for v1. Resolve the mandatory re
 
 | Rank | Count | Tier | Title | Gate Reasons | Issue Buckets | Action |
 | ---: | ---: | --- | --- | --- | --- | --- |
-| 2 | 2248 | `qb_core` | The Odyssey | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 22 | 1628 | `qb_core` | The Iliad | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 98 | 339 | `qb_core` | No Exit | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 109 | 573 | `qb_core` | Ramayana | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 127 | 600 | `qb_core` | Peer Gynt | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 272 | 663 | `qb_core` | Bhagavad Gita | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 291 | 250 | `qb_core` | Book of Daniel | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 349 | 357 | `qb_core` | The Threepenny Opera | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 351 | 231 | `qb_core` | The Myth of Sisyphus | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 369 | 266 | `qb_core` | Epic of Gilgamesh | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 429 | 213 | `qb_core` | The Kreutzer Sonata | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 441 | 344 | `qb_core` | Happy Days | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 458 | 177 | `qb_core` | Book of Esther | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 462 | 192 | `qb_core` | The Song of Roland | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 490 | 220 | `qb_core` | Marriage a la Mode | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 497 | 174 | `qb_core` | The Phantom of the Opera | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 510 | 356 | `qb_core` | Book of Genesis | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 516 | 207 | `qb_core` | Works and Days | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 579 | 146 | `qb_core` | The Beggar's Opera | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 592 | 150 | `qb_core` | Book of Job | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 617 | 143 | `qb_core` | Book of Judges | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 691 | 262 | `qb_core` | The Pastoral Symphony | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 703 | 180 | `qb_core` | Gospel of Luke | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 761 | 118 | `qb_core` | Requiem | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 781 | 61 | `qb_major` | Kalevala | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 789 | 174 | `qb_core` | The Ghost Sonata | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 931 | 104 | `qb_core` | Popol Vuh | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 936 | 90 | `qb_core` | Book of Isaiah | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 956 | 157 | `qb_core` | Self-Portrait in a Convex Mirror | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 993 | 90 | `qb_core` | Zend-Avesta | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1021 | 172 | `qb_core` | Beauty and the Beast | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1139 | 58 | `qb_major` | Confessions | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 1145 | 114 | `qb_major` | The Gospel According to Jesus Christ | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1215 | 54 | `qb_major` | Jerusalem | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 1262 | 62 | `qb_major` | Elegy for Alto | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 1270 | 69 | `qb_major` | The East Wing | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; boundary_risk | chronology; boundary | Set boundary disposition or route to sibling list before default release. |
+| 1284 | 47 | `qb_major` | Die Blechtrommel | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 1354 | 56 | `qb_major` | Book of Jonah | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; boundary_risk | chronology; boundary | Set boundary disposition or route to sibling list before default release. |
+| 1365 | 39 | `qb_major` | The Wasteland | qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 1390 | 36 | `qb_major` | Poetics | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1392 | 41 | `qb_major` | Book of Psalms | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 1404 | 73 | `qb_major` | White Buildings | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1443 | 57 | `qb_major` | Gösta Berling’s Saga | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk; boundary_risk | chronology; creator; boundary | Set boundary disposition or route to sibling list before default release. |
+| 1453 | 55 | `qb_major` | Calling Out to Yeti | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 1455 | 55 | `qb_major` | Book of Ruth | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; boundary_risk | chronology; boundary | Set boundary disposition or route to sibling list before default release. |
+| 1473 | 66 | `qb_major` | The Deptford Trilogy | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk; boundary_risk | chronology; creator; boundary | Set boundary disposition or route to sibling list before default release. |
+| 1477 | 69 | `qb_major` | Quincas Borba | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1546 | 31 | `qb_major` | Mahabharata | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1551 | 44 | `qb_major` | Book of Proverbs | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 1554 | 57 | `qb_major` | Apology for Raymond Sebond | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 1558 | 33 | `qb_major` | Book of Joshua | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 1560 | 43 | `qb_major` | An Epistle to Dr. Arbuthnot | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; boundary_risk | chronology; boundary | Set boundary disposition or route to sibling list before default release. |
+| 1561 | 56 | `qb_major` | Kristin Lavransdatter | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1563 | 45 | `qb_major` | The Poisonwood Bible | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1580 | 71 | `qb_major` | Of Time and the River | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1584 | 55 | `qb_major` | Girl | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 1586 | 33 | `qb_major` | The Knights | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 1594 | 113 | `qb_major` | Call to Arms | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
+| 1596 | 47 | `qb_major` | The Broken Tower | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 1598 | 42 | `qb_major` | Anna in the Tropics | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
 
 ## Output Files
 

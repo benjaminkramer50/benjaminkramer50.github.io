@@ -11,6 +11,7 @@ require "yaml"
 ROOT = File.expand_path("..", __dir__)
 DEFAULT_CANON = File.join(ROOT, "_data", "quizbowl_literature_canon.yml")
 DEFAULT_OUT_DIR = File.join(ROOT, "_planning", "quizbowl_lit_canon")
+DEFAULT_BOUNDARY_DISPOSITIONS = File.join(DEFAULT_OUT_DIR, "quizbowl_lit_boundary_dispositions.yml")
 
 CREATOR_RISK_TSV = "quizbowl_lit_creator_risk.tsv"
 DUPLICATE_RISK_TSV = "quizbowl_lit_duplicate_risk.tsv"
@@ -52,12 +53,14 @@ MUSIC_PERFORMANCE_RE = /\b(?:aria|cantata|concerto|flute|music|opera|oratorio|re
 def parse_options
   options = {
     canon: DEFAULT_CANON,
-    out_dir: DEFAULT_OUT_DIR
+    out_dir: DEFAULT_OUT_DIR,
+    boundary_dispositions: DEFAULT_BOUNDARY_DISPOSITIONS
   }
 
   OptionParser.new do |parser|
     parser.on("--canon PATH") { |value| options[:canon] = value }
     parser.on("--out-dir PATH") { |value| options[:out_dir] = value }
+    parser.on("--boundary-dispositions PATH") { |value| options[:boundary_dispositions] = value }
   end.parse!
 
   options
@@ -243,6 +246,25 @@ def duplicate_risk_row(row, match, match_type, reason)
   }
 end
 
+def load_boundary_dispositions(path)
+  return {} unless File.exist?(path)
+
+  rows = YAML.load_file(path) || []
+  rows.each_with_object({}) do |row, dispositions|
+    next unless row.is_a?(Hash)
+
+    title = row["title"].to_s
+    next if normalize_title(title).empty?
+
+    dispositions[normalize_title(title)] = row
+  end
+end
+
+def boundary_cleared_by_disposition?(row, dispositions)
+  disposition = dispositions.dig(normalize_title(row["title"]), "disposition").to_s
+  %w[keep_literature cross_list_literature].include?(disposition)
+end
+
 def boundary_domain(row)
   text = [
     row["title"],
@@ -269,9 +291,11 @@ def boundary_domain(row)
   nil
 end
 
-def boundary_risks(rows)
+def boundary_risks(rows, dispositions)
   risks = []
   rows.each do |row|
+    next if boundary_cleared_by_disposition?(row, dispositions)
+
     domain_reason = boundary_domain(row)
     next unless domain_reason
 
@@ -419,10 +443,11 @@ def main
 
   rows = YAML.load_file(options[:canon]).select { |row| row["review_status"] == "accepted_likely_work" }
   public_title_keys = rows.map { |row| normalize_title(row["title"]) }.to_set
+  boundary_dispositions = load_boundary_dispositions(options[:boundary_dispositions])
 
   creator_rows = creator_risks(rows, public_title_keys)
   duplicate_rows = duplicate_risks(rows)
-  boundary_rows = boundary_risks(rows)
+  boundary_rows = boundary_risks(rows, boundary_dispositions)
   release_rows = release_queue(rows, creator_rows, duplicate_rows, boundary_rows)
 
   summary = {
