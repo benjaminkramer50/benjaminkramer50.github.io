@@ -41094,3 +41094,787 @@
   source: codex_manual_metadata_correction
   confidence: high
   notes: Release-gate chronology batch.
+- title: Confessions (Augustine)
+  creators:
+  - Augustine of Hippo
+  sort_year: 400
+  date_label: c. 397-400
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate split target metadata.
+- title: Confessions (Rousseau)
+  creators:
+  - Jean-Jacques Rousseau
+  sort_year: 1782
+  date_label: 1782-1789
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate split target metadata.
+- title: Jerusalem (William Blake)
+  creators:
+  - William Blake
+  sort_year: 1820
+  date_label: c. 1804-1820
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate split target metadata.
+- title: The Storyteller (Mario Vargas Llosa)
+  creators:
+  - Mario Vargas Llosa
+  sort_year: 1987
+  date_label: '1987'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate split target metadata.
+- title: The Storyteller (Walter Benjamin)
+  creators:
+  - Walter Benjamin
+  sort_year: 1936
+  date_label: '1936'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate split target metadata.
+- title: The Storyteller (Saki)
+  creators:
+  - Saki
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate split target metadata.
+- title: Life on Mars (Tracy K. Smith)
+  creators:
+  - Tracy K. Smith
+  sort_year: 2011
+  date_label: '2011'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate split target metadata.
+- title: Grace
+  creators:
+  - James Joyce
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Fall of Rome
+  creators:
+  - W. H. Auden
+  sort_year: 1947
+  date_label: '1947'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Ali Baba and the Forty Thieves
+  creators:
+  - One Thousand and One Nights story-cycle tradition
+  sort_year: 1704
+  date_label: medieval story-cycle; Galland print tradition 1704-1717
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: The Spanish Gypsy
+  creators:
+  - George Eliot
+  sort_year: 1868
+  date_label: '1868'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Day of the Jackal
+  creators:
+  - Frederick Forsyth
+  sort_year: 1971
+  date_label: '1971'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Clay
+  creators:
+  - James Joyce
+  sort_year: 1914
+  date_label: '1914'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Idiot Boy
+  creators:
+  - William Wordsworth
+  sort_year: 1798
+  date_label: '1798'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: Crimes of the Heart
+  creators:
+  - Beth Henley
+  sort_year: 1979
+  date_label: '1979'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: An die Freude
+  creators:
+  - Friedrich Schiller
+  sort_year: 1785
+  date_label: '1785'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Teddy
+  creators:
+  - J. D. Salinger
+  sort_year: 1953
+  date_label: '1953'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Caliban Upon Setebos
+  creators:
+  - Robert Browning
+  sort_year: 1864
+  date_label: '1864'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: The Beautiful and the Damned
+  creators:
+  - F. Scott Fitzgerald
+  sort_year: 1922
+  date_label: '1922'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: The Boys from Brazil
+  creators:
+  - Ira Levin
+  sort_year: 1976
+  date_label: '1976'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Design
+  creators:
+  - Robert Frost
+  sort_year: 1936
+  date_label: '1936'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: I Am a Camera
+  creators:
+  - John Van Druten
+  sort_year: 1951
+  date_label: '1951'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Pisan Cantos
+  creators:
+  - Ezra Pound
+  sort_year: 1948
+  date_label: '1948'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Sonnets to Orpheus and the Duino Elegies
+  creators:
+  - Rainer Maria Rilke
+  sort_year: 1923
+  date_label: '1923'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: Nana
+  creators:
+  - Emile Zola
+  sort_year: 1880
+  date_label: '1880'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: London, 1802
+  creators:
+  - William Wordsworth
+  sort_year: 1807
+  date_label: written 1802; published 1807
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: The Caretaker
+  creators:
+  - Harold Pinter
+  sort_year: 1960
+  date_label: '1960'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: Thalaba the Destroyer
+  creators:
+  - Robert Southey
+  sort_year: 1801
+  date_label: '1801'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: How the Leopard Got His Spots
+  creators:
+  - Rudyard Kipling
+  sort_year: 1902
+  date_label: '1902'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Before Night Falls
+  creators:
+  - Reinaldo Arenas
+  sort_year: 1992
+  date_label: '1992'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Empedocles on Etna
+  creators:
+  - Matthew Arnold
+  sort_year: 1852
+  date_label: '1852'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Sand and Foam
+  creators:
+  - Kahlil Gibran
+  sort_year: 1926
+  date_label: '1926'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Euclid Alone Has Looked On Beauty Bare
+  creators:
+  - Edna St. Vincent Millay
+  sort_year: 1922
+  date_label: '1922'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Tales of My Landlord
+  creators:
+  - Walter Scott
+  sort_year: 1816
+  date_label: 1816-1832
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: Cinderella
+  creators:
+  - European fairy-tale tradition
+  sort_year: 1697
+  date_label: fairy-tale tradition; Perrault print version 1697
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate creator correction batch.
+- title: A Dissertation Upon Roast Pig
+  creators:
+  - Charles Lamb
+  sort_year: 1822
+  date_label: '1822'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The True-Born Englishman
+  creators:
+  - Daniel Defoe
+  sort_year: 1701
+  date_label: '1701'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: My Dungeon Shook
+  creators:
+  - James Baldwin
+  sort_year: 1963
+  date_label: '1963'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Life is Elsewhere
+  creators:
+  - Milan Kundera
+  sort_year: 1973
+  date_label: '1973'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: The Five-Forty-Eight
+  creators:
+  - John Cheever
+  sort_year: 1954
+  date_label: '1954'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: Blindness and Insight
+  creators:
+  - Paul de Man
+  sort_year: 1971
+  date_label: '1971'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Fire Down Below
+  creators:
+  - William Golding
+  sort_year: 1989
+  date_label: '1989'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: The Girl from Samos
+  creators:
+  - Menander
+  sort_year: -316
+  date_label: c. 316 BCE
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology batch.
+- title: The Danger of a Single Story
+  creators:
+  - Chimamanda Ngozi Adichie
+  sort_year: 2009
+  date_label: '2009'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Money
+  creators:
+  - Martin Amis
+  sort_year: 1984
+  date_label: '1984'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: The Servant of Two Masters
+  creators:
+  - Carlo Goldoni
+  sort_year: 1746
+  date_label: '1746'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: Hymn to the Pillory
+  creators:
+  - Daniel Defoe
+  sort_year: 1703
+  date_label: '1703'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: Aghwee the Sky Monster
+  creators:
+  - Kenzaburo Oe
+  sort_year: 1964
+  date_label: '1964'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: I Hear America Singing
+  creators:
+  - Walt Whitman
+  sort_year: 1860
+  date_label: '1860'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Adulterous Woman
+  creators:
+  - Albert Camus
+  sort_year: 1957
+  date_label: '1957'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: The Litanies of Satan
+  creators:
+  - Charles Baudelaire
+  sort_year: 1857
+  date_label: '1857'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Goodbye to Berlin
+  creators:
+  - Christopher Isherwood
+  sort_year: 1939
+  date_label: '1939'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Voyages
+  creators:
+  - Hart Crane
+  sort_year: 1926
+  date_label: 1923-1926
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: Auguries of Innocence
+  creators:
+  - William Blake
+  sort_year: 1803
+  date_label: c. 1803; published 1863
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology batch.
+- title: The Dream of a Ridiculous Man
+  creators:
+  - Fyodor Dostoevsky
+  sort_year: 1877
+  date_label: '1877'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Lotte in Weimar
+  creators:
+  - Thomas Mann
+  sort_year: 1939
+  date_label: '1939'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Hadji Murad
+  creators:
+  - Leo Tolstoy
+  sort_year: 1912
+  date_label: '1912'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: The Dream of Rhonabwy
+  creators:
+  - Medieval Welsh prose tradition
+  sort_year: 1200
+  date_label: medieval Welsh manuscript tradition
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: The Kraken
+  creators:
+  - Alfred, Lord Tennyson
+  sort_year: 1830
+  date_label: '1830'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Awful Rowing Toward God
+  creators:
+  - Anne Sexton
+  sort_year: 1975
+  date_label: '1975'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Paradise
+  creators:
+  - Toni Morrison
+  sort_year: 1998
+  date_label: '1998'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: La Comedie Humaine
+  creators:
+  - Honoré de Balzac
+  sort_year: 1829
+  date_label: 1829-1848
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: Homage to Sextus Propertius
+  creators:
+  - Ezra Pound
+  sort_year: 1919
+  date_label: '1919'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Evidence of Things Not Seen
+  creators:
+  - James Baldwin
+  sort_year: 1985
+  date_label: '1985'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Trilogy of Desire
+  creators:
+  - Theodore Dreiser
+  sort_year: 1912
+  date_label: 1912-1914
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: Women of Trachis
+  creators:
+  - Sophocles
+  sort_year: -450
+  date_label: c. 5th century BCE
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate creator correction batch.
+- title: Blood and Sand
+  creators:
+  - Vicente Blasco Ibanez
+  sort_year: 1908
+  date_label: '1908'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: A Retrieved Reformation
+  creators:
+  - O. Henry
+  sort_year: 1903
+  date_label: '1903'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: The Three Apples
+  creators:
+  - One Thousand and One Nights story-cycle tradition
+  sort_year: 1704
+  date_label: medieval story-cycle; Galland print tradition 1704-1717
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: The Comedian as the Letter C
+  creators:
+  - Wallace Stevens
+  sort_year: 1923
+  date_label: '1923'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: The Life of Samuel Johnson
+  creators:
+  - James Boswell
+  sort_year: 1791
+  date_label: '1791'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Rain
+  creators:
+  - W. Somerset Maugham
+  sort_year: 1921
+  date_label: '1921'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Divinity School Address
+  creators:
+  - Ralph Waldo Emerson
+  sort_year: 1838
+  date_label: '1838'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Roman de Brut
+  creators:
+  - Wace
+  sort_year: 1155
+  date_label: '1155'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate creator correction batch.
+- title: Surprised by Joy
+  creators:
+  - C. S. Lewis
+  sort_year: 1955
+  date_label: '1955'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: West-Eastern Divan
+  creators:
+  - Johann Wolfgang von Goethe
+  sort_year: 1819
+  date_label: '1819'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Quiet Night Thoughts
+  creators:
+  - Li Bai
+  sort_year: 726
+  date_label: 8th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: The Man with the Blue Guitar
+  creators:
+  - Wallace Stevens
+  sort_year: 1937
+  date_label: '1937'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: Curse of the Starving Class
+  creators:
+  - Sam Shepard
+  sort_year: 1977
+  date_label: '1977'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology batch.
+- title: Black Woman
+  creators:
+  - Leopold Sedar Senghor
+  sort_year: 1945
+  date_label: c. 1945
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology batch.
+- title: The Four Ages of Man
+  creators:
+  - Anne Bradstreet
+  sort_year: 1650
+  date_label: '1650'
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology batch.
+- title: Parable of the Good Samaritan
+  creators:
+  - Gospel of Luke tradition
+  sort_year: 80
+  date_label: 1st century CE
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch; cross-list with religion later.
+- title: Eagle or Sun
+  creators:
+  - Octavio Paz
+  sort_year: 1951
+  date_label: '1951'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The House on the Hill
+  creators:
+  - Edwin Arlington Robinson
+  sort_year: 1897
+  date_label: '1897'
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: Beyond the Alps
+  creators:
+  - Robert Lowell
+  sort_year: 1959
+  date_label: '1959'
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: My Own Life
+  creators:
+  - David Hume
+  sort_year: 1776
+  date_label: '1776'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Old People
+  creators:
+  - William Faulkner
+  sort_year: 1942
+  date_label: '1942'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Battle of the Trees
+  creators:
+  - Medieval Welsh poetic tradition
+  sort_year: 1300
+  date_label: medieval Welsh poem; Book of Taliesin manuscript tradition
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: A Large Tuna in the Market
+  creators:
+  - Pablo Neruda
+  sort_year: 1954
+  date_label: c. 1954
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: The Four Branches
+  creators:
+  - Medieval Welsh narrative tradition
+  sort_year: 1100
+  date_label: 11th-12th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate chronology/creator batch.
+- title: The Black Monk
+  creators:
+  - Anton Chekhov
+  sort_year: 1894
+  date_label: '1894'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Growing Stone
+  creators:
+  - Albert Camus
+  sort_year: 1957
+  date_label: '1957'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Banana Trilogy
+  creators:
+  - Miguel Angel Asturias
+  sort_year: 1950
+  date_label: 1950-1960
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: Our America
+  creators:
+  - Jose Marti
+  sort_year: 1891
+  date_label: '1891'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate chronology/creator batch.
+- title: The Fig Tree (Ngugi wa Thiong'o)
+  creators:
+  - Ngugi wa Thiong'o
+  sort_year: 1960
+  date_label: early 1960s
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate title-collision split target.
+- title: The Fig Tree (V. S. Pritchett)
+  creators:
+  - V. S. Pritchett
+  sort_year: 1979
+  date_label: '1979'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate title-collision split target.
+- title: The Heart of a Woman (Georgia Douglas Johnson)
+  creators:
+  - Georgia Douglas Johnson
+  sort_year: 1918
+  date_label: c. 1918
+  source: codex_manual_metadata_correction
+  confidence: medium
+  notes: Release-gate title-collision split target.
+- title: The Heart of a Woman (Maya Angelou)
+  creators:
+  - Maya Angelou
+  sort_year: 1981
+  date_label: '1981'
+  source: codex_manual_metadata_correction
+  confidence: high
+  notes: Release-gate title-collision split target.

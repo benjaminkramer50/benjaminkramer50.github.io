@@ -23745,3 +23745,430 @@ decisions:
   review_status: merged_duplicate_title_variant
   source: codex_release_gate_alias_batch
   notes: Merge truncated title evidence into the Georgian epic row.
+- canonical_title: Confessions
+  normalized_title: confessions
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_release_gate_split_batch
+  notes: Evidence mixes Augustine, Rousseau, Thomas Mann, and generic confession references; route only context-matched observations.
+  split_into:
+  - title: Confessions (Augustine)
+    match_any:
+    - Augustine
+    - Hippo
+    - Saint Augustine
+    - St. Augustine
+    - Ambrose
+    - Monica
+    - Manichaeism
+  - title: Confessions (Rousseau)
+    match_any:
+    - Rousseau
+    - Jean-Jacques
+    - Social Contract
+    - Emile
+    - noble savage
+    - Savoyard
+  - title: Confessions of Felix Krull
+    match_any:
+    - Thomas Mann
+    - Felix Krull
+    - Confidence Man
+- canonical_title: Jerusalem
+  normalized_title: jerusalem
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_release_gate_split_batch
+  notes: Evidence mixes Blake's poem/prophetic book, scripture/city references, Mendelssohn, and other works; route only context-matched Blake observations.
+  split_into:
+  - title: Jerusalem (William Blake)
+    match_any:
+    - William Blake
+    - Blake
+    - Milton: a Poem
+    - Chariot of fire
+    - England's pleasant
+    - Albion
+    - Los
+- canonical_title: The Storyteller
+  normalized_title: the storyteller
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_release_gate_split_batch
+  notes: Evidence mixes Vargas Llosa's novel, Walter Benjamin's essay, and Saki story clues.
+  split_into:
+  - title: The Storyteller (Mario Vargas Llosa)
+    match_any:
+    - Vargas Llosa
+    - Saul Zuratas
+    - Machiguenga
+    - Aunt Julia
+    - The Perpetual Orgy
+  - title: The Storyteller (Walter Benjamin)
+    match_any:
+    - Walter Benjamin
+    - Benjamin
+    - aura
+    - Proust
+    - Theses on the Philosophy of History
+  - title: The Storyteller (Saki)
+    match_any:
+    - Saki
+    - bachelor
+    - Bertha
+- canonical_title: Life on Mars
+  normalized_title: life on mars
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_release_gate_split_batch
+  notes: Evidence mixes the Tracy K. Smith poetry collection with David Bowie music references; route only context-matched poetry observations.
+  split_into:
+  - title: Life on Mars (Tracy K. Smith)
+    match_any:
+    - Tracy K. Smith
+    - Tracy Smith
+    - U. S. poet laureate
+    - US poet laureate
+    - My God, It's Full of Stars
+    - Duende
+- canonical_title: The Saddest Story
+  normalized_title: the saddest story
+  decision: alias
+  alias_of: The Good Soldier
+  reason: original_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge Ford Madox Ford's original title evidence into The Good Soldier.
+- canonical_title: Refusal to Mourn the Death
+  normalized_title: refusal to mourn the death
+  decision: alias
+  alias_of: A Refusal to Mourn the Death, by Fire, of a Child in London
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge truncated Dylan Thomas title into the full poem title.
+- canonical_title: Se una notte d'inverno un viaggiatore
+  normalized_title: se una notte dinverno un viaggiatore
+  decision: alias
+  alias_of: If on a winter’s night a traveler
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge Italian original title evidence into the canonical Calvino row.
+- canonical_title: If on a Winter's Night a Traveller
+  normalized_title: if on a winters night a traveller
+  decision: alias
+  alias_of: If on a winter’s night a traveler
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge spelling/title variant into the canonical Calvino row.
+- canonical_title: If on a Winter
+  normalized_title: if on a winter
+  decision: alias
+  alias_of: If on a winter’s night a traveler
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge truncated Calvino title evidence into the full novel title.
+- canonical_title: The Lady of Shallott
+  normalized_title: the lady of shallott
+  decision: alias
+  alias_of: The Lady of Shalott
+  reason: misspelled_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge misspelled Tennyson title into the canonical poem row.
+- canonical_title: The House on Eccles Street
+  normalized_title: the house on eccles street
+  decision: reject
+  reason: embedded_fictional_work_not_standalone_public_literature
+  review_status: rejected_embedded_fictional_work_not_standalone_public_literature
+  source: codex_release_gate_boundary_batch
+  notes: Corpus evidence points to Elizabeth Costello's fictional embedded novel inside Coetzee, not a standalone public reading-list work.
+- canonical_title: Killing an Arab
+  normalized_title: killing an arab
+  decision: reject
+  reason: song_inspired_by_literature_not_literary_work
+  review_status: rejected_song_inspired_by_literature_not_literary_work
+  source: codex_release_gate_boundary_batch
+  notes: Corpus evidence identifies The Cure's song inspired by The Stranger; keep the song out of the literature list.
+- canonical_title: John
+  normalized_title: john
+  decision: reject
+  reason: ambiguous_person_scripture_music_fragment_not_work
+  review_status: rejected_ambiguous_person_scripture_music_fragment_not_work
+  source: codex_release_gate_boundary_batch
+  notes: Corpus evidence mixes a gospel shorthand, character references, and music clues; not a stable standalone literary work title.
+- canonical_title: reasonable equivalents
+  normalized_title: reasonable equivalents
+  decision: reject
+  reason: answerline_instruction_parser_artifact
+  review_status: rejected_answerline_instruction_parser_artifact
+  source: codex_release_gate_boundary_batch
+  notes: Parser artifact from answerline instructions, not a literary work.
+- canonical_title: Two Minutes Hate
+  normalized_title: two minutes hate
+  decision: reject
+  reason: embedded_motif_not_standalone_work
+  review_status: rejected_embedded_motif_not_standalone_work
+  source: codex_release_gate_boundary_batch
+  notes: Fictional ritual/motif in Nineteen Eighty-Four, not a standalone literary work.
+- canonical_title: Who is John Galt
+  normalized_title: who is john galt
+  decision: reject
+  reason: quotation_or_motif_not_standalone_work
+  review_status: rejected_quotation_or_motif_not_standalone_work
+  source: codex_release_gate_boundary_batch
+  notes: Recurring line/motif from Atlas Shrugged, not a standalone literary work.
+- canonical_title: Who is Sylvia
+  normalized_title: who is sylvia
+  decision: reject
+  reason: song_or_subtitle_title_collision_not_standalone_public_work
+  review_status: rejected_song_or_subtitle_title_collision_not_standalone_public_work
+  source: codex_release_gate_boundary_batch
+  notes: Evidence mixes Shakespeare song, Albee subtitle, and other contexts; not stable as a standalone public reading-list row.
+- canonical_title: Friends of the ABC
+  normalized_title: friends of the abc
+  decision: reject
+  reason: fictional_group_not_work
+  review_status: rejected_fictional_group_not_work
+  source: codex_release_gate_boundary_batch
+  notes: Fictional group in Les Miserables, not a standalone literary work.
+- canonical_title: Whole Sick Crew
+  normalized_title: whole sick crew
+  decision: reject
+  reason: fictional_group_not_work
+  review_status: rejected_fictional_group_not_work
+  source: codex_release_gate_boundary_batch
+  notes: Fictional group in Pynchon context, not a standalone literary work.
+- canonical_title: Beasts of England
+  normalized_title: beasts of england
+  decision: reject
+  reason: embedded_fictional_song_not_standalone_public_work
+  review_status: rejected_embedded_fictional_song_not_standalone_public_work
+  source: codex_release_gate_boundary_batch
+  notes: Embedded song in Animal Farm, not a standalone public reading-list work.
+- canonical_title: Chiron and Demetrius
+  normalized_title: chiron and demetrius
+  decision: reject
+  reason: character_pair_not_work
+  review_status: rejected_character_pair_not_work
+  source: codex_release_gate_boundary_batch
+  notes: Character pair from Titus Andronicus, not a literary work title.
+- canonical_title: Little Shirley Beans
+  normalized_title: little shirley beans
+  decision: reject
+  reason: embedded_song_not_standalone_literary_work
+  review_status: rejected_embedded_song_not_standalone_literary_work
+  source: codex_release_gate_boundary_batch
+  notes: Song title embedded in The Catcher in the Rye clues, not a standalone literary work for this list.
+- canonical_title: Outside the Town of Malbork
+  normalized_title: outside the town of malbork
+  decision: reject
+  reason: chapter_or_incipit_not_standalone_public_work
+  review_status: rejected_chapter_or_incipit_not_standalone_public_work
+  source: codex_release_gate_boundary_batch
+  notes: Incipit/chapter title inside If on a winter's night a traveler; keep the parent novel row.
+- canonical_title: A Peep at Polynesian Life
+  normalized_title: a peep at polynesian life
+  decision: alias
+  alias_of: Typee
+  reason: subtitle_variant_for_typee
+  review_status: merged_subtitle_variant_to_parent_work
+  source: codex_release_gate_final_cleanup
+  notes: Subtitle of Melville's Typee, not a separate public reading-list row.
+- canonical_title: A Play for Voices
+  normalized_title: a play for voices
+  decision: alias
+  alias_of: Under Milk Wood
+  reason: subtitle_variant_for_under_milk_wood
+  review_status: merged_subtitle_variant_to_parent_work
+  source: codex_release_gate_final_cleanup
+  notes: Subtitle of Dylan Thomas's Under Milk Wood, not a separate public reading-list row.
+- canonical_title: The Golden One
+  normalized_title: the golden one
+  decision: reject
+  reason: character_name_not_standalone_work
+  review_status: rejected_character_name_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Character name in Rand's Anthem; keep the parent novella row.
+- canonical_title: Church Without Christ
+  normalized_title: church without christ
+  decision: reject
+  reason: fictional_religious_movement_not_work
+  review_status: rejected_embedded_motif_not_standalone_work
+  source: codex_release_gate_final_cleanup
+  notes: Fictional church/movement in Wise Blood, not a standalone literary work.
+- canonical_title: Stars of Destiny
+  normalized_title: stars of destiny
+  decision: reject
+  reason: character_group_not_work
+  review_status: rejected_character_group_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Name for the 108 bandits in Water Margin, not a standalone literary work.
+- canonical_title: A World Without Collisions
+  normalized_title: a world without collisions
+  decision: reject
+  reason: embedded_student_essay_title_not_public_work
+  review_status: rejected_embedded_or_fictional_work
+  source: codex_release_gate_final_cleanup
+  notes: Embedded essay idea inside Master Harold...and the Boys, not a public literary work.
+- canonical_title: Spirit of Evil
+  normalized_title: spirit of evil
+  decision: reject
+  reason: character_or_figure_not_work
+  review_status: rejected_character_or_figure_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Figure in Gimpel the Fool clues, not a standalone literary title.
+- canonical_title: Dance of the Lost Traveller
+  normalized_title: dance of the lost traveller
+  decision: reject
+  reason: embedded_scene_not_standalone_work
+  review_status: rejected_embedded_scene_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Dance/scene inside The Lion and the Jewel, not a separate public reading-list row.
+- canonical_title: Must We Mean What We Say
+  normalized_title: must we mean what we say
+  decision: reject
+  reason: philosophy_and_literary_criticism_domain
+  review_status: rejected_philosophy_literary_criticism_domain
+  source: codex_release_gate_final_cleanup
+  notes: Stanley Cavell essay collection belongs in a philosophy/criticism product, not the primary literature reading list.
+- canonical_title: I SAW YOU
+  normalized_title: i saw you
+  decision: reject
+  reason: embedded_sign_text_not_work
+  review_status: rejected_embedded_text_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Sign text in a Cosmicomics story, not a standalone literary work title.
+- canonical_title: Beware! Beware
+  normalized_title: beware beware
+  decision: reject
+  reason: quoted_line_not_work_title
+  review_status: rejected_quoted_line_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Line from Kubla Khan evidence, not a separate poem title.
+- canonical_title: View of Life
+  normalized_title: view of life
+  decision: reject
+  reason: science_column_fragment_not_literary_work
+  review_status: rejected_science_domain_fragment
+  source: codex_release_gate_final_cleanup
+  notes: Corpus evidence is dominated by Stephen Jay Gould's science column/book context.
+- canonical_title: Brotherhood of Man
+  normalized_title: brotherhood of man
+  decision: reject
+  reason: fictional_organization_or_slogan_not_work
+  review_status: rejected_fictional_group_or_slogan_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Phrase/group in The Iron Heel clues, not a standalone literary work.
+- canonical_title: The Blood of the Lamb
+  normalized_title: the blood of the lamb
+  decision: reject
+  reason: hymn_tune_not_literary_work
+  review_status: rejected_music_or_hymn_context
+  source: codex_release_gate_final_cleanup
+  notes: Hymn/tune referenced by Vachel Lindsay clues, not a literature-list work.
+- canonical_title: Gas! GAS
+  normalized_title: gas gas
+  decision: reject
+  reason: quoted_line_not_work_title
+  review_status: rejected_quoted_line_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Quoted exclamation from Dulce et Decorum Est, not a standalone poem title.
+- canonical_title: Greek New Comedy
+  normalized_title: greek new comedy
+  decision: reject
+  reason: genre_label_not_work
+  review_status: rejected_genre_label_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Genre label for Menander and contemporaries, not a specific literary work.
+- canonical_title: Person of Consequence
+  normalized_title: person of consequence
+  decision: reject
+  reason: character_or_role_not_work
+  review_status: rejected_character_or_role_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Role/figure in The Overcoat clues, not a standalone literary work.
+- canonical_title: Island of Despair
+  normalized_title: island of despair
+  decision: reject
+  reason: fictional_setting_not_work
+  review_status: rejected_fictional_setting_not_work
+  source: codex_release_gate_final_cleanup
+  notes: Setting in Robinson Crusoe clues, not a standalone literary work.
+- canonical_title: The Fig Tree
+  normalized_title: the fig tree
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_release_gate_final_cleanup
+  notes: Evidence mixes Ngugi and V. S. Pritchett short-story contexts.
+  split_into:
+  - title: The Fig Tree (Ngugi wa Thiong'o)
+    match_any:
+    - Ngugi
+    - Mukami
+    - Nyokabi
+    - The Return
+    - Decolonising the Mind
+    - A Grain of Wheat
+    - Petals of Blood
+  - title: The Fig Tree (V. S. Pritchett)
+    match_any:
+    - V. S. Pritchett
+    - Pritchett
+    - On the Edge of the Cliff
+    - bookkeeper
+    - business assistant
+- canonical_title: The Fig Tree (Ngugi wa Thiong'o)
+  normalized_title: the fig tree ngugi wa thiong o
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_release_gate_final_cleanup
+- canonical_title: The Fig Tree (V. S. Pritchett)
+  normalized_title: the fig tree v s pritchett
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_release_gate_final_cleanup
+- canonical_title: The Heart of a Woman
+  normalized_title: the heart of a woman
+  decision: split
+  reason: title_collision_requires_author_aware_split
+  review_status: needs_review_title_collision_requires_author_aware_split
+  source: codex_release_gate_final_cleanup
+  notes: Evidence mixes Georgia Douglas Johnson's poem and Maya Angelou's autobiography.
+  split_into:
+  - title: The Heart of a Woman (Georgia Douglas Johnson)
+    match_any:
+    - Georgia Douglas Johnson
+    - sheltering bars
+    - breaks, breaks, breaks
+    - Bronze
+    - Harlem Renaissance
+  - title: The Heart of a Woman (Maya Angelou)
+    match_any:
+    - Maya Angelou
+    - Caged Bird
+    - Singin' and Swingin'
+    - Oprah
+    - autobiography
+- canonical_title: The Heart of a Woman (Georgia Douglas Johnson)
+  normalized_title: the heart of a woman georgia douglas johnson
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_release_gate_final_cleanup
+- canonical_title: The Heart of a Woman (Maya Angelou)
+  normalized_title: the heart of a woman maya angelou
+  decision: accept
+  reason: author_aware_split_target_literary_work
+  review_status: accepted_likely_work
+  source: codex_release_gate_final_cleanup
