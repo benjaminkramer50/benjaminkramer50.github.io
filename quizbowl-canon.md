@@ -9,8 +9,13 @@ wide: true
 {% assign qb_items = site.data.quizbowl_literature_canon %}
 {% assign qb_core = qb_items | where: "tier", "qb_core" %}
 {% assign qb_major = qb_items | where: "tier", "qb_major" %}
-{% assign qb_contextual = qb_items | where: "tier", "qb_contextual" %}
 {% assign qb_accepted = qb_items | where: "review_status", "accepted_likely_work" %}
+{% assign qb_path_count = 0 %}
+{% for item in qb_items %}
+  {% if item.review_status == "accepted_likely_work" and item.chronology_source != "unknown" and item.chronology_needs_review != true and item.creator_source != "unknown" and item.creator_source != "quizbowl_author_answerline" %}
+    {% assign qb_path_count = qb_path_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
 
 <section class="quizbowl-canon-hero" aria-label="Literature canon reading list overview">
   <p class="quizbowl-kicker">Academic Literature Canon</p>
@@ -19,6 +24,10 @@ wide: true
 </section>
 
 <div class="canon-summary quizbowl-summary" aria-label="Quizbowl canon summary">
+  <div class="canon-stat canon-stat-accepted">
+    <span class="canon-stat-number">{{ qb_path_count }}</span>
+    <span class="canon-stat-label">Reading Path</span>
+  </div>
   <div class="canon-stat canon-stat-accepted">
     <span class="canon-stat-number">{{ qb_accepted.size }}</span>
     <span class="canon-stat-label">Works</span>
@@ -31,10 +40,12 @@ wide: true
     <span class="canon-stat-number">{{ qb_major.size }}</span>
     <span class="canon-stat-label">Major</span>
   </div>
-  <div class="canon-stat canon-stat-planned">
-    <span class="canon-stat-number">{{ qb_contextual.size }}</span>
-    <span class="canon-stat-label">Further Reading</span>
-  </div>
+</div>
+
+<div class="quizbowl-view-tabs" aria-label="Reading-list views">
+  <button class="quizbowl-filter-button" type="button" data-view-button="path" aria-pressed="true">Reading Path</button>
+  <button class="quizbowl-filter-button" type="button" data-view-button="all" aria-pressed="false">All Works</button>
+  <button class="quizbowl-filter-button" type="button" data-view-button="unplaced" aria-pressed="false">Unplaced</button>
 </div>
 
 <div class="quizbowl-quick-filters" aria-label="Quick canon-strength filters">
@@ -250,6 +261,8 @@ wide: true
   var pageButtons = Array.prototype.slice.call(document.querySelectorAll('[data-page-action]'));
   var pageStatuses = Array.prototype.slice.call(document.querySelectorAll('[data-page-status]'));
   var tierButtons = Array.prototype.slice.call(document.querySelectorAll('[data-tier-button]'));
+  var viewButtons = Array.prototype.slice.call(document.querySelectorAll('[data-view-button]'));
+  var currentView = 'path';
 
   var eraOrder = {
     ancient_classical: 10,
@@ -508,6 +521,8 @@ wide: true
       item.chronology_label,
       item.chronology_source,
       item.chronology_confidence,
+      item.creator_ready ? 'creator ready' : 'creator review',
+      item.chronology_ready ? 'chronology ready' : 'unplaced chronology',
       item.reading_unit,
       item.era,
       item.region_or_tradition,
@@ -524,6 +539,8 @@ wide: true
   function matches(item) {
     var search = selectedValue(searchInput).toLowerCase().trim();
 
+    if (currentView === 'path' && !item.default_reading_path) return false;
+    if (currentView === 'unplaced' && item.chronology_source !== 'unknown') return false;
     if (selectedValue(tierFilter) && item.tier !== selectedValue(tierFilter)) return false;
     if (selectedValue(formFilter) && item.work_form !== selectedValue(formFilter)) return false;
     if (selectedValue(evidenceFilter) && item.evidence_profile !== selectedValue(evidenceFilter)) return false;
@@ -571,6 +588,12 @@ wide: true
     var selectedTier = selectedValue(tierFilter);
     tierButtons.forEach(function (button) {
       button.setAttribute('aria-pressed', button.getAttribute('data-tier-button') === selectedTier ? 'true' : 'false');
+    });
+  }
+
+  function syncViewButtons() {
+    viewButtons.forEach(function (button) {
+      button.setAttribute('aria-pressed', button.getAttribute('data-view-button') === currentView ? 'true' : 'false');
     });
   }
 
@@ -665,7 +688,8 @@ wide: true
     if (visibleCount) {
       var startLabel = filteredItems.length ? start + 1 : 0;
       var endLabel = Math.min(start + size, filteredItems.length);
-      visibleCount.textContent = 'Showing ' + startLabel + '-' + endLabel + ' of ' + filteredItems.length + ' works';
+      var viewLabel = currentView === 'path' ? 'reading-path works' : currentView === 'unplaced' ? 'unplaced works' : 'works';
+      visibleCount.textContent = 'Showing ' + startLabel + '-' + endLabel + ' of ' + filteredItems.length + ' ' + viewLabel;
     }
     if (noResults) noResults.hidden = filteredItems.length !== 0;
     renderPagination();
@@ -675,6 +699,7 @@ wide: true
     filteredItems = items.filter(matches).sort(compareItems);
     currentPage = 1;
     syncTierButtons();
+    syncViewButtons();
     render();
   }
 
@@ -691,6 +716,12 @@ wide: true
     button.addEventListener('click', function () {
       if (!tierFilter) return;
       tierFilter.value = button.getAttribute('data-tier-button') || '';
+      applyFilters();
+    });
+  });
+  viewButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      currentView = button.getAttribute('data-view-button') || 'path';
       applyFilters();
     });
   });
@@ -711,11 +742,13 @@ wide: true
     .then(function (data) {
       items = data.map(function (item) {
         attachBookLog(item);
+        item.creator_ready = !!item.creator_ready;
+        item.chronology_ready = !!item.chronology_ready;
+        item.default_reading_path = !!item.default_reading_path;
         item.searchText = buildSearchText(item);
         return item;
       });
-      filteredItems = items.slice().sort(compareItems);
-      render();
+      applyFilters();
     })
     .catch(setLoadingError);
 })();

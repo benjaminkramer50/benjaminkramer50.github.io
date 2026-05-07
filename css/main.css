@@ -1105,6 +1105,13 @@ body {
   margin: 0 0 0.8rem;
 }
 
+.quizbowl-view-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.65rem;
+}
+
 .quizbowl-filter-button,
 .quizbowl-page-btn {
   min-height: 2.1rem;

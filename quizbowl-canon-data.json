@@ -2,4 +2,21 @@
 layout: null
 permalink: /quizbowl-canon-data.json
 ---
-[{% for item in site.data.quizbowl_literature_canon %}{% assign first_example = item.examples | first %}{"id":{{ item.id | jsonify }},"rank":{{ item.rank | jsonify }},"title":{{ item.title | jsonify }},"creators":{{ item.creators | jsonify }},"creator_source":{{ item.creator_source | jsonify }},"creator_confidence":{{ item.creator_confidence | jsonify }},"tier":{{ item.tier | jsonify }},"quizbowl_salience_score":{{ item.quizbowl_salience_score | jsonify }},"total_question_count":{{ item.total_question_count | jsonify }},"distinct_set_count":{{ item.distinct_set_count | jsonify }},"first_year":{{ item.first_year | jsonify }},"last_year":{{ item.last_year | jsonify }},"tossup_count":{{ item.tossup_count | jsonify }},"bonus_count":{{ item.bonus_count | jsonify }},"work_form":{{ item.work_form | jsonify }},"evidence_profile":{{ item.evidence_profile | jsonify }},"dominant_quizbowl_track":{{ item.dominant_quizbowl_track | jsonify }},"quizbowl_track_profile":{{ item.quizbowl_track_profile | jsonify }},"routing_status":{{ item.routing_status | jsonify }},"era":{{ item.era | jsonify }},"region_or_tradition":{{ item.region_or_tradition | jsonify }},"reading_unit":{{ item.reading_unit | jsonify }},"chronology_sort_year":{{ item.chronology_sort_year | jsonify }},"chronology_label":{{ item.chronology_label | jsonify }},"chronology_source":{{ item.chronology_source | jsonify }},"chronology_confidence":{{ item.chronology_confidence | jsonify }},"chronology_needs_review":{{ item.chronology_needs_review | jsonify }},"example":{% if first_example %}{"set_title":{{ first_example.set_title | jsonify }},"year":{{ first_example.year | jsonify }},"snippet":{{ first_example.snippet | truncate: 180 | jsonify }}}{% else %}null{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}]
+[
+{% for item in site.data.quizbowl_literature_canon %}
+{% assign first_example = item.examples | first %}
+{% assign creator_ready = false %}
+{% if item.creator_source != "unknown" and item.creator_source != "quizbowl_author_answerline" and item.creators.size > 0 %}
+  {% assign creator_ready = true %}
+{% endif %}
+{% assign chronology_ready = false %}
+{% if item.chronology_source != "unknown" and item.chronology_needs_review != true %}
+  {% assign chronology_ready = true %}
+{% endif %}
+{% assign default_reading_path = false %}
+{% if item.review_status == "accepted_likely_work" and creator_ready and chronology_ready %}
+  {% assign default_reading_path = true %}
+{% endif %}
+{"id":{{ item.id | jsonify }},"rank":{{ item.rank | jsonify }},"title":{{ item.title | jsonify }},"creators":{{ item.creators | jsonify }},"creator_source":{{ item.creator_source | jsonify }},"creator_confidence":{{ item.creator_confidence | jsonify }},"creator_ready":{{ creator_ready | jsonify }},"chronology_ready":{{ chronology_ready | jsonify }},"default_reading_path":{{ default_reading_path | jsonify }},"review_status":{{ item.review_status | jsonify }},"tier":{{ item.tier | jsonify }},"quizbowl_salience_score":{{ item.quizbowl_salience_score | jsonify }},"total_question_count":{{ item.total_question_count | jsonify }},"distinct_set_count":{{ item.distinct_set_count | jsonify }},"first_year":{{ item.first_year | jsonify }},"last_year":{{ item.last_year | jsonify }},"tossup_count":{{ item.tossup_count | jsonify }},"bonus_count":{{ item.bonus_count | jsonify }},"work_form":{{ item.work_form | jsonify }},"evidence_profile":{{ item.evidence_profile | jsonify }},"dominant_quizbowl_track":{{ item.dominant_quizbowl_track | jsonify }},"quizbowl_track_profile":{{ item.quizbowl_track_profile | jsonify }},"routing_status":{{ item.routing_status | jsonify }},"era":{{ item.era | jsonify }},"region_or_tradition":{{ item.region_or_tradition | jsonify }},"reading_unit":{{ item.reading_unit | jsonify }},"chronology_sort_year":{{ item.chronology_sort_year | jsonify }},"chronology_label":{{ item.chronology_label | jsonify }},"chronology_source":{{ item.chronology_source | jsonify }},"chronology_confidence":{{ item.chronology_confidence | jsonify }},"chronology_needs_review":{{ item.chronology_needs_review | jsonify }},"example":{% if first_example %}{"set_title":{{ first_example.set_title | jsonify }},"year":{{ first_example.year | jsonify }},"snippet":{{ first_example.snippet | truncate: 180 | jsonify }}}{% else %}null{% endif %}}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

@@ -70,6 +70,12 @@ Create a parallel build area:
 - `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_method_report.md`
 - `_planning/quizbowl_lit_canon/quizbowl_lit_wikidata_candidates.tsv`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_release_gates.md`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_release_gate_summary.json`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_release_queue.tsv`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_creator_risk.tsv`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_duplicate_risk.tsv`
+- `_planning/quizbowl_lit_canon/quizbowl_lit_boundary_risk.tsv`
 - `_data/quizbowl_literature_canon.yml`
 - `_data/quizbowl_literature_metadata_overrides.yml`
 
@@ -101,11 +107,12 @@ Current metadata checkpoint:
 - Public rows: `4997` (`1030` core, `1455` major, `2512` contextual).
 - Creator coverage: `3526 / 4997`.
 - Chronology coverage: `2744 / 4997` public rows have non-`Unplaced` chronology (`46` reviewed canon records, `19` title overrides, `2196` Wikidata overlay rows, `483` manual metadata corrections).
-- Default-path candidate coverage: `2717 / 4997` rows currently have both creator and chronology.
+- Default-path coverage: `2682 / 4997` rows currently have non-noisy creator metadata and chronology.
 - Remaining chronology backlog: `2253` public rows marked `Unplaced`.
 - High-salience unresolved gates: `6` rows at rank `<=1000`, `304` rows with `total_question_count >= 40`, and `457` `qb_major` rows still need resolution by date, merge, rejection, routing, or explicit boundary disposition.
 - Known constraint: Wikidata is metadata support, not inclusion evidence; quizbowl raw answerlines/clues remain the only inclusion signal.
 - Known creator-risk constraint: `527` public rows still use `quizbowl_author_answerline` creator inference. These are not release-quality creators unless separately audited or replaced by manual/Wikidata/reviewed metadata.
+- Current release-gates artifact: `_planning/quizbowl_lit_canon/quizbowl_lit_release_gates.md` defines finite v1 blockers from machine-readable diagnostics. Current gate counts are `527` creator-risk rows, `120` duplicate-risk rows, `147` boundary-risk rows, and `602` mandatory release-queue rows.
 - Current Wikidata pass: the giant metadata sweep attempted `2310` remaining eligible unplaced rows and initially accepted `815` overlays; four read-only audit chunks then removed or corrected false matches, adjacent-domain spillover, version/edition-level items, creator/date errors, and duplicate/original-language title variants before the full corpus rebuild. A D2 retry over the top `600` still-unplaced rows accepted only `25` additional Wikidata overlays, confirming that the remaining backlog is dominated by title collisions, poems without clean Wikidata dates, composite/oral works, noisy creator answerlines, and parser fragments rather than simple search misses.
 - Current D2-D6 backlog artifact: `_planning/quizbowl_lit_canon/quizbowl_lit_metadata_backlog.tsv` ranks all remaining `2253` unplaced public rows by quizbowl salience and buckets them as date-only, creator/date, non-literature context, parser fragment, oral/composite, or creator-audit cases. The cleanup batches lowered the highest unresolved public row from `306` mentions to `69` by dating high-confidence works, merging title variants, and routing ambiguous rows such as `The Book of the Dead`, `The Promised Land`, `Annus Mirabilis`, `The Dark Tower`, `The Rose Garden`, `Oath of the Peach Garden`, `Palm-of-the-Hand`, `Elinor and Marianne`, `Black and Blue`, `Down at the Cross`, `Maggie`, `Battle Royale`, and the `R.U.R.` title family into canonical rows or review.
 - Current cleanup note: shorthand duplicate rows `Tom Sawyer`, `Huckleberry Finn`, and `Huck Finn` now merge into the full Mark Twain titles; Shakuntala transliteration/title variants now merge into `The Recognition of Shakuntala`; article/truncation/original-language variants such as `Life & Times`, `Stopping by Woods`, `of Otranto`, `Astrophel and Stella`, `Der Zauberberg`, `is Just to Say`, `Tonight I Can Write`, `Les Fleurs du`, `Oresteia Trilogy`, `La casa de los espíritus`, `Huis Clos`, `20,000 Leagues Under the Sea`, `Outlaws of the Marsh`, `The Art of Poetry`, `La Vita Nuova`, `The Sketch Book`, `Os Lusiadas`, `En attendant Godot`, `The Modern Prometheus`, `La Peste`, `Der Tod in Venedig`, `I Promessi Sposi`, `Die Räuber`, `Der Sandmann`, `Bodas de sangre`, `Le Petit Prince`, `Voyna i mir`, `L'Etranger`, `La Parure`, `Fin de partie`, `Prestupleniye i nakazaniye`, `Fröken Julie`, `La Chute`, `Les Trois Mousquetaires`, `Il nome della rosa`, `Im Westen nichts Neues`, `Dyadya Vanya`, `The Scottish Play`, `The Lotus-Eaters`, `Song Book`, `L’école des femmes`, `Slaughter-House Five`, `El beso de la mujer araña`, `Como agua para chocolate`, `The Golden Lotus`, `Jekyll and Hyde`, `Daffodils`, `Das Glasperlenspiel`, `Chayka`, `La Nausée`, `The Picture of Dorian Grey`, `Master i Margarita`, and `One Flew Over the Cuckoo` now merge into canonical rows; non-work fragments, author/person rows, characters, reference works, embedded fictional works, movements/categories, films, mythology domains, social-science works, history-domain works, and philosophy rows such as `I do`, `Grover's Corners`, `Blanche DuBois`, `The Horror! The Horror`, `30 points`, `Christopher Marlowe`, `John Milton`, `Edith Wharton`, `Harper LEE`, `O. Henry`, `The Murder of Gonzago`, `Dictionary of the English Language`, `The Tragic Sense of Life`, `the Artful Dodger`, `Janie Crawford`, `Harry Haller`, `Katherine Mansfield`, `Finnish mythology`, `Theater of the Absurd`, `Spanish Golden Age`, `Four Great Classical Novels`, `Equal Rights Amendment`, `Zeno of Elea`, `Bringing Up Baby`, `Throne of Blood`, `Shakespeare in Love`, `The Lonely Crowd`, `Little Father Time`, `Inuit Mythology`, `Person from Porlock`, `Valley of Ashes`, `Self-Taught Man`, `Cide Hamete Benengeli`, `The Mad Trist`, `The Royal Nonesuch`, `Shiva of the Knees`, `Washington Irving's`, `Bonus Questions`, and `The Outline of History` are rejected or routed out; author-aware split routing now separates supported child rows for `North and South`, `Bread and Wine`, `The Lost World`, `The Royal Family`, `Diary of a Madman`, `The Island`, `The Mother`, `Book of Songs`, `Bus Stop`, `Hyperion`, `The Kindly Ones`, and `Phaedra`, while unmatched mixed evidence remains held for review.
@@ -211,7 +218,7 @@ Goal: make the page look like a serious reading-list tool.
 Done when:
 
 - The first screen is not a 5,000-row dump.
-- The default view is a chronology-ready reading path, currently `2717` rows with both creator and date, not the full accepted set.
+- The default view is a chronology-ready reading path, currently `2682` rows with non-noisy creator metadata and date, not the full accepted set.
 - All Accepted and Unplaced are secondary views with clear labels.
 - Users can filter by tier, unit, era, region/tradition, form, and evidence channel.
 - Works display title, creator, date/period, tier, form/unit, and concise evidence context without exposing raw audit clutter.
