@@ -38588,3 +38588,10 @@
   date_label: '1920'
   source: codex_manual_metadata_correction
   confidence: high
+- title: Dred
+  creators:
+  - Harriet Beecher Stowe
+  sort_year: 1856
+  date_label: '1856'
+  source: codex_manual_metadata_correction
+  confidence: high

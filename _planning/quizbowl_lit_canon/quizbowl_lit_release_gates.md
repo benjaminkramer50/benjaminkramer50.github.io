@@ -4,14 +4,14 @@ Generated from `_data/quizbowl_literature_canon.yml`.
 
 ## Counts
 
-- Public accepted rows: `4997`
+- Public accepted rows: `4993`
 - Chronology-ready rows: `2744`
 - Creator-ready rows: `2999`
 - Default reading-path rows: `2682`
-- Creator-risk rows: `527`
-- Duplicate-risk rows: `120`
+- Creator-risk rows: `526`
+- Duplicate-risk rows: `113`
 - Boundary-risk rows: `147`
-- Mandatory release-queue rows: `602`
+- Mandatory release-queue rows: `596`
 
 ## Stop Rule
 
@@ -42,7 +42,6 @@ Do not manually clear the full unplaced backlog for v1. Resolve the mandatory re
 | 351 | 231 | `qb_core` | The Myth of Sisyphus | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 | 357 | 207 | `qb_core` | The Trojan Women | creator_risk | creator | Replace/suppress creator before default release. |
 | 369 | 266 | `qb_core` | Epic of Gilgamesh | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 413 | 158 | `qb_core` | The Tell-Tale Heart | duplicate_title_risk | duplicate | Review duplicate/alias/split first, then rerun gates. |
 | 427 | 180 | `qb_core` | Mourning Becomes Electra | creator_risk | creator | Replace/suppress creator before default release. |
 | 429 | 213 | `qb_core` | The Kreutzer Sonata | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 | 441 | 344 | `qb_core` | Happy Days | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
@@ -51,6 +50,7 @@ Do not manually clear the full unplaced backlog for v1. Resolve the mandatory re
 | 470 | 236 | `qb_core` | The Red Room | creator_risk | creator | Replace/suppress creator before default release. |
 | 490 | 220 | `qb_core` | Marriage a la Mode | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 | 492 | 323 | `qb_core` | Cat and Mouse | creator_risk | creator | Replace/suppress creator before default release. |
+| 497 | 174 | `qb_core` | The Phantom of the Opera | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 
 ## Output Files
 

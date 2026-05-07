@@ -23621,3 +23621,27 @@ decisions:
   reason: author_aware_split_target_literary_work
   review_status: accepted_likely_work
   source: codex_phase_d6_metadata_backlog_cleanup
+- canonical_title: The Tell­Tale Heart
+  decision: alias
+  alias_of: The Tell-Tale Heart
+  reason: soft_hyphen_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_duplicate_cleanup
+- canonical_title: "Pamela: or Virtue Rewarded"
+  decision: alias
+  alias_of: Pamela
+  reason: full_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_duplicate_cleanup
+- canonical_title: "Dred: A Tale of the Great Dismal Swamp"
+  decision: alias
+  alias_of: Dred
+  reason: subtitle_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_duplicate_cleanup
+- canonical_title: "Beowulf: The Monsters and the Critics"
+  decision: alias
+  alias_of: The Monsters and the Critics
+  reason: full_title_variant_for_tolkien_essay
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_duplicate_cleanup

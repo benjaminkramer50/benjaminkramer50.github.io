@@ -190,6 +190,7 @@ def duplicate_risks(rows)
       match = by_normalized[normalize_title(component)]
       next unless match
       next if match["id"] == row["id"]
+      next if protected_duplicate_collision?(row["title"], match["title"])
 
       risks << duplicate_risk_row(row, match, "component_title_match", "Title component already exists as accepted public row.")
     end
@@ -212,9 +213,15 @@ def duplicate_risks(rows)
 end
 
 def protected_article_collision?(title_a, title_b)
+  protected_duplicate_collision?(title_a, title_b)
+end
+
+def protected_duplicate_collision?(title_a, title_b)
   pair = [normalize_title(title_a), normalize_title(title_b)].sort
   [
     ["invisible man", "the invisible man"],
+    ["freedom", "freedom or death"],
+    ["the odyssey", "the odyssey a modern sequel"],
     ["pearl", "the pearl"],
     ["stranger", "the stranger"],
     ["trial", "the trial"]

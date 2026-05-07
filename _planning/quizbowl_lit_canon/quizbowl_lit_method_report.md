@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-07T03:27:08Z
+Generated: 2026-05-07T03:57:06Z
 
 ## Corpus
 
@@ -9,8 +9,8 @@ Generated: 2026-05-07T03:27:08Z
 - Rows processed: 2216999
 - Evidence fields: raw `answerline` and raw `clue_text`
 - Diagnostic field: `archive_practice_questions.track_id` for quizbowl category counts only
-- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2934 decisions)
-- Manual alias rules: 526 loaded, 523 applied after pass 1
+- Adjudication file: `_planning/quizbowl_lit_canon/quizbowl_lit_adjudications.yml` (2937 decisions)
+- Manual alias rules: 530 loaded, 527 applied after pass 1
 - Author-aware split targets: 33 targets across 17 source titles (24 public after routing)
 - Split audit rows: 33 written to `_planning/quizbowl_lit_canon/quizbowl_lit_split_audit.tsv`
 - Worker processes: 6
@@ -19,16 +19,16 @@ Generated: 2026-05-07T03:27:08Z
 
 ## Candidate Extraction
 
-- Raw answerline work candidates: 9206
-- Exact-match work-title seeds from answerlines and clues: 6180
-- Exact-match seed basis counts: `answerline`=867, `answerline_and_clue`=1275, `clue`=4038
-- Raw normalized candidates: 81399
-- Candidates clearing threshold: 20047
-- Public YAML rows after accepted-work filtering: 4997
+- Raw answerline work candidates: 9204
+- Exact-match work-title seeds from answerlines and clues: 6176
+- Exact-match seed basis counts: `answerline`=865, `answerline_and_clue`=1275, `clue`=4036
+- Raw normalized candidates: 81395
+- Candidates clearing threshold: 20043
+- Public YAML rows after accepted-work filtering: 4993
 - Rejected non-literature candidates: 3981
 - Audit queue rows: 19391
 - LLM review queue rows: 500
-- Evidence/example rows written: 86333
+- Evidence/example rows written: 86313
 
 ## Review Routing
 
@@ -40,14 +40,14 @@ Generated: 2026-05-07T03:27:08Z
 ## Tier Counts
 
 - `qb_candidate`: 11069
-- `qb_contextual`: 2512
+- `qb_contextual`: 2510
 - `qb_core`: 1030
-- `qb_major`: 1455
+- `qb_major`: 1453
 - `qb_rejected`: 3981
 
 ## Review Status Counts
 
-- `accepted_likely_work`: 4997
+- `accepted_likely_work`: 4993
 - `merged_duplicate_title_variant`: 1
 - `needs_review_act_title_boundary`: 1
 - `needs_review_adjacent_political_thought_boundary`: 1
@@ -496,25 +496,25 @@ Generated: 2026-05-07T03:27:08Z
 
 ## Public Classification Counts
 
-Work forms: `collection_or_cycle`=389, `drama`=693, `epic_or_romance`=75, `essay_memoir_nonfiction`=214, `long_fiction`=1693, `poetry`=974, `scripture_myth_hymn`=7, `short_fiction`=736, `unknown_form`=216
+Work forms: `collection_or_cycle`=389, `drama`=693, `epic_or_romance`=75, `essay_memoir_nonfiction`=214, `long_fiction`=1691, `poetry`=973, `scripture_myth_hymn`=7, `short_fiction`=735, `unknown_form`=216
 
-Eras: `ancient_classical`=142, `contemporary`=184, `early_modern`=239, `eighteenth_century`=122, `long_19th_century`=758, `medieval`=88, `modernist`=744, `postwar_modern`=1019, `unknown_era`=1701
+Eras: `ancient_classical`=142, `contemporary`=184, `early_modern`=239, `eighteenth_century`=122, `long_19th_century`=757, `medieval`=87, `modernist`=744, `postwar_modern`=1019, `unknown_era`=1699
 
-Regions/traditions: `african`=70, `american`=188, `arabic_persian_turkic`=46, `biblical_religious`=43, `caribbean`=25, `chinese`=47, `english_british_irish`=413, `french`=112, `germanic_scandinavian`=109, `greek`=84, `iberian_lusophone`=51, `indigenous_oceania`=11, `italian`=53, `japanese_korean`=58, `latin_american`=148, `roman_latin`=46, `russian_eastern_european`=143, `south_asian`=53, `unknown_region`=3297
+Regions/traditions: `african`=70, `american`=186, `arabic_persian_turkic`=45, `biblical_religious`=43, `caribbean`=25, `chinese`=47, `english_british_irish`=412, `french`=112, `germanic_scandinavian`=109, `greek`=84, `iberian_lusophone`=51, `indigenous_oceania`=11, `italian`=53, `japanese_korean`=58, `latin_american`=148, `roman_latin`=46, `russian_eastern_european`=143, `south_asian`=53, `unknown_region`=3297
 
-Reading units: `ancient_epic_scripture_myth`=12, `classical_drama`=42, `collections_and_cycles`=150, `contemporary_global_literature`=184, `drama`=272, `early_modern_drama`=88, `early_modern_world_literature`=151, `eighteenth_century_prose_and_drama`=122, `epic_romance_or_oral_tradition`=30, `fiction_and_narrative`=421, `literary_nonfiction`=88, `medieval_romance_saga`=88, `modernism`=744, `nineteenth_century_fiction`=241, `nineteenth_century_poetry_and_drama`=517, `poetry`=446, `postwar_global_literature`=138, `postwar_literature`=881, `scripture_myth_hymn`=4, `short_fiction`=271, `unclassified_unit`=107
+Reading units: `ancient_epic_scripture_myth`=12, `classical_drama`=42, `collections_and_cycles`=150, `contemporary_global_literature`=184, `drama`=272, `early_modern_drama`=88, `early_modern_world_literature`=151, `eighteenth_century_prose_and_drama`=122, `epic_romance_or_oral_tradition`=30, `fiction_and_narrative`=419, `literary_nonfiction`=88, `medieval_romance_saga`=87, `modernism`=744, `nineteenth_century_fiction`=241, `nineteenth_century_poetry_and_drama`=516, `poetry`=446, `postwar_global_literature`=138, `postwar_literature`=881, `scripture_myth_hymn`=4, `short_fiction`=271, `unclassified_unit`=107
 
-Classification confidence: `rule_high`=1168, `rule_low`=1192, `rule_medium`=2586, `unknown_metadata`=51
+Classification confidence: `rule_high`=1166, `rule_low`=1192, `rule_medium`=2584, `unknown_metadata`=51
 
-Creator source: `codex_manual_metadata_correction`=486, `quizbowl_author_answerline`=527, `reviewed_canon_record`=46, `unknown`=1471, `wikidata_metadata_overlay`=2467
+Creator source: `codex_manual_metadata_correction`=487, `quizbowl_author_answerline`=526, `reviewed_canon_record`=46, `unknown`=1468, `wikidata_metadata_overlay`=2466
 
-Creator confidence: `high`=2605, `low`=186, `medium`=735, `unknown`=1471
+Creator confidence: `high`=2605, `low`=186, `medium`=734, `unknown`=1468
 
-Chronology source: `codex_manual_metadata_correction`=483, `reviewed_canon_record`=46, `title_override`=19, `unknown`=2253, `wikidata_metadata_overlay`=2196
+Chronology source: `codex_manual_metadata_correction`=484, `reviewed_canon_record`=46, `title_override`=19, `unknown`=2249, `wikidata_metadata_overlay`=2195
 
-Chronology confidence: `high`=2620, `medium`=124, `unknown`=2253
+Chronology confidence: `high`=2620, `medium`=124, `unknown`=2249
 
-Chronology rows needing review: 2253
+Chronology rows needing review: 2249
 
 ## Outputs
 
