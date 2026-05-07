@@ -1,14 +1,14 @@
 {
   "public_rows": 4981,
-  "chronology_ready_rows": 2989,
-  "creator_ready_rows": 3216,
-  "default_path_rows": 2964,
-  "creator_risk_rows": 374,
+  "chronology_ready_rows": 3084,
+  "creator_ready_rows": 3273,
+  "default_path_rows": 3059,
+  "creator_risk_rows": 353,
   "duplicate_risk_rows": 111,
   "boundary_risk_rows": 0,
-  "release_queue_rows": 223,
+  "release_queue_rows": 128,
   "release_queue_issue_counts": {
-    "chronology": 223,
-    "creator": 56
+    "chronology": 128,
+    "creator": 35
   }
 }
