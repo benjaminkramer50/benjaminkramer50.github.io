@@ -133,7 +133,7 @@ The May 2026 audit used two waves of six agents to review what was done, what is
 - Do not use `quizbowl_author_answerline` creators in the default reading path unless the row is separately audited or backed by manual/Wikidata/reviewed metadata.
 - Do not make All Accepted the default public experience. The default view is the Chronological Path: accepted rows with reliable creator and chronology metadata.
 - Do not fold religion, mythology, philosophy, or social-science works back into the literature list; Phase G creates sibling products after the literature list is stable.
-- Do not rebuild the full raw-corpus pipeline after every small metadata correction. Accumulate release-gate edits in batches of roughly `25-75` rows, then run the expensive build once per batch; a full build rereads roughly `2.2M` quizbowl rows twice and takes several minutes.
+- Do not rebuild the full raw-corpus pipeline after every small metadata correction. Accumulate release-gate edits in batches of roughly `25-75` rows, then use `scripts/refresh_quizbowl_lit_metadata_outputs.rb` for metadata-only changes; reserve the expensive full build for alias, rejection, routing, threshold, or extraction changes. A full build rereads roughly `2.2M` quizbowl rows twice and takes several minutes.
 - Do not rely on more broad Wikidata retries as the main path. The helper has already recovered the high-confidence multilingual-label misses; remaining release rows are mostly title collisions, subwork boundaries, composite/oral works, and non-literature boundary decisions where manual adjudication is faster and safer.
 - If a later phase exposes a major upstream problem, return to the earlier phase, fix it, rebuild, and update the method report.
 
