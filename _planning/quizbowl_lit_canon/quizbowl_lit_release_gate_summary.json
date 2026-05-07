@@ -1,15 +1,14 @@
 {
-  "public_rows": 4993,
-  "chronology_ready_rows": 2837,
-  "creator_ready_rows": 3094,
-  "default_path_rows": 2812,
-  "creator_risk_rows": 460,
-  "duplicate_risk_rows": 113,
-  "boundary_risk_rows": 97,
-  "release_queue_rows": 429,
+  "public_rows": 4981,
+  "chronology_ready_rows": 2989,
+  "creator_ready_rows": 3216,
+  "default_path_rows": 2964,
+  "creator_risk_rows": 374,
+  "duplicate_risk_rows": 111,
+  "boundary_risk_rows": 0,
+  "release_queue_rows": 223,
   "release_queue_issue_counts": {
-    "boundary": 88,
-    "chronology": 382,
-    "creator": 140
+    "chronology": 223,
+    "creator": 56
   }
 }

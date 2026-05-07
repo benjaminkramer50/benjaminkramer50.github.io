@@ -23645,3 +23645,103 @@ decisions:
   reason: full_title_variant_for_tolkien_essay
   review_status: merged_duplicate_title_variant
   source: codex_release_gate_duplicate_cleanup
+- canonical_title: Fables of Faubus
+  normalized_title: fables of faubus
+  decision: reject
+  reason: music_composition_not_literature
+  review_status: rejected_music_composition_not_literature
+  source: codex_release_gate_boundary_batch
+  notes: Corrects earlier manual accept; corpus evidence identifies the Charles Mingus jazz composition, not a literary work.
+- canonical_title: Win Ben Stein’s Money
+  normalized_title: win ben steins money
+  decision: reject
+  reason: television_game_show_not_literature
+  review_status: rejected_television_game_show_not_literature
+  source: codex_release_gate_boundary_batch
+  notes: Corpus evidence identifies the Comedy Central game show, not a literary work.
+- canonical_title: Die Blechtrommel
+  normalized_title: die blechtrommel
+  decision: alias
+  alias_of: The Tin Drum
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge German-title answerline evidence into the canonical Gunter Grass novel row.
+- canonical_title: Der Blechtrommel
+  normalized_title: der blechtrommel
+  decision: alias
+  alias_of: The Tin Drum
+  reason: original_language_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge malformed German-title evidence into the canonical Gunter Grass novel row.
+- canonical_title: The Tin Drum or Die Blechtrommel
+  normalized_title: the tin drum or die blechtrommel
+  decision: alias
+  alias_of: The Tin Drum
+  reason: answerline_translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge bilingual answerline evidence into the canonical Gunter Grass novel row.
+- canonical_title: The Wasteland
+  normalized_title: the wasteland
+  decision: alias
+  alias_of: The Waste Land
+  reason: spacing_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge common closed-up title variant into the canonical T. S. Eliot poem row.
+- canonical_title: Philosopher or Dog
+  normalized_title: philosopher or dog
+  decision: alias
+  alias_of: Quincas Borba
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge English translated-title evidence into Machado de Assis's Quincas Borba row.
+- canonical_title: Notebook of a Return to the Native Land
+  normalized_title: notebook of a return to the native land
+  decision: alias
+  alias_of: Notebook of a Return to My Native Land
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge alternate English title into the canonical Cesaire poem row.
+- canonical_title: Deer Park
+  normalized_title: deer park
+  decision: alias
+  alias_of: The Deer Park
+  reason: article_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Restore the standard title for Norman Mailer's novel while preserving quizbowl evidence.
+- canonical_title: Winterreise
+  normalized_title: winterreise
+  decision: reject
+  reason: music_song_cycle_not_literature
+  review_status: rejected_music_song_cycle_not_literature
+  source: codex_release_gate_boundary_batch
+  notes: Corpus evidence identifies Schubert's song cycle, not a standalone literary reading-list work.
+- canonical_title: The State as a Work of Art
+  normalized_title: the state as a work of art
+  decision: reject
+  reason: section_title_history_not_literature
+  review_status: rejected_section_title_history_not_literature
+  source: codex_release_gate_boundary_batch
+  notes: Corpus evidence points to a Burckhardt chapter/section title in cultural history, not a standalone literary work.
+- canonical_title: Father Goriot
+  normalized_title: father goriot
+  decision: alias
+  alias_of: Pere Goriot
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge English translated-title evidence into the canonical Balzac row.
+- canonical_title: The Knight in the Panther
+  normalized_title: the knight in the panther
+  decision: alias
+  alias_of: The Knight in the Panther’s Skin
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_release_gate_alias_batch
+  notes: Merge truncated title evidence into the Georgian epic row.

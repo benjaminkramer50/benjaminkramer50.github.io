@@ -148,3 +148,285 @@
 - title: Self-Portrait in a Convex Mirror
   disposition: keep_literature
   reason: Ashbery poem; visual-art title context is an allusion.
+- title: Beauty and the Beast
+  disposition: cross_list_literature
+  reason: literary fairy tale; cross-list with folklore/mythology later.
+- title: The Gospel According to Jesus Christ
+  disposition: keep_literature
+  reason: Saramago novel; religion signal is title/subject context.
+- title: Call to Arms
+  disposition: keep_literature
+  reason: Lu Xun story collection; adjacent-context signal is overbroad.
+- title: End of the Game
+  disposition: keep_literature
+  reason: Cortazar fiction collection; music/performance signal is title noise.
+- title: The Order of Insects
+  disposition: keep_literature
+  reason: William H. Gass short story; adjacent-context signal is overbroad.
+- title: Book of Lamentations
+  disposition: cross_list_literature
+  reason: scripture read as poetry/literature; cross-list with religion later.
+- title: The Knight of the Cart
+  disposition: keep_literature
+  reason: Chretien de Troyes romance; adjacent-context signal is overbroad.
+- title: Birds of America
+  disposition: keep_literature
+  reason: Lorrie Moore story collection; adjacent-context signal is overbroad.
+- title: Paul Clifford
+  disposition: keep_literature
+  reason: Bulwer-Lytton novel; adjacent-context signal is overbroad.
+- title: White Buildings
+  disposition: keep_literature
+  reason: Hart Crane poetry collection; adjacent-context signal is overbroad.
+- title: The Sword in the Stone
+  disposition: keep_literature
+  reason: T. H. White novel; adjacent-context signal is overbroad.
+- title: Of Time and the River
+  disposition: keep_literature
+  reason: Thomas Wolfe novel; adjacent-context signal is overbroad.
+- title: The Battles of Coxinga
+  disposition: keep_literature
+  reason: Chikamatsu drama; adjacent-context signal is overbroad.
+- title: The East Wing
+  disposition: keep_literature
+  reason: Saki short story; music/performance signal comes from title-word noise.
+- title: Quincas Borba
+  disposition: keep_literature
+  reason: Machado de Assis novel; adjacent-context signal is overbroad.
+- title: The Deptford Trilogy
+  disposition: keep_literature
+  reason: Robertson Davies novel trilogy; adjacent-context signal is overbroad.
+- title: Azul
+  disposition: keep_literature
+  reason: Ruben Dario literary collection; adjacent-context signal is overbroad.
+- title: Little House on the Prairie
+  disposition: keep_literature
+  reason: literary children's novel; music/performance signal is title noise.
+- title: Pan Tadeusz
+  disposition: keep_literature
+  reason: Mickiewicz verse epic; adjacent-context signal is overbroad.
+- title: Where the Sidewalk Ends
+  disposition: keep_literature
+  reason: Shel Silverstein poetry collection; adjacent-context signal is overbroad.
+- title: The Treasure of the Sierra Madre
+  disposition: keep_literature
+  reason: B. Traven novel; film/adaptation context does not exclude the book.
+- title: Gösta Berling’s Saga
+  disposition: keep_literature
+  reason: Selma Lagerlof novel; saga/mythology signal is overbroad.
+- title: The Floating Opera
+  disposition: keep_literature
+  reason: John Barth novel; music/performance signal is title allusion.
+- title: The Owl and the Pussycat
+  disposition: keep_literature
+  reason: Edward Lear poem; adjacent-context signal is overbroad.
+- title: Book of Jonah
+  disposition: cross_list_literature
+  reason: scripture read as narrative literature; cross-list with religion later.
+- title: Kristin Lavransdatter
+  disposition: keep_literature
+  reason: Sigrid Undset novel trilogy; adjacent-context signal is overbroad.
+- title: The Alexandria Quartet
+  disposition: keep_literature
+  reason: Lawrence Durrell novel sequence; adjacent-context signal is overbroad.
+- title: Poems and Ballads
+  disposition: keep_literature
+  reason: Swinburne poetry collection; adjacent-context signal is overbroad.
+- title: Book of Ecclesiastes
+  disposition: cross_list_literature
+  reason: wisdom-poetic scripture read as literature; cross-list with religion later.
+- title: Book of Ruth
+  disposition: cross_list_literature
+  reason: scripture read as narrative literature; cross-list with religion later.
+- title: Group Portrait with Lady
+  disposition: keep_literature
+  reason: Boll novel; adjacent-context signal is overbroad.
+- title: Requiem for a Nun
+  disposition: keep_literature
+  reason: Faulkner novel/play hybrid; music signal is title allusion.
+- title: Sunflower Sutra
+  disposition: keep_literature
+  reason: Ginsberg poem; religion signal is title-word noise.
+- title: The Good Soldier Svejk
+  disposition: keep_literature
+  reason: Hasek novel; adjacent-context signal is overbroad.
+- title: Heinrich von Ofterdingen
+  disposition: keep_literature
+  reason: Novalis novel; adjacent-context signal is overbroad.
+- title: The Tortoise and the Hare
+  disposition: cross_list_literature
+  reason: Aesopic fable; cross-list with folklore/mythology later.
+- title: Zuleika Dobson
+  disposition: keep_literature
+  reason: Max Beerbohm novel; adjacent-context signal is overbroad.
+- title: Lunch Poems
+  disposition: keep_literature
+  reason: Frank O'Hara poetry collection; adjacent-context signal is overbroad.
+- title: His Dark Materials
+  disposition: keep_literature
+  reason: Philip Pullman fantasy sequence; performance/pop-context signal does not exclude the books.
+- title: The Motorcycle Diaries
+  disposition: keep_literature
+  reason: travel memoir; adjacent-context signal is overbroad.
+- title: The God Abandons Antony
+  disposition: keep_literature
+  reason: Cavafy poem; adjacent-context signal is overbroad.
+- title: The Song of Bernadette
+  disposition: keep_literature
+  reason: Franz Werfel novel; adjacent-context signal is overbroad.
+- title: Hay Fever
+  disposition: keep_literature
+  reason: Noel Coward play; adjacent-context signal is overbroad.
+- title: The Hasty Pudding
+  disposition: keep_literature
+  reason: Joel Barlow poem; adjacent-context signal is overbroad.
+- title: The Web and the Rock
+  disposition: keep_literature
+  reason: Thomas Wolfe novel; adjacent-context signal is overbroad.
+- title: The Burning Plain
+  disposition: keep_literature
+  reason: Juan Rulfo story collection; adjacent-context signal is overbroad.
+- title: Return to My Native Land
+  disposition: keep_literature
+  reason: Cesaire poem; adjacent-context signal is overbroad.
+- title: The Accidental Tourist
+  disposition: keep_literature
+  reason: Anne Tyler novel; adjacent-context signal is overbroad.
+- title: True West
+  disposition: keep_literature
+  reason: Sam Shepard play; adjacent-context signal is overbroad.
+- title: Thomas and Beulah
+  disposition: keep_literature
+  reason: Rita Dove poetry collection; adjacent-context signal is overbroad.
+- title: The Gas Heart
+  disposition: keep_literature
+  reason: Tristan Tzara play; adjacent-context signal is overbroad.
+- title: Goodbye to Berlin
+  disposition: keep_literature
+  reason: Isherwood fiction collection; adjacent-context signal is overbroad.
+- title: Memory for Forgetfulness
+  disposition: keep_literature
+  reason: Mahmoud Darwish prose/poetry work; adjacent-context signal is overbroad.
+- title: The Last Question
+  disposition: keep_literature
+  reason: Asimov short story; adjacent-context signal is overbroad.
+- title: She Came to Stay
+  disposition: keep_literature
+  reason: Beauvoir novel; philosophy signal is author context, not exclusion.
+- title: The Day of the Jackal
+  disposition: keep_literature
+  reason: Frederick Forsyth novel; adjacent-context signal is overbroad.
+- title: The Poisonwood Bible
+  disposition: keep_literature
+  reason: Kingsolver novel; religion signal is title/subject context.
+- title: Essays of Elia
+  disposition: keep_literature
+  reason: Charles Lamb literary essays; adjacent-context signal is overbroad.
+- title: The Moon is a Harsh Mistress
+  disposition: keep_literature
+  reason: Heinlein novel; adjacent-context signal is overbroad.
+- title: Diary of a Mad Old Man
+  disposition: keep_literature
+  reason: Tanizaki novel; adjacent-context signal is overbroad.
+- title: Riders of the Purple Sage
+  disposition: keep_literature
+  reason: Zane Grey novel; adjacent-context signal is overbroad.
+- title: The Sunken Bell
+  disposition: keep_literature
+  reason: Hauptmann play; adjacent-context signal is overbroad.
+- title: Brokeback Mountain
+  disposition: keep_literature
+  reason: Annie Proulx short story; adaptation context does not exclude the text.
+- title: I Am a Camera
+  disposition: keep_literature
+  reason: John Van Druten play; adjacent-context signal is overbroad.
+- title: An Epistle to Dr. Arbuthnot
+  disposition: keep_literature
+  reason: Pope poem; religion signal is title-word noise.
+- title: The Lost Honor of Katharina Blum
+  disposition: keep_literature
+  reason: Boll novella; adjacent-context signal is overbroad.
+- title: Blackberry Winter
+  disposition: keep_literature
+  reason: Robert Penn Warren short story; philosophy/social signal is overbroad.
+- title: The Fox and the Grapes
+  disposition: cross_list_literature
+  reason: Aesopic fable; cross-list with folklore/mythology later.
+- title: The Day Lady Died
+  disposition: keep_literature
+  reason: Frank O'Hara poem; adjacent-context signal is overbroad.
+- title: Swami and Friends
+  disposition: keep_literature
+  reason: R. K. Narayan novel; adjacent-context signal is overbroad.
+- title: The Gospel According to Mark
+  disposition: keep_literature
+  reason: Borges short story; religion signal is title/subject context.
+- title: Notebook of a Return to My Native Land
+  disposition: keep_literature
+  reason: Cesaire poem; adjacent-context signal is overbroad.
+- title: Lost Horizon
+  disposition: keep_literature
+  reason: James Hilton novel; adjacent-context signal is overbroad.
+- title: One Man's Bible
+  disposition: keep_literature
+  reason: Gao Xingjian novel; religion signal is title/subject context.
+- title: Harry Potter and the Goblet of Fire
+  disposition: keep_literature
+  reason: Rowling novel; performance/pop-context signal does not exclude the book.
+- title: Poetics
+  disposition: keep_literature
+  reason: foundational literary-critical text; philosophy signal is cross-context.
+- title: Roads to Freedom
+  disposition: keep_literature
+  reason: Sartre novel trilogy; philosophy signal is author context.
+- title: Symphony in Gray Major
+  disposition: keep_literature
+  reason: Wilde poem; music signal is title allusion.
+- title: Mahabharata
+  disposition: cross_list_literature
+  reason: Sanskrit epic remains core literature; cross-list with mythology/religion later.
+- title: Catalogue of Women
+  disposition: cross_list_literature
+  reason: Hesiodic genealogical poem; cross-list with mythology later.
+- title: The Last Puritan
+  disposition: keep_literature
+  reason: Santayana novel; philosophy signal is author context.
+- title: Aria da Capo
+  disposition: keep_literature
+  reason: Edna St. Vincent Millay play; music signal is title allusion.
+- title: The Saga of King Olaf
+  disposition: cross_list_literature
+  reason: Longfellow poetic sequence; cross-list with saga/mythic material later.
+- title: Ragtime
+  disposition: keep_literature
+  reason: Doctorow novel; music signal is title/subject context.
+- title: Wichita Vortex Sutra
+  disposition: keep_literature
+  reason: Ginsberg poem; religion signal is title-word noise.
+- title: Theogony
+  disposition: cross_list_literature
+  reason: Hesiodic poem remains Greek literature; cross-list with mythology later.
+- title: The Neon Bible
+  disposition: keep_literature
+  reason: John Kennedy Toole novel; religion signal is title allusion.
+- title: Requiem for a Futurologist
+  disposition: keep_literature
+  reason: literary work; music/performance signal is title allusion.
+- title: Book of Psalms
+  disposition: cross_list_literature
+  reason: poetic scripture read as literature; cross-list with religion later.
+- title: Book of Proverbs
+  disposition: cross_list_literature
+  reason: wisdom scripture read as literature; cross-list with religion later.
+- title: Book of Joshua
+  disposition: cross_list_literature
+  reason: scripture read as narrative literature; cross-list with religion later.
+- title: The Uprooted Pine
+  disposition: keep_literature
+  reason: Chikamatsu drama; adjacent-context signal is overbroad.
+- title: The Epic of the Wheat
+  disposition: keep_literature
+  reason: Frank Norris novel sequence; mythology signal is title-word noise.
+- title: The Song of the Reed Flute
+  disposition: cross_list_literature
+  reason: Rumi prologue poem; cross-list with Sufi/religious literature later.

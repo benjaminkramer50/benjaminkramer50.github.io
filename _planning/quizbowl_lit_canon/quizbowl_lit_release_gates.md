@@ -4,14 +4,14 @@ Generated from `_data/quizbowl_literature_canon.yml`.
 
 ## Counts
 
-- Public accepted rows: `4993`
-- Chronology-ready rows: `2837`
-- Creator-ready rows: `3094`
-- Default reading-path rows: `2812`
-- Creator-risk rows: `460`
-- Duplicate-risk rows: `113`
-- Boundary-risk rows: `97`
-- Mandatory release-queue rows: `429`
+- Public accepted rows: `4981`
+- Chronology-ready rows: `2989`
+- Creator-ready rows: `3216`
+- Default reading-path rows: `2964`
+- Creator-risk rows: `374`
+- Duplicate-risk rows: `111`
+- Boundary-risk rows: `0`
+- Mandatory release-queue rows: `223`
 
 ## Stop Rule
 
@@ -21,36 +21,36 @@ Do not manually clear the full unplaced backlog for v1. Resolve the mandatory re
 
 | Rank | Count | Tier | Title | Gate Reasons | Issue Buckets | Action |
 | ---: | ---: | --- | --- | --- | --- | --- |
-| 1021 | 172 | `qb_core` | Beauty and the Beast | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 | 1139 | 58 | `qb_major` | Confessions | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
-| 1145 | 114 | `qb_major` | The Gospel According to Jesus Christ | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
 | 1215 | 54 | `qb_major` | Jerusalem | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
-| 1262 | 62 | `qb_major` | Elegy for Alto | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
-| 1270 | 69 | `qb_major` | The East Wing | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; boundary_risk | chronology; boundary | Set boundary disposition or route to sibling list before default release. |
-| 1284 | 47 | `qb_major` | Die Blechtrommel | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
-| 1354 | 56 | `qb_major` | Book of Jonah | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; boundary_risk | chronology; boundary | Set boundary disposition or route to sibling list before default release. |
-| 1365 | 39 | `qb_major` | The Wasteland | qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
-| 1390 | 36 | `qb_major` | Poetics | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 1392 | 41 | `qb_major` | Book of Psalms | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
-| 1404 | 73 | `qb_major` | White Buildings | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 1443 | 57 | `qb_major` | Gösta Berling’s Saga | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk; boundary_risk | chronology; creator; boundary | Set boundary disposition or route to sibling list before default release. |
-| 1453 | 55 | `qb_major` | Calling Out to Yeti | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
-| 1455 | 55 | `qb_major` | Book of Ruth | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; boundary_risk | chronology; boundary | Set boundary disposition or route to sibling list before default release. |
-| 1473 | 66 | `qb_major` | The Deptford Trilogy | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk; boundary_risk | chronology; creator; boundary | Set boundary disposition or route to sibling list before default release. |
-| 1477 | 69 | `qb_major` | Quincas Borba | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 1546 | 31 | `qb_major` | Mahabharata | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 1551 | 44 | `qb_major` | Book of Proverbs | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
-| 1554 | 57 | `qb_major` | Apology for Raymond Sebond | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
-| 1558 | 33 | `qb_major` | Book of Joshua | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
-| 1560 | 43 | `qb_major` | An Epistle to Dr. Arbuthnot | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; boundary_risk | chronology; boundary | Set boundary disposition or route to sibling list before default release. |
-| 1561 | 56 | `qb_major` | Kristin Lavransdatter | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 1563 | 45 | `qb_major` | The Poisonwood Bible | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 1580 | 71 | `qb_major` | Of Time and the River | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 1584 | 55 | `qb_major` | Girl | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
-| 1586 | 33 | `qb_major` | The Knights | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
-| 1594 | 113 | `qb_major` | Call to Arms | boundary_risk | boundary | Set boundary disposition or route to sibling list before default release. |
-| 1596 | 47 | `qb_major` | The Broken Tower | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
-| 1598 | 42 | `qb_major` | Anna in the Tropics | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 1731 | 37 | `qb_major` | Grace | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 1990 | 65 | `qb_major` | The Fall of Rome | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2014 | 47 | `qb_major` | The Gas Heart | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2016 | 20 | `qb_major` | The Vagina Monologues | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2018 | 44 | `qb_major` | Every Man in His Humor | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 2021 | 43 | `qb_major` | The Fox and the Grapes | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2022 | 68 | `qb_major` | The Sun Rising | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2024 | 22 | `qb_major` | Menaechmi | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2025 | 35 | `qb_major` | Hesperides | qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 2026 | 45 | `qb_major` | Maria Stuart | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 2028 | 39 | `qb_major` | The Autobiography of Malcolm X | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2033 | 62 | `qb_major` | The Four Ages of Man | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2039 | 32 | `qb_major` | The Cry of the Children | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2042 | 33 | `qb_major` | Radio Golf | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2044 | 66 | `qb_major` | The Golden One | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2045 | 31 | `qb_major` | The Catch | qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 2047 | 47 | `qb_major` | The Third and Final Continent | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2052 | 47 | `qb_major` | Sizwe Bansi is Dead | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2056 | 24 | `qb_major` | Directive | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2057 | 42 | `qb_major` | Ah Sin | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2058 | 25 | `qb_major` | Zazie in the Metro | qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 2059 | 25 | `qb_major` | Pharsalia | qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 2063 | 41 | `qb_major` | The Day Lady Died | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2068 | 28 | `qb_major` | Conquistador | qb_major_unresolved_chronology; creator_risk | chronology; creator | Replace/suppress creator before default release. |
+| 2076 | 62 | `qb_major` | Church Without Christ | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2077 | 63 | `qb_major` | Evenings on a Farm | count_ge_40_unresolved_chronology; qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2079 | 32 | `qb_major` | The Man He Killed | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
+| 2084 | 22 | `qb_major` | Rasselas | qb_major_unresolved_chronology | chronology | Add conservative date metadata or keep outside default path. |
 
 ## Output Files
 
