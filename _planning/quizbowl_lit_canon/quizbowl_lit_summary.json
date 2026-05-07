@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T03:57:06Z",
+  "generated_at": "2026-05-07T04:20:09Z",
   "db_path": "/Users/benjaminkramer/Desktop/Loci/user-data/quizbowl-coach.db",
   "source_table": "archive_parsed_questions",
   "evidence_fields": [
@@ -545,17 +545,17 @@
   },
   "public_region_or_tradition_counts": {
     "african": 70,
-    "greek": 84,
+    "greek": 83,
     "roman_latin": 46,
     "english_british_irish": 412,
     "american": 186,
     "latin_american": 148,
     "iberian_lusophone": 51,
-    "germanic_scandinavian": 109,
+    "germanic_scandinavian": 114,
     "russian_eastern_european": 143,
-    "french": 112,
+    "french": 117,
     "south_asian": 53,
-    "unknown_region": 3297,
+    "unknown_region": 3288,
     "italian": 53,
     "japanese_korean": 58,
     "indigenous_oceania": 11,
@@ -565,13 +565,13 @@
     "biblical_religious": 43
   },
   "public_reading_unit_counts": {
-    "postwar_global_literature": 138,
+    "postwar_global_literature": 137,
     "ancient_epic_scripture_myth": 12,
     "early_modern_world_literature": 151,
     "nineteenth_century_fiction": 241,
     "modernism": 744,
     "medieval_romance_saga": 87,
-    "postwar_literature": 881,
+    "postwar_literature": 882,
     "nineteenth_century_poetry_and_drama": 516,
     "early_modern_drama": 88,
     "eighteenth_century_prose_and_drama": 122,
@@ -588,23 +588,23 @@
     "scripture_myth_hymn": 4
   },
   "public_classification_confidence_counts": {
-    "rule_high": 1166,
-    "rule_medium": 2584,
-    "rule_low": 1192,
+    "rule_high": 1174,
+    "rule_medium": 2577,
+    "rule_low": 1191,
     "unknown_metadata": 51
   },
   "public_creator_source_counts": {
     "reviewed_canon_record": 46,
     "codex_manual_metadata_correction": 487,
-    "wikidata_metadata_overlay": 2466,
-    "quizbowl_author_answerline": 526,
-    "unknown": 1468
+    "wikidata_metadata_overlay": 2500,
+    "unknown": 1462,
+    "quizbowl_author_answerline": 498
   },
   "public_creator_confidence_counts": {
-    "high": 2605,
-    "medium": 734,
-    "unknown": 1468,
-    "low": 186
+    "high": 2635,
+    "medium": 712,
+    "unknown": 1462,
+    "low": 184
   },
   "public_chronology_source_counts": {
     "reviewed_canon_record": 46,
@@ -614,8 +614,8 @@
     "unknown": 2249
   },
   "public_chronology_confidence_counts": {
-    "high": 2620,
-    "medium": 124,
+    "high": 2641,
+    "medium": 103,
     "unknown": 2249
   },
   "public_chronology_needs_review_count": 2249

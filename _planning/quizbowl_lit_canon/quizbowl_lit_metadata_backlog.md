@@ -8,8 +8,8 @@ Total unresolved chronology rows: 2249
 
 ## Buckets
 
-- `needs_creator_and_date`: 1361
-- `needs_date_only`: 752
+- `needs_creator_and_date`: 1360
+- `needs_date_only`: 753
 - `likely_non_literature_context`: 57
 - `likely_parser_fragment`: 44
 - `oral_or_composite_date_review`: 21

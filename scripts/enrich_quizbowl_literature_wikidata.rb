@@ -152,15 +152,23 @@ def labels_for_qids(qids)
   labels = {}
   qids.each_slice(50) do |slice|
     ids = CGI.escape(slice.join("|"))
-    url = "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=#{ids}&props=labels&languages=en&format=json"
+    languages = CGI.escape("en|mul")
+    url = "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=#{ids}&props=labels&languages=#{languages}&format=json"
     entities = http_json(url).fetch("entities", {})
     entities.each do |qid, entity|
       labels[qid] = entity.dig("labels", "en", "value").to_s
+      labels[qid] = entity.dig("labels", "mul", "value").to_s if labels[qid].empty?
     end
   rescue StandardError => e
     warn "label batch failed ids=#{slice.join(",")}: #{e.class}: #{e.message}"
   end
   labels
+end
+
+def complete_metadata_overlay?(row)
+  Array(row["creators"]).any? &&
+    !row["sort_year"].nil? &&
+    row["sort_year"].to_s != ""
 end
 
 def year_from_wikidata_time(value)
@@ -465,12 +473,14 @@ def main
   options = parse_options
   data = YAML.load_file(options[:canon])
   existing = File.exist?(options[:out]) ? (YAML.load_file(options[:out]) || []) : []
-  existing_keys = existing.map { |row| normalize_title(row["title"]) }.to_set
+  existing_by_key = {}
+  existing.each { |row| existing_by_key[normalize_title(row["title"])] = row }
+  complete_existing_keys = existing_by_key.select { |_key, row| complete_metadata_overlay?(row) }.keys.to_set
   reported_keys = options[:retry_reported] ? Set.new : reported_title_keys(options[:report])
 
   rows = data.select do |row|
     title_key = normalize_title(row["title"])
-    next false if existing_keys.include?(title_key)
+    next false if complete_existing_keys.include?(title_key)
     next false if reported_keys.include?(title_key)
     next false if options[:only_unplaced] && row["chronology_source"].to_s != "unknown"
 

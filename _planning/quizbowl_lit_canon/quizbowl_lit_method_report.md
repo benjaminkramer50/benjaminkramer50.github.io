@@ -1,6 +1,6 @@
 # Quizbowl Literature Canon Method Report
 
-Generated: 2026-05-07T03:57:06Z
+Generated: 2026-05-07T04:20:09Z
 
 ## Corpus
 
@@ -500,19 +500,19 @@ Work forms: `collection_or_cycle`=389, `drama`=693, `epic_or_romance`=75, `essay
 
 Eras: `ancient_classical`=142, `contemporary`=184, `early_modern`=239, `eighteenth_century`=122, `long_19th_century`=757, `medieval`=87, `modernist`=744, `postwar_modern`=1019, `unknown_era`=1699
 
-Regions/traditions: `african`=70, `american`=186, `arabic_persian_turkic`=45, `biblical_religious`=43, `caribbean`=25, `chinese`=47, `english_british_irish`=412, `french`=112, `germanic_scandinavian`=109, `greek`=84, `iberian_lusophone`=51, `indigenous_oceania`=11, `italian`=53, `japanese_korean`=58, `latin_american`=148, `roman_latin`=46, `russian_eastern_european`=143, `south_asian`=53, `unknown_region`=3297
+Regions/traditions: `african`=70, `american`=186, `arabic_persian_turkic`=45, `biblical_religious`=43, `caribbean`=25, `chinese`=47, `english_british_irish`=412, `french`=117, `germanic_scandinavian`=114, `greek`=83, `iberian_lusophone`=51, `indigenous_oceania`=11, `italian`=53, `japanese_korean`=58, `latin_american`=148, `roman_latin`=46, `russian_eastern_european`=143, `south_asian`=53, `unknown_region`=3288
 
-Reading units: `ancient_epic_scripture_myth`=12, `classical_drama`=42, `collections_and_cycles`=150, `contemporary_global_literature`=184, `drama`=272, `early_modern_drama`=88, `early_modern_world_literature`=151, `eighteenth_century_prose_and_drama`=122, `epic_romance_or_oral_tradition`=30, `fiction_and_narrative`=419, `literary_nonfiction`=88, `medieval_romance_saga`=87, `modernism`=744, `nineteenth_century_fiction`=241, `nineteenth_century_poetry_and_drama`=516, `poetry`=446, `postwar_global_literature`=138, `postwar_literature`=881, `scripture_myth_hymn`=4, `short_fiction`=271, `unclassified_unit`=107
+Reading units: `ancient_epic_scripture_myth`=12, `classical_drama`=42, `collections_and_cycles`=150, `contemporary_global_literature`=184, `drama`=272, `early_modern_drama`=88, `early_modern_world_literature`=151, `eighteenth_century_prose_and_drama`=122, `epic_romance_or_oral_tradition`=30, `fiction_and_narrative`=419, `literary_nonfiction`=88, `medieval_romance_saga`=87, `modernism`=744, `nineteenth_century_fiction`=241, `nineteenth_century_poetry_and_drama`=516, `poetry`=446, `postwar_global_literature`=137, `postwar_literature`=882, `scripture_myth_hymn`=4, `short_fiction`=271, `unclassified_unit`=107
 
-Classification confidence: `rule_high`=1166, `rule_low`=1192, `rule_medium`=2584, `unknown_metadata`=51
+Classification confidence: `rule_high`=1174, `rule_low`=1191, `rule_medium`=2577, `unknown_metadata`=51
 
-Creator source: `codex_manual_metadata_correction`=487, `quizbowl_author_answerline`=526, `reviewed_canon_record`=46, `unknown`=1468, `wikidata_metadata_overlay`=2466
+Creator source: `codex_manual_metadata_correction`=487, `quizbowl_author_answerline`=498, `reviewed_canon_record`=46, `unknown`=1462, `wikidata_metadata_overlay`=2500
 
-Creator confidence: `high`=2605, `low`=186, `medium`=734, `unknown`=1468
+Creator confidence: `high`=2635, `low`=184, `medium`=712, `unknown`=1462
 
 Chronology source: `codex_manual_metadata_correction`=484, `reviewed_canon_record`=46, `title_override`=19, `unknown`=2249, `wikidata_metadata_overlay`=2195
 
-Chronology confidence: `high`=2620, `medium`=124, `unknown`=2249
+Chronology confidence: `high`=2641, `medium`=103, `unknown`=2249
 
 Chronology rows needing review: 2249
 
