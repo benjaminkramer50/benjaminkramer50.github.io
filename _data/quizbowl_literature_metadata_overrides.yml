@@ -37365,3 +37365,904 @@
   date_label: '1958'
   source: codex_manual_metadata_correction
   confidence: high
+- title: Two Words
+  creators:
+  - Isabel Allende
+  sort_year: 1989
+  date_label: '1989'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Let Us Now Praise Famous Men
+  creators:
+  - James Agee
+  - Walker Evans
+  sort_year: 1941
+  date_label: '1941'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Elemental Odes
+  creators:
+  - Pablo Neruda
+  sort_year: 1954
+  date_label: '1954'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Confessions of an English Opium Eater
+  creators:
+  - Thomas De Quincey
+  sort_year: 1821
+  date_label: '1821'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Drinking Alone by Moonlight
+  creators:
+  - Li Bai
+  sort_year: 744
+  date_label: 8th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Pudd'nhead Wilson
+  creators:
+  - Mark Twain
+  sort_year: 1894
+  date_label: '1894'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: i sing of Olaf glad and big
+  creators:
+  - E. E. Cummings
+  sort_year: 1931
+  date_label: '1931'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Good Country People
+  creators:
+  - Flannery O'Connor
+  sort_year: 1955
+  date_label: '1955'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: When I Was One-and-Twenty
+  creators:
+  - A. E. Housman
+  sort_year: 1896
+  date_label: '1896'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: I, Robot
+  creators:
+  - Isaac Asimov
+  sort_year: 1950
+  date_label: '1950'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Exit the King
+  creators:
+  - Eugene Ionesco
+  sort_year: 1962
+  date_label: '1962'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Harp Weaver
+  creators:
+  - Edna St. Vincent Millay
+  sort_year: 1922
+  date_label: '1922'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: One Art
+  creators:
+  - Elizabeth Bishop
+  sort_year: 1976
+  date_label: '1976'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Theme for English B
+  creators:
+  - Langston Hughes
+  sort_year: 1951
+  date_label: '1951'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Front Page
+  creators:
+  - Ben Hecht
+  - Charles MacArthur
+  sort_year: 1928
+  date_label: '1928'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Body of a Woman
+  creators:
+  - Pablo Neruda
+  sort_year: 1924
+  date_label: '1924'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Seashell Game
+  creators:
+  - Matsuo Basho
+  sort_year: 1672
+  date_label: '1672'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Mademoiselle Fifi
+  creators:
+  - Guy de Maupassant
+  sort_year: 1882
+  date_label: '1882'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Kongi's Harvest
+  creators:
+  - Wole Soyinka
+  sort_year: 1965
+  date_label: '1965'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Kongi’s Harvest
+  creators:
+  - Wole Soyinka
+  sort_year: 1965
+  date_label: '1965'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: A Fable for Critics
+  creators:
+  - James Russell Lowell
+  sort_year: 1848
+  date_label: '1848'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Idea of Order at Key West
+  creators:
+  - Wallace Stevens
+  sort_year: 1934
+  date_label: '1934'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Poem Without a Hero
+  creators:
+  - Anna Akhmatova
+  sort_year: 1940
+  date_label: 1940-1962
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Mason and Dixon
+  creators:
+  - Thomas Pynchon
+  sort_year: 1997
+  date_label: '1997'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Woman in the Dunes
+  creators:
+  - Kobo Abe
+  sort_year: 1962
+  date_label: '1962'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Harlem
+  creators:
+  - Langston Hughes
+  sort_year: 1951
+  date_label: '1951'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: A Dance to the Music of Time
+  creators:
+  - Anthony Powell
+  sort_year: 1951
+  date_label: 1951-1975
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: American Buffalo
+  creators:
+  - David Mamet
+  sort_year: 1975
+  date_label: '1975'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Bone People
+  creators:
+  - Keri Hulme
+  sort_year: 1984
+  date_label: '1984'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Bridge on the River Kwai
+  creators:
+  - Pierre Boulle
+  sort_year: 1952
+  date_label: '1952'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Barbara Frietchie
+  creators:
+  - John Greenleaf Whittier
+  sort_year: 1863
+  date_label: '1863'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Bean Eaters
+  creators:
+  - Gwendolyn Brooks
+  sort_year: 1960
+  date_label: '1960'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Sredni Vashtar
+  creators:
+  - Saki
+  sort_year: 1910
+  date_label: '1910'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Call to Arms
+  creators:
+  - Lu Xun
+  sort_year: 1923
+  date_label: '1923'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The New Criticism
+  creators:
+  - John Crowe Ransom
+  sort_year: 1941
+  date_label: '1941'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Ariel
+  creators:
+  - Sylvia Plath
+  sort_year: 1965
+  date_label: '1965'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: A Simple Heart
+  creators:
+  - Gustave Flaubert
+  sort_year: 1877
+  date_label: '1877'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Wild Swans at Coole
+  creators:
+  - W. B. Yeats
+  sort_year: 1917
+  date_label: '1917'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Il Penseroso
+  creators:
+  - John Milton
+  sort_year: 1645
+  date_label: '1645'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Monsters and the Critics
+  creators:
+  - J. R. R. Tolkien
+  sort_year: 1936
+  date_label: '1936'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Batter my heart, Three Person'd God
+  creators:
+  - John Donne
+  sort_year: 1610
+  date_label: c. 1610
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Batter my heart, Three Person’d God
+  creators:
+  - John Donne
+  sort_year: 1610
+  date_label: c. 1610
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Strange Meeting
+  creators:
+  - Wilfred Owen
+  sort_year: 1918
+  date_label: written 1918; published 1919
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Fra Lippo Lippi
+  creators:
+  - Robert Browning
+  sort_year: 1855
+  date_label: '1855'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Hugh Selwyn Mauberley
+  creators:
+  - Ezra Pound
+  sort_year: 1920
+  date_label: '1920'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Torrents of Spring
+  creators:
+  - Ivan Turgenev
+  sort_year: 1872
+  date_label: '1872'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Parade's End
+  creators:
+  - Ford Madox Ford
+  sort_year: 1924
+  date_label: 1924-1928
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Aurora Leigh
+  creators:
+  - Elizabeth Barrett Browning
+  sort_year: 1856
+  date_label: '1856'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Gabriela, Clove, and Cinnamon
+  creators:
+  - Jorge Amado
+  sort_year: 1958
+  date_label: '1958'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Annie Allen
+  creators:
+  - Gwendolyn Brooks
+  sort_year: 1949
+  date_label: '1949'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Inherit the Wind
+  creators:
+  - Jerome Lawrence
+  - Robert E. Lee
+  sort_year: 1955
+  date_label: '1955'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Digging
+  creators:
+  - Seamus Heaney
+  sort_year: 1966
+  date_label: '1966'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Out, Out—
+  creators:
+  - Robert Frost
+  sort_year: 1916
+  date_label: '1916'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Love at First Sight
+  creators:
+  - Wislawa Szymborska
+  sort_year: 1993
+  date_label: '1993'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Atalanta in Calydon
+  creators:
+  - Algernon Charles Swinburne
+  sort_year: 1865
+  date_label: '1865'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Odour of Chrysanthemums
+  creators:
+  - D. H. Lawrence
+  sort_year: 1911
+  date_label: '1911'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Book of Isaiah
+  creators:
+  - Hebrew Bible / Tanakh prophetic tradition
+  sort_year: -700
+  date_label: ancient Israelite; composite text
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Ode on a Distant Prospect of Eton College
+  creators:
+  - Thomas Gray
+  sort_year: 1747
+  date_label: '1747'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Zend-Avesta
+  creators:
+  - Zoroastrian priestly and liturgical tradition
+  sort_year: -1000
+  date_label: ancient Iranian; transmitted in later manuscripts
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Anecdote of the Jar
+  creators:
+  - Wallace Stevens
+  sort_year: 1919
+  date_label: '1919'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: God Bless You
+  creators:
+  - Kurt Vonnegut
+  sort_year: 1965
+  date_label: '1965'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Lake Isle of Innisfree
+  creators:
+  - W. B. Yeats
+  sort_year: 1888
+  date_label: written 1888; published 1890
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Infernal Machine
+  creators:
+  - Jean Cocteau
+  sort_year: 1934
+  date_label: '1934'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Convergence of the Twain
+  creators:
+  - Thomas Hardy
+  sort_year: 1912
+  date_label: '1912'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Sympathy
+  creators:
+  - Paul Laurence Dunbar
+  sort_year: 1899
+  date_label: '1899'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Gulistan / The Rose Garden
+  creators:
+  - Saadi
+  sort_year: 1258
+  date_label: '1258'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Catullus 101 / Ave Atque Vale
+  creators:
+  - Catullus
+  sort_year: -55
+  date_label: c. 56 BCE
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: God's Trombones
+  creators:
+  - James Weldon Johnson
+  sort_year: 1927
+  date_label: '1927'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Wheel of Time
+  creators:
+  - Robert Jordan
+  - Brandon Sanderson
+  sort_year: 1990
+  date_label: 1990-2013
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Verses Upon the Burning of Our House
+  creators:
+  - Anne Bradstreet
+  sort_year: 1666
+  date_label: '1666'
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Our American Cousin
+  creators:
+  - Tom Taylor
+  sort_year: 1858
+  date_label: '1858'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Three Tall Women
+  creators:
+  - Edward Albee
+  sort_year: 1991
+  date_label: '1991'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: End of the Game
+  creators:
+  - Julio Cortazar
+  sort_year: 1956
+  date_label: '1956'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: You Can't Take It With You
+  creators:
+  - George S. Kaufman
+  - Moss Hart
+  sort_year: 1936
+  date_label: '1936'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Book of the City of Ladies
+  creators:
+  - Christine de Pizan
+  sort_year: 1405
+  date_label: '1405'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Man in the Iron Mask
+  creators:
+  - Alexandre Dumas
+  sort_year: 1847
+  date_label: 1847-1850
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Metaphysical Poets
+  creators:
+  - T. S. Eliot
+  sort_year: 1921
+  date_label: '1921'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Golden Boat
+  creators:
+  - Rabindranath Tagore
+  sort_year: 1894
+  date_label: '1894'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Miracle Worker
+  creators:
+  - William Gibson
+  sort_year: 1959
+  date_label: '1959'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: El Senor Presidente
+  creators:
+  - Miguel Angel Asturias
+  sort_year: 1946
+  date_label: '1946'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Author to Her Book
+  creators:
+  - Anne Bradstreet
+  sort_year: 1678
+  date_label: '1678'
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Order of Insects
+  creators:
+  - William H. Gass
+  sort_year: 1968
+  date_label: '1968'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Chac Mool
+  creators:
+  - Carlos Fuentes
+  sort_year: 1954
+  date_label: '1954'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Book of Matthew
+  creators:
+  - Early Christian gospel tradition
+  sort_year: 80
+  date_label: c. 80-90 CE
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Love Suicides at Sonezaki
+  creators:
+  - Chikamatsu Monzaemon
+  sort_year: 1703
+  date_label: '1703'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Tis Pity She's a Whore
+  creators:
+  - John Ford
+  sort_year: 1633
+  date_label: '1633'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Tortilla Flat
+  creators:
+  - John Steinbeck
+  sort_year: 1935
+  date_label: '1935'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Mid-Term Break
+  creators:
+  - Seamus Heaney
+  sort_year: 1966
+  date_label: '1966'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Scholar-Gipsy
+  creators:
+  - Matthew Arnold
+  sort_year: 1853
+  date_label: '1853'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: First Dream
+  creators:
+  - Sor Juana Ines de la Cruz
+  sort_year: 1692
+  date_label: '1692'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Puss in Boots
+  creators:
+  - Charles Perrault
+  sort_year: 1697
+  date_label: '1697'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Die Lorelei
+  creators:
+  - Heinrich Heine
+  sort_year: 1824
+  date_label: '1824'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Private Lives
+  creators:
+  - Noel Coward
+  sort_year: 1930
+  date_label: '1930'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Easter Wings
+  creators:
+  - George Herbert
+  sort_year: 1633
+  date_label: '1633'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Eve of St. Agnes
+  creators:
+  - John Keats
+  sort_year: 1820
+  date_label: '1820'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Book of Lamentations
+  creators:
+  - Hebrew Bible / Tanakh poetic tradition
+  sort_year: -586
+  date_label: ancient Israelite; final form debated
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Bow and the Lyre
+  creators:
+  - Octavio Paz
+  sort_year: 1956
+  date_label: '1956'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: His Excellency General Washington
+  creators:
+  - Phillis Wheatley
+  sort_year: 1775
+  date_label: '1775'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Sexy
+  creators:
+  - Jhumpa Lahiri
+  sort_year: 1999
+  date_label: '1999'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Walking Around
+  creators:
+  - Pablo Neruda
+  sort_year: 1935
+  date_label: '1935'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Buried Child
+  creators:
+  - Sam Shepard
+  sort_year: 1978
+  date_label: '1978'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Paterson
+  creators:
+  - William Carlos Williams
+  sort_year: 1946
+  date_label: 1946-1958
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Life You Save May Be Your Own
+  creators:
+  - Flannery O'Connor
+  sort_year: 1955
+  date_label: '1955'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Mourning Bride
+  creators:
+  - William Congreve
+  sort_year: 1697
+  date_label: '1697'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Red Oleanders
+  creators:
+  - Rabindranath Tagore
+  sort_year: 1924
+  date_label: '1924'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Why I Write
+  creators:
+  - George Orwell
+  sort_year: 1946
+  date_label: '1946'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Bridge
+  creators:
+  - Hart Crane
+  sort_year: 1930
+  date_label: '1930'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: I Am a Cat
+  creators:
+  - Natsume Soseki
+  sort_year: 1905
+  date_label: 1905-1906
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Shadow of a Gunman
+  creators:
+  - Sean O'Casey
+  sort_year: 1923
+  date_label: '1923'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Over-Soul
+  creators:
+  - Ralph Waldo Emerson
+  sort_year: 1841
+  date_label: '1841'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Tonight We Improvise
+  creators:
+  - Luigi Pirandello
+  sort_year: 1930
+  date_label: '1930'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The House of Fame
+  creators:
+  - Geoffrey Chaucer
+  sort_year: 1380
+  date_label: c. 1380
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Rose Tattoo
+  creators:
+  - Tennessee Williams
+  sort_year: 1951
+  date_label: '1951'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Breasts of Tiresias
+  creators:
+  - Guillaume Apollinaire
+  sort_year: 1917
+  date_label: '1917'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Asphodel, That Greeny Flower
+  creators:
+  - William Carlos Williams
+  sort_year: 1955
+  date_label: '1955'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The American Embassy
+  creators:
+  - Chimamanda Ngozi Adichie
+  sort_year: 2009
+  date_label: '2009'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Knight of the Cart
+  creators:
+  - Chretien de Troyes
+  sort_year: 1177
+  date_label: c. 1177
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: The Monkey Grammarian
+  creators:
+  - Octavio Paz
+  sort_year: 1974
+  date_label: '1974'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Washington Square
+  creators:
+  - Henry James
+  sort_year: 1880
+  date_label: '1880'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Carmina Burana
+  creators:
+  - Medieval Latin and Goliardic lyric tradition
+  sort_year: 1230
+  date_label: 11th-13th century
+  source: codex_manual_metadata_correction
+  confidence: medium
+- title: Birds of America
+  creators:
+  - Lorrie Moore
+  sort_year: 1998
+  date_label: '1998'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: After the Flood
+  creators:
+  - Arthur Rimbaud
+  sort_year: 1873
+  date_label: '1873'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Flea
+  creators:
+  - John Donne
+  sort_year: 1633
+  date_label: '1633'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Sign in Sidney Brustein's Window
+  creators:
+  - Lorraine Hansberry
+  sort_year: 1964
+  date_label: '1964'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Mac Flecknoe
+  creators:
+  - John Dryden
+  sort_year: 1682
+  date_label: '1682'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: "The Odyssey: A Modern Sequel"
+  creators:
+  - Nikos Kazantzakis
+  sort_year: 1938
+  date_label: '1938'
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: The Forsyte Saga
+  creators:
+  - John Galsworthy
+  sort_year: 1906
+  date_label: 1906-1921
+  source: codex_manual_metadata_correction
+  confidence: high
+- title: Cloud Cuckoo Land
+  creators:
+  - Anthony Doerr
+  sort_year: 2021
+  date_label: '2021'
+  source: codex_manual_metadata_correction
+  confidence: high

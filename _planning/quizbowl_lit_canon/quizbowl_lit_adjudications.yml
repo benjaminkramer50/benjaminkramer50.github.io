@@ -23245,3 +23245,212 @@ decisions:
   reason: title_collision_browning_macneice_king_contexts
   review_status: needs_review_title_collision_requires_split
   source: codex_phase_d2_metadata_backlog_cleanup
+- canonical_title: Week of Peace
+  decision: alias
+  alias_of: Things Fall Apart
+  reason: event_phrase_in_larger_work
+  review_status: merged_clue_fragment_to_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Vanished into the Clouds
+  decision: alias
+  alias_of: The Tale of Genji
+  reason: chapter_title_for_larger_work
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Autobiography of Alice
+  decision: alias
+  alias_of: The Autobiography of Alice B. Toklas
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Enchanted Hunters
+  decision: alias
+  alias_of: Lolita
+  reason: embedded_fictional_work_for_larger_work
+  review_status: merged_embedded_work_to_larger_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Violent Bear
+  decision: alias
+  alias_of: The Violent Bear It Away
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Handmaid
+  decision: alias
+  alias_of: The Handmaid’s Tale
+  reason: truncated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Sons of La Malinche
+  decision: alias
+  alias_of: The Labyrinth of Solitude
+  reason: essay_subwork_for_collection
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Traps of Faith
+  decision: review
+  reason: paz_biography_criticism_boundary
+  review_status: needs_review_literary_criticism_boundary
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Triumph of Death
+  decision: review
+  reason: title_collision_petrarch_delillo_visual_art_contexts
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Faces in the Crowd
+  decision: review
+  reason: title_collision_schulberg_luiselli_contexts
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Black Plague
+  decision: reject
+  reason: embedded_fictional_pamphlet_not_work
+  review_status: rejected_embedded_fictional_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Manon Lescaut
+  decision: review
+  reason: title_collision_prevost_novel_puccini_opera
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Hell's Angels
+  decision: review
+  reason: gonzo_nonfiction_boundary
+  review_status: needs_review_literary_nonfiction_boundary
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Get the Guests
+  decision: alias
+  alias_of: Who’s Afraid of Virginia Woolf
+  reason: game_phrase_in_larger_work
+  review_status: merged_clue_fragment_to_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Stacker of Wheat
+  decision: alias
+  alias_of: Chicago
+  reason: quoted_phrase_for_poem
+  review_status: merged_line_or_phrase_to_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Defender of the Faith
+  decision: alias
+  alias_of: Goodbye, Columbus
+  reason: story_subwork_for_collection
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Lass of Aughrim
+  decision: alias
+  alias_of: The Dead
+  reason: song_reference_in_larger_story
+  review_status: merged_clue_fragment_to_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Don Juan in Hell
+  decision: alias
+  alias_of: Man and Superman
+  reason: act_or_subwork_for_larger_play
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Golden Shovel
+  decision: review
+  reason: title_collision_hayes_poem_brooks_poem_location
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: The Golden Legend
+  decision: review
+  reason: title_collision_medieval_hagiography_longfellow_poem
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Snow White
+  decision: review
+  reason: title_collision_fairy_tale_barthelme_oyeyemi_contexts
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Mayan mythology
+  decision: reject
+  reason: mythology_domain_not_literary_work
+  review_status: rejected_mythology_domain_not_literary_work
+  source: codex_phase_d3_metadata_backlog_cleanup
+- canonical_title: Oath of the Peach Garden
+  decision: alias
+  alias_of: Romance of the Three Kingdoms
+  reason: episode_or_scene_in_larger_work
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d4_metadata_backlog_cleanup
+- canonical_title: The Rose Garden
+  decision: alias
+  alias_of: Gulistan / The Rose Garden
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d4_metadata_backlog_cleanup
+- canonical_title: Hail and Farewell
+  decision: alias
+  alias_of: Catullus 101 / Ave Atque Vale
+  reason: translated_title_variant_for_catullus_poem
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d4_metadata_backlog_cleanup
+- canonical_title: Palm-of-the-Hand
+  decision: alias
+  alias_of: Palm-of-the-Hand Stories
+  reason: truncated_collection_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d4_metadata_backlog_cleanup
+- canonical_title: Elinor and Marianne
+  decision: alias
+  alias_of: Sense and Sensibility
+  reason: earlier_title_for_larger_work
+  review_status: merged_title_variant_to_work
+  source: codex_phase_d4_metadata_backlog_cleanup
+- canonical_title: Not-I Bird
+  decision: alias
+  alias_of: Death and the King's Horseman
+  reason: quoted_motif_in_larger_play
+  review_status: merged_clue_fragment_to_work
+  source: codex_phase_d4_metadata_backlog_cleanup
+- canonical_title: The Pearl of Great Price
+  decision: reject
+  reason: latter_day_saint_scripture_belongs_in_religion_product
+  review_status: rejected_religion_scripture_domain
+  source: codex_phase_d4_metadata_backlog_cleanup
+- canonical_title: Ave Atque Vale
+  decision: review
+  reason: title_collision_catullus_poem_swinburne_poem
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d4_metadata_backlog_cleanup
+- canonical_title: Here I Am
+  decision: review
+  reason: title_collision_foer_novel_alegria_poem
+  review_status: needs_review_title_collision_requires_split
+  source: codex_phase_d4_metadata_backlog_cleanup
+- canonical_title: Tool Maker, Stacker of Wheat
+  decision: alias
+  alias_of: Chicago
+  reason: quoted_phrase_for_poem
+  review_status: merged_line_or_phrase_to_work
+  source: codex_phase_d5_metadata_backlog_cleanup
+- canonical_title: Fuente Ovejuna
+  decision: alias
+  alias_of: Fuenteovejuna
+  reason: spacing_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d5_metadata_backlog_cleanup
+- canonical_title: The Sheep Well
+  decision: alias
+  alias_of: Fuenteovejuna
+  reason: translated_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d5_metadata_backlog_cleanup
+- canonical_title: Black and Blue
+  decision: alias
+  alias_of: Invisible Man
+  reason: song_reference_in_larger_novel
+  review_status: merged_clue_fragment_to_work
+  source: codex_phase_d5_metadata_backlog_cleanup
+- canonical_title: Down at the Cross
+  decision: alias
+  alias_of: The Fire Next Time
+  reason: essay_subwork_for_larger_work
+  review_status: merged_subwork_to_larger_work
+  source: codex_phase_d5_metadata_backlog_cleanup
+- canonical_title: Maggie
+  decision: alias
+  alias_of: "Maggie: A Girl of the Streets"
+  reason: shortened_title_variant
+  review_status: merged_duplicate_title_variant
+  source: codex_phase_d5_metadata_backlog_cleanup

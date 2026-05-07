@@ -4,61 +4,61 @@ Generated from `_data/quizbowl_literature_canon.yml`.
 
 Scope: accepted public rows with `chronology_source: unknown`.
 
-Total unresolved chronology rows: 2461
+Total unresolved chronology rows: 2302
 
 ## Buckets
 
-- `needs_creator_and_date`: 1411
-- `needs_date_only`: 853
-- `likely_non_literature_context`: 112
-- `likely_parser_fragment`: 46
-- `oral_or_composite_date_review`: 23
-- `creator_needs_audit`: 16
+- `needs_creator_and_date`: 1376
+- `needs_date_only`: 776
+- `likely_non_literature_context`: 69
+- `likely_parser_fragment`: 45
+- `oral_or_composite_date_review`: 22
+- `creator_needs_audit`: 14
 
 ## Highest-Salience Rows
 
 | Count | Rank | Bucket | Title | Creator Source | Creators | Notes |
 | ---: | ---: | --- | --- | --- | --- | --- |
-| 143 | 1138 | `likely_non_literature_context` | Two Words | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 139 | 901 | `creator_needs_audit` | Let Us Now Praise Famous Men | quizbowl_author_answerline | 30 B9ints . I ~:-!. .~ | Creator field appears to come from noisy answerline text; verify before using. |
-| 129 | 831 | `needs_date_only` | Elemental Odes | quizbowl_author_answerline | Pablo Neruda | Creator is present, but no chronology metadata is available. |
-| 128 | 1505 | `likely_non_literature_context` | Triumph of Death | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 124 | 1564 | `likely_non_literature_context` | Faces in the Crowd | quizbowl_author_answerline | Budd Schulberg | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 124 | 1574 | `needs_creator_and_date` | Week of Peace | unknown |  | No reliable creator or chronology metadata yet. |
-| 120 | 991 | `needs_creator_and_date` | Confessions of an English Opium Eater | unknown |  | No reliable creator or chronology metadata yet. |
-| 120 | 1119 | `creator_needs_audit` | Drinking Alone by Moonlight | quizbowl_author_answerline | Chinese | Creator field appears to come from noisy answerline text; verify before using. |
-| 120 | 1558 | `likely_non_literature_context` | The Black Plague | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 120 | 1603 | `likely_non_literature_context` | Vanished into the Clouds | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 119 | 806 | `needs_date_only` | Pudd'nhead Wilson | quizbowl_author_answerline | A Connecticut Yankee in King Arthur's Court | Creator is present, but no chronology metadata is available. |
-| 118 | 785 | `likely_parser_fragment` | i sing of Olaf glad and big | unknown |  | Title shape suggests extracted phrase or truncated title; reject, alias, or rescue manually. |
-| 118 | 807 | `needs_date_only` | Good Country People | wikidata_metadata_overlay | Flannery O'Connor | Creator is present, but no chronology metadata is available. |
-| 118 | 1080 | `needs_creator_and_date` | When I Was One-and-Twenty | unknown |  | No reliable creator or chronology metadata yet. |
-| 118 | 1251 | `likely_non_literature_context` | I, Robot | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 117 | 1510 | `needs_date_only` | The Autobiography of Alice | quizbowl_author_answerline | Gertrude Stein | Creator is present, but no chronology metadata is available. |
-| 116 | 945 | `needs_date_only` | Exit the King | wikidata_metadata_overlay | Eugène Ionesco | Creator is present, but no chronology metadata is available. |
-| 116 | 1548 | `needs_date_only` | The Harp Weaver | quizbowl_author_answerline | Edna St. Vincent Millay | Creator is present, but no chronology metadata is available. |
-| 114 | 1166 | `needs_date_only` | One Art | wikidata_metadata_overlay | Elizabeth Bishop | Creator is present, but no chronology metadata is available. |
-| 113 | 799 | `needs_creator_and_date` | Theme for English B | unknown |  | No reliable creator or chronology metadata yet. |
-| 113 | 1531 | `likely_non_literature_context` | The Front Page | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 113 | 1595 | `needs_creator_and_date` | Body of a Woman | unknown |  | No reliable creator or chronology metadata yet. |
-| 113 | 1613 | `likely_non_literature_context` | Call to Arms | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 113 | 1666 | `needs_date_only` | The Seashell Game | quizbowl_author_answerline | Narrow Road to the Deep North | Creator is present, but no chronology metadata is available. |
-| 112 | 857 | `needs_date_only` | Mademoiselle Fifi | quizbowl_author_answerline | The Necklace | Creator is present, but no chronology metadata is available. |
-| 112 | 884 | `needs_creator_and_date` | The Convergence of the Twain | unknown |  | No reliable creator or chronology metadata yet. |
-| 112 | 1013 | `needs_date_only` | Kongi’s Harvest | wikidata_metadata_overlay | Wole Soyinka | Creator is present, but no chronology metadata is available. |
-| 112 | 1146 | `needs_date_only` | A Fable for Critics | wikidata_metadata_overlay | James Russell Lowell | Creator is present, but no chronology metadata is available. |
-| 112 | 1576 | `likely_non_literature_context` | Hell's Angels | quizbowl_author_answerline | Hunter S. Thompson | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 111 | 1646 | `needs_creator_and_date` | Get the Guests | unknown |  | No reliable creator or chronology metadata yet. |
-| 110 | 793 | `needs_date_only` | The Idea of Order at Key West | wikidata_metadata_overlay | Wallace Stevens | Creator is present, but no chronology metadata is available. |
-| 110 | 1038 | `needs_creator_and_date` | Poem Without a Hero | unknown |  | No reliable creator or chronology metadata yet. |
-| 109 | 895 | `needs_date_only` | Mason and Dixon | quizbowl_author_answerline | Thomas Pynchon | Creator is present, but no chronology metadata is available. |
-| 109 | 1156 | `likely_non_literature_context` | Ave Atque Vale | wikidata_metadata_overlay | Algernon Charles Swinburne | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 108 | 1643 | `likely_non_literature_context` | Stacker of Wheat | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 107 | 746 | `needs_date_only` | Woman in the Dunes | quizbowl_author_answerline | Kobo Abe | Creator is present, but no chronology metadata is available. |
-| 107 | 996 | `needs_date_only` | Harlem | quizbowl_author_answerline | Countee Cullen | Creator is present, but no chronology metadata is available. |
-| 107 | 1691 | `likely_non_literature_context` | The Golden Shovel | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
-| 106 | 1131 | `needs_creator_and_date` | A Dance to the Music of Time | unknown |  | No reliable creator or chronology metadata yet. |
-| 106 | 1672 | `likely_non_literature_context` | The New Criticism | quizbowl_author_answerline | John Crowe | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 95 | 1212 | `likely_non_literature_context` | Snow White | quizbowl_author_answerline | Helen Oyeyemi | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 83 | 1795 | `likely_non_literature_context` | Here I Am | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 75 | 1095 | `oral_or_composite_date_review` | Epic of Sundiata | unknown |  | Likely oral, composite, mythic, scriptural, or cycle work; use conservative date label. |
+| 75 | 1883 | `needs_date_only` | The Road to Wigan Pier | quizbowl_author_answerline | George Orwell | Creator is present, but no chronology metadata is available. |
+| 75 | 1897 | `likely_non_literature_context` | History of the Kings of Britain | quizbowl_author_answerline | Geoffrey | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 75 | 1938 | `needs_date_only` | My Sister Life | quizbowl_author_answerline | Boris Leonidovich Pasternak | Creator is present, but no chronology metadata is available. |
+| 75 | 1966 | `likely_non_literature_context` | Decolonizing the Mind | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 74 | 861 | `needs_date_only` | El Aleph | quizbowl_author_answerline | Jorge Francisco Isidoro Luis Borges Acevedo | Creator is present, but no chronology metadata is available. |
+| 74 | 1132 | `needs_date_only` | Epistle to the Romans | quizbowl_author_answerline | Church Dogmatics | Creator is present, but no chronology metadata is available. |
+| 74 | 1193 | `needs_creator_and_date` | The Aeolian Harp | unknown |  | No reliable creator or chronology metadata yet. |
+| 74 | 1351 | `needs_date_only` | Boesman and Lena | quizbowl_author_answerline | Athol Fugard | Creator is present, but no chronology metadata is available. |
+| 74 | 1548 | `needs_date_only` | Tamburlaine the Great | quizbowl_author_answerline | Christopher Marlowe | Creator is present, but no chronology metadata is available. |
+| 74 | 1581 | `needs_creator_and_date` | Conversion of the Jews | unknown |  | No reliable creator or chronology metadata yet. |
+| 74 | 1893 | `needs_creator_and_date` | Going to Bed | unknown |  | No reliable creator or chronology metadata yet. |
+| 74 | 1922 | `needs_date_only` | Tell My Horse | quizbowl_author_answerline | Zora Neale Hurston | Creator is present, but no chronology metadata is available. |
+| 74 | 2005 | `likely_non_literature_context` | The Umbilical Cord | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 73 | 1304 | `needs_creator_and_date` | Notes on ‘Camp | unknown |  | No reliable creator or chronology metadata yet. |
+| 73 | 1353 | `needs_date_only` | The Late Mattia Pascal | quizbowl_author_answerline | Luigi Pirandello | Creator is present, but no chronology metadata is available. |
+| 73 | 1362 | `likely_non_literature_context` | White Nights | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 73 | 1407 | `likely_non_literature_context` | White Buildings | wikidata_metadata_overlay | Hart Crane | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 73 | 1428 | `needs_creator_and_date` | Battle Royal | unknown |  | No reliable creator or chronology metadata yet. |
+| 72 | 1008 | `needs_date_only` | M. Butterfly | wikidata_metadata_overlay | David Henry Hwang | Creator is present, but no chronology metadata is available. |
+| 72 | 1266 | `needs_date_only` | Miles Gloriosus | wikidata_metadata_overlay | Plautus | Creator is present, but no chronology metadata is available. |
+| 72 | 1388 | `needs_creator_and_date` | Middle Passage | unknown |  | No reliable creator or chronology metadata yet. |
+| 72 | 1431 | `needs_date_only` | The Real Inspector Hound | wikidata_metadata_overlay | Tom Stoppard | Creator is present, but no chronology metadata is available. |
+| 72 | 1435 | `needs_date_only` | Barrack-Room Ballads | wikidata_metadata_overlay | Rudyard Kipling | Creator is present, but no chronology metadata is available. |
+| 72 | 1587 | `needs_date_only` | Speed-the-Plow | wikidata_metadata_overlay | David Mamet | Creator is present, but no chronology metadata is available. |
+| 72 | 1918 | `needs_date_only` | Culture and Anarchy | wikidata_metadata_overlay | Matthew Arnold | Creator is present, but no chronology metadata is available. |
+| 72 | 1996 | `likely_non_literature_context` | The Sword in the Stone | unknown |  | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 71 | 1165 | `needs_date_only` | Homage to Mistress Bradstreet | quizbowl_author_answerline | John Berryman | Creator is present, but no chronology metadata is available. |
+| 70 | 868 | `needs_date_only` | Giants in the Earth | quizbowl_author_answerline | Ole Rolvaag | Creator is present, but no chronology metadata is available. |
+| 70 | 1121 | `needs_creator_and_date` | General William Booth Enters into Heaven | unknown |  | No reliable creator or chronology metadata yet. |
+| 70 | 1203 | `needs_creator_and_date` | Tam O’Shanter | unknown |  | No reliable creator or chronology metadata yet. |
+| 70 | 1410 | `needs_date_only` | Montage of a Dream Deferred | wikidata_metadata_overlay | Langston Hughes | Creator is present, but no chronology metadata is available. |
+| 70 | 1411 | `needs_date_only` | Roman Fever | wikidata_metadata_overlay | Edith Wharton | Creator is present, but no chronology metadata is available. |
+| 70 | 1613 | `needs_creator_and_date` | First Fig | unknown |  | No reliable creator or chronology metadata yet. |
+| 70 | 1932 | `likely_non_literature_context` | Deaths and Entrances | wikidata_metadata_overlay | Dylan Thomas | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 70 | 1980 | `needs_creator_and_date` | Blessed Be the Tie That Binds | unknown |  | No reliable creator or chronology metadata yet. |
+| 70 | 1994 | `likely_non_literature_context` | The Battles of Coxinga | wikidata_metadata_overlay | Chikamatsu Monzaemon | Dominant evidence is outside literature and answerline support is weak; check for leakage. |
+| 69 | 940 | `needs_date_only` | Bliss | quizbowl_author_answerline | Peter Carey | Creator is present, but no chronology metadata is available. |
 
 ## Operating Rule
 
